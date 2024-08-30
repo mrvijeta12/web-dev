@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./assests/css/about.css">
+    <!-- <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./assests/css/responsive.css"> -->
+
 
     <link
         rel="stylesheet"
@@ -45,7 +49,7 @@
             <div class=" about_choose_container">
                 <div class="about_choose_content ">
                     <div class="about_choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/our-mission.jpg" alt="choose us">
+                        <img src="./assests/images/our-mission.jpg" alt="choose us">
                     </div>
 
                     <div class="about_choose_data" data-aos="zoom-in" data-aos-duration="1500">
@@ -76,7 +80,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t10.jpg" alt="">
+                            <img src="./assests/images/t10.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -84,7 +88,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t8.jpg" alt="">
+                            <img src="./assests/images/t8.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -92,7 +96,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t1.jpg" alt="">
+                            <img src="./assests/images/t1.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -100,7 +104,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t5.jpg" alt="">
+                            <img src="./assests/images/t5.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -108,7 +112,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t9.jpg" alt="">
+                            <img src="./assests/images/t9.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -116,7 +120,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t4.jpg" alt="">
+                            <img src="./assests/images/t4.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -124,7 +128,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t3.jpg" alt="">
+                            <img src="./assests/images/t3.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -132,7 +136,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/t6.jpg" alt="">
+                            <img src="./assests/images/t6.jpg" alt="">
 
                         </div>
                         <p>Tony</p>
@@ -168,11 +172,11 @@
 
             <!-- ########################################## WHY CHOOSE US CONTENT ######################################### -->
 
-            <div class=" about_choose_container check">
-                <div class="about_choose_content ">
+            <div class=" about_choose_container about_choose_bottom_container">
+                <div class="about_choose_content about_choose_bottom_content ">
 
 
-                    <div class="about_choose_data" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="about_choose_data about_choose_bottom_data " data-aos="zoom-in" data-aos-duration="1500">
                         <h1>Expert Team</h1>
                         <p>Our team is made up of highly skilled professionals with years of experience in the industry, ensuring top-notch service and support.</p>
                         <h1>Quality Assurance</h1>
@@ -180,8 +184,8 @@
                         <h1>Customer Satisfaction</h1>
                         <p>Your satisfaction is our priority. We work closely with you to understand your needs and provide personalized solutions.</p>
                     </div>
-                    <div class="about_choose_image" data-aos="fade-up-left" data-aos-duration="1500">
-                        <img src="./assests/about-choose.jpg" alt="choose us">
+                    <div class="about_choose_image about_choose_bottom_image" data-aos="fade-up-left" data-aos-duration="1500">
+                        <img src="./assests/images/about-choose.jpg" alt="choose us">
                     </div>
                 </div>
             </div>

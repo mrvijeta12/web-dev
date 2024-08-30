@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./assests/css/contact.css">
+    <!-- <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./assests/css/responsive.css"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link
         rel="stylesheet"
@@ -45,18 +48,18 @@
                 <div class="contact_child">
                     <div class="services_container">
                         <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="./assests/homegif.gif" alt="">
+                            <img src="./assests/images/homegif.gif" alt="">
                             <h3>OUR MAIN OFFICE</h3>
                             <p>Saket, New Delhi
                                 India</p>
                         </div>
                         <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="./assests/email.gif" alt="">
+                            <img src="./assests/images/email.gif" alt="">
                             <h3>EMAIL</h3>
                             <p>sales@tekalgo.com</p>
                         </div>
                         <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
-                            <img src="./assests/call.gif" alt="">
+                            <img src="./assests/images/call.gif" alt="">
                             <h3>PHONE NUMBER</h3>
                             <p>+91 9118618111</p>
                         </div>
@@ -74,7 +77,7 @@
 
                         <p>Reach out to us for any questions, support, or inquiries you may have. Our dedicated team is here to provide timely and helpful responses, ensuring you receive the assistance you need. Whether you’re seeking information or need technical support, we’re committed to making your experience seamless and efficient.</p>
 
-                        <img src="./assests/krakenimages-376KN_ISplE-unsplash.jpg" alt="">
+                        <img src="./assests/images/krakenimages-376KN_ISplE-unsplash.jpg" alt="">
 
                     </div>
                     <div class="contact_data_item" data-aos="fade-up-left" data-aos-duration="1500">

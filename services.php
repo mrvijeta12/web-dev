@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="./service.css">
+    <link rel="stylesheet" href="./assests/css/service.css">
+    <!-- <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/footer.css"> -->
+    <link rel="stylesheet" href="./assests/css/responsive.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link
         rel="stylesheet"
@@ -92,57 +95,57 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="./assests/3.jpg" alt="">
+                        <div class=" swiper-slide-image">
+                            <img src="./assests/images/3.jpg" alt="">
 
                         </div>
                         <p>Sales Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/10.jpg" alt="">
+                            <img src="./assests/images/10.jpg" alt="">
 
                         </div>
                         <p>Service Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/5.jpg" alt="">
+                            <img src="./assests/images/5.jpg" alt="">
 
                         </div>
                         <p>Marketing Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/9.jpg" alt="">
+                            <img src="./assests/images/9.jpg" alt="">
 
                         </div>
                         <p>Experience Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/7.jpg" alt="">
+                            <img src="./assests/images/7.jpg" alt="">
 
                         </div>
                         <p>Analytic Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/8.jpg" alt="">
+                            <img src="./assests/images/8.jpg" alt="">
 
                         </div>
                         <p>Commerce Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/4.jpg" alt="">
+                            <img src="./assests/images/4.jpg" alt="">
 
                         </div>
                         <p>Healthcare Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/6.jpg" alt="">
+                            <img src="./assests/images/6.jpg" alt="">
 
                         </div>
                         <p>AI Cloud</p>
@@ -150,7 +153,7 @@
 
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/11.jpg" alt="">
+                            <img src="./assests/images/11.jpg" alt="">
 
                         </div>
                         <p> Education Cloud</p>
@@ -175,32 +178,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/solution.gif" alt="">
+                        <img src="./assests/images/solution.gif" alt="">
                         <h1>Expertise in Custom Solutions</h1>
                         <p>Tailored Salesforce solutions that perfectly align with unique business requirements.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/knowledge.gif" alt="">
+                        <img src="./assests/images/knowledge.gif" alt="">
                         <h1>Industry-Specific Knowledge</h1>
                         <p>Specialized Salesforce expertise tailored to your industry’s unique demands and needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/trace-record.gif" alt="">
+                        <img src="./assests/images/trace-record.gif" alt="">
                         <h1>Proven Track Record</h1>
                         <p>A history of successful Salesforce projects with on-time delivery.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/certified.gif" alt="">
+                        <img src="./assests/images/certified.gif" alt="">
                         <h1>Certified Salesforce Professionals</h1>
                         <p>Salesforce-certified experts ensuring best practices and latest platform innovations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/focus.gif" alt="">
+                        <img src="./assests/images/focus.gif" alt="">
                         <h1>Focus on User Experience</h1>
                         <p>Intuitive Salesforce environments that enhance productivity and user satisfaction.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/end-support.gif" alt="">
+                        <img src="./assests/images/end-support.gif" alt="">
                         <h1>End-to-End Support</h1>
                         <p>Continuous Salesforce support ensuring system performance and business alignment.</p>
                     </div>
@@ -218,19 +221,19 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Testimonials</h1>
                 <div class="testimonial_slider" data-aos="zoom-in" data-aos-duration="2500">
                     <div class="testimonial_item">
-                        <img src="./assests/8.jpg" alt="">
+                        <img src="./assests/images/8.jpg" alt="">
                         <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
                     <div class="testimonial_item">
-                        <img src="./assests/2.jpg" alt="">
+                        <img src="./assests/images/2.jpg" alt="">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
                     <div class="testimonial_item">
-                        <img src="./assests/4.jpg" alt="">
+                        <img src="./assests/images/4.jpg" alt="">
                         <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>

@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./success.css">
+    <link rel="stylesheet" href="./assests/css/success.css">
+    <!-- <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./assests/css/responsive.css"> -->
+
+
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -46,34 +51,34 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/7.jpg" alt="">
+                        <img src="./assests/images/7.jpg" alt="">
                         <h1>Global CRM Implementation</h1>
                         <p>
 
                             Successfully deployed Salesforce CRM across multiple international offices.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/2.jpg" alt="">
+                        <img src="./assests/images/2.jpg" alt="">
                         <h1>Salesforce Lightning Migration</h1>
                         <p>Upgraded from Classic to Lightning, enhancing user experience.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/4.jpg" alt="">
+                        <img src="./assests/images/4.jpg" alt="">
                         <h1>Custom API Integration</h1>
                         <p>Integrated third-party applications with Salesforce for seamless operations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/9.jpg" alt="">
+                        <img src="./assests/images/9.jpg" alt="">
                         <h1>Automated Workflow Solutions</h1>
                         <p>Developed custom workflows to automate business processes efficiently.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/5.jpg" alt="">
+                        <img src="./assests/images/5.jpg" alt="">
                         <h1>Salesforce Community Portal</h1>
                         <p>Built a customer portal to enhance self-service and engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./assests/6.jpg" alt="">
+                        <img src="./assests/images/6.jpg" alt="">
                         <h1>Data Cleanup and Optimization</h1>
                         <p>Executed data cleansing and optimization for better reporting and accuracy.</p>
                     </div>
@@ -89,7 +94,7 @@
             <div class="choose_container">
                 <div class="choose_content check">
                     <div class="choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/team2.jpg" alt="choose us">
+                        <img src="./assests/images/team2.jpg" alt="choose us">
                     </div>
 
                     <div class="choose_data check" data-aos="zoom-in" data-aos-duration="1500">
@@ -105,13 +110,13 @@
                         <p>We integrated Salesforce Einstein Analytics to empower a client with advanced data insights and predictive analytics. The solution provided a comprehensive view of key performance metrics, enabling data-driven decision-making. With customized dashboards and AI-driven insights, the client achieved a 30% improvement in sales forecasting accuracy and strategic planning.</p>
                     </div>
                     <div class="choose_image" data-aos="fade-up-left" data-aos-duration="1500">
-                        <img src="./assests/customize.jpg" alt="choose us">
+                        <img src="./assests/images/customize.jpg" alt="choose us">
                     </div>
                 </div>
 
                 <div class="choose_content">
                     <div class="choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/result.jpg" alt="choose us">
+                        <img src="./assests/images/result.jpg" alt="choose us">
                     </div>
 
                     <div class="choose_data" data-aos="zoom-in" data-aos-duration="1500">

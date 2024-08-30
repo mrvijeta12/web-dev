@@ -1,3 +1,5 @@
+// ################ swipper ###############
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
@@ -49,7 +51,8 @@ const checkScroll = () => {
 window.addEventListener("scroll", checkScroll);
 window.addEventListener("load", checkScroll); // Check on page load in case already in view
 
-// navbar
+// ################ navbar ######################
+
 const menuToggle = document.querySelector("#mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 

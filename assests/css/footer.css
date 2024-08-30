@@ -1,0 +1,138 @@
+.footer_wrapper {
+  /* border: 2px solid red; */
+  margin-top: 50px;
+  width: 100%;
+  /* padding: 20px; */
+  border-radius: 20px 20px 0px 0px;
+  /* background-color: #333; */
+  background-color: #fff;
+}
+
+/* ################################### Get In Touch ################################# */
+.connection {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  /* background-color: lightskyblue; */
+  /* background-image: linear-gradient(
+        89.5deg,
+        rgba(131, 204, 255, 1) 0.4%,
+        rgba(66, 144, 251, 1) 100.3%
+      ); */
+
+  background-image: radial-gradient(
+    circle 610px at 5.2% 51.6%,
+    rgba(5, 8, 114, 1) 0%,
+    rgba(7, 3, 53, 1) 97.5%
+  );
+  border-radius: 20px 20px 0px 0px;
+}
+
+.connection p {
+  font-size: 1.25rem;
+}
+.connection img {
+  width: 30px;
+  height: 30px;
+}
+
+.connection li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+/* ############################### Footer data  Section ############################### */
+
+.footer_data {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* border: 2px solid red; */
+  background-color: #272727;
+  color: white;
+}
+
+.footer_data_box {
+  /* background-color: #333; */
+  max-width: 400px;
+  /* height: 250px; */
+  /* border: 2px solid blue; */
+  flex: 1;
+  /* overflow: hidden; */
+  /* padding: 20px; */
+  /* color: white; */
+  color: white;
+  background-color: #272727;
+  /* border: 2px solid black; */
+}
+
+.footer_data_box a {
+  color: white;
+}
+
+.footer_data_box li {
+  margin-bottom: 10px;
+}
+
+.contact_details {
+  display: flex;
+  margin-bottom: 10px;
+}
+.contact_details .contact_details_logo img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  filter: invert(100%) brightness(200%);
+  /* color: black; */
+}
+
+/* ############################## copyrights ############################### */
+
+.footer_wrapper .content {
+  /* border: 2px solid black; */
+  /* background-color: #333;
+      color: white; */
+
+  border-top: 1px solid white !important;
+  /* color: black; */
+  color: white;
+  background-color: #272727;
+  line-height: 30px;
+}
+
+/* ############################### RESPONSIVE SECTION ############################### */
+@media screen and (max-width: 768px) {
+  .footer_data {
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* padding: 20px; */
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .connection img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .connection p {
+    font-size: 1rem;
+  }
+}

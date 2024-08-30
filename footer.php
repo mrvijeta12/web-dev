@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assests/css/footer.css">
+    <!-- <link rel="stylesheet" href="./assests/css/responsive.css"> -->
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +18,9 @@
         <div class="connection">
             <p>Get In Touch With Us</p>
             <ul>
-                <li><a href="#"><img src="./assests/communication.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="./assests/twitter.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="./assests/social.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./assests/images/communication.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./assests/images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./assests/images/social.png" alt="Instagram"></a></li>
             </ul>
         </div>
 
@@ -43,7 +44,7 @@
             <div class="footer_data_box">
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="./assests/email.png" alt="TekAlgo Logo">
+                        <img src="./assests/images/email.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">
@@ -53,7 +54,7 @@
                 </div>
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="./assests/phone.png" alt="TekAlgo Logo">
+                        <img src="./assests/images/phone.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">
@@ -64,7 +65,7 @@
                 </div>
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="./assests/email.png" alt="TekAlgo Logo">
+                        <img src="./assests/images/email.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">

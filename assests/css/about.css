@@ -1,0 +1,375 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.wrapper {
+  max-width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* border: 2px solid blue; */
+}
+.wrapper h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wrapper h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* CONTENT SECTION  */
+.content {
+  padding: 20px;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+/* #################################### NAVBAR SECTION ############################################  */
+
+/* ################################################ HERO SECTION ########################################  */
+
+.about {
+  width: 100%;
+  height: 600px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url(../images/hero-about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-left: 30px;
+  gap: 20px;
+  color: white;
+  /* color: grey; */
+  margin-bottom: 50px;
+  /* border: 2px solid red; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about h1 {
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.25rem;
+}
+
+/* ############# our mission ########################## */
+
+.about_choose_container {
+  width: 80%;
+  margin: 0px auto 50px;
+  /* border: 2px solid red; */
+}
+
+.about_choose_content {
+  /* padding: 20px; */
+  display: flex;
+
+  /* height: auto; */
+  gap: 30px;
+  /* border: 2px solid yellow; */
+  margin-bottom: 20px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+.about_choose_image {
+  max-width: 450px;
+  max-height: 100%;
+  /* border: 2px solid green; */
+}
+
+.about_choose_data {
+  max-width: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about_choose_image img {
+  width: 100%;
+  height: 100%;
+}
+.about_choose_data h1 {
+  font-size: 2.5rem;
+}
+.about_choose_data p {
+  margin: 15px 0px;
+}
+/* ############################################# OUR SERVICE #############################  */
+
+.about_container {
+  text-align: center; /* Center-align the heading and circles */
+  /* margin-top: 50px; */
+  margin-bottom: 30px;
+}
+
+.about_container h2 {
+  font-size: 2rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center; /* Center the circles horizontally */
+  gap: 10px; /* Space between the circles */
+  margin-top: 5px; /* Space between the heading and the circles */
+}
+
+.circle {
+  width: 15px; /* Set the width of the circles */
+  height: 15px; /* Set the height of the circles (same as width for round shape) */
+  background-color: #333; /* Background color of the circles */
+  border-radius: 50%; /* Makes the div round */
+}
+
+/*  ########################################### swipeer ################################################  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+  margin-bottom: 80px;
+  padding: 0px 40px;
+  background: #f7f7f7;
+  padding: 50px 40px !important;
+  /* overflow-x: scroll !important; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  border-radius: 15px;
+  height: fit-content;
+  /* border: 4px solid red; */
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.swiper-slide-image {
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid blue; */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 15px;
+}
+
+.swiper-slide p {
+  margin-top: 10px;
+}
+
+/* ############################### why choose us image  ########################################  */
+.choose_us {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: url(../images/q.jpg) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* border: 2px solid blue; */
+  margin-bottom: 0px;
+  object-fit: cover;
+  object-position: center;
+}
+.choose_us h1 {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+/* ############################## why choose us content bottom  ##################################### */
+
+.about_choose_bottom_container {
+  width: 100%;
+  /* margin: 0px auto 50px; */
+  /* border: 2px solid red; */
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.about_choose_bottom_content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  /* border: 2px solid yellow; */
+  margin-bottom: 20px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+
+.about_choose_bottom_image {
+  max-width: 50%;
+  max-height: 100%;
+  /* border: 2px solid green; */
+}
+
+/* .about_choose_bottom_container {
+  width: 100%;
+  margin-top: 0px;
+  padding: 50px 20px;
+
+  background-color: #f7f7f7;
+} */
+/* .check h1 {
+  font-size: 1.5rem;
+} */
+
+/*  ######################################## FOOTER SECTION ####################################  */
+
+/*  ################################ RESPONSIVE SECTION ################################  */
+@media screen and (max-width: 950px) {
+  /* ################## about choose us bottom  ###################  */
+  .about_choose_bottom_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about_choose_bottom_data {
+    /* border: 2px solid red; */
+    max-width: 100%;
+  }
+  .about_choose_bottom_image {
+    /* border: 2px solid green; */
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ############ about  our  mission################# */
+  .about_choose_container {
+    max-width: 80%;
+  }
+  .about_choose_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .about_choose_image {
+    max-width: 100%;
+    max-height: auto;
+    /* border: 2px solid red; */
+    padding: 20px;
+  }
+  .about_choose_image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .about_choose_data {
+    max-width: 100%;
+  }
+  /* ################## about choose us bottom  ###################  */
+  .about_choose_bottom_container {
+    max-width: 100%;
+  }
+
+  .about_choose_bottom_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .about_choose_bottom_data {
+    /* border: 2px solid red; */
+    max-width: 100%;
+  }
+  .about_choose_bottom_image {
+    /* border: 2px solid green; */
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .choose_us {
+    background-attachment: scroll;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .swiper-slide {
+    height: 310px !important;
+    /* border: 2px solid red; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-slide {
+    max-height: 230px;
+    text-align: center;
+    font-size: 14px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 15px;
+    height: fit-content;
+    /* border: 2px solid blue; */
+    flex-direction: column;
+    padding: 5px !important;
+  }
+  .swiper-slide-image {
+    width: 100%;
+    height: 150px;
+    /* border: 2px solid blue; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+
+  .swiper-slide img {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 15px;
+  }
+}

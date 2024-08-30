@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assests/css/index.css">
+    <!-- <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./assests/css/responsive.css"> -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -56,60 +59,61 @@
 
             <!-- ########################################## swipper #################################  -->
 
+
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class=" swiper-slide-image">
-                            <img src="./assests/3.jpg" alt="">
+                            <img src="./assests/images/3.jpg" alt="">
 
                         </div>
                         <p>Sales Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/10.jpg" alt="">
+                            <img src="./assests/images/10.jpg" alt="">
 
                         </div>
                         <p>Service Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/5.jpg" alt="">
+                            <img src="./assests/images/5.jpg" alt="">
 
                         </div>
                         <p>Marketing Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/9.jpg" alt="">
+                            <img src="./assests/images/9.jpg" alt="">
 
                         </div>
                         <p>Experience Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/7.jpg" alt="">
+                            <img src="./assests/images/7.jpg" alt="">
 
                         </div>
                         <p>Analytic Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/8.jpg" alt="">
+                            <img src="./assests/images/8.jpg" alt="">
 
                         </div>
                         <p>Commerce Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/4.jpg" alt="">
+                            <img src="./assests/images/4.jpg" alt="">
 
                         </div>
                         <p>Healthcare Cloud</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/6.jpg" alt="">
+                            <img src="./assests/images/6.jpg" alt="">
 
                         </div>
                         <p>AI Cloud</p>
@@ -117,7 +121,7 @@
 
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./assests/11.jpg" alt="">
+                            <img src="./assests/images/11.jpg" alt="">
 
                         </div>
                         <p> Education Cloud</p>
@@ -134,6 +138,8 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+
+
             <!-- ############################################# WHY CHOOSE US IMAGE ######################################  -->
 
             <div class=" hero choose_us" data-aos="flip-down" data-aos-duration="2000">
@@ -147,7 +153,7 @@
             <div class="choose_container">
                 <div class="choose_content check">
                     <div class="choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/team2.jpg" alt="choose us">
+                        <img src="./assests/images/team2.jpg" alt="choose us">
                     </div>
 
                     <div class="choose_data check" data-aos="zoom-in" data-aos-duration="1500">
@@ -163,13 +169,13 @@
                         <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image" data-aos="fade-up-left" data-aos-duration="1500">
-                        <img src="./assests/customize.jpg" alt="choose us">
+                        <img src="./assests/images/customize.jpg" alt="choose us">
                     </div>
                 </div>
 
                 <div class="choose_content">
                     <div class="choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/result.jpg" alt="choose us">
+                        <img src="./assests/images/result.jpg" alt="choose us">
                     </div>
 
                     <div class="choose_data" data-aos="zoom-in" data-aos-duration="1500">
