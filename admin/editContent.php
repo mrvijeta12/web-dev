@@ -37,13 +37,6 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Content Layout</title>
     <link rel="stylesheet" href="./assets/css/dashboard.css">
-    <script>
-        function handleContainerClick(event, id) {
-            if (!event.target.classList.contains('edit-button')) {
-                window.location.href = 'viewContent.php?id=' + id;
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -61,8 +54,7 @@ $conn->close();
         @$doc->loadHTML($content);
         libxml_clear_errors();
 
-
-        echo "<div class='content-container' onclick='handleContainerClick(event, {$id})'>";
+        echo "<div class='content-container'>";
 
         // Separate div for the image
         echo "<div class='image-container'>";
@@ -100,8 +92,7 @@ $conn->close();
                             $anchorText = htmlspecialchars($anchorElement->nodeValue);
                             echo "<a href='{$href}' title='{$title}' target='{$target}' rel='{$rel}'>{$anchorText}</a>";
                         } else {
-                            // echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
-                            echo "<div class='text-content-para'><p>" . htmlspecialchars($node->nodeValue) . "</p></div>";
+                            echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
                         }
                     }
                 } else if (in_array($node->nodeName, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])) {
@@ -130,14 +121,13 @@ $conn->close();
 
         // Add Edit button
         if ($id > 0) {
-            echo "<form method='GET' action='editblog.php' class='edit-form'>";
+            echo "<form method='GET' action='editContent.php'>";
             echo "<input type='hidden' name='id' value='{$id}'>";
-            echo "<button type='submit' class='edit-button'>Edit</button>";
+            echo "<button type='submit'>Edit</button>";
             echo "</form>";
         }
 
         echo "</div>"; // End of content-container
-
     }
     ?>
 </body>

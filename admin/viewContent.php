@@ -13,19 +13,24 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch all content with ID
-$sql = "SELECT id, content FROM content_table ORDER BY id DESC";
-$result = $conn->query($sql);
+// Get the content ID from the URL
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-$contents = [];
+$sql = "SELECT content FROM content_table WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$content = "";
 if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $contents[] = $row;
-    }
+    $row = $result->fetch_assoc();
+    $content = $row['content'];
 } else {
-    $contents[] = ["id" => 0, "content" => "No content found."];
+    $content = "Content not found.";
 }
 
+$stmt->close();
 $conn->close();
 ?>
 
@@ -35,38 +40,22 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content Layout</title>
-    <link rel="stylesheet" href="./assets/css/dashboard.css">
-    <script>
-        function handleContainerClick(event, id) {
-            if (!event.target.classList.contains('edit-button')) {
-                window.location.href = 'viewContent.php?id=' + id;
-            }
-        }
-    </script>
+    <title>View Content</title>
+    <link rel="stylesheet" href="./assets/css/viewcontent.css">
 </head>
 
 <body>
     <?php include "navbar.php"; ?>
 
-    <?php
-    foreach ($contents as $row) {
-        $content = $row['content'];
-        $id = $row['id'];
-
+    <div class="view-content-container">
+        <?php
         $doc = new DOMDocument();
         libxml_use_internal_errors(true);
-
         $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
         @$doc->loadHTML($content);
         libxml_clear_errors();
 
-
-        echo "<div class='content-container' onclick='handleContainerClick(event, {$id})'>";
-
-        // Separate div for the image
         echo "<div class='image-container'>";
-
         $body = $doc->getElementsByTagName('body')->item(0);
         if ($body) {
             foreach ($body->childNodes as $node) {
@@ -80,12 +69,9 @@ $conn->close();
                 }
             }
         }
-
         echo "</div>"; // End of image-container
 
-        // Separate div for the text content
         echo "<div class='text-content'>";
-
         if ($body) {
             foreach ($body->childNodes as $node) {
                 if ($node->nodeName === 'p') {
@@ -100,8 +86,7 @@ $conn->close();
                             $anchorText = htmlspecialchars($anchorElement->nodeValue);
                             echo "<a href='{$href}' title='{$title}' target='{$target}' rel='{$rel}'>{$anchorText}</a>";
                         } else {
-                            // echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
-                            echo "<div class='text-content-para'><p>" . htmlspecialchars($node->nodeValue) . "</p></div>";
+                            echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
                         }
                     }
                 } else if (in_array($node->nodeName, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])) {
@@ -125,21 +110,10 @@ $conn->close();
                 }
             }
         }
-
         echo "</div>"; // End of text-content
+        ?>
+    </div>
 
-        // Add Edit button
-        if ($id > 0) {
-            echo "<form method='GET' action='editblog.php' class='edit-form'>";
-            echo "<input type='hidden' name='id' value='{$id}'>";
-            echo "<button type='submit' class='edit-button'>Edit</button>";
-            echo "</form>";
-        }
-
-        echo "</div>"; // End of content-container
-
-    }
-    ?>
 </body>
 
 </html>

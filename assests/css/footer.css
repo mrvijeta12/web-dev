@@ -1,5 +1,9 @@
+body {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
 .footer_wrapper {
-  /* border: 2px solid red; */
+  /* border: 2px solid black; */
   margin-top: 50px;
   width: 100%;
   /* padding: 20px; */
@@ -29,10 +33,13 @@
     rgba(7, 3, 53, 1) 97.5%
   );
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  /* border: 2px solid red; */
 }
 
 .connection p {
   font-size: 1.25rem;
+  font-family: Montserrat-SemiBold;
 }
 .connection img {
   width: 30px;
@@ -49,11 +56,6 @@ li {
   list-style-type: none;
 }
 
-a {
-  text-decoration-line: none;
-  color: white;
-}
-
 /* ############################### Footer data  Section ############################### */
 
 .footer_data {
@@ -65,6 +67,7 @@ a {
   /* border: 2px solid red; */
   background-color: #272727;
   color: white;
+  width: 100%;
 }
 
 .footer_data_box {
@@ -80,9 +83,23 @@ a {
   background-color: #272727;
   /* border: 2px solid black; */
 }
+.footer_data_box h1 {
+  font-family: "Montserrat-Bold";
+
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
 
 .footer_data_box a {
+  text-decoration-line: none;
   color: white;
+  font-size: 1rem;
+  font-family: Montserrat-Regular;
+}
+.footer_data_box p {
+  color: white;
+  font-size: 1rem;
+  font-family: Montserrat-Regular;
 }
 
 .footer_data_box li {
@@ -104,7 +121,7 @@ a {
 /* ############################## copyrights ############################### */
 
 .footer_wrapper .content {
-  /* border: 2px solid black; */
+  /* border: 2px solid red; */
   /* background-color: #333;
       color: white; */
 
@@ -113,6 +130,8 @@ a {
   color: white;
   background-color: #272727;
   line-height: 30px;
+  width: 100%;
+  font-family: Montserrat-Medium;
 }
 
 /* ############################### RESPONSIVE SECTION ############################### */
@@ -123,6 +142,9 @@ a {
     flex-direction: column;
     /* border: 2px solid red; */
     /* padding: 20px; */
+  }
+  .footer_data h1 {
+    margin-bottom: 10px;
   }
 }
 
@@ -136,3 +158,15 @@ a {
     font-size: 1rem;
   }
 }
+
+/* .nav_logo a,
+.footer_data h1 {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 3px;
+  border-bottom: none !important;
+  font-size: 2rem !important;
+} */

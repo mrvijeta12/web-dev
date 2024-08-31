@@ -3,48 +3,45 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body,
+html {
+  max-width: 100%;
+}
+body {
+  font-family: Montserrat, Arial, sans-serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   background-color: white;
-  color: black !important;
+  color: black;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 100%;
+  max-width: 100%;
+  /* border: 2px solid black; */
 }
 
 .navbar a {
   background-color: white;
   color: black;
-  font-family: "Josefin Sans", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-right: 20px;
-}
+  font-family: "Montserrat-Regular", sans-serif;
 
-.nav_logo a,
-.footer_data h1 {
-  cursor: pointer;
-  font-family: "Josefin Sans", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 3px;
-  border-bottom: none !important;
-  font-size: 2rem !important;
+  margin-right: 20px;
+  font-size: 18px;
 }
 
 .nav_logo a {
   text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 2rem;
+
   color: black;
+  font-family: Montserrat-Bold;
+  letter-spacing: 3px;
 }
 
 .nav-links {
@@ -56,7 +53,6 @@
 
 .nav-link {
   text-decoration: none;
-  font-size: 18px;
 }
 
 .nav-link.active {

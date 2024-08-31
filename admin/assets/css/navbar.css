@@ -1,40 +1,46 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   background-color: white;
-  color: black;
+  color: black !important;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  max-width: 100%;
-  /* border: 2px solid red; */
+  width: 100%;
 }
+
 .navbar a {
   background-color: white;
   color: black;
-
+  font-family: "Josefin Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin-right: 20px;
 }
-.nav_logo a {
-  cursor: pointer;
 
+.nav_logo a,
+.footer_data h1 {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   letter-spacing: 3px;
-  border-bottom: none;
-  font-size: 2rem;
+  border-bottom: none !important;
+  font-size: 2rem !important;
 }
 
 .nav_logo a {
-  /* color: white; */
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
@@ -46,32 +52,22 @@
   list-style: none;
   gap: 20px;
   color: black;
-  background-color: transparent;
-  height: 100%;
-  /* border: 2px solid red; */
 }
 
 .nav-link {
-  /* color: white; */
   text-decoration: none;
   font-size: 18px;
-  /* border: 2px solid red; */
-  padding: 8px 4px;
 }
 
 .nav-link.active {
   border-bottom: 2px solid black;
 }
-.nav-link.hover {
-  border-bottom: 2px solid black;
-}
 
-/* ###### Mobile styles ########### */
+/* Mobile styles */
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
-
   margin-right: 20px;
 }
 
@@ -79,35 +75,30 @@
   height: 3px;
   width: 25px;
   background-color: black;
-  /* color: black; */
+  color: white;
   margin: 4px 0;
   transition: 0.4s;
 }
 
-.nav-links {
-  transition: transform 0.4s ease-in-out;
-}
-
-.nav-links.active {
-  transform: translateX(0);
-}
-/* ################## responsive ################# */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    right: 0%;
+    position: fixed; /* Position the nav-links fixed to keep within viewport */
+    left: 0; /* Align it to the left edge */
     top: 63px;
     height: 100vh;
-    width: 100%;
+    width: 100%; /* Take full width of viewport */
     background-color: white;
     color: black;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    transform: translateX(100%);
-    gap: 30px;
-    /* border: 2px solid red; */
-    padding-top: 20px;
+    justify-content: flex-start;
+    transform: translateX(-100%); /* Hide off-screen initially */
+    transition: transform 0.4s ease-in-out;
+    padding-top: 30px;
+  }
+
+  .nav-links.active {
+    transform: translateX(0); /* Slide in when active */
   }
 
   .menu-toggle {
