@@ -1,9 +1,7 @@
 <?php
 include_once "./session.php";
 check_login();
-?>
 
-<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -15,19 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Handle deletion if a POST request is received
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
-    $delete_id = intval($_POST['delete_id']);
-    $delete_sql = "DELETE FROM content_table WHERE id = ?";
-    $stmt = $conn->prepare($delete_sql);
-    $stmt->bind_param("i", $delete_id);
-    $stmt->execute();
-    $stmt->close();
-    header("Location: " . $_SERVER['PHP_SELF']); // Redirect to the same page to refresh the content
-    exit();
-}
-
-// Fetch all content
+// Fetch all content with ID
 $sql = "SELECT id, content FROM content_table ORDER BY id DESC";
 $result = $conn->query($sql);
 
@@ -51,94 +37,72 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Content Layout</title>
     <link rel="stylesheet" href="./assets/css/deleteblog.css">
+    <script>
+        function deleteContent(id) {
+            // Directly submit the form to delete the content
+            document.getElementById('delete-form-' + id).submit();
+        }
+    </script>
 </head>
 
 <body>
-
     <?php include "navbar.php"; ?>
 
-    <?php foreach ($contents as $content): ?>
-        <div class="content-container">
-            <div class="image-container">
-                <?php
-                $doc = new DOMDocument();
-                libxml_use_internal_errors(true);
-                $contentHtml = mb_convert_encoding($content['content'], 'HTML-ENTITIES', 'UTF-8');
-                @$doc->loadHTML($contentHtml);
-                libxml_clear_errors();
-                $body = $doc->getElementsByTagName('body')->item(0);
+    <?php foreach ($contents as $row): ?>
+        <?php
+        $content = $row['content'];
+        $id = $row['id'];
 
-                if ($body) {
-                    foreach ($body->childNodes as $node) {
-                        if ($node->nodeName === 'p') {
-                            $imgElement = $node->getElementsByTagName('img')->item(0);
-                            if ($imgElement) {
-                                $src = htmlspecialchars($imgElement->getAttribute('src'));
-                                $alt = htmlspecialchars($imgElement->getAttribute('alt'));
-                                echo "<img src='{$src}' alt='{$alt}'>";
-                            }
-                        }
-                    }
-                }
-                ?>
+        // Load HTML content and remove images
+        $doc = new DOMDocument();
+        libxml_use_internal_errors(true);
+        $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
+        @$doc->loadHTML($content);
+        libxml_clear_errors();
+
+        $xpath = new DOMXPath($doc);
+        $images = $xpath->query('//img');
+
+        // Extract and display images separately
+        $imageHtml = '';
+        foreach ($images as $img) {
+            $src = htmlspecialchars($img->getAttribute('src'));
+            $alt = htmlspecialchars($img->getAttribute('alt'));
+            $imageHtml .= "<img src='{$src}' alt='{$alt}'>";
+        }
+
+        // Remove images from content
+        foreach ($images as $img) {
+            $img->parentNode->removeChild($img);
+        }
+
+        // Get the cleaned content
+        $textContent = $doc->saveHTML();
+        ?>
+
+        <div class='content-container'>
+
+            <!-- Image Container -->
+            <div class='image-container'>
+                <?php echo $imageHtml; ?>
             </div>
 
-            <div class="text-content">
-                <?php
-                if ($body) {
-                    foreach ($body->childNodes as $node) {
-                        if ($node->nodeName === 'p') {
-                            $imgElement = $node->getElementsByTagName('img')->item(0);
-                            if (!$imgElement) {
-                                $anchorElement = $node->getElementsByTagName('a')->item(0);
-                                if ($anchorElement) {
-                                    $href = htmlspecialchars($anchorElement->getAttribute('href'));
-                                    $title = htmlspecialchars($anchorElement->getAttribute('title'));
-                                    $target = htmlspecialchars($anchorElement->getAttribute('target'));
-                                    $rel = htmlspecialchars($anchorElement->getAttribute('rel'));
-                                    $anchorText = htmlspecialchars($anchorElement->nodeValue);
-                                    echo "<a href='{$href}' title='{$title}' target='{$target}' rel='{$rel}'>{$anchorText}</a>";
-                                } else {
-                                    echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
-                                }
-                            }
-                        } else if (in_array($node->nodeName, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])) {
-                            echo "<{$node->nodeName}>" . htmlspecialchars($node->nodeValue) . "</{$node->nodeName}>";
-                        } else if ($node->nodeName === 'ul') {
-                            echo "<ul>";
-                            foreach ($node->childNodes as $li) {
-                                if ($li->nodeName === 'li') {
-                                    echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                                }
-                            }
-                            echo "</ul>";
-                        } else if ($node->nodeName === 'ol') {
-                            echo "<ol>";
-                            foreach ($node->childNodes as $li) {
-                                if ($li->nodeName === 'li') {
-                                    echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                                }
-                            }
-                            echo "</ol>";
-                        }
-                    }
-                }
-                ?>
-
+            <!-- Text Content -->
+            <div class='text-content'>
+                <?php echo $textContent; ?>
             </div>
+
             <!-- Delete Button -->
-            <div class="btn">
-                <?php if ($content['id'] != 0): ?>
-                    <form method="POST" class="delete-form">
-                        <input type="hidden" name="delete_id" value="<?= htmlspecialchars($content['id']) ?>">
-                        <button type="submit">Delete</button>
-                    </form>
-                <?php endif; ?>
+            <?php if ($id > 0): ?>
+                <form id='delete-form-<?= $id ?>' method='POST' action='deletebloglogic.php' style='display: none;'>
+                    <input type='hidden' name='delete-id' value='<?= $id ?>'>
+                </form>
+                <button type='button' onclick='deleteContent(<?= $id ?>)' class='delete-button'>Delete</button>
+            <?php endif; ?>
 
-            </div>
         </div>
-    <?php endforeach; ?>
 
+    <?php endforeach; ?>
 </body>
 
 </html>

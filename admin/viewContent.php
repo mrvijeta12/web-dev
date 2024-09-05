@@ -13,25 +13,49 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Get the content ID from the URL
+// Get the ID from the query string
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-$sql = "SELECT content FROM content_table WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id);
-$stmt->execute();
-$result = $stmt->get_result();
+// Fetch content based on the ID
+$sql = "SELECT id, content FROM content_table WHERE id = $id";
+$result = $conn->query($sql);
 
-$content = "";
+$blog = null;
 if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $content = $row['content'];
+    $blog = $result->fetch_assoc();
 } else {
-    $content = "Content not found.";
+    echo "No content found.";
+    exit;
 }
 
-$stmt->close();
 $conn->close();
+
+// Extract images from content
+$content = $blog['content'];
+$doc = new DOMDocument();
+libxml_use_internal_errors(true);
+$content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
+@$doc->loadHTML($content);
+libxml_clear_errors();
+
+$xpath = new DOMXPath($doc);
+$images = $xpath->query('//img');
+
+// Prepare image HTML
+$imageHtml = '';
+foreach ($images as $img) {
+    $src = htmlspecialchars($img->getAttribute('src'));
+    $alt = htmlspecialchars($img->getAttribute('alt'));
+    $imageHtml .= "<img src='{$src}' alt='{$alt}' style='width: 100%; max-width: 600px; margin-bottom: 10px;'>";
+}
+
+// Remove images from content
+foreach ($images as $img) {
+    $img->parentNode->removeChild($img);
+}
+
+// Get the cleaned content
+$textContent = $doc->saveHTML();
 ?>
 
 <!DOCTYPE html>
@@ -41,79 +65,27 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Content</title>
-    <link rel="stylesheet" href="./assets/css/viewcontent.css">
+    <link rel="stylesheet" href="./assets/css/viewContent.css">
+
 </head>
 
 <body>
-    <?php include "navbar.php"; ?>
+    <!-- Navigation Bar -->
+    <?php include "./navbar.php"; ?>
+    <div class="container">
+        <!-- Image Container -->
+        <div class="image-container">
+            <?php echo $imageHtml; ?>
+        </div>
 
-    <div class="view-content-container">
-        <?php
-        $doc = new DOMDocument();
-        libxml_use_internal_errors(true);
-        $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
-        @$doc->loadHTML($content);
-        libxml_clear_errors();
+        <!-- Text Content -->
+        <div class="text-content">
+            <?php echo $textContent; ?>
+        </div>
 
-        echo "<div class='image-container'>";
-        $body = $doc->getElementsByTagName('body')->item(0);
-        if ($body) {
-            foreach ($body->childNodes as $node) {
-                if ($node->nodeName === 'p') {
-                    $imgElement = $node->getElementsByTagName('img')->item(0);
-                    if ($imgElement) {
-                        $src = htmlspecialchars($imgElement->getAttribute('src'));
-                        $alt = htmlspecialchars($imgElement->getAttribute('alt'));
-                        echo "<img src='{$src}' alt='{$alt}'>";
-                    }
-                }
-            }
-        }
-        echo "</div>"; // End of image-container
-
-        echo "<div class='text-content'>";
-        if ($body) {
-            foreach ($body->childNodes as $node) {
-                if ($node->nodeName === 'p') {
-                    $imgElement = $node->getElementsByTagName('img')->item(0);
-                    if (!$imgElement) { // Only output non-image paragraphs here
-                        $anchorElement = $node->getElementsByTagName('a')->item(0);
-                        if ($anchorElement) {
-                            $href = htmlspecialchars($anchorElement->getAttribute('href'));
-                            $title = htmlspecialchars($anchorElement->getAttribute('title'));
-                            $target = htmlspecialchars($anchorElement->getAttribute('target'));
-                            $rel = htmlspecialchars($anchorElement->getAttribute('rel'));
-                            $anchorText = htmlspecialchars($anchorElement->nodeValue);
-                            echo "<a href='{$href}' title='{$title}' target='{$target}' rel='{$rel}'>{$anchorText}</a>";
-                        } else {
-                            echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
-                        }
-                    }
-                } else if (in_array($node->nodeName, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])) {
-                    echo "<{$node->nodeName}>" . htmlspecialchars($node->nodeValue) . "</{$node->nodeName}>";
-                } else if ($node->nodeName === 'ul') {
-                    echo "<ul>";
-                    foreach ($node->childNodes as $li) {
-                        if ($li->nodeName === 'li') {
-                            echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                        }
-                    }
-                    echo "</ul>";
-                } else if ($node->nodeName === 'ol') {
-                    echo "<ol>";
-                    foreach ($node->childNodes as $li) {
-                        if ($li->nodeName === 'li') {
-                            echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                        }
-                    }
-                    echo "</ol>";
-                }
-            }
-        }
-        echo "</div>"; // End of text-content
-        ?>
+        <!-- Back Button -->
+        <a href="dashboard.php" class="back-button">Back to Dashboard</a>
     </div>
-
 </body>
 
 </html>

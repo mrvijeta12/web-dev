@@ -57,6 +57,7 @@ const menuToggle = document.querySelector("#mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
+  // alert("hi");
   navLinks.classList.toggle("active");
   menuToggle.classList.toggle("active");
 });

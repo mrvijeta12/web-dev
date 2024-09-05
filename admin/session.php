@@ -4,20 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Initialize variables
-// $is_logged_in = false;
-// $user_email = '';
 
-// if (isset($_SESSION['email'])) {
-//     $is_logged_in = true;
-//     $user_email = htmlspecialchars($_SESSION['email']);
-// }
 
 // Function to check if a user is logged in
 function check_login()
 {
     if (!isset($_SESSION['email'])) {
-        header("Location: login.php");
+        header("Location: logout.php");
         exit();
     }
 }

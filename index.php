@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./assests/css/index.css">
+    <link rel="stylesheet" href="assests/css/index.css">
 
     <link
         rel="stylesheet"
@@ -24,7 +24,7 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ################################# HERO SECTION ##################################  -->
-            <div class=" hero">
+            <div class="hero">
                 <h1>Transform Your Business with Expert Salesforce Solutions</h1>
                 <h2>Empowered by a Team of Industry Leaders from Top MNCs</h2>
             </div>

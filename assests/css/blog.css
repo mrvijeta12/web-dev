@@ -1,0 +1,207 @@
+.wrapper {
+  /* border: 2px solid red; */
+  max-width: 100%;
+}
+.content-container {
+  margin: 50px auto;
+  display: flex;
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
+  cursor: pointer;
+  max-height: 300px;
+  position: relative;
+  /* border-top: 1px solid black; */
+  border-bottom: 1px solid black;
+  /* border: 2px solid red; */
+  max-width: 80%;
+  margin-bottom: 50px;
+  padding-bottom: 11px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.about {
+  width: 100%;
+  height: 400px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url(../images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-left: 30px;
+  gap: 20px;
+  color: white;
+  /* color: grey; */
+  /* margin-bottom: 50px; */
+  /* border: 2px solid red; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.about h1 {
+  font-size: 2rem;
+}
+
+.about h2 {
+  font-size: 1.25rem;
+}
+.about_container {
+  text-align: center; /* Center-align the heading and circles */
+  /* margin-top: 50px; */
+  margin: 30px;
+}
+
+.about_container h2 {
+  font-size: 2rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center; /* Center the circles horizontally */
+  gap: 10px; /* Space between the circles */
+  margin-top: 5px; /* Space between the heading and the circles */
+}
+
+.circle {
+  width: 15px; /* Set the width of the circles */
+  height: 15px; /* Set the height of the circles (same as width for round shape) */
+  background-color: #333; /* Background color of the circles */
+  border-radius: 50%; /* Makes the div round */
+}
+.text-content li,
+.text-content ol {
+  list-style-position: inside;
+}
+
+.image-container {
+  flex: 0 0 25%; /* Takes 40% of the container's width */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: center; */
+  padding: 10px;
+  /* background-color: #f9f9f9; */
+  max-width: 40%; /* Ensures the container does not exceed 40% of the container width */
+  /* border: 2px solid black; */
+}
+
+.image-container img {
+  width: 200px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images are not distorted */
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  /* border: 2px solid black; */
+  /* border: 2px solid black; */
+}
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edit-form {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  margin: 0; /* Remove any default margin */
+  text-align: center;
+}
+
+.edit-button {
+  /* background-color: #007bff; */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  /* background-color: #0056b3; */
+}
+
+.read-more {
+  position: absolute;
+  top: 186px;
+  left: 55px;
+  background-color: rgb(7, 3, 53, 1);
+  color: white;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    max-height: 500px;
+  }
+
+  .image-container {
+    width: 100%; /* Takes full width on smaller screens */
+    max-width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* justify-content: center; */
+  }
+
+  .image-container img {
+    width: 100%; /* Adjust image size for smaller screens */
+    height: 240px;
+  }
+
+  .text-content {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .read-more {
+    position: absolute;
+    top: 206px;
+    left: 25px;
+    /* background-color: #0056b3; */
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    margin: 50px auto;
+  }
+  .text-content {
+    padding: 5px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

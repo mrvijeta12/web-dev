@@ -31,7 +31,7 @@ check_login();
             <li><a href="dashboard.php" class="nav-link <?php echo ($current_page == 'dashboard.php') ? 'active' : ''; ?>">Dashboard</a></li>
 
             <li><a href="addblog.php" class="nav-link <?php echo ($current_page == 'addblog.php') ? 'active' : ''; ?>">Add Blog</a></li>
-            <li><a href="editblog.php" class="nav-link <?php echo ($current_page == 'editblog.php') ? 'active' : ''; ?>">Edit Blog</a></li>
+            <!-- <li><a href="editblog.php" class="nav-link <?php echo ($current_page == 'editblog.php') ? 'active' : ''; ?>">Edit Blog</a></li> -->
             <li><a href="deleteblog.php" class="nav-link <?php echo ($current_page == 'deleteblog.php') ? 'active' : ''; ?>">Delete Blog</a></li>
             <li><a href="logout.php" class="nav-link >">Log Out</a></li>
 

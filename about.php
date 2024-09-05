@@ -129,15 +129,7 @@
                         <p>Tony</p>
                         <p>Salesforce Developer</p>
                     </div>
-                    <!-- 
-                <div class="swiper-slide" data-aos="flip-left" data-aos-duration="3000">
-                    <div class="swiper-slide-image">
-                        <img src="./assests/11.jpg" alt="">
 
-                    </div>
-                    <p>Sales Cloud</p>
-                    <p> Education Cloud</p>
-                </div> -->
 
 
 

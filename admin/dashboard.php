@@ -44,102 +44,69 @@ $conn->close();
             }
         }
     </script>
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
 
 <body>
     <?php include "navbar.php"; ?>
 
-    <?php
-    foreach ($contents as $row) {
+    <?php foreach ($contents as $row): ?>
+        <?php
         $content = $row['content'];
         $id = $row['id'];
 
+        // Load HTML content and remove images
         $doc = new DOMDocument();
         libxml_use_internal_errors(true);
-
         $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
         @$doc->loadHTML($content);
         libxml_clear_errors();
 
+        $xpath = new DOMXPath($doc);
+        $images = $xpath->query('//img');
 
-        echo "<div class='content-container' onclick='handleContainerClick(event, {$id})'>";
-
-        // Separate div for the image
-        echo "<div class='image-container'>";
-
-        $body = $doc->getElementsByTagName('body')->item(0);
-        if ($body) {
-            foreach ($body->childNodes as $node) {
-                if ($node->nodeName === 'p') {
-                    $imgElement = $node->getElementsByTagName('img')->item(0);
-                    if ($imgElement) {
-                        $src = htmlspecialchars($imgElement->getAttribute('src'));
-                        $alt = htmlspecialchars($imgElement->getAttribute('alt'));
-                        echo "<img src='{$src}' alt='{$alt}'>";
-                    }
-                }
-            }
+        // Extract and display images separately
+        $imageHtml = '';
+        foreach ($images as $img) {
+            $src = htmlspecialchars($img->getAttribute('src'));
+            $alt = htmlspecialchars($img->getAttribute('alt'));
+            $imageHtml .= "<img src='{$src}' alt='{$alt}'>";
         }
 
-        echo "</div>"; // End of image-container
-
-        // Separate div for the text content
-        echo "<div class='text-content'>";
-
-        if ($body) {
-            foreach ($body->childNodes as $node) {
-                if ($node->nodeName === 'p') {
-                    $imgElement = $node->getElementsByTagName('img')->item(0);
-                    if (!$imgElement) { // Only output non-image paragraphs here
-                        $anchorElement = $node->getElementsByTagName('a')->item(0);
-                        if ($anchorElement) {
-                            $href = htmlspecialchars($anchorElement->getAttribute('href'));
-                            $title = htmlspecialchars($anchorElement->getAttribute('title'));
-                            $target = htmlspecialchars($anchorElement->getAttribute('target'));
-                            $rel = htmlspecialchars($anchorElement->getAttribute('rel'));
-                            $anchorText = htmlspecialchars($anchorElement->nodeValue);
-                            echo "<a href='{$href}' title='{$title}' target='{$target}' rel='{$rel}'>{$anchorText}</a>";
-                        } else {
-                            // echo "<p>" . htmlspecialchars($node->nodeValue) . "</p>";
-                            echo "<div class='text-content-para'><p>" . htmlspecialchars($node->nodeValue) . "</p></div>";
-                        }
-                    }
-                } else if (in_array($node->nodeName, ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])) {
-                    echo "<{$node->nodeName}>" . htmlspecialchars($node->nodeValue) . "</{$node->nodeName}>";
-                } else if ($node->nodeName === 'ul') {
-                    echo "<ul>";
-                    foreach ($node->childNodes as $li) {
-                        if ($li->nodeName === 'li') {
-                            echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                        }
-                    }
-                    echo "</ul>";
-                } else if ($node->nodeName === 'ol') {
-                    echo "<ol>";
-                    foreach ($node->childNodes as $li) {
-                        if ($li->nodeName === 'li') {
-                            echo "<li>" . htmlspecialchars($li->nodeValue) . "</li>";
-                        }
-                    }
-                    echo "</ol>";
-                }
-            }
+        // Remove images from content
+        foreach ($images as $img) {
+            $img->parentNode->removeChild($img);
         }
 
-        echo "</div>"; // End of text-content
+        // Get the cleaned content
+        $textContent = $doc->saveHTML();
+        ?>
 
-        // Add Edit button
-        if ($id > 0) {
-            echo "<form method='GET' action='editblog.php' class='edit-form'>";
-            echo "<input type='hidden' name='id' value='{$id}'>";
-            echo "<button type='submit' class='edit-button'>Edit</button>";
-            echo "</form>";
-        }
+        <div class='content-container' onclick='handleContainerClick(event, <?= $id ?>)'>
 
-        echo "</div>"; // End of content-container
+            <!-- Image Container -->
+            <div class='image-container'>
+                <?php echo $imageHtml; ?>
+            </div>
 
-    }
-    ?>
+            <!-- Text Content -->
+            <div class='text-content'>
+                <?php echo $textContent; ?>
+            </div>
+
+            <!-- Edit Button -->
+            <?php if ($id > 0): ?>
+                <form method='GET' action='editblog.php' class='edit-form'>
+                    <input type='hidden' name='id' value='<?= $id ?>'>
+                    <button type='submit' class='edit-button'>Edit</button>
+                </form>
+            <?php endif; ?>
+
+        </div>
+
+    <?php endforeach; ?>
 </body>
 
 </html>

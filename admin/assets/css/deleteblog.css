@@ -1,168 +1,109 @@
-/* .content-container {
-  display: flex;
-  align-items: flex-start;
-  
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- 
-  gap: 40px;
-  max-width: 90%;
-  
-}
-
-.content-container img {
-  max-width: 200px;
-  max-height: 200px;
-  margin-right: 20px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.content-container .text-content {
-  flex: 1;
- 
-}
-
-.content-container h1,
-.content-container h2,
-.content-container h3,
-.content-container h4,
-.content-container h5,
-.content-container h6 {
-  margin: 0 0 10px 0;
-  color: #2c3e50;
-}
-
-.content-container p {
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin: 0 0 10px 0;
-}
-
-.content-container ul,
-.content-container ol {
-  margin: 0 0 10px 20px;
-  color: #34495e;
- 
-}
-
-.content-container li {
-  margin: 0 0 5px 0;
-}
-
-.content-container a {
-  color: #2980b9;
-  text-decoration: none;
-}
-
-.content-container a:hover {
-  text-decoration: underline;
-}
-button {
-  padding: 10px 20px;
- 
-  border-radius: 8px;
-  background-color: rgb(7, 3, 53, 1);
-  color: white;
-  border: 2px solid white;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 668px) {
-  .content-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-} */
-
-/* new adde  */
-
 .content-container {
+  margin: 50px 30px;
   display: flex;
-  align-items: flex-start;
-  margin: 20px auto;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  gap: 20px;
-  max-width: 80%;
-  height: 300px;
   overflow: hidden;
-  position: relative;
-  gap: 30px;
-}
-
-.content-container img {
-  max-width: 200px;
-  max-height: 200px;
-  margin-right: 15px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.content-container .text-content {
-  /* overflow-y: auto; */
-}
-.content-container h1,
-.content-container h2,
-.content-container h3,
-.content-container h4,
-.content-container h5,
-.content-container h6 {
-  margin: 0 0 10px 0;
-  color: #2c3e50;
-}
-.text-content {
-  margin-right: 50px;
-}
-
-.content-container p {
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin: 0 0 10px 0;
-}
-
-.content-container ul,
-.content-container ol {
-  margin: 0 0 10px 20px;
-  color: #34495e;
-}
-
-.content-container li {
-  margin: 0 0 5px 0;
-}
-
-button {
-  padding: 10px 20px;
-  border-radius: 8px;
-  background-color: rgb(7, 3, 53, 1);
-  color: white;
-  border: 2px solid white;
   cursor: pointer;
+  max-height: 300px;
+  position: relative; /* Allows absolute positioning of the delete button */
+}
+
+li,
+ol {
+  list-style-position: inside;
+}
+
+.image-container {
+  flex: 0 0 25%; /* Takes 25% of the container's width */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 10px;
+  max-width: 40%; /* Ensures the container does not exceed 40% of the container width */
+}
+
+.image-container img {
+  width: 200px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images are not distorted */
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.text-content {
+  flex: 1;
+  padding: 15px;
+  overflow: hidden;
+  max-height: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+.delete-form {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  margin: 0; /* Remove any default margin */
+  text-align: center;
+}
+
+.delete-button {
+  /* color: #fff; */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-@media screen and (max-width: 668px) {
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .content-container {
     flex-direction: column;
-    gap: 10px;
+    max-height: 400px;
   }
-}
-@media screen and (max-width: 450px) {
-  .content-container {
-    /* flex-direction: column;
-    gap: 10px; */
-    margin: 10px;
+
+  .image-container {
+    width: 80%; /* Takes full width on smaller screens */
+    max-width: 80%;
+    padding: 5px;
+  }
+
+  .image-container img {
+    width: 150px; /* Adjust image size for smaller screens */
+    height: 100px;
+  }
+
+  .text-content {
+    padding: 10px;
     max-width: 100%;
   }
-  .content-container img {
-    max-width: 150px;
-    max-height: 150px;
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    margin: 50px 10px;
+  }
+  .text-content {
+    padding: 5px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .image-container img {
+    width: 100px; /* Further adjust image size for very small screens */
+    height: 100px;
+    margin: 2px;
   }
 }
