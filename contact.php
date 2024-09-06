@@ -70,13 +70,7 @@
         </div>
     </div>
 
-    <!-- Success Message Modal -->
-    <div id="successModal" class="modal">
-        <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
-            <p>Message has been sent successfully!</p>
-        </div>
-    </div>
+
 
     <?php include('footer.php'); ?>
 

@@ -38,20 +38,20 @@
                         <div class="counter " data-target="150">
                             <span class="count">0</span>+
                             <div>
-                                <span class="counter-text">Projects Completed</span>
+                                <span id="counter-text">Projects Completed</span>
                             </div>
                         </div>
                         <div class="counter" data-target="250">
                             <span class="count">0</span>+
                             <div>
-                                <span class="counter-text">Happy Clients</span>
+                                <span id="counter-text">Happy Clients</span>
                             </div>
                         </div>
                         <div class="counter" data-target="300">
                             <span class="count">0</span>+
 
                             <div>
-                                <span class="counter-text">Members</span>
+                                <span id="counter-text">Members</span>
                             </div>
                         </div>
                     </div>

@@ -3,18 +3,14 @@ body {
 }
 
 .footer_wrapper {
-  /* border: 2px solid black; */
   margin-top: 50px;
   width: 100%;
-  /* padding: 20px; */
   border-radius: 20px 20px 0px 0px;
-  /* background-color: #333; */
   background-color: #fff;
 }
 
 /* ################################### Get In Touch ################################# */
 .connection {
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,14 +23,13 @@ body {
         rgba(66, 144, 251, 1) 100.3%
       ); */
 
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle 610px at 5.2% 51.6%,
     rgba(5, 8, 114, 1) 0%,
     rgba(7, 3, 53, 1) 97.5%
-  );
-  border-radius: 20px 20px 0px 0px;
+  ); */
+  background-color: #00a1e0;
   width: 100%;
-  /* border: 2px solid red; */
 }
 
 .connection p {
@@ -64,24 +59,16 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
-  /* border: 2px solid red; */
-  background-color: #272727;
+  background-color: #00a1e0;
   color: white;
   width: 100%;
 }
 
 .footer_data_box {
-  /* background-color: #333; */
   max-width: 400px;
-  /* height: 250px; */
-  /* border: 2px solid blue; */
   flex: 1;
-  /* overflow: hidden; */
-  /* padding: 20px; */
-  /* color: white; */
   color: white;
-  background-color: #272727;
-  /* border: 2px solid black; */
+  background-color: #00a1e0;
 }
 .footer_data_box h1 {
   font-family: "Montserrat-Bold";
@@ -121,14 +108,9 @@ body {
 /* ############################## copyrights ############################### */
 
 .footer_wrapper .content {
-  /* border: 2px solid red; */
-  /* background-color: #333;
-      color: white; */
-
   border-top: 1px solid white !important;
-  /* color: black; */
   color: white;
-  background-color: #272727;
+  background-color: #00a1e0;
   line-height: 30px;
   width: 100%;
   font-family: Montserrat-Medium;
@@ -139,10 +121,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer_data {
     display: flex;
-    /* gap: 20px; */
     flex-direction: column;
-    /* border: 2px solid red; */
-    /* padding: 20px; */
   }
   .footer_data h1 {
     margin-bottom: 10px;
@@ -159,15 +138,3 @@ body {
     font-size: 1rem;
   }
 }
-
-/* .nav_logo a,
-.footer_data h1 {
-  cursor: pointer;
-  font-family: "Josefin Sans", sans-serif !important;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 3px;
-  border-bottom: none !important;
-  font-size: 2rem !important;
-} */

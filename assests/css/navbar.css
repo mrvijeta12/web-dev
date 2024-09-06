@@ -38,7 +38,6 @@ body {
 .nav_logo a {
   text-decoration: none;
   font-size: 2rem;
-
   color: black;
   font-family: Montserrat-Bold;
   letter-spacing: 3px;
@@ -53,10 +52,12 @@ body {
 
 .nav-link {
   text-decoration: none;
+  letter-spacing: 3px;
 }
 
 .nav-link.active {
   border-bottom: 2px solid black;
+  font-weight: 900;
 }
 
 /* Mobile styles */
@@ -78,23 +79,31 @@ body {
 
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed; /* Position the nav-links fixed to keep within viewport */
-    left: 0; /* Align it to the left edge */
-    top: 63px;
+    position: fixed;
+    left: 0;
+    top: 68.67px;
     height: 100vh;
-    width: 100%; /* Take full width of viewport */
-    background-color: white;
+    width: 100%;
+    background-color: #00a1e0;
     color: black;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    transform: translateX(-100%); /* Hide off-screen initially */
+    transform: translateX(-100%);
     transition: transform 0.4s ease-in-out;
-    padding-top: 30px;
+    padding: 30px 20px;
+  }
+  .nav-links a {
+    background-color: #00a1e0;
+    color: white;
+  }
+  .nav-link.active {
+    border-bottom: 2px solid white;
+    font-weight: 900;
   }
 
   .nav-links.active {
-    transform: translateX(0); /* Slide in when active */
+    transform: translateX(0);
   }
 
   .menu-toggle {

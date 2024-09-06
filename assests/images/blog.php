@@ -69,7 +69,7 @@ $conn->close();
                 $content = $row['content'];
                 $id = $row['id'];
 
-
+                // Load HTML content and remove images
                 $doc = new DOMDocument();
                 libxml_use_internal_errors(true);
                 $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
@@ -79,13 +79,13 @@ $conn->close();
                 $xpath = new DOMXPath($doc);
                 $images = $xpath->query('//img');
 
-
+                // Extract and display images separately
                 $imageHtml = '';
                 if ($images->length > 0) {
-                    $img = $images->item(0);
+                    $img = $images->item(0); // Get the first image
                     $src = $img->getAttribute('src');
 
-
+                    // If the src doesn't already start with '.', add './admin/' prefix
                     if (strpos($src, './') !== 0) {
                         $src = './admin/' . ltrim($src, '/');
                     }
@@ -94,38 +94,35 @@ $conn->close();
                     $imageHtml .= "<img src='{$src}' alt='{$alt}'>";
                 }
 
-
+                // Remove images from content
                 foreach ($images as $img) {
                     $img->parentNode->removeChild($img);
                 }
 
-
+                // Get the cleaned content
                 $textContent = $doc->saveHTML();
 
-
+                // Create a "Read More" link
                 $readMoreLink = "<a href='blogDetail.php?id={$id}' class='read-more'>Read More</a>";
-
                 ?>
 
 
 
                 <div class='content-container' onclick='handleContainerClick(event, <?= $id ?>)' data-aos="zoom-in" data-aos-duration="1500">
 
-
+                    <!-- Image Container -->
                     <div class='image-container'>
                         <?php echo $imageHtml; ?>
                     </div>
 
-
+                    <!-- Text Content -->
                     <div class='text-content'>
                         <?php echo $textContent; ?>
-
+                        <!-- Read More Button -->
 
                     </div>
                     <div class='read-more-container'>
-                        <?php
-                        echo $readMoreLink;
-                        ?>
+                        <?php echo $readMoreLink; ?>
                     </div>
 
                 </div>

@@ -136,12 +136,12 @@
             <!-- ########################################## WHY CHOOSE US CONTENT ######################################### -->
 
             <div class="choose_container">
-                <div class="choose_content check">
+                <div class="choose_content">
                     <div class="choose_image" data-aos="fade-up-right" data-aos-duration="1500">
-                        <img src="./assests/images/team2.jpg" alt="choose us">
+                        <img src="./assests/images/experience-team.jpg" alt="choose us">
                     </div>
 
-                    <div class="choose_data check" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="choose_data" data-aos="zoom-in" data-aos-duration="1500">
                         <h1>Experienced Teams</h1>
                         <p>Our team brings a wealth of experience in Salesforce development, with over two years of hands-on expertise in crafting customized solutions that drive business success. We excel in optimizing CRM platforms, implementing seamless integrations, and delivering user-friendly interfaces. Our commitment to innovation and client satisfaction ensures that we consistently exceed expectations, helping businesses achieve their goals efficiently and effectively.</p>
                     </div>
@@ -177,20 +177,20 @@
                 <div class="counter" data-target="150">
                     <span class="count">0</span>+
                     <div>
-                        <span class="counter-text">Projects Completed</span>
+                        <span id="counter-text">Projects Completed</span>
                     </div>
                 </div>
                 <div class="counter" data-target="250">
                     <span class="count">0</span>+
                     <div>
-                        <span class="counter-text">Happy Clients</span>
+                        <span id="counter-text">Happy Clients</span>
                     </div>
                 </div>
                 <div class="counter" data-target="300">
                     <span class="count">0</span>+
 
                     <div>
-                        <span class="counter-text">Members</span>
+                        <span id="counter-text">Members</span>
                     </div>
                 </div>
             </div>

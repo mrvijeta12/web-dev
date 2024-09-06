@@ -9,7 +9,7 @@
   /* border: 1px solid #ccc; */
   /* border-radius: 8px; */
   /* overflow: hidden; */
-  cursor: pointer;
+  /* cursor: pointer; */
   max-height: 300px;
   position: relative;
   /* border-top: 1px solid black; */
@@ -156,6 +156,7 @@
   padding: 8px 12px;
   text-decoration: none;
   max-width: fit-content;
+  cursor: pointer;
 }
 
 /* Responsive Design */

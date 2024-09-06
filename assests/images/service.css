@@ -2,16 +2,20 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
   font-family: Arial, sans-serif;
+  /* margin: 0;
+  padding: 0; */
 }
 .wrapper {
   width: 100%;
-
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
 }
 .wrapper h1 {
   font-family: "Montserrat-Bold", sans-serif;
@@ -35,13 +39,17 @@ body {
 .content {
   padding: 20px;
   text-align: center;
+  /* border: 2px solid black; */
 }
+
+/* #################################### NAVBAR SECTION ############################################  */
 
 /* ################################################ HERO SECTION ########################################  */
 
 .about {
   width: 100%;
   height: 400px;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,22 +62,33 @@ body {
   padding-left: 30px;
   gap: 20px;
   color: white;
+  /* color: grey; */
+  /* margin-bottom: 50px; */
+  /* border: 2px solid red; */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* ############################################# OUR SERVICE #############################  */
 .serive_counter_wrapper {
   width: 100%;
+  /* border: 2px solid red; */
   display: flex;
+  /* padding: 80px 30px; */
   margin-bottom: 100px;
+
   color: white;
   flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
 
 .service_counter_child {
   width: 50%;
-  padding: 60px 30px;
+  /* border: 2px solid black; */
+  padding: 150px 30px;
+  /* height: 100%; */
   background-color: rgb(7, 3, 53, 1);
+  /* flex-grow: 1 1 400px; */
+  /* display: flex; */
 }
 .service_content {
   color: black;
@@ -79,7 +98,13 @@ body {
   margin-bottom: 30px;
 }
 
+/* .service_counter {
+  padding: 0px;
+  height: 100%;
+  border: 2px solid red;
+} */
 .counter_wrapper_service {
+  /* border: 2px solid red; */
   background-color: rgb(7, 3, 53, 1);
   display: flex;
   justify-content: center;
@@ -87,8 +112,10 @@ body {
   flex-wrap: wrap;
   width: 100%;
   gap: 50px;
+  /* border: 2px solid red; */
 }
-#counter-text {
+.counter-text {
+  /* margin-top: 10px; */
   font-size: 1rem !important;
 }
 .counter_wrapper_service span {
@@ -99,18 +126,22 @@ body {
 .counter {
   color: white;
   background-color: rgb(7, 3, 53, 1);
+  /* border: 2px solid white; */
   text-align: center;
+  /* border: 2px solid white; */
 }
 
 .service_counter {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid green; */
 }
 
 /* ################### our services ##############  */
 .about_container {
   text-align: center;
+
   margin-bottom: 30px;
 }
 
@@ -120,23 +151,26 @@ body {
 
 .circle-container {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 5px;
+  justify-content: center; /* Center the circles horizontally */
+  gap: 10px; /* Space between the circles */
+  margin-top: 5px; /* Space between the heading and the circles */
 }
 
 .circle {
-  width: 15px;
-  height: 15px;
-  background-color: #333;
-  border-radius: 50%;
+  width: 15px; /* Set the width of the circles */
+  height: 15px; /* Set the height of the circles (same as width for round shape) */
+  background-color: #333; /* Background color of the circles */
+  border-radius: 50%; /* Makes the div round */
 }
 
 /*  ########################################### swipeer ################################################  */
 
 .swiper {
   width: 100%;
+  /* height: 100%; */
+  /* border: 2px solid red; */
   margin-bottom: 80px;
+  /* padding: 0px 40px; */
   background: #f7f7f7;
   padding: 50px 40px !important;
 }
@@ -148,8 +182,10 @@ body {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+  /* padding: 10px; */
   border-radius: 15px;
   height: fit-content;
+  /* border: 2px solid blue; */
   flex-direction: column;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -157,32 +193,40 @@ body {
 .swiper-slide-image {
   width: 100%;
   height: 200px;
+  /* border: 2px solid blue; */
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
 }
 
 .swiper-slide img {
+  /* display: block; */
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
   border-radius: 15px;
 }
 
 .swiper-slide p {
   margin-top: 10px;
+  /* border: 2px solid black; */
 }
 /* ############################### why choose us  ########################################  */
 
 .service_choose_us {
   position: relative;
-  background-image: url("../images/service.jpg");
+  background-image: url("../images/service.jpg"); /* Replace with your actual image URL */
   background-size: cover;
   background-position: center;
+  /* width: 100%;  */
+  /* height: 100vh; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   padding: 30px 0px 30px 0px;
+  /* background-attachment: fixed; */
   text-align: center;
   margin-bottom: 100px;
 }
@@ -209,6 +253,7 @@ body {
 }
 
 .services_container {
+  /* border: 2px solid red; */
   display: flex;
   width: 80%;
   gap: 50px;
@@ -219,17 +264,21 @@ body {
 .services_child {
   max-width: 250px;
   height: 350px;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   padding: 20px 10px;
   border: 1px solid white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .services_child img {
   width: 70px;
   height: 70px;
   margin-bottom: 20px;
+  /* border: 1px solid red; */
 }
 
 .services_child h1 {
@@ -239,8 +288,10 @@ body {
 /* ##############3 testimonial ############## */
 
 .testimonial_wrapper {
+  /* border: 2px solid red; */
   padding: 50px 20px;
   background-color: #f7f7f7;
+  margin-bottom: 100px;
 }
 .testimonial_wrapper h1 {
   font-size: 2rem;
@@ -248,11 +299,14 @@ body {
 
 .testimonial_wrapper h2 {
   margin-bottom: 30px;
+  /* border: 2px solid red; */
 }
 .testimonial_slider {
+  /* border: 2px solid blue; */
   width: 100%;
   margin: 0px auto;
   display: flex;
+  /* flex-grow: 1; */
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
@@ -260,9 +314,13 @@ body {
 }
 
 .testimonial_item {
+  /* border: 2px solid black; */
   max-width: 250px;
+  /* min-width: 150px; */
+  /* gap: 30px; */
   display: flex;
   flex-direction: column;
+  /* flex-grow: 1; */
 }
 .testimonial_item h5 {
   margin: 10px 0px;
@@ -279,21 +337,30 @@ body {
 .about_choose_container {
   width: 80%;
   margin: 0px auto 50px;
+  /* border: 2px solid red; */
 }
 
 .about_choose_content {
+  /* padding: 20px; */
   display: flex;
+
+  /* height: auto; */
   gap: 30px;
+  /* border: 2px solid yellow; */
   margin-bottom: 20px;
+  /* flex-wrap: wrap; */
   justify-content: center;
+  /* border: 2px solid black; */
 }
 
 .about_choose_image {
   max-width: 450px;
   max-height: 100%;
+  /* border: 2px solid green; */
 }
 .about_choose_data {
   max-width: 450px;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -304,22 +371,24 @@ body {
 }
 
 .check {
+  /* border: 2px solid red; */
   width: 100%;
   margin-top: 0px;
   padding: 50px 20px;
+  /* background-color: #d3d3d3; */
   background-color: #f7f7f7;
 }
 
-/*  ################################ RESPONSIVE SECTION ################################  */
-@media screen and (max-width: 1025px) {
-  .counter_wrapper_service span {
-    font-size: 1rem !important;
-  }
-  #counter-text {
-    font-size: 0.7rem !important;
-  }
-}
+/* .details {
+    color: white;
+  } */
+/* .details h1 {
+    font-size: 2rem;
+  } */
 
+/*  ######################################## FOOTER SECTION ####################################  */
+
+/*  ################################ RESPONSIVE SECTION ################################  */
 @media screen and (max-width: 950px) {
   .about_choose_content {
     display: flex;
@@ -336,17 +405,6 @@ body {
   }
   .testimonial_item img {
     margin: 20px 0px;
-  }
-  .serive_counter_wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .service_counter_child {
-    width: 100%;
-  }
-  .service_counter {
-    padding: 80px 0px;
   }
 }
 
@@ -367,25 +425,52 @@ body {
     flex-direction: column-reverse;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .serive_counter_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .service_counter_child {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 593px) {
-  .counter_wrapper_service {
-    gap: 20px;
-  }
-  .counter_wrapper_service span {
-    font-size: 1rem !important;
-  }
-  #counter-text {
-    font-size: 0.7rem !important;
+  .swiper-slide {
+    height: 280px !important;
+    /* border: 2px solid red; */
   }
 }
 @media screen and (max-width: 480px) {
-  .about_container h2 {
-    font-family: "Montserrat-Regular", sans-serif;
+  .swiper-slide {
+    max-height: 230px;
+    text-align: center;
+    font-size: 14px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 15px;
+    height: fit-content;
+    /* border: 2px solid blue; */
+    flex-direction: column;
+    padding: 5px !important;
   }
-  .services_container {
+  .swiper-slide-image {
     width: 100%;
+    height: 150px;
+    /* border: 2px solid blue; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
   }
-  .services_child {
+
+  .swiper-slide img {
     width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
   }
 }
