@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3, // Default number of slides for larger screens
   spaceBetween: 20,
   autoplay: {
-    delay: 1500,
+    delay: 2500,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3, // Show 2 slides for screens smaller than or equal to 768px
       spaceBetween: 20,
     },
-    480: {
+    593: {
       slidesPerView: 2, // Show 2 slides for screens smaller than or equal to 768px
       spaceBetween: 20,
     },
@@ -69,11 +69,8 @@ window.addEventListener("load", checkScroll); // Check on page load in case alre
 
 // ################ navbar ######################
 
-const menuToggle = document.querySelector("#mobile-menu");
 const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
-  // alert("hi");
   navLinks.classList.toggle("active");
-  menuToggle.classList.toggle("active");
 });

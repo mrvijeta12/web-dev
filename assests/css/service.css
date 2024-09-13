@@ -9,6 +9,7 @@ body {
 }
 .wrapper {
   width: 100%;
+  margin-top: 90px;
 
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@ body {
 .wrapper h1 {
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 2rem;
+  color: #000042;
 }
 .wrapper p {
   font-family: "Montserrat-Regular", sans-serif;
@@ -26,9 +28,15 @@ body {
 .wrapper h2 {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 1.25rem;
+  color: #000042;
 }
 .wrapper h5 {
   font-family: "Montserrat-Bold", sans-serif;
+}
+.about h1,
+.about h2,
+.service_choose_us h1 {
+  color: white;
 }
 
 /* CONTENT SECTION  */
@@ -41,16 +49,16 @@ body {
 
 .about {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/servicce.jpg);
+  background: url(../../images/mohamed-aziz-landoulsi-EGMTqLQHLYk-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   padding-left: 30px;
   gap: 20px;
   color: white;
@@ -128,7 +136,7 @@ body {
 .circle {
   width: 15px;
   height: 15px;
-  background-color: #333;
+  background-color: #000432;
   border-radius: 50%;
 }
 
@@ -154,6 +162,12 @@ body {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.swiper-slide a {
+  text-decoration: none;
+  /* border: 2px solid red; */
+  width: 100%;
+  color: black;
+}
 .swiper-slide-image {
   width: 100%;
   height: 200px;
@@ -175,7 +189,7 @@ body {
 
 .service_choose_us {
   position: relative;
-  background-image: url("../images/service.jpg");
+  background-image: url("../../images/service.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -217,19 +231,21 @@ body {
   justify-content: center;
 }
 .services_child {
-  max-width: 250px;
+  max-width: 280px;
   height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 10px;
   border: 1px solid white;
+  border-radius: 8px;
 }
 
 .services_child img {
   width: 70px;
   height: 70px;
   margin-bottom: 20px;
+  border-radius: 6px;
 }
 
 .services_child h1 {
@@ -241,6 +257,7 @@ body {
 .testimonial_wrapper {
   padding: 50px 20px;
   background-color: #f7f7f7;
+  margin-bottom: 60px;
 }
 .testimonial_wrapper h1 {
   font-size: 2rem;
@@ -319,6 +336,11 @@ body {
     font-size: 0.7rem !important;
   }
 }
+@media screen and (max-width: 966px) {
+  .swiper-slide {
+    height: 280px !important;
+  }
+}
 
 @media screen and (max-width: 950px) {
   .about_choose_content {
@@ -351,6 +373,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .about {
+    height: 500px;
+  }
   .card-container {
     display: flex;
     gap: 20px;
@@ -387,5 +412,8 @@ body {
   }
   .services_child {
     width: 100%;
+  }
+  .about {
+    height: 400px;
   }
 }

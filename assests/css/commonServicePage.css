@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  /* border: 2px solid red; */
+  margin-top: 90px;
+}
+
+.service-content-data h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #000042;
+  width: fit-content;
+  border-bottom: 2px solid #000042;
+}
+
+.service-wrapper strong {
+  color: #000042;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.service-content-wrapper {
+  /* border: 2px solid black; */
+  width: 100%;
+  /* margin-top: 150px; */
+  padding: 20px;
+  display: flex;
+  /* letter-spacing: 1px; */
+  gap: 20px;
+  height: 100%;
+}
+
+.service {
+  width: 50%;
+  min-height: 100%;
+  /* border: 2px solid red; */
+}
+
+.service-content-image {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  /* height: 100%; */
+}
+
+.service-content-data {
+  /* border: 2px solid black; */
+}
+
+.service-content-image img {
+  width: 100%;
+  min-height: 70%;
+}
+
+.service-content-data p {
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.service-content-data ul li::marker {
+  color: #000042;
+}
+
+.service-content-data li {
+  list-style-type: disc;
+  /* padding-left: 20px; */
+  margin-bottom: 10px;
+  line-height: 25px;
+  /* list-style-position: inside; */
+  font-family: "Montserrat-Regular", sans-serif;
+}
+.book {
+  text-decoration: none;
+  width: 100%;
+
+  /* border: 2px solid red; */
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
+}
+.book a {
+  border-radius: 8px;
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 50%;
+  background-color: #000042;
+  padding: 12px 8px;
+  color: white;
+  font-family: "Montserrat-Regular", sans-serif;
+  word-spacing: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 966px) {
+  .service-content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    /* border: 2px solid red; */
+    padding: 20px 40px;
+    /* margin-top: 90px; */
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service-content-image {
+    padding: 0px;
+  }
+
+  .service-content-image img {
+    max-height: 400px;
+  }
+  .book {
+    padding: 0px 40px;
+  }
+  .book a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 966px) {
+  .book a {
+    font-size: 1rem;
+  }
+}

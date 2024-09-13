@@ -12,10 +12,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
 }
 .wrapper h1 {
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 2rem;
+  color: #000432;
 }
 
 .wrapper p,
@@ -34,6 +36,12 @@ button {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 1.25rem;
 }
+.about h1 {
+  color: white;
+}
+.contact_data_item label {
+  color: #000432;
+}
 
 /* CONTENT SECTION  */
 .content {
@@ -45,12 +53,12 @@ button {
 
 .about {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/contact.jpg);
+  background: url(../../images/rowen-smith-W7n7-Ppm8TY-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,6 +160,7 @@ input[type="submit"] {
   color: white;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 /*  ################################ RESPONSIVE SECTION ################################  */
@@ -167,8 +176,19 @@ input[type="submit"] {
     width: 80%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 593px) {
   .contact_data {
     padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    height: 400px;
   }
 }

@@ -10,9 +10,11 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
 }
 .wrapper h1 {
   font-family: "Montserrat-Bold", sans-serif;
+  color: #000042;
 }
 .wrapper p {
   font-family: "Montserrat-Regular", sans-serif;
@@ -21,6 +23,7 @@ body {
 
 .wrapper h2 {
   font-family: "Montserrat-Medium", sans-serif;
+  color: #000042;
 }
 /* CONTENT SECTION  */
 .content {
@@ -32,12 +35,12 @@ body {
 
 .hero {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/home.jpg);
+  background: url(../../images/home.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,16 +49,17 @@ body {
   gap: 20px;
   color: white;
   margin-bottom: 50px;
-  /* color: black; */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
   font-size: 2rem;
   width: 100%;
+  color: white;
 }
 .hero h2 {
   font-size: 1.25rem;
+  color: white;
 }
 
 /* ############################################# OUR SERVICE #############################  */
@@ -80,7 +84,7 @@ body {
 .circle {
   width: 15px;
   height: 15px;
-  background-color: #333;
+  background-color: #000432;
   border-radius: 50%;
 }
 
@@ -106,6 +110,12 @@ body {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.swiper-slide a {
+  text-decoration: none;
+  /* border: 2px solid red; */
+  width: 100%;
+  color: black;
+}
 .swiper-slide-image {
   width: 100%;
   height: 200px;
@@ -126,11 +136,11 @@ body {
 
 /* ############################### choose us image ########################################  */
 .choose_us {
-  height: 400px;
+  height: 400px !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../images/secondary-choose.jpg);
+  background: url(../../images/secondary-choose.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,6 +234,11 @@ body {
 }
 
 /*  ################################ RESPONSIVE SECTION ################################  */
+@media screen and (max-width: 966px) {
+  .swiper-slide {
+    height: 280px !important;
+  }
+}
 @media screen and (max-width: 950px) {
   /* ##### index  choose us bottom #####  */
   .choose_content {
@@ -254,6 +269,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 593px) {
   .counter_wrapper {
     gap: 20px;
@@ -281,5 +302,8 @@ body {
   .choose_container {
     max-width: 90%;
     margin: 0px auto;
+  }
+  .hero {
+    height: 400px;
   }
 }

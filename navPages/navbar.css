@@ -54,7 +54,6 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  /* overflow-y: auto; */
 
   height: 100%;
 }
@@ -137,7 +136,6 @@ body {
   margin: 0;
   z-index: 1;
   width: 330px;
-  overflow-y: auto;
 
   background-color: rgba(11, 92, 171, 1);
 }
@@ -224,7 +222,7 @@ body {
   .dropdown-menu {
     width: 80%;
     background-color: rgba(11, 92, 171, 1);
-    overflow-y: auto;
+
     height: auto;
   }
 

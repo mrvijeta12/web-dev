@@ -14,10 +14,12 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
 }
 .wrapper h1 {
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 2rem;
+  color: #000042;
 }
 .wrapper p {
   font-family: "Montserrat-Regular", sans-serif;
@@ -28,6 +30,7 @@ body {
 .wrapper h2 {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 1.25rem;
+  color: #000042;
 }
 
 /* CONTENT SECTION  */
@@ -40,12 +43,12 @@ body {
 
 .about {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/hero-about.jpg);
+  background: url(../../images/ayman-hallak-1wlvPzWQr1A-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,10 +62,12 @@ body {
 
 .about h1 {
   font-size: 2rem;
+  color: white;
 }
 
 .about h2 {
   font-size: 1.25rem;
+  color: white;
 }
 
 /* ############# our mission ########################## */
@@ -121,7 +126,7 @@ body {
 .circle {
   width: 15px;
   height: 15px;
-  background-color: #333;
+  background-color: #000432;
   border-radius: 50%;
 }
 
@@ -173,7 +178,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url(../images/q.jpg) !important;
+  background: url(../../images/q.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,7 +198,7 @@ body {
 .about_choose_bottom_container {
   width: 100%;
   background-color: #f7f7f7;
-  padding: 20px;
+  padding: 40px 60px;
 }
 
 .about_choose_bottom_content {
@@ -229,6 +234,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .about {
+    height: 500px;
+  }
   /* ############ about  our  mission################# */
   .about_choose_container {
     max-width: 80%;
@@ -285,5 +293,8 @@ body {
 @media screen and (max-width: 480px) {
   .about_container h2 {
     font-family: "Montserrat-Regular", sans-serif;
+  }
+  .about {
+    height: 400px;
   }
 }

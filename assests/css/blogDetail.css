@@ -1,10 +1,41 @@
 /* File: ./assets/css/viewContent.css */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: white;
+}
+.container h1 {
+  font-family: Montserrat-Bold;
+  color: #000042;
+}
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-family: Montserrat-SemiBold;
+  color: #000042;
+}
+.container p,
+.container li {
+  font-family: Montserrat-Regular;
+  /* line-height: 25px; */
+  margin-bottom: 10px;
+}
+
+.container strong {
+  font-family: Montserrat-SemiBold;
+  color: #000042;
+}
+.container ul li::marker,
+.container ol li::marker {
+  color: #000042;
 }
 
 .container {
@@ -20,6 +51,8 @@ body {
   gap: 20px;
   position: relative;
   padding-bottom: 60px; /* Ensure enough space for the button */
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 .text-content ul {
   /* border: 2px solid red; */
@@ -73,9 +106,9 @@ body {
   /* background-color: #0056b3; */
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
     padding-bottom: 80px; /* Increase padding to ensure button visibility */
   }

@@ -28,7 +28,7 @@ body {
     rgba(5, 8, 114, 1) 0%,
     rgba(7, 3, 53, 1) 97.5%
   ); */
-  background-color: #00a1e0;
+  background-color: rgba(11, 92, 171, 1);
   width: 100%;
 }
 
@@ -59,7 +59,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: #00a1e0;
+  background-color: rgba(11, 92, 171, 1);
   color: white;
   width: 100%;
 }
@@ -68,7 +68,7 @@ body {
   max-width: 400px;
   flex: 1;
   color: white;
-  background-color: #00a1e0;
+  background-color: rgba(11, 92, 171, 1);
 }
 .footer_data_box h1 {
   font-family: "Montserrat-Bold";
@@ -110,11 +110,12 @@ body {
 .footer_wrapper .content {
   border-top: 1px solid white !important;
   color: white;
-  background-color: #00a1e0;
+  background-color: rgba(11, 92, 171, 1);
   line-height: 30px;
   width: 100%;
   font-family: Montserrat-Medium;
   text-align: center;
+  padding: 20px;
 }
 
 /* ############################### RESPONSIVE SECTION ############################### */

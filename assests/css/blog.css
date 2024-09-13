@@ -1,7 +1,11 @@
 .wrapper {
   /* border: 2px solid red; */
   max-width: 100%;
+  background-color: #f7f7f7;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  margin-top: 90px;
 }
+
 .content-container {
   margin: 50px auto;
   display: flex;
@@ -10,25 +14,26 @@
   /* border-radius: 8px; */
   /* overflow: hidden; */
   /* cursor: pointer; */
-  max-height: 300px;
+  height: 230px;
   position: relative;
   /* border-top: 1px solid black; */
   border-bottom: 1px solid black;
   /* border: 2px solid red; */
-  max-width: 80%;
+  max-width: 50%;
   margin-bottom: 50px;
   padding-bottom: 11px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
 }
 .about {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../images/contact.jpg);
+  background: url(../../images/parrish-freeman-0d-z8cJGIR4-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,6 +61,7 @@
 
 .about_container h2 {
   font-size: 2rem;
+  color: #000042;
 }
 
 .circle-container {
@@ -66,9 +72,10 @@
 }
 
 .circle {
+  background-color: #000042;
   width: 15px; /* Set the width of the circles */
   height: 15px; /* Set the height of the circles (same as width for round shape) */
-  background-color: #333; /* Background color of the circles */
+
   border-radius: 50%; /* Makes the div round */
 }
 .text-content li,
@@ -106,6 +113,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
+
   /* border: 2px solid black; */
   /* border: 2px solid black; */
 }
@@ -116,13 +124,20 @@
 .text-content h5,
 .text-content h6 {
   margin-bottom: 10px;
+  color: #000042;
+  font-family: Montserrat-SemiBold;
 }
 
 .text-content p {
-  line-height: 25px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits the text to 8 lines */
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  font-family: Montserrat-Regular;
 }
 
 .edit-form {
@@ -147,7 +162,7 @@
 }
 
 .read-more {
-  position: absolute;
+  /* position: absolute;
   top: 186px;
   left: 55px;
   background-color: rgb(7, 3, 53, 1);
@@ -156,44 +171,35 @@
   padding: 8px 12px;
   text-decoration: none;
   max-width: fit-content;
-  cursor: pointer;
+  cursor: pointer; */
+}
+.read-more {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  color: #000042;
+}
+.read-more-container {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  font-family: Montserrat-Regular;
+}
+.read-more-container img {
+  width: 20px;
+  height: 16px;
+  margin-left: 4px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .content-container {
-    flex-direction: column;
-    max-height: 500px;
+    max-width: 90%;
   }
+}
 
-  .image-container {
-    width: 100%; /* Takes full width on smaller screens */
-    max-width: 100%;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    /* justify-content: center; */
-  }
-
-  .image-container img {
-    width: 100%; /* Adjust image size for smaller screens */
-    height: 240px;
-  }
-
-  .text-content {
-    padding: 10px;
-    max-width: 100%;
-  }
-  .read-more {
-    position: absolute;
-    top: 206px;
-    left: 25px;
-    /* background-color: #0056b3; */
-    color: white;
-    border-radius: 6px;
-    padding: 8px 12px;
-    text-decoration: none;
+@media screen and (max-width: 768px) {
+  .about {
+    height: 500px;
   }
 }
 
@@ -204,5 +210,9 @@
   .text-content {
     padding: 5px;
     font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .about {
+    height: 400px;
   }
 }
