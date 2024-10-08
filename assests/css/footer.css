@@ -3,10 +3,11 @@ body {
 }
 
 .footer_wrapper {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  background-color: #fff;
+  /* border-radius: 20px 20px 0px 0px; */
+  background-color: black;
+  border-top: 1px solid grey;
 }
 
 /* ################################### Get In Touch ################################# */
@@ -28,7 +29,7 @@ body {
     rgba(5, 8, 114, 1) 0%,
     rgba(7, 3, 53, 1) 97.5%
   ); */
-  background-color: rgba(11, 92, 171, 1);
+  background-color: black;
   width: 100%;
 }
 
@@ -59,19 +60,21 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: rgba(11, 92, 171, 1);
+  background-color: black;
   color: white;
   width: 100%;
+  padding-top: 40px;
 }
 
 .footer_data_box {
   max-width: 400px;
   flex: 1;
   color: white;
-  background-color: rgba(11, 92, 171, 1);
+  background-color: black;
 }
 .footer_data_box h1 {
   font-family: "Montserrat-Bold";
+  margin-bottom: 15px;
 
   font-size: 2rem;
   letter-spacing: 3px;
@@ -82,7 +85,21 @@ body {
   color: white;
   font-size: 1rem;
   font-family: Montserrat-Regular;
+  transition: color 0.3s ease;
 }
+.footer_data_box li a:hover {
+  color: #0363ff;
+}
+.footer_data_box li a:hover i {
+  color: #0363ff;
+}
+/* .footer_data_box li:hover {
+  letter-spacing: 1.5px;
+  
+} */
+/* .footer_data_box i:hover {
+  color: #e9ab04;
+} */
 .footer_data_box p {
   color: white;
   font-size: 1rem;
@@ -91,6 +108,10 @@ body {
 
 .footer_data_box li {
   margin-bottom: 10px;
+}
+.footer_data_box i {
+  color: white;
+  margin-right: 10px;
 }
 
 .contact_details {
@@ -110,12 +131,29 @@ body {
 .footer_wrapper .content {
   border-top: 1px solid white !important;
   color: white;
-  background-color: rgba(11, 92, 171, 1);
+  background-color: black;
   line-height: 30px;
   width: 100%;
   font-family: Montserrat-Medium;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row; */
+  height: fit-content;
+}
+.footer_wrapper .content i {
+  color: white;
+  margin-right: 10px;
+  font-size: 24px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 6px;
+}
+.footer_wrapper .content i:hover {
+  color: #0363ff;
+  border: 1px solid #0363ff;
 }
 
 /* ############################### RESPONSIVE SECTION ############################### */
@@ -126,6 +164,10 @@ body {
   }
   .footer_data h1 {
     margin-bottom: 10px;
+  }
+  .footer_wrapper .content {
+    flex-direction: column-reverse;
+    /* align-items: center; */
   }
 }
 

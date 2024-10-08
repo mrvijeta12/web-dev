@@ -9,13 +9,13 @@ body {
 }
 .wrapper {
   width: 100%;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 
   display: flex;
   flex-direction: column;
 }
 .wrapper h1 {
-  font-family: "Montserrat-Bold", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-size: 2rem;
   color: #000042;
 }
@@ -38,6 +38,10 @@ body {
 .service_choose_us h1 {
   color: white;
 }
+.about h1,
+.about h2 {
+  z-index: 2;
+}
 
 /* CONTENT SECTION  */
 .content {
@@ -45,7 +49,7 @@ body {
   text-align: center;
 }
 
-/* ################################################ HERO SECTION ########################################  */
+/* ############### HERO SECTION ########################################  */
 
 .about {
   width: 100%;
@@ -53,42 +57,86 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  background: url(../../images/mohamed-aziz-landoulsi-EGMTqLQHLYk-unsplash.jpg);
+  align-items: center;
+  background: url(../../images/hero-services.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  padding-left: 30px;
+  padding: 20px;
   gap: 20px;
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.about a {
+  padding: 15px 25px;
+  background-color: rgba(11, 92, 171, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25%;
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  z-index: 2;
+  border-radius: 40px;
+
+  background-color: #0363ff;
+  border: 2px solid #0363ff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.about a:hover {
+  background-color: hsl(217, 100%, 38%);
+  /* color: #E9AB04; */
+  /* color: black; */
+}
+.about h1 {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
-/* ############################################# OUR SERVICE #############################  */
+/* ##################### OUR SERVICE #############################  */
 .serive_counter_wrapper {
   width: 100%;
   display: flex;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   color: white;
   flex-wrap: wrap;
+  background-color: black;
+  margin-top: 50px;
 }
 
 .service_counter_child {
   width: 50%;
-  padding: 60px 30px;
-  background-color: rgb(7, 3, 53, 1);
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  /* border: 2px solid red; */
 }
 .service_content {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
 }
 .service_counter_child h1 {
   margin-bottom: 30px;
+  font-family: "Montserrat-Medium", sans-serif;
+  color: white;
 }
 
 .counter_wrapper_service {
-  background-color: rgb(7, 3, 53, 1);
+  background-color: #252734;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +154,7 @@ body {
 
 .counter {
   color: white;
-  background-color: rgb(7, 3, 53, 1);
+  background-color: #252734;
   text-align: center;
 }
 
@@ -114,16 +162,54 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid red; */
+  padding: 0px 80px;
+}
+.service_counter_image {
+  /* border: 2px solid white; */
+  width: 80%;
+  height: 100%;
+  position: relative;
+  border-radius: 6px;
+  /* background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  ); */
+
+  /* background-color: #0363ff;  */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(64, 64, 64) 90.2%,
+    rgb(0, 0, 0) 0%
+  );
+
+  /* background: linear-gradient(
+    109.6deg,
+    rgb(63, 61, 61) 78.9%,
+    rgba(0, 0, 0, 0.93) 11.2%
+  ); */
+}
+.service_counter img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 6px;
 }
 
 /* ################### our services ##############  */
 .about_container {
-  text-align: center;
-  margin-bottom: 30px;
+  /* text-align: center; */
+  /* margin-bottom: 30px; */
+  padding: 50px 30px;
 }
 
 .about_container h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  /* margin-top: 40px; */
 }
 
 .circle-container {
@@ -136,72 +222,78 @@ body {
 .circle {
   width: 15px;
   height: 15px;
-  background-color: #000432;
+  background-color: #0363ff;
   border-radius: 50%;
 }
 
-/*  ########################################### swipeer ################################################  */
+/* ############## SERVICES ############### */
 
-.swiper {
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0px 30px 50px;
   width: 100%;
-  margin-bottom: 80px;
-  background: #f7f7f7;
-  padding: 50px 40px !important;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex !important;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  height: fit-content;
+}
+
+.service_child {
+  width: 250px;
+  height: 275px;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  color: white;
+  /* cursor: pointer; */
+  /* height: auto; */
+  display: flex;
   flex-direction: column;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.swiper-slide a {
+.service_child h1 {
+  color: white;
+}
+.service_child a {
   text-decoration: none;
-  /* border: 2px solid red; */
-  width: 100%;
-  color: black;
-}
-.swiper-slide-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 15px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+  color: white;
+  padding: 4px 10px;
+  border: #0363ff;
+  background-color: #0363ff;
+  transition: color 0.3s ease;
+  border-radius: 4px;
+  margin-top: 15px;
+  display: inline-block;
+  width: 50%;
 }
 
-.swiper-slide p {
-  margin-top: 10px;
+.service_child a:hover {
+  background-color: hsl(217, 100%, 38%);
 }
-/* ############################### why choose us  ########################################  */
+
+/* ############## why choose us  ########################################  */
 
 .service_choose_us {
   position: relative;
-  background-image: url("../../images/service.jpg");
+  /* background-image: url("../../images/service.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 0px 30px 0px;
   text-align: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+  /* margin-top: 50px; */
+  background-color: black;
 }
 
-.service_choose_us::before {
+/* .service_choose_us::before {
   content: "";
   position: absolute;
   top: 0;
@@ -210,15 +302,16 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
-.service_choose_us h5 {
-  font-size: 14px;
+} */
+.service_choose_us h2 {
+  font-size: 24px;
+  color: white;
 }
 
 .service_choose_us > * {
   position: relative;
   z-index: 2;
-  color: white;
+  color: black;
   padding: 20px;
 }
 
@@ -237,8 +330,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 10px;
-  border: 1px solid white;
-  border-radius: 8px;
+  /* border: 1px solid #E9AB04; */
+  /* border-radius: 8px; */
+  background-color: #121212;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
 }
 
 .services_child img {
@@ -250,27 +346,92 @@ body {
 
 .services_child h1 {
   margin-bottom: 10px;
+  color: white;
+  font-size: 1.75rem;
+}
+/* ##### choose use content ########## */
+.choose_container {
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 50px 50px 0px 50px;
+  color: black;
+}
+
+.choose_content {
+  /* padding: 20px; */
+  display: flex;
+  gap: 30px;
+  margin: 0px auto 70px;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.choose_image {
+  width: 40%;
+  height: 350px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(64, 64, 64) 90.2%,
+    rgb(0, 0, 0) 0%
+  );
+  /* padding: 20px; */
+  position: relative;
+  border-radius: 8px;
+}
+
+.choose_image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 8px;
+}
+
+.choose_data {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  /* border: 2px solid red; */
+}
+.choose_data h1 {
+  color: white;
+}
+.choose_image img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ##############3 testimonial ############## */
 
 .testimonial_wrapper {
-  padding: 50px 20px;
-  background-color: #f7f7f7;
-  margin-bottom: 60px;
+  padding: 0px 30px 50px;
+  background-color: black;
+  margin-bottom: 80px;
+  /* border: 2px solid red; */
+  width: 100%;
 }
 .testimonial_wrapper h1 {
   font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+.testimonial_wrapper i {
+  color: #0363ff;
 }
 
 .testimonial_wrapper h2 {
   margin-bottom: 30px;
+  color: white;
 }
 .testimonial_slider {
   width: 100%;
   margin: 0px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
   text-align: center;
@@ -280,6 +441,22 @@ body {
   max-width: 250px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #2d3238;
+  padding: 10px;
+  /* background-color: white; */
+  /* background: #c9ccd3;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background-blend-mode: lighten; */
+
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  position: relative;
+  background-color: #121212;
+  color: white;
 }
 .testimonial_item h5 {
   margin: 10px 0px;
@@ -290,6 +467,13 @@ body {
   width: 70px;
   height: 70px;
   margin: 20px auto;
+}
+
+.testimonial_item .double {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
 }
 
 /* ############################## why choose us content  ##################################### */
@@ -336,11 +520,6 @@ body {
     font-size: 0.7rem !important;
   }
 }
-@media screen and (max-width: 966px) {
-  .swiper-slide {
-    height: 280px !important;
-  }
-}
 
 @media screen and (max-width: 950px) {
   .about_choose_content {
@@ -349,6 +528,36 @@ body {
     justify-content: center;
     align-items: center;
   }
+  /* ##### index  choose us bottom #####  */
+  .choose_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .choose_data {
+    width: 100%;
+  }
+  .choose_image {
+    width: 100%;
+    margin: 0px auto;
+    height: 300px;
+  }
+
+  .choose_content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .content_2 {
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 @media screen and (max-width: 815px) {
@@ -363,6 +572,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-bottom: 50px;
   }
   .service_counter_child {
     width: 100%;
@@ -370,11 +580,24 @@ body {
   .service_counter {
     padding: 80px 0px;
   }
+  .service_choose_us {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .about {
     height: 500px;
+  }
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
   }
   .card-container {
     display: flex;
@@ -387,10 +610,10 @@ body {
   .choose_us {
     background-attachment: scroll;
   }
-  .content_2 {
+  /* .content_2 {
     display: flex;
     flex-direction: column-reverse;
-  }
+  } */
 }
 @media screen and (max-width: 593px) {
   .counter_wrapper_service {
@@ -401,6 +624,14 @@ body {
   }
   #counter-text {
     font-size: 0.7rem !important;
+  }
+  .choose_image {
+    width: 100%;
+    max-height: 200px;
+  }
+  .choose_image img {
+    width: 100%;
+    max-height: 200px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -414,6 +645,17 @@ body {
     width: 100%;
   }
   .about {
-    height: 400px;
+    /* height: 400px; */
+  }
+  .choose_container {
+    padding: 30px 20px;
+  }
+  .choose_image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 8px;
   }
 }

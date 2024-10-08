@@ -3,17 +3,30 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+body,
+html {
+  scroll-behavior: smooth;
+}
 .service-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: space-between; */
   height: 100%;
   /* border: 2px solid red; */
-  margin-top: 90px;
+  /* margin-top: 90px; */
 }
 
+.service-content-wrapper {
+  /* border: 2px solid black; */
+  width: 100%;
+  /* margin-top: 150px; */
+  /* padding: 0px 20px; */
+  display: flex;
+  /* letter-spacing: 1px; */
+  gap: 20px;
+  height: 100%;
+}
 .service-content-data h1 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -21,6 +34,7 @@
   color: #000042;
   width: fit-content;
   border-bottom: 2px solid #000042;
+  text-transform: capitalize;
 }
 
 .service-wrapper strong {
@@ -28,20 +42,9 @@
   font-family: "Montserrat-Medium", sans-serif;
 }
 
-.service-content-wrapper {
-  /* border: 2px solid black; */
-  width: 100%;
-  /* margin-top: 150px; */
-  padding: 20px;
-  display: flex;
-  /* letter-spacing: 1px; */
-  gap: 20px;
-  height: 100%;
-}
-
 .service {
-  width: 50%;
-  min-height: 100%;
+  /* width: 50%;
+  min-height: 100%; */
   /* border: 2px solid red; */
 }
 
@@ -84,55 +87,252 @@
 .book {
   text-decoration: none;
   width: 100%;
+  margin-top: 10px;
 
   /* border: 2px solid red; */
 
   display: flex;
   justify-content: flex-end;
-  padding: 0px 20px;
+  /* padding: 20px 0px; */
 }
 .book a {
-  border-radius: 8px;
+  border-radius: 24px;
   font-size: 1.2rem;
   display: inline-block;
-  width: 50%;
-  background-color: #000042;
+  width: 100%;
+  background-color: #e9ab04;
   padding: 12px 8px;
   color: white;
   font-family: "Montserrat-Regular", sans-serif;
   word-spacing: 5px;
   text-align: center;
 }
+.book a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #e9ab04;
+}
 
-@media screen and (max-width: 966px) {
-  .service-content-wrapper {
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/web-development.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  gap: 20px;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+  z-index: 2;
+}
+.hero h2 {
+  font-size: 1.25rem;
+  color: white;
+  z-index: 2;
+}
+
+.hero a {
+  padding: 15px 25px;
+  background-color: rgba(11, 92, 171, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25%;
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  z-index: 2;
+  border-radius: 40px;
+
+  background-color: #e9ab04;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.hero a:hover {
+  background-color: white;
+  /* color: #E9AB04; */
+  color: black;
+  border: 2px solid #e9ab04;
+}
+
+.card-page {
+  display: flex;
+  width: 100%;
+  /* border: 2px solid red; */
+  /* padding-right: 30px; */
+  padding: 0px 20px 60px;
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  /* padding: 0px 20px ; */
+  width: 40%;
+  /* border: 2px solid red; */
+  flex-direction: column;
+}
+
+.card {
+  /* background-color: #f0f0f0; */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  /* max-width: 220px; */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* min-height: 220px; */
+  transition: all 0.3s ease;
+  /* border: 2px solid red; */
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card.active p {
+  color: #e9ab04;
+}
+.card-data p:hover {
+  color: #e9ab04;
+}
+.card.active {
+  color: #e9ab04;
+}
+
+.card-data {
+  display: flex;
+  /* border: 2px solid black; */
+  /* justify-content: center; */
+  align-items: flex-start;
+  text-align: left;
+  /* border: 2px solid red; */
+  padding: 20px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card-data p {
+  /* border: 2px solid red; */
+  /* max-width: fit-content; */
+  height: 100%;
+  color: #000042;
+  margin-left: 10px;
+}
+
+.card-data i {
+  color: #e9ab04;
+}
+.card-data img {
+  width: 30px;
+  height: 20px;
+  margin: 0px;
+}
+
+.content-container {
+  /* border: 1px solid #ddd; */
+  padding: 20px;
+  /* border-radius: 8px; */
+  background-color: white;
+  /* border: 2px solid black; */
+  /* min-width: 100%; */
+  /* margin-top: 70px; */
+  width: 70%;
+  /* height: 100%; */
+  margin: 0px auto;
+  /* text-align: justify; */
+}
+
+.card-container a {
+  text-decoration: none;
+  color: black;
+  height: fit-content !important;
+  display: inline-block;
+}
+
+.content-container.hidden {
+  display: none;
+}
+
+.service-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  width: 100%;
+}
+
+.service-content-image {
+  padding: 0px;
+}
+
+.service-content-image img {
+  max-height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-page {
     display: flex;
-    flex-direction: column-reverse;
-    /* border: 2px solid red; */
-    padding: 20px 40px;
-    /* margin-top: 90px; */
+    flex-direction: column;
   }
-
-  .service {
+  .card-container {
     width: 100%;
   }
-
-  .service-content-image {
-    padding: 0px;
+  .content-container {
+    width: 100%;
   }
-
   .service-content-image img {
-    max-height: 400px;
+    max-height: 300px;
   }
-  .book {
-    padding: 0px 40px;
-  }
+
   .book a {
     width: 100%;
   }
 }
 @media screen and (max-width: 966px) {
-  .book a {
+  /* .book a {
     font-size: 1rem;
+  } */
+}
+
+@media screen and (max-width: 593px) {
+  /* .service-content-image {
+    width: 100%;
+    max-height: 300px;
   }
+  .service-content-image img {
+    width: 100%;
+    max-height: 300px;
+  } */
 }

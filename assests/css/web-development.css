@@ -1,0 +1,506 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 90px; */
+}
+.wrapper h1 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 2rem;
+  color: #000042;
+}
+.wrapper p {
+  font-family: "Montserrat-Regular", sans-serif;
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+.wrapper h2 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 1.25rem;
+  color: #000042;
+}
+
+/* CONTENT SECTION  */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ################################################ HERO SECTION ########################################  */
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/hero-about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  gap: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* margin-bottom: 50px; */
+  text-align: center;
+}
+.about h1,
+.about h2 {
+  color: white;
+  z-index: 2;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.about a {
+  padding: 15px 25px;
+  background-color: rgba(11, 92, 171, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25%;
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  z-index: 2;
+  border-radius: 40px;
+
+  background-color: #e9ab04;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.about a:hover {
+  background-color: white;
+  /* color: #E9AB04; */
+  color: black;
+  border: 2px solid #e9ab04;
+}
+/* ############# our mission ########################## */
+
+.web-heading {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  text-align: center;
+}
+.web-heading h2 {
+  color: white;
+  font-family: Montserrat-SemiBold;
+}
+
+.swiper-slide-text-details {
+  display: flex;
+  flex-direction: column;
+}
+.swiper-slide-text-details p {
+  text-align: left;
+  width: 100%;
+  color: #858792;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.swiper-slide-text-details i {
+  margin-right: 10px;
+  color: #e9ab04;
+}
+
+.services_child a {
+  padding: 6px 10px;
+  /* background-color: rgba(11, 92, 171, 1); */
+  /* color: white; */
+  /* border: none; */
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 24px;
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  /* z-index: 2; */
+  /* border-radius: 40px; */
+
+  background-color: #e9ab04;
+  border: 2px solid #e9ab04;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.services_child a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ################### cards #################################  */
+.service_choose_us {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  /* margin-bottom: 100px; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.service_choose_us h5 {
+  font-size: 14px;
+}
+
+.service_choose_us > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+}
+
+.services_container {
+  display: flex;
+  width: 80%;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.services_child {
+  width: 280px;
+  /* height: 285px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  /* border: 1px solid grey; */
+  /* border-radius: 8px; */
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.services_child img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.services_child h1 {
+  margin-bottom: 10px;
+}
+.service_choose_us p {
+  color: black;
+}
+/* ############################################# OUR SERVICE #############################  */
+
+.about_container {
+  text-align: center;
+  /* margin-bottom: 30px; */
+  padding: 50px 0px;
+}
+
+.about_container h2 {
+  font-size: 2rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #000432;
+  border-radius: 50%;
+}
+
+/*  ########################################### swipeer ################################################  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 80px;
+  padding: 0px 40px;
+  background: white;
+  padding: 50px 40px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 15px; */
+  height: fit-content;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+}
+.swiper-slide-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.swiper-slide p {
+  margin-top: 10px;
+  color: black;
+}
+
+/* ############################### why choose us image  ########################################  */
+.choose_us {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../../images/secondary-choose.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  object-fit: cover;
+  object-position: center;
+}
+.choose_us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.choose_us h1 {
+  text-align: center;
+  color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+/* ############################## why choose us content bottom  ##################################### */
+
+.about_choose_bottom_container {
+  width: 100%;
+  /* background-color: #f7f7f7; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding: 40px;
+  margin: 0px auto;
+}
+
+.about_choose_bottom_content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.about_choose_bottom_image {
+  max-width: 50%;
+  max-height: 100%;
+}
+.about_choose_bottom_image img {
+  border-radius: 10px;
+}
+
+.culture-value-wrapper {
+  display: flex;
+  /* gap: 20px; */
+  padding: 0px 20px;
+  width: 100%;
+  /* border: 2px solid black; */
+  margin: 40px auto 60px;
+}
+.culture-value-child {
+  max-width: 50%;
+  /* border: 2px solid red; */
+}
+.cultuer-image {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.cultuer-image img {
+  width: 100%;
+  height: 100%;
+}
+.culture-data {
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: column;
+  padding: 0px 20px 20px;
+}
+.culture-data h2,
+.culture-data p {
+  margin-bottom: 15px;
+}
+
+.culture-data h2 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 2rem;
+  color: #000042;
+}
+.culture-data p {
+  line-height: 25px;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.culture-data li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+/*  ################################ RESPONSIVE SECTION ################################  */
+@media screen and (max-width: 950px) {
+  /* ##### about choose us bottom####  */
+  .about_choose_bottom_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .about_choose_bottom_data {
+    max-width: 100%;
+  }
+  .about_choose_bottom_image {
+    max-width: 100%;
+    max-height: auto;
+  }
+  .culture-value-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px auto 60px;
+  }
+  .culture-value-child {
+    min-width: 100%;
+  }
+  .cultuer-image img {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    height: 500px;
+  }
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  /* ############ about  our  mission################# */
+  .about_choose_container {
+    max-width: 80%;
+  }
+  .about_choose_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+  .about_choose_image {
+    max-width: 100%;
+    max-height: 200px;
+    padding: 0px;
+  }
+  .about_choose_image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .about_choose_data {
+    max-width: 100%;
+  }
+  /* ################## about choose us bottom  ###################  */
+  .about_choose_bottom_container {
+    max-width: 100%;
+  }
+
+  .about_choose_bottom_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .about_choose_bottom_data {
+    max-width: 100%;
+  }
+  .about_choose_bottom_image {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .choose_us {
+    background-attachment: scroll;
+    max-height: 300px;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about_container h2 {
+    font-family: "Montserrat-Regular", sans-serif;
+  }
+  /* .about {
+      height: 400px;
+    } */
+}

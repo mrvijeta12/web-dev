@@ -12,10 +12,10 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 }
 .wrapper h1 {
-  font-family: "Montserrat-Bold", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-size: 2rem;
   color: #000432;
 }
@@ -36,11 +36,13 @@ button {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 1.25rem;
 }
-.about h1 {
+.about h1,
+.about h2 {
   color: white;
+  z-index: 2;
 }
 .contact_data_item label {
-  color: #000432;
+  color: #2a2c39;
 }
 
 /* CONTENT SECTION  */
@@ -57,16 +59,57 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  background: url(../../images/rowen-smith-W7n7-Ppm8TY-unsplash.jpg);
+  align-items: center;
+  background: url(../../images/hero-contact.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-left: 30px;
+  padding: 20px;
   gap: 20px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.about a {
+  padding: 15px 25px;
+  background-color: rgba(11, 92, 171, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 25%;
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  z-index: 2;
+  border-radius: 40px;
+  
+  background-color: #E9AB04;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+}
+.about a:hover{
+background-color: white;
+  /* color: #E9AB04; */
+  color: black;
+  border: 2px solid #E9AB04;
+
+ 
+}
+.about h1 {
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
 /* ################## contact ################  */
@@ -101,17 +144,28 @@ button {
   width: 70px;
   height: auto;
   margin-bottom: 20px;
+  /* border-radius: 10px; */
 }
 
 .services_child h1 {
   margin-bottom: 10px;
+}
+.contact-data-wrapper{
+  width: 100%;
+  padding: 60px  40px;
+  /* background-color: antiquewhite; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
 }
 
 .contact_data {
   display: flex;
   gap: 20px;
   width: 100%;
-  padding: 60px 40px;
+  padding: 20px;
+  background-color: white;
+  margin: 0px auto;
+
 }
 
 .contact_data_item {
@@ -124,10 +178,10 @@ button {
 }
 
 .contact_data_item img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .contact_data_item label,
@@ -152,15 +206,21 @@ button {
 }
 
 input[type="submit"] {
-  width: 100%;
+  width: 30%;
   display: block;
-  padding: 15px;
+  padding: 8px 15px;
   font-size: 1rem;
-  background-color: rgb(7, 3, 53, 1);
+  background-color: #E9AB04;
+  border: 2px solid #E9AB04;
   color: white;
-  border-radius: 8px;
-  border: none;
+  border-radius: 24px;
+  /* border: none; */
   cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+
 }
 
 /*  ################################ RESPONSIVE SECTION ################################  */
@@ -181,14 +241,25 @@ input[type="submit"] {
   .about {
     height: 500px;
   }
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 593px) {
-  .contact_data {
-    padding: 0px;
+  input[type="submit"] {
+    width: 100%;
+    
   }
 }
 @media screen and (max-width: 480px) {
-  .about {
+  /* .about {
     height: 400px;
-  }
+  } */
 }
