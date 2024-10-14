@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="assests/css/heathcare.css">
+    <link rel="stylesheet" href="assests/css/industry.css">
     <!-- Swiper CSS CDN for carousel/slider functionality -->
     <link
         rel="stylesheet"
@@ -29,56 +29,89 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="hero-image">
+                    <img src="./images/healthcare-hero4.jpg" alt="">
+                </div>
+                <div class="hero-data">
+
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                </div>
             </div>
 
-            <!-- ########################## INTRODUCTION  ###################### -->
+            <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
                 <h1>Revolutionizing Healthcare Delivery with Our Comprehensive Software Development Services</h1>
                 <p>Our healthcare software development services are designed to enhance patient care, streamline operations, and improve overall healthcare delivery. By leveraging cutting-edge technology, data analytics, and user-centric design, we empower healthcare providers to meet the evolving needs of their patients, ensuring efficient, secure, and accessible healthcare solutions for all.</p>
             </section>
 
-            <!-- ###################### DETAILS ###################### -->
+
+
             <section class="detail">
                 <section class="detail-title detail-child">
-
-                    <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> cutome heathcare software development</p>
-                    <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> cutome heathcare software development</p>
-                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> cutome heathcare software development</p>
-                    <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> cutome heathcare software development</p>
-                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> cutome heathcare software development</p>
-                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> cutome heathcare software development</p>
-
-
+                    <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Healthcare Software Consulting</p>
+                    <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
+                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Heathcare Software Moderization</p>
+                    <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> Heathcare Software Integration</p>
+                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Heathcare eCommerce Development</p>
+                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Heathcare Software Product Development</p>
                 </section>
 
                 <section class="detail-description detail-child">
-
-
-
-                    <section id="content1" class="content active">
-                        This is the content for Anchor Tag 1.
+                    <section id="content1" class="content">
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Healthcare Software Consulting </h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                     <section id="content2" class="content">
-                        This is the content for Anchor Tag 2 vijeta varma.
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Custom Heathcare Software Development </h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                     <section id="content3" class="content">
-                        This is the content for Anchor Tag 3 vijeta varma.
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Heathcare Software Moderization </h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                     <section id="content4" class="content">
-                        This is the content for Anchor Tag 4 vijeta varma.
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Heathcare Software Integration </h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                     <section id="content5" class="content">
-                        This is the content for Anchor Tag 5 vijeta varma.
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Heathcare eCommerce Development</h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                     <section id="content6" class="content">
-                        This is the content for Anchor Tag 6 vijeta varma.
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Heathcare Software Product Development</h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
                     </section>
                 </section>
             </section>
+
+
 
 
             <!-- ######### Benefits ##########  -->
@@ -113,13 +146,9 @@
 
 
             <!-- ####### why choose us ########  -->
-            <div class="about_container">
+            <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Healthcare Software Development</h1>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+
             </div>
 
 
@@ -166,8 +195,9 @@
             </div>
             <!-- ######### who can avail ###### -->
 
-            <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Who Can Avail Our Healthcare Software Services</h1>
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Who Can Avail Our Healthcare Software Services</h1>
 
             </div>
 
@@ -237,8 +267,15 @@
 
 
             <!-- ######### Process ##########  -->
+
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Process We Follow To Develop Heathcare Software</h1>
+
+            </div>
+
             <div class="swiper mySwiper">
-                <h1>Process We Follow To Develop Heathcare Software</h1>
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -274,7 +311,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/project-launch-health.png" alt="">
+                            <img src="./images/project-launch-health.png" alt="">
 
                         </div>
                         <h2>Project Launch</h2>
@@ -282,7 +319,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/maintenance-and-support-health.png" alt="">
+                            <img src="images/maintance-and-support-health.png" alt="">
 
                         </div>
                         <h2>Maintanace and Support</h2>
@@ -308,17 +345,22 @@
             <!-- ##### Book #######  -->
 
             <section class="section-book">
+                <section class="book-image">
+                    <img src="./images/healthcare-book.jpg" alt="">
+                </section>
                 <section class="book-data">
+
+
 
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
                     <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
                     <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
                 </section>
 
-                <section class="book-image">
-                    <img src="./images/health-book3.png" alt="">
-                </section>
+
             </section>
+
+
 
 
 

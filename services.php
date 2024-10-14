@@ -23,46 +23,49 @@
         <?php include('navbar.php'); ?>
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
-            <!-- ################################# HERO SECTION ##################################  -->
-            <div class="about">
+            <!-- ##### HERO SECTION ########  -->
+            <div class="hero">
                 <h1 data-aos="zoom-in" data-aos-duration="2500">Our Services</h1>
                 <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive IT Solutions for Every Need</h2>
                 <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
             </div>
 
-            <!-- ########################## service animated counter ###################### -->
-            <div class="serive_counter_wrapper">
-                <div class="service_counter_child service_content ">
-                    <h1 data-aos="fade-down" data-aos-duration="1500">Innovative Web Development Services to Drive Your Digital Success</h1>
-                    <p>We offer a full range of web development services, designed to fuel your business growth and enhance user experiences. From custom web solutions to advanced e-commerce platforms, our expert team combines creativity and technology to build websites that perform. Whether your focus is on creating engaging user interfaces, seamless functionality, or integrating advanced tools, we’re here to transform your digital strategy into measurable results.</p>
-                </div>
-                <div class="service_counter_child service_counter ">
-                    <div class="service_counter_image">
-                        <img src="./images/campaign-creators-qCi_MzVODoU-unsplash.jpg" alt="">
+            <!-- ####### INTRO ######### -->
 
-                    </div>
+            <div class="intro-wrapper">
 
+                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
+                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
+                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
                 </div>
+
+
+
+                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
+                    <img src="./images/10.jpg" alt="">
+                </div>
+
+
+
+
+
             </div>
 
 
 
 
 
-            <!-- ######################################## OUR SERVICES ########################################  -->
+            <!-- ###### web dev services ########  -->
 
 
 
-            <div class="about_container">
-                <h2 data-aos="zoom-in" data-aos-duration="1500">Transform Your Vision into Reality with Our Web Services</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Transform Your Vision into Reality with Our Web Services</h1>
+
             </div>
 
-            <!-- ################ SERVICES ################# -->
+
             <div class="services">
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/web-development.png" alt="">
@@ -148,31 +151,16 @@
                     <p> Bookings, appointments, and reservations.</p>
                     <a href="e-commerce.php">View More</a>
                 </div>
-                <!-- <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="images/e-commerce.png" alt="">
-                    <h1>E-Commerce</h1>
-                    <p>We help businesses launch and grow their e-commerce platforms, including product development, marketing, and sales.</p>
-                    <a href="e-commerce.php">View More</a>
-                </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="images/e-commerce.png" alt="">
-                    <h1>E-Commerce</h1>
-                    <p>We help businesses launch and grow their e-commerce platforms, including product development, marketing, and sales.</p>
-                    <a href="e-commerce.php">View More</a>
-                </div> -->
+
 
             </div>
 
 
 
-            <!-- ############################################# WHY CHOOSE US IMAGE ######################################  -->
-            <div class="about_container">
-                <h2 data-aos="zoom-in" data-aos-duration="1500">From Discovery to Deployment, We Ensure Every Detail Matters</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+            <!-- ###### WHY CHOOSE US  #########  -->
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">From Discovery to Deployment, We Ensure Every Detail Matters</h1>
+
             </div>
 
 
@@ -217,18 +205,15 @@
 
             </div>
 
-            <!-- ############## circle #############  -->
 
-            <div class="about_container">
-                <h2 data-aos="zoom-in" data-aos-duration="1500">From Startups to Enterprises, We Drive Industry-Specific Success</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+
+
+
+            <!-- ###### targeted industry ######## -->
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">From Startups to Enterprises, We Drive Industry-Specific Success</h1>
+
             </div>
-
-            <!-- ############################## fields #########################  -->
             <div class="choose_container">
                 <div class="choose_content">
                     <div class="choose_image">
@@ -301,6 +286,9 @@
 
             <section class="testimonial_wrapper">
                 <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> What Our Clients Say</h1>
+
+
+
                 <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
                     <div class="testimonial_item">
 

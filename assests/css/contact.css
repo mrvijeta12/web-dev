@@ -14,13 +14,7 @@ body {
   flex-direction: column;
   /* margin-top: 90px; */
 }
-.wrapper h1 {
-  font-family: "Montserrat-Medium", sans-serif;
-  font-size: 2rem;
-  color: #000432;
-}
 
-.wrapper p,
 .contact_wrapper input,
 .contact_wrapper textarea {
   font-family: "Montserrat-Regular", sans-serif;
@@ -28,7 +22,6 @@ body {
   font-size: 1rem;
 }
 
-.wrapper h2,
 .contact_wrapper h3,
 .contact_wrapper label,
 .contact_wrapper input button,
@@ -36,31 +29,21 @@ button {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 1.25rem;
 }
-.about h1,
-.about h2 {
-  color: white;
-  z-index: 2;
-}
-.contact_data_item label {
-  color: #2a2c39;
-}
 
-/* CONTENT SECTION  */
-.content {
-  padding: 20px;
-  text-align: center;
+.contact_data_item label {
+  color: #0363ff;
 }
 
 /* ################################################ HERO SECTION ########################################  */
 
-.about {
+.hero {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../../images/hero-contact.jpg);
+  background: url(../../images/hero-about.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,9 +52,15 @@ button {
   gap: 20px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
   text-align: center;
 }
-.about::before {
+.hero h1,
+.hero h2 {
+  color: white;
+  z-index: 2;
+}
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -81,7 +70,7 @@ button {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
-.about a {
+.hero a {
   padding: 15px 25px;
   background-color: rgba(11, 92, 171, 1);
   color: white;
@@ -94,31 +83,30 @@ button {
   margin-top: 10px;
   z-index: 2;
   border-radius: 40px;
-  
-  background-color: #E9AB04;
+
+  background-color: #0363ff;
+  border: 1px solid #0363ff;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-
 }
-.about a:hover{
-background-color: white;
+.hero a:hover {
+  /* background-color: white; */
   /* color: #E9AB04; */
-  color: black;
-  border: 2px solid #E9AB04;
-
- 
-}
-.about h1 {
-  font-family: "Montserrat-Bold", sans-serif;
+  color: white;
+  background-color: hsl(217, 100%, 38%);
 }
 
-/* ################## contact ################  */
+/* ######## contact detail ########  */
 
 .contact_child {
   padding: 60px 20px;
 }
 .contact_child h3 {
   margin: 0px 0px 15px 0px;
+}
+.contact_child h3,
+.contact_child p {
+  color: white;
 }
 
 .services_container {
@@ -150,12 +138,14 @@ background-color: white;
 .services_child h1 {
   margin-bottom: 10px;
 }
-.contact-data-wrapper{
+
+/* ####### contact form #####  */
+
+.contact-data-wrapper {
   width: 100%;
-  padding: 60px  40px;
+  padding: 60px 40px;
   /* background-color: antiquewhite; */
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
 }
 
 .contact_data {
@@ -165,7 +155,6 @@ background-color: white;
   padding: 20px;
   background-color: white;
   margin: 0px auto;
-
 }
 
 .contact_data_item {
@@ -206,24 +195,118 @@ background-color: white;
 }
 
 input[type="submit"] {
-  width: 30%;
+  width: fit-content;
   display: block;
-  padding: 8px 15px;
+  padding: 8px 12px;
   font-size: 1rem;
-  background-color: #E9AB04;
-  border: 2px solid #E9AB04;
+  background-color: #0363ff;
+  border: 2px solid #0363ff;
   color: white;
-  border-radius: 24px;
+  border-radius: 10px;
   /* border: none; */
   cursor: pointer;
 }
 input[type="submit"]:hover {
   background-color: white;
   color: black;
-
 }
 
-/*  ################################ RESPONSIVE SECTION ################################  */
+/* ######### CONTACT PERSON ########  */
+.contact-person-wrapper {
+  width: 100%;
+  padding: 60px 40px;
+  /* border: 2px solid red; */
+  display: flex;
+  color: white;
+  gap: 20px;
+  justify-content: space-between;
+}
+.contact-person-child {
+  width: 50%;
+  /* border: 2px solid violet; */
+}
+.child1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.child1 h1 {
+  font-size: 3rem;
+}
+.child1 a {
+  padding: 12px 16px;
+  background-color: #0363ff;
+  color: white;
+  border: 1px solid #0363ff;
+  width: fit-content;
+  display: inline-block;
+  border-radius: 24px;
+}
+.child1 a:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid darkgray;
+}
+.child2 {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  justify-content: center;
+}
+.child2 a {
+  font-size: 1.25rem;
+}
+.child2 h1 {
+  font-size: 2rem;
+}
+.contact-person-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.contact-person-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.contact-person-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-person-data i {
+  color: #0363ff;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.contact-person-wrapper h1,
+.contact-person-wrapper h3 {
+  color: white;
+}
+.contact-person-child a {
+  color: white;
+  text-decoration: none;
+}
+
+/*  ######### RESPONSIVE SECTION ##########  */
+@media screen and (max-width: 1050px) {
+  .hero {
+    height: 700px;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .contact_data {
     width: 100%;
@@ -235,13 +318,30 @@ input[type="submit"]:hover {
   .contact_data_item {
     width: 80%;
   }
+  .contact-person-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .contact-person-child {
+    width: 100%;
+  }
+  .child2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .child2 h1 {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .about {
+  .hero {
     height: 500px;
   }
-  .about::before {
+  .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -251,11 +351,22 @@ input[type="submit"]:hover {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
   }
+  .child1 h1 {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 593px) {
   input[type="submit"] {
     width: 100%;
-    
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
+  .contact-data-wrapper {
+    padding: 60px 20px;
+  }
+  .contact_data {
+    padding: 20px 0px;
   }
 }
 @media screen and (max-width: 480px) {

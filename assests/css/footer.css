@@ -72,12 +72,15 @@ body {
   color: white;
   background-color: black;
 }
-.footer_data_box h1 {
+.footer_data_box h2 {
   font-family: "Montserrat-Bold";
   margin-bottom: 15px;
 
-  font-size: 2rem;
+  /* font-size: 2rem; */
   letter-spacing: 3px;
+}
+.footer_data_box h3 {
+  margin-bottom: 15px;
 }
 
 .footer_data_box a {
@@ -128,7 +131,7 @@ body {
 
 /* ############################## copyrights ############################### */
 
-.footer_wrapper .content {
+.footer_wrapper .copyright {
   border-top: 1px solid white !important;
   color: white;
   background-color: black;
@@ -143,7 +146,7 @@ body {
   /* flex-direction: row; */
   height: fit-content;
 }
-.footer_wrapper .content i {
+.footer_wrapper .copyright i {
   color: white;
   margin-right: 10px;
   font-size: 24px;
@@ -151,7 +154,7 @@ body {
   border-radius: 50%;
   padding: 6px;
 }
-.footer_wrapper .content i:hover {
+.footer_wrapper .copyright i:hover {
   color: #0363ff;
   border: 1px solid #0363ff;
 }
@@ -165,8 +168,11 @@ body {
   .footer_data h1 {
     margin-bottom: 10px;
   }
-  .footer_wrapper .content {
+  .footer_wrapper .copyright {
     flex-direction: column-reverse;
+    gap: 15px;
+    color: white;
+
     /* align-items: center; */
   }
 }

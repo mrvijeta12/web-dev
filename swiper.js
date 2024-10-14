@@ -1,34 +1,30 @@
-// ################ swipper ###############
+//! ################ swipper ###############
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3, // Default number of slides for larger screens
+  slidesPerView: 3,
   spaceBetween: 20,
-  // autoplay: {
-  //   delay: 2500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    // When the screen is <= 768px
-    800: {
-      slidesPerView: 3, // Show 2 slides for screens smaller than or equal to 768px
-      // spaceBetween: 20,
+    950: {
+      slidesPerView: 3,
     },
-    593: {
-      slidesPerView: 2, // Show 2 slides for screens smaller than or equal to 768px
-      // spaceBetween: 20,
+    768: {
+      slidesPerView: 2,
     },
-    // When the screen is <= 480px
+
     0: {
-      slidesPerView: 1, // Show 1 slide for screens smaller than or equal to 480px
-      // spaceBetween: 20,
+      slidesPerView: 1,
     },
   },
 });
 
-// ############### animated counter ##############
+//! ############### animated counter ##############
 
 const counters = document.querySelectorAll(".counter");
 
@@ -67,15 +63,7 @@ const checkScroll = () => {
 window.addEventListener("scroll", checkScroll);
 window.addEventListener("load", checkScroll); // Check on page load in case already in view
 
-// ################ navbar ######################
-
-// const navLinks = document.querySelector(".nav-links");
-
-// menuToggle.addEventListener("click", () => {
-//   navLinks.classList.toggle("active");
-// });
-
-// cards
+//! cards
 // Simulate redirect behavior (for demo purposes)
 window.onload = function () {
   if (window.location.href.indexOf("cards-page.html") > -1) {
@@ -83,33 +71,7 @@ window.onload = function () {
   }
 };
 
-// function showContent(cardNumber) {
-
-//   document
-//     .querySelectorAll(".card")
-//     .forEach((card) => card.classList.remove("active"));
-
-//   document
-//     .querySelector(`.card-container a:nth-child(${cardNumber}) .card`)
-//     .classList.add("active");
-
-//   document
-//     .querySelectorAll(".content-container")
-//     .forEach((content) => content.classList.add("hidden"));
-
-//   document.getElementById(`content-${cardNumber}`).classList.remove("hidden");
-// }
-
-//scroll
-// JavaScript for scroll functionality
-// const topDiv = document.getElementById("top-div");
-// const bottomDiv = document.getElementById("bottom-div");
-
-// topDiv.addEventListener("click", function () {
-//   bottomDiv.scrollIntoView({ behavior: "smooth" });
-// });
-
-// ########### home page flipcart ###########
+//! ########### home page flipcart ###########
 
 // Select all work-child elements
 const workChildren = document.querySelectorAll(".collaboration-child");
@@ -130,13 +92,26 @@ workChildren.forEach((child) => {
   });
 });
 
-// ########## industry details #############
+//! ########## industry hierarchy section #############
 
 function toggleContent(active) {
-  // Hide all content
+  // Get all content sections
   const contents = document.querySelectorAll(".content");
+  const activeContent = document.getElementById("content" + active);
+
+  // Hide all content and reset height
   contents.forEach((content) => {
-    content.classList.remove("active");
+    if (content === activeContent) {
+      // If it is already active, collapse it
+      if (content.classList.contains("active")) {
+        content.classList.remove("active");
+      } else {
+        content.classList.add("active");
+      }
+    } else {
+      // Collapse other contents
+      content.classList.remove("active");
+    }
   });
 
   // Remove active class from all tabs
@@ -145,33 +120,62 @@ function toggleContent(active) {
     tab.classList.remove("active-tab");
   });
 
-  // Show the selected content
-  document.getElementById("content" + active).classList.add("active");
   // Add active class to the clicked tab
-  document.querySelectorAll(".tab")[active - 1].classList.add("active-tab");
+  tabs[active - 1].classList.add("active-tab");
 }
 
-// Ensure the first tab is active on page load
+// Ensure that no content is open by default on mobile view
 document.addEventListener("DOMContentLoaded", () => {
-  toggleContent(1); // Activate the first tab
+  const contents = document.querySelectorAll(".content");
+  const tabs = document.querySelectorAll(".tab");
+
+  if (window.innerWidth < 768) {
+    contents.forEach((content) => {
+      content.classList.remove("active"); // Remove active class
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab"); // Remove active class from tabs
+    });
+  } else {
+    toggleContent(1); // Activate the first tab only on larger screens
+  }
 });
 
-// ####### who can avail ######
-// JavaScript to handle scrolling synchronization
+// Add click event to each content header to handle expanding and collapsing
+const contentHeaders = document.querySelectorAll(
+  ".content-header .fa-angle-right"
+);
+contentHeaders.forEach((icon, index) => {
+  icon.addEventListener("click", (event) => {
+    // Prevent the event from bubbling up to the parent elements
+    event.stopPropagation();
+
+    // Only toggle if the clicked icon's content is not already active
+    const content = document.getElementById("content" + (index + 1));
+    if (!content.classList.contains("active")) {
+      toggleContent(index + 1);
+    } else {
+      content.classList.remove("active"); // Toggle off the active content if it's already open
+    }
+  });
+});
+
+//! ####### who can avail scroll ######
+
 const contentContainer = document.getElementById("scrollable-content");
 const imageContainer = document.getElementById("image-scroll");
 
 // Speed multiplier to adjust scroll speed
-const scrollSpeed = 1; // Increase this value to make the scroll faster
+const scrollSpeed = 0.75;
 
-// Function to handle scroll events on both containers
+// Function to handle scroll events on the content container
 function handleScroll(event) {
   const isAtTop = contentContainer.scrollTop === 0;
   const isAtBottom =
-    contentContainer.scrollHeight - contentContainer.scrollTop ===
-    contentContainer.clientHeight;
+    contentContainer.scrollTop + contentContainer.clientHeight >=
+    contentContainer.scrollHeight - 1;
 
-  if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
+  if (!isAtTop && !isAtBottom) {
     // If not at the top or bottom, scroll the content container
     event.preventDefault();
     contentContainer.scrollBy({
@@ -179,11 +183,33 @@ function handleScroll(event) {
       behavior: "auto", // Use "auto" to make the scroll faster and smoother
     });
   } else {
-    // Allow page scroll only when the content is fully scrolled
-    event.stopPropagation();
+    // If at the top or bottom, allow the page to scroll naturally
+    if ((isAtTop && event.deltaY < 0) || (isAtBottom && event.deltaY > 0)) {
+      // Allow the main page to scroll only when we reach the top or bottom
+      event.stopPropagation();
+    } else {
+      // Prevent page scroll when not at the boundaries
+      event.preventDefault();
+      contentContainer.scrollBy({
+        top: event.deltaY * scrollSpeed,
+        behavior: "auto",
+      });
+    }
   }
 }
 
-// Attach the scroll event listener to both the image and content containers
-imageContainer.addEventListener("wheel", handleScroll);
-contentContainer.addEventListener("wheel", handleScroll);
+// Function to add or remove the scroll event listeners based on screen width
+function updateScrollBehavior() {
+  if (window.innerWidth > 650) {
+    // Add scroll event listeners for screens above 650px
+    imageContainer.addEventListener("wheel", handleScroll);
+    contentContainer.addEventListener("wheel", handleScroll);
+  } else {
+    // Remove scroll event listeners for screens below 650px
+    imageContainer.removeEventListener("wheel", handleScroll);
+    contentContainer.removeEventListener("wheel", handleScroll);
+  }
+}
+
+updateScrollBehavior();
+window.addEventListener("resize", updateScrollBehavior);

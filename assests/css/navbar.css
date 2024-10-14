@@ -15,7 +15,10 @@ nav {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background: Black;
+  background: black;
+  /* border: 2px solid red; */
+  top: 0px;
+  left: 0px;
 }
 nav .wrapper {
   position: relative;
@@ -37,6 +40,7 @@ nav .wrapper {
 }
 .wrapper .nav-links {
   display: inline-flex;
+  /* border: 2px solid red; */
 }
 .nav-links li {
   list-style: none;
@@ -47,12 +51,17 @@ nav .wrapper {
   font-size: 18px;
   font-weight: 500;
   padding: 9px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  /* border-radius: 5px; */
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
 }
 .nav-links li a:hover {
   color: #0363ff;
+}
+ul.nav-links a.current {
+  border-bottom: 2px solid #0363ff;
+  color: #0363ff;
+  font-weight: 900;
 }
 .nav-links .mobile-item {
   display: none;
@@ -82,9 +91,9 @@ nav .wrapper {
   width: 100%;
 
   top: 85px;
-  opacity: 1;
+  opacity: 0;
   visibility: hidden;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   /* border: 2px solid blue; */
 }
 .mega-box .content {
@@ -168,8 +177,8 @@ industry-child {
 }
 .wrapper .btn.close-btn {
   position: absolute;
-  left: 30px;
-  top: 10px;
+  right: 30px;
+  top: 20px;
   height: fit-content;
 }
 
@@ -181,7 +190,7 @@ industry-child {
   color: white !important;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1150px) {
   .wrapper .btn {
     display: block;
   }

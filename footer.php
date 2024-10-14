@@ -28,10 +28,10 @@
 
         <div class="footer_data">
             <div class="footer_data_box">
-                <h1>TekAlgo</h1>
+                <h2>TekAlgo</h2>
             </div>
             <div class="footer_data_box">
-                <h1>Quick Links:-</h1>
+                <h3>Quick Links:-</h3>
                 <ul>
                     <li><a href="index.php"><span><i class="fa-solid fa-angles-right"></i></span>Home</a></li>
                     <li><a href="about.php"><span><i class="fa-solid fa-angles-right"></i></span>About</a></li>
@@ -43,7 +43,7 @@
 
             </div>
             <div class="footer_data_box">
-                <h1>Support:-</h1>
+                <h3>Support:-</h3>
                 <div class="contact_details">
                     <div class="contact_details_logo">
                         <img src="images/email.png" alt="TekAlgo Logo">
@@ -81,7 +81,7 @@
         </div>
 
         <!-- ############################# copy right ######################################  -->
-        <div class="content">
+        <div class="copyright">
             <p>© Copyright <strong>TekAlgo Technologies </strong> || All Rights Reserved</p>
 
             <div class="social-links">

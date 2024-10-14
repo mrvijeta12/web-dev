@@ -7,9 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/index.css">
 
-    <!-- <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assests/css/theme.css">
@@ -22,32 +20,26 @@
 
 <body>
     <div>
-        <?php
-        include('navbar.php');
-        ?>
+        <?php include('navbar.php'); ?>
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
-            <!-- ################################# HERO SECTION ##################################  -->
+            <!-- ######### HERO SECTION #######  -->
             <div class="hero">
                 <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative IT Solutions for the Digital Era</h1>
                 <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
                 <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
             </div>
 
-            <!-- ######################################## OUR SERVICES ########################################  -->
+            <!-- ######## Intro ########  -->
 
 
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h2>Delivering Innovative Services to Propel Your Success Forward</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+                <h1>Delivering Innovative Services to Propel Your Success Forward</h1>
+
             </div>
 
-            <!-- ########################################## swipper #################################  -->
+            <!-- ############ services ############  -->
 
 
 
@@ -74,7 +66,6 @@
 
                             </div>
 
-                            <button class="btn">Discover More </button>
 
 
 
@@ -102,7 +93,7 @@
 
                             </div>
 
-                            <button class="btn">Discover More </button>
+
 
                         </a>
                     </div>
@@ -115,79 +106,16 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-            <!-- ######################################## OUR PROJECTS ########################################  -->
 
 
-
-            <!-- <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h2>Our Projects</h2>
-                <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </div> -->
-
-
-
-            <!-- ############################################# WHY CHOOSE US IMAGE ######################################  -->
-
-            <!-- <div class=" hero choose_us" data-aos="flip-down" data-aos-duration="2000">
-              
-
-                <h1>Why Choose Us ??</h1>
-            </div> -->
-
-            <!-- ########################################## OUR PROJECTS DETAILS ######################################### -->
-
-            <!-- <div class="choose_container">
-                <div class="choose_content">
-                    <div class="choose_image">
-                        <img src="images/smartbank.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
-                    </div>
-
-                    <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">SmartBank - Digital Banking Transformation</h1>
-                        <p>We developed and implemented SmartBank, a secure and user-friendly online banking platform for a regional bank. The platform included features such as secure login, real-time account tracking, fund transfers, bill payments, and a mobile banking app. Leveraging the latest in fintech, the solution was built with robust security features, including two-factor authentication (2FA) and end-to-end encryption.</p>
-                    </div>
-                </div>
-
-                <div class="choose_content content_2">
-
-                    <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">MediCare Connect - Telemedicine Platform</h1>
-                        <p>MediCare Connect is a telemedicine platform designed to facilitate virtual consultations between doctors and patients. The platform includes appointment scheduling, video consultations, e-prescriptions, and a secure portal for patient data management. Integrated with the provider’s existing health records system, it ensured seamless data transfer while complying with HIPAA regulations.</p>
-                    </div>
-                    <div class="choose_image">
-                        <img src="images/medicare.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
-                    </div>
-                </div>
-
-                <div class="choose_content">
-                    <div class="choose_image">
-                        <img src="images/educloud.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
-                    </div>
-
-                    <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">EduCloud - Virtual Learning Platform</h1>
-                        <p>EduCloud was built for a national education provider to deliver an integrated learning management system (LMS) that supports online classes, quizzes, assessments, and real-time student-teacher interaction. The platform was designed to accommodate remote learning for students, with built-in video conferencing, discussion boards, and personalized learning pathways. It also featured a mobile app for students on-the-go.</p>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <!-- ############################## TECHNOLOGIES USED ##########################  -->
+            <!-- ########## TECHNOLOGIES  #######  -->
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h2>Innovative Technologies Powering Our Web Development Services</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+                <h1>Innovative Technologies Powering Our Web Development Services</h1>
+
             </div>
             <div class="service_choose_us">
-                <!-- <h3 data-aos="zoom-in" data-aos-duration="1500">TECHNOLOGIES USED</h3> -->
+
 
 
                 <div class="services_container">
@@ -258,44 +186,41 @@
             </div>
 
 
-            <!-- ################# WORKING WITH US ##################  -->
+            <!-- ####### WORKING WITH US ######  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h2>Unlock Your Potential by Collaborating with Tekalgo Team</h2>
-                <!-- <div class="circle-container">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div> -->
+                <h1>Unlock Your Potential by Collaborating with Tekalgo Team</h1>
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
                     <section class="work-child">
-                        <h2>Results-Oriented and Customer-Centric</h2>
-                        <p>With our years of experience, we help businesses solve real-world problems and make strategic opportunities. Our primary focus is always on enhancing the customer’s experience and generating tangible business results.</p>
+                        <h2>Performance-Driven and Customer-Focused</h2>
+                        <p>We prioritize delivering high-impact results while keeping the customer’s needs front and center. Our goal is to transform challenges into opportunities, enhancing customer satisfaction and fueling business growth.</p>
                     </section>
                     <section class="work-child">
-                        <h2>Results-Oriented and Customer-Centric</h2>
-                        <p>With our years of experience, we help businesses solve real-world problems and make strategic opportunities. Our primary focus is always on enhancing the customer’s experience and generating tangible business results.</p>
+                        <h2>Reliable, Prompt, and Highly Respected</h2>
+                        <p>We are committed to delivering dependable solutions with speed and precision. Our reputation for excellence is built on trust, timely execution, and the recognition we earn from clients and industry leaders alike.</p>
                     </section>
                     <section class="work-child">
-                        <h2>Results-Oriented and Customer-Centric</h2>
-                        <p>With our years of experience, we help businesses solve real-world problems and make strategic opportunities. Our primary focus is always on enhancing the customer’s experience and generating tangible business results.</p>
+                        <h2>Skilled and Knowledgeable Experts</h2>
+                        <p>Our team consists of highly skilled professionals with deep expertise. We bring a wealth of knowledge and innovative thinking to every project, ensuring exceptional results and value for our clients.</p>
                     </section>
                     <section class="work-child">
-                        <h2>Results-Oriented and Customer-Centric</h2>
-                        <p>With our years of experience, we help businesses solve real-world problems and make strategic opportunities. Our primary focus is always on enhancing the customer’s experience and generating tangible business results.</p>
+                        <h2>Collaborative, Open, and Engaging</h2>
+                        <p>We foster a culture of teamwork, openness, and clear communication. Our focus on collaboration ensures that every voice is heard, and we maintain transparency to build trust and drive collective success.</p>
                     </section>
 
                 </section>
 
             </section>
 
+
             <!-- ##################### collaboration #############  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
-                    <h1>Easy Steps to Follow to Start Collaboration With Us</h1>
-                </section>
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1> Easy Steps to Follow to Start Collaboration With Us</h1>
+            </div>
+            <section class="collaboration-wrapper">
+
                 <section class="collaboration-child-wrapper">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
@@ -303,7 +228,7 @@
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Share your Requirement <span><i class="fa-solid fa-right-long"></i></span> </h2>
-                            <p>Start by sharing your project requirements with us. Complete our Contact Us form and enter the required details to start the process. Drop the link to any requisite attachment (a document containing all you need for your project) for better understanding.</p>
+                            <p>Define your project goals and needs with our team. We'll gather your requirements and present a customized proposal, outlining the scope, deliverables, timeline, and cost estimates.</p>
 
                         </section>
 
@@ -314,7 +239,7 @@
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Project Evaluation <span><i class="fa-solid fa-right-long"></i></span></h2>
-                            <p>Start by sharing your project requirements with us. Complete our Contact Us form and enter the required details to start the process. Drop the link to any requisite attachment (a document containing all you need for your project) for better understanding.</p>
+                            <p>Assess project feasibility and resource needs. We'll develop a detailed action plan, addressing potential risks and setting clear milestones to ensure smooth execution and measurable progress.</p>
 
                         </section>
                     </section>
@@ -324,7 +249,7 @@
                         </section>
                         <section class="collaboration-child-data">
                             <h2>NDA <span><i class="fa-solid fa-right-long"></i></span></h2>
-                            <p>Start by sharing your project requirements with us. Complete our Contact Us form and enter the required details to start the process. Drop the link to any requisite attachment (a document containing all you need for your project) for better understanding.</p>
+                            <p>Protect sensitive information with a customized NDA. We ensure confidentiality, data security, and mutual agreement to safeguard your intellectual property throughout the project collaboration.</p>
 
                         </section>
                     </section>
@@ -334,14 +259,14 @@
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Interview with an Expert <span><i class="fa-solid fa-right-long"></i></span></h2>
-                            <p>Start by sharing your project requirements with us. Complete our Contact Us form and enter the required details to start the process. Drop the link to any requisite attachment (a document containing all you need for your project) for better understanding.</p>
+                            <p>Connect with our top experts for a tailored discussion. Evaluate their skills, industry knowledge, and alignment with your project goals to make an informed decision on the best fit.</p>
 
                         </section>
                     </section>
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
+            <!-- ############### HOW WE WORK Roadmap ############  -->
             <section class="workflow-wrapper">
                 <section class="workflow-data">
                     <h1>How Tekalgo Experts Elevate Your Online Business Success</h1>
@@ -353,9 +278,11 @@
             </section>
 
 
-            <!-- ##################################### animated Counter #########################  -->
+            <!-- ########## animated Counter ####### -->
 
-            <h1>Why Our Web Development Stands Out</h1>
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1> Reasons to Choose Our Web Development</h1>
+            </div>
             <div class="counter_wrapper" data-aos="flip-up" data-aos-duration="2000">
                 <div class="counter" data-target="150">
                     <div class="counter-image">
