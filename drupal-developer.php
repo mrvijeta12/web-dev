@@ -40,16 +40,18 @@
 
             <div class="intro-wrapper">
 
+
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Empower Your Business with Our Expert Drupal Developers, Crafting Customized Solutions for Your Unique Needs.</h2>
+                    <p>Our experienced Drupal developers specialize in building powerful and flexible websites that cater to your business goals. Utilizing Drupal's robust capabilities, we create tailored solutions that enhance user engagement and streamline content management.</p>
+                    <p>With a focus on scalability and security, we ensure that your website evolves with your business. Partner with us to unlock the full potential of Drupal and experience the difference our skilled team can make for your digital presence.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Drupal-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +69,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Drupal-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -272,9 +274,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Drupal-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -328,7 +330,54 @@
 
 
                         </div>
+                    </div> -->
+
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Custom Modules</h2>
+                            </div>
+                            <p>Our Drupal developers specialize in creating custom modules that extend the functionality of your website. This tailored approach ensures your site meets specific business requirements and offers unique features.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Flexible Content Management</h2>
+                            </div>
+                            <p>We leverage Drupal's flexible content management capabilities to design user-friendly interfaces. This allows you to easily manage and update your content, streamlining your workflow and enhancing productivity.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Multisite Management</h2>
+                            </div>
+                            <p>Our team is adept at managing multiple sites from a single Drupal installation. This capability simplifies administration and maintenance, making it easier for organizations with various brands or regional sites to operate efficiently.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Advanced Security Features</h2>
+                            </div>
+                            <p>We prioritize security in our Drupal development, implementing best practices to protect your website from vulnerabilities. Our developers stay updated with the latest security patches and enhancements to safeguard your data.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>SEO-Friendly Architecture</h2>
+                            </div>
+                            <p>Our Drupal solutions are built with SEO best practices in mind, ensuring your website is optimized for search engines. We implement features that improve visibility and drive organic traffic to your site.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Scalable Solutions</h2>
+                            </div>
+                            <p>Our Drupal applications are designed for scalability, allowing your website to grow alongside your business. Whether you’re expanding content or increasing traffic, our solutions can adapt to meet your evolving needs.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

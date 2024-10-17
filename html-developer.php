@@ -40,16 +40,18 @@
 
             <div class="intro-wrapper">
 
+
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Elevate Your Web Presence with Our Expert HTML Developers, Crafting Clean and Responsive Code for Flawless User Experiences.</h2>
+                    <p>Our team of expert HTML developers excels at creating well-structured, responsive websites that bring your digital ideas to life. By utilizing the latest HTML standards and best practices, we build custom web solutions that provide seamless user experiences, perfectly suited to your business goals.</p>
+                    <p>Focusing on precision and innovation, we ensure your website not only meets but exceeds your expectations. Collaborate with us to turn your vision into a reality, and see how our skilled HTML developers can transform your online presence with clean, efficient code.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/HTML-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +69,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/HTML-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -272,9 +274,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/HTML-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -328,7 +330,52 @@
 
 
                         </div>
+                    </div> -->
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Expert Developers</h2>
+                            </div>
+                            <p>Our HTML developers bring a wealth of experience and technical knowledge to your projects, ensuring they are built to industry standards. With their expertise, you can trust that your website will function smoothly and effectively, meeting all your specific requirements.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Customized Solutions</h2>
+                            </div>
+                            <p>We specialize in creating tailored HTML solutions that align perfectly with your business goals. By understanding your unique needs, our developers craft websites that not only reflect your brand but also enhance user engagement and satisfaction.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Timely Delivery</h2>
+                            </div>
+                            <p>We prioritize efficiency and reliability, ensuring your projects are completed on time without sacrificing quality. Our commitment to meeting deadlines means you can launch your website as scheduled, helping you stay ahead in a competitive market.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>User Experience</h2>
+                            </div>
+                            <p>Our focus is on delivering intuitive and engaging user experiences. By employing best practices in HTML development, we create websites that are easy to navigate, enhancing user satisfaction and encouraging repeat visits.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Responsive Design</h2>
+                            </div>
+                            <p>Our HTML solutions guarantee that your website is fully responsive, providing an optimal viewing experience across all devices. This approach not only improves accessibility but also positively impacts your SEO rankings, driving more traffic to your site.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Ongoing Support</h2>
+                            </div>
+                            <p>Post-launch, we offer comprehensive support and maintenance services to ensure your website remains functional and up-to-date. Our dedicated team is always available to assist you with any issues, ensuring your site continues to perform at its best.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

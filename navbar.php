@@ -35,17 +35,17 @@
                             <div class="row">
                                 <header>Front End </header>
                                 <ul class="mega-links">
-                                    <li><a href="#"> <span><i class="fa-brands fa-html5"></i></span>Frontend Development </a></li>
-                                    <li><a href="#"> <span><i class="fa-brands fa-js"></i></span> Angular.js </a></li>
+                                    <li><a href="./frontend-development.php"> <span><i class="fa-brands fa-html5"></i></span>Frontend Development </a></li>
+                                    <li><a href="./angular.php"> <span><i class="fa-brands fa-js"></i></span> Angular.js </a></li>
                                     <li><a href="./react.php"> <span><i class="fa-brands fa-angular"></i></span> React.js</a></li>
-                                    <li><a href="#"> <span><i class="fa-brands fa-angular"></i></span> JavaScript</a></li>
-                                    <li><a href="#"> <span><i class="fa-brands fa-vuejs"></i></span> Vue.js</a></li>
+                                    <li><a href="./javascript.php"> <span><i class="fa-brands fa-angular"></i></span> JavaScript</a></li>
+                                    <li><a href="./vue.php"> <span><i class="fa-brands fa-vuejs"></i></span> Vue.js</a></li>
                                 </ul>
                                 <header>CMS and Migration Service</header>
                                 <ul class="mega-links">
-                                    <li><a href="#"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
-                                    <li><a href="#"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
-                                    <li><a href="#"> <span><i class="fa-brands fa-drupal"></i></span> Joomla</a></li>
+                                    <li><a href="./wordpress.php"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
+                                    <li><a href="./drupal-developer.php"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
+                                    <li><a href="./joomla.php"> <span><i class="fa-brands fa-drupal"></i></span> Joomla</a></li>
 
                                 </ul>
                             </div>
@@ -55,27 +55,20 @@
                                 <header>Web Developer</header>
                                 <ul class="mega-links web-dev-experts">
                                     <div class="web-dev-links">
-                                        <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span> PHP</a></li>
-                                        <li><a href="#"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
-                                        <li><a href="#"> <span><i class="fa-solid fa-z"></i></span> Zend</a></li>
-                                        <li><a href="#"> <span><i class="fa-solid fa-c"></i></span> CakePHP</a></li>
-                                        <li><a href="#"> <span><i class="fa-solid fa-c"></i></span> Laravel</a></li>
+                                        <li><a href="./php.php"> <span><i class="fa-solid fa-shop"></i></span> PHP</a></li>
+                                        <li><a href="./codeigniter.php"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
 
-                                        <li><a href="#"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Laminas</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> PWA</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> jquery</a></li>
-                                    </div>
-                                    <div class="web-dev-links">
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> SPA</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> ROR</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Web App</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Web Developer</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Python</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MERN Stack</a></li>
-                                        <li><a href="#"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MEAN Stack</a></li>
+                                        <li><a href="./laravel.php"> <span><i class="fa-solid fa-c"></i></span> Laravel</a></li>
 
+                                        <li><a href="./nodejs.php"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
+
+                                        <li><a href="./pwa.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> PWA</a></li>
+                                        <li><a href="./jquery.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> jquery</a></li>
+                                        <li><a href="./python.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Python</a></li>
+                                        <li><a href="./mern-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MERN Stack</a></li>
+                                        <li><a href="./mean-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MEAN Stack</a></li>
                                     </div>
+
                                 </ul>
                             </div>
                             <div class="row">
@@ -84,9 +77,9 @@
                                     <li><a href="#"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
                                     <li><a href="#"> <span><i class="fa-solid fa-magnet"></i></span> Shopify</a></li>
                                     <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
-                                    <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span> Woocommerce</a></li>
+
                                     <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span>eCommerce</a></li>
-                                    <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span> Headless </a></li>
+
 
 
 

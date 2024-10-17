@@ -40,16 +40,18 @@
 
             <div class="intro-wrapper">
 
+
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Elevate Your Web Applications with Our Expert ReactJS Developers, Crafting Innovative and Interactive User Experiences.</h2>
+                    <p>Our team of ReactJS developers is committed to building dynamic web applications that stand out in the market. By harnessing React's powerful component-based architecture, we create custom solutions that deliver exceptional performance and user engagement, perfectly suited to your business objectives.</p>
+                    <p>With a focus on innovation and efficiency, we bring your vision to life with scalable applications that adapt to your evolving needs. Partner with us to experience the transformative impact our skilled ReactJS developers can have on your digital success.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/React.JS-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +69,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/React.JS-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -272,9 +274,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/React.JS-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -328,7 +330,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Innovative Solutions</h2>
+                            </div>
+                            <p>Our ReactJS developers are dedicated to crafting innovative web applications that push the boundaries of what’s possible. They leverage React’s advanced features to create unique user experiences that stand out in the market.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Rapid Development</h2>
+                            </div>
+                            <p>We utilize ReactJS's component-based architecture for rapid development cycles. This approach enables us to deliver high-quality applications quickly, allowing you to adapt to changing market demands and launch sooner.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Strong Community Support</h2>
+                            </div>
+                            <p>With a vast community backing ReactJS, our developers benefit from a wealth of resources and libraries. This support allows us to integrate the latest technologies and best practices into your project seamlessly.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>State Management Expertise</h2>
+                            </div>
+                            <p>Our team is proficient in managing application state using tools like Redux or Context API. This expertise ensures your ReactJS applications maintain consistent and predictable behavior, enhancing overall performance.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>User-Centric Design</h2>
+                            </div>
+                            <p>We focus on user-centric design principles in our ReactJS development. By prioritizing usability and accessibility, we create applications that cater to diverse audiences, improving overall user satisfaction.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Flexible Integration</h2>
+                            </div>
+                            <p>Our ReactJS solutions are designed for easy integration with existing systems and third-party APIs. This flexibility allows you to enhance functionality without overhauling your current infrastructure, making for a smooth transition.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

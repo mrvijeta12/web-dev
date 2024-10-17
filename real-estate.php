@@ -34,79 +34,131 @@
                 </div>
                 <div class="hero-data">
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Real Estate Software Development Services</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Innovative Solutions Tailored for Efficient Property Management and Transactions</h2>
+                    <a href="https://calendly.com/yourrealestate/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+
                 </div>
+
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Revolutionizing Healthcare Delivery with Our Comprehensive Software Development Services</h1>
-                <p>Our healthcare software development services are designed to enhance patient care, streamline operations, and improve overall healthcare delivery. By leveraging cutting-edge technology, data analytics, and user-centric design, we empower healthcare providers to meet the evolving needs of their patients, ensuring efficient, secure, and accessible healthcare solutions for all.</p>
+                <h1>Empowering Real Estate Solutions with Our Comprehensive Software Development Services</h1>
+                <p>Our software development services for the real estate industry are designed to optimize workflows, enhance market analysis, and improve user experience. By harnessing cutting-edge technology, data visualization, and intuitive design, we empower real estate agents and developers to make informed decisions, manage properties efficiently, and deliver exceptional value to clients in an ever-changing market.</p>
             </section>
 
 
+            <!-- ####### details ####### -->
+
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Process We Follow To Develop Real Estate Software</h1>
+
+            </div>
 
             <section class="detail">
                 <section class="detail-title detail-child">
-                    <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Healthcare Software Consulting</p>
-                    <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
-                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Heathcare Software Moderization</p>
-                    <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> Heathcare Software Integration</p>
-                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Heathcare eCommerce Development</p>
-                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Heathcare Software Product Development</p>
-                </section>
+                    <p class="tab active-tab" onclick="toggleContent(1)">
+                        <strong>01.</strong> Real Estate Software Consulting
 
+                    </p>
+                    <p class="tab" onclick="toggleContent(2)">
+                        <strong>02.</strong> Custom Real Estate Software Development
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(3)">
+                        <strong>03.</strong> Real Estate Software Product Development
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(4)">
+                        <strong>04.</strong> Real Estate Software Integration
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(5)">
+                        <strong>05.</strong> Real Estate Software Testing and Quality Assurance
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(6)">
+                        <strong>06.</strong> Real Estate Software Modernization
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(7)">
+                        <strong>07.</strong> Real Estate Software Maintenance and Support
+
+                    </p>
+                </section>
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Healthcare Software Consulting </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-consulting.png" alt="">
+                            <h3>Real Estate Software Consulting</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We assess your real estate operations and technological requirements, providing strategic guidance for developing customized software solutions. Our consulting services help identify opportunities for growth, enhance customer engagement, and optimize property management.</p>
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Custom Heathcare Software Development </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-development.png" alt="">
+                            <h3>Custom Real Estate Software Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We specialize in developing tailored real estate software solutions that meet your specific needs. From initial coding to deploying unique features, our development process ensures your software enhances listings, client interactions, and transaction management.</p>
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Moderization </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-product-development.png" alt="">
+                            <h3>Real Estate Software Product Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We focus on creating scalable, market-ready real estate software products that cater to both agents and clients. Our product development services deliver solutions that streamline operations, improve user experience, and drive business growth.</p>
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Integration </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-integration.png" alt="">
+                            <h3>Real Estate Software Integration</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>Our integration services ensure seamless connectivity between your real estate software and existing systems. We facilitate interoperability among platforms to enhance operational efficiency, reduce manual processes, and improve service delivery.</p>
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare eCommerce Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-testing.png" alt="">
+                            <h3>Real Estate Software Testing and Quality Assurance</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We conduct thorough testing of your real estate software to identify bugs and vulnerabilities, ensuring it meets the highest standards of performance, security, and user satisfaction. Our quality assurance practices guarantee a reliable experience for your clients.</p>
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Product Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/real-estate-modernization.png" alt="">
+                            <h3>Real Estate Software Modernization</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We upgrade legacy real estate software to meet contemporary technological standards, enhancing functionality and security. Our modernization services help your business remain competitive by integrating advanced features that support evolving market demands.</p>
+                    </section>
+                    <section id="content7" class="content">
+                        <div class="content-header">
+                            <img src="./images/real-estate-maintenance.png" alt="">
+                            <h3>Real Estate Software Maintenance and Support</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>Our maintenance and support services provide ongoing software updates, troubleshooting, and enhancements to ensure optimal performance. We focus on resolving issues, improving functionality, and adapting software to the changing landscape of the real estate industry.</p>
                     </section>
                 </section>
             </section>
@@ -116,30 +168,26 @@
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our healthcare software development services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur, voluptatem saepe omnis, cumque, consequatur neque doloremque ducimus ipsum provident iste recusandae! Nulla sunt est velit nobis perferendis ex deleniti.</p>
+                <h1>Sectors that can benefits from our real estate software development services</h1>
+
 
                 <div class="benefits-sectors">
                     <ul>
-                        <li>Hospitals and Clinic</li>
-                        <li>Pharmaceutical Companies</li>
-                        <li>Medical Device Manufacture</li>
-                        <li>Diagonostic laboratories</li>
-                        <li>Heathcare NGOs</li>
-                        <li>Heathcare Insurance Providers</li>
-                        <li>rehabilitation centers</li>
-
+                        <li>Residential Real Estate</li>
+                        <li>Commercial Real Estate</li>
+                        <li>Real Estate Investment Trusts (REITs)</li>
+                        <li>Property Management Companies</li>
+                        <li>Real Estate Development Firms</li>
+                        <li>Real Estate Brokerage Firms</li>
                     </ul>
                     <ul>
-                        <li>telemedicine Providers</li>
-                        <li>Long Term Care Facilities</li>
-                        <li>mental Health Facilities</li>
-                        <li>Specialty Care Clinic</li>
-                        <li>Hospice care providers</li>
-                        <li>Goverment Heath department</li>
-
+                        <li>Luxury Real Estate Agencies</li>
+                        <li>Vacation Rental Services</li>
+                        <li>Land Development Companies</li>
+                        <li>Real Estate Consulting Firms</li>
+                        <li>Title and Escrow Services</li>
+                        <li>Home Inspection Services</li>
                     </ul>
-
                 </div>
             </section>
 
@@ -147,120 +195,126 @@
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Healthcare Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Real Estate Software Development</h1>
 
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Healthcare Technology Expertise
-                        </h1>
-                        <p>Understand client needs, goals, and technical requirements.</p>
+                        <img src="images/realestate_expertise.png" alt="">
+                        <h1>Real Estate Technology Expertise</h1>
+                        <p>Providing cutting-edge technology solutions that transform real estate operations, improve client interactions, and enhance property management efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Software Solutions</h1>
-                        <p>Delivering visually appealing, user-friendly designs for optimal customer experience.</p>
+                        <img src="images/custom_website.png" alt="">
+                        <h1>Custom Real Estate Web Development</h1>
+                        <p>Designing bespoke websites with user-friendly interfaces that showcase properties and streamline the buying or renting process for potential clients.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Data Security and Compliance</h1>
-                        <p>Iterative development approach ensuring flexibility, speed, and continuous improvements.</p>
+                        <img src="images/analytics.png" alt="">
+                        <h1>Data Analytics and Market Insights</h1>
+                        <p>Utilizing advanced data analytics to provide actionable insights, helping real estate professionals make informed decisions based on market trends.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Innovative and Scalable Tech</h1>
-                        <p> Rigorous testing to ensure bug-free, high-performance applications.</p>
+                        <img src="images/mobile_app.png" alt="">
+                        <h1>Mobile App Development for Real Estate</h1>
+                        <p>Creating innovative mobile applications that enable clients to search for properties, schedule viewings, and communicate with agents on the go.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Agile Development Process</h1>
-                        <p>Seamless launch process, ensuring your website goes live smoothly.</p>
+                        <img src="images/integration.png" alt="">
+                        <h1>Seamless CRM and Software Integration</h1>
+                        <p>Integrating Customer Relationship Management (CRM) systems with real estate platforms for enhanced client management and streamlined communication.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/support.png" alt="">
-                        <h1>Ongoing Support and Maintenance</h1>
-                        <p>Continual monitoring, updates, and enhancements to maintain top-notch performance.</p>
+                        <h1>24/7 Support and Maintenance</h1>
+                        <p>Offering continuous support and maintenance to ensure your real estate technology operates smoothly, providing a reliable service for your clients.</p>
                     </div>
-
-
                 </div>
 
             </div>
+
             <!-- ######### who can avail ###### -->
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Who Can Avail Our Healthcare Software Services</h1>
+                    Who Can Avail Our Real Estate Software Services</h1>
 
             </div>
 
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/health-avail2.jpg" alt="Image on Left">
+                        <img src="./images/real-estate-primary.jpg" alt="Image on Left">
                     </div>
+
+
                     <div class="avail-content-container" id="scrollable-content">
+                        <!-- Real Estate Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Hospitals and Clinics</h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Property Listings</h2>
                             </div>
-                            <p>Hospitals and clinics are the largest adopters of healthcare software. They use solutions like Electronic Health Records (EHR) and Hospital Information Systems (HIS) to manage patient data, streamline administrative tasks, improve diagnosis accuracy, and ensure smooth coordination between different departments. Software solutions also assist in scheduling, billing, inventory management, and data analytics, making day-to-day operations more efficient.</p>
-
+                            <p>Real estate agencies can utilize social networking platforms to showcase property listings through engaging
+                                visuals and detailed descriptions. This enhances visibility, attracts potential buyers, and allows for direct
+                                engagement with interested clients.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Telemedicine Providers</h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Virtual Tours</h2>
                             </div>
-                            <p>With the rise of remote healthcare, telemedicine has become a crucial field that relies heavily on healthcare software. These platforms enable virtual consultations, secure video conferencing, online appointment scheduling, and electronic prescription management. Telemedicine software helps patients receive medical advice and treatment from the comfort of their homes while providing doctors with tools to monitor patient health in real-time.</p>
-
-
+                            <p>Social networks can facilitate the sharing of virtual property tours, providing prospective buyers with an
+                                immersive experience. By showcasing properties online, agents can reach a wider audience and generate more
+                                interest without the need for physical viewings.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Pharmaceutical Companies </h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Market Insights</h2>
                             </div>
-                            <p>Pharmaceutical companies use specialized software for drug research, clinical trials, supply chain management, and regulatory compliance. Healthcare software helps these companies manage drug inventory, streamline distribution channels, and track medication effectiveness. This technology also supports data analysis in research and development, enabling faster innovation and bringing new drugs to the market more efficiently.</p>
-
-
+                            <p>Real estate professionals can leverage social media to share market trends, neighborhood statistics, and
+                                investment insights. By educating potential buyers and investors, they establish authority and build trust
+                                within the community.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Health Insurance Companies </h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Client Testimonials</h2>
                             </div>
-                            <p>Health insurance companies use healthcare software to manage claims processing, policy administration, customer service, and data analytics. This software enables insurers to automate claim approvals, detect fraudulent activities, and analyze patient treatment data to make better decisions on coverage plans. Advanced data analysis tools also help in pricing models and managing risk, improving the overall efficiency of the insurance process.</p>
-
-
+                            <p>Real estate agents can encourage satisfied clients to share their experiences on social platforms.
+                                Highlighting testimonials and success stories builds credibility and encourages referrals, making it easier to
+                                attract new clients.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Laboratories and Diagnostic Centers </h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Community Engagement</h2>
                             </div>
-                            <p>Laboratories and diagnostic centers benefit from healthcare software that handles test scheduling, sample tracking, result analysis, and report generation. These tools help in efficiently managing patient data, maintaining accuracy in test results, and integrating seamlessly with hospital systems or EHR platforms. Diagnostic software reduces human error and speeds up the process of delivering accurate results to healthcare providers and patients.</p>
-
-
+                            <p>Real estate firms can foster community engagement by promoting local events, charities, and initiatives.
+                                By being active participants in their communities, agents can enhance their brand image and strengthen client
+                                relationships.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Nursing Homes and Long-Term Care Facilities</h2>
+                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <h2>Educational Content</h2>
                             </div>
-                            <p>Nursing homes and long-term care facilities rely on healthcare software to enhance patient care and manage daily operations. These solutions provide tools for creating personalized care plans, tracking medication schedules, monitoring patient health conditions, and ensuring proper communication among caregivers. This software plays a vital role in improving the quality of life for residents by ensuring they receive timely and personalized attention.</p>
-
-
+                            <p>Social networking platforms are effective for sharing educational content related to buying, selling,
+                                and investing in real estate. By providing valuable tips and resources, agents can empower clients and
+                                position themselves as knowledgeable industry experts.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -279,63 +333,49 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/project-analysis-health.png" alt="">
-
+                            <img src="images/real-estate-management-software.png" alt="">
                         </div>
-                        <h2>Project analysis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Real Estate Software</h2>
+                        <p>Comprehensive solutions for property and tenant management.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/design-health.png" alt="">
-
+                            <img src="images/property-listing-platforms.png" alt="">
                         </div>
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Listing Platforms</h2>
+                        <p>User-friendly platforms for listing and browsing properties.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/development-health.png" alt="">
-
+                            <img src="images/virtual-tour-technology.png" alt="">
                         </div>
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Virtual Tours</h2>
+                        <p>Immersive VR solutions for enhanced property tours.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/testing-health.png" alt="">
-
+                            <img src="images/real-estate-analytics.png" alt="">
                         </div>
-                        <h2>testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Analytics Tools</h2>
+                        <p>Assessing market trends and investment opportunities.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./images/project-launch-health.png" alt="">
-
+                            <img src="images/tenant-management-systems.png" alt="">
                         </div>
-                        <h2>Project Launch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Tenant Management</h2>
+                        <p>Streamlined systems for applications and maintenance requests.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/maintance-and-support-health.png" alt="">
-
+                            <img src="images/real-estate-marketing-solutions.png" alt="">
                         </div>
-                        <h2>Maintanace and Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Marketing Solutions</h2>
+                        <p>Targeted strategies to promote properties effectively.</p>
                     </div>
-
-
-
-
-
-
-
-
-
-
                 </div>
+
+
                 <div class="swiper-pagination"></div>
             </div>
 
@@ -346,14 +386,14 @@
 
             <section class="section-book">
                 <section class="book-image">
-                    <img src="./images/healthcare-book.jpg" alt="">
+                    <img src="./images/booking-industry.jpg" alt="">
                 </section>
                 <section class="book-data">
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Real Estate Software Development Services</h1>
+                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Real Estate Professionals</p>
                     <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
                 </section>
 

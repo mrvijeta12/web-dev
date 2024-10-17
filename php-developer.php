@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Transform Your Ideas into Reality with Our Experienced PHP Developers, Delivering Custom Solutions for Your Business.</h2>
+                    <p>Our skilled PHP developers are dedicated to building dynamic and robust web applications that align with your specific business objectives. By leveraging PHP's flexibility and power, we create custom solutions that enhance functionality and user experience.</p>
+                    <p>With a strong emphasis on code quality and performance optimization, we ensure your PHP applications are scalable and maintainable, allowing your business to grow seamlessly. Collaborate with us to elevate your online presence and achieve your goals.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/php-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/php-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/php-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Hire PHP Experts</h2>
+                            </div>
+                            <p>Bringing in experienced PHP developers ensures your project benefits from their extensive knowledge and skills. Their ability to quickly troubleshoot issues and implement solutions streamlines development processes, saving you time and resources while delivering a high-quality product.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Custom Solutions</h2>
+                            </div>
+                            <p>PHP experts create tailored applications that align with your unique business requirements. They work closely with you to understand your vision, enabling them to develop customized features and functionalities that enhance user engagement and drive your business goals forward.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Up-to-Date Knowledge</h2>
+                            </div>
+                            <p>Staying current with the latest PHP frameworks, tools, and best practices, our experts ensure your application is built with modern standards. This knowledge not only improves performance but also positions your project competitively in a fast-evolving digital landscape.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Code Quality and Maintenance</h2>
+                            </div>
+                            <p>Our developers prioritize clean, maintainable code, which simplifies future updates and scaling. With a focus on best coding practices, they ensure that your application remains robust, making it easier for your team to manage and enhance over time.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Security Best Practices</h2>
+                            </div>
+                            <p>Hiring PHP experts means prioritizing security. They are well-versed in the latest security measures and practices, ensuring your application is safeguarded against vulnerabilities and threats, protecting both your data and your users.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization</h2>
+                            </div>
+                            <p>Expert developers know how to optimize PHP applications for speed and efficiency. They employ techniques to enhance load times and overall performance, resulting in a smoother user experience and improved satisfaction.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

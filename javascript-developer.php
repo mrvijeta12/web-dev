@@ -40,16 +40,19 @@
 
             <div class="intro-wrapper">
 
+
+
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Unlock Interactive Web Experiences with Our Expert JavaScript Developers, Building Dynamic Solutions That Engage and Delight.</h2>
+                    <p>Our team of expert JavaScript developers specializes in creating interactive and engaging web applications. By harnessing the power of JavaScript and employing the latest frameworks, we build custom solutions that provide dynamic user experiences, driving engagement and enhancing your online presence.</p>
+                    <p>With a strong focus on innovation and technical excellence, we deliver results that transform your web projects into captivating experiences. Partner with us to bring your ideas to life and see how our skilled JavaScript developers can elevate your digital presence.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/JavaScript-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +70,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/JavaScript-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -272,9 +275,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/JavaScript-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -328,7 +331,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Skilled Developers</h2>
+                            </div>
+                            <p>Our JavaScript developers possess deep knowledge and experience in crafting dynamic web applications. Their expertise ensures that your project incorporates the latest technologies and best practices, providing robust solutions tailored to your business needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Tailored Solutions</h2>
+                            </div>
+                            <p>We deliver customized JavaScript solutions designed specifically for your requirements. By understanding your objectives, our developers create interactive features and functionalities that enhance user engagement and align with your overall vision.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Timely Delivery</h2>
+                            </div>
+                            <p>We value your time and ensure that projects are completed on schedule. Our team is committed to maintaining high standards while delivering your JavaScript applications promptly, allowing you to meet critical deadlines.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Enhanced Interactivity</h2>
+                            </div>
+                            <p>Our focus on JavaScript enables us to create highly interactive user experiences. By implementing advanced features and animations, we keep users engaged, improving overall satisfaction and encouraging longer site visits.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Cross-Browser Compatibility</h2>
+                            </div>
+                            <p>We prioritize cross-browser compatibility in our JavaScript development, ensuring that your web applications function seamlessly across all popular browsers. This approach enhances accessibility and broadens your audience reach, leading to better engagement.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Ongoing Maintenance</h2>
+                            </div>
+                            <p>Post-launch, we provide continuous support and maintenance for your JavaScript applications. Our dedicated team is available to address any issues, ensuring your web solutions remain up-to-date, secure, and performing optimally at all times.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

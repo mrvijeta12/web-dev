@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Transform Your Online Store with Our Expert Shopify Developers, Delivering Custom Solutions for Maximum Impact.</h2>
+                    <p>Our dedicated Shopify developers are passionate about building engaging and high-performing e-commerce websites tailored to your brand. By leveraging Shopify’s extensive features, we create user-friendly stores that enhance the shopping experience and boost customer retention.</p>
+                    <p>With a strong focus on responsive design and performance optimization, we ensure your Shopify site not only looks great but also operates seamlessly across all devices. Collaborate with us to elevate your online presence and achieve your business goals effectively.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Shopify-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Shopify-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Shopify-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,52 @@
 
 
                         </div>
+                    </div> -->
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Custom Store Design</h2>
+                            </div>
+                            <p>Our Shopify developers create custom store designs that reflect your brand’s identity. We focus on visually appealing layouts and user-friendly navigation to enhance the shopping experience.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>App Integration</h2>
+                            </div>
+                            <p>We specialize in integrating various Shopify apps to extend your store's functionality. Whether you need marketing tools, inventory management, or customer support, we seamlessly incorporate solutions tailored to your business.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Mobile-First Approach</h2>
+                            </div>
+                            <p>Our Shopify stores are built with a mobile-first approach, ensuring optimal performance on all devices. This responsiveness improves user experience and helps capture the growing number of mobile shoppers.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Payment Gateway Setup</h2>
+                            </div>
+                            <p>We offer expert assistance in setting up multiple payment gateways, ensuring secure and smooth transactions for your customers. Our integration process enhances the checkout experience and boosts conversion rates.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>SEO Best Practices</h2>
+                            </div>
+                            <p>We implement SEO best practices in your Shopify store to improve visibility on search engines. Our strategies focus on optimizing product descriptions, images, and site structure to drive organic traffic.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Ongoing Support and Training</h2>
+                            </div>
+                            <p>After launch, we provide ongoing support and training for your Shopify store. Our dedicated team is available to assist with any issues and offer guidance to help you manage and grow your online business effectively.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

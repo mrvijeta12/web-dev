@@ -34,112 +34,160 @@
                 </div>
                 <div class="hero-data">
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Travel Software Development Services</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Customized Solutions to Enhance Your Travel Business Operations</h2>
+                    <a href="https://calendly.com/yourtravelcompany/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+
                 </div>
+
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Revolutionizing Healthcare Delivery with Our Comprehensive Software Development Services</h1>
-                <p>Our healthcare software development services are designed to enhance patient care, streamline operations, and improve overall healthcare delivery. By leveraging cutting-edge technology, data analytics, and user-centric design, we empower healthcare providers to meet the evolving needs of their patients, ensuring efficient, secure, and accessible healthcare solutions for all.</p>
+                <h1>Redefining Travel Experiences with Our Innovative Software Development Solutions</h1>
+                <p>Our travel software development services are designed to enhance the journey from planning to destination, making travel more personalized, efficient, and seamless. By leveraging cutting-edge technology, data insights, and intuitive design, we empower travel companies to deliver exceptional customer experiences, streamline operations, and adapt to the evolving needs of modern travelers.</p>
             </section>
 
 
+            <!-- ####### details ####### -->
+
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Process We Follow To Develop Travel Software</h1>
+
+            </div>
 
             <section class="detail">
                 <section class="detail-title detail-child">
-                    <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Healthcare Software Consulting</p>
-                    <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
-                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Heathcare Software Moderization</p>
-                    <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> Heathcare Software Integration</p>
-                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Heathcare eCommerce Development</p>
-                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Heathcare Software Product Development</p>
-                </section>
+                    <p class="tab active-tab" onclick="toggleContent(1)">
+                        <strong>01.</strong> Travel Software Consulting
 
+                    </p>
+                    <p class="tab" onclick="toggleContent(2)">
+                        <strong>02.</strong> Custom Travel Software Development
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(3)">
+                        <strong>03.</strong> Travel Software Product Development
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(4)">
+                        <strong>04.</strong> Travel Software Integration
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(5)">
+                        <strong>05.</strong> Travel Software Testing and Quality Assurance
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(6)">
+                        <strong>06.</strong> Travel Software Modernization
+
+                    </p>
+                    <p class="tab" onclick="toggleContent(7)">
+                        <strong>07.</strong> Travel Software Maintenance and Support
+
+                    </p>
+                </section>
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Healthcare Software Consulting </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-consulting.png" alt="">
+                            <h3>Travel Software Consulting</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We analyze your travel business needs and technological requirements, providing strategic guidance for developing customized software solutions. Our consulting services help identify growth opportunities, mitigate risks, and establish a solid foundation for successful software implementation.</p>
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Custom Heathcare Software Development </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-development.png" alt="">
+                            <h3>Custom Travel Software Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We specialize in developing tailored software solutions that cater to your travel agency's specific requirements. From initial coding to deploying unique features, our development process ensures your software meets both operational and customer service needs.</p>
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Moderization </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-product-development.png" alt="">
+                            <h3>Travel Software Product Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We focus on creating scalable, market-ready software products for the travel industry, transforming your innovative ideas into reality. Our product development services deliver solutions that enhance user experience, streamline operations, and drive revenue growth.</p>
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Integration </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-integration.png" alt="">
+                            <h3>Travel Software Integration</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>Our integration services ensure seamless connectivity between your new software and existing travel systems. We facilitate interoperability among platforms to enhance operational efficiency, reduce manual processes, and improve customer satisfaction.</p>
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare eCommerce Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-testing.png" alt="">
+                            <h3>Travel Software Testing and Quality Assurance</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We conduct comprehensive testing of your travel software to identify bugs and vulnerabilities, ensuring it meets the highest standards of performance, security, and compliance with industry regulations. Our quality assurance practices guarantee a reliable user experience.</p>
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Product Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
+                            <img src="./images/travel-modernization.png" alt="">
+                            <h3>Travel Software Modernization</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We upgrade legacy travel software to meet contemporary technological standards, enhancing its functionality and security. Our modernization services help your agency stay competitive by adopting advanced features that support evolving customer needs and operational demands.</p>
+                    </section>
+                    <section id="content7" class="content">
+                        <div class="content-header">
+                            <img src="./images/travel-maintenance.png" alt="">
+                            <h3>Travel Software Maintenance and Support</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>Our maintenance and support services provide ongoing software updates, troubleshooting, and enhancements to ensure optimal performance. We focus on resolving issues, improving functionality, and adapting the software to changing technology trends and travel industry requirements.</p>
                     </section>
                 </section>
             </section>
+
 
 
 
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our healthcare software development services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur, voluptatem saepe omnis, cumque, consequatur neque doloremque ducimus ipsum provident iste recusandae! Nulla sunt est velit nobis perferendis ex deleniti.</p>
+                <h1>Sectors that can benefits from our Travel software development services</h1>
 
                 <div class="benefits-sectors">
                     <ul>
-                        <li>Hospitals and Clinic</li>
-                        <li>Pharmaceutical Companies</li>
-                        <li>Medical Device Manufacture</li>
-                        <li>Diagonostic laboratories</li>
-                        <li>Heathcare NGOs</li>
-                        <li>Heathcare Insurance Providers</li>
-                        <li>rehabilitation centers</li>
-
+                        <li>Travel Agencies</li>
+                        <li>Tour Operators</li>
+                        <li>Airlines</li>
+                        <li>Hotels and Resorts</li>
+                        <li>Car Rental Services</li>
+                        <li>Travel Insurance Companies</li>
                     </ul>
                     <ul>
-                        <li>telemedicine Providers</li>
-                        <li>Long Term Care Facilities</li>
-                        <li>mental Health Facilities</li>
-                        <li>Specialty Care Clinic</li>
-                        <li>Hospice care providers</li>
-                        <li>Goverment Heath department</li>
-
+                        <li>Cruise Lines</li>
+                        <li>Online Travel Platforms</li>
+                        <li>Adventure Travel Companies</li>
+                        <li>Destination Management Companies</li>
+                        <li>Local Experience Providers</li>
+                        <li>Travel Technology Solutions</li>
                     </ul>
-
                 </div>
             </section>
 
@@ -147,120 +195,130 @@
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Healthcare Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Travel Software Development</h1>
 
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Healthcare Technology Expertise
-                        </h1>
-                        <p>Understand client needs, goals, and technical requirements.</p>
+                        <img src="images/travel_expertise.png" alt="">
+                        <h1>Travel Technology Expertise</h1>
+                        <p>Leading the way with innovative technology solutions tailored for the travel industry, enhancing booking processes, customer experiences, and operational efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Software Solutions</h1>
-                        <p>Delivering visually appealing, user-friendly designs for optimal customer experience.</p>
+                        <img src="images/custom_travel_app.png" alt="">
+                        <h1>Custom Travel App Development</h1>
+                        <p>Designing intuitive and user-friendly travel apps for seamless bookings, itinerary management, and personalized travel experiences that cater to modern traveler needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Data Security and Compliance</h1>
-                        <p>Iterative development approach ensuring flexibility, speed, and continuous improvements.</p>
+                        <img src="images/security.png" alt="">
+                        <h1>Data Security and Payment Protection</h1>
+                        <p>Implementing advanced security measures to safeguard customer data and secure payment transactions across all travel booking platforms.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Innovative and Scalable Tech</h1>
-                        <p> Rigorous testing to ensure bug-free, high-performance applications.</p>
+                        <img src="images/integration.png" alt="">
+                        <h1>Seamless Platform Integration</h1>
+                        <p>Ensuring smooth integration of travel booking systems with third-party services, enhancing user experience with real-time updates and multiple booking options.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Agile Development Process</h1>
-                        <p>Seamless launch process, ensuring your website goes live smoothly.</p>
+                        <img src="images/innovation.png" alt="">
+                        <h1>Scalable and Innovative Solutions</h1>
+                        <p>Delivering cutting-edge technology that supports scalability and innovation, allowing your travel platform to grow with industry trends and customer demands.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/support.png" alt="">
-                        <h1>Ongoing Support and Maintenance</h1>
-                        <p>Continual monitoring, updates, and enhancements to maintain top-notch performance.</p>
+                        <h1>24/7 Support and Maintenance</h1>
+                        <p>Providing continuous support and regular updates to ensure your travel technology platform operates smoothly and delivers an exceptional user experience.</p>
                     </div>
-
-
                 </div>
 
             </div>
+
             <!-- ######### who can avail ###### -->
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Who Can Avail Our Healthcare Software Services</h1>
+                    Who Can Avail Our Travel Software Services</h1>
 
             </div>
 
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/health-avail2.jpg" alt="Image on Left">
+                        <img src="./images/travel1-primary.jpg" alt="Image on Left">
                     </div>
+
                     <div class="avail-content-container" id="scrollable-content">
+                        <!-- Travel Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Hospitals and Clinics</h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Travel Agencies</h2>
                             </div>
-                            <p>Hospitals and clinics are the largest adopters of healthcare software. They use solutions like Electronic Health Records (EHR) and Hospital Information Systems (HIS) to manage patient data, streamline administrative tasks, improve diagnosis accuracy, and ensure smooth coordination between different departments. Software solutions also assist in scheduling, billing, inventory management, and data analytics, making day-to-day operations more efficient.</p>
-
+                            <p>Travel agencies utilize software for booking management, customer relationship management,
+                                and itinerary planning. These solutions streamline the booking process, enhance client
+                                communication, and provide valuable insights into travel trends, improving overall service
+                                quality and client satisfaction.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Telemedicine Providers</h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Airlines</h2>
                             </div>
-                            <p>With the rise of remote healthcare, telemedicine has become a crucial field that relies heavily on healthcare software. These platforms enable virtual consultations, secure video conferencing, online appointment scheduling, and electronic prescription management. Telemedicine software helps patients receive medical advice and treatment from the comfort of their homes while providing doctors with tools to monitor patient health in real-time.</p>
-
-
+                            <p>Airlines benefit from software for flight scheduling, ticketing, and customer service. These
+                                systems improve operational efficiency, enable real-time updates for passengers, and enhance
+                                loyalty program management, ensuring a smoother travel experience and better management
+                                of resources.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Pharmaceutical Companies </h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Hotels and Lodging</h2>
                             </div>
-                            <p>Pharmaceutical companies use specialized software for drug research, clinical trials, supply chain management, and regulatory compliance. Healthcare software helps these companies manage drug inventory, streamline distribution channels, and track medication effectiveness. This technology also supports data analysis in research and development, enabling faster innovation and bringing new drugs to the market more efficiently.</p>
-
-
+                            <p>Hotels use software for reservation management, guest services, and revenue optimization.
+                                These tools facilitate online bookings, improve customer engagement, and provide analytics for
+                                pricing strategies, helping to enhance guest experiences and maximize occupancy rates.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Health Insurance Companies </h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Car Rental Services</h2>
                             </div>
-                            <p>Health insurance companies use healthcare software to manage claims processing, policy administration, customer service, and data analytics. This software enables insurers to automate claim approvals, detect fraudulent activities, and analyze patient treatment data to make better decisions on coverage plans. Advanced data analysis tools also help in pricing models and managing risk, improving the overall efficiency of the insurance process.</p>
-
-
+                            <p>Car rental companies leverage software for fleet management, reservation systems,
+                                and customer service. These solutions streamline operations, improve inventory tracking, and
+                                enhance the rental process, ensuring efficient service delivery and a better overall experience for
+                                customers.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Laboratories and Diagnostic Centers </h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Tour Operators</h2>
                             </div>
-                            <p>Laboratories and diagnostic centers benefit from healthcare software that handles test scheduling, sample tracking, result analysis, and report generation. These tools help in efficiently managing patient data, maintaining accuracy in test results, and integrating seamlessly with hospital systems or EHR platforms. Diagnostic software reduces human error and speeds up the process of delivering accurate results to healthcare providers and patients.</p>
-
-
+                            <p>Tour operators benefit from software that manages tour bookings, customer inquiries,
+                                and itinerary customization. These tools facilitate efficient communication with clients, streamline
+                                logistics, and provide valuable data insights, ensuring memorable travel experiences and
+                                enhanced operational efficiency.</p>
                         </div>
+
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Nursing Homes and Long-Term Care Facilities</h2>
+                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <h2>Travel Insurance Providers</h2>
                             </div>
-                            <p>Nursing homes and long-term care facilities rely on healthcare software to enhance patient care and manage daily operations. These solutions provide tools for creating personalized care plans, tracking medication schedules, monitoring patient health conditions, and ensuring proper communication among caregivers. This software plays a vital role in improving the quality of life for residents by ensuring they receive timely and personalized attention.</p>
-
-
+                            <p>Travel insurance companies utilize software for policy management, claims processing, and
+                                customer support. These systems improve efficiency, enhance customer communication, and
+                                provide data analytics for risk assessment, ensuring timely service delivery and better
+                                management of insurance products.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -279,63 +337,51 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/project-analysis-health.png" alt="">
-
+                            <img src="images/travel-booking-software.png" alt="">
                         </div>
-                        <h2>Project analysis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Travel Booking Software</h2>
+                        <p>User-friendly platforms for booking flights and hotels.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/design-health.png" alt="">
-
+                            <img src="images/itinerary-management.png" alt="">
                         </div>
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Itinerary Management Solutions</h2>
+                        <p>Systems to manage and customize travel itineraries easily.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/development-health.png" alt="">
-
+                            <img src="images/travel-analytics-software.png" alt="">
                         </div>
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Travel Analytics Tools</h2>
+                        <p>Data insights into travel patterns for better decisions.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/testing-health.png" alt="">
-
+                            <img src="images/loyalty-program-software.png" alt="">
                         </div>
-                        <h2>testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Loyalty Program Development</h2>
+                        <p>Customized programs to enhance customer retention and loyalty.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./images/project-launch-health.png" alt="">
-
+                            <img src="images/mobile-app-development.png" alt="">
                         </div>
-                        <h2>Project Launch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Mobile Travel Apps</h2>
+                        <p>Apps to facilitate bookings and real-time travel updates.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/maintance-and-support-health.png" alt="">
-
+                            <img src="images/online-payment-solutions.png" alt="">
                         </div>
-                        <h2>Maintanace and Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Online Payment Solutions</h2>
+                        <p>Secure payment gateways for safe online booking experiences.</p>
                     </div>
-
-
-
-
-
-
-
-
-
-
                 </div>
+
+
+
+
                 <div class="swiper-pagination"></div>
             </div>
 
@@ -346,14 +392,14 @@
 
             <section class="section-book">
                 <section class="book-image">
-                    <img src="./images/healthcare-book.jpg" alt="">
+                    <img src="./images/booking-industry.jpg" alt="">
                 </section>
                 <section class="book-data">
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Travel Software Development Services</h1>
+                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Travel Professionals</p>
                     <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
                 </section>
 

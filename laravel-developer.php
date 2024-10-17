@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Transform Your Ideas into Reality with Our Expert Laravel Developers, Offering Tailored Solutions for Your Projects.</h2>
+                    <p>Our skilled Laravel developers are dedicated to creating feature-rich web applications that align with your specific business goals. By leveraging the powerful capabilities of the Laravel framework, we build secure, efficient, and scalable solutions that enhance user experience and streamline operations.</p>
+                    <p>With a commitment to innovation and best practices, we ensure your Laravel applications are optimized for performance and maintainability. Partner with us to unlock the full potential of Laravel and elevate your online presence to the next level.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Laravel-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Laravel-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Laravel-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Leverage Laravel Expertise</h2>
+                            </div>
+                            <p>Hiring Laravel experts allows you to accelerate your development cycle. Their familiarity with the framework's features enables them to quickly implement functionalities and resolve issues, helping you launch your application faster and more efficiently.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Customized Application Development</h2>
+                            </div>
+                            <p>Laravel professionals specialize in crafting applications that meet your specific business requirements. They collaborate closely with you to understand your goals, ensuring the final product enhances user engagement and aligns with your operational needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Advanced Framework Features</h2>
+                            </div>
+                            <p>Our Laravel developers utilize the framework’s built-in tools, such as Eloquent ORM and Blade templating, to streamline development. These features reduce coding time and help create robust, high-quality applications efficiently.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Scalable Architecture</h2>
+                            </div>
+                            <p>With a focus on scalability, Laravel experts design applications that can grow alongside your business. Their approach to modular architecture allows for easy expansion and updates, accommodating increasing user demands seamlessly.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Comprehensive Security Practices</h2>
+                            </div>
+                            <p>Laravel developers are well-versed in implementing security best practices within the framework. They safeguard your application against threats like SQL injection and cross-site scripting, ensuring the safety of your data and users.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization Techniques</h2>
+                            </div>
+                            <p>Our Laravel experts specialize in performance tuning. They employ caching strategies, optimize database queries, and implement best practices to ensure your application runs efficiently and provides a smooth user experience.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

@@ -48,15 +48,23 @@
             </section>
 
 
+            <!-- ####### details ####### -->
 
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Process We Follow To Develop Healthcare Software</h1>
+
+            </div>
             <section class="detail">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Healthcare Software Consulting</p>
                     <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
-                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Heathcare Software Moderization</p>
+                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Healthcare Software Product Development</p>
                     <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> Heathcare Software Integration</p>
-                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Heathcare eCommerce Development</p>
-                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Heathcare Software Product Development</p>
+                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Healthcare Software Testing and Quality Assurance</p>
+                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Healthcare Software Modernization</p>
+                    <p class="tab" onclick="toggleContent(7)"><strong>07.</strong> Healthcare Software Maintenance and Support</p>
+
                 </section>
 
                 <section class="detail-description detail-child">
@@ -66,7 +74,7 @@
                             <h3>Healthcare Software Consulting </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We analyze your healthcare organization's needs, assess technological requirements, and provide strategic guidance to develop customized software solutions. Our consulting services help identify opportunities, mitigate risks, and design the blueprint for a successful software implementation.</p>
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
@@ -74,15 +82,16 @@
                             <h3>Custom Heathcare Software Development </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We specialize in building tailored software solutions designed to meet your healthcare organization's specific needs. From initial coding to deploying unique functionalities, our development process ensures that your software aligns perfectly with your clinical, operational, and administrative requirements.</p>
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
                             <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Moderization </h3>
+                            <h3>Healthcare Software Product Development</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>Focused on creating scalable and market-ready healthcare software products, we turn your ideas into reality. Our product development services deliver innovative solutions that address industry needs, enhance patient care, and streamline operations for healthcare providers and organizations.</p>
+
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
@@ -90,26 +99,133 @@
                             <h3>Heathcare Software Integration </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>Our integration services ensure seamless connectivity between your new software and existing healthcare systems. We bridge data silos, enabling interoperability among platforms to enhance efficiency, reduce manual effort, and improve decision-making for better patient outcomes.</p>
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
                             <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare eCommerce Development</h3>
+                            <h3>Healthcare Software Testing and Quality Assurance</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We rigorously test your healthcare software to identify bugs, vulnerabilities, and areas for improvement. Our quality assurance practices guarantee that your solution meets the highest standards for performance, security, and compliance with healthcare industry regulations.</p>
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
                             <img src="./images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Product Development</h3>
+                            <h3>Healthcare Software Modernization</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
+                        <p>We upgrade legacy healthcare software to meet modern technological standards, enhancing its functionality, performance, and security. Our modernization services help your organization stay competitive by adopting advanced features that support evolving industry needs and regulatory requirements.</p>
+                    </section>
+                    <section id="content7" class="content">
+                        <div class="content-header">
+                            <img src="./images/project-analysis-health.png" alt="">
+                            <h3>Healthcare Software Maintenance and Support</h3>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <p>Our maintenance and support services provide continuous software updates, troubleshooting, and enhancements to ensure optimal performance. We focus on fixing issues, improving functionality, and adapting the software to changing technology trends and healthcare industry demands.</p>
                     </section>
                 </section>
             </section>
+
+
+            <!-- <section class="detail">
+                <section class="detail-title detail-child">
+                    <p class="tab active-tab" onclick="toggleContent(1)">
+                        <strong>01.</strong> Restaurant Software Consulting
+                    </p>
+                    <p class="tab" onclick="toggleContent(2)">
+                        <strong>02.</strong> Custom Restaurant Software Development
+                    </p>
+                    <p class="tab" onclick="toggleContent(3)">
+                        <strong>03.</strong> Restaurant Software Product Development
+                    </p>
+                    <p class="tab" onclick="toggleContent(4)">
+                        <strong>04.</strong> Restaurant Software Integration
+                    </p>
+                    <p class="tab" onclick="toggleContent(5)">
+                        <strong>05.</strong> Restaurant Software Testing and Quality Assurance
+                    </p>
+                    <p class="tab" onclick="toggleContent(6)">
+                        <strong>06.</strong> Restaurant Software Modernization
+                    </p>
+                    <p class="tab" onclick="toggleContent(7)">
+                        <strong>07.</strong> Restaurant Software Maintenance and Support
+                    </p>
+                </section>
+                <section class="detail-description detail-child">
+                    <section id="content1" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-consulting.png" alt="">
+                            <h3>Restaurant Software Consulting</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>We evaluate your restaurant’s needs and technological requirements, providing strategic guidance for developing customized software solutions. Our consulting services help identify opportunities for growth, mitigate risks, and establish a solid foundation for successful software implementation.</p>
+                    </section>
+                    <section id="content2" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-development.png" alt="">
+                            <h3>Custom Restaurant Software Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>We specialize in developing tailored software solutions that cater to your restaurant's specific requirements. From initial coding to deploying unique features, our development process ensures your software meets the operational and customer service needs of your establishment.</p>
+                    </section>
+                    <section id="content3" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-product-development.png" alt="">
+                            <h3>Restaurant Software Product Development</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>We focus on creating scalable, market-ready software products for the restaurant industry, turning your innovative ideas into reality. Our product development services deliver solutions that enhance customer experience, streamline operations, and drive revenue growth.</p>
+                    </section>
+                    <section id="content4" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-integration.png" alt="">
+                            <h3>Restaurant Software Integration</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>Our integration services ensure seamless connectivity between your new software and existing restaurant systems. We facilitate interoperability among platforms to enhance operational efficiency, reduce manual processes, and improve service delivery for better customer satisfaction.</p>
+                    </section>
+                    <section id="content5" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-testing.png" alt="">
+                            <h3>Restaurant Software Testing and Quality Assurance</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>We conduct thorough testing of your restaurant software to identify bugs and vulnerabilities, ensuring it meets the highest standards of performance, security, and compliance with industry regulations. Our quality assurance practices guarantee a reliable customer experience.</p>
+                    </section>
+                    <section id="content6" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-modernization.png" alt="">
+                            <h3>Restaurant Software Modernization</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>We upgrade legacy restaurant software to meet contemporary technological standards, enhancing its functionality and security. Our modernization services help your establishment remain competitive by adopting advanced features that support evolving customer needs and operational demands.</p>
+                    </section>
+                    <section id="content7" class="content">
+                        <div class="content-header">
+                            <img src="./images/restaurant-maintenance.png" alt="">
+                            <h3>Restaurant Software Maintenance and Support</h3>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <p>Our maintenance and support services provide ongoing software updates, troubleshooting, and enhancements to ensure optimal performance. We focus on resolving issues, improving functionality, and adapting the software to changing technology trends and restaurant industry requirements.</p>
+                    </section>
+                </section>
+            </section> -->
 
 
 
@@ -124,19 +240,18 @@
                         <li>Hospitals and Clinic</li>
                         <li>Pharmaceutical Companies</li>
                         <li>Medical Device Manufacture</li>
-                        <li>Diagonostic laboratories</li>
+                        <li>Diagonostic Laboratories</li>
                         <li>Heathcare NGOs</li>
-                        <li>Heathcare Insurance Providers</li>
-                        <li>rehabilitation centers</li>
+                        <li>Rehabilitation Centers</li>
 
                     </ul>
                     <ul>
-                        <li>telemedicine Providers</li>
+                        <li>Telemedicine Providers</li>
                         <li>Long Term Care Facilities</li>
-                        <li>mental Health Facilities</li>
+                        <li>Mental Health Facilities</li>
                         <li>Specialty Care Clinic</li>
-                        <li>Hospice care providers</li>
-                        <li>Goverment Heath department</li>
+                        <li>Hospice Care Providers</li>
+                        <li>Goverment Heath Department</li>
 
                     </ul>
 
@@ -193,6 +308,8 @@
                 </div>
 
             </div>
+
+
             <!-- ######### who can avail ###### -->
 
             <div class="container">
@@ -204,7 +321,7 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/health-avail2.jpg" alt="Image on Left">
+                        <img src="./images/healthcare-primary.jpg" alt="Image on Left">
                     </div>
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
@@ -270,72 +387,64 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Process We Follow To Develop Heathcare Software</h1>
+                    Services Offered in Healthcare Software Development</h1>
 
             </div>
 
             <div class="swiper mySwiper">
 
+
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/project-analysis-health.png" alt="">
-
                         </div>
-                        <h2>Project analysis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Healthcare IT Consulting</h2>
+                        <p>Guiding providers to enhance efficiency with strategic IT solutions.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/design-health.png" alt="">
-
                         </div>
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Patient Management Software</h2>
+                        <p>Streamlining appointments and billing for better patient engagement.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/development-health.png" alt="">
-
                         </div>
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Telemedicine Software Solutions</h2>
+                        <p>Enabling virtual healthcare with video consultations and e-prescriptions.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/testing-health.png" alt="">
-
                         </div>
-                        <h2>testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Healthcare Data Management</h2>
+                        <p>Transforming medical data into insights for decision-making.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="./images/project-launch-health.png" alt="">
-
+                            <img src="images/project-launch-health.png" alt="">
                         </div>
-                        <h2>Project Launch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Custom LIMS Development</h2>
+                        <p>Automating workflows and ensuring compliance with lab standards.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/maintance-and-support-health.png" alt="">
-
                         </div>
-                        <h2>Maintanace and Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Regulatory Compliance Solutions</h2>
+                        <p>Ensuring software compliance with HIPAA and GDPR standards.</p>
                     </div>
-
-
-
-
-
-
-
-
-
-
                 </div>
+
+
+
+
+
+
                 <div class="swiper-pagination"></div>
             </div>
 
@@ -346,7 +455,7 @@
 
             <section class="section-book">
                 <section class="book-image">
-                    <img src="./images/healthcare-book.jpg" alt="">
+                    <img src="./images/booking-industry.jpg" alt="">
                 </section>
                 <section class="book-data">
 

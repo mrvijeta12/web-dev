@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Unlock the Potential of Your Website with Our Skilled WordPress Developers, Delivering Customized Solutions for Growth.</h2>
+                    <p>Our dedicated WordPress developers excel at building responsive and feature-rich websites tailored to your specific needs. By utilizing the flexibility of WordPress, we create unique solutions that not only enhance functionality but also engage your audience effectively.</p>
+                    <p>With a commitment to quality and innovation, we strive to provide you with a platform that stands out. Collaborate with us to transform your online presence and discover how our expert team can make a significant impact on your business.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/wordpress-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/wordpress-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -254,7 +255,7 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/wordpress-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">

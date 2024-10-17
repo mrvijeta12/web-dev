@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Empower Your Applications with Our Skilled Node.js Developers, Delivering Customized Solutions for Your Business.</h2>
+                    <p>Our expert Node.js developers specialize in building high-performance, scalable applications that cater to your unique business needs. By leveraging Node.js’s powerful features and non-blocking architecture, we create solutions that enhance real-time interactions and improve overall user experience.</p>
+                    <p>With a strong focus on efficiency and innovation, we ensure your Node.js applications are optimized for speed and reliability. Collaborate with us to harness the power of Node.js and elevate your digital presence in today’s competitive market.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Node.JS-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Node.JS-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Node.JS-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Expert Developers</h2>
+                            </div>
+                            <p>Our Node.js experts bring extensive experience and specialized skills to your projects, ensuring the implementation of industry best practices. With their deep understanding of the framework, they deliver efficient, high-performance applications tailored to your business needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Cost Efficiency</h2>
+                            </div>
+                            <p>Hiring our Node.js professionals reduces operational costs while maximizing output. By optimizing resource allocation and improving development workflows, we help you achieve significant savings without compromising on quality or performance, making your investment worthwhile.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Fast Turnaround</h2>
+                            </div>
+                            <p>Experience quicker project completion with our skilled Node.js team. Their expertise allows for streamlined development processes, ensuring that your applications are built efficiently and delivered on time, helping you stay ahead in today’s fast-paced market.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Scalable Solutions</h2>
+                            </div>
+                            <p>Our Node.js experts design applications that are not only robust but also scalable. This flexibility allows your software to grow alongside your business, accommodating increasing demands and user traffic without sacrificing performance or reliability.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Ongoing Support</h2>
+                            </div>
+                            <p>With our Node.js specialists, you gain continuous support for your applications. Our team is dedicated to ensuring smooth operations through regular maintenance and prompt issue resolution, providing peace of mind and allowing you to focus on your core business activities.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Innovative Strategies</h2>
+                            </div>
+                            <p>Leverage the creative solutions offered by our Node.js experts. They employ innovative approaches to tackle complex challenges, ensuring your applications stand out in a competitive landscape and effectively meet the evolving needs of your users.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

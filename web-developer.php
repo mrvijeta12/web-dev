@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Transform Your Ideas into Reality with Our Expert Web Developers, Delivering Customized Solutions for Your Business Needs.</h2>
+                    <p>Our skilled web developers specialize in creating responsive, engaging websites that resonate with your target audience. By utilizing the latest technologies and design trends, we craft tailored solutions that enhance user experience and drive conversions.</p>
+                    <p>With a commitment to quality and performance, we ensure your website is optimized for speed and accessibility. Partner with us to bring your vision to life and discover how our dedicated team can elevate your online presence and success.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Web Developer-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Web Developer-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Web Developer-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Tailored Solutions</h2>
+                            </div>
+                            <p>Our web developers craft custom solutions that align perfectly with your business objectives. By understanding your unique requirements, we create websites that reflect your brand and engage your target audience effectively.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization</h2>
+                            </div>
+                            <p>We focus on optimizing website speed and performance. Our developers employ best practices to ensure fast load times and smooth functionality, enhancing user experience and reducing bounce rates.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Robust Testing</h2>
+                            </div>
+                            <p>Our thorough testing processes guarantee that your website is bug-free and performs flawlessly across all devices. We conduct comprehensive quality assurance to identify and resolve issues before launch, ensuring a smooth experience for users.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Integration Capabilities</h2>
+                            </div>
+                            <p>Our web developers specialize in integrating various third-party tools and APIs, enhancing your website’s functionality. This capability allows for seamless connections with payment processors, CRMs, and other essential services to streamline operations.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Content Management Systems</h2>
+                            </div>
+                            <p>We empower you with easy-to-use content management systems (CMS) tailored to your needs. Our developers ensure that you can manage and update your website content effortlessly, giving you full control without technical hassle.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Training and Documentation</h2>
+                            </div>
+                            <p>We provide thorough training and detailed documentation to help your team manage the website post-launch. Our commitment to knowledge transfer ensures you’re equipped to maintain and update your site independently.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

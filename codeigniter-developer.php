@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Accelerate Your Web Development with Our Expert CodeIgniter Developers, Delivering Custom Solutions for Your Business.</h2>
+                    <p>Our proficient CodeIgniter developers specialize in crafting high-performance web applications that are tailored to meet your unique business requirements. Leveraging CodeIgniter’s lightweight framework, we build scalable solutions that ensure efficient performance and rapid development.</p>
+                    <p>With a focus on best practices and clean code, we guarantee that your applications are not only robust but also easy to maintain. Partner with us to harness the power of CodeIgniter and propel your online presence to new heights.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/CodeIgniter-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/CodeIgniter-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -266,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/CodeIgniter-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -322,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Expert CodeIgniter Developers</h2>
+                            </div>
+                            <p>Our CodeIgniter developers bring extensive experience in building dynamic web applications. They leverage the framework's powerful capabilities to deliver high-performance solutions that align with your business goals.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Customized Web Applications</h2>
+                            </div>
+                            <p>We create tailored CodeIgniter applications that suit your unique business requirements. Our team works closely with you to develop features that enhance user experience and align perfectly with your operational needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Rapid Development Cycle</h2>
+                            </div>
+                            <p>Our expertise in CodeIgniter allows for a fast development process, reducing time to market. We utilize the framework’s built-in tools to streamline coding and quickly implement scalable solutions, keeping your project on schedule.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Robust Code Architecture</h2>
+                            </div>
+                            <p>We focus on creating a solid code structure for your CodeIgniter applications. Our developers follow best coding practices to ensure your project is maintainable and can easily evolve with your business needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Security Best Practices</h2>
+                            </div>
+                            <p>Our CodeIgniter experts implement the latest security measures to protect your web applications. From data encryption to input validation, we prioritize safeguarding your system against vulnerabilities and cyber threats.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization</h2>
+                            </div>
+                            <p>We employ performance optimization techniques to ensure your CodeIgniter applications run smoothly. By fine-tuning database queries and implementing caching strategies, we deliver a faster and more responsive user experience.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

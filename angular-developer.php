@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Empower Your Applications with Our Skilled Angular.JS Developers, Delivering Scalable Solutions for Enhanced User Experiences.</h2>
+                    <p>Our team of expert Angular.JS developers is dedicated to creating responsive and feature-rich web applications. By leveraging the full potential of Angular.JS, we build tailored solutions that provide seamless performance and dynamic user interactions, perfectly aligned with your business goals.</p>
+                    <p>Focusing on scalability and innovation, we transform your ideas into robust applications that grow with your business needs. Partner with us to experience the difference our talented Angular.JS developers can make in enhancing your digital projects.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Angular-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Angular-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -273,63 +274,55 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Angular-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
+
+
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Customized Solutions</h2>
+                                <h2>Proficient Developers</h2>
                             </div>
-                            <p>Our Angular experts create tailored solutions that align with your specific business goals and target audience. By understanding your unique requirements, they develop custom themes and plugins that enhance your website's functionality, ensuring a distinct online presence that resonates with your users.</p>
-
+                            <p>Our AngularJS developers are highly proficient in crafting responsive and feature-rich applications. Their expertise ensures your project utilizes the latest advancements in AngularJS for a seamless user experience.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Enhanced Performance</h2>
+                                <h2>Tailored Development</h2>
                             </div>
-                            <p>When you hire our Angular experts, you can expect improved website performance. They optimize your site for speed and efficiency through caching strategies, image compression, and clean coding practices, which not only enhance user experience but also positively impact your search engine rankings.</p>
-
-
+                            <p>We offer customized AngularJS solutions tailored to your specific needs. By collaborating closely with you, we create applications that align with your business goals and enhance overall functionality.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Ongoing Maintenance </h2>
+                                <h2>On-Time Delivery</h2>
                             </div>
-                            <p>Our team provides continuous support and maintenance, ensuring your Angular site remains up-to-date, secure, and running smoothly. Regular updates, backups, and security checks protect your website from vulnerabilities and help maintain optimal performance, giving you peace of mind to focus on your business.</p>
-
-
+                            <p>We understand the importance of deadlines, and our team is dedicated to delivering your AngularJS projects on time. Our efficient development process ensures that you can launch your application as scheduled.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>SEO Expertise </h2>
+                                <h2>Scalability Focus</h2>
                             </div>
-                            <p>With our Angular experts, you gain access to proven SEO strategies that enhance your website's visibility. They implement on-page optimization, keyword research, and quality content strategies to improve your search engine rankings, driving more organic traffic to your site and increasing your online presence.</p>
-
-
+                            <p>Our AngularJS applications are designed with scalability in mind. This allows your project to grow and adapt easily as your business needs change, providing long-term value and flexibility.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Cost Efficiency </h2>
+                                <h2>Enhanced User Engagement</h2>
                             </div>
-                            <p>Hiring our Angular experts is a cost-effective solution for your web development needs. With their experience and expertise, they deliver high-quality work efficiently, reducing the likelihood of costly mistakes. This allows you to allocate resources effectively and achieve your business goals without overspending.</p>
-
-
+                            <p>With a focus on interactive design, our AngularJS solutions boost user engagement. We implement features that keep users interested and encourage them to explore your application further.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Timely Project Delivery</h2>
+                                <h2>Comprehensive Maintenance</h2>
                             </div>
-                            <p>Our Angular experts prioritize timely project delivery while maintaining high-quality standards. They adhere to agreed-upon timelines and milestones, ensuring that your project progresses smoothly and is completed on schedule. This reliability helps you stay on track with your business objectives and launch plans.</p>
-
-
+                            <p>After your application goes live, we provide thorough maintenance and support. Our team is always available to troubleshoot issues, implement updates, and ensure your AngularJS solution runs smoothly over time.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 

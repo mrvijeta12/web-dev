@@ -39,17 +39,17 @@
             <!-- ####### INTRO ######### -->
 
             <div class="intro-wrapper">
-
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Maximize Your E-Commerce Success with Our Skilled Magento Developers, Providing Customized Solutions for Your Business Needs.</h2>
+                    <p>Our experienced Magento developers specialize in creating powerful and flexible e-commerce platforms tailored to your unique business goals. By harnessing Magento's comprehensive capabilities, we build online stores that improve user interaction and enhance the overall shopping experience.</p>
+                    <p>Dedicated to delivering excellence, we optimize your Magento site for speed and performance, ensuring it stands out in a competitive market. Partner with us to transform your online store and drive higher sales and customer satisfaction.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Magneto-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +67,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Magneto-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -267,9 +267,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Magneto-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -323,7 +323,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Custom Extensions</h2>
+                            </div>
+                            <p>Our Magento developers are skilled in creating custom extensions that enhance your store's functionality. These tailored solutions allow you to add unique features and integrations specific to your business needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>User-Centric Design</h2>
+                            </div>
+                            <p>We focus on user-centric design principles to create intuitive navigation and a seamless shopping experience. By prioritizing usability, we help maximize customer satisfaction and increase conversion rates.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Scalable Solutions</h2>
+                            </div>
+                            <p>Our Magento development is designed for scalability, ensuring your online store can grow with your business. Whether you're expanding your product range or increasing traffic, our solutions can adapt to meet your evolving needs.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Advanced Analytics</h2>
+                            </div>
+                            <p>We implement advanced analytics tools that provide insights into customer behavior and sales trends. This data helps you make informed decisions to optimize your marketing strategies and improve overall performance.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Mobile Optimization</h2>
+                            </div>
+                            <p>Our Magento stores are built with mobile optimization in mind, ensuring a responsive design that looks great on all devices. This approach enhances user experience and captures mobile shoppers effectively.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Security Best Practices</h2>
+                            </div>
+                            <p>We prioritize security in our Magento development, implementing best practices to protect your store from vulnerabilities. Regular security updates and audits help safeguard customer data and maintain trust.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

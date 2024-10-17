@@ -40,16 +40,19 @@
 
             <div class="intro-wrapper">
 
+
+
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Transform Your Ideas into Interactive Web Applications with Our Skilled Vue.js Developers, Delivering Seamless User Experiences.</h2>
+                    <p>Our team of Vue.js developers excels at building responsive and dynamic web applications that captivate users. Leveraging Vue's progressive framework and reactivity, we craft custom solutions tailored to your specific business requirements, ensuring high performance and engagement.</p>
+                    <p>With a focus on adaptability and innovation, we bring your vision to life, creating scalable applications that grow alongside your business. Partner with us to unlock the full potential of Vue.js and experience the impact our expert developers can make on your digital journey.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Vue.JS-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +70,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Vue.JS-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -272,9 +275,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Vue.JS-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -328,7 +331,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Dynamic Interfaces</h2>
+                            </div>
+                            <p>Our Vue.js developers excel at creating dynamic and interactive user interfaces. They utilize Vue’s reactivity to build applications that respond instantly to user inputs, enhancing overall engagement.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Modular Architecture</h2>
+                            </div>
+                            <p>We leverage Vue.js’s modular architecture to build applications that are easy to maintain and scale. This approach promotes clean code organization and facilitates collaboration among development teams.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization</h2>
+                            </div>
+                            <p>Our team focuses on performance optimization, utilizing techniques like lazy loading and code splitting. This ensures your Vue.js applications load quickly and run smoothly, providing an excellent user experience.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Comprehensive Testing</h2>
+                            </div>
+                            <p>We implement thorough testing strategies, including unit and integration testing, to ensure your Vue.js applications are robust and bug-free. Our commitment to quality guarantees reliable performance in production.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Responsive Design</h2>
+                            </div>
+                            <p>Our Vue.js solutions prioritize responsive design, ensuring your applications look and function well on all devices. This adaptability increases accessibility and enhances user engagement across various platforms.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Community-Driven Development</h2>
+                            </div>
+                            <p>With a strong emphasis on community-driven practices, our developers stay updated with the latest Vue.js trends and updates. This involvement ensures that your project benefits from the most current tools and methodologies.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

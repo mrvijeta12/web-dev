@@ -41,15 +41,16 @@
             <div class="intro-wrapper">
 
                 <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                    <h2>Elevate Your Online Presence with Our Skilled Joomla Developers, Delivering Tailored Solutions for Your Business.</h2>
+                    <p>Our expert Joomla developers excel at creating user-friendly and dynamic websites that align with your specific needs. By leveraging Joomla's powerful features, we build customized solutions that enhance your content management experience and engage your audience effectively.</p>
+                    <p>With a commitment to quality and performance, we ensure your Joomla site is optimized for both users and search engines. Partner with us to bring your vision to life and see how our dedicated team can transform your online presence.</p>
                 </div>
 
 
 
+
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/Joomla-intro.jpg" alt="">
+                    <img src="./images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -67,7 +68,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/Joomla-expert-1.jpg" alt="">
+                            <img src="images/we-1.jpg" alt="">
 
                         </div>
                         <div class="swiper-slide-data">
@@ -269,9 +270,9 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/Joomla-advantage.jpg" alt="Image on Left">
+                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <!-- <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="./images/project-analysis-health.png" alt="Image on Left">
@@ -325,7 +326,53 @@
 
 
                         </div>
+                    </div> -->
+
+                    <div class="avail-content-container" id="scrollable-content">
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Custom Templates</h2>
+                            </div>
+                            <p>Our Joomla developers excel in creating custom templates that reflect your brand identity. These unique designs enhance user engagement while providing a seamless browsing experience tailored to your audience.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>User Management</h2>
+                            </div>
+                            <p>We leverage Joomla’s robust user management system to create tailored user roles and permissions. This ensures that your site is secure while providing the right access levels for different users.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Multilingual Capabilities</h2>
+                            </div>
+                            <p>Our team specializes in building multilingual Joomla sites, allowing you to reach a global audience. We implement language packs and features that enhance accessibility and user experience for diverse demographics.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Extension Integration</h2>
+                            </div>
+                            <p>We are proficient in integrating various Joomla extensions to enhance functionality. Whether you need e-commerce solutions or social media tools, we can seamlessly incorporate them into your website.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Performance Optimization</h2>
+                            </div>
+                            <p>Our Joomla development focuses on performance optimization techniques, ensuring your website loads quickly and efficiently. We implement caching, image optimization, and other strategies to enhance user experience.</p>
+                        </div>
+                        <div class="avail-content">
+                            <div class="avail-content-header">
+                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <h2>Continuous Support</h2>
+                            </div>
+                            <p>After launching your Joomla site, we provide ongoing support and maintenance. Our dedicated team is always available to address issues, perform updates, and ensure your website runs smoothly over time.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
