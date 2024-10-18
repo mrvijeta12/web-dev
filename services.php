@@ -217,7 +217,7 @@
             <div class="choose_container">
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/result.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-retail.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
@@ -233,13 +233,13 @@
                         <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/customize.jpg" alt="choose us">
+                        <img src="images/service-banking.jpg" alt="choose us">
                     </div>
                 </div>
 
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/result.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-healthcare.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
@@ -254,12 +254,12 @@
                         <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image">
-                        <img src="images/customize.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-energy.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
                     </div>
                 </div>
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/result.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-real-estate.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
@@ -274,7 +274,7 @@
                         <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image">
-                        <img src="images/customize.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-education.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
                     </div>
                 </div>
 

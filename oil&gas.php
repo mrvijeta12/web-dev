@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Oil and Gas Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Oil and Gas Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Oil and Gas Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Oil and Gas Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Oil and Gas Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Oil and Gas Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/oil-gas-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Oil and Gas Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -205,32 +205,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/oilgas_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Oil and Gas Technology Expertise</h1>
                         <p>Delivering innovative technology solutions tailored to the oil and gas industry, enhancing operational efficiency, safety, and data-driven decision-making.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_software.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Software Development</h1>
                         <p>Creating bespoke software solutions designed to optimize exploration, production, and distribution processes for oil and gas companies.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Compliance</h1>
                         <p>Implementing advanced cybersecurity measures to protect sensitive data and ensure compliance with industry regulations and standards.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/system_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless System Integration</h1>
                         <p>Integrating various operational systems to streamline processes, enhance data flow, and provide real-time visibility into assets and production.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Innovative Solutions</h1>
                         <p>Empowering the oil and gas sector with scalable technologies and innovative tools to adapt to evolving industry demands and enhance efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Providing round-the-clock support and regular updates to ensure the seamless operation of critical systems within the oil and gas infrastructure.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Oil and Gas Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Exploration Companies</h2>
                             </div>
                             <p>Exploration companies utilize software for geological analysis, data management, and project
@@ -267,7 +267,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Production Operations</h2>
                             </div>
                             <p>Production operations benefit from software that monitors real-time data on well performance,
@@ -278,7 +278,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Refining and Processing</h2>
                             </div>
                             <p>Refining companies use software for process optimization, inventory management, and quality
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Pipeline Management</h2>
                             </div>
                             <p>Pipeline operators leverage software for monitoring flow rates, leak detection, and maintenance
@@ -299,7 +299,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Supply Chain Management</h2>
                             </div>
                             <p>Oil and gas supply chain companies utilize software for logistics management, procurement,
@@ -310,7 +310,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-oilgas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Environmental Compliance</h2>
                             </div>
                             <p>Environmental compliance organizations use software for monitoring emissions, reporting,

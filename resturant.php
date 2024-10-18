@@ -147,7 +147,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Restaurant Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -157,7 +157,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Restaurant Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -167,7 +167,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Restaurant Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -177,7 +177,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Restaurant Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -187,7 +187,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Restaurant Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -197,7 +197,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Restaurant Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -207,7 +207,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/restaurant-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Restaurant Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -264,32 +264,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/restaurant_consultation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Restaurant Technology Expertise</h1>
                         <p>Specializing in innovative technology solutions tailored to the unique needs of the restaurant industry to enhance operations and customer engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_menu.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Restaurant Software Development</h1>
                         <p>Creating bespoke software solutions to streamline restaurant processes, including order management, kitchen display systems, and online reservations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/data_security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Compliance</h1>
                         <p>Ensuring your restaurant’s customer data and payment information are protected with the highest security standards and compliance with regulations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/pos_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless POS Integration</h1>
                         <p>Implementing cutting-edge Point-of-Sale systems that integrate effortlessly with your current setup, enhancing efficiency and customer service.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative Restaurant Solutions</h1>
                         <p>Bringing the latest technological innovations to your restaurant, from AI-driven menu recommendations to data analytics for business insights.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Providing continuous support and regular software updates to ensure that your restaurant operations run smoothly without interruptions.</p>
                     </div>
@@ -310,67 +310,13 @@
                     <div class="avail-image-container" id="image-scroll">
                         <img src="./images/resturant-primary.jpg" alt="Image on Left">
                     </div>
-                    <!-- <div class="avail-content-container" id="scrollable-content">
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Hospitals and Clinics</h2>
-                            </div>
-                            <p>Hospitals and clinics are the largest adopters of Resturant software. They use solutions like Electronic Health Records (EHR) and Hospital Information Systems (HIS) to manage patient data, streamline administrative tasks, improve diagnosis accuracy, and ensure smooth coordination between different departments. Software solutions also assist in scheduling, billing, inventory management, and data analytics, making day-to-day operations more efficient.</p>
 
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Telemedicine Providers</h2>
-                            </div>
-                            <p>With the rise of remote Resturant, telemedicine has become a crucial field that relies heavily on Resturant software. These platforms enable virtual consultations, secure video conferencing, online appointment scheduling, and electronic prescription management. Telemedicine software helps patients receive medical advice and treatment from the comfort of their homes while providing doctors with tools to monitor patient health in real-time.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Pharmaceutical Companies </h2>
-                            </div>
-                            <p>Pharmaceutical companies use specialized software for drug research, clinical trials, supply chain management, and regulatory compliance. Resturant software helps these companies manage drug inventory, streamline distribution channels, and track medication effectiveness. This technology also supports data analysis in research and development, enabling faster innovation and bringing new drugs to the market more efficiently.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Health Insurance Companies </h2>
-                            </div>
-                            <p>Health insurance companies use Resturant software to manage claims processing, policy administration, customer service, and data analytics. This software enables insurers to automate claim approvals, detect fraudulent activities, and analyze patient treatment data to make better decisions on coverage plans. Advanced data analysis tools also help in pricing models and managing risk, improving the overall efficiency of the insurance process.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Laboratories and Diagnostic Centers </h2>
-                            </div>
-                            <p>Laboratories and diagnostic centers benefit from Resturant software that handles test scheduling, sample tracking, result analysis, and report generation. These tools help in efficiently managing patient data, maintaining accuracy in test results, and integrating seamlessly with hospital systems or EHR platforms. Diagnostic software reduces human error and speeds up the process of delivering accurate results to Resturant providers and patients.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Nursing Homes and Long-Term Care Facilities</h2>
-                            </div>
-                            <p>Nursing homes and long-term care facilities rely on Resturant software to enhance patient care and manage daily operations. These solutions provide tools for creating personalized care plans, tracking medication schedules, monitoring patient health conditions, and ensuring proper communication among caregivers. This software plays a vital role in improving the quality of life for residents by ensuring they receive timely and personalized attention.</p>
-
-
-                        </div>
-                    </div> -->
 
                     <div class="avail-content-container" id="scrollable-content">
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Fine Dining Restaurants</h2>
                             </div>
                             <p>Fine dining establishments can enhance guest experience through reservation management,
@@ -381,7 +327,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Fast Casual Restaurants</h2>
                             </div>
                             <p>Fast casual restaurants benefit from software that manages orders, payments, and inventory.
@@ -392,7 +338,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Food Trucks</h2>
                             </div>
                             <p>Food trucks utilize mobile software solutions for order tracking, payment processing, and
@@ -403,7 +349,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Cafés</h2>
                             </div>
                             <p>Cafés can enhance customer experience with software for point-of-sale systems, loyalty
@@ -414,7 +360,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Catering Services</h2>
                             </div>
                             <p>Catering businesses can benefit from software that manages event bookings, menu planning,
@@ -425,7 +371,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-restaurant.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Restaurant Chains</h2>
                             </div>
                             <p>Restaurant chains utilize integrated software for centralized management of multiple locations,

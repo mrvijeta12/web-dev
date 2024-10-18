@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Manufacturing Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Manufacturing Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Manufacturing Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Manufacturing Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Manufacturing Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Manufacturing Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/manufacturing-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Manufacturing Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -205,32 +205,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/agriculture_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Agriculture Technology Expertise</h1>
                         <p>Providing innovative technological solutions that enhance agricultural productivity, sustainability, and efficiency across various farming operations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_agri_software.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Agricultural Software Development</h1>
                         <p>Developing tailored software solutions for precision farming, crop management, and supply chain optimization to meet the specific needs of modern agriculture.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/data_security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Compliance</h1>
                         <p>Ensuring the protection of sensitive agricultural data and compliance with industry regulations to foster trust and secure operations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/system_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless System Integration</h1>
                         <p>Integrating IoT devices, sensors, and data analytics platforms for real-time monitoring and decision-making in agricultural practices.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovative_solutions.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative and Sustainable Solutions</h1>
                         <p>Offering advanced technologies and practices that promote sustainable farming, reducing waste, and improving resource management.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Delivering continuous support and regular updates to ensure agricultural systems run smoothly, maximizing productivity and minimizing downtime.</p>
                     </div>
@@ -257,7 +257,7 @@
                         <!-- Manufacturing Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Collaboration and Innovation</h2>
                             </div>
                             <p>Social networking platforms can facilitate collaboration among manufacturers, allowing
@@ -268,7 +268,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Supply Chain Management</h2>
                             </div>
                             <p>Manufacturers can utilize social networks to enhance communication with suppliers and
@@ -279,7 +279,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Employee Engagement</h2>
                             </div>
                             <p>Social platforms can boost employee engagement by providing a space for feedback,
@@ -290,7 +290,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Training and Development</h2>
                             </div>
                             <p>Manufacturing companies can leverage social networks for training purposes,
@@ -301,7 +301,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Market Insights</h2>
                             </div>
                             <p>Social networking tools enable manufacturers to gather valuable market feedback
@@ -312,7 +312,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-manufacturing.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Quality Control</h2>
                             </div>
                             <p>Manufacturers can use social platforms to discuss quality control practices and

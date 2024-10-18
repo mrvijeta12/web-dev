@@ -115,70 +115,45 @@ html {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-/* ####### Technology ##########  */
 
-.technology {
-  position: relative;
-  background-image: url("../../images/technology-background.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0px 0px 0px;
-  text-align: center;
-  /* margin-bottom: 100px; */
-}
-
-.technology::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* ##### why choose react #### */
+.work-wrapper {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1;
-}
-
-.technology > * {
-  position: relative;
-  z-index: 2;
-  color: white;
-  /* padding: 20px; */
-  letter-spacing: 2px;
-}
-
-.technology-container {
-  display: flex;
-  width: 80%;
-  gap: 50px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.technology-container h2 {
-  color: white;
-  font-size: 14px;
-}
-.technology-child {
-  width: 180px;
-  max-width: 210px;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px 10px;
-  border: 1px solid #0363ff;
-  border-radius: 8px;
+  padding: 0px 30px;
+  color: white;
+}
+.work-wrapper-header {
+  width: 100%;
+  text-align: center;
 }
 
-.technology-child img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-  border-radius: 6px;
+.work-wrapper-header h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.work-wrapper-child {
+  display: flex;
+  row-gap: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.work-child {
+  width: 40%;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 4px;
+}
+.work-child h2 {
+  color: white;
+  margin-bottom: 15px;
 }
 
 /* ######## Process ######  */
@@ -209,7 +184,7 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 15px;
-  height: fit-content !important;
+  height: 480px !important;
   padding: 30px;
   /* border: 2px solid blue; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -510,6 +485,11 @@ html {
     z-index: 1;
   }
 }
+@media screen and (max-width: 950px) {
+  .swiper-slide {
+    height: 400px !important;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .section-book {
@@ -653,6 +633,18 @@ html {
   }
   .container h1 {
     font-size: 2rem;
+  }
+
+  .work-wrapper-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-child {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    height: 300px !important;
   }
 }
 

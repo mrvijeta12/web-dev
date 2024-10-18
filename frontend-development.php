@@ -126,74 +126,47 @@
                 </div>
 
             </div>
-            <!-- ########## TECHNOLOGIES  #######  -->
 
+            <!-- ####### choose language ######  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h1>Transformative Technologies Driving Our React.js Development Solutions</h1>
-
+                <h1>Top Reasons to Choose React for Your Project</h1>
             </div>
-            <div class="technology">
+
+            <section class="work-wrapper">
+                <section class="work-wrapper-child">
+                    <section class="work-child">
+                        <h2>Blazing-Fast Performance</h2>
+                        <p>React's Virtual DOM enables rapid updates and rendering, dramatically improving performance and load times, delivering a smooth user experience that keeps visitors engaged on your site.</p>
+                    </section>
+
+                    <section class="work-child">
+                        <h2>Scalable Architecture Design</h2>
+                        <p>With its modular, component-based architecture, React simplifies development, making it easy to build scalable applications that grow effortlessly alongside your business needs.</p>
+                    </section>
+
+                    <section class="work-child">
+                        <h2>Enhanced User Experience</h2>
+                        <p>React creates highly dynamic, responsive interfaces that instantly adapt to user actions, ensuring a seamless and interactive experience across both web and mobile platforms.</p>
+                    </section>
+
+                    <section class="work-child">
+                        <h2>SEO-Friendly Framework</h2>
+                        <p>Server-side rendering boosts React's SEO capabilities, improving search engine rankings, reducing load times, and driving increased organic traffic to your website.</p>
+                    </section>
+
+                    <section class="work-child">
+                        <h2>Thriving Developer Community</h2>
+                        <p>Supported by a large developer community, React offers extensive resources, ready-made solutions, and continuous updates to help developers build innovative and robust applications faster.</p>
+                    </section>
+
+                    <section class="work-child">
+                        <h2>Future-Proof Technology</h2>
+                        <p>React's regular updates and widespread adoption by tech giants ensure your web projects remain at the cutting edge, evolving with industry trends and technological advances.</p>
+                    </section>
+                </section>
+            </section>
 
 
-
-                <div class="technology-container">
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/js.png" alt="">
-                        <h2>JavaScript</h2>
-                        <!-- <p>Advanced Salesforce Data Cloud services for secure, scalable data management solutions.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/html.png" alt="">
-                        <h2>TypeScript</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/css-3.png" alt="">
-                        <h2>Redux</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/bootstrap1.png" alt="">
-                        <h2>React Router</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/react.png" alt="">
-                        <h2> Axios</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/next.webp" alt="">
-                        <h2>Next.js</h2>
-                        <!-- <p>Customized Salesforce solutions to enhance CRM functionality and business processes.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/Angular_full_color_logo.svg.png" alt="">
-                        <h2>Jest</h2>
-                        <!-- <p>Seamless Salesforce integration services to unify systems and boost productivity.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/node.js.png" alt="">
-                        <h2>React Testing Library</h2>
-                        <!-- <p>Advanced Salesforce CRM analytics services for data-driven insights and growth.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/php.png" alt="">
-                        <h2>Styled Components</h2>
-                        <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/wordpress.png" alt="">
-                        <h2>Webpack</h2>
-                        <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
 
 
 
@@ -215,7 +188,7 @@
 
                         </div>
                         <h2>Project analysis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <p>In-depth analysis of requirements and goals to ensure successful project outcomes and stakeholder satisfaction.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -223,7 +196,7 @@
 
                         </div>
                         <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <p>Creating intuitive and engaging designs that enhance user experience and reflect brand identity effectively.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -231,15 +204,15 @@
 
                         </div>
                         <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <p>Implementing robust front-end and back-end solutions to deliver a seamless, functional, and responsive website.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
                             <img src="images/testing-health.png" alt="">
 
                         </div>
-                        <h2>testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <h2>Testing</h2>
+                        <p>Conducting comprehensive testing to identify and resolve issues, ensuring high-quality performance and user satisfaction.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -247,7 +220,7 @@
 
                         </div>
                         <h2>Project Launch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <p>Coordinating all launch activities to ensure a successful website debut and positive initial user experience.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -255,7 +228,7 @@
 
                         </div>
                         <h2>Maintanace and Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
+                        <p>Providing ongoing support and updates to enhance performance, security, and user satisfaction post-launch.</p>
                     </div>
 
 

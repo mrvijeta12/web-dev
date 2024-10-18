@@ -70,7 +70,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Healthcare Software Consulting </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -78,7 +78,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Heathcare Software Development </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -86,7 +86,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Healthcare Software Product Development</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -95,7 +95,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Heathcare Software Integration </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -111,7 +111,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Healthcare Software Modernization</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -119,7 +119,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Healthcare Software Maintenance and Support</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -273,33 +273,33 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Healthcare Technology Expertise
                         </h1>
                         <p>Understand client needs, goals, and technical requirements.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1> Custom Software Solutions</h1>
                         <p>Delivering visually appealing, user-friendly designs for optimal customer experience.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1> Data Security and Compliance</h1>
                         <p>Iterative development approach ensuring flexibility, speed, and continuous improvements.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1> Innovative and Scalable Tech</h1>
                         <p> Rigorous testing to ensure bug-free, high-performance applications.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Agile Development Process</h1>
                         <p>Seamless launch process, ensuring your website goes live smoothly.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Ongoing Support and Maintenance</h1>
                         <p>Continual monitoring, updates, and enhancements to maintain top-notch performance.</p>
                     </div>
@@ -326,7 +326,7 @@
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2> Hospitals and Clinics</h2>
                             </div>
                             <p>Hospitals and clinics are the largest adopters of healthcare software. They use solutions like Electronic Health Records (EHR) and Hospital Information Systems (HIS) to manage patient data, streamline administrative tasks, improve diagnosis accuracy, and ensure smooth coordination between different departments. Software solutions also assist in scheduling, billing, inventory management, and data analytics, making day-to-day operations more efficient.</p>
@@ -334,7 +334,7 @@
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2> Telemedicine Providers</h2>
                             </div>
                             <p>With the rise of remote healthcare, telemedicine has become a crucial field that relies heavily on healthcare software. These platforms enable virtual consultations, secure video conferencing, online appointment scheduling, and electronic prescription management. Telemedicine software helps patients receive medical advice and treatment from the comfort of their homes while providing doctors with tools to monitor patient health in real-time.</p>
@@ -343,7 +343,7 @@
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Pharmaceutical Companies </h2>
                             </div>
                             <p>Pharmaceutical companies use specialized software for drug research, clinical trials, supply chain management, and regulatory compliance. Healthcare software helps these companies manage drug inventory, streamline distribution channels, and track medication effectiveness. This technology also supports data analysis in research and development, enabling faster innovation and bringing new drugs to the market more efficiently.</p>
@@ -352,7 +352,7 @@
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Health Insurance Companies </h2>
                             </div>
                             <p>Health insurance companies use healthcare software to manage claims processing, policy administration, customer service, and data analytics. This software enables insurers to automate claim approvals, detect fraudulent activities, and analyze patient treatment data to make better decisions on coverage plans. Advanced data analysis tools also help in pricing models and managing risk, improving the overall efficiency of the insurance process.</p>
@@ -361,7 +361,7 @@
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Laboratories and Diagnostic Centers </h2>
                             </div>
                             <p>Laboratories and diagnostic centers benefit from healthcare software that handles test scheduling, sample tracking, result analysis, and report generation. These tools help in efficiently managing patient data, maintaining accuracy in test results, and integrating seamlessly with hospital systems or EHR platforms. Diagnostic software reduces human error and speeds up the process of delivering accurate results to healthcare providers and patients.</p>
@@ -370,7 +370,7 @@
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Nursing Homes and Long-Term Care Facilities</h2>
                             </div>
                             <p>Nursing homes and long-term care facilities rely on healthcare software to enhance patient care and manage daily operations. These solutions provide tools for creating personalized care plans, tracking medication schedules, monitoring patient health conditions, and ensuring proper communication among caregivers. This software plays a vital role in improving the quality of life for residents by ensuring they receive timely and personalized attention.</p>
@@ -398,42 +398,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/project-analysis-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Healthcare IT Consulting</h2>
                         <p>Guiding providers to enhance efficiency with strategic IT solutions.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/design-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Patient Management Software</h2>
                         <p>Streamlining appointments and billing for better patient engagement.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/development-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Telemedicine Software Solutions</h2>
                         <p>Enabling virtual healthcare with video consultations and e-prescriptions.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/testing-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Healthcare Data Management</h2>
                         <p>Transforming medical data into insights for decision-making.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/project-launch-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Custom LIMS Development</h2>
                         <p>Automating workflows and ensuring compliance with lab standards.</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
-                            <img src="images/maintance-and-support-health.png" alt="">
+                            <img src="images/healthcare-service.png" alt="">
                         </div>
                         <h2>Regulatory Compliance Solutions</h2>
                         <p>Ensuring software compliance with HIPAA and GDPR standards.</p>

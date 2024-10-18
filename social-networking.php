@@ -94,7 +94,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Social Networking Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -104,7 +104,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Social Networking Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -114,7 +114,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Social Networking Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -124,7 +124,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Social Networking Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -134,7 +134,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Social Networking Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -144,7 +144,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Social Networking Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -154,7 +154,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/social-networking-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Social Networking Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -207,32 +207,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social_network_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Social Networking Technology Expertise</h1>
                         <p>Delivering cutting-edge technology solutions for social networking platforms that enhance user engagement, interaction, and community building.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_social_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Social Networking App Development</h1>
                         <p>Creating user-centric social networking applications that foster connectivity, allowing users to share content, ideas, and experiences seamlessly.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/data_security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Privacy Protection and Data Security</h1>
                         <p>Implementing strong privacy controls and data encryption to protect user information and build trust within your social networking community.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless API and Third-Party Integration</h1>
                         <p>Integrating with popular APIs and third-party services to enhance functionality, streamline user experience, and provide additional features to your platform.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/scalable_solution.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative and Scalable Solutions</h1>
                         <p>Delivering flexible solutions that grow with your user base, incorporating features that adapt to the evolving needs of social media users.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Comprehensive Support and Maintenance</h1>
                         <p>Offering ongoing support and regular updates to ensure your social networking platform remains engaging, user-friendly, and free of technical issues.</p>
                     </div>
@@ -259,7 +259,7 @@
                         <!-- Social Networking Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Community Building</h2>
                             </div>
                             <p>Social networking platforms provide spaces for users to connect, share experiences, and form communities around
@@ -269,7 +269,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>User Engagement</h2>
                             </div>
                             <p>Social networks enable brands to interact directly with their audiences, facilitating conversations and gathering
@@ -279,7 +279,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Content Sharing</h2>
                             </div>
                             <p>Platforms allow users to share content easily, increasing visibility for individuals and brands. This sharing
@@ -288,7 +288,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Influencer Marketing</h2>
                             </div>
                             <p>Social networks serve as a powerful channel for influencer marketing, enabling brands to collaborate with
@@ -298,7 +298,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Targeted Advertising</h2>
                             </div>
                             <p>Social media platforms provide advanced targeting options for advertising, allowing brands to reach specific
@@ -308,7 +308,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-social-networking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Data Insights</h2>
                             </div>
                             <p>Social networks offer valuable analytics tools that help businesses understand user behavior, engagement metrics,

@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>SaaS Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom SaaS Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>SaaS Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>SaaS Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>SaaS Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>SaaS Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/saas-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>SaaS Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -206,32 +206,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/saas_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>SaaS Technology Expertise</h1>
                         <p>Delivering innovative SaaS solutions that streamline business operations, enhance scalability, and provide seamless access to software applications anytime, anywhere.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_saas.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom SaaS Platform Development</h1>
                         <p>Building tailored SaaS platforms that address specific business needs, ensuring flexibility, user-friendly interfaces, and scalable architecture for future growth.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Compliance</h1>
                         <p>Implementing advanced security protocols to protect sensitive customer data, ensuring compliance with global standards and building user trust in your SaaS products.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Third-Party Integration</h1>
                         <p>Ensuring your SaaS platform integrates effortlessly with existing tools and third-party services, enabling enhanced functionality and a unified user experience.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Innovative Architecture</h1>
                         <p>Leveraging cutting-edge technology to build SaaS platforms that support rapid scaling, robust performance, and innovative features tailored to business growth.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Reliable Support and Maintenance</h1>
                         <p>Providing proactive support, timely updates, and continuous optimization to ensure your SaaS platform remains efficient, secure, and up-to-date with industry trends.</p>
                     </div>
@@ -258,7 +258,7 @@
                         <!-- SaaS Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customer Relationship Management (CRM)</h2>
                             </div>
                             <p>CRM SaaS solutions help businesses manage customer interactions, sales pipelines, and marketing campaigns.
@@ -268,7 +268,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Project Management</h2>
                             </div>
                             <p>Project management SaaS platforms facilitate collaboration, task assignment, and progress
@@ -279,7 +279,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Human Resources (HR)</h2>
                             </div>
                             <p>HR SaaS solutions assist companies with recruitment, employee onboarding, and performance management.
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Accounting and Finance</h2>
                             </div>
                             <p>Accounting SaaS applications streamline invoicing, expense tracking, and financial reporting.
@@ -300,7 +300,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Marketing Automation</h2>
                             </div>
                             <p>Marketing automation SaaS tools enable businesses to manage email campaigns, social media,
@@ -311,7 +311,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-saas.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>E-Learning Platforms</h2>
                             </div>
                             <p>E-learning SaaS solutions facilitate online course creation, student management, and progress tracking.

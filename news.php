@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/news-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>News Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/news-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom News Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/news-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>News Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/news-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>News Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/news-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>News Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/news-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>News Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/news-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>News Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/news_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>News Technology Expertise</h1>
                         <p>Providing innovative solutions tailored for the news industry, enhancing content delivery, audience engagement, and data analytics for better reporting.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_news_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom News Application Development</h1>
                         <p>Building user-friendly applications that provide real-time news updates, personalized feeds, and seamless navigation to keep your audience informed.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Integrity</h1>
                         <p>Implementing robust security protocols to protect sensitive data and maintain the integrity of news content against misinformation and cyber threats.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Multi-Platform Integration</h1>
                         <p>Ensuring seamless integration of news distribution channels across multiple platforms, enhancing accessibility and improving audience reach.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/analytics.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Advanced Analytics and Insights</h1>
                         <p>Leveraging data analytics to gain insights into audience behavior, optimize content strategies, and drive engagement with targeted reporting.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Offering continuous support and timely updates to ensure your news platform remains operational, efficient, and ready to deliver breaking news.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- News Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Audience Engagement</h2>
                             </div>
                             <p>News organizations can use social networking platforms to interact with their audience,
@@ -267,7 +267,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Breaking News Updates</h2>
                             </div>
                             <p>Social networks enable real-time sharing of breaking news, allowing organizations
@@ -278,7 +278,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>User-Generated Content</h2>
                             </div>
                             <p>News organizations can invite audiences to contribute stories, photos, and videos,
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Targeted Advertising</h2>
                             </div>
                             <p>Social networking tools allow news outlets to deliver targeted advertisements based
@@ -300,7 +300,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Brand Loyalty</h2>
                             </div>
                             <p>By creating interactive social platforms, news organizations can build brand
@@ -311,7 +311,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-news.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Media Literacy</h2>
                             </div>
                             <p>News organizations can use social networks to promote media literacy campaigns,

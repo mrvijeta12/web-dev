@@ -229,39 +229,37 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive Vue.JS experience.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Vue.js Specialists</h1>
+                        <p>Expert developers with extensive Vue.js expertise.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Customized Solutions</h1>
+                        <p>Tailored approaches to fit your project needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Efficient Delivery</h1>
+                        <p>Quick project completion without quality compromise.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Comprehensive Support</h1>
+                        <p>Ongoing maintenance for optimal app performance.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Cost-Effective Services</h1>
+                        <p>Competitive pricing with high-quality deliverables.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Proven Results</h1>
+                        <p>A history of successful Vue.js implementations.</p>
                     </div>
-
-
                 </div>
+
 
             </div>
 
@@ -277,101 +275,47 @@
                     <div class="avail-image-container" id="image-scroll">
                         <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <!-- <div class="avail-content-container" id="scrollable-content">
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Customized Solutions</h2>
-                            </div>
-                            <p>Our Vue.JS experts create tailored solutions that align with your specific business goals and target audience. By understanding your unique requirements, they develop custom themes and plugins that enhance your website's functionality, ensuring a distinct online presence that resonates with your users.</p>
 
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Enhanced Performance</h2>
-                            </div>
-                            <p>When you hire our Vue.JS experts, you can expect improved website performance. They optimize your site for speed and efficiency through caching strategies, image compression, and clean coding practices, which not only enhance user experience but also positively impact your search engine rankings.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Ongoing Maintenance </h2>
-                            </div>
-                            <p>Our team provides continuous support and maintenance, ensuring your Vue.JS site remains up-to-date, secure, and running smoothly. Regular updates, backups, and security checks protect your website from vulnerabilities and help maintain optimal performance, giving you peace of mind to focus on your business.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>SEO Expertise </h2>
-                            </div>
-                            <p>With our Vue.JS experts, you gain access to proven SEO strategies that enhance your website's visibility. They implement on-page optimization, keyword research, and quality content strategies to improve your search engine rankings, driving more organic traffic to your site and increasing your online presence.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Cost Efficiency </h2>
-                            </div>
-                            <p>Hiring our Vue.JS experts is a cost-effective solution for your web development needs. With their experience and expertise, they deliver high-quality work efficiently, reducing the likelihood of costly mistakes. This allows you to allocate resources effectively and achieve your business goals without overspending.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Timely Project Delivery</h2>
-                            </div>
-                            <p>Our Vue.JS experts prioritize timely project delivery while maintaining high-quality standards. They adhere to agreed-upon timelines and milestones, ensuring that your project progresses smoothly and is completed on schedule. This reliability helps you stay on track with your business objectives and launch plans.</p>
-
-
-                        </div>
-                    </div> -->
 
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Dynamic Interfaces</h2>
                             </div>
                             <p>Our Vue.js developers excel at creating dynamic and interactive user interfaces. They utilize Vue’s reactivity to build applications that respond instantly to user inputs, enhancing overall engagement.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Modular Architecture</h2>
                             </div>
                             <p>We leverage Vue.js’s modular architecture to build applications that are easy to maintain and scale. This approach promotes clean code organization and facilitates collaboration among development teams.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Performance Optimization</h2>
                             </div>
                             <p>Our team focuses on performance optimization, utilizing techniques like lazy loading and code splitting. This ensures your Vue.js applications load quickly and run smoothly, providing an excellent user experience.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Comprehensive Testing</h2>
                             </div>
                             <p>We implement thorough testing strategies, including unit and integration testing, to ensure your Vue.js applications are robust and bug-free. Our commitment to quality guarantees reliable performance in production.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Responsive Design</h2>
                             </div>
                             <p>Our Vue.js solutions prioritize responsive design, ensuring your applications look and function well on all devices. This adaptability increases accessibility and enhances user engagement across various platforms.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Community-Driven Development</h2>
                             </div>
                             <p>With a strong emphasis on community-driven practices, our developers stay updated with the latest Vue.js trends and updates. This involvement ensures that your project benefits from the most current tools and methodologies.</p>

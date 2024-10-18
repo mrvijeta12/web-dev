@@ -226,7 +226,7 @@
 
 
 
-                <div class="services_container">
+                <!-- <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/consultation.png" alt="">
                         <h1>Expert Knowledge
@@ -260,7 +260,41 @@
                     </div>
 
 
+                </div> -->
+
+                <div class="services_container">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>Expert Developers</h1>
+                        <p>Skilled React.js professionals with extensive experience.</p>
+                    </div>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>Tailored Solutions</h1>
+                        <p>Custom services for your unique business needs.</p>
+                    </div>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>On-Time Delivery</h1>
+                        <p>Commitment to deadlines without compromising quality.</p>
+                    </div>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>Continuous Support</h1>
+                        <p>Reliable maintenance for long-term success.</p>
+                    </div>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>Affordable Rates</h1>
+                        <p>Competitive pricing without sacrificing excellence.</p>
+                    </div>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/star.png" alt="">
+                        <h1>Proven Success</h1>
+                        <p>History of satisfied clients and successful projects.</p>
+                    </div>
                 </div>
+
 
             </div>
 
@@ -276,101 +310,47 @@
                     <div class="avail-image-container" id="image-scroll">
                         <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <!-- <div class="avail-content-container" id="scrollable-content">
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Customized Solutions</h2>
-                            </div>
-                            <p>Our React.JS experts create tailored solutions that align with your specific business goals and target audience. By understanding your unique requirements, they develop custom themes and plugins that enhance your website's functionality, ensuring a distinct online presence that resonates with your users.</p>
 
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Enhanced Performance</h2>
-                            </div>
-                            <p>When you hire our React.JS experts, you can expect improved website performance. They optimize your site for speed and efficiency through caching strategies, image compression, and clean coding practices, which not only enhance user experience but also positively impact your search engine rankings.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Ongoing Maintenance </h2>
-                            </div>
-                            <p>Our team provides continuous support and maintenance, ensuring your React.JS site remains up-to-date, secure, and running smoothly. Regular updates, backups, and security checks protect your website from vulnerabilities and help maintain optimal performance, giving you peace of mind to focus on your business.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>SEO Expertise </h2>
-                            </div>
-                            <p>With our React.JS experts, you gain access to proven SEO strategies that enhance your website's visibility. They implement on-page optimization, keyword research, and quality content strategies to improve your search engine rankings, driving more organic traffic to your site and increasing your online presence.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Cost Efficiency </h2>
-                            </div>
-                            <p>Hiring our React.JS experts is a cost-effective solution for your web development needs. With their experience and expertise, they deliver high-quality work efficiently, reducing the likelihood of costly mistakes. This allows you to allocate resources effectively and achieve your business goals without overspending.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Timely Project Delivery</h2>
-                            </div>
-                            <p>Our React.JS experts prioritize timely project delivery while maintaining high-quality standards. They adhere to agreed-upon timelines and milestones, ensuring that your project progresses smoothly and is completed on schedule. This reliability helps you stay on track with your business objectives and launch plans.</p>
-
-
-                        </div>
-                    </div> -->
 
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Innovative Solutions</h2>
                             </div>
                             <p>Our ReactJS developers are dedicated to crafting innovative web applications that push the boundaries of what’s possible. They leverage React’s advanced features to create unique user experiences that stand out in the market.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Rapid Development</h2>
                             </div>
                             <p>We utilize ReactJS's component-based architecture for rapid development cycles. This approach enables us to deliver high-quality applications quickly, allowing you to adapt to changing market demands and launch sooner.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Strong Community Support</h2>
                             </div>
                             <p>With a vast community backing ReactJS, our developers benefit from a wealth of resources and libraries. This support allows us to integrate the latest technologies and best practices into your project seamlessly.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>State Management Expertise</h2>
                             </div>
                             <p>Our team is proficient in managing application state using tools like Redux or Context API. This expertise ensures your ReactJS applications maintain consistent and predictable behavior, enhancing overall performance.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>User-Centric Design</h2>
                             </div>
                             <p>We focus on user-centric design principles in our ReactJS development. By prioritizing usability and accessibility, we create applications that cater to diverse audiences, improving overall user satisfaction.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Flexible Integration</h2>
                             </div>
                             <p>Our ReactJS solutions are designed for easy integration with existing systems and third-party APIs. This flexibility allows you to enhance functionality without overhauling your current infrastructure, making for a smooth transition.</p>

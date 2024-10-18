@@ -340,7 +340,7 @@ body {
 }
 .services_child {
   max-width: 250px;
-  /* height: 350px; */
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -416,12 +416,12 @@ body {
 .avail-content-header {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .avail-content-header img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 /* ######### collaboration #########   */
@@ -676,5 +676,6 @@ body {
   }
   .services_child {
     width: 100%;
+    height: auto;
   }
 }

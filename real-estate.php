@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Real Estate Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Real Estate Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Real Estate Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Real Estate Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Real Estate Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Real Estate Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/real-estate-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Real Estate Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/realestate_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Real Estate Technology Expertise</h1>
                         <p>Providing cutting-edge technology solutions that transform real estate operations, improve client interactions, and enhance property management efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_website.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Real Estate Web Development</h1>
                         <p>Designing bespoke websites with user-friendly interfaces that showcase properties and streamline the buying or renting process for potential clients.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/analytics.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Analytics and Market Insights</h1>
                         <p>Utilizing advanced data analytics to provide actionable insights, helping real estate professionals make informed decisions based on market trends.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/mobile_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Mobile App Development for Real Estate</h1>
                         <p>Creating innovative mobile applications that enable clients to search for properties, schedule viewings, and communicate with agents on the go.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless CRM and Software Integration</h1>
                         <p>Integrating Customer Relationship Management (CRM) systems with real estate platforms for enhanced client management and streamlined communication.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Offering continuous support and maintenance to ensure your real estate technology operates smoothly, providing a reliable service for your clients.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Real Estate Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Property Listings</h2>
                             </div>
                             <p>Real estate agencies can utilize social networking platforms to showcase property listings through engaging
@@ -266,7 +266,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Virtual Tours</h2>
                             </div>
                             <p>Social networks can facilitate the sharing of virtual property tours, providing prospective buyers with an
@@ -276,7 +276,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Market Insights</h2>
                             </div>
                             <p>Real estate professionals can leverage social media to share market trends, neighborhood statistics, and
@@ -286,7 +286,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Client Testimonials</h2>
                             </div>
                             <p>Real estate agents can encourage satisfied clients to share their experiences on social platforms.
@@ -296,7 +296,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Community Engagement</h2>
                             </div>
                             <p>Real estate firms can foster community engagement by promoting local events, charities, and initiatives.
@@ -306,7 +306,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-real-estate.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Educational Content</h2>
                             </div>
                             <p>Social networking platforms are effective for sharing educational content related to buying, selling,

@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Finance Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Finance Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Finance Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Finance Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Finance Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Finance Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/finance-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Finance Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -206,32 +206,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Financial Technology Expertise</h1>
                         <p>Specializing in cutting-edge fintech solutions that drive innovation, enhance customer engagement, and improve operational efficiency across the financial services sector.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_finance_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Financial Software Development</h1>
                         <p>Developing tailored software solutions that streamline financial operations, from wealth management to payment processing and regulatory compliance.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Risk Management</h1>
                         <p>Implementing robust security measures to safeguard sensitive financial data, ensuring compliance with industry regulations and protecting against cyber threats.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Integration with Legacy Systems</h1>
                         <p>Facilitating the integration of modern fintech solutions with existing legacy systems, allowing for improved data flow and operational efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/analytics.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Advanced Analytics and Reporting</h1>
                         <p>Providing sophisticated analytics tools that empower financial institutions to make data-driven decisions and enhance their strategic planning efforts.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Technical Support and Maintenance</h1>
                         <p>Offering around-the-clock technical support and regular software updates to ensure optimal performance and reliability of financial applications.</p>
                     </div>
@@ -258,7 +258,7 @@
                         <!-- Finance and Investment Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Investment Management</h2>
                             </div>
                             <p>Investment management firms utilize software for portfolio tracking, risk assessment,
@@ -269,7 +269,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Personal Finance</h2>
                             </div>
                             <p>Personal finance software assists individuals in budgeting, expense tracking, and goal setting.
@@ -280,7 +280,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Accounting Firms</h2>
                             </div>
                             <p>Accounting firms benefit from software that automates bookkeeping, tax preparation,
@@ -291,7 +291,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Credit Unions and Banks</h2>
                             </div>
                             <p>Credit unions and banks utilize software for loan management, customer relationship management,
@@ -302,7 +302,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Risk Management</h2>
                             </div>
                             <p>Risk management companies use software for assessing financial risks, compliance monitoring,
@@ -313,7 +313,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-finance.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Financial Planning and Analysis</h2>
                             </div>
                             <p>Financial planning software assists businesses in budgeting, forecasting, and scenario analysis.

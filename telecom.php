@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Telecom Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Telecom Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Telecom Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Telecom Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Telecom Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Telecom Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/telecom-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Telecom Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/telecom_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Telecom Technology Expertise</h1>
                         <p>Delivering state-of-the-art technology solutions for the telecom industry, focusing on network optimization, enhanced connectivity, and improved customer engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_solution.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Telecom Software Solutions</h1>
                         <p>Developing tailored software to manage network operations, automate billing processes, and enhance service delivery for telecom operators.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/data_security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Fraud Prevention</h1>
                         <p>Implementing advanced security protocols to safeguard sensitive communications and prevent fraud, ensuring reliable and secure telecom operations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/network_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Network Integration</h1>
                         <p>Enabling seamless integration of telecom networks with digital platforms to deliver uninterrupted connectivity and better customer experiences.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/scalability_innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Future-Ready Solutions</h1>
                         <p>Providing scalable solutions designed to support next-generation telecom technologies, driving innovation and adapting to evolving market needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Network Maintenance</h1>
                         <p>Offering round-the-clock technical support and proactive maintenance to ensure maximum network uptime and reliable service delivery.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Telecom Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-telecom.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Mobile Network Operators</h2>
                             </div>
                             <p>Mobile network operators utilize software for network management, customer billing,
@@ -267,7 +267,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-telecom.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Internet Service Providers</h2>
                             </div>
                             <p>Internet service providers benefit from software for subscriber management, bandwidth
@@ -278,7 +278,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-telecom.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Telecom Equipment Manufacturers</h2>
                             </div>
                             <p>Telecom equipment manufacturers use software for product design, testing, and inventory
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-telecom.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Billing and Revenue Assurance</h2>
                             </div>
                             <p>Billing and revenue assurance companies leverage software for automated invoicing, fraud
@@ -299,7 +299,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-telecom.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customer Relationship Management (CRM)</h2>
                             </div>
                             <p>Telecom companies utilize CRM software for managing customer interactions, support tickets,

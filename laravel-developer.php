@@ -218,42 +218,40 @@
             <div class=" service_choose_us">
 
 
-
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive Laravel experience.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Laravel Specialists</h1>
+                        <p>Expert developers for advanced web applications.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Modern Solutions</h1>
+                        <p>Utilizing Laravel for cutting-edge development.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Flexible Architecture</h1>
+                        <p>Creating scalable and adaptable applications.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Thorough Quality Assurance</h1>
+                        <p>Ensuring reliability and security in every project.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Value-Driven Services</h1>
+                        <p>High-quality development that respects your budget.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Comprehensive Support</h1>
+                        <p>Ongoing assistance from start to finish.</p>
                     </div>
-
-
                 </div>
+
+
 
             </div>
 
@@ -269,101 +267,47 @@
                     <div class="avail-image-container" id="image-scroll">
                         <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <!-- <div class="avail-content-container" id="scrollable-content">
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Customized Solutions</h2>
-                            </div>
-                            <p>Our Laravel experts create tailored solutions that align with your specific business goals and target audience. By understanding your unique requirements, they develop custom themes and plugins that enhance your website's functionality, ensuring a distinct online presence that resonates with your users.</p>
 
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Enhanced Performance</h2>
-                            </div>
-                            <p>When you hire our Laravel experts, you can expect improved website performance. They optimize your site for speed and efficiency through caching strategies, image compression, and clean coding practices, which not only enhance user experience but also positively impact your search engine rankings.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Ongoing Maintenance </h2>
-                            </div>
-                            <p>Our team provides continuous support and maintenance, ensuring your Laravel site remains up-to-date, secure, and running smoothly. Regular updates, backups, and security checks protect your website from vulnerabilities and help maintain optimal performance, giving you peace of mind to focus on your business.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>SEO Expertise </h2>
-                            </div>
-                            <p>With our Laravel experts, you gain access to proven SEO strategies that enhance your website's visibility. They implement on-page optimization, keyword research, and quality content strategies to improve your search engine rankings, driving more organic traffic to your site and increasing your online presence.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Cost Efficiency </h2>
-                            </div>
-                            <p>Hiring our Laravel experts is a cost-effective solution for your web development needs. With their experience and expertise, they deliver high-quality work efficiently, reducing the likelihood of costly mistakes. This allows you to allocate resources effectively and achieve your business goals without overspending.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Timely Project Delivery</h2>
-                            </div>
-                            <p>Our Laravel experts prioritize timely project delivery while maintaining high-quality standards. They adhere to agreed-upon timelines and milestones, ensuring that your project progresses smoothly and is completed on schedule. This reliability helps you stay on track with your business objectives and launch plans.</p>
-
-
-                        </div>
-                    </div> -->
 
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Leverage Laravel Expertise</h2>
                             </div>
                             <p>Hiring Laravel experts allows you to accelerate your development cycle. Their familiarity with the framework's features enables them to quickly implement functionalities and resolve issues, helping you launch your application faster and more efficiently.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customized Application Development</h2>
                             </div>
                             <p>Laravel professionals specialize in crafting applications that meet your specific business requirements. They collaborate closely with you to understand your goals, ensuring the final product enhances user engagement and aligns with your operational needs.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Advanced Framework Features</h2>
                             </div>
                             <p>Our Laravel developers utilize the framework’s built-in tools, such as Eloquent ORM and Blade templating, to streamline development. These features reduce coding time and help create robust, high-quality applications efficiently.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Scalable Architecture</h2>
                             </div>
                             <p>With a focus on scalability, Laravel experts design applications that can grow alongside your business. Their approach to modular architecture allows for easy expansion and updates, accommodating increasing user demands seamlessly.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Comprehensive Security Practices</h2>
                             </div>
                             <p>Laravel developers are well-versed in implementing security best practices within the framework. They safeguard your application against threats like SQL injection and cross-site scripting, ensuring the safety of your data and users.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Performance Optimization Techniques</h2>
                             </div>
                             <p>Our Laravel experts specialize in performance tuning. They employ caching strategies, optimize database queries, and implement best practices to ensure your application runs efficiently and provides a smooth user experience.</p>

@@ -93,7 +93,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Banking Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -103,7 +103,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Banking Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -113,7 +113,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Banking Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -123,7 +123,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Banking Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -133,7 +133,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Banking Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -143,7 +143,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Banking Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -153,7 +153,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/banking-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Banking Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/banking_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Banking Technology Expertise</h1>
                         <p>Providing cutting-edge technology solutions for the banking sector, enhancing operational efficiency, security, and customer satisfaction in an ever-evolving financial landscape.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_fintech.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Fintech Solutions</h1>
                         <p>Developing tailored fintech applications designed to streamline banking processes, improve user experiences, and drive innovation across services.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security_compliance.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Robust Security and Compliance</h1>
                         <p>Implementing advanced security frameworks and compliance measures to protect customer data and ensure adherence to regulatory standards.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/system_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Integrated Banking Solutions</h1>
                         <p>Seamlessly integrating various banking systems and services to enhance efficiency, data sharing, and operational transparency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative Banking Technologies</h1>
                         <p>Empowering banks with innovative solutions like AI, blockchain, and analytics to transform operations and provide better customer service.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Technical Support</h1>
                         <p>Offering round-the-clock support and maintenance to ensure uninterrupted banking services and address any technical issues promptly.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Banking Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Digital Banking Solutions</h2>
                             </div>
                             <p>Banking institutions can leverage social networking platforms to promote their digital banking solutions,
@@ -266,7 +266,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Fraud Awareness</h2>
                             </div>
                             <p>Banks can utilize social media to raise awareness about fraud prevention and cybersecurity. By sharing
@@ -276,7 +276,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Loan and Mortgage Education</h2>
                             </div>
                             <p>Through social networking platforms, banks can provide educational resources on loans and mortgages,
@@ -286,7 +286,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customer Testimonials</h2>
                             </div>
                             <p>Banks can encourage customers to share their positive experiences on social media. Showcasing testimonials
@@ -295,7 +295,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Product Promotions</h2>
                             </div>
                             <p>Social media is an effective channel for banks to promote new financial products and services. By
@@ -305,7 +305,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-banking.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Corporate Social Responsibility</h2>
                             </div>
                             <p>Banks can showcase their corporate social responsibility initiatives on social networking platforms. By

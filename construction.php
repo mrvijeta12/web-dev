@@ -91,7 +91,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Construction Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -101,7 +101,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Construction Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -111,7 +111,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Construction Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -121,7 +121,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Construction Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -131,7 +131,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Construction Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -141,7 +141,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Construction Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -151,7 +151,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/construction-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Construction Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -205,32 +205,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/construction_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Construction Technology Expertise</h1>
                         <p>Providing advanced technology solutions to streamline construction project management, enhance site safety, and boost overall productivity.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_software.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Construction Software Development</h1>
                         <p>Developing tailored software to automate processes, manage resources, and improve collaboration across construction projects of all sizes.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security_compliance.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Compliance</h1>
                         <p>Ensuring the highest standards of data security and compliance to protect sensitive project information and client details from cyber threats.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/system_integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Integrated Construction Management Systems</h1>
                         <p>Seamlessly integrating multiple construction tools and platforms, providing a unified system to monitor project timelines, budgets, and resources.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Innovative Solutions</h1>
                         <p>Offering scalable software solutions designed to grow with your business, incorporating the latest innovations to enhance construction efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Ongoing Support and Maintenance</h1>
                         <p>Delivering reliable support and continuous updates to ensure that your construction technology solutions remain effective and up-to-date.</p>
                     </div>
@@ -257,7 +257,7 @@
                         <!-- Construction Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Project Management</h2>
                             </div>
                             <p>Construction project management companies utilize software for scheduling, resource
@@ -268,7 +268,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Cost Estimation</h2>
                             </div>
                             <p>Cost estimation firms benefit from software that automates bidding, budgeting, and expense
@@ -279,7 +279,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Building Information Modeling (BIM)</h2>
                             </div>
                             <p>BIM companies use software for 3D modeling, design visualization, and collaboration.
@@ -290,7 +290,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Field Operations</h2>
                             </div>
                             <p>Field operations teams leverage software for site management, workforce scheduling, and
@@ -301,7 +301,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Safety Management</h2>
                             </div>
                             <p>Construction safety management firms use software for incident reporting, compliance tracking,
@@ -312,7 +312,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-construction.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Subcontractor Management</h2>
                             </div>
                             <p>Subcontractor management companies benefit from software that facilitates contract management,

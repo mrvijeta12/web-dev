@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Travel Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Travel Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Travel Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Travel Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Travel Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Travel Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/travel-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Travel Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Travel Technology Expertise</h1>
                         <p>Leading the way with innovative technology solutions tailored for the travel industry, enhancing booking processes, customer experiences, and operational efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_travel_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Travel App Development</h1>
                         <p>Designing intuitive and user-friendly travel apps for seamless bookings, itinerary management, and personalized travel experiences that cater to modern traveler needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Payment Protection</h1>
                         <p>Implementing advanced security measures to safeguard customer data and secure payment transactions across all travel booking platforms.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Platform Integration</h1>
                         <p>Ensuring smooth integration of travel booking systems with third-party services, enhancing user experience with real-time updates and multiple booking options.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Innovative Solutions</h1>
                         <p>Delivering cutting-edge technology that supports scalability and innovation, allowing your travel platform to grow with industry trends and customer demands.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Providing continuous support and regular updates to ensure your travel technology platform operates smoothly and delivers an exceptional user experience.</p>
                     </div>
@@ -255,7 +255,7 @@
                         <!-- Travel Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Travel Agencies</h2>
                             </div>
                             <p>Travel agencies utilize software for booking management, customer relationship management,
@@ -266,7 +266,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Airlines</h2>
                             </div>
                             <p>Airlines benefit from software for flight scheduling, ticketing, and customer service. These
@@ -277,7 +277,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Hotels and Lodging</h2>
                             </div>
                             <p>Hotels use software for reservation management, guest services, and revenue optimization.
@@ -287,7 +287,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Car Rental Services</h2>
                             </div>
                             <p>Car rental companies leverage software for fleet management, reservation systems,
@@ -298,7 +298,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Tour Operators</h2>
                             </div>
                             <p>Tour operators benefit from software that manages tour bookings, customer inquiries,
@@ -309,7 +309,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-travel.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Travel Insurance Providers</h2>
                             </div>
                             <p>Travel insurance companies utilize software for policy management, claims processing, and

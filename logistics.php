@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Logistics Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Logistics Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Logistics Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Logistics Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Logistics Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Logistics Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/logistics-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Logistics Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/logistics_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Logistics Technology Expertise</h1>
                         <p>Delivering comprehensive technology solutions for the logistics industry, optimizing supply chain operations, improving efficiency, and enhancing customer satisfaction.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_logistics_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Logistics Software Development</h1>
                         <p>Creating tailored software solutions that streamline warehousing, inventory management, and transportation processes for greater operational efficiency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/analytics.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Analytics and Reporting</h1>
                         <p>Utilizing advanced analytics to provide actionable insights into logistics operations, enabling better decision-making and performance optimization.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless System Integration</h1>
                         <p>Integrating existing logistics systems with new technologies for improved data flow, real-time tracking, and enhanced operational transparency.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative and Scalable Solutions</h1>
                         <p>Developing innovative solutions that scale with your logistics needs, ensuring adaptability to market changes and growth opportunities.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Offering round-the-clock support and regular system maintenance to ensure uninterrupted logistics operations and optimal performance.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Logistics Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Supply Chain Collaboration</h2>
                             </div>
                             <p>Logistics companies can utilize social networking platforms to connect with
@@ -267,7 +267,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customer Engagement</h2>
                             </div>
                             <p>Social networks allow logistics firms to interact with customers, providing updates
@@ -278,7 +278,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Employee Training</h2>
                             </div>
                             <p>Logistics organizations can leverage social platforms for employee training and
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Market Insights</h2>
                             </div>
                             <p>Social networking tools enable logistics companies to gather market trends and
@@ -299,7 +299,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Networking Opportunities</h2>
                             </div>
                             <p>Logistics professionals can connect through social networks, fostering relationships
@@ -310,7 +310,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-logistics.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Sustainability Initiatives</h2>
                             </div>
                             <p>Logistics companies can promote sustainability efforts through social networks,

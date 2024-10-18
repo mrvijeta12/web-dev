@@ -24,124 +24,6 @@
                 <li><a href="./index.php" class=" <?php echo ($current_page == 'index.php') ? 'current' : ''; ?>">Home</a></li>
                 <li><a href="./services.php" class=" <?php echo ($current_page == 'services.php') ? 'current' : ''; ?>">Services</a></li>
 
-
-                <li>
-                    <a href="#" class="desktop-item">Our Expertise</a>
-                    <input type="checkbox" id="showMegaExpertise">
-                    <label for="showMegaExpertise" class="mobile-item">Our Expertise</label>
-                    <div class="mega-box">
-                        <div class="content">
-
-                            <div class="row">
-                                <header>Front End </header>
-                                <ul class="mega-links">
-                                    <li><a href="./frontend-development.php"> <span><i class="fa-brands fa-html5"></i></span>Frontend Development </a></li>
-                                    <li><a href="./angular.php"> <span><i class="fa-brands fa-js"></i></span> Angular.js </a></li>
-                                    <li><a href="./react.php"> <span><i class="fa-brands fa-angular"></i></span> React.js</a></li>
-                                    <li><a href="./javascript.php"> <span><i class="fa-brands fa-angular"></i></span> JavaScript</a></li>
-                                    <li><a href="./vue.php"> <span><i class="fa-brands fa-vuejs"></i></span> Vue.js</a></li>
-                                </ul>
-                                <header>CMS and Migration Service</header>
-                                <ul class="mega-links">
-                                    <li><a href="./wordpress.php"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
-                                    <li><a href="./drupal-developer.php"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
-                                    <li><a href="./joomla.php"> <span><i class="fa-brands fa-drupal"></i></span> Joomla</a></li>
-
-                                </ul>
-                            </div>
-
-
-                            <div class="row">
-                                <header>Web Developer</header>
-                                <ul class="mega-links web-dev-experts">
-                                    <div class="web-dev-links">
-                                        <li><a href="./php.php"> <span><i class="fa-solid fa-shop"></i></span> PHP</a></li>
-                                        <li><a href="./codeigniter.php"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
-
-                                        <li><a href="./laravel.php"> <span><i class="fa-solid fa-c"></i></span> Laravel</a></li>
-
-                                        <li><a href="./nodejs.php"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
-
-                                        <li><a href="./pwa.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> PWA</a></li>
-                                        <li><a href="./jquery.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> jquery</a></li>
-                                        <li><a href="./python.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Python</a></li>
-                                        <li><a href="./mern-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MERN Stack</a></li>
-                                        <li><a href="./mean-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MEAN Stack</a></li>
-                                    </div>
-
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Ecommerce</header>
-                                <ul class="mega-links">
-                                    <li><a href="#"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
-                                    <li><a href="#"> <span><i class="fa-solid fa-magnet"></i></span> Shopify</a></li>
-                                    <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
-
-                                    <li><a href="#"> <span><i class="fa-solid fa-shop"></i></span>eCommerce</a></li>
-
-
-
-
-
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#" class="desktop-item">Offshore Experts</a>
-                    <input type="checkbox" id="showMega">
-                    <label for="showMega" class="mobile-item">Offshore Experts</label>
-                    <div class="mega-box">
-                        <div class="content">
-
-                            <div class="row">
-                                <header>Front-End Developer</header>
-                                <ul class="mega-links">
-                                    <li><a href="./html-developer.php"> <span><i class="fa-brands fa-html5"></i></span> HTML Developer </a></li>
-
-                                    <li><a href="./javascript-developer.php"> <span><i class="fa-brands fa-js"></i></span> Javascript Developer </a></li>
-                                    <li><a href="./angular-developer.php"> <span><i class="fa-brands fa-angular"></i></span> AngularJS Developer</a></li>
-                                    <li><a href="./react-developer.php"> <span><i class="fa-brands fa-react"></i></span> ReactJS Developer</a></li>
-                                    <li><a href="./vue-developer.php"> <span><i class="fa-brands fa-vuejs"></i></span> VueJS Developer</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>CMS</header>
-                                <ul class="mega-links">
-                                    <li><a href="./wordpress-developer.php"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
-                                    <li><a href="./drupal-developer.php"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
-                                    <li><a href="./joomla-developer.php"> <span><i class="fa-solid fa-link-slash"></i></span> Joomla</a></li>
-
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Ecommerce</header>
-                                <ul class="mega-links">
-                                    <li><a href="./magneto-developer.php"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
-                                    <li><a href="./shopify-developer.php"> <span><i class="fa-brands fa-shopify"></i></span> Shopify</a></li>
-                                    <li><a href="./prestashop-developer.php"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
-
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Web Developer</header>
-                                <ul class="mega-links">
-                                    <li><a href="./php-developer.php"> <span><i class="fa-brands fa-php"></i></span> PHP</a></li>
-                                    <li><a href="./codeigniter-developer.php"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
-
-                                    <li><a href="./laravel-developer.php"> <span><i class="fa-brands fa-laravel"></i></span> Laravel</a></li>
-
-                                    <li><a href="./nodejs-developer.php"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
-                                    <li><a href="./web-developer.php"> <span><i class="fa-solid fa-code"></i></span> Web Developer</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
                 <li>
                     <a href="#" class="desktop-item">Industries</a>
                     <input type="checkbox" id="showMegaIndustries">
@@ -196,6 +78,127 @@
                         </div>
                     </div>
                 </li>
+
+
+                <li>
+                    <a href="#" class="desktop-item">Offshore Experts</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Offshore Experts</label>
+                    <div class="mega-box">
+                        <div class="content">
+
+                            <div class="row">
+                                <header>Front-End Developer</header>
+                                <ul class="mega-links">
+                                    <li><a href="./html-developer.php"> <span><i class="fa-brands fa-html5"></i></span> HTML Developer </a></li>
+
+                                    <li><a href="./javascript-developer.php"> <span><i class="fa-brands fa-js"></i></span> Javascript Developer </a></li>
+                                    <li><a href="./angular-developer.php"> <span><i class="fa-brands fa-angular"></i></span> AngularJS Developer</a></li>
+                                    <li><a href="./react-developer.php"> <span><i class="fa-brands fa-react"></i></span> ReactJS Developer</a></li>
+                                    <li><a href="./vue-developer.php"> <span><i class="fa-brands fa-vuejs"></i></span> VueJS Developer</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>CMS</header>
+                                <ul class="mega-links">
+                                    <li><a href="./wordpress-developer.php"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
+                                    <li><a href="./drupal-developer.php"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
+                                    <li><a href="./joomla-developer.php"> <span><i class="fa-solid fa-link-slash"></i></span> Joomla</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Ecommerce</header>
+                                <ul class="mega-links">
+                                    <li><a href="./magneto-developer.php"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
+                                    <li><a href="./shopify-developer.php"> <span><i class="fa-brands fa-shopify"></i></span> Shopify</a></li>
+                                    <li><a href="./prestashop-developer.php"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Web Developer</header>
+                                <ul class="mega-links">
+                                    <li><a href="./php-developer.php"> <span><i class="fa-brands fa-php"></i></span> PHP</a></li>
+                                    <li><a href="./codeigniter-developer.php"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
+
+                                    <li><a href="./laravel-developer.php"> <span><i class="fa-brands fa-laravel"></i></span> Laravel</a></li>
+
+                                    <li><a href="./nodejs-developer.php"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
+                                    <li><a href="./web-developer.php"> <span><i class="fa-solid fa-code"></i></span> Web Developer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#" class="desktop-item">Our Expertise</a>
+                    <input type="checkbox" id="showMegaExpertise">
+                    <label for="showMegaExpertise" class="mobile-item">Our Expertise</label>
+                    <div class="mega-box">
+                        <div class="content">
+
+                            <div class="row">
+                                <header>Front End </header>
+                                <ul class="mega-links">
+                                    <li><a href="./frontend-development.php"> <span><i class="fa-brands fa-html5"></i></span>Frontend Development </a></li>
+                                    <li><a href="./angular.php"> <span><i class="fa-brands fa-js"></i></span> Angular.js </a></li>
+                                    <li><a href="./react.php"> <span><i class="fa-brands fa-angular"></i></span> React.js</a></li>
+                                    <li><a href="./javascript.php"> <span><i class="fa-brands fa-angular"></i></span> JavaScript</a></li>
+                                    <li><a href="./vue.php"> <span><i class="fa-brands fa-vuejs"></i></span> Vue.js</a></li>
+                                </ul>
+                                <header>CMS and Migration Service</header>
+                                <ul class="mega-links">
+                                    <li><a href="./wordpress.php"> <span><i class="fa-brands fa-wordpress"></i></span> WordPress</a></li>
+                                    <li><a href="./drupal.php"> <span><i class="fa-brands fa-drupal"></i></span> Drupal</a></li>
+                                    <li><a href="./joomla.php"> <span><i class="fa-brands fa-drupal"></i></span> Joomla</a></li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="row">
+                                <header>Web Developer</header>
+                                <ul class="mega-links web-dev-experts">
+                                    <div class="web-dev-links">
+                                        <li><a href="./php.php"> <span><i class="fa-solid fa-shop"></i></span> PHP</a></li>
+                                        <li><a href="./codeigniter.php"> <span><i class="fa-solid fa-fire"></i></span> Codeigniter</a></li>
+
+                                        <li><a href="./laravel.php"> <span><i class="fa-solid fa-c"></i></span> Laravel</a></li>
+
+                                        <li><a href="./nodejs.php"> <span><i class="fa-brands fa-node-js"></i></span> NodeJS</a></li>
+
+                                        <li><a href="./pwa.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> PWA</a></li>
+                                        <li><a href="./jquery.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> jquery</a></li>
+                                        <li><a href="./python.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> Python</a></li>
+                                        <li><a href="./mern-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MERN Stack</a></li>
+                                        <li><a href="./mean-stack.php"> <span><i class="fa-brands fa-square-web-awesome"></i></span> MEAN Stack</a></li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Ecommerce</header>
+                                <ul class="mega-links">
+                                    <li><a href="./magneto.php"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
+                                    <li><a href="./shopify.php"> <span><i class="fa-solid fa-magnet"></i></span> Shopify</a></li>
+                                    <li><a href="./prestashop.php"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
+
+
+
+
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
 
                 <li><a href="#" class=" <?php echo ($current_page == 'blog.php') ? 'current' : ''; ?>">blog</a></li>
                 <li><a href="./contact.php" class="contact">contact us</a></li>

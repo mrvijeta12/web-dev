@@ -44,291 +44,178 @@
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Comprehensive Expertise in React.js for Modern Applications</h1>
-
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Building Modern Applications with MERN Stack</h1>
             </div>
-
             <section class="expertise">
                 <div class="expertise-child">
-                    <h1>Component-Based Architecture</h1>
-                    <p>Our expertise in component-based architecture enables developers to build applications with reusable, self-contained components. This approach not only simplifies code management but also enhances collaboration among team members, ensuring that changes can be made efficiently without affecting the overall application structure, resulting in faster development cycles and improved scalability.</p>
+                    <h1>Full-Stack Development with JavaScript</h1>
+                    <p>We leverage the power of the MERN stack to deliver full-stack applications using JavaScript across the board. This unified language approach streamlines development and enhances collaboration.</p>
                 </div>
                 <div class="expertise-child">
-                    <h1>State Management Solutions</h1>
-                    <p>We specialize in implementing effective state management solutions tailored to the needs of your application. By utilizing advanced libraries such as Redux, MobX, or the Context API, we ensure that your application's state is predictable, maintainable, and efficient, resulting in a seamless user experience and reduced bugs during development.</p>
+                    <h1>Responsive User Interfaces with React</h1>
+                    <p>Our team specializes in creating responsive and dynamic user interfaces using React. We focus on building components that enhance user experience and drive engagement across devices.</p>
                 </div>
                 <div class="expertise-child">
-                    <h1>Performance Optimization Techniques</h1>
-                    <p>Our team is well-versed in advanced performance optimization techniques that enhance the speed and responsiveness of React.js applications. By employing strategies like code splitting, memoization, and lazy loading, we deliver applications that perform optimally under varying loads, significantly improving user engagement and satisfaction through fast, smooth interactions.</p>
+                    <h1>Efficient Back-End Development with Node.js and Express</h1>
+                    <p>We utilize Node.js and Express to build efficient and scalable back-end services. Our focus is on creating RESTful APIs that facilitate seamless communication between the client and server.</p>
                 </div>
                 <div class="expertise-child">
-                    <h1>Integration with APIs</h1>
-                    <p>We excel in integrating React.js applications with various APIs, including RESTful and GraphQL. Our developers ensure seamless data flow and effective communication between your frontend and backend systems, enabling dynamic content updates. This capability allows for rich user experiences and interactions, ultimately driving higher engagement and satisfaction for end-users.</p>
+                    <h1>Robust Database Solutions with MongoDB</h1>
+                    <p>We implement MongoDB as a NoSQL database solution, ensuring flexibility and scalability for data storage. Our expertise includes designing schemas that optimize performance and data retrieval.</p>
                 </div>
                 <div class="expertise-child">
-                    <h1>Testing and Quality Assurance</h1>
-                    <p>Our comprehensive testing and quality assurance practices include automated and manual testing strategies to ensure the reliability of your React.js applications. By using industry-standard tools like Jest and React Testing Library, we rigorously test components and functionalities, minimizing bugs and enhancing application performance for an overall higher quality product.</p>
+                    <h1>Real-Time Data Handling</h1>
+                    <p>Our MERN applications incorporate real-time data handling using WebSockets, providing users with live updates and enhancing interactivity in applications such as chat and collaboration tools.</p>
                 </div>
                 <div class="expertise-child">
-                    <h1>Responsive Design Implementation</h1>
-                    <p>We prioritize responsive design in our React.js development process, ensuring that applications adapt seamlessly to various devices and screen sizes. By employing flexible layouts and CSS frameworks, we enhance accessibility and usability, guaranteeing that users have a consistent and engaging experience, whether they are on a desktop, tablet, or smartphone.</p>
+                    <h1>Deployment and DevOps Practices</h1>
+                    <p>We follow best practices in deployment and DevOps for MERN applications, utilizing tools like Docker and CI/CD pipelines to ensure efficient, reliable, and automated deployment processes.</p>
                 </div>
             </section>
+
 
 
 
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Proven Expertise Across Multiple Industries Using React.js</h1>
-
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced MERN Stack Solutions</h1>
             </div>
 
-
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Healthcare
-                        </h1>
-                        <p>Develop user-friendly healthcare applications, improving patient engagement and streamlining processes like appointment scheduling, telehealth, and electronic health records management.</p>
+                        <img src="images/web-application-mern.png" alt="">
+                        <h1>Healthcare</h1>
+                        <p>Building comprehensive healthcare applications using the MERN stack, enhancing patient care through features like appointment scheduling and telemedicine.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
+                        <img src="images/ecommerce-mern.png" alt="">
                         <h1>E-commerce</h1>
-                        <p>Create dynamic e-commerce platforms with seamless navigation, personalized user experiences, and real-time updates to boost sales and customer satisfaction.</p>
+                        <p>Developing dynamic e-commerce solutions with the MERN stack, providing secure transactions and personalized shopping experiences for users.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Finance and Banking</h1>
-                        <p>Build secure online banking solutions and financial management tools, ensuring real-time data visualization and user-friendly interfaces for clients’ financial needs.</p>
+                        <img src="images/finance-mern.png" alt="">
+                        <h1>Finance</h1>
+                        <p>Creating robust financial applications using the MERN stack, ensuring real-time data analysis and secure online banking solutions.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
+                        <img src="images/education-mern.png" alt="">
                         <h1>Education</h1>
-                        <p> Develop interactive educational platforms that enhance learning through engaging user experiences, offering features like online courses, quizzes, and progress tracking.</p>
+                        <p>Developing interactive educational platforms with the MERN stack, facilitating online learning through engaging interfaces and real-time assessments.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Travel and Hospitality</h1>
-                        <p>Create intuitive travel booking websites and management systems, providing users with real-time availability, personalized recommendations, and streamlined reservation processes.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/social-media-mern.png" alt="">
                         <h1>Social Media</h1>
-                        <p>Build engaging social networking platforms that facilitate real-time interactions, dynamic content sharing, and personalized user experiences to foster community connections.</p>
+                        <p>Building innovative social networking applications using the MERN stack, enabling users to connect, share, and interact seamlessly.</p>
                     </div>
-
-
-                </div>
-
-            </div>
-            <!-- ########## TECHNOLOGIES  #######  -->
-
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                <h1>Transformative Technologies Driving Our React.js Development Solutions</h1>
-
-            </div>
-            <div class="technology">
-
-
-
-                <div class="technology-container">
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/js.png" alt="">
-                        <h2>JavaScript</h2>
-                        <!-- <p>Advanced Salesforce Data Cloud services for secure, scalable data management solutions.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/html.png" alt="">
-                        <h2>TypeScript</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/css-3.png" alt="">
-                        <h2>Redux</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/bootstrap1.png" alt="">
-                        <h2>React Router</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/react.png" alt="">
-                        <h2> Axios</h2>
-                        <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/next.webp" alt="">
-                        <h2>Next.js</h2>
-                        <!-- <p>Customized Salesforce solutions to enhance CRM functionality and business processes.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/Angular_full_color_logo.svg.png" alt="">
-                        <h2>Jest</h2>
-                        <!-- <p>Seamless Salesforce integration services to unify systems and boost productivity.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/node.js.png" alt="">
-                        <h2>React Testing Library</h2>
-                        <!-- <p>Advanced Salesforce CRM analytics services for data-driven insights and growth.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/php.png" alt="">
-                        <h2>Styled Components</h2>
-                        <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
-                    </div>
-                    <div class="technology-child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/wordpress.png" alt="">
-                        <h2>Webpack</h2>
-                        <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
-
-
-
-
-            <!-- ######### Process ##########  -->
-
-            <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Our Methodology for Building High-Quality React.js Websites</h1>
-
-            </div>
-
-            <div class="swiper mySwiper">
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="images/project-analysis-health.png" alt="">
-
-                        </div>
-                        <h2>Project analysis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="images/design-health.png" alt="">
-
-                        </div>
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="images/development-health.png" alt="">
-
-                        </div>
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="images/testing-health.png" alt="">
-
-                        </div>
-                        <h2>testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="./images/project-launch-health.png" alt="">
-
-                        </div>
-                        <h2>Project Launch</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-image">
-                            <img src="images/maintance-and-support-health.png" alt="">
-
-                        </div>
-                        <h2>Maintanace and Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident voluptate voluptatibus eaque illo nisi quidem pariatur et eos quasi.</p>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-                <div class="swiper-pagination"></div>
-
-
-            </div>
-
-
-            <!-- ######## testimonial######## -->
-
-
-            <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
-
-
-
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
-
-                        <img src="images/9.jpg" alt="">
-                        <img src="images/double-main.png" alt="" class="double">
-                        <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
-                        <h5>John Doe</h5>
-                        <p>CEO, Company</p>
-                    </div>
-                    <div class="testimonial_item">
-                        <img src="images/2.jpg" alt="">
-                        <img src="images/double-main.png" alt="" class="double">
-                        <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
-                        <h5>John Doe</h5>
-                        <p>CEO, Company</p>
-                    </div>
-                    <div class="testimonial_item">
-
-                        <img src="images/4.jpg" alt="">
-                        <img src="images/double-main.png" alt="" class="double">
-                        <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
-                        <h5>John Doe</h5>
-                        <p>CEO, Company</p>
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/travel-mern.png" alt="">
+                        <h1>Travel & Hospitality</h1>
+                        <p>Creating comprehensive travel booking platforms with the MERN stack, offering users personalized itineraries and real-time availability updates.</p>
                     </div>
                 </div>
+            </div>
+
+
+        </div>
+        <!-- ########## TECHNOLOGIES  #######  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>The Power of the MERN Stack for Full-Stack Development</h1>
+        </div>
+        <section class="work-wrapper">
+            <section class="work-wrapper-child">
+                <section class="work-child">
+                    <h2>Unified JavaScript Development</h2>
+                    <p>The MERN stack enables developers to use JavaScript for both front-end and back-end development, streamlining the development process and reducing context switching.</p>
+                </section>
+                <section class="work-child">
+                    <h2>Responsive User Interfaces</h2>
+                    <p>Using React in the MERN stack allows for the creation of highly responsive and interactive user interfaces, enhancing the overall user experience of applications.</p>
+                </section>
+                <section class="work-child">
+                    <h2>Efficient Database Management</h2>
+                    <p>MongoDB provides a flexible and scalable NoSQL database solution, making it easy to store and manage data in a JSON-like format, which aligns perfectly with JavaScript.</p>
+                </section>
+                <section class="work-child">
+                    <h2>RESTful API Development</h2>
+                    <p>Node.js and Express enable the rapid development of RESTful APIs, allowing for efficient communication between the front-end and back-end components of the application.</p>
+                </section>
+                <section class="work-child">
+                    <h2>Rapid Prototyping</h2>
+                    <p>The combination of these technologies facilitates quick development cycles, enabling developers to prototype and iterate on features rapidly.</p>
+                </section>
+                <section class="work-child">
+                    <h2>Strong Community Support</h2>
+                    <p>The MERN stack benefits from a robust community, providing a wealth of resources, tutorials, and libraries that help developers overcome challenges and share knowledge.</p>
+                </section>
             </section>
-
-
-
-
-            <!-- ##### Book #######  -->
-
-            <section class="book">
-                <h1>Let’s Begin Your Project Together!</h1>
-                <a href="./contact.php">Contact us</a>
-            </section>
+        </section>
 
 
 
 
 
 
+        <!-- ######### Process ##########  -->
+
+        <div class="container">
+            <h1 data-aos="zoom-in" data-aos-duration="1500">
+                Our Methodology for Building High-Quality React.js Websites</h1>
+
+        </div>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="images/project-analysis-health.png" alt="">
+
+                    </div>
+                    <h2>Project analysis</h2>
+                    <p>In-depth analysis of requirements and goals to ensure successful project outcomes and stakeholder satisfaction.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="images/design-health.png" alt="">
+
+                    </div>
+                    <h2>Design</h2>
+                    <p>Creating intuitive and engaging designs that enhance user experience and reflect brand identity effectively.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="images/development-health.png" alt="">
+
+                    </div>
+                    <h2>Development</h2>
+                    <p>Implementing robust front-end and back-end solutions to deliver a seamless, functional, and responsive website.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="images/testing-health.png" alt="">
+
+                    </div>
+                    <h2>Testing</h2>
+                    <p>Conducting comprehensive testing to identify and resolve issues, ensuring high-quality performance and user satisfaction.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="./images/project-launch-health.png" alt="">
+
+                    </div>
+                    <h2>Project Launch</h2>
+                    <p>Coordinating all launch activities to ensure a successful website debut and positive initial user experience.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide-image">
+                        <img src="images/maintance-and-support-health.png" alt="">
+
+                    </div>
+                    <h2>Maintanace and Support</h2>
+                    <p>Providing ongoing support and updates to enhance performance, security, and user satisfaction post-launch.</p>
+                </div>
 
 
 
@@ -341,11 +228,83 @@
 
 
 
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
 
 
         </div>
 
-        <?php include('footer.php'); ?>
+
+        <!-- ######## testimonial######## -->
+
+
+        <section class="testimonial_wrapper">
+            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+
+
+
+            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
+                <div class="testimonial_item">
+
+                    <img src="images/9.jpg" alt="">
+                    <img src="images/double-main.png" alt="" class="double">
+                    <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
+                    <h5>John Doe</h5>
+                    <p>CEO, Company</p>
+                </div>
+                <div class="testimonial_item">
+                    <img src="images/2.jpg" alt="">
+                    <img src="images/double-main.png" alt="" class="double">
+                    <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
+                    <h5>John Doe</h5>
+                    <p>CEO, Company</p>
+                </div>
+                <div class="testimonial_item">
+
+                    <img src="images/4.jpg" alt="">
+                    <img src="images/double-main.png" alt="" class="double">
+                    <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
+                    <h5>John Doe</h5>
+                    <p>CEO, Company</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ##### Book #######  -->
+
+        <section class="book">
+            <h1>Let’s Begin Your Project Together!</h1>
+            <a href="./contact.php">Contact us</a>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <?php include('footer.php'); ?>
     </div>
 
 

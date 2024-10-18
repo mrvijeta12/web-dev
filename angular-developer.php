@@ -228,38 +228,35 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive Angular experience.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Angular Application Development</h1>
+                        <p>Building robust applications using Angular for seamless performance.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Component-Based Architecture</h1>
+                        <p>Creating reusable components for efficient application structure.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Dynamic Routing Solutions</h1>
+                        <p>Implementing dynamic routing for smooth navigation experiences.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>State Management Strategies</h1>
+                        <p>Utilizing NgRx for efficient state management in applications.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Performance Optimization Techniques</h1>
+                        <p>Enhancing app performance with lazy loading and AOT compilation.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Testing and Quality Assurance</h1>
+                        <p>Conducting rigorous testing to ensure high-quality Angular apps.</p>
                     </div>
-
-
                 </div>
 
             </div>
@@ -281,42 +278,42 @@
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Proficient Developers</h2>
                             </div>
                             <p>Our AngularJS developers are highly proficient in crafting responsive and feature-rich applications. Their expertise ensures your project utilizes the latest advancements in AngularJS for a seamless user experience.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Tailored Development</h2>
                             </div>
                             <p>We offer customized AngularJS solutions tailored to your specific needs. By collaborating closely with you, we create applications that align with your business goals and enhance overall functionality.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>On-Time Delivery</h2>
                             </div>
                             <p>We understand the importance of deadlines, and our team is dedicated to delivering your AngularJS projects on time. Our efficient development process ensures that you can launch your application as scheduled.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Scalability Focus</h2>
                             </div>
                             <p>Our AngularJS applications are designed with scalability in mind. This allows your project to grow and adapt easily as your business needs change, providing long-term value and flexibility.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Enhanced User Engagement</h2>
                             </div>
                             <p>With a focus on interactive design, our AngularJS solutions boost user engagement. We implement features that keep users interested and encourage them to explore your application further.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Comprehensive Maintenance</h2>
                             </div>
                             <p>After your application goes live, we provide thorough maintenance and support. Our team is always available to troubleshoot issues, implement updates, and ensure your AngularJS solution runs smoothly over time.</p>

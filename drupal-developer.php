@@ -228,39 +228,38 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive Drupal experience.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Drupal Specialists</h1>
+                        <p>Experienced developers with in-depth Drupal knowledge.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Custom Solutions</h1>
+                        <p>Tailored services to meet your specific needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Swift Deployment</h1>
+                        <p>Efficient launch without compromising quality.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Reliable Support</h1>
+                        <p>Ongoing maintenance for seamless website operation.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Cost-Effective Pricing</h1>
+                        <p>Affordable services with top-notch quality.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <img src="images/star.png" alt="">
+                        <h1>Proven Expertise</h1>
+                        <p>A history of successful Drupal projects and satisfied clients.</p>
                     </div>
-
-
                 </div>
+
+
 
             </div>
 
@@ -276,102 +275,48 @@
                     <div class="avail-image-container" id="image-scroll">
                         <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
-                    <!-- <div class="avail-content-container" id="scrollable-content">
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Customized Solutions</h2>
-                            </div>
-                            <p>Our Drupal experts create tailored solutions that align with your specific business goals and target audience. By understanding your unique requirements, they develop custom themes and plugins that enhance your website's functionality, ensuring a distinct online presence that resonates with your users.</p>
 
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Enhanced Performance</h2>
-                            </div>
-                            <p>When you hire our Drupal experts, you can expect improved website performance. They optimize your site for speed and efficiency through caching strategies, image compression, and clean coding practices, which not only enhance user experience but also positively impact your search engine rankings.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2> Ongoing Maintenance </h2>
-                            </div>
-                            <p>Our team provides continuous support and maintenance, ensuring your Drupal site remains up-to-date, secure, and running smoothly. Regular updates, backups, and security checks protect your website from vulnerabilities and help maintain optimal performance, giving you peace of mind to focus on your business.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>SEO Expertise </h2>
-                            </div>
-                            <p>With our Drupal experts, you gain access to proven SEO strategies that enhance your website's visibility. They implement on-page optimization, keyword research, and quality content strategies to improve your search engine rankings, driving more organic traffic to your site and increasing your online presence.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Cost Efficiency </h2>
-                            </div>
-                            <p>Hiring our Drupal experts is a cost-effective solution for your web development needs. With their experience and expertise, they deliver high-quality work efficiently, reducing the likelihood of costly mistakes. This allows you to allocate resources effectively and achieve your business goals without overspending.</p>
-
-
-                        </div>
-                        <div class="avail-content">
-                            <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
-                                <h2>Timely Project Delivery</h2>
-                            </div>
-                            <p>Our Drupal experts prioritize timely project delivery while maintaining high-quality standards. They adhere to agreed-upon timelines and milestones, ensuring that your project progresses smoothly and is completed on schedule. This reliability helps you stay on track with your business objectives and launch plans.</p>
-
-
-                        </div>
-                    </div> -->
 
 
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Custom Modules</h2>
                             </div>
                             <p>Our Drupal developers specialize in creating custom modules that extend the functionality of your website. This tailored approach ensures your site meets specific business requirements and offers unique features.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Flexible Content Management</h2>
                             </div>
                             <p>We leverage Drupal's flexible content management capabilities to design user-friendly interfaces. This allows you to easily manage and update your content, streamlining your workflow and enhancing productivity.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Multisite Management</h2>
                             </div>
                             <p>Our team is adept at managing multiple sites from a single Drupal installation. This capability simplifies administration and maintenance, making it easier for organizations with various brands or regional sites to operate efficiently.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Advanced Security Features</h2>
                             </div>
                             <p>We prioritize security in our Drupal development, implementing best practices to protect your website from vulnerabilities. Our developers stay updated with the latest security patches and enhancements to safeguard your data.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>SEO-Friendly Architecture</h2>
                             </div>
                             <p>Our Drupal solutions are built with SEO best practices in mind, ensuring your website is optimized for search engines. We implement features that improve visibility and drive organic traffic to your site.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-health.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Scalable Solutions</h2>
                             </div>
                             <p>Our Drupal applications are designed for scalability, allowing your website to grow alongside your business. Whether you’re expanding content or increasing traffic, our solutions can adapt to meet your evolving needs.</p>

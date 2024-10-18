@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>eCommerce Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom eCommerce Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>eCommerce Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>eCommerce Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>eCommerce Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>eCommerce Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/ecommerce-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>eCommerce Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>E-commerce Technology Expertise</h1>
                         <p>Empowering online businesses with advanced e-commerce technology solutions that drive growth, improve customer experience, and streamline operations.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Online Store Development</h1>
                         <p>Building tailor-made e-commerce platforms that offer user-friendly interfaces, seamless navigation, and optimized shopping experiences for your customers.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Fraud Prevention</h1>
                         <p>Implementing robust security measures and fraud detection tools to protect sensitive customer data and secure online transactions on your e-commerce site.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Payment Gateway Integration</h1>
                         <p>Integrating multiple payment gateways to provide a smooth checkout process, enabling a wide range of secure payment options for customers.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Scalable and Innovative Solutions</h1>
                         <p>Delivering flexible e-commerce solutions that scale with your business, incorporating cutting-edge technology to enhance performance and user engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Continuous Support and Optimization</h1>
                         <p>Offering ongoing support, regular updates, and optimization strategies to ensure your e-commerce platform remains competitive and up-to-date.</p>
                     </div>
@@ -258,7 +258,7 @@
                         <!-- eCommerce Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Online Retailers</h2>
                             </div>
                             <p>Online retailers utilize eCommerce software for inventory management, order processing,
@@ -269,7 +269,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Marketplace Platforms</h2>
                             </div>
                             <p>Marketplace platforms benefit from software that manages vendor onboarding, product listings,
@@ -280,7 +280,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Subscription Services</h2>
                             </div>
                             <p>Subscription-based businesses leverage eCommerce software for customer management, recurring billing,
@@ -291,7 +291,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Mobile Commerce</h2>
                             </div>
                             <p>Mobile commerce companies utilize software for app development, mobile payment processing,
@@ -302,7 +302,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Wholesale Distributors</h2>
                             </div>
                             <p>Wholesale distributors benefit from eCommerce software for bulk order management,
@@ -313,7 +313,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-ecommerce.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Digital Marketing</h2>
                             </div>
                             <p>Digital marketing agencies use eCommerce software for campaign management, analytics,

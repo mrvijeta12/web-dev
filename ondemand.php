@@ -85,7 +85,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3> Strategic On-Demand Service Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -95,7 +95,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom On-Demand Service Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -105,7 +105,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>On-Demand Service Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -115,7 +115,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>On-Demand Service Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -125,7 +125,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>On-Demand Service Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -135,7 +135,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>On-Demand Service Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -145,7 +145,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/on-demand-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>On-Demand Service Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -198,32 +198,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ondemand_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>On-Demand Technology Expertise</h1>
                         <p>Specializing in cutting-edge on-demand technology solutions designed to cater to the dynamic needs of businesses, enhancing speed, scalability, and customer satisfaction.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom On-Demand App Development</h1>
                         <p>Building highly responsive and user-friendly on-demand apps tailored to your business needs, enabling seamless experiences for your customers across all platforms.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security_compliance.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and User Privacy</h1>
                         <p>Implementing robust security measures to protect user data and ensure compliance with privacy regulations, creating a secure environment for your on-demand platform.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Integration Capabilities</h1>
                         <p>Integrating your on-demand app with various third-party services and APIs to provide a comprehensive solution that meets diverse user requirements effortlessly.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation_scalability.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovation and Scalability</h1>
                         <p>Empowering your on-demand business with scalable technologies and innovative features that adapt to evolving market demands and enhance user engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Delivering round-the-clock technical support and regular updates to ensure your on-demand platform operates seamlessly without disruptions or downtime.</p>
                     </div>
@@ -242,7 +242,7 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/ondemand-primary.jpg" alt="Image on Left">
+                        <img src="./images/progress.png" alt="Image on Left">
                     </div>
 
 
@@ -250,7 +250,7 @@
                         <!-- On-Demand Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Consumer Convenience</h2>
                             </div>
                             <p>On-demand platforms prioritize consumer convenience by providing instant access to services and products.
@@ -260,7 +260,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Personalization</h2>
                             </div>
                             <p>On-demand services can leverage data analytics to personalize offerings based on user preferences and behaviors.
@@ -270,7 +270,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Real-Time Feedback</h2>
                             </div>
                             <p>On-demand platforms often incorporate mechanisms for real-time feedback, allowing users to rate services and share
@@ -280,7 +280,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Flexible Work Opportunities</h2>
                             </div>
                             <p>On-demand models create flexible work opportunities for individuals, enabling them to offer their services on a
@@ -290,7 +290,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Scalability</h2>
                             </div>
                             <p>On-demand businesses benefit from scalable models that can quickly adapt to changing market conditions. This
@@ -300,7 +300,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-on-demand.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Data-Driven Decisions</h2>
                             </div>
                             <p>On-demand platforms utilize data analytics to make informed decisions regarding service offerings, pricing, and

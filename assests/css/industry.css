@@ -255,7 +255,7 @@ p.tab.active-tab {
   align-items: flex-start;
   border-radius: 15px;
   /* height: fit-content !important; */
-  height: 400px !important;
+  height: 370px !important;
   padding: 15px;
   /* border: 2px solid blue; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -479,12 +479,13 @@ p.tab.active-tab {
 .avail-content-header {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .avail-content-header img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* ##### book #######  */
@@ -773,7 +774,7 @@ p.tab.active-tab {
   }
 
   .swiper-slide {
-    height: 350px !important;
+    height: 330px !important;
   }
 }
 

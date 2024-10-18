@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Retail Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Retail Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Retail Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Retail Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Retail Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Retail Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/retail-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Retail Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -206,32 +206,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/retail_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Retail Technology Expertise</h1>
                         <p>Harnessing cutting-edge technology solutions to enhance retail operations, improve customer engagement, and drive sales across various channels.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_retail_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Retail App Development</h1>
                         <p>Building intuitive and feature-rich mobile applications to provide customers with seamless shopping experiences and personalized offers.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and Privacy Compliance</h1>
                         <p>Implementing robust security measures to protect customer data and ensure compliance with privacy regulations, fostering trust and loyalty.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Omnichannel Integration Solutions</h1>
                         <p>Seamlessly integrating online and offline channels to create a unified shopping experience that meets the evolving needs of today’s consumers.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/analytics.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Advanced Analytics and Insights</h1>
                         <p>Leveraging data analytics to provide actionable insights that drive decision-making, optimize inventory management, and enhance marketing strategies.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Customer Support and Maintenance</h1>
                         <p>Offering round-the-clock support and system maintenance to ensure uninterrupted operations and enhance customer satisfaction throughout the shopping journey.</p>
                     </div>
@@ -258,7 +258,7 @@
                         <!-- Retail Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Customer Engagement</h2>
                             </div>
                             <p>Retailers can create social networking platforms for customers to share reviews,
@@ -269,7 +269,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Product Discovery</h2>
                             </div>
                             <p>Social networks can help retailers showcase new products and promotions through user-generated content.
@@ -279,7 +279,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Influencer Collaborations</h2>
                             </div>
                             <p>Retailers can leverage social platforms to connect with influencers who align with their brand.
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Market Research</h2>
                             </div>
                             <p>Social networking tools enable retailers to gather valuable customer insights through polls
@@ -300,7 +300,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Loyalty Programs</h2>
                             </div>
                             <p>Retailers can enhance loyalty programs through social networking, allowing customers to
@@ -311,7 +311,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-retail.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Event Promotion</h2>
                             </div>
                             <p>Social networks can serve as platforms for promoting in-store events and sales.

@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Entertainment Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Entertainment Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Entertainment Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Entertainment Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Entertainment Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Entertainment Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/entertainment-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Entertainment Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -205,32 +205,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/entertainment_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Entertainment Technology Expertise</h1>
                         <p>Leading the way with innovative technology solutions tailored for the entertainment industry, enhancing content delivery, audience engagement, and digital experiences.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_app.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Entertainment App Development</h1>
                         <p>Creating immersive and engaging apps for streaming, live events, and interactive content that cater to the evolving preferences of your audience.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Security and DRM Protection</h1>
                         <p>Implementing robust security protocols and Digital Rights Management (DRM) to protect your content from piracy and unauthorized access.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Platform Integration</h1>
                         <p>Ensuring smooth integration of your entertainment platform with existing systems, enhancing content delivery and providing a unified viewing experience.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Interactive and Scalable Solutions</h1>
                         <p>Leveraging cutting-edge technology to deliver interactive experiences, scalable for growing audiences and evolving content trends in the entertainment industry.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Providing continuous support and timely updates to ensure uninterrupted content streaming and seamless user experiences across your entertainment platform.</p>
                     </div>
@@ -255,7 +255,7 @@
                         <!-- New Entertainment Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Film Production</h2>
                             </div>
                             <p>Film production companies can utilize software for project management, scriptwriting, and
@@ -266,7 +266,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Music Industry</h2>
                             </div>
                             <p>The music industry benefits from software for digital distribution, marketing, and rights
@@ -277,7 +277,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Event Management</h2>
                             </div>
                             <p>Event management companies can use software for ticketing, attendee tracking, and logistics
@@ -288,7 +288,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Gaming</h2>
                             </div>
                             <p>The gaming industry leverages software for game development, player analytics, and
@@ -299,7 +299,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Theater and Performing Arts</h2>
                             </div>
                             <p>Theater companies can utilize software for ticket sales, audience engagement, and production
@@ -310,7 +310,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-entertainment.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Broadcast Media</h2>
                             </div>
                             <p>Broadcast media organizations benefit from software for content management, scheduling, and

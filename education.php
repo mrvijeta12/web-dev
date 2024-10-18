@@ -92,7 +92,7 @@
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/education-consulting.png" alt="">
+                            <img src="./images/consultation.png" alt="">
                             <h3>Education Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -102,7 +102,7 @@
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/education-development.png" alt="">
+                            <img src="./images/software-development-process.png" alt="">
                             <h3>Custom Education Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -112,7 +112,7 @@
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/education-product-development.png" alt="">
+                            <img src="./images/development.png" alt="">
                             <h3>Education Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -122,7 +122,7 @@
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/education-integration.png" alt="">
+                            <img src="./images/deployment.png" alt="">
                             <h3>Education Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -132,7 +132,7 @@
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/education-testing.png" alt="">
+                            <img src="./images/project-analysis-health.png" alt="">
                             <h3>Education Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -142,7 +142,7 @@
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/education-modernization.png" alt="">
+                            <img src="./images/moderization-process.png" alt="">
                             <h3>Education Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -152,7 +152,7 @@
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/education-maintenance.png" alt="">
+                            <img src="./images/support-process.png" alt="">
                             <h3>Education Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -204,32 +204,32 @@
 
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education_expertise.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Education Technology Expertise</h1>
                         <p>Providing cutting-edge technology solutions tailored for the education sector, enhancing learning experiences, administrative efficiency, and student engagement.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_learning_platform.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Custom Learning Management Systems</h1>
                         <p>Developing personalized learning platforms that facilitate interactive and engaging educational experiences, tailored to meet diverse learning needs.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Data Privacy and Compliance</h1>
                         <p>Implementing stringent data security measures to protect student information and ensure compliance with educational regulations and standards.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Seamless Integration of Tools</h1>
                         <p>Integrating various educational tools and platforms to create a cohesive learning environment that enhances collaboration and resource accessibility.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Innovative and Scalable Solutions</h1>
                         <p>Delivering scalable and innovative educational solutions that adapt to evolving pedagogical approaches and support diverse learning methods.</p>
                     </div>
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
+                        <img src="images/star.png" alt="">
                         <h1>Comprehensive Support and Maintenance</h1>
                         <p>Offering ongoing support and regular updates to ensure educational platforms run smoothly and effectively, enhancing the overall user experience.</p>
                     </div>
@@ -256,7 +256,7 @@
                         <!-- Education Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Student Engagement</h2>
                             </div>
                             <p>Educational institutions can create social networking platforms for students to connect,
@@ -267,7 +267,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Teacher Collaboration</h2>
                             </div>
                             <p>Educators can utilize social networks to share best practices, resources, and teaching
@@ -278,7 +278,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Parental Involvement</h2>
                             </div>
                             <p>Schools can engage parents through social networking tools, providing updates on events,
@@ -289,7 +289,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Online Learning</h2>
                             </div>
                             <p>Social networking platforms can facilitate online courses and discussions, allowing students
@@ -300,7 +300,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Extracurricular Activities</h2>
                             </div>
                             <p>Schools can use social networks to promote clubs, sports, and events, encouraging student
@@ -311,7 +311,7 @@
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/project-analysis-education.png" alt="Image on Left">
+                                <img src="./images/progress.png" alt="Image on Left">
                                 <h2>Resource Sharing</h2>
                             </div>
                             <p>Educational institutions can create platforms for sharing teaching materials, research,
