@@ -200,7 +200,7 @@
                 </li>
 
 
-                <li><a href="#" class=" <?php echo ($current_page == 'blog.php') ? 'current' : ''; ?>">blog</a></li>
+                <li><a href="./blog.php" class=" <?php echo ($current_page == 'blog.php') ? 'current' : ''; ?>">blog</a></li>
                 <li><a href="./contact.php" class="contact">contact us</a></li>
 
             </ul>

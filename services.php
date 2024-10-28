@@ -71,85 +71,85 @@
                     <img src="images/web-development.png" alt="">
                     <h1>CMS </h1>
                     <p>Content Management System</p>
-                    <a href="web-development.php">View More</a>
+                    <a href="./cms-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>ERP </h1>
                     <p>Enterprise Resource Planning</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./erp-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1> CRM </h1>
                     <p>Customer Relationship Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./crm-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>LMS</h1>
                     <p> Learning Management System</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./lms-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>E-commerce</h1>
                     <p> Online stores and e-commerce businesses</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./e-commerce-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>PIM </h1>
                     <p>Product Information Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./pim-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1> BPM </h1>
                     <p>Business Process Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./bpm-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>SCM </h1>
                     <p>Supply Chain Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./scm-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>HRM </h1>
                     <p>Human Resource Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./hrm-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>DMS </h1>
                     <p>Document Management System</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./dms-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1> BI </h1>
                     <p>Business Intelligence</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./bi-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>Web App Dev</h1>
                     <p>Custom, Scalable, and Dynamic Web Solutions</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./web-dev-app-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>CXM </h1>
                     <p>Customer Experience Management</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./cxm-service.php">View More</a>
                 </div>
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/e-commerce.png" alt="">
                     <h1>Booking & Res Systems</h1>
                     <p> Bookings, appointments, and reservations.</p>
-                    <a href="e-commerce.php">View More</a>
+                    <a href="./booking&res-system-service.php">View More</a>
                 </div>
 
 
@@ -349,6 +349,7 @@
 
 
     <script src="swiper.js"></script>
+    <?php include('pop.php'); ?>
 
 </body>
 

@@ -215,7 +215,7 @@
             </section>
 
 
-            <!-- ##################### collaboration #############  -->
+            <!-- #### collaboration #####  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1> Easy Steps to Follow to Start Collaboration With Us</h1>
             </div>
@@ -328,6 +328,60 @@
             </div>
 
 
+            <!-- ###### FAQ'S ####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1> Frequently Asked Questions</h1>
+            </div>
+
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Facilis quaerat reprehenderit nam quia molestiae
+                            inventore!
+                        </h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                    </p>
+                </section>
+            </section>
+
+
 
 
 
@@ -342,6 +396,7 @@
 
 
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -351,6 +406,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./swiper.js"></script>
+    <?php include('pop.php'); ?>
 
 </body>
 

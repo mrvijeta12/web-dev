@@ -152,7 +152,7 @@
 
 .service_child {
   width: 250px;
-  height: 275px;
+  height: 295px;
   background-color: #121212;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -499,6 +499,7 @@
   }
   .services_child {
     width: 100%;
+    height: auto;
   }
 
   .choose_container {
@@ -511,5 +512,9 @@
     top: 15px;
     left: 15px;
     border-radius: 8px;
+  }
+
+  .service_child {
+    height: auto;
   }
 }

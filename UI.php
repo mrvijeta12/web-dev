@@ -355,6 +355,7 @@
     </script>
 
     <script src="swiper.js"></script>
+    <?php include('pop.php'); ?>
 
 </body>
 

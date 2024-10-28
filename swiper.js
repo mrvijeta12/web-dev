@@ -1,11 +1,11 @@
-//! ################ swipper ###############
+//! #### swipper #####
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
-  autoplay: {
-    delay: 2500,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -24,7 +24,96 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//! ############### animated counter ##############
+// #### FAQ #######
+
+// Function to toggle FAQ expansion
+function toggleFAQEventListener(isMobile) {
+  // Select all faq-child elements
+  const faqChildren = document.querySelectorAll(".faq-child");
+
+  faqChildren.forEach((child) => {
+    const faqIcon = child.querySelector(".faq-icon");
+    const paragraph = child.querySelector("p");
+
+    // Remove any previously added event listeners to avoid conflicts
+    faqIcon.replaceWith(faqIcon.cloneNode(true));
+    const newFaqIcon = child.querySelector(".faq-icon");
+
+    if (isMobile) {
+      // For mobile screens (below 768px), toggle content on click
+      newFaqIcon.addEventListener("click", () => {
+        if (child.classList.contains("expanded")) {
+          paragraph.style.height = "0px";
+          child.classList.remove("expanded");
+        } else {
+          paragraph.style.height = paragraph.scrollHeight + "px";
+          child.classList.add("expanded");
+        }
+      });
+    } else {
+      // For larger screens, toggle content on hover
+      newFaqIcon.addEventListener("mouseover", () => {
+        paragraph.style.height = paragraph.scrollHeight + "px"; // Set height dynamically
+        child.classList.add("expanded");
+      });
+
+      newFaqIcon.addEventListener("mouseout", () => {
+        paragraph.style.height = "0px"; // Collapse to 0px
+        child.classList.remove("expanded");
+      });
+    }
+  });
+}
+
+// Function to detect screen size and apply appropriate event listener
+function applyResponsiveFAQ() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  toggleFAQEventListener(isMobile);
+}
+
+// Call the function on initial load
+applyResponsiveFAQ();
+
+// Call the function again when the window is resized
+window.addEventListener("resize", applyResponsiveFAQ);
+
+//! ### pop up #####
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Check if popup was previously closed
+//   const popupClosed = localStorage.getItem("popupClosed");
+
+//   if (!popupClosed) {
+//     console.log("Popup will show after 10 seconds"); // Debug message
+
+//     // Show the popup after 10 seconds
+//     setTimeout(() => {
+//       const popup = document.getElementById("contactPopup");
+//       if (popup) {
+//         popup.style.display = "flex";
+//         console.log("Popup displayed");
+//       } else {
+//         console.log("Popup element not found");
+//       }
+//     }, 10000); // 10 seconds
+//   } else {
+//     console.log("Popup was previously closed, not displaying again");
+//   }
+
+//   // Close the popup when the close button is clicked
+//   const closeButton = document.getElementById("closePopup");
+//   if (closeButton) {
+//     closeButton.addEventListener("click", function () {
+//       document.getElementById("contactPopup").style.display = "none";
+//       // Store popup closed state in local storage
+//       localStorage.setItem("popupClosed", "true");
+//       console.log("Popup closed and localStorage updated");
+//     });
+//   } else {
+//     console.log("Close button not found");
+//   }
+// });
+
+//! ##### animated counter ####
 
 const counters = document.querySelectorAll(".counter");
 
@@ -71,28 +160,79 @@ window.onload = function () {
   }
 };
 
-//! ########### home page flipcart ###########
+//! ## home page flipcart ###
+// // Select all work-child elements
+// const workChildren = document.querySelectorAll(".collaboration-child");
+// // console.log(workChildren);
 
-// Select all work-child elements
+// // Add hover event listeners to each work-child
+// workChildren.forEach((child) => {
+//   child.addEventListener("mouseenter", () => {
+//     const paragraph = child.querySelector("p");
+//     paragraph.style.display = "block";
+//     child.classList.add("expanded");
+//   });
+
+//   child.addEventListener("mouseleave", () => {
+//     const paragraph = child.querySelector("p");
+//     // paragraph.style.display = "none";
+//     child.classList.remove("expanded");
+//   });
+// });
+
 const workChildren = document.querySelectorAll(".collaboration-child");
-console.log(workChildren);
 
-// Add hover event listeners to each work-child
-workChildren.forEach((child) => {
-  child.addEventListener("mouseenter", () => {
+// Function to add hover and click event listeners based on screen size
+function applyEvents() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  workChildren.forEach((child) => {
+    const icon = child.querySelector("h2 span"); // Select the icon inside the heading
     const paragraph = child.querySelector("p");
-    paragraph.style.display = "block";
-    child.classList.add("expanded");
-  });
 
-  child.addEventListener("mouseleave", () => {
-    const paragraph = child.querySelector("p");
-    // paragraph.style.display = "none";
-    child.classList.remove("expanded");
-  });
-});
+    if (isMobile) {
+      // If on mobile, add click event listener to the icon
+      icon.addEventListener("click", () => {
+        // Check if this child is already shown
+        const isShown = child.classList.contains("shown");
 
-//! ########## industry hierarchy section #############
+        // Collapse all children first
+        workChildren.forEach((c) => {
+          c.classList.remove("shown");
+          c.querySelector("p").style.display = "none"; // Hide all paragraphs
+        });
+
+        // If this child wasn't shown, activate it
+        if (!isShown) {
+          child.classList.add("shown");
+          paragraph.style.display = "block"; // Show the paragraph of the clicked child
+        }
+      });
+
+      // Ensure paragraph is hidden initially
+      paragraph.style.display = "none";
+    } else {
+      // If on larger screens, add mouseenter and mouseleave events
+      child.addEventListener("mouseenter", () => {
+        paragraph.style.display = "block";
+        child.classList.add("shown");
+      });
+
+      child.addEventListener("mouseleave", () => {
+        paragraph.style.display = "none";
+        child.classList.remove("shown");
+      });
+    }
+  });
+}
+
+// Call the function on initial load
+applyEvents();
+
+// Call the function again when the window is resized
+window.addEventListener("resize", applyEvents);
+
+//! #### industry hierarchy section ####
 
 function toggleContent(active) {
   // Get all content sections
