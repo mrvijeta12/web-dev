@@ -36,7 +36,7 @@
 
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
                     <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Get Started Today</a>
                 </div>
             </div>
 

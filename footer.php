@@ -46,7 +46,7 @@
                 <h3>Support:-</h3>
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="images/email.png" alt="TekAlgo Logo">
+                        <img src="/webdev/images/address.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="images/phone.png" alt="TekAlgo Logo">
+                        <img src="/webdev/images/telephone-footer.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="contact_details">
                     <div class="contact_details_logo">
-                        <img src="images/email.png" alt="TekAlgo Logo">
+                        <img src="/webdev/images/email-footer.png" alt="TekAlgo Logo">
                     </div>
 
                     <div class="contact_details_data">

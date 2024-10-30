@@ -27,7 +27,7 @@
         ?>
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
-            <!-- ################################# HERO SECTION ##################################  -->
+            <!-- ##### HERO SECTION ######  -->
             <div class="hero">
                 <div class="hero-image">
                     <img src="./images/education-hero.jpg" alt="">

@@ -32,7 +32,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($blog['meta_title']); ?></title>
-    <link rel="stylesheet" href="/tekalgo/assests/css/insights.css">
+    <link rel="stylesheet" href="/webdev/assests/css/insights.css">
 
 
     <link rel="stylesheet" href="../assests/css/navbar.css" />
@@ -55,14 +55,45 @@ $conn->close();
     <!-- Navigation Bar -->
     <?php
     include
-        "./navbar.php";
+        "navbar.php";
     ?>
     <div class="wrapper">
-        <section class="hero">
-            <h1>Expert Insights and Trends on Salesforce Solutions</h1>
-            <h2>Tips, trends, and strategies to optimize your Salesforce journey.</h2>
-        </section>
+        <!-- ######### HERO SECTION #######  -->
+        <div class="hero">
+            <div class="hero-image">
+                <img src="/webdev/images/hero-insights.jpg" alt="">
+            </div>
+            <div class="hero-data">
+
+                <h1 data-aos="zoom-in" data-aos-duration="2500">Empowering You with Actionable Insights</h1>
+                <h2 data-aos="zoom-in" data-aos-duration="2500">Actionable insights to guide your next move</h2>
+                <!-- <a href="https://calendly.com/yourbanking/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a> -->
+
+            </div>
+
+
+        </div>
         <div class="container">
+
+
+
+
+            <!-- Text Content -->
+            <div class="text-content">
+                <div class="image-container">
+                    <?php
+                    // Fetch the image from the database, check if it's available
+                    $featureImage = !empty($blog['social_sharing_image']) ? '/webdev/admin/' . htmlspecialchars($blog['social_sharing_image']) : 'default-image.png';
+                    ?>
+                    <img src='<?php echo $featureImage; ?>' alt='Feature Image'>
+                </div>
+                <h1><?php echo htmlspecialchars($blog['meta_title']); ?></h1>
+                <p><?php echo htmlspecialchars($blog['summary']); ?></p>
+                <div><?php echo $blog['content']; ?></div>
+                <!-- <a href="blog.php" class="back-button">Back to Blogs</a> -->
+            </div>
+
+            <!-- Share Options -->
             <div class="share-options" data-aos="fade-left" data-aos-duration="1500">
 
 
@@ -70,25 +101,6 @@ $conn->close();
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode("https://salesforceclouds.com/insights/" . $slug); ?>&title=<?php echo urlencode($blog['meta_title']); ?>" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://api.whatsapp.com/send?text=<?php echo urlencode("Check out this blog post: " . "https://salesforceclouds.com/insights/" . $slug); ?>" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
             </div>
-
-
-
-            <!-- Text Content -->
-            <div class="text-content">
-                <h1><?php echo htmlspecialchars($blog['meta_title']); ?></h1>
-                <p><?php echo htmlspecialchars($blog['summary']); ?></p>
-                <div class="image-container">
-                    <?php
-                    // Fetch the image from the database, check if it's available
-                    $featureImage = !empty($blog['social_sharing_image']) ? '/tekalgo/admin/' . htmlspecialchars($blog['social_sharing_image']) : 'default-image.png';
-                    ?>
-                    <img src='<?php echo $featureImage; ?>' alt='Feature Image'>
-                </div>
-                <div><?php echo $blog['content']; ?></div>
-                <!-- <a href="blog.php" class="back-button">Back to Blogs</a> -->
-            </div>
-
-            <!-- Share Options -->
 
 
         </div>
@@ -111,6 +123,8 @@ $conn->close();
             once: true,
         });
     </script>
+
+
 
 </body>
 

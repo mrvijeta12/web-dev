@@ -36,7 +36,7 @@
 
                     <h1 data-aos="zoom-in" data-aos-duration="2500">On-Demand Software Development Services</h1>
                     <h2 data-aos="zoom-in" data-aos-duration="2500">Delivering Flexible Solutions to Meet Dynamic Consumer Needs</h2>
-                    <a href="https://calendly.com/yourondemand/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <a href="https://calendly.com/yourondemand/30min" data-aos="zoom-in" data-aos-duration="2500">Get Your Free Quote</a>
 
                 </div>
 

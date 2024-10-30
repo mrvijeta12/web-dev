@@ -19,6 +19,7 @@
             justify-content: center;
             align-items: center;
             /* border: 2px solid red; */
+            z-index: 98;
         }
 
         .popup-content {
@@ -169,7 +170,7 @@
     <div class="popup" id="contactPopup">
         <div class="popup-content">
             <div class="popup-image">
-                <img src="./images/rb_976.png" alt="">
+                <img src="/webdev/images/popup-contact.png" alt="">
 
             </div>
             <div class="popup-form">
