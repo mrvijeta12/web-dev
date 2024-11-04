@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Joomla Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Joomla Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Joomla Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Joomla Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/joomla-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -378,16 +384,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Joomla Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Joomla Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites can Joomla developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Joomla developers can create a diverse range of websites, including blogs, e-commerce platforms, corporate websites, and community portals. Joomla's flexibility and powerful content management system make it suitable for both simple and complex projects that require user management and extensive content organization.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Joomla developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Joomla developers prioritize security by regularly updating the Joomla core and extensions, applying security patches, and using security plugins. They implement strong user access controls and follow best practices to mitigate risks such as SQL injection and cross-site scripting (XSS) attacks.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Joomla developers customize templates and extensions?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Joomla developers can customize existing templates and create custom extensions to enhance functionality and tailor the website’s design to meet specific business needs. They use PHP, HTML, CSS, and JavaScript to deliver personalized solutions that align with branding and user requirements.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Joomla developers handle content management and SEO?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Joomla developers leverage built-in content management features to organize and manage website content effectively. They implement SEO best practices, such as optimizing meta tags, URLs, and using SEO extensions to enhance visibility in search engines and improve organic traffic.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Joomla development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Joomla development include maintaining updated backups, optimizing website performance by minimizing extensions, and adhering to Joomla coding standards. Regular updates and security audits are essential for ensuring the stability and security of the website.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Joomla developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Joomla developers enhance website performance through techniques such as caching, image optimization, and using content delivery networks (CDNs). They monitor site speed and make necessary adjustments to ensure a fast and responsive user experience.
+                    </p>
+                </section>
             </section>
+
 
 
 

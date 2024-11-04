@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Drupal Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Drupal Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Drupal Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Drupal Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/drupal-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -384,16 +390,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Drupal Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Drupal Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites can Drupal developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Drupal developers can create a wide range of websites, including complex enterprise applications, community portals, e-commerce sites, and educational platforms. Drupal's flexibility and scalability make it suitable for projects that require custom content types and extensive user permissions.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Drupal developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Drupal developers prioritize security by following best practices, such as keeping the core and modules updated, implementing secure user permissions, and using security modules. They also conduct regular security audits and adhere to Drupal's security advisories to protect against vulnerabilities.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Drupal developers customize modules and themes?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Drupal developers can customize existing modules and create custom themes to meet specific project requirements. They use PHP, HTML, CSS, and JavaScript to modify functionality and appearance, ensuring that the site aligns with branding and user needs.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Drupal developers handle content management and workflow?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Drupal developers leverage the platform's powerful content management capabilities, including custom content types, taxonomies, and views. They can configure workflows for content creation and approval processes, enabling efficient content governance within organizations.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Drupal development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Drupal development include following Drupal coding standards, using version control for code management, and thoroughly testing modules and themes before deployment. Regular updates and backups are also crucial for maintaining site stability and security.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Drupal developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Drupal developers enhance website performance through caching strategies, optimizing images, and minimizing HTTP requests. They utilize tools like the Drupal Performance module and configure settings to ensure fast load times and an optimal user experience.
+                    </p>
+                </section>
             </section>
+
 
 
 

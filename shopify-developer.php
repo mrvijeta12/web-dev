@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Shopify Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Shopify Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Shopify Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Shopify Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/shopify-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -374,16 +380,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Shopify Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Shopify Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of e-commerce websites can Shopify developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Shopify developers can create a variety of e-commerce websites, including small business stores, large online retailers, subscription services, and niche market platforms. They specialize in building user-friendly and visually appealing online stores that cater to diverse business models.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Shopify developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Shopify developers prioritize security by utilizing Shopify’s built-in security features, such as SSL certificates, secure payment gateways, and compliance with PCI DSS. They also ensure regular updates and implement security best practices to protect customer data and transactions.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Shopify developers customize themes and apps?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Shopify developers can customize existing themes and create custom apps to enhance the functionality of the online store. They use Liquid, HTML, CSS, and JavaScript to tailor the design and features, ensuring the site aligns with branding and user experience needs.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Shopify developers handle SEO optimization?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Shopify developers implement SEO best practices by optimizing product pages, meta tags, URLs, and image alt attributes. They also leverage Shopify apps and tools to enhance on-page SEO, improve site speed, and boost visibility in search engine results.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Shopify development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Shopify development include using responsive design principles, optimizing site speed, keeping apps and themes updated, and conducting regular backups. Developers should also ensure compliance with Shopify guidelines to maintain a smooth and efficient store operation.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Shopify developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Shopify developers enhance website performance by optimizing images, minimizing app usage, and utilizing Shopify’s built-in performance tools. They regularly monitor site speed and make adjustments to ensure a fast and seamless shopping experience for customers.
+                    </p>
+                </section>
             </section>
+
 
 
 

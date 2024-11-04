@@ -9,7 +9,7 @@ include_once 'database.php';
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 
 // Prepare and execute the query
-$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM main_website_blog WHERE slug = ?";
+$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM blog_posts WHERE slug = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $slug);
 $stmt->execute();
@@ -43,12 +43,15 @@ $conn->close();
         }
 
         .text-content {
-            flex: 1; /* Take the remaining space */
-            padding-right: 20px; /* Add space between text and image */
+            flex: 1;
+            /* Take the remaining space */
+            padding-right: 20px;
+            /* Add space between text and image */
         }
 
         .image-container {
-            width: 300px; /* Set width for the feature image */
+            width: 300px;
+            /* Set width for the feature image */
         }
 
         .image-container img {
@@ -75,11 +78,11 @@ $conn->close();
 <body>
     <!-- Navigation Bar -->
     <?php include "navbar.php"; ?>
-    
+
     <div class="container">
         <!-- Image Container -->
         <div class="image-container">
-            <?php 
+            <?php
             $imagePath = htmlspecialchars($blog['social_sharing_image']); // Get the image path
             ?>
             <?php if ($imagePath): ?>

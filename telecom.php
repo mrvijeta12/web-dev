@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/telecom-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>T</span><span>e</span><span>l</span><span>e</span><span>c</span><span>o</span><span>m</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Innovative Solutions for Next-Gen Telecommunications Management</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Telecom Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Robust Solutions Designed for the Telecommunications Industry</h2>
-                    <a href="https://calendly.com/yourtelecomcompany/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/telecom-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -373,6 +374,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ###### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Telecom Industry Web Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What type of websites do you create for telecom companies?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create websites for telecom service providers, equipment manufacturers, customer support portals, and B2B solution providers. Our sites are built to enhance user engagement, provide clear service information, and support telecom-specific functionalities.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate customer portals and billing systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate secure customer portals, online billing, and account management systems to improve user experience. These features allow customers to manage their services, track usage, and make payments directly on your site.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you handle network status and service updates on the website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We provide real-time solutions for displaying network status, outage alerts, and service updates. This can include custom dashboards or integration with internal systems to keep customers informed of any service changes or maintenance updates.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer SEO strategies for telecom companies?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our SEO strategies are tailored to the telecom industry, helping you reach potential customers and partners through targeted keywords, content optimization, and technical SEO that enhances your visibility in this highly competitive market.
+                    </p>
+                </section>
+            </section>
+
 
 
 

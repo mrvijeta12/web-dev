@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/entertainment-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>E</span><span>n</span><span>t</span><span>e</span><span>r</span><span>t</span><span>a</span><span>i</span><span>n</span><span>m</span><span>e</span><span>n</span><span>t</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Entertainment with Cutting-Edge Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Entertainment Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Innovative Solutions Tailored to Enhance Your Entertainment Experience</h2>
-                    <a href="https://calendly.com/yourevent/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/entertainment-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +385,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Entertainment Industry Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What type of websites do you develop for the entertainment industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of entertainment websites, including sites for film studios, music labels, event venues, artist portfolios, streaming services, and media platforms. Each site is designed to engage audiences and showcase creative content effectively.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate streaming and multimedia on our website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We specialize in integrating multimedia features, including live streaming, video and audio galleries, and interactive media. These tools allow your audience to access content easily and enhance their online experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure a visually engaging website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our design team uses the latest trends in web design, including dynamic layouts, high-quality visuals, and animations, to create an engaging user experience. We focus on capturing the unique brand and personality of each client to make a lasting impression.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer SEO services tailored to the entertainment industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we provide SEO strategies specifically tailored for the entertainment industry. This includes optimizing content for search engines, improving visibility on video and media platforms, and driving organic traffic to your site.
+                    </p>
+                </section>
+            </section>
+
 
 
 

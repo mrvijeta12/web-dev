@@ -29,18 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/ecomm-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>E</span><span>-</span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>r</span><span>c</span><span>e</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Driving Sales with Innovative E-Commerce Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">E-Commerce Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Tailored Solutions to Drive Sales and Optimize Your Online Store</h2>
-                    <a href="https://calendly.com/yourecommercebusiness/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/e-commerce-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -386,6 +387,55 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- ##### faq #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>E-commerce Web Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of e-commerce websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We build e-commerce websites for a range of business models, including B2C and B2B stores, subscription services, and marketplaces. Our designs are customized to support diverse products, streamline shopping experiences, and maximize conversions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate payment gateways and checkout systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we integrate secure payment gateways and checkout systems to provide seamless transactions. We work with popular gateways like Stripe, PayPal, and others, ensuring your customers have multiple payment options and a safe checkout process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide inventory and order management solutions?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We integrate inventory management and order tracking systems that allow you to monitor stock levels, process orders efficiently, and provide customers with updates on their purchases. These systems streamline back-end management.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the site is optimized for search engines and mobile devices?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We use e-commerce-specific SEO strategies and mobile-responsive design to ensure your site ranks well on search engines and performs smoothly on all devices. From on-page SEO to mobile speed optimization, we make sure your site attracts and retains traffic.
+                    </p>
+                </section>
+            </section>
+
 
 
 

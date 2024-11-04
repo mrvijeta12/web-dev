@@ -274,6 +274,52 @@
                 </div>
             </div>
         </section>
+        <!-- ##### faq #######  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>PrestaShop Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What is PrestaShop and what makes it a popular e-commerce platform?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    PrestaShop is an open-source e-commerce platform that enables businesses to create and manage their online stores. It is popular for its flexibility, a wide range of customizable themes, and an extensive selection of modules and add-ons that enhance functionality. PrestaShop supports multiple languages and currencies, making it an ideal choice for international businesses looking to reach a global audience.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How can you customize PrestaShop stores to fit my business needs?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We offer comprehensive customization services for PrestaShop stores, including bespoke theme development, custom module creation, and user interface enhancements. Our team works closely with you to understand your brand identity and business goals, ensuring that your online store is tailored to meet your specific requirements while providing a seamless shopping experience for your customers.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What are the best practices for SEO optimization on PrestaShop?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Our SEO optimization practices for PrestaShop include optimizing product descriptions and meta tags, using clean URLs, and implementing structured data to enhance search visibility. We also focus on improving site speed, mobile responsiveness, and utilizing content marketing strategies to drive organic traffic to your store and increase conversion rates.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you help with migrating my store to PrestaShop?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we provide professional migration services to transition your existing e-commerce store to PrestaShop. Our team ensures that all data, including products, categories, customers, and orders, are transferred accurately and securely. We also optimize your new PrestaShop store for performance and usability to ensure a smooth launch and enhanced user experience.
+                </p>
+            </section>
+        </section>
 
 
 

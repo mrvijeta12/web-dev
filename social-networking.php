@@ -29,17 +29,20 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/social-network-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>S</span><span>o</span><span>c</span><span>i</span><span>a</span><span>l</span>
+                        <span>N</span><span>e</span><span>t</span><span>w</span><span>o</span><span>r</span><span>k</span><span>i</span><span>n</span><span>g</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Transforming User Interaction with Cutting-Edge Networking Software</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Social Networking Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Foster Online Communities</h2>
-                    <a href="https://calendly.com/yoursocialnetwork/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/social-media-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -379,6 +382,57 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- ##### faq ######  -->
+
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Social Networking Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of social networking platforms do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of social networking platforms, including general social media sites, niche community forums, professional networking sites, and dating apps. Each platform is customized to meet the specific needs and goals of your target audience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate messaging and notification systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate real-time messaging and notification systems to enhance user engagement. Features like direct messaging, comment notifications, and friend requests help create a dynamic and interactive user experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure user data privacy and security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize user data privacy and security by implementing robust encryption, secure authentication methods, and compliance with data protection regulations such as GDPR. Our aim is to create a safe environment for your users to connect and share.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for content moderation and reporting?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we include content moderation tools and reporting features to help maintain community standards and ensure a safe environment. Admin dashboards allow for easy management of user-generated content and handling of reported issues.
+                    </p>
+                </section>
+            </section>
+
 
 
 

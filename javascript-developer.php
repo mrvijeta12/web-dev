@@ -28,11 +28,23 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ####### HERO SECTION ####### -->
-            <div class="hero">
+            <!-- <div class="hero">
                 <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled JavaScript Developers</h1>
                 <h2 data-aos="zoom-in" data-aos-duration="2500">Custom JavaScript Solutions Tailored to Bring Your Vision to Life</h2>
                 <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            </div> -->
+
+            <div class="hero">
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled JavaScript Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom JavaScript Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/javascript-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -382,16 +394,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo JavaScript Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>JavaScript Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications do JavaScript developers build?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript developers build a range of applications, including single-page applications (SPAs), progressive web apps (PWAs), e-commerce sites, and dynamic front-end components. They also develop complex web applications with rich interactivity and real-time features.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What frameworks do JavaScript developers use?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript developers commonly use frameworks and libraries like React, Angular, and Vue for front-end development. For back-end development, they often work with Node.js, enabling full-stack development using JavaScript across the application.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can JavaScript developers handle front-end and back-end tasks?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, many JavaScript developers are full-stack developers skilled in both front-end and back-end. With Node.js, they can build back-end server logic, while also handling front-end interfaces using frameworks like React or Vue.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do JavaScript developers optimize website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript developers optimize performance by using techniques like code-splitting, lazy loading, and caching. They also use minified code, reduce unused JavaScript, and optimize API calls to ensure fast loading times and smooth interactions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is the role of JavaScript developers in enhancing user experience?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript developers enhance user experience by adding interactivity, animations, and real-time updates. They build responsive, intuitive interfaces that adapt to user actions, creating an engaging experience on both desktop and mobile devices.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can JavaScript developers integrate third-party APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, JavaScript developers frequently integrate third-party APIs such as payment gateways, social media APIs, and mapping services. This allows for added functionality like user authentication, location services, and secure payments, enhancing the application’s overall features.
+                    </p>
+                </section>
             </section>
+
 
 
 

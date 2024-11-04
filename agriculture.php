@@ -29,19 +29,20 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/agriculture-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>A</span><span>g</span><span>r</span><span>i</span><span>c</span><span>u</span><span>l</span><span>t</span><span>u</span><span>r</span><span>e</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Innovative Solutions for Modern Agricultural Management</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Agriculture Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Harnessing Technology to Optimize Farm Management and Increase Yields</h2>
-                    <a href="https://calendly.com/youragriculture/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/agriculture-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
-
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
@@ -385,6 +386,53 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Agriculture Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of agriculture websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop various types of agriculture websites, including farm management platforms, agricultural product sales sites, information portals for farmers, and community-based agriculture websites. Our designs are tailored to meet the needs of the agricultural sector.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate e-commerce features for selling agricultural products?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate e-commerce functionalities that allow farmers and suppliers to sell their products online. This includes product listings, shopping cart systems, and secure payment gateways to facilitate online transactions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website is optimized for mobile users in rural areas?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We use responsive design techniques to ensure your agriculture website is accessible and functional on various devices, including smartphones and tablets. This is crucial for reaching users in rural areas who may rely on mobile devices for internet access.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for farm management and data tracking?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer features for farm management and data tracking, including tools for monitoring crop growth, tracking livestock health, and managing equipment. These features help farmers optimize their operations and improve productivity.
+                    </p>
+                </section>
+            </section>
 
 
 

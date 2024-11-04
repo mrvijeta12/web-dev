@@ -29,17 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/insurance-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>I</span><span>n</span><span>s</span><span>u</span><span>r</span><span>a</span><span>n</span><span>c</span><span>e</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Custom Software Development for Insurance Industry Needs</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Insurance Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Optimize Insurance Operations</h2>
-                    <a href="https://calendly.com/yourinsurance/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/insurance-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +386,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ###### faq #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Insurance Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the insurance industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop websites for various insurance sectors, including health, auto, life, and property insurance. Our sites are designed to provide clear information about policies, allow easy quoting and purchasing processes, and enhance customer engagement.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate online quoting and policy management features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate online quoting tools and policy management systems, allowing users to get instant quotes, purchase policies, and manage their accounts directly on the website. This improves user experience and simplifies the insurance process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure compliance with insurance regulations?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize compliance with industry regulations such as HIPAA for health insurance, and various state and federal guidelines. Our team ensures that all necessary protocols are implemented to protect customer information and maintain regulatory standards.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for claims processing and customer support?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we include features for claims processing, allowing customers to submit claims online and track their status. We also integrate customer support tools, such as chatbots and FAQs, to assist users with their inquiries and improve customer service.
+                    </p>
+                </section>
+            </section>
+
 
 
 

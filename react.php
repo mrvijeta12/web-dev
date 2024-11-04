@@ -282,6 +282,55 @@
             </section>
 
 
+            <!-- ##### faq #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Expert-Level React.js Development: Your Questions Answered</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What makes your team experts in React.js development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team has extensive experience building a wide variety of applications with React.js, from single-page applications to complex, large-scale web apps. We stay up-to-date with the latest React.js features, best practices, and libraries, ensuring that our clients benefit from the most efficient and maintainable code.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does your expertise in React.js improve project outcomes?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        With our deep React.js knowledge, we build user interfaces that are not only highly interactive but also efficient. Our experience with component architecture allows us to develop reusable, scalable code that reduces development time, enhances performance, and simplifies future updates.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you handle complex state management in React applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our React.js expertise includes advanced state management using tools like Redux, Context API, and MobX, depending on project needs. We implement state solutions that are efficient and maintainable, ensuring a smooth user experience even in complex applications with high data interactivity.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer performance optimization for React applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely. We apply performance optimization techniques such as code splitting, lazy loading, and memoization to ensure that React applications load quickly and run smoothly. We also perform detailed audits and performance testing to identify and eliminate bottlenecks, ensuring a fast, seamless experience for users.
+                    </p>
+                </section>
+            </section>
+
+
+
 
 
             <!-- ##### Book #######  -->

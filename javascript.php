@@ -311,6 +311,54 @@
                 </div>
             </section>
 
+            <!-- ##### faq #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Advanced JavaScript Development: Frequently Asked Questions</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Why is JavaScript expertise important for web development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript is essential for creating dynamic, interactive websites and applications. Our team's JavaScript expertise enables us to develop fast, responsive, and engaging user experiences that are essential for modern web applications, covering front-end interactions as well as back-end functionality using frameworks like Node.js.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of projects are best suited for JavaScript?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        JavaScript is highly versatile and can be used for a wide range of projects, including single-page applications (SPAs), e-commerce platforms, real-time applications, and full-stack solutions. We leverage JavaScript for projects that require dynamic user interfaces, real-time interactions, and scalable architectures.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure high performance in JavaScript applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team uses a variety of performance optimization techniques, including code minification, asynchronous programming, and efficient DOM manipulation. We also leverage tools like Webpack for bundling, lazy loading for faster initial loads, and caching strategies to optimize JavaScript applications for both speed and efficiency.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you stay updated with the latest JavaScript trends and best practices?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team is committed to continuous learning. We actively follow industry trends, attend workshops, and utilize resources from the JavaScript community. This ensures that we apply the latest best practices, tools, and frameworks, enabling us to deliver modern, maintainable, and efficient JavaScript solutions for our clients.
+                    </p>
+                </section>
+            </section>
+
+
 
 
 

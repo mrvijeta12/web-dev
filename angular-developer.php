@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Angular Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Angular Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Angular Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Angular Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/angular-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -381,16 +387,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Angular Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############## faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Angular Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of projects are best suited for Angular developers?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Angular developers are ideal for building dynamic single-page applications, complex enterprise solutions, and applications requiring robust data handling. They specialize in developing scalable, modular web applications that offer a seamless user experience.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does Angular help with building scalable applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Angular's modular structure, component-based architecture, and dependency injection make it easier to scale applications as they grow. Angular developers can add new features and modules without impacting the existing code, ensuring maintainability and scalability.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do Angular developers handle front-end and back-end integration?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Angular developers are skilled at integrating front-end interfaces with back-end APIs. They use services and HTTP client modules within Angular to communicate with back-end systems, enabling real-time data synchronization and seamless user interactions.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Angular developers ensure performance optimization?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Angular developers optimize performance through lazy loading, Ahead-of-Time (AOT) compilation, and efficient change detection. These techniques reduce load times and ensure that applications run smoothly, even with large amounts of data.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What role does Angular play in building responsive applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Angular developers use Angular Material, CSS Flexbox, and media queries to build responsive applications. These tools allow them to create layouts that adapt to any device, ensuring a consistent user experience on desktops, tablets, and mobile phones.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Angular developers handle security in applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Angular developers prioritize security by implementing built-in Angular features like DOM sanitization and HTTP interceptors to protect against XSS attacks and CSRF vulnerabilities. They follow best practices to safeguard sensitive data and ensure secure application interactions.
+                    </p>
+                </section>
             </section>
+
 
 
 

@@ -29,17 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/finance-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>F</span><span>i</span><span>n</span><span>a</span><span>n</span><span>c</span><span>e</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Optimizing Finance Workflows with Tailored Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Finance Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimizing Financial Management for Enhanced Decision-Making</h2>
-                    <a href="https://calendly.com/yourfinanceservices/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/finance-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -385,6 +387,55 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- #### faq #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Finance Industry Web Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the finance industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create websites for a range of financial services, including banks, investment firms, insurance companies, and financial advisors. Our sites are designed to establish credibility, provide essential information, and facilitate customer engagement.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate financial tools and calculators on the website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate various financial tools and calculators to help users make informed decisions. This can include mortgage calculators, investment estimators, and budgeting tools that enhance user experience and engagement on your site.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure compliance with financial regulations?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We ensure compliance with financial regulations, including GDPR, CCPA, and specific industry standards such as PCI DSS for payment processing. Our team works closely with you to implement necessary measures to protect customer data and ensure regulatory adherence.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide SEO services tailored to the finance sector?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our SEO strategies are tailored for the finance sector, focusing on key financial terms and local search optimization. We aim to improve your visibility in search engines, attracting potential clients looking for financial services.
+                    </p>
+                </section>
+            </section>
+
 
 
 

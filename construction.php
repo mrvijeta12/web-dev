@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/construction-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>C</span><span>o</span><span>n</span><span>s</span><span>t</span><span>r</span><span>u</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Construction Businesses with Smart Software Development</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Construction Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed for the Construction Industry</h2>
-                    <a href="https://calendly.com/yourconstructioncompany/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/construction-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -385,6 +386,55 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Construction Industry Web Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the construction industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create websites for general contractors, builders, architecture firms, engineering companies, and suppliers. Our sites are tailored to showcase project portfolios, provide service details, and build trust with clients through a professional online presence.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate project management tools and client portals?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate project management tools and client portals to facilitate communication, document sharing, and project tracking. This helps streamline processes and keeps clients updated on project progress directly through the website.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you highlight completed projects on the website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create visually engaging project portfolios with high-quality images, videos, and project descriptions. Interactive galleries, case studies, and testimonials help showcase your expertise and completed projects effectively.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer SEO tailored to the construction industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our SEO services focus on construction-related keywords and local SEO to attract clients in your target areas. We optimize content to help potential clients find your business when searching for construction services.
+                    </p>
+                </section>
+            </section>
+
+
 
 
 

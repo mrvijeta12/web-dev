@@ -273,6 +273,54 @@
             </div>
         </section>
 
+        <!-- ##### faq ####  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>jQuery Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What is jQuery and why is it used?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML document traversing, event handling, and animation. It is widely used for simplifying JavaScript coding, making it easier to manipulate the DOM, handle events, and create animations, ultimately enhancing user experience on web pages.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What are the advantages of using jQuery in web development?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    jQuery offers several advantages, including cross-browser compatibility, reduced code complexity, and a large ecosystem of plugins. It allows developers to write less code to accomplish common tasks, which can significantly speed up development time and improve productivity while ensuring consistent behavior across different browsers.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How does jQuery improve website performance?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    jQuery improves website performance by allowing developers to efficiently handle DOM manipulations and events, which can lead to faster loading times and smoother user interactions. Additionally, by utilizing jQuery’s built-in methods for AJAX requests, developers can load data asynchronously without refreshing the page, enhancing the overall user experience.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can jQuery be integrated with other JavaScript frameworks?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, jQuery can be integrated with other JavaScript frameworks like Angular, React, and Vue.js. While these frameworks handle DOM manipulation in their own ways, jQuery can be used for specific tasks that may require simpler syntax or when working with legacy code. Our team ensures smooth integration while maintaining best practices for performance and maintainability.
+                </p>
+            </section>
+        </section>
+
+
 
 
 

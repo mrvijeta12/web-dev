@@ -276,6 +276,56 @@
             </div>
         </section>
 
+        <!-- ###### faq ######  -->
+
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Shopify Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What is Shopify and what are its main features?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Shopify is a leading e-commerce platform that allows businesses to create and manage their online stores easily. Key features include a user-friendly interface, customizable themes, a variety of payment gateways, built-in SEO tools, and powerful inventory management capabilities. Shopify also offers a range of apps to extend functionality, making it ideal for businesses of all sizes.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How can you help with customizing Shopify stores?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We specialize in customizing Shopify stores to meet the unique needs of your business. This includes designing bespoke themes, developing custom features, and integrating third-party applications. Our goal is to enhance the user experience and functionality of your online store while aligning it with your brand identity.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What strategies do you use for Shopify SEO optimization?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We implement comprehensive SEO strategies for Shopify stores, including optimizing page titles and meta descriptions, creating SEO-friendly URLs, and ensuring fast loading times. We also focus on content marketing, keyword optimization, and building backlinks to improve your store's visibility in search engine results, driving organic traffic to your website.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you assist with migrating to Shopify from another platform?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we provide comprehensive migration services to help you transition smoothly to Shopify from other e-commerce platforms. Our team ensures that all your data, including products, customer information, and order history, is transferred securely and accurately. We also optimize your new Shopify store for better performance and usability during the migration process.
+                </p>
+            </section>
+        </section>
+
+
+
 
 
 

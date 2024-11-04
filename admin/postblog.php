@@ -6,11 +6,12 @@ include_once 'database.php';
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+
     // Sanitize input fields
     $meta_title = isset($_POST['meta_title']) ? $conn->real_escape_string($_POST['meta_title']) : '';
     $summary = isset($_POST['summary']) ? $conn->real_escape_string($_POST['summary']) : '';
     $content = isset($_POST['editorContent']) ? $conn->real_escape_string($_POST['editorContent']) : '';
+    $page_type = isset($_POST['page_type']) ? $conn->real_escape_string($_POST['page_type']) : '';
 
     // Handle feature image upload
     $featureImagePath = '';
@@ -54,8 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $slug = ltrim($slug, '-');
 
     // Insert blog data into the database
-    $sql = "INSERT INTO main_website_blog (meta_title, summary, content, social_sharing_image, slug) 
-            VALUES ('$meta_title', '$summary', '$content', '$featureImagePath', '$slug')";
+    $sql = "INSERT INTO blog_posts (meta_title, summary, content,  page_type ,  social_sharing_image, slug ) 
+            VALUES ('$meta_title', '$summary', '$content', ' $page_type', '$featureImagePath', '$slug' )";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: dashboard.php");
@@ -67,4 +68,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close connection
     $conn->close();
 }
-?>

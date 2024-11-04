@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Magneto Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Magneto Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Magento Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Magento Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/magneto-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -375,16 +381,75 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Magneto Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Magento Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of e-commerce websites can Magento developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Magento developers can create a wide range of e-commerce websites, from small online stores to large-scale enterprise-level platforms. They specialize in building customized, feature-rich websites that cater to specific business needs, including B2B and B2C solutions.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Magento developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Magento developers prioritize security by following best practices such as regular updates to the Magento core and extensions, implementing SSL certificates, and using security patches. They also configure user roles and permissions to prevent unauthorized access to sensitive data.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Magento developers customize themes and modules?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Magento developers can create custom themes and modify existing modules to enhance the functionality and design of the website. They utilize PHP, HTML, CSS, and JavaScript to tailor the user experience and ensure the site aligns with branding requirements.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Magento developers handle SEO optimization?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Magento developers implement SEO best practices by optimizing site structure, meta tags, and URLs. They also use SEO-friendly extensions to improve product visibility and enhance search engine rankings, helping to drive organic traffic to the online store.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Magento development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Magento development include following coding standards, optimizing performance through caching and indexing, and regularly backing up the website. Developers should also ensure compliance with Magento's guidelines for a seamless and efficient deployment.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Magento developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Magento developers enhance website performance through techniques such as enabling full-page caching, optimizing images, and utilizing a content delivery network (CDN). They also regularly monitor site speed and performance metrics to ensure a fast and reliable shopping experience for users.
+                    </p>
+                </section>
             </section>
+
+
 
 
 

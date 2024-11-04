@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Laravel Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Laravel Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Laravel Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Laravel Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/laravel-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -375,16 +381,74 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Laravel Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Laravel Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications can Laravel developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Laravel developers can create a wide range of applications, including enterprise-level web applications, content management systems (CMS), e-commerce platforms, and RESTful APIs. The framework's elegant syntax and extensive features allow for scalable and maintainable applications tailored to specific business needs.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Laravel developers ensure application security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Laravel developers prioritize security by utilizing built-in security features such as CSRF protection, password hashing, and input validation. They also follow best practices to safeguard against common vulnerabilities like SQL injection and XSS, ensuring that applications remain secure and data is protected.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Laravel developers integrate third-party services and APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Laravel developers can seamlessly integrate various third-party services and APIs, such as payment gateways, email services, and social media platforms. They leverage Laravel's extensive ecosystem and tools like Laravel Cashier and Passport to enhance application functionality and streamline development.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Laravel developers handle database management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Laravel developers use Eloquent ORM for database management, allowing for an elegant and intuitive way to interact with databases. They work with various database systems like MySQL, PostgreSQL, and SQLite, utilizing migrations and seeders to manage database schema and data effectively.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Laravel development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Laravel development include following the MVC (Model-View-Controller) architecture, using version control systems, writing clean and modular code, and implementing automated testing. Developers also ensure proper documentation and adhere to coding standards for maintainability.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Laravel developers ensure application performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Laravel developers enhance application performance by optimizing queries, utilizing caching mechanisms like Redis and Memcached, and employing Laravel's built-in tools for performance monitoring. They also follow best practices in code optimization and utilize tools like Laravel Telescope to identify performance bottlenecks.
+                    </p>
+                </section>
             </section>
+
+
 
 
 

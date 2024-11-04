@@ -29,17 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/logistics-hero2.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>L</span><span>o</span><span>g</span><span>i</span><span>s</span><span>t</span><span>i</span><span>c</span><span>s</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Driving Performance in Supply Chain Through Tailored Software</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Logistics Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Streamlining Operations with Innovative Solutions for the Logistics Industry</h2>
-                    <a href="https://calendly.com/yourlogistics/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/logistice-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +386,52 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Logistics Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of logistics websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop various logistics websites, including freight forwarding platforms, supply chain management systems, transportation management solutions, and logistics service provider websites. Our designs focus on efficiency and usability to enhance operations.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate tracking and inventory management features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate real-time tracking features and inventory management systems to help businesses monitor shipments, manage stock levels, and optimize their supply chain processes effectively.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website is secure for handling sensitive data?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize security by implementing robust encryption methods, secure user authentication, and regular security audits. This ensures that sensitive data, such as shipping details and customer information, is protected from unauthorized access.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for customer support and communication?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer features for customer support, including live chat, ticketing systems, and FAQ sections. This helps logistics companies maintain effective communication with their clients and resolve issues promptly.
+                    </p>
+                </section>
+            </section>
 
 
 

@@ -29,20 +29,20 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/banking-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>B</span><span>a</span><span>n</span><span>k</span><span>i</span><span>n</span><span>g</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Streamlining Banking Services with Advanced Technology Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Banking Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Transforming Banking Experiences with Innovative Technology Solutions</h2>
-                    <a href="https://calendly.com/yourbanking/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/banking-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
-
             </div>
-
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
@@ -377,6 +377,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq ####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Banking Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the banking sector?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create websites for various banking institutions, including retail banks, credit unions, investment banks, and online banking platforms. Our designs focus on user-friendly interfaces, security, and providing easy access to banking services and information.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate online banking features and account management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate comprehensive online banking features, including account management, transaction history, fund transfers, and bill payments. Our solutions ensure that users can manage their finances conveniently and securely from any device.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure compliance with banking regulations?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize compliance with industry regulations such as GDPR, PSD2, and anti-money laundering (AML) laws. Our team works closely with you to implement necessary protocols to protect customer data and maintain regulatory adherence in all aspects of the website.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer security features for banking websites?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We implement advanced security features, including encryption, two-factor authentication, and regular security audits to protect sensitive financial data. Our focus is on creating a secure environment for both the bank and its customers.
+                    </p>
+                </section>
+            </section>
+
 
 
 

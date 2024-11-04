@@ -1,6 +1,6 @@
 <?php
 include 'database.php';
-include_once 'session.php'; 
+include_once 'session.php';
 
 // Check if form is submitted
 if (isset($_POST["signup"])) {
@@ -16,7 +16,7 @@ if (isset($_POST["signup"])) {
     }
 
     // Check if email is already registered
-    $check_query = "SELECT * FROM auth WHERE email = ?";
+    $check_query = "SELECT * FROM users  WHERE email = ?";
     $check_stmt = $conn->prepare($check_query);
     $check_stmt->bind_param("s", $email);
     $check_stmt->execute();
@@ -30,7 +30,7 @@ if (isset($_POST["signup"])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Prepare and execute SQL statement to insert new user
-        $insert_query = "INSERT INTO auth (email, password) VALUES (?, ?)";
+        $insert_query = "INSERT INTO users (email, password) VALUES (?, ?)";
         $insert_stmt = $conn->prepare($insert_query);
         $insert_stmt->bind_param("ss", $email, $hashed_password);
 

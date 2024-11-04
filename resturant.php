@@ -29,18 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/resturant-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>R</span><span>e</span><span>s</span><span>t</span><span>u</span><span>r</span><span>a</span><span>n</span><span>t</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Custom Solutions for Efficient Restaurant Management</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Restaurant Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Innovative Solutions to Enhance Dining Experiences and Streamline Operations</h2>
-                    <a href="https://calendly.com/yourrestaurant/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/resturant-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -445,6 +445,55 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- ##### FAQ #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Restaurant Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What features are essential for a restaurant website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Key features include an online menu, reservation system, online ordering, location and contact information, customer reviews, and social media integration. These elements help attract new customers and make it easy for them to engage with your restaurant.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate online ordering and delivery services?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate popular online ordering platforms like Grubhub, UberEats, or DoorDash, or create a custom ordering system. This helps streamline the ordering process directly from your website, improving customer convenience and sales.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How can my restaurant website help increase reservations?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We can integrate a reservation booking system directly into your website, allowing customers to book tables seamlessly. This can be combined with Google Calendar or OpenTable for better management of reservations.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Will my restaurant website be optimized for mobile users?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We ensure all restaurant websites are fully responsive and optimized for mobile devices, which is essential since many customers browse restaurant websites on their phones.
+                    </p>
+                </section>
+            </section>
+
 
 
 

@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Php Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Php Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled PHP Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom PHP Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/php-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -375,15 +381,71 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Php Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>PHP Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications can PHP developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PHP developers can create a variety of applications, including dynamic websites, web applications, content management systems (CMS), e-commerce platforms, and RESTful APIs. PHP's versatility allows for building anything from small personal blogs to large-scale enterprise applications.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PHP developers ensure application security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PHP developers prioritize security by following best practices such as input validation, output sanitization, using prepared statements for database interactions, and implementing proper session management. They also stay updated on common vulnerabilities like SQL injection and XSS to mitigate risks.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can PHP developers integrate third-party services?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, PHP developers can easily integrate third-party services, such as payment gateways, social media APIs, and analytics tools. They utilize various PHP libraries and frameworks to connect these services, enhancing application functionality and user experience.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PHP developers handle database management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PHP developers use database management systems like MySQL, PostgreSQL, and SQLite to handle data storage and retrieval. They write efficient SQL queries and utilize PHP's PDO or MySQLi extensions to manage database connections and ensure data integrity.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for PHP development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for PHP development include following the MVC (Model-View-Controller) architecture, using frameworks like Laravel or Symfony for robust application structure, writing clean and maintainable code, and implementing unit testing to ensure code quality and reliability.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PHP developers ensure application performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PHP developers enhance application performance by optimizing code, using caching mechanisms like OPcache or Memcached, and minimizing database queries. They also analyze and monitor application performance using profiling tools to identify bottlenecks and improve speed.
+                    </p>
+                </section>
             </section>
 
 

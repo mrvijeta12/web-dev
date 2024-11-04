@@ -28,10 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ####### HERO SECTION ####### -->
+
+
+
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled HTML Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom HTML Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                <div class="child child1">
+                    <h1>
+                        Professional HTML Development Services For Stunning Web Design
+                    </h1>
+                    <h3>
+                        Delivering exceptional web design services for your online success
+                    </h3>
+                    <a href="">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/html-developer.jpg" alt="">
+                </div>
             </div>
 
 
@@ -381,16 +393,77 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo HTML Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>HTML Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of projects can HTML developers handle?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HTML developers can create static websites, dynamic single-page applications, e-commerce sites, and responsive layouts suitable for all devices. They focus on clean, semantic HTML to ensure fast load times and easy navigation.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do HTML developers create responsive designs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HTML developers use CSS frameworks like Flexbox, CSS Grid, and media queries to make websites responsive across devices. They may also utilize libraries such as Bootstrap or Tailwind to streamline development and maintain design consistency.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do HTML developers ensure website accessibility?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HTML developers follow WCAG guidelines, using semantic HTML5 tags and ARIA attributes to make websites accessible to users with disabilities. This approach enhances usability for everyone, ensuring that the website is inclusive.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can HTML developers integrate interactive features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, HTML developers can integrate interactive features by working with JavaScript and APIs. They add elements like modals, animations, and other interactive features that improve user engagement and enhance the browsing experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some performance optimization techniques used by HTML developers?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HTML developers improve website performance by using minified code, image compression, lazy loading, and optimizing HTML and CSS. These techniques result in faster load times and a smooth user experience across all devices.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do HTML developers work with SEO?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HTML developers follow SEO best practices by implementing semantic HTML, optimizing meta tags, and structuring content for easy indexing by search engines. This helps improve the website’s visibility, making it more likely to appear in search results.
+                    </p>
                 </section>
 
 
-
             </section>
+
+
+
 
 
 

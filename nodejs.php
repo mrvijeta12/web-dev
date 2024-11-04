@@ -272,6 +272,52 @@
             </div>
         </section>
 
+        <!-- ### faq ######  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Node.js Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What are the benefits of using Node.js for web development?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Node.js is known for its non-blocking, event-driven architecture, which allows for high concurrency and scalability. This makes it ideal for building fast, real-time applications like chat applications, online gaming, and streaming services. Additionally, Node.js uses JavaScript, enabling full-stack development with a single language.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you ensure the performance of Node.js applications?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We focus on optimizing Node.js applications through efficient coding practices, utilizing asynchronous programming, and leveraging built-in caching mechanisms. Our team also monitors application performance using various tools to identify bottlenecks and ensure smooth user experiences.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you integrate Node.js applications with databases?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, Node.js can be easily integrated with various databases, both SQL (like MySQL and PostgreSQL) and NoSQL (like MongoDB and Redis). Our developers use ORM tools and query builders to facilitate efficient data interaction, ensuring your application can handle data operations smoothly and effectively.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What types of applications are best suited for Node.js?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Node.js is particularly well-suited for applications that require real-time interaction, such as chat applications, collaborative tools, and gaming platforms. It is also a great choice for building RESTful APIs and microservices, where its lightweight nature and speed can greatly enhance performance and scalability.
+                </p>
+            </section>
+        </section>
 
 
 

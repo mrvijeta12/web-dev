@@ -18,82 +18,112 @@ html {
 }
 
 /* ####### HERO SECTION #########  */
+
 .hero {
   width: 100%;
-  height: 100vh;
-  /* border: 2px solid red; */
-  position: relative;
-  /* margin-top: 70px; */
-}
-.hero-image {
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  /* border: 2px solid blue; */
-  /* object-fit: cover; */
-}
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  /* height: 100vh; */
+  height: 550px;
+  display: flex;
+  /* background-color: black; */
+  /* background: linear-gradient(
+    91.3deg,
+    rgb(135, 174, 220) 1.5%,
+    rgb(255, 255, 255) 100.3%
+  ); */
 
-.hero-data {
+  /* background: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  ); */
+
+  background: radial-gradient(
+    circle at 48.7% 44.3%,
+    rgb(30, 144, 231) 0%,
+    rgb(56, 113, 209) 22.9%,
+    rgb(38, 76, 140) 76.7%,
+    rgb(31, 63, 116) 100.2%
+  );
+  /* border: 2px solid blue; */
+  margin-top: 70px;
+}
+.child {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+}
+.child a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+}
+.child2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child2 img {
+  width: 100%;
+  max-height: 80%;
+  height: auto;
+  max-width: 500px;
+}
+/* .child1 {
+  position: relative;
+  color: white;
+} */
+.child1 h1,
+.child1 h3,
+.child1 a {
+  margin: 0px 20px;
+  /* color: black; */
+}
+/* .logo {
   position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
   top: 50%;
-  left: 50%;
+  right: -90px;
   transform: translate(-50%, -50%);
   z-index: 2;
-  color: white;
-  text-align: center;
-  /* border: 2px solid red; */
+} */
+/* .logo img {
+  width: 70px;
+  height: 70px;
+} */
+.animated-heading {
+  display: block;
   width: 100%;
-  padding: 0px 10px;
+  gap: 2px;
 }
-.hero-data h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-.hero-data h2 {
-  margin-bottom: 15px;
+.animated-heading span {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
 }
 
-.hero a {
-  display: inline-block;
-  padding: 15px 25px;
-  /* background-color: rgba(11, 92, 171, 1); */
-  color: white;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 25%;
-  font-family: "Montserrat-Regular", sans-serif;
-  letter-spacing: 1.5px;
-  margin-top: 10px;
-  z-index: 2;
-  border-radius: 40px;
-  /* background: radial-gradient(
-      circle at 12.3% 19.3%,
-      rgb(85, 88, 218) 0%,
-      rgb(95, 209, 249) 100.2%
-    ); */
-  background-color: #0363ff;
-  border: 2px solid #0363ff;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-.hero a:hover {
-  background-color: hsl(217, 100%, 38%);
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* ###### INTRODUCTION SECTION #####  */
@@ -355,6 +385,7 @@ p.tab.active-tab {
   /* border: 1px solid #E9AB04; */
   /* border-radius: 8px; */
   background-color: #121212;
+
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: white;
 }
@@ -588,13 +619,86 @@ p.tab.active-tab {
   /* border: 4px solid blue; */
 }
 
+/*#########  FAQ ###### */
+.faq-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+/* Each FAQ item (child) */
+.faq-child {
+  width: 48%; /* Two items per row */
+  background-color: #121212;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: auto;
+}
+
+/* Heading and icon layout */
+.faq-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for headings */
+.faq-heading h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* The icon for expanding/collapsing */
+.faq-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+/* Initially hide the paragraphs */
+.faq-child p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+/* Expand the paragraph when .expanded is added */
+.faq-child.expanded p {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Rotate the icon when expanded */
+.faq-child.expanded .faq-icon {
+  transform: rotate(180deg);
+}
+
 /*  ################################ RESPONSIVE SECTION ################################  */
 
 @media screen and (max-width: 1050px) {
   .hero {
-    height: 700px;
+    /* height: 700px; */
   }
-  .hero-image {
+  /* .hero-image {
     height: 700px;
   }
   .hero-image::before {
@@ -606,7 +710,7 @@ p.tab.active-tab {
     height: 700px;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-  }
+  } */
 }
 
 @media screen and (max-width: 900px) {
@@ -617,20 +721,20 @@ p.tab.active-tab {
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 500px;
+    /* height: 500px; */
   }
   .hero-image {
-    height: 500px;
+    /* height: 500px; */
   }
   .hero-image::before {
-    content: "";
+    /* content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 1; */
   }
 
   .hero h1 {
@@ -638,6 +742,18 @@ p.tab.active-tab {
   }
   .hero h2 {
     font-size: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    height: auto;
+  }
+  .child {
+    width: 100%;
+  }
+  .child1 {
+    padding: 20px;
   }
 
   .detail {

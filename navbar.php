@@ -16,12 +16,12 @@
     ?>
     <nav id="navbar">
         <div class="wrapper">
-            <div class="logo"><a href="./index.php">TekAlgo</a></div>
+            <div class="logo"><a href="./home.php">TekAlgo</a></div>
             <input type="radio" name="slider" id="menu-btn">
             <input type="radio" name="slider" id="close-btn">
             <ul class="nav-links">
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="./index.php" class=" <?php echo ($current_page == 'index.php') ? 'current' : ''; ?>">Home</a></li>
+                <li><a href="./home.php" class=" <?php echo ($current_page == 'index.php') ? 'current' : ''; ?>">Home</a></li>
                 <li><a href="./services.php" class=" <?php echo ($current_page == 'services.php') ? 'current' : ''; ?>">Services</a></li>
 
                 <li>

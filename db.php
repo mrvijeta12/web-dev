@@ -1,10 +1,10 @@
 
 <?php
 
-$host = '62.72.28.204';
-$dbname = 'u360288577_slsfrcclds';
-$username = 'u360288577_tekAlgo_slsfrs';
-$password = '[Cc/?;6nQ2';
+$host = 'localhost';
+$dbname = 'blog_database';
+$username = 'root';
+$password = '';
 
 try {
     $conn = new mysqli($host, $username, $password, $dbname);

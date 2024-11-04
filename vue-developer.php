@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Vue.JS Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Vue.JS Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Vue.JS Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Vue.JS Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/vue-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -383,16 +389,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Vue.JS Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq  ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Vue.js Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications are best suited for Vue.js?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Vue.js is ideal for building interactive user interfaces, single-page applications (SPAs), and complex enterprise applications. Its flexibility allows developers to integrate Vue.js into projects of any size, from small components to large-scale applications, making it suitable for a variety of use cases.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Vue.js developers manage state in applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Vue.js developers commonly use Vuex for state management, providing a centralized store for all components in an application. This helps maintain consistency and manage state across different parts of the app effectively, especially in larger applications.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are the performance optimization techniques used by Vue.js developers?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Vue.js developers optimize performance through techniques like lazy loading of components, using computed properties for efficient reactivity, and minimizing the size of the bundle with tools like Webpack. They also leverage the Vue Router’s route-based code splitting to enhance load times.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Vue.js developers handle forms and user input?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Vue.js provides two-way data binding, which simplifies the management of forms and user inputs. Developers use the `v-model` directive to create reactive forms, allowing for real-time updates of input values and validation, improving user experience significantly.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Vue.js be integrated with other libraries or frameworks?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Vue.js can be seamlessly integrated with other libraries and frameworks, such as Laravel for back-end development or Bootstrap for styling. This flexibility allows developers to enhance existing projects or create new ones without being limited to a specific technology stack.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Vue.js developers ensure application security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Vue.js developers follow best practices for application security, such as sanitizing user inputs, implementing CSRF protection, and using HTTPS for data transmission. They also leverage Vue.js’s built-in features to prevent XSS attacks by escaping HTML and validating input data.
+                    </p>
+                </section>
             </section>
+
 
 
 

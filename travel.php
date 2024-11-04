@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/travel-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>T</span><span>r</span><span>a</span><span>v</span><span>e</span><span>l</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Travel Businesses Through Custom Software Development</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Travel Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Customized Solutions to Enhance Your Travel Business Operations</h2>
-                    <a href="https://calendly.com/yourtravelcompany/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/travel-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +385,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- #### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Your Travel Web Development Questions, Answered</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What kind of websites do you develop for the travel industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create websites for various travel businesses, including travel agencies, tour operators, hotels, airlines, and booking platforms. Each site is tailored to enhance the visitor experience, boost bookings, and showcase your unique offerings.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate booking systems and travel APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we specialize in integrating booking engines and travel APIs, allowing real-time availability and pricing updates for flights, hotels, and tours. We ensure a seamless user experience that encourages customers to book directly on your site.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer multilingual and multi-currency support?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! For a global reach, we provide multilingual support and multi-currency options, making it easy for international travelers to navigate and book in their preferred language and currency.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you enhance the website's visual appeal for travel clients?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We use high-quality visuals, immersive design elements, and intuitive navigation to capture the spirit of travel and adventure. Our goal is to create an inspiring experience that encourages visitors to explore and book their next trip.
+                    </p>
+                </section>
+            </section>
+
 
 
 

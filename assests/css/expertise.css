@@ -159,7 +159,7 @@ html {
 /* ######## Process ######  */
 .swiper {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-bottom: 60px;
   padding: 0px 40px;
   background: darkgrey;
@@ -168,6 +168,9 @@ html {
   background-color: black;
   z-index: 0 !important;
   padding-bottom: 0px !important;
+}
+.swiper-wrapper {
+  height: auto !important;
 }
 .swiper h1 {
   font-size: 3rem;
@@ -184,7 +187,7 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 15px;
-  height: 480px !important;
+  height: 450px !important;
   padding: 30px;
   /* border: 2px solid blue; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -451,6 +454,79 @@ html {
     rgba(195, 218, 253, 0.3) 0px 30px 60px -30px,
     rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
   text-decoration: none;
+}
+
+/*#########  FAQ ###### */
+.faq-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+/* Each FAQ item (child) */
+.faq-child {
+  width: 48%; /* Two items per row */
+  background-color: #121212;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: auto;
+}
+
+/* Heading and icon layout */
+.faq-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for headings */
+.faq-heading h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* The icon for expanding/collapsing */
+.faq-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+/* Initially hide the paragraphs */
+.faq-child p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+/* Expand the paragraph when .expanded is added */
+.faq-child.expanded p {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Rotate the icon when expanded */
+.faq-child.expanded .faq-icon {
+  transform: rotate(180deg);
 }
 
 /*  ########## RESPONSIVE SECTION ###########  */

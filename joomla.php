@@ -274,6 +274,54 @@
         </section>
 
 
+        <!-- ##### faq #####  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Expert Joomla Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What types of websites can be built with Joomla?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Joomla is a versatile content management system that can be used to create various types of websites, including corporate sites, online magazines, e-commerce platforms, community portals, and more. Our team specializes in customizing Joomla to meet the specific needs of our clients, ensuring a tailored and effective online presence.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Do you provide custom Joomla template and extension development?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we offer custom Joomla template and extension development services. Our designers create visually appealing, responsive templates, while our developers build custom extensions to enhance functionality and meet unique business requirements, ensuring that your Joomla site stands out and operates smoothly.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you ensure the security of Joomla websites?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Security is a top priority for our Joomla development team. We implement best practices, including regular updates, using secure hosting environments, and applying security extensions. Additionally, we perform security audits and vulnerability assessments to protect your website from potential threats and ensure a safe browsing experience for your users.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can Joomla be integrated with other platforms and services?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, Joomla can easily be integrated with various third-party platforms and services, including CRM systems, social media, and e-commerce solutions. Our team utilizes Joomla's API capabilities and custom extensions to ensure seamless connections, enhancing your site’s functionality and user experience.
+                </p>
+            </section>
+        </section>
+
+
 
 
         <!-- ##### Book #######  -->

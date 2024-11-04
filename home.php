@@ -1,3 +1,30 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM blog_posts WHERE page_type = 'home' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE php>
 <html lang="en">
 
@@ -27,7 +54,7 @@
             <div class="hero">
                 <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative IT Solutions for the Digital Era</h1>
                 <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <a href="#" id="reopenPopup" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
             </div>
 
             <!-- ######## Intro ########  -->
@@ -327,6 +354,38 @@
                 </div>
             </div>
 
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
 
             <!-- ###### FAQ'S ####  -->
 
@@ -335,51 +394,49 @@
             </div>
 
 
+
             <section class="faq-wrapper">
                 <section class="faq-child">
                     <section class="faq-heading">
-                        <h1>
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facilis quaerat reprehenderit nam quia molestiae
-                            inventore!
-                        </h1>
+                        <h1>What services do you offer for web development?</h1>
                         <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
                     </section>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                        We offer a range of web development services, including front-end and back-end development, custom website design, responsive web development, and e-commerce solutions.
                     </p>
                 </section>
 
                 <section class="faq-child">
                     <section class="faq-heading">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <h1>How long does it take to build a website?</h1>
                         <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
                     </section>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                        The time required depends on the project’s complexity and scope. A simple website might take 1-2 weeks, while more complex projects could take several months.
                     </p>
                 </section>
 
                 <section class="faq-child">
                     <section class="faq-heading">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <h1>Will my website be mobile-friendly?</h1>
                         <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
                     </section>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                        Yes, we ensure that all websites are fully responsive and optimized for mobile devices, providing an excellent user experience across different screen sizes.
                     </p>
                 </section>
 
                 <section class="faq-child">
                     <section class="faq-heading">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <h1>Do you provide ongoing maintenance and support?</h1>
                         <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
                     </section>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, sunt?
+                        Yes, we offer ongoing maintenance and support to ensure your website stays updated, secure, and performs at its best. Our support includes updates, troubleshooting, and performance optimization.
                     </p>
                 </section>
             </section>
+
 
 
 

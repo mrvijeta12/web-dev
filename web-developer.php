@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Web Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Web Developer Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Web Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Web Developer Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/web-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -397,16 +403,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Web Developer Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Web Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites can web developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web developers can create a wide range of websites, including static websites, dynamic websites, e-commerce platforms, content management systems (CMS), single-page applications (SPAs), and custom web applications tailored to specific business needs. They utilize various technologies to meet the requirements of different projects.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do web developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web developers implement several security measures, including HTTPS for secure data transmission, input validation, and protection against common vulnerabilities like XSS and SQL injection. They also ensure regular updates and patches for frameworks and libraries to maintain a secure environment.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can web developers integrate third-party services and APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, web developers can integrate various third-party services and APIs, such as payment gateways, social media integrations, and analytics tools. They utilize frameworks and libraries to facilitate seamless communication between the web application and external services, enhancing functionality and user experience.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do web developers handle responsive design?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web developers implement responsive design principles by using flexible grid layouts, media queries, and CSS frameworks like Bootstrap or Tailwind CSS. This ensures that websites provide an optimal viewing experience across various devices, including desktops, tablets, and smartphones.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for web development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for web development include writing clean, maintainable code, utilizing version control systems like Git, following coding standards, and optimizing website performance. Developers also conduct thorough testing and debugging to ensure that applications function correctly across different browsers and devices.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do web developers improve website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web developers enhance website performance by optimizing images, minifying CSS and JavaScript files, implementing caching strategies, and using Content Delivery Networks (CDNs). They also conduct performance audits and use tools like Google PageSpeed Insights to identify and address potential bottlenecks.
+                    </p>
+                </section>
             </section>
+
 
 
 

@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Node.JS Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Node.JS Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Node.JS Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Node.JS Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/node-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -377,16 +383,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo Node.JS Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Node.js Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications can Node.js developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Node.js developers can create a variety of applications, including real-time applications like chat applications and online gaming, RESTful APIs, single-page applications (SPAs), microservices, and server-side applications. Its non-blocking architecture makes it suitable for handling multiple connections simultaneously.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Node.js developers ensure application security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Node.js developers prioritize security by implementing measures such as input validation, using secure dependencies, and managing sensitive data properly. They follow best practices for authentication and authorization, employing frameworks like Passport.js and tools like Helmet.js to protect against common vulnerabilities.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can Node.js developers integrate third-party services and APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, Node.js developers can easily integrate a wide range of third-party services and APIs, including payment gateways, social media platforms, and cloud services. They leverage libraries like Axios or Node-fetch for seamless API communication, enhancing application functionality and user experience.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Node.js developers handle database management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Node.js developers use various database management systems, including NoSQL databases like MongoDB and relational databases like MySQL or PostgreSQL. They often utilize ORMs like Mongoose for MongoDB or Sequelize for SQL databases to facilitate smooth database interactions and manage data efficiently.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for Node.js development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for Node.js development include modular code organization, using asynchronous programming patterns, error handling, and following coding standards. Developers also utilize environment variables for configuration management and version control systems like Git for collaborative development.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Node.js developers ensure application performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Node.js developers enhance application performance by optimizing event-driven architecture, using clustering to handle multiple CPU cores, and implementing caching strategies with tools like Redis. They also employ monitoring and profiling tools to identify performance bottlenecks and improve response times.
+                    </p>
+                </section>
             </section>
+
 
 
 

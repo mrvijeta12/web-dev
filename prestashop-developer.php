@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled PrestaShop Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom PrestaShop Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled PrestaShop Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom PrestaShop Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/prestashop-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -358,16 +364,73 @@
                         </section>
                     </section>
 
-                    <!-- ############### HOW WE WORK ############  -->
-                    <section class="workflow-wrapper">
-                        <section class="workflow-data">
-                            <h1>How TekAlgo PrestaShop Specialists Maximize Your Website Potential</h1>
-                            <img src="images/Roadmap image.png" alt="">
+                    <!-- ############### faq ############  -->
+                    <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                        <h1>PrestaShop Development Services FAQs</h1>
+                    </div>
+
+                    <section class="faq-wrapper">
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>What types of e-commerce websites can PrestaShop developers create?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                PrestaShop developers can create a wide range of e-commerce websites, including small retail shops, large-scale online stores, and multi-vendor marketplaces. They specialize in developing customizable, scalable, and feature-rich e-commerce solutions tailored to meet specific business needs.
+                            </p>
                         </section>
 
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>How do PrestaShop developers ensure website security?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                PrestaShop developers prioritize security by regularly updating the PrestaShop core and modules, implementing SSL certificates, and utilizing secure payment gateways. They also apply best practices in coding and configuration to protect against vulnerabilities such as SQL injection and XSS attacks.
+                            </p>
+                        </section>
 
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>Can PrestaShop developers customize themes and modules?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                Yes, PrestaShop developers can customize existing themes and create new modules to enhance the functionality and aesthetics of the online store. They use HTML, CSS, JavaScript, and PHP to deliver tailored solutions that align with business branding and operational requirements.
+                            </p>
+                        </section>
 
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>How do PrestaShop developers handle SEO optimization?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                PrestaShop developers implement SEO best practices by optimizing product pages, meta tags, URLs, and image attributes. They also use various SEO modules and tools to improve site visibility and search rankings, ensuring that the online store attracts organic traffic.
+                            </p>
+                        </section>
+
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>What are some best practices for PrestaShop development?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                Best practices for PrestaShop development include maintaining regular backups, optimizing site performance through caching and CDN usage, and ensuring the use of responsive design principles. Developers should also follow PrestaShop coding standards for seamless updates and compatibility.
+                            </p>
+                        </section>
+
+                        <section class="faq-child">
+                            <section class="faq-heading">
+                                <h1>How do PrestaShop developers ensure website performance?</h1>
+                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                            </section>
+                            <p>
+                                PrestaShop developers enhance website performance by optimizing images, leveraging caching mechanisms, and reducing the number of requests made to the server. They regularly monitor the site's speed and performance metrics to ensure a fast and efficient shopping experience for users.
+                            </p>
+                        </section>
                     </section>
+
 
 
 

@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/news-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>N</span><span>e</span><span>w</span><span>s</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Transforming News Reporting Through Tailored Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">News Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Transforming News Platforms with Cutting-Edge Technology and Design</h2>
-                    <a href="https://calendly.com/yournews/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/news-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +385,53 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>News Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of news websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of news websites, including online newspapers, digital magazines, and niche news portals. Our designs focus on providing a seamless reading experience while showcasing articles, multimedia content, and breaking news updates.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate content management systems (CMS) for easy publishing?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we integrate user-friendly content management systems (CMS) that allow journalists and editors to publish, edit, and manage content easily. This ensures that your news team can keep the website updated with the latest news and articles.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website is optimized for mobile users?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We utilize responsive design techniques to ensure your news website provides an optimal viewing experience across all devices, including smartphones and tablets. This enhances accessibility and engagement with your audience on the go.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for multimedia content and social sharing?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we incorporate features for multimedia content, such as videos, podcasts, and image galleries, to enrich the news experience. We also enable social sharing options to allow readers to easily share articles across various social media platforms.
+                    </p>
+                </section>
+            </section>
 
 
 

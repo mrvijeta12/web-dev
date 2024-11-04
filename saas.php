@@ -29,17 +29,18 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/saas-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>S</span><span>a</span><span>a</span><span>S</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Businesses with Scalable SaaS Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">SaaS Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Accelerate Your SaaS Business Growth</h2>
-                    <a href="https://calendly.com/yoursaasbusiness/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/saas-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -383,6 +384,55 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- #### faq #####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>SaaS Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of SaaS websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of SaaS websites, including platforms for project management, customer relationship management (CRM), accounting software, and subscription-based services. Each site is tailored to deliver a seamless user experience and robust functionality.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate user management and billing systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can implement user management features, including registration, login, role-based access, and account settings. Additionally, we integrate billing systems to automate invoicing and subscription management, ensuring a smooth financial process for your users.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure data security and compliance for SaaS applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize data security by implementing best practices such as encryption, secure authentication, and regular security audits. We also ensure compliance with relevant regulations like GDPR and CCPA to protect user data and privacy.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide ongoing support and maintenance for SaaS websites?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer ongoing support and maintenance services to ensure your SaaS application runs smoothly. This includes updates, bug fixes, and performance optimizations to keep your platform competitive and reliable.
+                    </p>
+                </section>
+            </section>
+
 
 
 

@@ -99,6 +99,55 @@
                     </section>
 
                 </section>
+
+                <!-- #### FAQ ###  -->
+
+                <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1>Contact Us FAQs: Get in Touch</h1>
+                </div>
+
+                <section class="faq-wrapper">
+                    <section class="faq-child">
+                        <section class="faq-heading">
+                            <h1>What is the best way to reach you?</h1>
+                            <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                        </section>
+                        <p>
+                            You can reach us through our contact form on this page, via email, or by phone. We strive to respond to all inquiries within 24-48 hours.
+                        </p>
+                    </section>
+
+                    <section class="faq-child">
+                        <section class="faq-heading">
+                            <h1>What are your hours of operation?</h1>
+                            <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                        </section>
+                        <p>
+                            Our hours of operation are Monday to Friday, 9 AM to 6 PM (local time). We are closed on weekends and public holidays, but you can still reach out via email, and we’ll respond when we're back in the office.
+                        </p>
+                    </section>
+
+                    <section class="faq-child">
+                        <section class="faq-heading">
+                            <h1>How long does it take to receive a response?</h1>
+                            <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                        </section>
+                        <p>
+                            We typically respond within 24-48 hours during business days. For urgent matters, please indicate the priority in your message, and we’ll do our best to expedite our response.
+                        </p>
+                    </section>
+
+                    <section class="faq-child">
+                        <section class="faq-heading">
+                            <h1>Can I schedule a meeting or consultation?</h1>
+                            <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                        </section>
+                        <p>
+                            Yes, we offer virtual and in-person consultations. Please contact us to schedule a time that works for you, and we’ll set up a meeting to discuss your project or questions.
+                        </p>
+                    </section>
+                </section>
+
             </div>
         </div>
     </div>

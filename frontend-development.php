@@ -288,6 +288,55 @@
             </section>
 
 
+            <!-- #### faq ####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Expert Frontend Development: Common Questions Answered</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What makes your team experts in frontend development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team specializes in creating responsive, visually engaging, and user-friendly interfaces using the latest frontend technologies like HTML, CSS, JavaScript, and frameworks such as React.js, Angular, and Vue.js. We follow best practices in UI/UX design and adhere to performance and accessibility standards to deliver a high-quality user experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure responsive and cross-browser compatibility?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We design and test our frontend projects across various devices and browsers to ensure a consistent experience for all users. By using responsive design principles, CSS media queries, and modern frameworks, we make sure that websites look and perform well on any screen size or browser.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you optimize frontend performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Performance is a priority in all our frontend projects. We employ techniques like minifying code, optimizing images, lazy loading content, and leveraging browser caching. Additionally, we use tools like Lighthouse and Google PageSpeed Insights to identify and address any performance bottlenecks.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does your team approach UI/UX in frontend development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our frontend developers work closely with UI/UX designers to create intuitive and visually appealing interfaces. We prioritize usability, accessibility, and interactivity, ensuring each element serves a purpose and enhances the user experience. We also conduct usability testing to refine and perfect the design.
+                    </p>
+                </section>
+            </section>
+
+
+
 
 
             <!-- ##### Book #######  -->

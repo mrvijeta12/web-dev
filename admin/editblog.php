@@ -3,31 +3,41 @@ include_once "./session.php";
 check_login();
 include_once 'database.php';
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "blog";
-
-// $conn = new mysqli($servername, $username, $password, $dbname);
-
-// // Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
-
 // Fetch content by slug
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 $meta_title = $summary = $social_sharing_image = $content = "";
 
 if ($slug) {
-    $stmt = $conn->prepare("SELECT meta_title, summary, social_sharing_image, content FROM main_website_blog  WHERE slug = ?");
+    // Prepare the SQL statement
+    $stmt = $conn->prepare("SELECT meta_title, summary, social_sharing_image, content FROM blog_posts WHERE slug = ?");
+
+    if ($stmt === false) {
+        die('MySQL prepare error: ' . htmlspecialchars($conn->error));
+    }
+
+    // Bind parameters
     $stmt->bind_param("s", $slug);
-    $stmt->execute();
+
+    // Execute the statement
+    if (!$stmt->execute()) {
+        die('MySQL execute error: ' . htmlspecialchars($stmt->error));
+    }
+
+    // Bind the result variables
     $stmt->bind_result($meta_title, $summary, $social_sharing_image, $content);
-    $stmt->fetch();
+
+    // Fetch the data
+    if (!$stmt->fetch()) {
+        echo "No content found for this slug.";
+    }
+
+    // Close the statement
     $stmt->close();
+} else {
+    echo "Slug not provided.";
 }
 
+// Close the database connection
 $conn->close();
 ?>
 
@@ -37,7 +47,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta_title>Edit Blog</meta_title>
+    <title>Edit Blog</title>
     <link rel="stylesheet" href="./assets/css/addblog.css">
     <script src="./tinymce/tinymce.min.js"></script>
     <script>
@@ -94,29 +104,23 @@ $conn->close();
             toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' +
                 'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
                 'forecolor backcolor emoticons',
-            menu: {
-                favs: {
-                    meta_title: 'menu',
-                    items: 'code visualaid | searchreplace | emoticons'
-                }
-            },
             menubar: 'favs file edit view insert format tools table',
             content_style: 'body{font-family:Helvetica,Arial,sans-serif; font-size:16px}',
-            images_upload_url: 'upload.php', // Your server-side upload script
+            images_upload_url: 'upload.php',
             images_upload_handler: image_upload_handler_callback
         });
     </script>
 </head>
 
 <body>
-    <?php include "./navbar.php" ?>
+    <?php include "./navbar.php"; ?>
     <section class="form-section">
         <form method="POST" action="saveEditContent.php" enctype="multipart/form-data" class="form">
             <h1>Edit Blog</h1>
 
             <!-- meta_title Field (Required) -->
             <div class="form-group">
-                <label for="meta_title">meta_title *</label>
+                <label for="meta_title">Meta Title *</label>
                 <input type="text" id="meta_title" name="meta_title" value="<?php echo htmlspecialchars($meta_title, ENT_QUOTES, 'UTF-8'); ?>" required>
             </div>
 
@@ -130,6 +134,87 @@ $conn->close();
             <div class="form-group">
                 <label for="featureImage">Feature Image (Current: <?php echo htmlspecialchars($social_sharing_image, ENT_QUOTES, 'UTF-8'); ?>)</label>
                 <input type="file" id="featureImage" name="social_sharing_image" accept="image/*">
+            </div>
+            <!-- Blog Pages -->
+            <div class="form-group">
+                <label for="page_type">Choose Post Page:</label>
+                <select id="page_type" name="page_type" class="page-type">
+                    <optgroup label="Main Page">
+                        <option value="home">Home</option>
+                        <option value="services">Services</option>
+                        <option value="blog">Blog</option>
+                        <option value="contact-us">Contact Us</option>
+
+                    </optgroup>
+                    <optgroup label="Industries">
+                        <option value="on-demand">On Demand</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="travel">Travel</option>
+                        <option value="oil-and-gas">Oil and Gas</option>
+                        <option value="telecom">Telecom</option>
+                        <option value="construction">Construction</option>
+                        <option value="ecommerce">eCommerce</option>
+                        <option value="saas">SaaS</option>
+                        <option value="finance">Finance</option>
+                        <option value="social-networking">Social Networking</option>
+                        <option value="banking">Banking</option>
+                        <option value="insurance">Insurance</option>
+                        <option value="retail">Retail</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="education">Education</option>
+                        <option value="news">News</option>
+                        <option value="logistics">Logistics</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="manufacturing">Manufacturing</option>
+                    </optgroup>
+                    <optgroup label="Offshore Experts">
+
+                        <option value="html-developer">HTML Developer</option>
+                        <option value="javascript-developer">JavaScript Developer</option>
+                        <option value="angularjs-developer">AngularJS Developer</option>
+                        <option value="reactjs-developer">ReactJS Developer</option>
+                        <option value="vuejs-developer">VueJS Developer</option>
+                        <option value="wordpress">WordPress</option>
+                        <option value="drupal">Drupal</option>
+                        <option value="joomla">Joomla</option>
+                        <option value="magento">Magento</option>
+                        <option value="shopify">Shopify</option>
+                        <option value="prestashop">PrestaShop</option>
+                        <option value="php">PHP</option>
+                        <option value="codeigniter">CodeIgniter</option>
+                        <option value="laravel">Laravel</option>
+                        <option value="nodejs">NodeJS</option>
+                        <option value="web-developer">Web Developer</option>
+
+                    </optgroup>
+
+                    <optgroup label="Our Expertise">
+                        <option value="angularjs">Angular.js</option>
+                        <option value="reactjs">React.js</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="vuejs">Vue.js</option>
+                        <option value="wordpress">WordPress</option>
+                        <option value="drupal">Drupal</option>
+                        <option value="joomla">Joomla</option>
+                        <option value="php">PHP</option>
+                        <option value="codeigniter">CodeIgniter</option>
+                        <option value="laravel">Laravel</option>
+                        <option value="nodejs">NodeJS</option>
+                        <option value="pwa">PWA</option>
+                        <option value="jquery">jQuery</option>
+                        <option value="python">Python</option>
+                        <option value="mern-stack">MERN Stack</option>
+                        <option value="mean-stack">MEAN Stack</option>
+                        <option value="magento">Magento</option>
+                        <option value="shopify">Shopify</option>
+                        <option value="prestashop">PrestaShop</option>
+
+
+                    </optgroup>
+                </select>
+
             </div>
 
             <!-- Blog Content (TinyMCE Editor) -->

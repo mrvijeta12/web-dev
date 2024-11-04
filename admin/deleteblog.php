@@ -3,19 +3,10 @@ include_once "session.php";
 check_login();
 include_once 'database.php';
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "blog";
 
-// $conn = new mysqli($servername, $username, $password, $dbname);
-
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
 
 // Fetch all content with slug, summary, and feature image
-$sql = "SELECT id, slug, summary ,  social_sharing_image FROM main_website_blog  ORDER BY id DESC";
+$sql = "SELECT id, slug, summary ,  social_sharing_image FROM blog_posts  ORDER BY id DESC";
 $result = $conn->query($sql);
 
 $contents = [];
@@ -45,7 +36,7 @@ $conn->close();
         }
     </script>
     <style>
-       
+
     </style>
 </head>
 
@@ -74,8 +65,8 @@ $conn->close();
             <!-- Text Content -->
             <div class='text-content'>
                 <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
-                <p><?= $summary?></p> <!-- Displaying the summary as paragraph -->
-              
+                <p><?= $summary ?></p> <!-- Displaying the summary as paragraph -->
+
             </div>
 
             <!-- Delete Button -->

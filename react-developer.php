@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled React.JS Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom React.JS Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled React.JS Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom React.JS Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/react-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -418,16 +424,74 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo React.JS Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>React.js Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of projects are best suited for React.js developers?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        React.js developers are ideal for building interactive user interfaces, single-page applications, and complex web applications that require a dynamic, responsive user experience. They excel in projects that benefit from real-time updates and seamless data interactions.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does React.js enhance application performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        React.js enhances application performance through its virtual DOM, which minimizes direct manipulation of the actual DOM. This results in faster rendering and efficient updates. Developers also optimize performance by using techniques like code splitting and lazy loading.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can React.js developers integrate with other libraries and frameworks?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, React.js developers can seamlessly integrate with other libraries and frameworks such as Redux for state management, React Router for routing, and various CSS frameworks. This flexibility allows them to build comprehensive solutions tailored to specific project needs.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do React.js developers handle state management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        React.js developers use built-in hooks like `useState` and `useReducer` for local state management, while they may opt for libraries like Redux or Context API for global state management. This approach helps maintain data flow and ensures consistency across components.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are the best practices for building React.js applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for building React.js applications include using functional components, managing side effects with `useEffect`, organizing components effectively, writing reusable code, and implementing proper testing strategies. These practices lead to more maintainable and scalable applications.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do React.js developers ensure accessibility in applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        React.js developers prioritize accessibility by using semantic HTML elements, managing focus states, and following WAI-ARIA guidelines. They ensure that applications are usable by all individuals, including those with disabilities, enhancing overall user experience.
+                    </p>
+                </section>
             </section>
+
+
 
 
 

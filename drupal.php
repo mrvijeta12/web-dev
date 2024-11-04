@@ -271,6 +271,54 @@
             </div>
         </section>
 
+        <!-- ##### faq #####  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Advanced Drupal Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What types of projects are best suited for Drupal?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Drupal is ideal for complex, content-heavy websites and applications that require high customization and scalability, such as enterprise websites, government portals, and educational platforms. Our team leverages Drupal’s powerful content management features to create secure, flexible, and high-performing sites tailored to meet the specific needs of larger organizations.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How does your team handle custom module development in Drupal?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Our Drupal experts build custom modules to extend functionality beyond standard features, ensuring that each site has the precise tools and features it needs. We follow best practices in module development, from clean code to rigorous testing, making sure each module integrates seamlessly with Drupal’s core.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you ensure security and performance in Drupal websites?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Security is a priority in our Drupal projects, and we implement strict security measures, including regular updates, access controls, secure coding practices, and database encryption. Additionally, we optimize performance by using caching, minimizing database queries, and optimizing assets, ensuring a fast and secure user experience.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you integrate third-party systems with Drupal?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we have extensive experience integrating Drupal with various third-party systems such as CRMs, payment gateways, and marketing platforms. By using Drupal’s API-first architecture and custom modules, we seamlessly connect your website with external services, enhancing functionality and streamlining workflows.
+                </p>
+            </section>
+        </section>
+
+
 
 
 

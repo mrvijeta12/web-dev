@@ -29,17 +29,19 @@
 
             <!-- ##### HERO SECTION ######  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/education-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Streamlining Administration with Advanced Educational Management Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Education Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering Learning with Innovative Solutions for Educational Institutions</h2>
-                    <a href="https://calendly.com/youreducation/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/education-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -383,6 +385,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Education Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of education websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a range of education websites, including online learning platforms, school and university websites, e-learning course providers, and educational resource sites. Our designs cater to both traditional and non-traditional learning environments.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate learning management systems (LMS)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate robust learning management systems (LMS) to facilitate online courses, track student progress, and manage assessments. This allows educational institutions to provide a comprehensive learning experience to their students.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure a user-friendly experience for students and educators?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We focus on creating intuitive user interfaces with easy navigation and clear layouts. Features such as search functionality, course categorization, and accessible resources are integrated to enhance the user experience for both students and educators.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer features for student registration and payment processing?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer features for student registration, account management, and secure payment processing. This makes it easy for students to enroll in courses and manage their payments directly through the website.
+                    </p>
+                </section>
+            </section>
 
 
 

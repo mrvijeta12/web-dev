@@ -29,17 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/manufacture-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>M</span><span>a</span><span>n</span><span>u</span><span>f</span><span>a</span><span>c</span><span>t</span><span>u</span><span>r</span><span>i</span><span>n</span><span>g</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Streamlining Production Processes with Custom Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Manufacturing Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Driving Efficiency and Innovation in Production Processes</h2>
-                    <a href="https://calendly.com/yourmanufacturing/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/manufacture-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -385,6 +387,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Manufacturing Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you develop for the manufacturing industry ?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop various types of manufacturing websites, including corporate websites, product catalogs, e-commerce platforms for industrial goods, and custom management systems. Our designs aim to enhance visibility and streamline operations for manufacturers.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate supply chain management and inventory tracking features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate supply chain management systems and inventory tracking features to help manufacturers manage their production processes efficiently. This includes real-time tracking of materials, products, and shipments.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website is optimized for B2B interactions ?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We focus on creating user-friendly interfaces that facilitate B2B interactions, including features for customer portals, online quotes, and lead generation forms. This enhances communication and engagement with business clients.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for showcasing products and services effectively?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we incorporate features for showcasing products and services, including high-quality images, detailed descriptions, technical specifications, and downloadable brochures. This helps manufacturers present their offerings professionally and attractively.
+                    </p>
+                </section>
+            </section>
+
 
 
 

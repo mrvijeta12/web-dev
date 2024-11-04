@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form Popup</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
         /* Basic styling for popup */
         .popup {
@@ -18,67 +17,38 @@
             background: rgba(0, 0, 0, 0.7);
             justify-content: center;
             align-items: center;
-            /* border: 2px solid red; */
             z-index: 98;
         }
 
         .popup-content {
-            /* background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%); */
             background: rgba(0, 0, 0, 0.9);
-
             padding: 20px;
             border-radius: 8px;
             width: 60%;
             position: relative;
-            /* top: 50%;
-
-            left: 50%;
-            transform: translate(-50%, -50%); */
             border: 1px solid #444;
             display: flex;
             justify-content: space-between;
             gap: 30px;
             color: white;
-            /* border: 1px solid #121212; */
-            /* box-shadow:
-                rgba(255, 255, 255, 0.25) 0px 50px 100px -20px,
-                rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
-                rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset; */
-
-            /* box-shadow:
-                rgba(255, 255, 255, 0.15) 0px 50px 100px -20px,
-                rgba(255, 255, 255, 0.2) 0px 30px 60px -30px,
-                rgba(255, 255, 255, 0.25) 0px -2px 6px 0px inset; */
-
             box-shadow:
                 rgba(255, 255, 255, 0.15) 0px 50px 100px -20px,
                 rgba(255, 255, 255, 0.1) 0px 30px 60px -30px,
                 rgba(255, 255, 255, 0.05) 0px -2px 6px 0px inset;
-
-            /* border: 2px solid red; */
-
-
-
-
         }
 
         .popup-image {
-            /* border: 2px solid red; */
             width: 50%;
             min-height: 100%;
-
-
         }
 
         .popup-form {
-            /* border: 1px solid blue; */
             width: 50%;
         }
 
         .popup-form h2 {
             color: #0363ff;
         }
-
 
         .popup-content img {
             width: 100%;
@@ -108,7 +78,6 @@
             width: 100%;
             padding: 10px;
             background-color: #0363ff;
-
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -129,8 +98,6 @@
         }
 
         @media screen and (max-width:768px) {
-
-            /* For screens smaller than 768px */
             .popup-content {
                 width: 100%;
                 padding: 20px;
@@ -146,32 +113,27 @@
             .popup-form {
                 width: 100%;
             }
-
         }
 
         @media screen and (max-width:550px) {
-
-            /* For screens smaller than 550px */
             .popup-content {
                 flex-direction: column;
-                /* height: 300px; */
                 margin-top: 55px;
             }
 
-            .popup-image {
-                /* height: 100px; */
-            }
-
+            .popup-image {}
         }
     </style>
 </head>
 
 <body>
+    <!-- Anchor link to reopen the popup -->
+    <!-- <a href="#" id="reopenPopup">Open Contact Popup Again</a> -->
+
     <div class="popup" id="contactPopup">
         <div class="popup-content">
             <div class="popup-image">
                 <img src="/webdev/images/popup-contact.png" alt="">
-
             </div>
             <div class="popup-form">
                 <span class="close" id="closePopup">&times;</span>
@@ -189,30 +151,32 @@
         </div>
     </div>
 
-    <!-- <script src="script.js"></script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Check if popup was previously closed
-            const popupClosed = localStorage.getItem("popupClosed");
-
-            if (!popupClosed) {
-                // Show the popup after 10 seconds
-                setTimeout(() => {
+            // Check if the popup was previously closed in this session
+            if (!sessionStorage.getItem("popupClosed")) {
+                // Delay the popup by 3 seconds
+                setTimeout(function() {
                     document.getElementById("contactPopup").style.display = "flex";
-                }, 1000); // 10 seconds
+                }, 3000);
             }
 
-            // Close the popup when the close button is clicked
-            document
-                .getElementById("closePopup")
-                .addEventListener("click", function() {
-                    document.getElementById("contactPopup").style.display = "none";
+            // Close the popup and store the closed state in sessionStorage
+            document.getElementById("closePopup").addEventListener("click", function() {
+                document.getElementById("contactPopup").style.display = "none";
+                sessionStorage.setItem("popupClosed", "true");
+            });
 
-                    // Store popup closed state in local storage
-                    localStorage.setItem("popupClosed", "true");
-                });
+            // Reopen the popup if the anchor link is clicked (for testing or user choice)
+            document.getElementById("reopenPopup").addEventListener("click", function(e) {
+                e.preventDefault(); // Prevent the default anchor behavior
+                // Clear the closed state and show the popup again
+                sessionStorage.removeItem("popupClosed");
+                document.getElementById("contactPopup").style.display = "flex";
+            });
         });
     </script>
+
 </body>
 
 </html>

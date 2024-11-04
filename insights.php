@@ -7,7 +7,7 @@ $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 
 
 // Prepare and execute the query
-$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM main_website_blog WHERE slug = ?";
+$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM blog_posts WHERE slug = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $slug);
 $stmt->execute();

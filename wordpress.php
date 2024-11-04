@@ -270,6 +270,54 @@
             </div>
         </section>
 
+        <!-- #### faq ####  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Professional WordPress Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What types of websites can you build with WordPress?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    WordPress is versatile and can be used to create a wide range of websites, including blogs, e-commerce sites, business websites, membership sites, and more. Our team customizes WordPress to meet the specific needs of each client, whether it's a simple site or a complex, feature-rich platform.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Do you offer custom theme and plugin development for WordPress?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we specialize in creating custom themes and plugins to extend WordPress functionality according to your unique requirements. Our custom solutions ensure your website stands out with unique designs, and specific features tailored to your audience, which are also scalable as your business grows.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you ensure WordPress websites are secure and optimized?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We follow industry best practices to secure WordPress sites, such as using strong authentication, secure hosting, regular updates, and security plugins. Additionally, we optimize site performance by minimizing code, compressing images, and implementing caching strategies to ensure fast loading times and a smooth user experience.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you integrate third-party services and e-commerce with WordPress?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Absolutely. We frequently integrate third-party services such as CRM systems, payment gateways, and email marketing tools. For e-commerce, we use WooCommerce, the leading e-commerce solution for WordPress, to create fully-functional, secure online stores with all necessary features for sales, inventory, and customer management.
+                </p>
+            </section>
+        </section>
+
+
 
 
 

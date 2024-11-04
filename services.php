@@ -316,6 +316,56 @@
                 </div>
             </section>
 
+            <!-- ###### FAQ'S ####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1> Frequently Asked Questions</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of web development services do you provide?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We offer comprehensive web development services, including custom web design, front-end and back-end development, e-commerce solutions, CMS integration, and API development to meet a wide range of needs.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you help with website redesign and improvements?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We specialize in redesigning and upgrading existing websites to improve functionality, aesthetics, and user experience, ensuring your site remains competitive and modern.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer SEO services as part of web development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we integrate SEO best practices in our web development process, optimizing your website for search engines and improving visibility to help attract organic traffic.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is your approach to custom software and web applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop custom software and web applications tailored to your business requirements, focusing on scalability, security, and user-friendly design. We work closely with you to ensure the solution fits your exact needs.
+                    </p>
+                </section>
+            </section>
+
+
+
 
         </div>
 

@@ -23,20 +23,35 @@
 <body>
     <div>
         <?php
-        include('navbar.php');
+        include('./navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
-            <!-- ################################# HERO SECTION ##################################  -->
-            <div class="hero">
-                <div class="hero-image">
+            <!-- ####### HERO SECTION #####  -->
+            <!-- <div class="hero">
+                <div class="hero-image" data-aos="fade-up" data-aos-duration="1500">
                     <img src="./images/healthcare-hero4.jpg" alt="">
                 </div>
                 <div class="hero-data">
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="fade-down" data-aos-duration="2500">Healthcare Software Development Services</h1>
+                    <h2 data-aos="fade-down" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Get Started Today</a>
+                </div>
+            </div> -->
+
+            <div class="hero">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>H</span><span>e</span><span>a</span><span>l</span><span>t</span><span>h</span><span>c</span><span>a</span><span>r</span><span>e</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Transforming Healthcare Through Custom Software Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
+                </div>
+                <div class="child child2">
+                    <img src="./images/freepik__background__74942.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
             </div>
 
@@ -448,8 +463,53 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+            <!-- #### FAQ ###  -->
 
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Healthcare Web Development FAQs</h1>
+            </div>
 
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What features are essential for a healthcare website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Essential features for a healthcare website include secure patient portals, appointment scheduling, telemedicine integration, HIPAA-compliant data handling, and easy navigation. We prioritize these elements to ensure both functionality and regulatory compliance.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure HIPAA compliance in web development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team follows strict HIPAA guidelines to secure patient information, including encryption protocols, secure data storage, and privacy measures for any health-related information collected or stored on the site.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate telemedicine or appointment scheduling tools?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we specialize in integrating telemedicine solutions, online appointment scheduling, and patient management systems to make it easy for patients to access services and for providers to manage their workflows.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you make healthcare websites accessible and user-friendly?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We follow accessibility standards (like WCAG) to ensure the website is usable by people with disabilities. This includes features like screen reader compatibility, easy navigation, and text readability, all while maintaining a clean, user-friendly design.
+                    </p>
+                </section>
+            </section>
 
             <!-- ##### Book #######  -->
 
@@ -501,7 +561,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./swiper.js"></script>
-    <?php include('pop.php'); ?>
+    <?php include('./pop.php'); ?>
 
 </body>
 

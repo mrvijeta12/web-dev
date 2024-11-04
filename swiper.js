@@ -353,3 +353,13 @@ function updateScrollBehavior() {
 
 updateScrollBehavior();
 window.addEventListener("resize", updateScrollBehavior);
+
+//! letter animation
+
+// JavaScript to add delay to each span
+document.addEventListener("DOMContentLoaded", function () {
+  const spans = document.querySelectorAll(".animated-heading span");
+  spans.forEach((span, index) => {
+    span.style.animationDelay = `${index * 0.1}s`;
+  });
+});

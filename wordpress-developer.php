@@ -29,9 +29,14 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled WordPress Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom WordPress Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled WordPress Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom WordPress Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/wordpress-developer.jpg" alt="">
+                </div>
             </div>
 
 
@@ -369,16 +374,73 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo WordPress Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>WordPress Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites can WordPress developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        WordPress developers can create a wide range of websites, including blogs, e-commerce sites, portfolios, corporate websites, and membership platforms. They leverage WordPress’s flexibility to tailor solutions that meet specific business needs and goals.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do WordPress developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        WordPress developers implement various security measures, such as keeping plugins and themes updated, using secure hosting environments, and implementing security plugins. They also follow best practices like using strong passwords and configuring SSL certificates to protect user data.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can WordPress developers customize themes and plugins?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, WordPress developers can create custom themes and plugins to enhance functionality and tailor the website’s appearance to match branding. They are skilled in PHP, HTML, CSS, and JavaScript, enabling them to customize existing solutions or develop new features from scratch.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do WordPress developers handle SEO optimization?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        WordPress developers utilize SEO best practices by optimizing meta tags, headers, and URLs. They may also use SEO plugins like Yoast or All in One SEO to help manage on-page SEO and improve website visibility on search engines.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for WordPress development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for WordPress development include maintaining updated backups, optimizing website speed through caching, minimizing plugin usage, and adhering to coding standards. These practices help ensure a robust, efficient, and maintainable website.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do WordPress developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        WordPress developers enhance website performance by optimizing images, using caching solutions, and minimizing the use of heavy plugins. They also leverage Content Delivery Networks (CDNs) to improve load times and provide a smoother user experience.
+                    </p>
+                </section>
             </section>
+
 
 
 

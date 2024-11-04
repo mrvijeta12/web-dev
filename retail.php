@@ -29,17 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/retail-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>R</span><span>e</span><span>t</span><span>a</span><span>i</span><span>l</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Optimizing Retail Experiences Through Smart Technology Solutions</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Retail Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Maximizing Customer Engagement Through Custom Retail Solutions</h2>
-                    <a href="https://calendly.com/yourretail/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/retail-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -384,6 +386,56 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- #### faq ####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Retail Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the retail industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of retail websites, including e-commerce platforms, online marketplaces, and multi-channel retail solutions. Our websites are designed to enhance customer engagement, streamline shopping experiences, and drive sales.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate inventory management and point-of-sale systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate robust inventory management systems and point-of-sale (POS) solutions to help you manage stock levels efficiently and process transactions both online and in-store. This integration ensures consistency across all sales channels.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure a user-friendly shopping experience?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We focus on creating intuitive user interfaces and seamless navigation. Features such as advanced search filters, personalized recommendations, and a streamlined checkout process are integrated to enhance the shopping experience for customers.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you offer SEO services tailored to the retail sector?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our SEO services are specifically tailored for the retail sector, focusing on product keywords, local search optimization, and e-commerce best practices. We help improve your website’s visibility in search engines to attract more customers.
+                    </p>
+                </section>
+            </section>
+
 
 
 

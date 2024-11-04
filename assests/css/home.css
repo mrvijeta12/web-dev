@@ -500,29 +500,193 @@ body {
   margin-top: 5px;
 }
 
-/* Wrapper to contain all FAQ items */
+/* #### blog wrapper ####  */
+
+.blog-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  height: auto;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0px 50px;
+}
+
+.content-container {
+  /* margin: 0px auto 50px; */
+  margin-bottom: 50px;
+  display: flex;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
+  /* cursor: pointer; */
+  height: auto;
+  position: relative;
+  /* border-top: 1px solid black; */
+  border-bottom: 1px solid black;
+  /* border: 2px solid red; */
+  /* max-width: 50%; */
+  width: 300px;
+  /* margin-bottom: 50px; */
+  padding-bottom: 11px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  transition: all 0.3s;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.content-container:hover {
+  transform: translateY(-30px);
+}
+
+.text-content li,
+.text-content ol {
+  list-style-position: inside;
+}
+
+.image-container {
+  flex: 0 0 25%; /* Takes 40% of the container's width */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* padding: 10px; */
+  /* background-color: #f9f9f9; */
+  max-width: 100%; /* Ensures the container does not exceed 40% of the container width */
+  /* border: 2px solid black; */
+}
+
+.image-container img {
+  width: 100%; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images are not distorted */
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  /* border: 2px solid black; */
+  /* border: 2px solid black; */
+}
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  margin-bottom: 10px;
+  color: #000042;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits the text to 8 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Montserrat-Regular;
+}
+
+.edit-form {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  margin: 0; /* Remove any default margin */
+  text-align: center;
+}
+
+.edit-button {
+  /* background-color: #007bff; */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  /* background-color: #0056b3; */
+}
+
+.read-more {
+  /* position: absolute;
+  top: 186px;
+  left: 55px;
+  background-color: rgb(7, 3, 53, 1);
+  color: white;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-decoration: none;
+  max-width: fit-content;
+  cursor: pointer; */
+}
+.read-more {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  color: #000042;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s linear;
+  font-family: Montserrat-Regular;
+}
+.read-more:hover {
+  letter-spacing: 2px;
+}
+.read-more-container {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  font-family: Montserrat-Regular;
+}
+#arrow {
+  width: 20px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+/*#########  FAQ ###### */
 .faq-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
-  padding: 30px;
+  padding: 0px 30px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #121212;
+  background-color: black;
+  margin-bottom: 20px;
 }
 
 /* Each FAQ item (child) */
 .faq-child {
   width: 48%; /* Two items per row */
-  background-color: black;
+  background-color: #121212;
   padding: 15px;
   border-radius: 6px;
   border: 1px solid #444;
   position: relative;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
-  height: auto; /* Dynamically adjust height based on content */
+  height: auto;
 }
 
 /* Heading and icon layout */

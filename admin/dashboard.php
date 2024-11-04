@@ -5,7 +5,7 @@ include_once 'database.php';
 
 
 // Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM main_website_blog ORDER BY id DESC";
+$sql = "SELECT id, slug, summary, social_sharing_image FROM blog_posts ORDER BY id DESC";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -41,7 +41,7 @@ $conn->close();
             }
         }
     </script>
-    
+
 </head>
 
 <body>
@@ -65,7 +65,7 @@ $conn->close();
                 <?php endif; ?>
             </div>
 
-            <!-- Text Content -->  
+            <!-- Text Content -->
             <div class='text-content'>
                 <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
                 <p><?= $summary ?></p>

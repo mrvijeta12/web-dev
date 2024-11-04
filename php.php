@@ -271,6 +271,54 @@
                 </div>
             </section>
 
+            <!-- #### faq ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Professional PHP Development: Frequently Asked Questions</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications can be built with PHP?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PHP is a versatile server-side scripting language suitable for developing a wide range of applications. We specialize in creating dynamic websites, content management systems, e-commerce platforms, and RESTful APIs, tailored to meet the specific requirements of your business.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the security of PHP applications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Security is a top priority in our PHP development process. We implement robust security measures such as data sanitization, input validation, and secure session management. Our team also conducts regular security audits and utilizes best practices to protect your applications from vulnerabilities.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate PHP with other technologies?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we have extensive experience integrating PHP applications with various technologies. This includes working with different database systems, connecting to external APIs, and integrating with front-end frameworks like React or Angular to create cohesive and powerful web solutions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What frameworks do you use for PHP development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our team is proficient in several PHP frameworks, including Laravel, Symfony, and CodeIgniter. These frameworks provide robust tools for rapid development, enhanced security features, and maintainability, allowing us to deliver high-quality applications efficiently.
+                    </p>
+                </section>
+            </section>
+
+
 
 
 

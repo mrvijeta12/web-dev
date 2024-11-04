@@ -29,19 +29,19 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/oil&gas-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>O</span><span>i</span><span>l</span> <span></span><span>A</span><span>n</span><span>d</span><span> </span><span>G</span><span>a</span><span>s</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Innovative Technologies for Enhanced Oil and Gas Productivity</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Oil and Gas Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Innovative Solutions Designed for the Oil and Gas Industry</h2>
-                    <a href="https://calendly.com/youroilandgascompany/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/oil&gas-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
-
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
@@ -385,6 +385,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- #### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Oil & Gas Industry Web Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the oil and gas industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop websites for various segments within the oil and gas industry, including exploration and production companies, equipment suppliers, service providers, and refineries. Each site is built to present your company’s strengths, services, and safety standards effectively.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate data dashboards and operational metrics?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate custom dashboards that provide real-time data and operational metrics, including production stats, safety metrics, and financials. This enables easy access to critical data for your team and stakeholders.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website aligns with industry regulations?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize compliance with industry standards and regulations, including safety protocols, environmental policies, and corporate transparency. Our team works closely with you to ensure that the website meets all regulatory and legal requirements.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide SEO for the oil and gas sector?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our SEO services are tailored to the oil and gas industry, focusing on key terms related to energy, services, and sustainability. We optimize content to increase visibility for industry partners, investors, and prospective clients.
+                    </p>
+                </section>
+            </section>
+
 
 
 

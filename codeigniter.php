@@ -274,6 +274,54 @@
             </div>
         </section>
 
+        <!-- #### faq ######  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>CodeIgniter Development: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What are the advantages of using CodeIgniter for web development?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    CodeIgniter is known for its lightweight framework and speed, making it ideal for developing dynamic web applications. It offers a simple and elegant toolkit for building full-featured web applications, with minimal configuration and an extensive library of built-in functions, which accelerates the development process.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you customize CodeIgniter applications to fit specific needs?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, we can customize CodeIgniter applications to meet your specific business requirements. Our team can develop custom modules, libraries, and functionalities tailored to your project, ensuring a solution that aligns perfectly with your objectives and enhances user experience.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you handle security in CodeIgniter applications?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Security is a key focus in our CodeIgniter development process. We implement best practices such as data validation, encryption, and session management to safeguard applications against common vulnerabilities. Additionally, we regularly update CodeIgniter to leverage the latest security features and fixes.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What types of projects are best suited for CodeIgniter?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    CodeIgniter is particularly well-suited for projects requiring rapid development and deployment, such as small to medium-sized applications, RESTful APIs, and websites that need straightforward CRUD functionalities. Its ease of use makes it a preferred choice for startups and businesses looking to launch quickly without compromising quality.
+                </p>
+            </section>
+        </section>
+
+
 
 
 

@@ -27,19 +27,20 @@
         ?>
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
-            <!-- ################################# HERO SECTION ##################################  -->
+            <!-- ########## HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/ondemand-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>O</span><span>n</span><span>-</span><span>D</span><span>e</span><span>m</span><span>a</span><span>n</span><span>d</span>
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Delivering Flexible Solutions to Meet Dynamic Consumer Needs</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">On-Demand Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Delivering Flexible Solutions to Meet Dynamic Consumer Needs</h2>
-                    <a href="https://calendly.com/yourondemand/30min" data-aos="zoom-in" data-aos-duration="2500">Get Your Free Quote</a>
-
+                <div class="child child2">
+                    <img src="./images/on-demand-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -386,6 +387,53 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>On-Demand Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of on-demand websites do you develop?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We develop a variety of on-demand websites, including platforms for food delivery, ride-sharing services, home services, and appointment scheduling. Our solutions are tailored to meet the unique needs of businesses operating in the on-demand economy.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate real-time tracking and notifications?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate real-time tracking features and notification systems to keep users informed about service updates, order status, and delivery times. This enhances user experience and trust in the service.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure a seamless payment process for users?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We implement secure and user-friendly payment gateways to facilitate smooth transactions for users. This includes support for multiple payment methods, ensuring a hassle-free checkout experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide features for user profiles and service ratings?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer features for creating user profiles and service ratings, allowing users to manage their accounts, provide feedback, and review services. This helps build a community of trust and engagement within the platform.
+                    </p>
+                </section>
+            </section>
 
 
 

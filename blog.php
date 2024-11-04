@@ -4,7 +4,7 @@ include_once 'db.php';
 
 
 // Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM main_website_blog ORDER BY id DESC";
+$sql = "SELECT id, slug, summary, social_sharing_image FROM blog_posts ORDER BY id DESC";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -85,6 +85,55 @@ $conn->close();
 
                 <?php endforeach; ?>
             </div>
+
+            <!-- #### FAQ ###  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Blog FAQs: Your Questions Answered</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How often is new content published on the blog?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We publish fresh content regularly, with updates weekly or bi-weekly. This ensures that our readers stay informed about the latest trends, tips, and insights in web development.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can I contribute a guest post to the blog?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we welcome guest contributions! If you have valuable insights or a unique perspective on web development, please reach out to us for guidelines and submission details.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How can I stay updated on new blog posts?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        You can subscribe to our newsletter or follow us on social media to receive notifications about new blog posts, tutorials, and other updates.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Are the articles suitable for beginners?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we create content for all skill levels, including beginners, intermediate developers, and advanced professionals. Each article indicates the intended skill level to help readers find suitable content.
+                    </p>
+                </section>
+            </section>
+
 
 
 

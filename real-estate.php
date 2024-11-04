@@ -29,17 +29,20 @@
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/real-estate-hero.jpg" alt="">
+                <div class="child child1">
+                    <h1 class="animated-heading">
+                        <span>R</span><span>e</span><span>a</span><span>l</span>
+                        <span>E</span><span>s</span><span>t</span><span>a</span><span>t</span><span>e</span>
+
+                        <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">Enhancing Property Management Through Smart Software Development</h3>
+                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+
                 </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Real Estate Software Development Services</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Innovative Solutions Tailored for Efficient Property Management and Transactions</h2>
-                    <a href="https://calendly.com/yourrealestate/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-
+                <div class="child child2">
+                    <img src="./images/real-estate-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
-
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
@@ -378,6 +381,54 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+
+            <!-- ###### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Real Estate Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of websites do you build for the real estate industry?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We create various types of real estate websites, including property listing sites, real estate agency platforms, and IDX/MLS integrated websites. Our designs focus on showcasing properties effectively while providing essential tools for buyers and sellers.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate property search and filtering features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can integrate advanced property search features with filtering options based on location, price range, property type, and more. This functionality helps users quickly find properties that match their criteria.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the website is optimized for mobile users?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We use responsive design techniques to ensure that your real estate website provides an optimal viewing experience on all devices, including smartphones and tablets. This includes easy navigation and quick access to property listings from mobile devices.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Do you provide lead generation and CRM integration for real estate websites?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we integrate lead generation forms and CRM systems to help you capture and manage potential leads efficiently. This allows you to follow up with interested clients and streamline your sales process.
+                    </p>
+                </section>
+            </section>
 
 
 

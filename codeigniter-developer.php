@@ -29,10 +29,16 @@
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled CodeIgniter Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom CodeIgniter Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <div class="child child1">
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled CodeIgniter Developers</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom CodeIgniter Solutions Tailored to Bring Your Vision to Life</h2>
+                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                </div>
+                <div class="child child2">
+                    <img src="./images/codeigniter-developer.jpg" alt="">
+                </div>
             </div>
+
 
 
 
@@ -377,16 +383,75 @@
                 </section>
             </section>
 
-            <!-- ############### HOW WE WORK ############  -->
-            <section class="workflow-wrapper">
-                <section class="workflow-data">
-                    <h1>How TekAlgo CodeIgniter Specialists Maximize Your Website Potential</h1>
-                    <img src="images/Roadmap image.png" alt="">
+            <!-- ############### faq ############  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>CodeIgniter Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of applications can CodeIgniter developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CodeIgniter developers can create a variety of web applications, including content management systems (CMS), e-commerce platforms, customer relationship management (CRM) systems, and web services. CodeIgniter’s lightweight framework allows for the rapid development of robust applications tailored to specific business needs.
+                    </p>
                 </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do CodeIgniter developers ensure application security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CodeIgniter developers prioritize security by implementing built-in security features, such as XSS filtering, CSRF protection, and input validation. They follow best practices in securing application access and database interactions to protect sensitive user data and prevent common vulnerabilities.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can CodeIgniter developers integrate third-party libraries and APIs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, CodeIgniter developers can seamlessly integrate third-party libraries and APIs to enhance application functionality. They utilize CodeIgniter’s flexible structure to incorporate services like payment gateways, social media integrations, and various RESTful APIs to provide additional features.
+                    </p>
+                </section>
 
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do CodeIgniter developers handle database management?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CodeIgniter developers manage databases using its built-in Active Record class, which simplifies database interactions through an easy-to-use interface. They work with popular databases such as MySQL, PostgreSQL, and SQLite to execute efficient queries and ensure data integrity.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for CodeIgniter development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for CodeIgniter development include adhering to MVC (Model-View-Controller) architecture, utilizing libraries for reusable code, writing clean and organized code, and maintaining proper documentation. Developers also ensure that they regularly update the framework to the latest version for security and performance improvements.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do CodeIgniter developers ensure application performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CodeIgniter developers enhance application performance by optimizing database queries, enabling caching mechanisms, and minimizing code execution times. They also utilize profiling tools to analyze application performance and identify areas for improvement to ensure a fast and efficient user experience.
+                    </p>
+                </section>
             </section>
+
+
 
 
 

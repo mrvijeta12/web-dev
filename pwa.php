@@ -278,6 +278,54 @@
         </section>
 
 
+        <!-- ##### faq #####  -->
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Progressive Web Apps: Frequently Asked Questions</h1>
+        </div>
+
+        <section class="faq-wrapper">
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What is a Progressive Web App (PWA)?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    A Progressive Web App (PWA) is a type of application software delivered through the web, built using common web technologies like HTML, CSS, and JavaScript. PWAs aim to deliver a user experience comparable to native apps, including features such as offline access, push notifications, and fast load times, making them reliable and engaging.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>What are the benefits of using PWAs for businesses?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    PWAs offer numerous benefits for businesses, including improved performance, higher user engagement, and increased conversion rates. They combine the best features of web and mobile apps, allowing users to install them directly from the browser without going through app stores. Additionally, PWAs are cost-effective, as they require a single codebase for multiple platforms.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>How do you ensure the performance and reliability of a PWA?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    We ensure the performance and reliability of a PWA through various strategies, such as implementing service workers for offline functionality, optimizing assets for faster loading times, and conducting rigorous testing across different devices and browsers. Our focus is on delivering a seamless user experience, regardless of network conditions.
+                </p>
+            </section>
+
+            <section class="faq-child">
+                <section class="faq-heading">
+                    <h1>Can you integrate PWAs with existing websites?</h1>
+                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                </section>
+                <p>
+                    Yes, PWAs can be integrated with existing websites to enhance their functionality and user experience. Our team can transform your current web application into a PWA by adding service workers, implementing a web app manifest, and optimizing your site for mobile use, ensuring a smooth transition that enhances your existing digital presence.
+                </p>
+            </section>
+        </section>
+
+
 
 
         <!-- ##### Book #######  -->
