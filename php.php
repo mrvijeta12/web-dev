@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -84,38 +90,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-development-php.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Building secure healthcare applications using PHP to manage patient records, appointment scheduling, and telehealth services efficiently.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building secure healthcare applications using PHP to manage patient records, appointment scheduling, and telehealth services efficiently.
+                            </p>
+                            <img src="images/web-development-php.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - E-commerce -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-php.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Developing robust e-commerce solutions with PHP, ensuring seamless transactions, personalized shopping experiences, and efficient inventory management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing robust e-commerce solutions with PHP, ensuring seamless transactions, personalized shopping experiences, and efficient inventory management.
+                            </p>
+                            <img src="images/ecommerce-php.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Finance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-php.png" alt="">
-                        <h1>Finance</h1>
-                        <p>Creating secure financial applications using PHP that provide real-time data analytics, account management, and secure payment processing.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating secure financial applications using PHP that provide real-time data analytics, account management, and secure payment processing.
+                            </p>
+                            <img src="images/finance-php.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Education -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-php.png" alt="">
-                        <h1>Education</h1>
-                        <p>Developing interactive e-learning platforms with PHP that facilitate online courses, assessments, and student progress tracking.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive e-learning platforms with PHP that facilitate online courses, assessments, and student progress tracking.
+                            </p>
+                            <img src="images/education-php.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Travel -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-php.png" alt="">
-                        <h1>Travel</h1>
-                        <p>Creating travel booking systems using PHP that allow users to search for, book, and manage travel itineraries seamlessly.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating travel booking systems using PHP that allow users to search for, book, and manage travel itineraries seamlessly.
+                            </p>
+                            <img src="images/travel-php.png" alt="" />
+                            <h1>Travel</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Social Media -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-php.png" alt="">
-                        <h1>Social Media</h1>
-                        <p>Building engaging social media platforms with PHP, enabling user interactions, content sharing, and real-time communication features.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building engaging social media platforms with PHP, enabling user interactions, content sharing, and real-time communication features.
+                            </p>
+                            <img src="images/social-media-php.png" alt="" />
+                            <h1>Social Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
             <!-- ########## TECHNOLOGIES  #######  -->
 

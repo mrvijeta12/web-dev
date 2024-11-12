@@ -312,7 +312,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Each FAQ item (child) */
@@ -390,6 +390,12 @@ html {
   }
 
   .book a {
+    width: 100%;
+  }
+  .faq-wrapper {
+    flex-direction: column;
+  }
+  .faq-child {
     width: 100%;
   }
 }

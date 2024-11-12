@@ -84,7 +84,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -98,7 +99,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -112,7 +114,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -126,7 +129,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -140,7 +144,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -154,7 +159,8 @@
                             <p>Vue.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -229,45 +235,84 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Vue.js Specialists -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Vue.js Specialists</h1>
-                        <p>Expert developers with extensive Vue.js expertise.</p>
+                        <div class="content-wrapper">
+                            <p>Our Vue.js specialists build dynamic, high-performance applications, ensuring scalability, flexibility, and a seamless user experience to meet your business needs and future growth demands effectively.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Vue.js Specialists</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Customized Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customized Solutions</h1>
-                        <p>Tailored approaches to fit your project needs.</p>
+                        <div class="content-wrapper">
+                            <p>We offer fully customized solutions tailored to fit your unique business needs, creating highly efficient and effective Vue.js applications that align perfectly with your goals and objectives.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customized Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Efficient Delivery -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Efficient Delivery</h1>
-                        <p>Quick project completion without quality compromise.</p>
+                        <div class="content-wrapper">
+                            <p>We ensure on-time delivery of all Vue.js projects, meeting deadlines without compromising quality. Our team works efficiently to deliver high-quality applications that match your business requirements.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Efficient Delivery</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Comprehensive Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Comprehensive Support</h1>
-                        <p>Ongoing maintenance for optimal app performance.</p>
+                        <div class="content-wrapper">
+                            <p>We offer continuous support to maintain the smooth operation of your Vue.js applications, ensuring that your projects remain up-to-date, functional, and optimized for long-term success.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Comprehensive Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Cost-Effective Services -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Cost-Effective Services</h1>
-                        <p>Competitive pricing with high-quality deliverables.</p>
+                        <div class="content-wrapper">
+                            <p>Our cost-effective Vue.js development services offer great value without compromising on quality, helping businesses achieve high returns on investment while keeping projects within budget constraints.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Cost-Effective Services</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Proven Results -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Results</h1>
-                        <p>A history of successful Vue.js implementations.</p>
+                        <div class="content-wrapper">
+                            <p>We have a proven track record of successful Vue.js projects, delivering outstanding results for clients across industries by creating reliable, scalable, and performance-driven applications.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Proven Results</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
-
-
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

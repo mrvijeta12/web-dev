@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -83,38 +89,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-laravel.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Utilizing Laravel to build seamless retail applications that enhance customer engagement and streamline inventory management processes.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Laravel to build seamless retail applications that enhance customer engagement and streamline inventory management processes.
+                            </p>
+                            <img src="images/web-application-laravel.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-laravel.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Developing powerful real estate platforms with Laravel, featuring property listings, virtual tours, and efficient client management tools.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing powerful real estate platforms with Laravel, featuring property listings, virtual tours, and efficient client management tools.
+                            </p>
+                            <img src="images/ecommerce-laravel.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Logistics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-laravel.png" alt="">
-                        <h1>Logistics</h1>
-                        <p>Creating dynamic logistics management systems using Laravel, optimizing supply chain operations and real-time tracking for efficiency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating dynamic logistics management systems using Laravel, optimizing supply chain operations and real-time tracking for efficiency.
+                            </p>
+                            <img src="images/education-laravel.png" alt="" />
+                            <h1>Logistics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Entertainment -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-laravel.png" alt="">
-                        <h1>Entertainment</h1>
-                        <p>Building engaging entertainment applications with Laravel, providing streaming services, user management, and interactive features.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building engaging entertainment applications with Laravel, providing streaming services, user management, and interactive features.
+                            </p>
+                            <img src="images/finance-laravel.png" alt="" />
+                            <h1>Entertainment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Non-Profit Organizations -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-laravel.png" alt="">
-                        <h1>Non-Profit Organizations</h1>
-                        <p>Developing comprehensive platforms for non-profit organizations using Laravel, enabling donation management and volunteer coordination.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing comprehensive platforms for non-profit organizations using Laravel, enabling donation management and volunteer coordination.
+                            </p>
+                            <img src="images/travel-laravel.png" alt="" />
+                            <h1>Non-Profit Organizations</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Construction -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-laravel.png" alt="">
-                        <h1>Construction</h1>
-                        <p>Creating construction management applications with Laravel, facilitating project tracking, team collaboration, and budget management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating construction management applications with Laravel, facilitating project tracking, team collaboration, and budget management.
+                            </p>
+                            <img src="images/social-media-laravel.png" alt="" />
+                            <h1>Construction</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

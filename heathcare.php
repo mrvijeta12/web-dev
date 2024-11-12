@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'healthcare' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -6,6 +31,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/industry.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+
     <!-- Swiper CSS CDN for carousel/slider functionality -->
     <link
         rel="stylesheet"
@@ -27,18 +54,7 @@
         ?>
         <div class="wrapper">
 
-            <!-- ####### HERO SECTION #####  -->
-            <!-- <div class="hero">
-                <div class="hero-image" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
-                </div>
-                <div class="hero-data">
 
-                    <h1 data-aos="fade-down" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <h2 data-aos="fade-down" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Get Started Today</a>
-                </div>
-            </div> -->
 
             <div class="hero">
                 <div class="child child1">
@@ -47,7 +63,7 @@
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
                     <h3 data-aos="fade-up" data-aos-duration="1500">Transforming Healthcare Through Custom Software Solutions</h3>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+                    <a href="#" class="reopenPopup" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
@@ -144,103 +160,7 @@
             </section>
 
 
-            <!-- <section class="detail">
-                <section class="detail-title detail-child">
-                    <p class="tab active-tab" onclick="toggleContent(1)">
-                        <strong>01.</strong> Restaurant Software Consulting
-                    </p>
-                    <p class="tab" onclick="toggleContent(2)">
-                        <strong>02.</strong> Custom Restaurant Software Development
-                    </p>
-                    <p class="tab" onclick="toggleContent(3)">
-                        <strong>03.</strong> Restaurant Software Product Development
-                    </p>
-                    <p class="tab" onclick="toggleContent(4)">
-                        <strong>04.</strong> Restaurant Software Integration
-                    </p>
-                    <p class="tab" onclick="toggleContent(5)">
-                        <strong>05.</strong> Restaurant Software Testing and Quality Assurance
-                    </p>
-                    <p class="tab" onclick="toggleContent(6)">
-                        <strong>06.</strong> Restaurant Software Modernization
-                    </p>
-                    <p class="tab" onclick="toggleContent(7)">
-                        <strong>07.</strong> Restaurant Software Maintenance and Support
-                    </p>
-                </section>
-                <section class="detail-description detail-child">
-                    <section id="content1" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-consulting.png" alt="">
-                            <h3>Restaurant Software Consulting</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>We evaluate your restaurant’s needs and technological requirements, providing strategic guidance for developing customized software solutions. Our consulting services help identify opportunities for growth, mitigate risks, and establish a solid foundation for successful software implementation.</p>
-                    </section>
-                    <section id="content2" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-development.png" alt="">
-                            <h3>Custom Restaurant Software Development</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>We specialize in developing tailored software solutions that cater to your restaurant's specific requirements. From initial coding to deploying unique features, our development process ensures your software meets the operational and customer service needs of your establishment.</p>
-                    </section>
-                    <section id="content3" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-product-development.png" alt="">
-                            <h3>Restaurant Software Product Development</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>We focus on creating scalable, market-ready software products for the restaurant industry, turning your innovative ideas into reality. Our product development services deliver solutions that enhance customer experience, streamline operations, and drive revenue growth.</p>
-                    </section>
-                    <section id="content4" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-integration.png" alt="">
-                            <h3>Restaurant Software Integration</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>Our integration services ensure seamless connectivity between your new software and existing restaurant systems. We facilitate interoperability among platforms to enhance operational efficiency, reduce manual processes, and improve service delivery for better customer satisfaction.</p>
-                    </section>
-                    <section id="content5" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-testing.png" alt="">
-                            <h3>Restaurant Software Testing and Quality Assurance</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>We conduct thorough testing of your restaurant software to identify bugs and vulnerabilities, ensuring it meets the highest standards of performance, security, and compliance with industry regulations. Our quality assurance practices guarantee a reliable customer experience.</p>
-                    </section>
-                    <section id="content6" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-modernization.png" alt="">
-                            <h3>Restaurant Software Modernization</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>We upgrade legacy restaurant software to meet contemporary technological standards, enhancing its functionality and security. Our modernization services help your establishment remain competitive by adopting advanced features that support evolving customer needs and operational demands.</p>
-                    </section>
-                    <section id="content7" class="content">
-                        <div class="content-header">
-                            <img src="./images/restaurant-maintenance.png" alt="">
-                            <h3>Restaurant Software Maintenance and Support</h3>
-                            <span>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </div>
-                        <p>Our maintenance and support services provide ongoing software updates, troubleshooting, and enhancements to ensure optimal performance. We focus on resolving issues, improving functionality, and adapting the software to changing technology trends and restaurant industry requirements.</p>
-                    </section>
-                </section>
-            </section> -->
+
 
 
 
@@ -248,7 +168,7 @@
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
                 <h1>Sectors that can benefits from our healthcare software development services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur, voluptatem saepe omnis, cumque, consequatur neque doloremque ducimus ipsum provident iste recusandae! Nulla sunt est velit nobis perferendis ex deleniti.</p>
+
 
                 <div class="benefits-sectors">
                     <ul>
@@ -282,47 +202,96 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Healthcare Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Healthcare Technology Expertise
-                        </h1>
-                        <p>Understand client needs, goals, and technical requirements.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Custom Software Solutions</h1>
-                        <p>Delivering visually appealing, user-friendly designs for optimal customer experience.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Data Security and Compliance</h1>
-                        <p>Iterative development approach ensuring flexibility, speed, and continuous improvements.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Innovative and Scalable Tech</h1>
-                        <p> Rigorous testing to ensure bug-free, high-performance applications.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Agile Development Process</h1>
-                        <p>Seamless launch process, ensuring your website goes live smoothly.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Ongoing Support and Maintenance</h1>
-                        <p>Continual monitoring, updates, and enhancements to maintain top-notch performance.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Specializing in innovative healthcare technology solutions tailored to the unique needs of the healthcare industry, enhancing patient care and operational efficiency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Healthcare Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Custom Healthcare Software Development -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing custom healthcare software solutions that streamline patient management, electronic health records (EHR), and telemedicine platforms.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Healthcare Software Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Data Security and Compliance -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring your healthcare organization’s data, including patient information and medical records, are protected with the highest security standards and regulatory compliance.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Seamless Healthcare System Integration -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing seamless integrations across various healthcare systems, including Electronic Health Records (EHR), Patient Portals, and Billing Systems to enhance workflow and data exchange.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Healthcare System Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Innovative Healthcare Solutions -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Bringing the latest healthcare technology innovations, including AI-driven diagnostic tools, telemedicine, and health analytics to improve patient outcomes and operational efficiency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative Healthcare Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - 24/7 Healthcare Support and Maintenance -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Providing round-the-clock support and regular software updates to ensure the smooth operation of your healthcare systems and uninterrupted service delivery.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Healthcare Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
                 </div>
-
             </div>
+
 
 
             <!-- ######### who can avail ###### -->
@@ -463,6 +432,41 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+
+            <!-- #### blog ####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
             <!-- #### FAQ ###  -->
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
@@ -515,7 +519,7 @@
 
             <section class="section-book">
                 <section class="book-image">
-                    <img src="./images/booking-industry.jpg" alt="">
+                    <img src="./images/booking-industry2.jpg" alt="">
                 </section>
                 <section class="book-data">
 
@@ -523,7 +527,7 @@
 
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
                     <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
+                    <a href="#" class="reopenPopup" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
                 </section>
 
 

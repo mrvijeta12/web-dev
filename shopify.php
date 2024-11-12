@@ -28,18 +28,23 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
 
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
 
 
             <!-- ####### core area of expertise ######  -->
@@ -86,38 +91,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - E-commerce -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-shopify.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Building robust online stores with Shopify that deliver seamless shopping experiences, efficient inventory management, and secure transactions.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building robust online stores with Shopify that deliver seamless shopping experiences, efficient inventory management, and secure transactions.
+                            </p>
+                            <img src="images/ecommerce-shopify.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Fashion & Apparel -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/fashion-shopify.png" alt="">
-                        <h1>Fashion & Apparel</h1>
-                        <p>Creating stylish and responsive fashion websites on Shopify that showcase products beautifully and enhance customer engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating stylish and responsive fashion websites on Shopify that showcase products beautifully and enhance customer engagement.
+                            </p>
+                            <img src="images/fashion-shopify.png" alt="" />
+                            <h1>Fashion & Apparel</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Food & Beverage -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/food-beverage-shopify.png" alt="">
-                        <h1>Food & Beverage</h1>
-                        <p>Developing Shopify stores for food and beverage brands that streamline online ordering and provide engaging user experiences.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing Shopify stores for food and beverage brands that streamline online ordering and provide engaging user experiences.
+                            </p>
+                            <img src="images/food-beverage-shopify.png" alt="" />
+                            <h1>Food & Beverage</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Home & Garden -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/home-garden-shopify.png" alt="">
-                        <h1>Home & Garden</h1>
-                        <p>Designing Shopify solutions for home and garden retailers, offering a user-friendly interface for customers to explore products effortlessly.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Designing Shopify solutions for home and garden retailers, offering a user-friendly interface for customers to explore products effortlessly.
+                            </p>
+                            <img src="images/home-garden-shopify.png" alt="" />
+                            <h1>Home & Garden</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Health & Beauty -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/health-beauty-shopify.png" alt="">
-                        <h1>Health & Beauty</h1>
-                        <p>Creating captivating Shopify stores for health and beauty products, ensuring smooth navigation and secure transactions for customers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating captivating Shopify stores for health and beauty products, ensuring smooth navigation and secure transactions for customers.
+                            </p>
+                            <img src="images/health-beauty-shopify.png" alt="" />
+                            <h1>Health & Beauty</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Sports & Fitness -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/sports-shopify.png" alt="">
-                        <h1>Sports & Fitness</h1>
-                        <p>Building engaging Shopify sites for sports and fitness brands that promote products effectively and foster a loyal customer base.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building engaging Shopify sites for sports and fitness brands that promote products effectively and foster a loyal customer base.
+                            </p>
+                            <img src="images/sports-shopify.png" alt="" />
+                            <h1>Sports & Fitness</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
 

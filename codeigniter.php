@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -84,38 +90,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/real-estate-codeigniter.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Creating efficient real estate management systems with CodeIgniter, enabling property listings, client management, and transaction tracking.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating efficient real estate management systems with CodeIgniter, enabling property listings, client management, and transaction tracking.
+                            </p>
+                            <img src="images/real-estate-codeigniter.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Telemedicine -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/healthcare-codeigniter.png" alt="">
-                        <h1>Telemedicine</h1>
-                        <p>Building telemedicine platforms using CodeIgniter, connecting patients with healthcare professionals through secure video consultations and health monitoring.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building telemedicine platforms using CodeIgniter, connecting patients with healthcare professionals through secure video consultations and health monitoring.
+                            </p>
+                            <img src="images/healthcare-codeigniter.png" alt="" />
+                            <h1>Telemedicine</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Event Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/event-management-codeigniter.png" alt="">
-                        <h1>Event Management</h1>
-                        <p>Developing event management applications with CodeIgniter, simplifying registration, ticketing, and attendee engagement for various events.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing event management applications with CodeIgniter, simplifying registration, ticketing, and attendee engagement for various events.
+                            </p>
+                            <img src="images/event-management-codeigniter.png" alt="" />
+                            <h1>Event Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Blogging Platforms -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/blogging-codeigniter.png" alt="">
-                        <h1>Blogging Platforms</h1>
-                        <p>Creating dynamic blogging platforms using CodeIgniter, offering user-friendly interfaces for content creation, management, and community interaction.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating dynamic blogging platforms using CodeIgniter, offering user-friendly interfaces for content creation, management, and community interaction.
+                            </p>
+                            <img src="images/blogging-codeigniter.png" alt="" />
+                            <h1>Blogging Platforms</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Non-Profit Organizations -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/non-profit-codeigniter.png" alt="">
-                        <h1>Non-Profit Organizations</h1>
-                        <p>Building web applications for non-profit organizations with CodeIgniter, enhancing donor management, event planning, and volunteer coordination.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building web applications for non-profit organizations with CodeIgniter, enhancing donor management, event planning, and volunteer coordination.
+                            </p>
+                            <img src="images/non-profit-codeigniter.png" alt="" />
+                            <h1>Non-Profit Organizations</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Fitness and Wellness -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/fitness-codeigniter.png" alt="">
-                        <h1>Fitness and Wellness</h1>
-                        <p>Developing fitness and wellness applications using CodeIgniter, offering features like class scheduling, nutrition tracking, and community engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing fitness and wellness applications using CodeIgniter, offering features like class scheduling, nutrition tracking, and community engagement.
+                            </p>
+                            <img src="images/fitness-codeigniter.png" alt="" />
+                            <h1>Fitness and Wellness</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
 

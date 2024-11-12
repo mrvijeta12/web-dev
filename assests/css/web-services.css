@@ -690,7 +690,7 @@ p.tab.active-tab {
   width: 100%;
   box-sizing: border-box;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Each FAQ item (child) */
@@ -946,6 +946,12 @@ p.tab.active-tab {
     width: 100%;
   }
   .erp-system-operations ol {
+    width: 100%;
+  }
+  .faq-wrapper {
+    flex-direction: column;
+  }
+  .faq-child {
     width: 100%;
   }
 }

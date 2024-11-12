@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -81,41 +87,96 @@
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced MERN Stack Solutions</h1>
             </div>
-
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-mern.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Building comprehensive healthcare applications using the MERN stack, enhancing patient care through features like appointment scheduling and telemedicine.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building comprehensive healthcare applications using the MERN stack, enhancing patient care through features like appointment scheduling and telemedicine.
+                            </p>
+                            <img src="images/web-application-mern.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - E-commerce -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-mern.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Developing dynamic e-commerce solutions with the MERN stack, providing secure transactions and personalized shopping experiences for users.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing dynamic e-commerce solutions with the MERN stack, providing secure transactions and personalized shopping experiences for users.
+                            </p>
+                            <img src="images/ecommerce-mern.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Finance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-mern.png" alt="">
-                        <h1>Finance</h1>
-                        <p>Creating robust financial applications using the MERN stack, ensuring real-time data analysis and secure online banking solutions.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating robust financial applications using the MERN stack, ensuring real-time data analysis and secure online banking solutions.
+                            </p>
+                            <img src="images/finance-mern.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Education -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-mern.png" alt="">
-                        <h1>Education</h1>
-                        <p>Developing interactive educational platforms with the MERN stack, facilitating online learning through engaging interfaces and real-time assessments.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive educational platforms with the MERN stack, facilitating online learning through engaging interfaces and real-time assessments.
+                            </p>
+                            <img src="images/education-mern.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Social Media -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-mern.png" alt="">
-                        <h1>Social Media</h1>
-                        <p>Building innovative social networking applications using the MERN stack, enabling users to connect, share, and interact seamlessly.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building innovative social networking applications using the MERN stack, enabling users to connect, share, and interact seamlessly.
+                            </p>
+                            <img src="images/social-media-mern.png" alt="" />
+                            <h1>Social Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Travel & Hospitality -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-mern.png" alt="">
-                        <h1>Travel & Hospitality</h1>
-                        <p>Creating comprehensive travel booking platforms with the MERN stack, offering users personalized itineraries and real-time availability updates.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating comprehensive travel booking platforms with the MERN stack, offering users personalized itineraries and real-time availability updates.
+                            </p>
+                            <img src="images/travel-mern.png" alt="" />
+                            <h1>Travel & Hospitality</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -86,38 +92,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-pwa.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Developing PWAs that provide patients with easy access to health information, appointment scheduling, and telehealth services.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing PWAs that provide patients with easy access to health information, appointment scheduling, and telehealth services.
+                            </p>
+                            <img src="images/web-application-pwa.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - E-commerce -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-pwa.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Creating PWAs that deliver fast, engaging shopping experiences, with offline access, push notifications, and seamless navigation.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating PWAs that deliver fast, engaging shopping experiences, with offline access, push notifications, and seamless navigation.
+                            </p>
+                            <img src="images/ecommerce-pwa.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Education -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-pwa.png" alt="">
-                        <h1>Education</h1>
-                        <p>Building educational PWAs that facilitate interactive learning experiences, online courses, and resource access, even offline.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building educational PWAs that facilitate interactive learning experiences, online courses, and resource access, even offline.
+                            </p>
+                            <img src="images/education-pwa.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Travel -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-pwa.png" alt="">
-                        <h1>Travel</h1>
-                        <p>Developing PWAs for travel companies, providing users with real-time booking, itinerary management, and travel updates.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing PWAs for travel companies, providing users with real-time booking, itinerary management, and travel updates.
+                            </p>
+                            <img src="images/travel-pwa.png" alt="" />
+                            <h1>Travel</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - News and Media -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/news-pwa.png" alt="">
-                        <h1>News and Media</h1>
-                        <p>Creating PWAs for news organizations, enabling users to access articles, videos, and notifications even without an internet connection.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating PWAs for news organizations, enabling users to access articles, videos, and notifications even without an internet connection.
+                            </p>
+                            <img src="images/news-pwa.png" alt="" />
+                            <h1>News and Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Social Media -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-pwa.png" alt="">
-                        <h1>Social Media</h1>
-                        <p>Building social networking PWAs that enhance user interactions, enable content sharing, and offer offline capabilities for engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building social networking PWAs that enhance user interactions, enable content sharing, and offer offline capabilities for engagement.
+                            </p>
+                            <img src="images/social-media-pwa.png" alt="" />
+                            <h1>Social Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
 

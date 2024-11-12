@@ -82,7 +82,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>Shopify Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -220,46 +226,88 @@
 
             </div>
 
-
-            <div class=" service_choose_us">
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - Skilled Team -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Skilled Team</h1>
-                        <p>Experts in advanced Angular development.</p>
+                        <div class="content-wrapper">
+                            <p>Our team of Shopify experts specializes in creating high-performance, customizable online stores, ensuring that every solution is designed to meet your specific business goals and objectives.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Skilled Team</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Tailored Services -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Tailored Services</h1>
-                        <p>Solutions designed for your business.</p>
+                        <div class="content-wrapper">
+                            <p>We provide Shopify solutions tailored to your brand, ensuring that each eCommerce store is uniquely designed to reflect your identity and meet your business objectives seamlessly.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Tailored Services</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - On-Time Delivery -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>On-Time Delivery</h1>
-                        <p>Reliable timelines without quality loss.</p>
+                        <div class="content-wrapper">
+                            <p>Our team is dedicated to delivering Shopify stores on time, ensuring that all key milestones are met while maintaining the highest quality standards, focusing on your business success.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>On-Time Delivery</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Continuous Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Continuous Support</h1>
-                        <p>Dedicated assistance for ongoing success.</p>
+                        <div class="content-wrapper">
+                            <p>We offer continuous support for your Shopify store, ensuring that you have the assistance needed to maintain optimal performance, adapt to changes, and drive business growth.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Continuous Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Affordable Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Affordable Solutions</h1>
-                        <p>Value-driven pricing with excellent quality.</p>
+                        <div class="content-wrapper">
+                            <p>We offer competitive pricing for our Shopify development services, ensuring that you get high-quality, cost-effective solutions that drive your eCommerce business forward without breaking your budget.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Affordable Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Trusted Partners -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Trusted Partners</h1>
-                        <p>Delivering results for clients worldwide.</p>
+                        <div class="content-wrapper">
+                            <p>We have established ourselves as trusted Shopify partners, delivering innovative and high-quality solutions that help businesses grow and achieve success in the competitive eCommerce market.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Trusted Partners</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
-
             </div>
+
+
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

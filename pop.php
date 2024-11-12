@@ -120,15 +120,11 @@
                 flex-direction: column;
                 margin-top: 55px;
             }
-
-            .popup-image {}
         }
     </style>
 </head>
 
 <body>
-    <!-- Anchor link to reopen the popup -->
-    <!-- <a href="#" id="reopenPopup">Open Contact Popup Again</a> -->
 
     <div class="popup" id="contactPopup">
         <div class="popup-content">
@@ -151,28 +147,38 @@
         </div>
     </div>
 
+    <!-- Reopen popup link -->
+    <!-- <a href="#" class="reopenPopup" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a> -->
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Select the single popup element by ID
+            const popup = document.getElementById("contactPopup");
+            const reopenLinks = document.querySelectorAll(".reopenPopup");
+
             // Check if the popup was previously closed in this session
             if (!sessionStorage.getItem("popupClosed")) {
-                // Delay the popup by 3 seconds
+                // Delay the popup by 5 seconds
                 setTimeout(function() {
-                    document.getElementById("contactPopup").style.display = "flex";
-                }, 3000);
+                    popup.style.display = "flex";
+                }, 15000);
             }
 
             // Close the popup and store the closed state in sessionStorage
-            document.getElementById("closePopup").addEventListener("click", function() {
-                document.getElementById("contactPopup").style.display = "none";
+            const closeBtn = document.getElementById("closePopup");
+            closeBtn.addEventListener("click", function() {
+                popup.style.display = "none";
                 sessionStorage.setItem("popupClosed", "true");
             });
 
-            // Reopen the popup if the anchor link is clicked (for testing or user choice)
-            document.getElementById("reopenPopup").addEventListener("click", function(e) {
-                e.preventDefault(); // Prevent the default anchor behavior
-                // Clear the closed state and show the popup again
-                sessionStorage.removeItem("popupClosed");
-                document.getElementById("contactPopup").style.display = "flex";
+            // Reopen the popup if any of the reopen links is clicked
+            reopenLinks.forEach((link) => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault(); // Prevent the default anchor behavior
+                    // Clear the closed state and show the popup again
+                    sessionStorage.removeItem("popupClosed");
+                    popup.style.display = "flex";
+                });
             });
         });
     </script>

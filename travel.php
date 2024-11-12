@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'travel' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -204,39 +229,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Travel Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Travel Technology Expertise</h1>
-                        <p>Leading the way with innovative technology solutions tailored for the travel industry, enhancing booking processes, customer experiences, and operational efficiency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leading the way with innovative technology solutions tailored for the travel industry, enhancing booking processes, customer experiences, and operational efficiency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Travel Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Travel App Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Travel App Development</h1>
-                        <p>Designing intuitive and user-friendly travel apps for seamless bookings, itinerary management, and personalized travel experiences that cater to modern traveler needs.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Designing intuitive and user-friendly travel apps for seamless bookings, itinerary management, and personalized travel experiences that cater to modern traveler needs.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Travel App Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Payment Protection -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Payment Protection</h1>
-                        <p>Implementing advanced security measures to safeguard customer data and secure payment transactions across all travel booking platforms.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing advanced security measures to safeguard customer data and secure payment transactions across all travel booking platforms.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Payment Protection</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless Platform Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless Platform Integration</h1>
-                        <p>Ensuring smooth integration of travel booking systems with third-party services, enhancing user experience with real-time updates and multiple booking options.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring smooth integration of travel booking systems with third-party services, enhancing user experience with real-time updates and multiple booking options.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Platform Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Scalable and Innovative Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalable and Innovative Solutions</h1>
-                        <p>Delivering cutting-edge technology that supports scalability and innovation, allowing your travel platform to grow with industry trends and customer demands.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering cutting-edge technology that supports scalability and innovation, allowing your travel platform to grow with industry trends and customer demands.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalable and Innovative Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Providing continuous support and regular updates to ensure your travel technology platform operates smoothly and delivers an exceptional user experience.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing continuous support and regular updates to ensure your travel technology platform operates smoothly and delivers an exceptional user experience.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -385,6 +464,42 @@
 
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- #### blog ####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
 
             <!-- #### faq ######  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">

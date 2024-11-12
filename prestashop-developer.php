@@ -82,7 +82,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>PrestaShop Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -221,41 +227,82 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - Proficient Team -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proficient Team</h1>
-                        <p>Specialists in PrestaShop development.</p>
+                        <div class="content-wrapper">
+                            <p>Our team of PrestaShop specialists brings advanced technical skills and expertise to build scalable, high-performance online stores that are tailored to your business requirements and growth goals.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Proficient Team</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Personalized Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Personalized Solutions</h1>
-                        <p>Custom strategies for your online store.</p>
+                        <div class="content-wrapper">
+                            <p>We offer personalized strategies for your online store, ensuring that every solution is perfectly aligned with your brand’s identity, customer needs, and business objectives for long-term success.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Personalized Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Efficient Processes -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Efficient Processes</h1>
-                        <p>Timely project delivery with high standards.</p>
+                        <div class="content-wrapper">
+                            <p>Our development processes are designed for maximum efficiency, ensuring that your PrestaShop store is completed on time, with the highest standards of quality, and without any delays in delivery.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Efficient Processes</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Comprehensive Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Comprehensive Support</h1>
-                        <p>Continuous help for lasting success.</p>
+                        <div class="content-wrapper">
+                            <p>We provide continuous support throughout the entire lifecycle of your PrestaShop project, ensuring that your store remains fully operational, up-to-date, and optimized for success at all times.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Comprehensive Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Value Pricing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Value Pricing</h1>
-                        <p>Affordable rates without quality compromise.</p>
+                        <div class="content-wrapper">
+                            <p>We offer competitive, value-driven pricing for all PrestaShop services, ensuring you get high-quality development, design, and support at a price that suits your business budget and goals.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Value Pricing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Reliable Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reliable Expertise</h1>
-                        <p>Proven success with satisfied clients worldwide.</p>
+                        <div class="content-wrapper">
+                            <p>Our proven expertise in PrestaShop development has helped clients across the globe build successful, scalable eCommerce platforms, resulting in satisfied customers and lasting business partnerships.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reliable Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
             </div>
@@ -306,161 +353,166 @@
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
-                    <!-- ######## collaboration #####  -->
-                    <section class="collaboration-wrapper">r
-                        <section class="collaboration-header">
-                            <h1>Simple Steps to Begin Your Journey with Our PrestaShop Team</h1>
-                        </section>
-                        <section class="collaboration-child-wrapper">
-                            <section class="collaboration-child" id="collaboration-child-1">
-                                <section class="collaboration-child-image">
-                                    <img src="./images/requirement.png" alt="">
-                                </section>
-                                <section class="collaboration-child-data">
-                                    <h2>Provide Your Requirements <span><i class="fa-solid fa-right-long"></i></span> </h2>
-                                    <p>Clearly outline your project specifications and expectations. This allows us to understand your needs better and ensures we find the right candidates who align with your objectives.</p>
-
-                                </section>
-
-                            </section>
-                            <section class="collaboration-child" id="collaboration-child-2">
-                                <section class="collaboration-child-image">
-                                    <img src="./images/project-evaluation.png" alt="">
-                                </section>
-                                <section class="collaboration-child-data">
-                                    <h2>Select Candidates for Review <span><i class="fa-solid fa-right-long"></i></span></h2>
-                                    <p>After gathering requirements, we will curate a list of qualified candidates for your review. You can assess their skills, experience, and fit for your project’s unique demands.</p>
-
-                                </section>
-                            </section>
-                            <section class="collaboration-child" id="collaboration-child-3">
-                                <section class="collaboration-child-image">
-                                    <img src="./images/nda.png" alt="">
-                                </section>
-                                <section class="collaboration-child-data">
-                                    <h2>Identify the Ideal Candidate<span><i class="fa-solid fa-right-long"></i></span></h2>
-                                    <p>Evaluate the shortlisted candidates based on their qualifications and your criteria. Conduct interviews to gain insights into their expertise, ensuring you select the best match for your needs.</p>
-
-                                </section>
-                            </section>
-                            <section class="collaboration-child" id="collaboration-child-4">
-                                <section class="collaboration-child-image">
-                                    <img src="./images/interview.png" alt="">
-                                </section>
-                                <section class="collaboration-child-data">
-                                    <h2> Begin the Onboarding Process <span><i class="fa-solid fa-right-long"></i></span></h2>
-                                    <p>Once you’ve chosen the right candidate, we’ll initiate the onboarding process. This includes introducing them to your team, sharing project details, and ensuring they have all necessary resources.</p>
-
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-
-                    <!-- ############### faq ############  -->
-                    <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-                        <h1>PrestaShop Development Services FAQs</h1>
-                    </div>
-
-                    <section class="faq-wrapper">
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>What types of e-commerce websites can PrestaShop developers create?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                PrestaShop developers can create a wide range of e-commerce websites, including small retail shops, large-scale online stores, and multi-vendor marketplaces. They specialize in developing customizable, scalable, and feature-rich e-commerce solutions tailored to meet specific business needs.
-                            </p>
-                        </section>
-
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>How do PrestaShop developers ensure website security?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                PrestaShop developers prioritize security by regularly updating the PrestaShop core and modules, implementing SSL certificates, and utilizing secure payment gateways. They also apply best practices in coding and configuration to protect against vulnerabilities such as SQL injection and XSS attacks.
-                            </p>
-                        </section>
-
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>Can PrestaShop developers customize themes and modules?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                Yes, PrestaShop developers can customize existing themes and create new modules to enhance the functionality and aesthetics of the online store. They use HTML, CSS, JavaScript, and PHP to deliver tailored solutions that align with business branding and operational requirements.
-                            </p>
-                        </section>
-
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>How do PrestaShop developers handle SEO optimization?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                PrestaShop developers implement SEO best practices by optimizing product pages, meta tags, URLs, and image attributes. They also use various SEO modules and tools to improve site visibility and search rankings, ensuring that the online store attracts organic traffic.
-                            </p>
-                        </section>
-
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>What are some best practices for PrestaShop development?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                Best practices for PrestaShop development include maintaining regular backups, optimizing site performance through caching and CDN usage, and ensuring the use of responsive design principles. Developers should also follow PrestaShop coding standards for seamless updates and compatibility.
-                            </p>
-                        </section>
-
-                        <section class="faq-child">
-                            <section class="faq-heading">
-                                <h1>How do PrestaShop developers ensure website performance?</h1>
-                                <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                            </section>
-                            <p>
-                                PrestaShop developers enhance website performance by optimizing images, leveraging caching mechanisms, and reducing the number of requests made to the server. They regularly monitor the site's speed and performance metrics to ensure a fast and efficient shopping experience for users.
-                            </p>
-                        </section>
-                    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
-
-                <?php include('footer.php'); ?>
             </div>
 
 
 
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    once: true,
-                });
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <script src="./swiper.js"></script>
-            <?php include('pop.php'); ?>
+
+
+
+
+
+
+
+            <!-- ######## collaboration #####  -->
+            <section class="collaboration-wrapper">r
+                <section class="collaboration-header">
+                    <h1>Simple Steps to Begin Your Journey with Our PrestaShop Team</h1>
+                </section>
+                <section class="collaboration-child-wrapper">
+                    <section class="collaboration-child" id="collaboration-child-1">
+                        <section class="collaboration-child-image">
+                            <img src="./images/requirement.png" alt="">
+                        </section>
+                        <section class="collaboration-child-data">
+                            <h2>Provide Your Requirements <span><i class="fa-solid fa-right-long"></i></span> </h2>
+                            <p>Clearly outline your project specifications and expectations. This allows us to understand your needs better and ensures we find the right candidates who align with your objectives.</p>
+
+                        </section>
+
+                    </section>
+                    <section class="collaboration-child" id="collaboration-child-2">
+                        <section class="collaboration-child-image">
+                            <img src="./images/project-evaluation.png" alt="">
+                        </section>
+                        <section class="collaboration-child-data">
+                            <h2>Select Candidates for Review <span><i class="fa-solid fa-right-long"></i></span></h2>
+                            <p>After gathering requirements, we will curate a list of qualified candidates for your review. You can assess their skills, experience, and fit for your project’s unique demands.</p>
+
+                        </section>
+                    </section>
+                    <section class="collaboration-child" id="collaboration-child-3">
+                        <section class="collaboration-child-image">
+                            <img src="./images/nda.png" alt="">
+                        </section>
+                        <section class="collaboration-child-data">
+                            <h2>Identify the Ideal Candidate<span><i class="fa-solid fa-right-long"></i></span></h2>
+                            <p>Evaluate the shortlisted candidates based on their qualifications and your criteria. Conduct interviews to gain insights into their expertise, ensuring you select the best match for your needs.</p>
+
+                        </section>
+                    </section>
+                    <section class="collaboration-child" id="collaboration-child-4">
+                        <section class="collaboration-child-image">
+                            <img src="./images/interview.png" alt="">
+                        </section>
+                        <section class="collaboration-child-data">
+                            <h2> Begin the Onboarding Process <span><i class="fa-solid fa-right-long"></i></span></h2>
+                            <p>Once you’ve chosen the right candidate, we’ll initiate the onboarding process. This includes introducing them to your team, sharing project details, and ensuring they have all necessary resources.</p>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <!-- ############### faq ############  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>PrestaShop Development Services FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of e-commerce websites can PrestaShop developers create?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PrestaShop developers can create a wide range of e-commerce websites, including small retail shops, large-scale online stores, and multi-vendor marketplaces. They specialize in developing customizable, scalable, and feature-rich e-commerce solutions tailored to meet specific business needs.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PrestaShop developers ensure website security?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PrestaShop developers prioritize security by regularly updating the PrestaShop core and modules, implementing SSL certificates, and utilizing secure payment gateways. They also apply best practices in coding and configuration to protect against vulnerabilities such as SQL injection and XSS attacks.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can PrestaShop developers customize themes and modules?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, PrestaShop developers can customize existing themes and create new modules to enhance the functionality and aesthetics of the online store. They use HTML, CSS, JavaScript, and PHP to deliver tailored solutions that align with business branding and operational requirements.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PrestaShop developers handle SEO optimization?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PrestaShop developers implement SEO best practices by optimizing product pages, meta tags, URLs, and image attributes. They also use various SEO modules and tools to improve site visibility and search rankings, ensuring that the online store attracts organic traffic.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are some best practices for PrestaShop development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Best practices for PrestaShop development include maintaining regular backups, optimizing site performance through caching and CDN usage, and ensuring the use of responsive design principles. Developers should also follow PrestaShop coding standards for seamless updates and compatibility.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do PrestaShop developers ensure website performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PrestaShop developers enhance website performance by optimizing images, leveraging caching mechanisms, and reducing the number of requests made to the server. They regularly monitor the site's speed and performance metrics to ensure a fast and efficient shopping experience for users.
+                    </p>
+                </section>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <?php include('footer.php'); ?>
+        </div>
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./swiper.js"></script>
+        <?php include('pop.php'); ?>
 
 </body>
 

@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'banking' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -203,39 +228,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Banking Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Banking Technology Expertise</h1>
-                        <p>Providing cutting-edge technology solutions for the banking sector, enhancing operational efficiency, security, and customer satisfaction in an ever-evolving financial landscape.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing cutting-edge technology solutions for the banking sector, enhancing operational efficiency, security, and customer satisfaction in an ever-evolving financial landscape.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Banking Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Fintech Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Fintech Solutions</h1>
-                        <p>Developing tailored fintech applications designed to streamline banking processes, improve user experiences, and drive innovation across services.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing tailored fintech applications designed to streamline banking processes, improve user experiences, and drive innovation across services.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Fintech Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Robust Security and Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Robust Security and Compliance</h1>
-                        <p>Implementing advanced security frameworks and compliance measures to protect customer data and ensure adherence to regulatory standards.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing advanced security frameworks and compliance measures to protect customer data and ensure adherence to regulatory standards.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Robust Security and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Integrated Banking Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Integrated Banking Solutions</h1>
-                        <p>Seamlessly integrating various banking systems and services to enhance efficiency, data sharing, and operational transparency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Seamlessly integrating various banking systems and services to enhance efficiency, data sharing, and operational transparency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Integrated Banking Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Innovative Banking Technologies -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative Banking Technologies</h1>
-                        <p>Empowering banks with innovative solutions like AI, blockchain, and analytics to transform operations and provide better customer service.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Empowering banks with innovative solutions like AI, blockchain, and analytics to transform operations and provide better customer service.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative Banking Technologies</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Technical Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Technical Support</h1>
-                        <p>Offering round-the-clock support and maintenance to ensure uninterrupted banking services and address any technical issues promptly.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering round-the-clock support and maintenance to ensure uninterrupted banking services and address any technical issues promptly.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Technical Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -376,6 +455,39 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ##### faq ####  -->

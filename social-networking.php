@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'social-networking' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -209,35 +234,88 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Social Networking Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Social Networking Technology Expertise</h1>
-                        <p>Delivering cutting-edge technology solutions for social networking platforms that enhance user engagement, interaction, and community building.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering cutting-edge technology solutions for social networking platforms that enhance user engagement, interaction, and community building.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Social Networking Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Social Networking App Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Social Networking App Development</h1>
-                        <p>Creating user-centric social networking applications that foster connectivity, allowing users to share content, ideas, and experiences seamlessly.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating user-centric social networking applications that foster connectivity, allowing users to share content, ideas, and experiences seamlessly.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Social Networking App Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Privacy Protection and Data Security -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Privacy Protection and Data Security</h1>
-                        <p>Implementing strong privacy controls and data encryption to protect user information and build trust within your social networking community.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing strong privacy controls and data encryption to protect user information and build trust within your social networking community.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Privacy Protection and Data Security</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless API and Third-Party Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless API and Third-Party Integration</h1>
-                        <p>Integrating with popular APIs and third-party services to enhance functionality, streamline user experience, and provide additional features to your platform.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Integrating with popular APIs and third-party services to enhance functionality, streamline user experience, and provide additional features to your platform.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless API and Third-Party Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Innovative and Scalable Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative and Scalable Solutions</h1>
-                        <p>Delivering flexible solutions that grow with your user base, incorporating features that adapt to the evolving needs of social media users.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering flexible solutions that grow with your user base, incorporating features that adapt to the evolving needs of social media users.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative and Scalable Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Comprehensive Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Comprehensive Support and Maintenance</h1>
-                        <p>Offering ongoing support and regular updates to ensure your social networking platform remains engaging, user-friendly, and free of technical issues.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering ongoing support and regular updates to ensure your social networking platform remains engaging, user-friendly, and free of technical issues.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Comprehensive Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
@@ -381,6 +459,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 

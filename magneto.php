@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -84,38 +90,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-magento.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Building robust retail solutions with Magento, enabling personalized shopping experiences, real-time inventory updates, and secure transactions.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building robust retail solutions with Magento, enabling personalized shopping experiences, real-time inventory updates, and secure transactions.
+                            </p>
+                            <img src="images/ecommerce-magento.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Healthcare -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/healthcare-magento.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Developing specialized e-commerce platforms for healthcare products, ensuring compliance with regulations and enhancing patient access to medical supplies.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing specialized e-commerce platforms for healthcare products, ensuring compliance with regulations and enhancing patient access to medical supplies.
+                            </p>
+                            <img src="images/healthcare-magento.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Education -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-magento.png" alt="">
-                        <h1>Education</h1>
-                        <p>Creating e-learning solutions with Magento that offer courses, digital content, and subscription management to enhance learning experiences.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating e-learning solutions with Magento that offer courses, digital content, and subscription management to enhance learning experiences.
+                            </p>
+                            <img src="images/education-magento.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Fashion -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/fashion-magento.png" alt="">
-                        <h1>Fashion</h1>
-                        <p>Designing visually stunning fashion e-commerce sites with Magento, focusing on user experience, trend updates, and seamless product showcases.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Designing visually stunning fashion e-commerce sites with Magento, focusing on user experience, trend updates, and seamless product showcases.
+                            </p>
+                            <img src="images/fashion-magento.png" alt="" />
+                            <h1>Fashion</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Automotive -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/automotive-magento.png" alt="">
-                        <h1>Automotive</h1>
-                        <p>Building comprehensive e-commerce solutions for automotive parts and accessories, providing detailed product information and secure payment options.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building comprehensive e-commerce solutions for automotive parts and accessories, providing detailed product information and secure payment options.
+                            </p>
+                            <img src="images/automotive-magento.png" alt="" />
+                            <h1>Automotive</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Food and Beverage -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/food-beverage-magento.png" alt="">
-                        <h1>Food and Beverage</h1>
-                        <p>Creating efficient e-commerce platforms for food and beverage industries, enabling easy ordering, subscription services, and delivery tracking.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating efficient e-commerce platforms for food and beverage industries, enabling easy ordering, subscription services, and delivery tracking.
+                            </p>
+                            <img src="images/food-beverage-magento.png" alt="" />
+                            <h1>Food and Beverage</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
 

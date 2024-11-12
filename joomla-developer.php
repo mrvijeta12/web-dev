@@ -82,7 +82,8 @@
                             <p>Joomla Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>Joomla Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>Joomla Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>Joomla Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>Joomla Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -224,45 +229,86 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - Joomla Professionals -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Joomla Professionals</h1>
-                        <p>Expert developers dedicated to your Joomla projects.</p>
+                        <div class="content-wrapper">
+                            <p>Our expert developers specialize in Joomla, offering highly efficient solutions tailored to your project’s needs, ensuring that your website performs optimally and supports your business goals effectively.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Joomla Professionals</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Dynamic Designs -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Dynamic Designs</h1>
-                        <p>Custom designs that engage and captivate users.</p>
+                        <div class="content-wrapper">
+                            <p>We create custom, engaging designs that captivate users, offering visually appealing layouts combined with optimal functionality to enhance user experience and drive long-term engagement.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Dynamic Designs</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Efficient Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Efficient Solutions</h1>
-                        <p>Streamlined development for quick turnaround times.</p>
+                        <div class="content-wrapper">
+                            <p>Our development process is designed for efficiency, ensuring that your Joomla projects are delivered quickly without compromising quality, allowing your business to achieve faster time-to-market and success.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Efficient Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Thorough Testing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Thorough Testing</h1>
-                        <p>Comprehensive testing for flawless functionality.</p>
+                        <div class="content-wrapper">
+                            <p>We conduct comprehensive testing throughout the development process, ensuring your Joomla website is flawless, functional, and secure, providing a seamless user experience across all devices.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Thorough Testing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Value-Driven Services -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Value-Driven Services</h1>
-                        <p>High-quality solutions that fit your budget.</p>
+                        <div class="content-wrapper">
+                            <p>Our services are designed to offer exceptional value, ensuring high-quality Joomla solutions that fit within your budget, helping you achieve optimal performance without overspending.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Value-Driven Services</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Client-Centric Approach -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Client-Centric Approach</h1>
-                        <p>Your satisfaction is our top priority in every project.</p>
+                        <div class="content-wrapper">
+                            <p>Our client-centric approach places your satisfaction at the core of every project, ensuring we align our efforts with your specific needs, providing tailored Joomla solutions to exceed expectations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Client-Centric Approach</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

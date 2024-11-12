@@ -203,6 +203,32 @@
                     localStorage.setItem("popupClosed", "true");
                 });
         });
+
+
+
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     // Check if the popup was previously closed in this session
+        //     if (!sessionStorage.getItem("popupClosed")) {
+        //         // Delay the popup by 3 seconds
+        //         setTimeout(function() {
+        //             document.getElementById("contactPopup").style.display = "flex";
+        //         }, 5000);
+        //     }
+
+        //     // Close the popup and store the closed state in sessionStorage
+        //     document.getElementById("closePopup").addEventListener("click", function() {
+        //         document.getElementById("contactPopup").style.display = "none";
+        //         sessionStorage.setItem("popupClosed", "true");
+        //     });
+
+        //     // Reopen the popup if the anchor link is clicked (for testing or user choice)
+        //     document.getElementById("reopenPopup").addEventListener("click", function(e) {
+        //         e.preventDefault(); // Prevent the default anchor behavior
+        //         // Clear the closed state and show the popup again
+        //         sessionStorage.removeItem("popupClosed");
+        //         document.getElementById("contactPopup").style.display = "flex";
+        //     });
+        // });
     </script>
 </body>
 

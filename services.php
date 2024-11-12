@@ -66,7 +66,7 @@
             </div>
 
 
-            <div class="services">
+            <div class="services" id="web-services">
                 <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
                     <img src="images/web-development.png" alt="">
                     <h1>CMS </h1>
@@ -164,46 +164,86 @@
             </div>
 
 
-            <div class=" service_choose_us">
 
 
 
+            <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Banking Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Discovery & Consultation</h1>
-                        <p>Understand client needs, goals, and technical requirements.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Design & UX</h1>
-                        <p>Delivering visually appealing, user-friendly designs for optimal customer experience.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Agile Development</h1>
-                        <p>Iterative development approach ensuring flexibility, speed, and continuous improvements.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Testing & QA</h1>
-                        <p> Rigorous testing to ensure bug-free, high-performance applications.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1> Deployment & Support</h1>
-                        <p>Seamless launch process, ensuring your website goes live smoothly.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1> Support & Optimization</h1>
-                        <p>Continual monitoring, updates, and enhancements to maintain top-notch performance.</p>
+                        <div class="content-wrapper">
+                            <p>We take time to thoroughly understand your unique business needs, goals, and technical requirements to provide personalized and effective financial technology solutions that align with your vision.</p>
+                            <img src="images/consultation.png" alt="">
+                            <h1>Discovery & Consultation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Custom Fintech Solutions -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Our team delivers visually appealing and user-friendly designs, ensuring an optimal customer experience that enhances engagement, usability, and satisfaction for every digital banking and financial service interface.</p>
+                            <img src="images/ux.png" alt="">
+                            <h1>Custom Design & UX</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 3 - Robust Security and Compliance -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Utilizing an agile development approach, we ensure flexibility, speed, and continual improvements, enabling us to meet your business needs quickly while adapting to changing requirements seamlessly.</p>
+                            <img src="images/development.png" alt="">
+                            <h1>Agile Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Integrated Banking Solutions -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Through rigorous testing procedures, we guarantee that your applications are bug-free, high-performance, and capable of meeting industry standards for quality, ensuring a reliable user experience.</p>
+                            <img src="images/testing.png" alt="">
+                            <h1>Testing & QA</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Innovative Banking Technologies -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Our deployment service guarantees a seamless launch, ensuring that your website or application goes live smoothly, with minimal downtime, providing a strong start for your digital presence.</p>
+                            <img src="images/deployment.png" alt="">
+                            <h1>Deployment & Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - 24/7 Technical Support -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We offer continuous monitoring, regular updates, and performance enhancements, ensuring your systems maintain top-notch efficiency and adapt smoothly to changing market conditions and user expectations.</p>
+                            <img src="images/support.png" alt="">
+                            <h1>Support & Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
                 </div>
-
             </div>
+
+
 
 
 

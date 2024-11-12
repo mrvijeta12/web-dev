@@ -13,7 +13,7 @@ if (isset($_POST["signin"])) {
     }
 
     // Check if email is registered
-    $query = "SELECT * FROM users WHERE email = ?";
+    $query = "SELECT * FROM webdev_auth WHERE email = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("s", $email);
     $stmt->execute();

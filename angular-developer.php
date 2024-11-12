@@ -82,7 +82,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                             <p>Angular Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -228,44 +228,87 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - Angular Application Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Angular Application Development</h1>
-                        <p>Building robust applications using Angular for seamless performance.</p>
+                        <div class="content-wrapper">
+                            <p>Building scalable and robust Angular applications, ensuring seamless performance across different platforms, while enhancing the user experience with advanced features and responsive design integration.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Angular Application Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Component-Based Architecture -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Component-Based Architecture</h1>
-                        <p>Creating reusable components for efficient application structure.</p>
+                        <div class="content-wrapper">
+                            <p>Designing reusable and maintainable components for better modularity, enhancing code reusability, and ensuring efficient application structure for large-scale, complex Angular projects.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Component-Based Architecture</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Dynamic Routing Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Dynamic Routing Solutions</h1>
-                        <p>Implementing dynamic routing for smooth navigation experiences.</p>
+                        <div class="content-wrapper">
+                            <p>Implementing dynamic and flexible routing solutions in Angular applications, ensuring smooth navigation and an optimized user experience, regardless of the application’s complexity or structure.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Dynamic Routing Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - State Management Strategies -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>State Management Strategies</h1>
-                        <p>Utilizing NgRx for efficient state management in applications.</p>
+                        <div class="content-wrapper">
+                            <p>Utilizing NgRx for efficient state management in Angular applications, ensuring smooth data flow, better state handling, and improved scalability while reducing complexity in large projects.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>State Management Strategies</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Performance Optimization Techniques -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Optimization Techniques</h1>
-                        <p>Enhancing app performance with lazy loading and AOT compilation.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizing Angular application performance using techniques like lazy loading, Ahead of Time (AOT) compilation, and efficient resource management, leading to faster load times and improved performance.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Optimization Techniques</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Testing and Quality Assurance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Testing and Quality Assurance</h1>
-                        <p>Conducting rigorous testing to ensure high-quality Angular apps.</p>
+                        <div class="content-wrapper">
+                            <p>Conducting comprehensive testing for Angular applications using various tools and methodologies to ensure high-quality, bug-free code and deliver scalable applications that meet all requirements.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Testing and Quality Assurance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
             </div>
+
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

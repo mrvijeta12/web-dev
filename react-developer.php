@@ -83,7 +83,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                             <p>React.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -228,81 +228,86 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
-                <!-- <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive React.JS experience.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
-                    </div>
-
-
-                </div> -->
-
+            <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - React.js Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Expert Developers</h1>
-                        <p>Skilled React.js professionals with extensive experience.</p>
+                        <div class="content-wrapper">
+                            <p>Our team of expert React.js developers specializes in building dynamic, high-performance applications that ensure seamless user experiences and scalability for the future.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>React.js Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom React Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Tailored Solutions</h1>
-                        <p>Custom services for your unique business needs.</p>
+                        <div class="content-wrapper">
+                            <p>We create custom React.js solutions designed to address your unique business needs, optimizing performance and providing flexibility for your applications.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom React Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Fast React Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>On-Time Delivery</h1>
-                        <p>Commitment to deadlines without compromising quality.</p>
+                        <div class="content-wrapper">
+                            <p>Our developers are committed to delivering React.js projects quickly and efficiently, ensuring high-quality code and robust functionality in a short amount of time.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Fast React Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Ongoing React.js Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Continuous Support</h1>
-                        <p>Reliable maintenance for long-term success.</p>
+                        <div class="content-wrapper">
+                            <p>We offer continuous React.js maintenance and support to ensure your applications remain functional, scalable, and up-to-date with the latest technologies.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Ongoing React Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - React.js Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Affordable Rates</h1>
-                        <p>Competitive pricing without sacrificing excellence.</p>
+                        <div class="content-wrapper">
+                            <p>We integrate React.js seamlessly with your existing platforms, ensuring smooth data flow and a consistent, responsive user interface across all devices.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>React.js Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - React.js Success Stories -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Success</h1>
-                        <p>History of satisfied clients and successful projects.</p>
+                        <div class="content-wrapper">
+                            <p>With a strong portfolio of successful React.js projects, we have consistently delivered innovative and high-performance web applications that drive business results.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>React.js Success Stories</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
-
-
             </div>
+
+
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

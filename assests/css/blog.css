@@ -15,6 +15,14 @@ body {
   max-width: 100%;
   background-color: black;
   /* background-color: rgba(0, 0, 0, 0.6); */
+  word-spacing: 2px;
+}
+
+.wrapper p {
+  font-family: Roboto-Regular;
+
+  line-height: 25px;
+  font-size: 17px;
 }
 
 /* ##### hero section ###  */
@@ -51,16 +59,18 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 40px;
   width: 100%;
   color: white;
   z-index: 2;
-  font-family: "Montserrat-Bold", sans-serif;
+  font-family: Roboto-Bold;
 }
 .hero h2 {
-  font-size: 1.25rem;
+  font-size: 24px;
   color: white;
   z-index: 2;
+  font-family: Roboto-Regular;
+  font-size: 24px;
 }
 
 .hero a {
@@ -71,11 +81,13 @@ body {
   cursor: pointer;
   text-decoration: none;
   border-radius: 25%;
-  font-family: "Montserrat-Regular", sans-serif;
+
+  font-family: Roboto-Regular;
   letter-spacing: 1.5px;
   margin-top: 10px;
   z-index: 2;
   border-radius: 40px;
+  font-size: 18px;
   /* background: radial-gradient(
     circle at 12.3% 19.3%,
     rgb(85, 88, 218) 0%,
@@ -104,9 +116,11 @@ body {
 
 .container h1 {
   font-size: 3rem;
-  /* margin-top: 50px; */
   color: white;
-  font-family: Montserrat-Bold;
+
+  font-family: Roboto-Bold;
+
+  line-height: 60px;
 }
 
 /* #### blog wrapper ####  */
@@ -119,14 +133,15 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   max-width: 100%;
-  padding: 0px 50px;
+  padding: 0px 15px;
+  /* margin-bottom: 50px; */
 }
 
 .content-container {
   /* margin: 0px auto 50px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: flex;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* border: 1px solid red; */
   /* border-radius: 8px; */
   /* overflow: hidden; */
@@ -198,20 +213,22 @@ body {
 .text-content h5,
 .text-content h6 {
   margin-bottom: 10px;
-  color: #000042;
-  font-family: Montserrat-SemiBold;
+  color: #0363ff;
+  font-family: Roboto-Medium;
+
+  line-height: 35px;
 }
 
 .text-content p {
   font-size: 16px;
   margin-top: 10px;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Limits the text to 8 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: Montserrat-Regular;
+  /* font-family: -Regular; */
 }
 
 .edit-form {
@@ -250,11 +267,11 @@ body {
 .read-more {
   /* border: 2px solid red; */
   text-decoration: none;
-  color: #000042;
+  color: #0363ff;
   display: flex;
   align-items: center;
   transition: all 0.3s linear;
-  font-family: Montserrat-Regular;
+  font-family: Roboto-Regular;
 }
 .read-more:hover {
   letter-spacing: 2px;
@@ -282,7 +299,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Each FAQ item (child) */
@@ -308,7 +325,8 @@ body {
 /* Style for headings */
 .faq-heading h1 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Roboto-Medium;
   color: #fff;
 }
 
@@ -323,7 +341,7 @@ body {
 .faq-child p {
   margin-top: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -385,6 +403,27 @@ body {
   .hero h1 {
     font-size: 2rem;
   }
+  .faq-wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .faq-child {
+    width: 100%;
+  }
+  .container h1 {
+    line-height: 45px;
+    font-size: 2rem;
+  }
+  .faq-heading h1 {
+    font-size: 17px;
+  }
+  .wrapper p {
+    font-size: 16px;
+  }
+  .container {
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 593px) {
@@ -395,7 +434,7 @@ body {
 
 @media (max-width: 480px) {
   .content-container {
-    margin: 50px auto;
+    /* margin: 50px auto; */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -413,11 +452,11 @@ body {
   }
 
   .image-container img {
-    width: 100px; /* Fixed width for images */
-    height: 100px; /* Fixed height for images */
-    object-fit: cover; /* Ensures images are not distorted */
+    /* width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
     margin: 5px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; */
   }
 }

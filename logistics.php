@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'logistics' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -205,39 +230,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Logistics Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Logistics Technology Expertise</h1>
-                        <p>Delivering comprehensive technology solutions for the logistics industry, optimizing supply chain operations, improving efficiency, and enhancing customer satisfaction.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering comprehensive technology solutions for the logistics industry, optimizing supply chain operations, improving efficiency, and enhancing customer satisfaction.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Logistics Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Logistics Software Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Logistics Software Development</h1>
-                        <p>Creating tailored software solutions that streamline warehousing, inventory management, and transportation processes for greater operational efficiency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating tailored software solutions that streamline warehousing, inventory management, and transportation processes for greater operational efficiency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Logistics Software Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Analytics and Reporting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Analytics and Reporting</h1>
-                        <p>Utilizing advanced analytics to provide actionable insights into logistics operations, enabling better decision-making and performance optimization.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing advanced analytics to provide actionable insights into logistics operations, enabling better decision-making and performance optimization.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Analytics and Reporting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless System Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless System Integration</h1>
-                        <p>Integrating existing logistics systems with new technologies for improved data flow, real-time tracking, and enhanced operational transparency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Integrating existing logistics systems with new technologies for improved data flow, real-time tracking, and enhanced operational transparency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless System Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Innovative and Scalable Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative and Scalable Solutions</h1>
-                        <p>Developing innovative solutions that scale with your logistics needs, ensuring adaptability to market changes and growth opportunities.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing innovative solutions that scale with your logistics needs, ensuring adaptability to market changes and growth opportunities.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative and Scalable Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Offering round-the-clock support and regular system maintenance to ensure uninterrupted logistics operations and optimal performance.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering round-the-clock support and regular system maintenance to ensure uninterrupted logistics operations and optimal performance.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -384,6 +463,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ##### faq #######  -->

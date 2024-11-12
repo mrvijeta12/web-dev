@@ -28,17 +28,23 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Dynamic Vue.js Development
+                    </h1>
+                    <p>
+                        Crafting responsive, high-performance apps with Vue.js.
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
+
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
+
 
 
 
@@ -81,7 +87,7 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Vue.js Solutions</h1>
             </div>
 
-            <div class="service_choose_us">
+            <!-- <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/web-application-vue.png" alt="">
@@ -114,7 +120,98 @@
                         <p>Building engaging entertainment platforms with Vue.js, facilitating content streaming and user interactions for a rich experience.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="service_choose_us">
+                <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging Vue.js to create innovative retail applications that enhance customer shopping experiences and streamline inventory management.
+                            </p>
+                            <img src="images/web-application-vue.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 2 - Real Estate -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing dynamic real estate platforms using Vue.js, providing users with seamless property searches and virtual tours for better engagement.
+                            </p>
+                            <img src="images/mobile-app-vue.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Healthcare -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing cutting-edge healthcare applications with Vue.js that provide real-time patient management, appointment scheduling, and telemedicine features.
+                            </p>
+                            <img src="images/healthcare-vue.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+
+                    <!-- Service 4 - Gaming -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating interactive gaming platforms using Vue.js, enhancing user engagement with real-time updates and smooth gameplay experiences.
+                            </p>
+                            <img src="images/education-vue.png" alt="" />
+                            <h1>Gaming</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Logistics -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Vue.js to develop logistics management systems that streamline operations and improve real-time tracking of shipments.
+                            </p>
+                            <img src="images/travel-vue.png" alt="" />
+                            <h1>Logistics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Entertainment -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building engaging entertainment platforms with Vue.js, facilitating content streaming and user interactions for a rich experience.
+                            </p>
+                            <img src="images/social-media-vue.png" alt="" />
+                            <h1>Entertainment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
 
 
         </div>

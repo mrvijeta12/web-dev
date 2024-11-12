@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -80,7 +86,7 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Drupal Solutions</h1>
             </div>
 
-            <div class="service_choose_us">
+            <!-- <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/healthcare-drupal.png" alt="">
@@ -113,7 +119,97 @@
                         <p>Developing impactful websites for non-profits with Drupal, enhancing outreach, donations, and community engagement through powerful content management.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="service_choose_us">
+                <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing secure and user-friendly healthcare platforms with Drupal, improving patient engagement and streamlining health services management.
+                            </p>
+                            <img src="images/healthcare-drupal.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 2 - E-commerce -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating robust e-commerce websites using Drupal that provide seamless navigation, personalized experiences, and secure transactions for customers.
+                            </p>
+                            <img src="images/ecommerce-drupal.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Education -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive educational platforms with Drupal that enhance learning through engaging content, online courses, and student tracking.
+                            </p>
+                            <img src="images/education-drupal.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Government -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building secure and accessible government websites using Drupal, ensuring transparency, citizen engagement, and efficient service delivery.
+                            </p>
+                            <img src="images/government-drupal.png" alt="" />
+                            <h1>Government</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Travel and Hospitality -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating intuitive travel booking systems with Drupal that provide users with real-time availability, personalized recommendations, and easy reservations.
+                            </p>
+                            <img src="images/travel-drupal.png" alt="" />
+                            <h1>Travel and Hospitality</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Non-Profit Organizations -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing impactful websites for non-profits with Drupal, enhancing outreach, donations, and community engagement through powerful content management.
+                            </p>
+                            <img src="images/nonprofit-drupal.png" alt="" />
+                            <h1>Non-Profit Organizations</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
 
 
         </div>

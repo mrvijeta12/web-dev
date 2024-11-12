@@ -25,23 +25,23 @@
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ####### HERO SECTION ####### -->
 
 
 
             <div class="hero">
-                <div class="child child1">
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1500">
                     <h1>
                         Professional HTML Development Services For Stunning Web Design
                     </h1>
-                    <h3>
+                    <h2>
                         Delivering exceptional web design services for your online success
-                    </h3>
-                    <a href="">Consult Our Experts</a>
+                    </h2>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1500">
                     <img src="./images/html-developer.jpg" alt="">
                 </div>
             </div>
@@ -89,7 +89,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                             <p>HTML Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -233,46 +233,88 @@
 
             </div>
 
-
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- New Service 1 - Semantic HTML Markup -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Semantic HTML Markup</h1>
-                        <p>Crafting clean and semantic HTML for better SEO.</p>
+                        <div class="content-wrapper">
+                            <p>Creating clean, semantic HTML that boosts SEO by improving accessibility, making content easier for search engines to understand, and ensuring better indexing and ranking in search results.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Semantic HTML Markup</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- New Service 2 - Responsive Design Implementation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Responsive Design Implementation</h1>
-                        <p>Ensuring your websites adapt seamlessly to all devices.</p>
+                        <div class="content-wrapper">
+                            <p>Ensuring websites adapt seamlessly to any device by providing a smooth, consistent user experience on mobile, tablet, and desktop with flexible, responsive design techniques that cater to different screen sizes.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Responsive Design Implementation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- New Service 3 - Accessibility Best Practices -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Accessibility Best Practices</h1>
-                        <p>Creating accessible websites for all users, including those with disabilities.</p>
+                        <div class="content-wrapper">
+                            <p>Following WCAG guidelines and best practices to ensure your website is accessible to all users, including those with visual, auditory, or cognitive disabilities, ensuring full usability across diverse user needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Accessibility Best Practices</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- New Service 4 - HTML Performance Optimization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>HTML Performance Optimization</h1>
-                        <p>Optimizing HTML for faster load times and improved performance.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizing HTML code for faster load times, reducing file sizes, minimizing HTTP requests, and improving overall page performance, ensuring quick and responsive user experiences even on slower internet connections.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>HTML Performance Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- New Service 5 - Cross-Browser Compatibility -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Cross-Browser Compatibility</h1>
-                        <p>Ensuring consistent user experiences across all major browsers.</p>
+                        <div class="content-wrapper">
+                            <p>Ensuring your website looks and works consistently across all major browsers such as Chrome, Firefox, Safari, and Edge by performing rigorous cross-browser testing and following standard coding practices.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Cross-Browser Compatibility</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- New Service 6 - Ongoing HTML Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Ongoing HTML Support</h1>
-                        <p>Providing continuous support for HTML updates and improvements.</p>
+                        <div class="content-wrapper">
+                            <p>Offering continuous HTML support to ensure your website remains up-to-date with the latest web standards, providing regular maintenance, security updates, and optimizations for long-term performance and stability.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Ongoing HTML Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
             </div>
+
+
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
@@ -344,10 +386,11 @@
 
 
             <!-- ######## collaboration #####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1> Simple Steps to Begin Your Journey with Our HTML Team</h1>
+            </div>
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
-                    <h1>Simple Steps to Begin Your Journey with Our HTML Team</h1>
-                </section>
+
                 <section class="collaboration-child-wrapper">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
@@ -375,7 +418,7 @@
                             <img src="./images/nda.png" alt="">
                         </section>
                         <section class="collaboration-child-data">
-                            <h2>Identify the Ideal Candidate<span><i class="fa-solid fa-right-long"></i></span></h2>
+                            <h2>Identify the Ideal Candidate <span><i class="fa-solid fa-right-long"></i></span></h2>
                             <p>Evaluate the shortlisted candidates based on their qualifications and your criteria. Conduct interviews to gain insights into their expertise, ensuring you select the best match for your needs.</p>
 
                         </section>

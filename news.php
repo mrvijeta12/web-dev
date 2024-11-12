@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'news' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -200,43 +225,96 @@
 
             </div>
 
-
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - News Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>News Technology Expertise</h1>
-                        <p>Providing innovative solutions tailored for the news industry, enhancing content delivery, audience engagement, and data analytics for better reporting.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing innovative solutions tailored for the news industry, enhancing content delivery, audience engagement, and data analytics for better reporting.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>News Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom News Application Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom News Application Development</h1>
-                        <p>Building user-friendly applications that provide real-time news updates, personalized feeds, and seamless navigation to keep your audience informed.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building user-friendly applications that provide real-time news updates, personalized feeds, and seamless navigation to keep your audience informed.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom News Application Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Integrity -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Integrity</h1>
-                        <p>Implementing robust security protocols to protect sensitive data and maintain the integrity of news content against misinformation and cyber threats.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing robust security protocols to protect sensitive data and maintain the integrity of news content against misinformation and cyber threats.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Integrity</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Multi-Platform Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Multi-Platform Integration</h1>
-                        <p>Ensuring seamless integration of news distribution channels across multiple platforms, enhancing accessibility and improving audience reach.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring seamless integration of news distribution channels across multiple platforms, enhancing accessibility and improving audience reach.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Multi-Platform Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Advanced Analytics and Insights -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Advanced Analytics and Insights</h1>
-                        <p>Leveraging data analytics to gain insights into audience behavior, optimize content strategies, and drive engagement with targeted reporting.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging data analytics to gain insights into audience behavior, optimize content strategies, and drive engagement with targeted reporting.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Advanced Analytics and Insights</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Offering continuous support and timely updates to ensure your news platform remains operational, efficient, and ready to deliver breaking news.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering continuous support and timely updates to ensure your news platform remains operational, efficient, and ready to deliver breaking news.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -384,6 +462,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ##### faq #######  -->

@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -86,36 +92,91 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Fashion & Apparel -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-prestashop.png" alt="">
-                        <h1>Fashion & Apparel</h1>
-                        <p>Building stylish and user-friendly e-commerce sites on PrestaShop, enabling seamless browsing and purchasing experiences for fashion enthusiasts.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building stylish and user-friendly e-commerce sites on PrestaShop, enabling seamless browsing and purchasing experiences for fashion enthusiasts.
+                            </p>
+                            <img src="images/web-application-prestashop.png" alt="" />
+                            <h1>Fashion & Apparel</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Beauty & Cosmetics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/mobile-app-prestashop.png" alt="">
-                        <h1>Beauty & Cosmetics</h1>
-                        <p>Creating visually appealing PrestaShop stores tailored for beauty products, focusing on engaging layouts and intuitive shopping experiences.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating visually appealing PrestaShop stores tailored for beauty products, focusing on engaging layouts and intuitive shopping experiences.
+                            </p>
+                            <img src="images/mobile-app-prestashop.png" alt="" />
+                            <h1>Beauty & Cosmetics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Electronics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-prestashop.png" alt="">
-                        <h1>Electronics</h1>
-                        <p>Developing robust e-commerce platforms for electronics, offering features like product comparisons, user reviews, and secure payment options.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing robust e-commerce platforms for electronics, offering features like product comparisons, user reviews, and secure payment options.
+                            </p>
+                            <img src="images/ecommerce-prestashop.png" alt="" />
+                            <h1>Electronics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Home & Garden -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/real-time-prestashop.png" alt="">
-                        <h1>Home & Garden</h1>
-                        <p>Building PrestaShop sites that highlight home and garden products, featuring intuitive navigation and personalized recommendations for customers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building PrestaShop sites that highlight home and garden products, featuring intuitive navigation and personalized recommendations for customers.
+                            </p>
+                            <img src="images/real-time-prestashop.png" alt="" />
+                            <h1>Home & Garden</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Health & Wellness -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/pwa-prestashop.png" alt="">
-                        <h1>Health & Wellness</h1>
-                        <p>Creating e-commerce solutions in the health sector using PrestaShop, ensuring a smooth shopping experience with detailed product information.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating e-commerce solutions in the health sector using PrestaShop, ensuring a smooth shopping experience with detailed product information.
+                            </p>
+                            <img src="images/pwa-prestashop.png" alt="" />
+                            <h1>Health & Wellness</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Food & Beverage -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/game-development-prestashop.png" alt="">
-                        <h1>Food & Beverage</h1>
-                        <p>Developing engaging PrestaShop stores for food and beverage businesses, focusing on user-friendly interfaces and efficient order management systems.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing engaging PrestaShop stores for food and beverage businesses, focusing on user-friendly interfaces and efficient order management systems.
+                            </p>
+                            <img src="images/game-development-prestashop.png" alt="" />
+                            <h1>Food & Beverage</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
 

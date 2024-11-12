@@ -82,7 +82,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>Node.JS Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -221,43 +227,80 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Expert Knowledge -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive Node.JS experience.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <div class="content-wrapper">
+                            <p>Our highly skilled developers have extensive experience working with Node.js, building high-performance and scalable web applications that meet your business objectives effectively and efficiently.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Expert Knowledge</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Custom Solutions -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We offer custom Node.js development solutions designed to meet your unique business needs, ensuring the delivery of efficient, reliable, and scalable applications tailored to your goals.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Custom Solutions</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Timely Delivery -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We are committed to delivering Node.js projects on time, ensuring deadlines are met without compromising quality, and focusing on achieving your business goals efficiently and reliably.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Timely Delivery</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Ongoing Support -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We provide ongoing support and maintenance services for Node.js applications, ensuring your web solutions continue to run smoothly, evolve with your business, and deliver long-term success.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Ongoing Support</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Competitive Pricing -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Our Node.js development services are competitively priced, offering high-quality solutions that provide excellent value for your investment, ensuring your business gets the best return on its budget.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Competitive Pricing</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Proven Track Record -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>With a proven track record of successful Node.js projects, we have built a reputation for delivering reliable, high-quality solutions to clients worldwide, ensuring satisfaction and business growth.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Proven Track Record</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
 
                 </div>
 

@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'construction' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -205,39 +230,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Construction Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Construction Technology Expertise</h1>
-                        <p>Providing advanced technology solutions to streamline construction project management, enhance site safety, and boost overall productivity.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing advanced technology solutions to streamline construction project management, enhance site safety, and boost overall productivity.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Construction Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Construction Software Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Construction Software Development</h1>
-                        <p>Developing tailored software to automate processes, manage resources, and improve collaboration across construction projects of all sizes.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing tailored software to automate processes, manage resources, and improve collaboration across construction projects of all sizes.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Construction Software Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Compliance</h1>
-                        <p>Ensuring the highest standards of data security and compliance to protect sensitive project information and client details from cyber threats.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring the highest standards of data security and compliance to protect sensitive project information and client details from cyber threats.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Integrated Construction Management Systems -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Integrated Construction Management Systems</h1>
-                        <p>Seamlessly integrating multiple construction tools and platforms, providing a unified system to monitor project timelines, budgets, and resources.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Seamlessly integrating multiple construction tools and platforms, providing a unified system to monitor project timelines, budgets, and resources.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Integrated Construction Management Systems</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Scalable and Innovative Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalable and Innovative Solutions</h1>
-                        <p>Offering scalable software solutions designed to grow with your business, incorporating the latest innovations to enhance construction efficiency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering scalable software solutions designed to grow with your business, incorporating the latest innovations to enhance construction efficiency.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalable and Innovative Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Ongoing Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Ongoing Support and Maintenance</h1>
-                        <p>Delivering reliable support and continuous updates to ensure that your construction technology solutions remain effective and up-to-date.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering reliable support and continuous updates to ensure that your construction technology solutions remain effective and up-to-date.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Ongoing Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -385,6 +464,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ##### faq ######  -->

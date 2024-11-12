@@ -9,7 +9,7 @@ $meta_title = $summary = $social_sharing_image = $content = "";
 
 if ($slug) {
     // Prepare the SQL statement
-    $stmt = $conn->prepare("SELECT meta_title, summary, social_sharing_image, content FROM blog_posts WHERE slug = ?");
+    $stmt = $conn->prepare("SELECT meta_title, summary, social_sharing_image, content FROM webdev_blogs WHERE slug = ?");
 
     if ($stmt === false) {
         die('MySQL prepare error: ' . htmlspecialchars($conn->error));

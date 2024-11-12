@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'manufacturing' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -206,35 +231,88 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Manufacturing Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Agriculture Technology Expertise</h1>
-                        <p>Providing innovative technological solutions that enhance agricultural productivity, sustainability, and efficiency across various farming operations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing innovative technological solutions that enhance manufacturing processes, improve production efficiency, and reduce operational costs across various industries.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Manufacturing Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Manufacturing Software Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Agricultural Software Development</h1>
-                        <p>Developing tailored software solutions for precision farming, crop management, and supply chain optimization to meet the specific needs of modern agriculture.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing tailored software solutions for inventory management, production scheduling, and quality control to streamline manufacturing operations and meet the needs of modern factories.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Manufacturing Software Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Compliance</h1>
-                        <p>Ensuring the protection of sensitive agricultural data and compliance with industry regulations to foster trust and secure operations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring the protection of sensitive manufacturing data and compliance with industry standards and regulations, fostering trust and secure operations across production facilities.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless System Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless System Integration</h1>
-                        <p>Integrating IoT devices, sensors, and data analytics platforms for real-time monitoring and decision-making in agricultural practices.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Integrating advanced machinery, IoT sensors, and data analytics platforms to monitor manufacturing processes in real-time, optimizing production efficiency, and reducing downtime.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless System Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Innovative and Sustainable Manufacturing Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative and Sustainable Solutions</h1>
-                        <p>Offering advanced technologies and practices that promote sustainable farming, reducing waste, and improving resource management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering innovative solutions that promote sustainable manufacturing practices, reduce waste, improve resource efficiency, and reduce environmental impact across the production cycle.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative and Sustainable Manufacturing Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Delivering continuous support and regular updates to ensure agricultural systems run smoothly, maximizing productivity and minimizing downtime.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing round-the-clock support and system maintenance to ensure that manufacturing systems are always operational, reducing downtime and maximizing production capabilities.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
@@ -386,6 +464,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ##### faq #######  -->

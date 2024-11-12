@@ -81,7 +81,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -95,7 +96,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -109,7 +111,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -123,7 +126,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -137,7 +141,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -151,7 +156,8 @@
                             <p>Magneto Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -221,45 +227,86 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - eCommerce Innovators -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>eCommerce Innovators</h1>
-                        <p>Designing solutions that elevate your online store.</p>
+                        <div class="content-wrapper">
+                            <p>We design innovative solutions that elevate your online store, enhancing its functionality, user experience, and performance to create a seamless shopping experience for your customers.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>eCommerce Innovators</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom User Experiences -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom User Experiences</h1>
-                        <p>Enhancing customer journeys through tailored design.</p>
+                        <div class="content-wrapper">
+                            <p>We enhance customer journeys through customized design, focusing on intuitive navigation, personalized interactions, and engaging features that drive satisfaction and repeat business for your store.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom User Experiences</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Robust Application Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Robust Application Development</h1>
-                        <p>Building scalable Magento applications for any business.</p>
+                        <div class="content-wrapper">
+                            <p>Our team builds scalable Magento applications for businesses of all sizes, ensuring your online store is equipped with powerful features, robust security, and seamless integrations for growth.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Robust Application Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Reliable Performance Testing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reliable Performance Testing</h1>
-                        <p>Ensuring your store operates flawlessly under pressure.</p>
+                        <div class="content-wrapper">
+                            <p>We ensure that your Magento store operates flawlessly under pressure through rigorous performance testing, identifying potential issues, and optimizing your site’s speed and responsiveness.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reliable Performance Testing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Swift Setup and Launch -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Swift Setup and Launch</h1>
-                        <p>Fast and efficient deployment for your Magento store.</p>
+                        <div class="content-wrapper">
+                            <p>We ensure fast and efficient deployment for your Magento store, offering a seamless setup that gets your eCommerce platform up and running quickly without compromising quality.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Swift Setup and Launch</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Dedicated Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Dedicated Maintenance</h1>
-                        <p>Ongoing support to keep your store performing at its best.</p>
+                        <div class="content-wrapper">
+                            <p>We provide ongoing support and maintenance to ensure that your Magento store continues to perform at its best, addressing issues quickly and keeping your store updated with the latest features.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Dedicated Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

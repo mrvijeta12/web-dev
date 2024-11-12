@@ -82,7 +82,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>php Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -220,46 +226,85 @@
 
             </div>
 
-
-            <div class=" service_choose_us">
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - PHP Gurus -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>PHP Gurus</h1>
-                        <p>Seasoned developers ready to tackle complex challenges.</p>
+                        <div class="content-wrapper">
+                            <p>Experienced PHP developers who specialize in handling complex challenges and delivering scalable solutions tailored to meet your business needs with robust coding practices.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>PHP Gurus</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Dynamic Web Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Dynamic Web Solutions</h1>
-                        <p>Creating interactive and user-friendly websites.</p>
+                        <div class="content-wrapper">
+                            <p>We create interactive and user-friendly websites, combining the latest technologies with intuitive design to deliver a seamless experience across all devices and platforms.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Dynamic Web Solutions</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Customized Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customized Development</h1>
-                        <p>Solutions tailored to fit your specific requirements.</p>
+                        <div class="content-wrapper">
+                            <p>Our development solutions are tailored to your specific business requirements, ensuring that your project reflects your vision and drives success for your company.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Customized Development</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Rigorous Testing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Rigorous Testing</h1>
-                        <p>Ensuring your application runs flawlessly.</p>
+                        <div class="content-wrapper">
+                            <p>We conduct thorough testing to ensure that your application runs flawlessly, identifying potential issues early and delivering a high-quality, bug-free product.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Rigorous Testing</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Budget-Friendly Options -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Budget-Friendly Options</h1>
-                        <p>High-quality services that suit your budget.</p>
+                        <div class="content-wrapper">
+                            <p>We provide high-quality PHP development services that are cost-effective, ensuring you get the best value for your investment without compromising on quality.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Budget-Friendly Options</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Expert Guidance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Expert Guidance</h1>
-                        <p>Ongoing support and consultation for your projects.</p>
+                        <div class="content-wrapper">
+                            <p>We offer ongoing support and consultation to guide your projects from conception to completion, ensuring you make informed decisions every step of the way.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Expert Guidance</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
-
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

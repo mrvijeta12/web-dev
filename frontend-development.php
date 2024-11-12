@@ -25,24 +25,61 @@
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
-            <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Get Started Today</a>
+
+
+
+            <!-- new added  -->
+            <!-- Hero Section with Centered Text -->
+            <!-- <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Cutting-Edge Frontend Development
+                    </h1>
+                    <p>
+                        Creating visually stunning, user-friendly web interfaces.
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
+            </div>
+
+           
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div> -->
+
+
+
+            <!-- Hero Section with Centered Text -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <!-- <img src="./images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
+                    <h1 class="animated-heading" data-aos="fade-up" data-aos-duration="1500">
+                        Innovative React.Js Development
+                    </h1>
+                    <p data-aos="fade-up" data-aos-duration="1500">
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
+
+                </div>
+            </div>
+
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <img src="./images/frontend-developement-hero.jpg" alt="" />
             </div>
 
 
 
+
+
             <!-- ####### core area of expertise ######  -->
+
+
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Comprehensive Expertise in React.js for Modern Applications</h1>
 
@@ -85,46 +122,98 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/consultation.png" alt="">
-                        <h1>Healthcare
-                        </h1>
-                        <p>Develop user-friendly healthcare applications, improving patient engagement and streamlining processes like appointment scheduling, telehealth, and electronic health records management.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ux.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Create dynamic e-commerce platforms with seamless navigation, personalized user experiences, and real-time updates to boost sales and customer satisfaction.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/development.png" alt="">
-                        <h1> Finance and Banking</h1>
-                        <p>Build secure online banking solutions and financial management tools, ensuring real-time data visualization and user-friendly interfaces for clients’ financial needs.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/testing.png" alt="">
-                        <h1>Education</h1>
-                        <p> Develop interactive educational platforms that enhance learning through engaging user experiences, offering features like online courses, quizzes, and progress tracking.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/deployment.png" alt="">
-                        <h1>Travel and Hospitality</h1>
-                        <p>Create intuitive travel booking websites and management systems, providing users with real-time availability, personalized recommendations, and streamlined reservation processes.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Social Media</h1>
-                        <p>Build engaging social networking platforms that facilitate real-time interactions, dynamic content sharing, and personalized user experiences to foster community connections.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Develop user-friendly healthcare applications, improving patient
+                                engagement and streamlining processes like appointment scheduling,
+                                telehealth, and electronic health records management.
+                            </p>
+                            <img src="images/consultation.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Create dynamic e-commerce platforms with seamless navigation,
+                                personalized user experiences, and real-time updates to boost
+                                sales and customer satisfaction.
+                            </p>
+                            <img src="images/ux.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Build secure online banking solutions and financial management
+                                tools, ensuring real-time data visualization and user-friendly
+                                interfaces for clients’ financial needs.
+                            </p>
+                            <img src="images/development.png" alt="" />
+                            <h1>Finance and Banking</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Develop interactive educational platforms that enhance learning
+                                through engaging user experiences, offering features like online
+                                courses, quizzes, and progress tracking.
+                            </p>
+                            <img src="images/testing.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Create intuitive travel booking websites and management systems,
+                                providing users with real-time availability, personalized
+                                recommendations, and streamlined reservation processes.
+                            </p>
+                            <img src="images/deployment.png" alt="" />
+                            <h1>Travel and Hospitality</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Build engaging social networking platforms that facilitate
+                                real-time interactions, dynamic content sharing, and personalized
+                                user experiences to foster community connections.
+                            </p>
+                            <img src="images/support.png" alt="" />
+                            <h1>Social Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
                 </div>
-
             </div>
 
             <!-- ####### choose language ######  -->
@@ -343,7 +432,7 @@
 
             <section class="book">
                 <h1>Let’s Begin Your Project Together!</h1>
-                <a href="./contact.php">Contact us</a>
+                <a href="#" class="reopenPopup">Contact us</a>
             </section>
 
 

@@ -82,7 +82,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>Laravel Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -221,45 +227,85 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Laravel Specialists -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Laravel Specialists</h1>
-                        <p>Expert developers for advanced web applications.</p>
+                        <div class="content-wrapper">
+                            <p>Our team consists of expert Laravel developers specializing in advanced web applications, delivering high-performance solutions that are scalable, reliable, and built to meet your business needs effectively.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Laravel Specialists</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Modern Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Modern Solutions</h1>
-                        <p>Utilizing Laravel for cutting-edge development.</p>
+                        <div class="content-wrapper">
+                            <p>We leverage Laravel's cutting-edge features and tools to develop modern, efficient, and secure applications that are both user-friendly and scalable to fit the unique needs of your business.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Modern Solutions</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Flexible Architecture -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Flexible Architecture</h1>
-                        <p>Creating scalable and adaptable applications.</p>
+                        <div class="content-wrapper">
+                            <p>We create flexible and adaptable application architectures using Laravel, ensuring that your project is ready to scale, evolve, and integrate with new technologies as your business grows.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Flexible Architecture</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Thorough Quality Assurance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Thorough Quality Assurance</h1>
-                        <p>Ensuring reliability and security in every project.</p>
+                        <div class="content-wrapper">
+                            <p>Our quality assurance process ensures that every Laravel project is thoroughly tested for reliability, performance, and security, delivering a seamless user experience with no compromises in quality.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Thorough Quality Assurance</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Value-Driven Services -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Value-Driven Services</h1>
-                        <p>High-quality development that respects your budget.</p>
+                        <div class="content-wrapper">
+                            <p>We offer value-driven Laravel development services, providing you with high-quality, efficient, and reliable solutions while respecting your budget and ensuring a great return on investment.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Value-Driven Services</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Comprehensive Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Comprehensive Support</h1>
-                        <p>Ongoing assistance from start to finish.</p>
+                        <div class="content-wrapper">
+                            <p>We provide comprehensive support throughout the lifecycle of your Laravel project, ensuring that you receive timely assistance, updates, and maintenance for ongoing success and growth.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Comprehensive Support</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
-
-
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

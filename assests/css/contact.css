@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 
 .wrapper {
@@ -13,11 +13,19 @@ body {
   display: flex;
   flex-direction: column;
   /* margin-top: 90px; */
+  word-spacing: 2px;
+}
+.wrapper p {
+  font-family: Roboto-Regular;
+
+  line-height: 25px;
+  font-size: 17px;
 }
 
 .contact_wrapper input,
 .contact_wrapper textarea {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Roboto-Regular;
+
   line-height: 25px;
   font-size: 1rem;
 }
@@ -26,12 +34,14 @@ body {
 .contact_wrapper label,
 .contact_wrapper input button,
 button {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: Roboto-Medium;
+
   font-size: 1.25rem;
 }
 
 .contact_data_item label {
   color: #0363ff;
+  font-family: Roboto-Bold;
 }
 
 /* ################################################ HERO SECTION ########################################  */
@@ -43,7 +53,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../../images/hero-about.jpg);
+  background: url(../../images/contact-hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,13 +62,21 @@ button {
   gap: 20px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   text-align: center;
 }
 .hero h1,
 .hero h2 {
   color: white;
   z-index: 2;
+}
+.hero h1 {
+  font-size: 40px;
+  font-family: Roboto-Bold;
+}
+.hero h2 {
+  font-size: 24px;
+  font-family: Roboto-Regular;
 }
 .hero::before {
   content: "";
@@ -78,11 +96,13 @@ button {
   cursor: pointer;
   text-decoration: none;
   border-radius: 25%;
-  font-family: "Montserrat-Regular", sans-serif;
-  letter-spacing: 1.5px;
+  font-family: Roboto-Medium;
+
+  /* letter-spacing: 1.5px; */
   margin-top: 10px;
   z-index: 2;
   border-radius: 40px;
+  font-size: 18px;
 
   background-color: #0363ff;
   border: 1px solid #0363ff;
@@ -99,10 +119,11 @@ button {
 /* ######## contact detail ########  */
 
 .contact_child {
-  padding: 60px 20px;
+  padding: 20px;
 }
 .contact_child h3 {
   margin: 0px 0px 15px 0px;
+  font-family: Roboto-Bold;
 }
 .contact_child h3,
 .contact_child p {
@@ -182,12 +203,16 @@ button {
   outline: none;
 }
 
+.contact_data_item label {
+  font-family: Roboto-Medium;
+}
+
 .contact_data_item input,
 .contact_data_item textarea {
   padding: 10px 0px;
   border: none;
   border-bottom: 2px solid grey;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact_data_item textarea {
@@ -205,6 +230,7 @@ input[type="submit"] {
   border-radius: 10px;
   /* border: none; */
   cursor: pointer;
+  font-family: Roboto-Bold;
 }
 input[type="submit"]:hover {
   background-color: white;
@@ -214,7 +240,7 @@ input[type="submit"]:hover {
 /* ######### CONTACT PERSON ########  */
 .contact-person-wrapper {
   width: 100%;
-  padding: 60px 40px;
+  padding: 60px 40px 0px;
   /* border: 2px solid red; */
   display: flex;
   color: white;
@@ -232,6 +258,8 @@ input[type="submit"]:hover {
 }
 .child1 h1 {
   font-size: 3rem;
+  font-family: Roboto-Bold;
+  line-height: 60px;
 }
 .child1 a {
   padding: 12px 16px;
@@ -241,6 +269,7 @@ input[type="submit"]:hover {
   width: fit-content;
   display: inline-block;
   border-radius: 24px;
+  font-family: Roboto-Medium;
 }
 .child1 a:hover {
   background-color: black;
@@ -254,10 +283,16 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 .child2 a {
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-family: Roboto-Regular;
 }
 .child2 h1 {
   font-size: 2rem;
+  font-family: Roboto-Medium;
+}
+.child2 h3 {
+  font-family: Roboto-Regular;
+  font-size: 18px;
 }
 .contact-person-image {
   width: 150px;
@@ -290,6 +325,23 @@ input[type="submit"]:hover {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+
+  padding: 50px 30px;
+  background: black;
+  color: white;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: white;
+
+  font-family: Roboto-Bold;
+
+  line-height: 60px;
+}
+
 /*#########  FAQ ###### */
 .faq-wrapper {
   display: flex;
@@ -301,7 +353,7 @@ input[type="submit"]:hover {
   width: 100%;
   box-sizing: border-box;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Each FAQ item (child) */
@@ -327,7 +379,8 @@ input[type="submit"]:hover {
 /* Style for headings */
 .faq-heading h1 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Roboto-Medium;
   color: #fff;
 }
 
@@ -342,7 +395,7 @@ input[type="submit"]:hover {
 .faq-child p {
   margin-top: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -427,6 +480,33 @@ input[type="submit"]:hover {
   .child1 h1 {
     font-size: 2rem;
   }
+  .faq-wrapper {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .faq-child {
+    width: 100%;
+  }
+  .faq-heading h1 {
+    font-size: 17px;
+  }
+  .wrapper p {
+    font-size: 16px;
+  }
+  .child1 h1 {
+    font-size: 2rem;
+
+    line-height: 45px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+  .container h1 {
+    font-size: 2rem;
+    /* font-family: Montserrat-SemiBold; */
+    line-height: 45px;
+  }
 }
 @media screen and (max-width: 593px) {
   input[type="submit"] {
@@ -440,6 +520,9 @@ input[type="submit"]:hover {
   }
   .contact_data {
     padding: 20px 0px;
+  }
+  .contact-person-wrapper {
+    padding: 60px 15px 0px;
   }
 }
 @media screen and (max-width: 480px) {

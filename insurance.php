@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'insurance' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -205,39 +230,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Insurance Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/insurance_expertise.png" alt="">
-                        <h1>Insurance Technology Expertise</h1>
-                        <p>Providing innovative technology solutions tailored for the insurance sector, enhancing risk assessment, customer engagement, and operational efficiency.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing innovative technology solutions tailored for the insurance sector, enhancing risk assessment, customer engagement, and operational efficiency.
+                            </p>
+                            <img src="images/insurance_expertise.png" alt="" />
+                            <h1>Insurance Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Insurance Software Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/custom_software.png" alt="">
-                        <h1>Custom Insurance Software Solutions</h1>
-                        <p>Developing bespoke software applications that streamline policy management, claims processing, and customer relationship management for insurance providers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing bespoke software applications that streamline policy management, claims processing, and customer relationship management for insurance providers.
+                            </p>
+                            <img src="images/custom_software.png" alt="" />
+                            <h1>Custom Insurance Software Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Protection and Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/security.png" alt="">
-                        <h1>Data Protection and Compliance</h1>
-                        <p>Implementing stringent data security protocols to protect sensitive information and ensure compliance with industry regulations and standards.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing stringent data security protocols to protect sensitive information and ensure compliance with industry regulations and standards.
+                            </p>
+                            <img src="images/security.png" alt="" />
+                            <h1>Data Protection and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Integrated Systems for Enhanced Efficiency -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/integration.png" alt="">
-                        <h1>Integrated Systems for Enhanced Efficiency</h1>
-                        <p>Seamlessly integrating various systems to facilitate data sharing, improve workflows, and provide real-time insights into operations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Seamlessly integrating various systems to facilitate data sharing, improve workflows, and provide real-time insights into operations.
+                            </p>
+                            <img src="images/integration.png" alt="" />
+                            <h1>Integrated Systems for Enhanced Efficiency</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Innovative Solutions for Risk Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/innovation.png" alt="">
-                        <h1>Innovative Solutions for Risk Management</h1>
-                        <p>Leveraging advanced analytics and AI to enhance risk assessment and underwriting processes, ensuring better decision-making and reduced losses.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging advanced analytics and AI to enhance risk assessment and underwriting processes, ensuring better decision-making and reduced losses.
+                            </p>
+                            <img src="images/innovation.png" alt="" />
+                            <h1>Innovative Solutions for Risk Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Continuous Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/support.png" alt="">
-                        <h1>Continuous Support and Maintenance</h1>
-                        <p>Offering 24/7 support and regular updates to ensure your insurance technology solutions operate smoothly and efficiently at all times.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering 24/7 support and regular updates to ensure your insurance technology solutions operate smoothly and efficiently at all times.
+                            </p>
+                            <img src="images/support.png" alt="" />
+                            <h1>Continuous Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -385,6 +464,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ###### faq #####  -->

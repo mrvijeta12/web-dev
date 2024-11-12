@@ -28,17 +28,26 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <!-- <img src="./images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
+                    <h1 class="animated-heading">
+                        Advanced Angular.JS Solutions
+                    </h1>
+                    <p>
+                        Transforming user experiences with responsive, high-performance applications built on Angular.
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
+
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
+
+
+
 
 
 
@@ -86,40 +95,172 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Angular Solutions</h1>
             </div>
 
-            <div class="service_choose_us">
+            <!-- <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-angular.png" alt="">
-                        <h1>Technology</h1>
-                        <p>Utilizing Angular to build dynamic, responsive web applications that enhance user engagement and streamline workflows with modular architecture.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Angular to build dynamic, responsive web applications that enhance user engagement and streamline workflows with modular architecture.
+                            </p>
+                            <img src="images/web-application-angular.png" alt="" />
+                            <h2>Technology</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/mobile-app-angular.png" alt="">
-                        <h1>Mobile Development</h1>
-                        <p>Creating powerful cross-platform mobile applications using Angular with Ionic, ensuring a native-like experience on both iOS and Android.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating powerful cross-platform mobile applications using Angular with Ionic, ensuring a native-like experience on both iOS and Android.
+                            </p>
+                            <img src="images/mobile-app-angular.png" alt="" />
+                            <h2>Mobile Development</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-angular.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Developing feature-rich e-commerce platforms with Angular, offering seamless user experiences, secure transactions, and real-time inventory management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing feature-rich e-commerce platforms with Angular, offering seamless user experiences, secure transactions, and real-time inventory management.
+                            </p>
+                            <img src="images/ecommerce-angular.png" alt="" />
+                            <h2>E-commerce</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/real-time-angular.png" alt="">
-                        <h1>Finance</h1>
-                        <p>Building real-time applications with Angular that provide instant data updates and enhance user interaction in various sectors.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building real-time applications with Angular that provide instant data updates and enhance user interaction in various sectors.
+                            </p>
+                            <img src="images/real-time-angular.png" alt="" />
+                            <h2>Finance</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/pwa-angular.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Creating Progressive Web Apps with Angular that deliver the best of web and mobile experiences, ensuring fast performance and offline support.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating Progressive Web Apps with Angular that deliver the best of web and mobile experiences, ensuring fast performance and offline support.
+                            </p>
+                            <img src="images/pwa-angular.png" alt="" />
+                            <h2>Retail</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/game-development-angular.png" alt="">
-                        <h1>Gaming</h1>
-                        <p>Developing interactive games using Angular, integrating engaging user interfaces and powerful libraries to captivate players.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive games using Angular, integrating engaging user interfaces and powerful libraries to captivate players.
+                            </p>
+                            <img src="images/game-development-angular.png" alt="" />
+                            <h2>Gaming</h2>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div> -->
+            <div class="service_choose_us">
+                <div class="services_container">
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Angular to build dynamic, responsive web applications that enhance user engagement and streamline workflows with modular architecture.
+                            </p>
+                            <img src="images/web-application-angular.png" alt="" />
+                            <h1>Technology</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating powerful cross-platform mobile applications using Angular with Ionic, ensuring a native-like experience on both iOS and Android.
+                            </p>
+                            <img src="images/mobile-app-angular.png" alt="" />
+                            <h1>Mobile Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing feature-rich e-commerce platforms with Angular, offering seamless user experiences, secure transactions, and real-time inventory management.
+                            </p>
+                            <img src="images/ecommerce-angular.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building real-time applications with Angular that provide instant data updates and enhance user interaction in various sectors.
+                            </p>
+                            <img src="images/real-time-angular.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating Progressive Web Apps with Angular that deliver the best of web and mobile experiences, ensuring fast performance and offline support.
+                            </p>
+                            <img src="images/pwa-angular.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive games using Angular, integrating engaging user interfaces and powerful libraries to captivate players.
+                            </p>
+                            <img src="images/game-development-angular.png" alt="" />
+                            <h1>Gaming</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
+
 
             <!-- ####### choose language ######  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">

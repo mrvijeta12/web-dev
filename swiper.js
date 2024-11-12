@@ -24,7 +24,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// #### FAQ #######
+//! #### FAQ #######
 
 // Function to toggle FAQ expansion
 function toggleFAQEventListener(isMobile) {
@@ -77,42 +77,6 @@ applyResponsiveFAQ();
 // Call the function again when the window is resized
 window.addEventListener("resize", applyResponsiveFAQ);
 
-//! ### pop up #####
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Check if popup was previously closed
-//   const popupClosed = localStorage.getItem("popupClosed");
-
-//   if (!popupClosed) {
-//     console.log("Popup will show after 10 seconds"); // Debug message
-
-//     // Show the popup after 10 seconds
-//     setTimeout(() => {
-//       const popup = document.getElementById("contactPopup");
-//       if (popup) {
-//         popup.style.display = "flex";
-//         console.log("Popup displayed");
-//       } else {
-//         console.log("Popup element not found");
-//       }
-//     }, 10000); // 10 seconds
-//   } else {
-//     console.log("Popup was previously closed, not displaying again");
-//   }
-
-//   // Close the popup when the close button is clicked
-//   const closeButton = document.getElementById("closePopup");
-//   if (closeButton) {
-//     closeButton.addEventListener("click", function () {
-//       document.getElementById("contactPopup").style.display = "none";
-//       // Store popup closed state in local storage
-//       localStorage.setItem("popupClosed", "true");
-//       console.log("Popup closed and localStorage updated");
-//     });
-//   } else {
-//     console.log("Close button not found");
-//   }
-// });
-
 //! ##### animated counter ####
 
 const counters = document.querySelectorAll(".counter");
@@ -161,24 +125,6 @@ window.onload = function () {
 };
 
 //! ## home page flipcart ###
-// // Select all work-child elements
-// const workChildren = document.querySelectorAll(".collaboration-child");
-// // console.log(workChildren);
-
-// // Add hover event listeners to each work-child
-// workChildren.forEach((child) => {
-//   child.addEventListener("mouseenter", () => {
-//     const paragraph = child.querySelector("p");
-//     paragraph.style.display = "block";
-//     child.classList.add("expanded");
-//   });
-
-//   child.addEventListener("mouseleave", () => {
-//     const paragraph = child.querySelector("p");
-//     // paragraph.style.display = "none";
-//     child.classList.remove("expanded");
-//   });
-// });
 
 const workChildren = document.querySelectorAll(".collaboration-child");
 
@@ -361,5 +307,48 @@ document.addEventListener("DOMContentLoaded", function () {
   const spans = document.querySelectorAll(".animated-heading span");
   spans.forEach((span, index) => {
     span.style.animationDelay = `${index * 0.1}s`;
+  });
+});
+
+//! card paragraphs animation
+
+function toggleReadMore(button) {
+  const serviceChild = button.parentElement;
+  const allServiceChildren = document.querySelectorAll(".services_child");
+
+  // Close any other open cards
+  allServiceChildren.forEach((child) => {
+    if (child !== serviceChild) {
+      child.classList.remove("card-open");
+    }
+  });
+
+  // Toggle the clicked card
+  serviceChild.classList.toggle("card-open");
+}
+
+document.addEventListener("click", function (event) {
+  const serviceChildren = document.querySelectorAll(".services_child");
+
+  serviceChildren.forEach((serviceChild) => {
+    if (!serviceChild.contains(event.target)) {
+      serviceChild.classList.remove("card-open");
+    }
+  });
+});
+
+document.querySelectorAll(".services_child").forEach((serviceChild) => {
+  serviceChild.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+});
+
+document.addEventListener("mouseover", function (event) {
+  const serviceChildren = document.querySelectorAll(".services_child");
+
+  serviceChildren.forEach((serviceChild) => {
+    if (window.innerWidth > 768 && !serviceChild.contains(event.target)) {
+      serviceChild.classList.remove("card-open");
+    }
   });
 });

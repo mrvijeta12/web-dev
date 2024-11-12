@@ -28,17 +28,23 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Expert WordPress Development
+                    </h1>
+                    <p>
+                        Building customizable, scalable, and secure WordPress websites.
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
+
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
+
 
 
 
@@ -82,7 +88,7 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced WordPress Solutions</h1>
             </div>
 
-            <div class="service_choose_us">
+            <!-- <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/blog-wordpress.png" alt="">
@@ -115,7 +121,97 @@
                         <p>Establishing community-focused websites on WordPress, facilitating discussions, events, and member interactions through forums and plugins.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="service_choose_us">
+                <div class="services_container">
+
+                    <!-- Service 1 - Blogging -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating engaging and user-friendly blogs using WordPress, enabling writers to share their thoughts and connect with audiences seamlessly.
+                            </p>
+                            <img src="images/blog-wordpress.png" alt="" />
+                            <h1>Blogging</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 2 - E-commerce -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing robust online stores with WordPress and WooCommerce, offering secure transactions, inventory management, and customizable shopping experiences.
+                            </p>
+                            <img src="images/ecommerce-wordpress.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Portfolio -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Designing stunning portfolio websites for creatives to showcase their work, utilizing WordPress's flexibility and variety of themes.
+                            </p>
+                            <img src="images/portfolio-wordpress.png" alt="" />
+                            <h1>Portfolio</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Education -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating comprehensive educational platforms using WordPress, featuring course management, quizzes, and student progress tracking.
+                            </p>
+                            <img src="images/education-wordpress.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Real Estate -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building interactive real estate websites with WordPress, allowing agents to display listings, manage inquiries, and connect with buyers.
+                            </p>
+                            <img src="images/real-estate-wordpress.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Community -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Establishing community-focused websites on WordPress, facilitating discussions, events, and member interactions through forums and plugins.
+                            </p>
+                            <img src="images/community-wordpress.png" alt="" />
+                            <h1>Community</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
 
 
         </div>

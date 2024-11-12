@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'travel' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -196,41 +221,95 @@
 
 
             <div class="service_choose_us">
-
                 <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>On-Demand Technology Expertise</h1>
-                        <p>Specializing in cutting-edge on-demand technology solutions designed to cater to the dynamic needs of businesses, enhancing speed, scalability, and customer satisfaction.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom On-Demand App Development</h1>
-                        <p>Building highly responsive and user-friendly on-demand apps tailored to your business needs, enabling seamless experiences for your customers across all platforms.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and User Privacy</h1>
-                        <p>Implementing robust security measures to protect user data and ensure compliance with privacy regulations, creating a secure environment for your on-demand platform.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless Integration Capabilities</h1>
-                        <p>Integrating your on-demand app with various third-party services and APIs to provide a comprehensive solution that meets diverse user requirements effortlessly.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovation and Scalability</h1>
-                        <p>Empowering your on-demand business with scalable technologies and innovative features that adapt to evolving market demands and enhance user engagement.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Delivering round-the-clock technical support and regular updates to ensure your on-demand platform operates seamlessly without disruptions or downtime.</p>
-                    </div>
-                </div>
 
+                    <!-- Service 1 - On-Demand Technology Expertise -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Specializing in cutting-edge on-demand technology solutions designed to cater to the dynamic needs of businesses, enhancing speed, scalability, and customer satisfaction.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>On-Demand Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 2 - Custom On-Demand App Development -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building highly responsive and user-friendly on-demand apps tailored to your business needs, enabling seamless experiences for your customers across all platforms.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom On-Demand App Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Data Security and User Privacy -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing robust security measures to protect user data and ensure compliance with privacy regulations, creating a secure environment for your on-demand platform.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and User Privacy</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Seamless Integration Capabilities -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Integrating your on-demand app with various third-party services and APIs to provide a comprehensive solution that meets diverse user requirements effortlessly.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Integration Capabilities</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Innovation and Scalability -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Empowering your on-demand business with scalable technologies and innovative features that adapt to evolving market demands and enhance user engagement.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovation and Scalability</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - 24/7 Support and Maintenance -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering round-the-clock technical support and regular updates to ensure your on-demand platform operates seamlessly without disruptions or downtime.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -243,7 +322,7 @@
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/progress.png" alt="Image on Left">
+                        <img src="./images/10.jpg" alt="Image on Left">
                     </div>
 
 
@@ -388,6 +467,38 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
             <!-- ##### faq #######  -->
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1>On-Demand Website Development FAQs</h1>

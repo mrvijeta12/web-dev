@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'saas' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -206,39 +231,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - SaaS Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>SaaS Technology Expertise</h1>
-                        <p>Delivering innovative SaaS solutions that streamline business operations, enhance scalability, and provide seamless access to software applications anytime, anywhere.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering innovative SaaS solutions that streamline business operations, enhance scalability, and provide seamless access to software applications anytime, anywhere.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>SaaS Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom SaaS Platform Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom SaaS Platform Development</h1>
-                        <p>Building tailored SaaS platforms that address specific business needs, ensuring flexibility, user-friendly interfaces, and scalable architecture for future growth.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building tailored SaaS platforms that address specific business needs, ensuring flexibility, user-friendly interfaces, and scalable architecture for future growth.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom SaaS Platform Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Compliance</h1>
-                        <p>Implementing advanced security protocols to protect sensitive customer data, ensuring compliance with global standards and building user trust in your SaaS products.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing advanced security protocols to protect sensitive customer data, ensuring compliance with global standards and building user trust in your SaaS products.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless Third-Party Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless Third-Party Integration</h1>
-                        <p>Ensuring your SaaS platform integrates effortlessly with existing tools and third-party services, enabling enhanced functionality and a unified user experience.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Ensuring your SaaS platform integrates effortlessly with existing tools and third-party services, enabling enhanced functionality and a unified user experience.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Third-Party Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Scalable and Innovative Architecture -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalable and Innovative Architecture</h1>
-                        <p>Leveraging cutting-edge technology to build SaaS platforms that support rapid scaling, robust performance, and innovative features tailored to business growth.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging cutting-edge technology to build SaaS platforms that support rapid scaling, robust performance, and innovative features tailored to business growth.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalable and Innovative Architecture</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Reliable Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reliable Support and Maintenance</h1>
-                        <p>Providing proactive support, timely updates, and continuous optimization to ensure your SaaS platform remains efficient, secure, and up-to-date with industry trends.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing proactive support, timely updates, and continuous optimization to ensure your SaaS platform remains efficient, secure, and up-to-date with industry trends.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reliable Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -383,6 +462,38 @@
                 </div>
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- #### faq #####  -->

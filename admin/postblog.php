@@ -55,8 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $slug = ltrim($slug, '-');
 
     // Insert blog data into the database
-    $sql = "INSERT INTO blog_posts (meta_title, summary, content,  page_type ,  social_sharing_image, slug ) 
-            VALUES ('$meta_title', '$summary', '$content', ' $page_type', '$featureImagePath', '$slug' )";
+    $sql = "INSERT INTO webdev_blogs (meta_title, summary, content,  page_type ,  social_sharing_image, slug ) 
+            VALUES ('$meta_title', '$summary', '$content', '$page_type', '$featureImagePath', '$slug' )";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: dashboard.php");

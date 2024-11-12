@@ -83,7 +83,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -97,7 +98,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -111,7 +113,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -125,7 +128,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -139,7 +143,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -153,7 +158,8 @@
                             <p>Drupal Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -227,45 +233,83 @@
 
             </div>
 
-
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - Drupal Specialists -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Drupal Specialists</h1>
-                        <p>Experienced developers with in-depth Drupal knowledge.</p>
+                        <div class="content-wrapper">
+                            <p>Our experienced developers specialize in Drupal, offering in-depth knowledge to build dynamic websites, ensuring high performance and flexibility while aligning with your business objectives.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Drupal Specialists</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Solutions</h1>
-                        <p>Tailored services to meet your specific needs.</p>
+                        <div class="content-wrapper">
+                            <p>We provide tailored Drupal solutions designed to address your unique business requirements, ensuring the platform works efficiently and scales smoothly to meet your evolving needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Swift Deployment -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Swift Deployment</h1>
-                        <p>Efficient launch without compromising quality.</p>
+                        <div class="content-wrapper">
+                            <p>We focus on the swift deployment of your Drupal website, ensuring quick go-live times while maintaining high standards for quality, security, and scalability for your business needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Swift Deployment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Reliable Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reliable Support</h1>
-                        <p>Ongoing maintenance for seamless website operation.</p>
+                        <div class="content-wrapper">
+                            <p>We offer continuous maintenance and support, providing proactive solutions to ensure your Drupal website operates seamlessly and delivers optimal performance throughout its lifecycle.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reliable Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Cost-Effective Pricing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Cost-Effective Pricing</h1>
-                        <p>Affordable services with top-notch quality.</p>
+                        <div class="content-wrapper">
+                            <p>We offer competitive pricing for high-quality Drupal services, ensuring that you receive exceptional value while maintaining cost-efficiency, allowing your business to stay within budget.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Cost-Effective Pricing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Proven Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Expertise</h1>
-                        <p>A history of successful Drupal projects and satisfied clients.</p>
+                        <div class="content-wrapper">
+                            <p>With a proven track record of successful Drupal implementations, we deliver solutions that have consistently satisfied clients across industries, ensuring quality and lasting results.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Proven Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
-
-
 
             </div>
 

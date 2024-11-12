@@ -8,28 +8,34 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 .wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   /* margin-top: 90px; */
+  word-spacing: 2px;
+}
+.wrapper p {
+  font-family: Roboto-Regular;
+  line-height: 25px;
+  font-size: 17px;
 }
 
 /* ####### HERO SECTION #########  */
 
 .hero {
   width: 100%;
-  /* height: 100vh; */
+
   height: 550px;
   display: flex;
-  /* background-color: black; */
-  /* background: linear-gradient(
+
+  background: linear-gradient(
     91.3deg,
     rgb(135, 174, 220) 1.5%,
     rgb(255, 255, 255) 100.3%
-  ); */
+  );
 
   /* background: linear-gradient(to right, #434343 0%, black 100%); */
   /* background: linear-gradient(
@@ -38,13 +44,17 @@ html {
     rgb(63, 76, 119) 70.2%
   ); */
 
-  background: radial-gradient(
+  background-color: #f5f5f5;
+  color: black;
+
+  /* background: radial-gradient(
     circle at 48.7% 44.3%,
     rgb(30, 144, 231) 0%,
     rgb(56, 113, 209) 22.9%,
     rgb(38, 76, 140) 76.7%,
     rgb(31, 63, 116) 100.2%
-  );
+  ); */
+
   /* border: 2px solid blue; */
   margin-top: 70px;
 }
@@ -60,16 +70,19 @@ html {
 }
 .hero h1 {
   font-size: 3rem;
-  color: white;
+  /* color: white; */
+  color: black;
 }
 .child a {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 6px;
-  color: white;
+  /* color: white; */
+  color: black;
   font-size: 16px;
+  font-family: Roboto-Bold;
 }
 .child2 {
   width: 50%;
@@ -92,7 +105,10 @@ html {
 .child1 h3,
 .child1 a {
   margin: 0px 20px;
-  /* color: black; */
+  color: black;
+}
+.child1 h3 {
+  font-family: Roboto-Regular;
 }
 /* .logo {
   position: absolute;
@@ -118,6 +134,7 @@ html {
 .animated-heading span {
   opacity: 0;
   animation: fadeIn 0.5s ease forwards;
+  font-family: Roboto-Bold;
 }
 
 @keyframes fadeIn {
@@ -138,10 +155,11 @@ html {
   font-size: 3rem;
   padding: 30px 0px;
   color: white;
+  font-family: Roboto-Bold;
 }
 
 .intro p {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   color: white;
 }
 
@@ -174,12 +192,13 @@ html {
 }
 
 .detail-title p {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   padding: 20px 0px;
   /* text-align: center; */
   color: white;
   /* text-decoration: none; */
   border-bottom: 1px solid whitesmoke;
+  font-family: Roboto-Medium !important;
 }
 .detail-title strong {
   margin-right: 20px;
@@ -206,9 +225,12 @@ html {
   /* text-decoration: underline; */
   color: blue;
   display: flex;
+  font-family: Roboto-Medium !important;
+  font-size: 20px !important;
 }
 p.tab.active-tab {
   color: black;
+  font-family: Roboto-Bold !important;
 }
 .content-header {
   /* border: 2px solid red; */
@@ -218,6 +240,10 @@ p.tab.active-tab {
 }
 .content-header strong {
   font-size: 1.25rem;
+}
+.content-header h3 {
+  font-family: Roboto-Bold;
+  font-size: 24px;
 }
 .content-header i {
   display: none;
@@ -235,7 +261,10 @@ p.tab.active-tab {
   margin-bottom: 20px;
   margin-top: 50px;
   text-transform: capitalize;
+  font-family: Roboto-Bold;
+  line-height: 60px;
 }
+
 .benefits-wrapper p {
   margin-bottom: 20px;
 }
@@ -245,12 +274,13 @@ p.tab.active-tab {
   justify-content: space-around;
   /* border: 2px solid blue; */
 
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
-.benefits-sectors li {
-  font-size: 1.25rem;
+.benefits-sectors ul li {
+  font-size: 20px;
   /* list-style-position: inside; */
   margin-bottom: 20px;
+  font-family: Roboto-Regular;
 }
 .benefits-sectors li::marker {
   color: #0363ff;
@@ -260,7 +290,7 @@ p.tab.active-tab {
 .swiper {
   width: 100%;
   height: 100%;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   padding: 0px 40px;
   background: darkgrey;
   padding: 0px 40px !important;
@@ -307,6 +337,7 @@ p.tab.active-tab {
 .swiper-slide h2 {
   text-align: left;
   color: white;
+  font-family: Roboto-Medium;
 }
 
 .swiper-slide p {
@@ -317,53 +348,25 @@ p.tab.active-tab {
 
 /* ############## why choose us  ########################################  */
 .container {
-  /* text-align: center; */
-  /* margin-bottom: 30px; */
   padding: 50px 30px;
 }
 
 .container h1 {
   font-size: 3rem;
   color: white;
-  /* margin-top: 40px; */
+
+  font-family: Roboto-Bold;
+
+  line-height: 60px;
 }
 
 .service_choose_us {
-  position: relative;
-  /* background-image: url("../../images/service.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 30px 0px 0px 0px; */
   text-align: center;
-  /* margin-bottom: 100px; */
-  /* margin-top: 50px; */
   background-color: black;
-}
-
-/* .service_choose_us::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-} */
-.service_choose_us h2 {
-  font-size: 24px;
-  color: white;
-}
-
-.service_choose_us > * {
-  position: relative;
-  z-index: 2;
-  color: black;
-  /* padding: 20px; */
+  padding: 50px 10px;
 }
 
 .services_container {
@@ -375,19 +378,27 @@ p.tab.active-tab {
   justify-content: center;
   padding: 0px 30px;
 }
+
 .services_child {
-  max-width: 350px;
-  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #121212;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 10px;
-  /* border: 1px solid #E9AB04; */
-  /* border-radius: 8px; */
-  background-color: #121212;
-
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: white;
 }
 
 .services_child img {
@@ -395,13 +406,45 @@ p.tab.active-tab {
   height: 70px;
   margin-bottom: 20px;
   border-radius: 6px;
+  z-index: 1;
 }
 
 .services_child h1 {
   margin-bottom: 10px;
   color: white;
-  font-size: 1.75rem;
+  font-size: 24px;
+  z-index: 1;
+  font-family: Roboto-Bold;
 }
+
+.services_child p {
+  display: none; /* Hide paragraph completely */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  display: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #0363ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Card-open styles */
+.card-open .read-more-btn {
+  background-color: #0b0df4;
+  border: 1px solid white;
+}
+
+/* Hover effect for desktop view */
+
 /* ##### choose use content ########## */
 .choose_container {
   max-width: 100%;
@@ -512,6 +555,9 @@ p.tab.active-tab {
   align-items: center;
   margin-bottom: 20px;
 }
+.avail-content-header h2 {
+  font-family: Roboto-Bold;
+}
 .avail-content-header img {
   width: 30px;
   height: 30px;
@@ -560,7 +606,7 @@ p.tab.active-tab {
     0,
     0,
     0,
-    0.8
+    0.6
   ); /* Adjusted opacity to make it semi-transparent */
   z-index: 0; /* Set to 0 so it stays below the content */
   border-radius: 10px; /* To match the border radius of the parent */
@@ -579,6 +625,8 @@ p.tab.active-tab {
 }
 .section-book h1 {
   font-size: 2rem;
+
+  font-family: Roboto-Medium;
 }
 
 .section-book a {
@@ -589,8 +637,8 @@ p.tab.active-tab {
   cursor: pointer;
   text-decoration: none;
   border-radius: 25%;
-  font-family: "Montserrat-Regular", sans-serif;
-  letter-spacing: 1.5px;
+  font-family: Roboto-Bold;
+  /* letter-spacing: 1.5px; */
   margin-top: 10px;
   width: fit-content;
 
@@ -600,13 +648,15 @@ p.tab.active-tab {
   border: 2px solid darkgrey;
   color: white;
   transition: all 0.3s linear;
+
+  font-family: Roboto-Medium;
 }
 .section-book a:hover {
   /* background-color: hsl(217, 100%, 38%); */
   /* transform: scale(1.5); */
-  background-color: rgb(0, 0, 0, 0.9);
-  color: white;
-  border: 1px solid black;
+  /* background-color: rgb(0, 0, 0, 0.9); */
+  color: #0363ff;
+  border: 2px solid #0363ff;
 }
 .book-image {
   width: 40%;
@@ -617,6 +667,172 @@ p.tab.active-tab {
   width: 100%;
   max-height: 100%;
   /* border: 4px solid blue; */
+}
+
+/* #### blog wrapper ####  */
+
+.blog-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  height: auto;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0px 50px;
+}
+
+.content-container {
+  /* margin: 0px auto 50px; */
+  margin-bottom: 50px;
+  display: flex;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+  /* border-radius: 8px; */
+  /* overflow: hidden; */
+  /* cursor: pointer; */
+  height: auto;
+  position: relative;
+  /* border-top: 1px solid black; */
+  /* border-bottom: 1px solid black; */
+  /* border: 2px solid red; */
+  /* max-width: 50%; */
+  width: 300px;
+  /* margin-bottom: 50px; */
+  padding-bottom: 11px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  transition: all 0.3s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  height: 440px;
+}
+.content-container:hover {
+  transform: translateY(-30px);
+}
+
+.text-content li,
+.text-content ol {
+  list-style-position: inside;
+}
+
+.image-container {
+  flex: 0 0 25%; /* Takes 40% of the container's width */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* padding: 10px; */
+  /* background-color: #f9f9f9; */
+  max-width: 100%; /* Ensures the container does not exceed 40% of the container width */
+  /* border: 2px solid black; */
+  height: 170px;
+}
+
+.image-container img {
+  width: 100%; /* Fixed width for images */
+  height: 100%; /* Fixed height for images */
+  /* object-fit: cover;  */
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1;
+  /* padding: 10px; */
+  overflow: hidden;
+  max-height: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  /* justify-content: space-between; */
+
+  /* border: 2px solid black; */
+  /* border: 2px solid black; */
+}
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  margin-bottom: 10px;
+  color: #0363ff;
+  font-family: Roboto-Medium;
+
+  line-height: 35px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  /* line-height: 1.6; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits the text to 8 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edit-form {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  margin: 0; /* Remove any default margin */
+  text-align: center;
+}
+
+.edit-button {
+  /* background-color: #007bff; */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  /* background-color: #0056b3; */
+}
+
+.read-more {
+  /* position: absolute;
+  top: 186px;
+  left: 55px;
+  background-color: rgb(7, 3, 53, 1);
+  color: white;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-decoration: none;
+  max-width: fit-content;
+  cursor: pointer; */
+}
+.read-more {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  color: #0363ff;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s linear;
+  font-family: Roboto-Regular;
+}
+.read-more:hover {
+  letter-spacing: 2px;
+}
+.read-more-container {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  font-family: Roboto-Regular;
+}
+#arrow {
+  width: 20px;
+  height: 16px;
+  margin-left: 4px;
 }
 
 /*#########  FAQ ###### */
@@ -630,7 +846,7 @@ p.tab.active-tab {
   width: 100%;
   box-sizing: border-box;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* Each FAQ item (child) */
@@ -656,8 +872,9 @@ p.tab.active-tab {
 /* Style for headings */
 .faq-heading h1 {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
+  font-family: Roboto-Medium;
 }
 
 /* The icon for expanding/collapsing */
@@ -671,7 +888,7 @@ p.tab.active-tab {
 .faq-child p {
   margin-top: 10px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -718,6 +935,40 @@ p.tab.active-tab {
     height: 350px;
   }
 }
+@media screen and (max-width: 860px) {
+  .services_container {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop hover styles */
+  .services_child:hover h1,
+  .services_child:hover img {
+    opacity: 0;
+  }
+
+  .services_child:hover p {
+    display: block; /* Show paragraph on hover */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .services_child:hover {
+    background-image: linear-gradient(
+      to right bottom,
+      #24c2f8,
+      #0084ff,
+      #005cff,
+      #0b0df4
+    );
+  }
+
+  .services_child {
+    height: 250px;
+    width: 280px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -739,13 +990,14 @@ p.tab.active-tab {
 
   .hero h1 {
     font-size: 2rem;
+    line-height: 35px;
   }
-  .hero h2 {
-    font-size: 1rem;
+  .hero h3 {
+    font-size: 18px;
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     height: auto;
   }
@@ -807,6 +1059,8 @@ p.tab.active-tab {
   }
   .content h3 {
     margin-right: 20px;
+    font-family: Roboto-Medium;
+    font-size: 18px;
   }
 
   .content.active p {
@@ -836,10 +1090,14 @@ p.tab.active-tab {
   }
   .container h1 {
     font-size: 2rem;
+    line-height: 45px;
+  }
+  .container {
+    padding: 30px;
   }
   .intro {
     width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   .intro h1 {
     font-size: 2rem;
@@ -849,6 +1107,8 @@ p.tab.active-tab {
   }
   .benefits-wrapper h1 {
     font-size: 2rem;
+    line-height: 45px;
+    margin-top: 0px;
   }
   .benefits-sectors {
     display: flex;
@@ -892,6 +1152,60 @@ p.tab.active-tab {
   .swiper-slide {
     height: 330px !important;
   }
+
+  .faq-wrapper {
+    flex-direction: column;
+  }
+  .faq-child {
+    width: 100%;
+  }
+  .faq-heading h1 {
+    font-size: 17px;
+  }
+  .benefits-sectors ul li {
+    font-size: 16px;
+  }
+
+  .services_child {
+    min-height: auto;
+  }
+  .read-more-btn {
+    display: block;
+  }
+
+  /* Dynamic height for .card-open on smaller screens */
+  .services_child.card-open {
+    height: auto;
+  }
+
+  /* Show paragraph and hide other elements in card-open state */
+  .services_child.card-open p {
+    display: block; /* Show paragraph on mobile */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .services_child.card-open h1,
+  .services_child.card-open img {
+    display: none; /* Hide heading and image */
+  }
+
+  .services_child.card-open {
+    background-image: linear-gradient(
+      to right bottom,
+      #24c2f8,
+      #0084ff,
+      #005cff,
+      #0b0df4
+    );
+  }
+  .service_choose_us {
+    padding: 0px 15px;
+  }
+
+  .wrapper p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 593px) {
@@ -903,5 +1217,20 @@ p.tab.active-tab {
   }
   .services_child {
     height: auto;
+  }
+  .services_container {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-wrapper {
+    padding: 0px 15px;
+  }
+  .section-book h1 {
+    font-size: 1.5rem;
+  }
+  .blog-wrapper {
+    padding: 0px;
   }
 }

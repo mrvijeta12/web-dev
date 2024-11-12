@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'retail' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -207,39 +232,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Retail Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Retail Technology Expertise</h1>
-                        <p>Harnessing cutting-edge technology solutions to enhance retail operations, improve customer engagement, and drive sales across various channels.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Harnessing cutting-edge technology solutions to enhance retail operations, improve customer engagement, and drive sales across various channels.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Retail Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Retail App Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Retail App Development</h1>
-                        <p>Building intuitive and feature-rich mobile applications to provide customers with seamless shopping experiences and personalized offers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building intuitive and feature-rich mobile applications to provide customers with seamless shopping experiences and personalized offers.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Retail App Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Privacy Compliance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Privacy Compliance</h1>
-                        <p>Implementing robust security measures to protect customer data and ensure compliance with privacy regulations, fostering trust and loyalty.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing robust security measures to protect customer data and ensure compliance with privacy regulations, fostering trust and loyalty.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Privacy Compliance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Omnichannel Integration Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Omnichannel Integration Solutions</h1>
-                        <p>Seamlessly integrating online and offline channels to create a unified shopping experience that meets the evolving needs of today’s consumers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Seamlessly integrating online and offline channels to create a unified shopping experience that meets the evolving needs of today’s consumers.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Omnichannel Integration Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Advanced Analytics and Insights -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Advanced Analytics and Insights</h1>
-                        <p>Leveraging data analytics to provide actionable insights that drive decision-making, optimize inventory management, and enhance marketing strategies.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging data analytics to provide actionable insights that drive decision-making, optimize inventory management, and enhance marketing strategies.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Advanced Analytics and Insights</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Customer Support and Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Customer Support and Maintenance</h1>
-                        <p>Offering round-the-clock support and system maintenance to ensure uninterrupted operations and enhance customer satisfaction throughout the shopping journey.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering round-the-clock support and system maintenance to ensure uninterrupted operations and enhance customer satisfaction throughout the shopping journey.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Customer Support and Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -387,6 +466,38 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
 
             <!-- #### faq ####  -->
 

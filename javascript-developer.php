@@ -90,7 +90,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <p>JavaScript Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
 
                         </div>
                     </div>
@@ -234,45 +234,88 @@
 
             </div>
 
-
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+
+                    <!-- Service 1 - JavaScript Experts -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>JavaScript Experts</h1>
-                        <p>Highly skilled developers with deep JavaScript knowledge.</p>
+                        <div class="content-wrapper">
+                            <p>Highly skilled developers with deep JavaScript knowledge, providing innovative solutions to enhance web applications, improve performance, and offer seamless user experiences across multiple devices and platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>JavaScript Experts</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Innovative Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative Solutions</h1>
-                        <p>Custom strategies to elevate your web applications.</p>
+                        <div class="content-wrapper">
+                            <p>Custom strategies and creative approaches are developed to elevate your web applications, ensuring top-tier user experiences, optimal functionality, and cutting-edge solutions that meet your business goals and objectives.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Innovative Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Fast Turnaround -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Fast Turnaround</h1>
-                        <p>Delivering projects efficiently without sacrificing quality.</p>
+                        <div class="content-wrapper">
+                            <p>We focus on delivering projects on time and within budget while maintaining the highest standards of quality, ensuring attention to detail, and meeting the specific requirements of each project.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Fast Turnaround</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Reliable Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reliable Support</h1>
-                        <p>Ongoing assistance for seamless application performance.</p>
+                        <div class="content-wrapper">
+                            <p>Providing ongoing assistance to ensure your applications run smoothly and efficiently, with proactive measures in place to address any issues promptly, guaranteeing continuous peak performance and customer satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reliable Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Value for Money -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Value for Money</h1>
-                        <p>Affordable services with unmatched quality and support.</p>
+                        <div class="content-wrapper">
+                            <p>Offering affordable services that do not compromise on quality, delivering high-value solutions that are tailored to your business needs, ensuring the best possible return on investment for your projects.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Value for Money</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Successful Projects -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Successful Projects</h1>
-                        <p>Track record of delivering excellence across industries.</p>
+                        <div class="content-wrapper">
+                            <p>With a proven track record of delivering successful projects across multiple industries, we focus on quality, innovation, and client satisfaction, ensuring the best possible outcome for every project we undertake.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Successful Projects</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
             </div>
+
+
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

@@ -82,7 +82,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>CodeIgniter Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -221,47 +227,85 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Expert Knowledge -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Expert Knowledge
-                        </h1>
-                        <p>Highly skilled developers with extensive CodeIgniter experience.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Custom Solutions</h1>
-                        <p>Tailored services to meet your unique business needs effectively.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Timely Delivery</h1>
-                        <p>Commitment to meeting deadlines without compromising quality standards.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1> Ongoing Support</h1>
-                        <p>Reliable maintenance and support for long-term website success.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Competitive Pricing</h1>
-                        <p>Affordable rates without sacrificing quality or service excellence.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Track Record</h1>
-                        <p>A history of successful projects and satisfied clients globally.</p>
+                        <div class="content-wrapper">
+                            <p>Our team is composed of highly skilled CodeIgniter developers who deliver robust, scalable, and secure web applications, ensuring each solution is tailored to your specific business needs and goals.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Expert Knowledge</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Custom Solutions -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We specialize in creating custom CodeIgniter solutions that are fully aligned with your business objectives, providing scalable and efficient applications that enhance performance and user experience.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Custom Solutions</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Timely Delivery -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Our team is committed to delivering high-quality CodeIgniter applications on time, ensuring that each project is completed within deadlines without compromising on functionality or quality.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Timely Delivery</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Ongoing Support -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We offer ongoing support and maintenance for your CodeIgniter applications, ensuring your website remains up-to-date, secure, and continues to operate efficiently, even as technologies evolve.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Ongoing Support</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Competitive Pricing -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Our CodeIgniter development services are offered at competitive rates, giving you access to top-tier development expertise while ensuring your project remains cost-effective and within your budget.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Competitive Pricing</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Proven Track Record -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>We have a proven track record of delivering successful CodeIgniter projects for a wide range of clients, helping businesses scale and succeed with robust, high-performing web applications.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Proven Track Record</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
+                    </div>
 
                 </div>
 
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

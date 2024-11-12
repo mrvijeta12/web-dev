@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -84,38 +90,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-development-joomla.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Creating user-friendly retail websites using Joomla, enhancing customer experience with features like inventory management and promotions.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating user-friendly retail websites using Joomla, enhancing customer experience with features like inventory management and promotions.
+                            </p>
+                            <img src="images/web-development-joomla.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-joomla.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Developing comprehensive real estate websites with Joomla, providing easy property listings, virtual tours, and client inquiry forms.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing comprehensive real estate websites with Joomla, providing easy property listings, virtual tours, and client inquiry forms.
+                            </p>
+                            <img src="images/ecommerce-joomla.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Non-Profit -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-joomla.png" alt="">
-                        <h1>Non-Profit</h1>
-                        <p>Building impactful non-profit websites using Joomla, facilitating donations, event registrations, and community outreach programs.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building impactful non-profit websites using Joomla, facilitating donations, event registrations, and community outreach programs.
+                            </p>
+                            <img src="images/education-joomla.png" alt="" />
+                            <h1>Non-Profit</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Technology -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-joomla.png" alt="">
-                        <h1>Technology</h1>
-                        <p>Developing innovative tech company websites with Joomla, showcasing products and services while offering customer support and insights.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing innovative tech company websites with Joomla, showcasing products and services while offering customer support and insights.
+                            </p>
+                            <img src="images/finance-joomla.png" alt="" />
+                            <h1>Technology</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Events -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-joomla.png" alt="">
-                        <h1>Events</h1>
-                        <p>Creating engaging event websites using Joomla, allowing users to register, view schedules, and get updates on upcoming events.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating engaging event websites using Joomla, allowing users to register, view schedules, and get updates on upcoming events.
+                            </p>
+                            <img src="images/travel-joomla.png" alt="" />
+                            <h1>Events</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Food and Beverage -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-joomla.png" alt="">
-                        <h1>Food and Beverage</h1>
-                        <p>Building visually appealing restaurant websites with Joomla, showcasing menus, online reservations, and customer reviews.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building visually appealing restaurant websites with Joomla, showcasing menus, online reservations, and customer reviews.
+                            </p>
+                            <img src="images/social-media-joomla.png" alt="" />
+                            <h1>Food and Beverage</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

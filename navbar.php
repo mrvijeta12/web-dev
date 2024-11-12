@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Mega Menu | CodingNepal</title>
     <link rel="stylesheet" href="./assests/css/navbar.css">
+    <link rel="stylesheet" href="./assests/css/theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
@@ -21,7 +22,7 @@
             <input type="radio" name="slider" id="close-btn">
             <ul class="nav-links">
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="./home.php" class=" <?php echo ($current_page == 'index.php') ? 'current' : ''; ?>">Home</a></li>
+                <li><a href="./home.php" class=" <?php echo ($current_page == 'home.php') ? 'current' : ''; ?>">Home</a></li>
                 <li><a href="./services.php" class=" <?php echo ($current_page == 'services.php') ? 'current' : ''; ?>">Services</a></li>
 
                 <li>
@@ -31,7 +32,7 @@
                     <div class="mega-box">
                         <div class="content">
 
-                            <div class="row industry-row">
+                            <div class="row industry-row" id="industry">
                                 <header>Industries</header>
                                 <ul class="mega-links industries">
                                     <div class="industry-child">

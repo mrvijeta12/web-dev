@@ -33,10 +33,10 @@ if (isset($_FILES['social_sharing_image']) && $_FILES['social_sharing_image']['e
 
 // Prepare the SQL update statement
 if ($social_sharing_image) {
-    $stmt = $conn->prepare("UPDATE blog_posts SET meta_title=?, summary=?, content=?, page_type=?, social_sharing_image=?, slug=?  WHERE slug=?");
+    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, page_type=?, social_sharing_image=?, slug=?  WHERE slug=?");
     $stmt->bind_param("sssssss", $meta_title, $summary, $content, $page_type, $social_sharing_image, $new_slug, $slug);
 } else {
-    $stmt = $conn->prepare("UPDATE blog_posts SET meta_title=?, summary=?, content=?, page_type=?, slug=? WHERE slug=?");
+    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, page_type=?, slug=? WHERE slug=?");
     $stmt->bind_param("ssssss", $meta_title, $summary, $content, $page_type, $new_slug, $slug);
 }
 

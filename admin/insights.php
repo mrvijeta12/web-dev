@@ -9,7 +9,7 @@ include_once 'database.php';
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 
 // Prepare and execute the query
-$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM blog_posts WHERE slug = ?";
+$sql = "SELECT id, meta_title, summary, content, social_sharing_image FROM webdev_blogs WHERE slug = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $slug);
 $stmt->execute();

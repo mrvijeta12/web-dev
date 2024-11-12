@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -82,38 +88,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-mean.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Leveraging MEAN stack technologies to develop efficient retail applications that enhance customer experience and streamline inventory management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging MEAN stack technologies to develop efficient retail applications that enhance customer experience and streamline inventory management.
+                            </p>
+                            <img src="images/web-application-mean.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Logistics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-mean.png" alt="">
-                        <h1>Logistics</h1>
-                        <p>Building robust logistics management systems with MEAN stack, ensuring real-time tracking, optimized routes, and efficient fleet management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building robust logistics management systems with MEAN stack, ensuring real-time tracking, optimized routes, and efficient fleet management.
+                            </p>
+                            <img src="images/ecommerce-mean.png" alt="" />
+                            <h1>Logistics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-mean.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Creating comprehensive real estate applications using MEAN stack, providing users with property listings, virtual tours, and efficient communication tools.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating comprehensive real estate applications using MEAN stack, providing users with property listings, virtual tours, and efficient communication tools.
+                            </p>
+                            <img src="images/finance-mean.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Entertainment -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-mean.png" alt="">
-                        <h1>Entertainment</h1>
-                        <p>Developing interactive entertainment platforms with MEAN stack, enabling features like streaming, user reviews, and personalized recommendations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive entertainment platforms with MEAN stack, enabling features like streaming, user reviews, and personalized recommendations.
+                            </p>
+                            <img src="images/education-mean.png" alt="" />
+                            <h1>Entertainment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Sports -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-mean.png" alt="">
-                        <h1>Sports</h1>
-                        <p>Creating engaging sports applications using MEAN stack, providing real-time scores, player stats, and social features for fans.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating engaging sports applications using MEAN stack, providing real-time scores, player stats, and social features for fans.
+                            </p>
+                            <img src="images/travel-mean.png" alt="" />
+                            <h1>Sports</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Non-Profit -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-mean.png" alt="">
-                        <h1>Non-Profit</h1>
-                        <p>Building impactful non-profit management systems with MEAN stack to facilitate donations, volunteer management, and community engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building impactful non-profit management systems with MEAN stack to facilitate donations, volunteer management, and community engagement.
+                            </p>
+                            <img src="images/social-media-mean.png" alt="" />
+                            <h1>Non-Profit</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

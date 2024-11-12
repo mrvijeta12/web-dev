@@ -28,18 +28,23 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
 
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
 
 
             <!-- ####### core area of expertise ######  -->
@@ -83,38 +88,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Transportation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/transportation-node.png" alt="">
-                        <h1>Transportation</h1>
-                        <p>Developing real-time logistics and transportation management systems using Node.js for efficient tracking and route optimization.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing real-time logistics and transportation management systems using Node.js for efficient tracking and route optimization.
+                            </p>
+                            <img src="images/transportation-node.png" alt="" />
+                            <h1>Transportation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/real-estate-node.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Creating powerful property management platforms with Node.js that enhance user experience through real-time listings and analytics.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating powerful property management platforms with Node.js that enhance user experience through real-time listings and analytics.
+                            </p>
+                            <img src="images/real-estate-node.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Travel and Tourism -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-node.png" alt="">
-                        <h1>Travel and Tourism</h1>
-                        <p>Building dynamic travel booking applications with Node.js that provide real-time availability and personalized travel recommendations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building dynamic travel booking applications with Node.js that provide real-time availability and personalized travel recommendations.
+                            </p>
+                            <img src="images/travel-node.png" alt="" />
+                            <h1>Travel and Tourism</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Manufacturing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/manufacturing-node.png" alt="">
-                        <h1>Manufacturing</h1>
-                        <p>Implementing inventory management and production tracking systems with Node.js for increased efficiency and data-driven decision-making.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing inventory management and production tracking systems with Node.js for increased efficiency and data-driven decision-making.
+                            </p>
+                            <img src="images/manufacturing-node.png" alt="" />
+                            <h1>Manufacturing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Fashion and Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/fashion-node.png" alt="">
-                        <h1>Fashion and Retail</h1>
-                        <p>Creating e-commerce solutions for the fashion industry using Node.js, enabling personalized shopping experiences and real-time inventory updates.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating e-commerce solutions for the fashion industry using Node.js, enabling personalized shopping experiences and real-time inventory updates.
+                            </p>
+                            <img src="images/fashion-node.png" alt="" />
+                            <h1>Fashion and Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Sports and Fitness -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/sports-node.png" alt="">
-                        <h1>Sports and Fitness</h1>
-                        <p>Developing interactive fitness applications with Node.js that track performance metrics and offer personalized training plans in real-time.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive fitness applications with Node.js that track performance metrics and offer personalized training plans in real-time.
+                            </p>
+                            <img src="images/sports-node.png" alt="" />
+                            <h1>Sports and Fitness</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

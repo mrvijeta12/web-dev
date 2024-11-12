@@ -28,18 +28,24 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
-                </div>
-                <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <!-- <img src="./images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
             </div>
 
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
+            </div>
 
 
             <!-- ####### core area of expertise ######  -->
@@ -83,7 +89,7 @@
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced React.js Solutions</h1>
             </div>
 
-            <div class="service_choose_us">
+            <!-- <div class="service_choose_us">
                 <div class="services_container">
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/healthcare-react.png" alt="">
@@ -116,7 +122,97 @@
                         <p>Building engaging social networking platforms with React, facilitating real-time interactions and dynamic content sharing among users.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="service_choose_us">
+                <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating user-friendly healthcare applications that enhance patient engagement and streamline processes like appointment scheduling and telemedicine.
+                            </p>
+                            <img src="images/healthcare-react.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 2 - E-commerce -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing dynamic e-commerce platforms with React that provide personalized shopping experiences and efficient inventory management.
+                            </p>
+                            <img src="images/ecommerce-react.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 3 - Finance -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building secure financial applications using React, ensuring real-time data visualization and user-friendly interfaces for financial transactions.
+                            </p>
+                            <img src="images/finance-react.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 4 - Education -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Developing interactive educational platforms with React, enhancing learning through engaging user experiences and online course management.
+                            </p>
+                            <img src="images/education-react.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Travel and Hospitality -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Creating intuitive travel booking websites with React, providing real-time availability and personalized recommendations for users.
+                            </p>
+                            <img src="images/travel-react.png" alt="" />
+                            <h1>Travel and Hospitality</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 6 - Social Media -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>
+                                Building engaging social networking platforms with React, facilitating real-time interactions and dynamic content sharing among users.
+                            </p>
+                            <img src="images/social-media-react.png" alt="" />
+                            <h1>Social Media</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                </div>
             </div>
+
 
             <!-- ########## TECHNOLOGIES  #######  -->
 

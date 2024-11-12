@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'telecom' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -204,39 +229,93 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Telecom Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Telecom Technology Expertise</h1>
-                        <p>Delivering state-of-the-art technology solutions for the telecom industry, focusing on network optimization, enhanced connectivity, and improved customer engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering state-of-the-art technology solutions for the telecom industry, focusing on network optimization, enhanced connectivity, and improved customer engagement.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Telecom Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Telecom Software Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Telecom Software Solutions</h1>
-                        <p>Developing tailored software to manage network operations, automate billing processes, and enhance service delivery for telecom operators.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing tailored software to manage network operations, automate billing processes, and enhance service delivery for telecom operators.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Telecom Software Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Fraud Prevention -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Fraud Prevention</h1>
-                        <p>Implementing advanced security protocols to safeguard sensitive communications and prevent fraud, ensuring reliable and secure telecom operations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing advanced security protocols to safeguard sensitive communications and prevent fraud, ensuring reliable and secure telecom operations.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Fraud Prevention</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless Network Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless Network Integration</h1>
-                        <p>Enabling seamless integration of telecom networks with digital platforms to deliver uninterrupted connectivity and better customer experiences.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Enabling seamless integration of telecom networks with digital platforms to deliver uninterrupted connectivity and better customer experiences.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Network Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Scalable and Future-Ready Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalable and Future-Ready Solutions</h1>
-                        <p>Providing scalable solutions designed to support next-generation telecom technologies, driving innovation and adapting to evolving market needs.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Providing scalable solutions designed to support next-generation telecom technologies, driving innovation and adapting to evolving market needs.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalable and Future-Ready Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - 24/7 Support and Network Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Network Maintenance</h1>
-                        <p>Offering round-the-clock technical support and proactive maintenance to ensure maximum network uptime and reliable service delivery.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering round-the-clock technical support and proactive maintenance to ensure maximum network uptime and reliable service delivery.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>24/7 Support and Network Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
             </div>
+
 
             <!-- ######### who can avail ###### -->
 
@@ -373,6 +452,38 @@
 
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
             <!-- ###### faq ######  -->

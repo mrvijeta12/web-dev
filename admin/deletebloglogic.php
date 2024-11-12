@@ -10,7 +10,7 @@ if (isset($_POST['delete-id'])) {
     $id = (int)$_POST['delete-id'];
 
     // Prepare and execute delete statement
-    $stmt = $conn->prepare("DELETE FROM blog_posts  WHERE id = ?");
+    $stmt = $conn->prepare("DELETE FROM webdev_blogs  WHERE id = ?");
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {

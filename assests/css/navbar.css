@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
 }
 body {
   background-color: black;
@@ -38,6 +38,8 @@ nav .wrapper {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
+  font-family: Roboto-Bold;
+  letter-spacing: 2px;
 }
 .wrapper .nav-links {
   display: inline-flex;
@@ -56,6 +58,8 @@ nav .wrapper {
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   /* margin-right: 15px; */
+  font-family: Roboto-Medium;
+  letter-spacing: 0.75px;
 }
 .nav-links li a:hover {
   color: #0363ff;
@@ -64,6 +68,7 @@ ul.nav-links a.current {
   /* border-bottom: 2px solid #0363ff; */
   color: #0363ff;
   font-weight: 900;
+  font-family: Roboto-Bold;
 }
 .nav-links .mobile-item {
   display: none;

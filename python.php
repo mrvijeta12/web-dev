@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -86,38 +92,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Healthcare -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-python.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Leveraging Python to build intuitive healthcare applications that streamline patient management and enhance clinical workflows.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Leveraging Python to build intuitive healthcare applications that streamline patient management and enhance clinical workflows.
+                            </p>
+                            <img src="images/web-application-python.png" alt="" />
+                            <h1>Healthcare</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Data Science -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/data-science-python.png" alt="">
-                        <h1>Data Science</h1>
-                        <p>Utilizing Python's powerful libraries for data analysis and visualization, enabling businesses to make data-driven decisions effectively.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Python's powerful libraries for data analysis and visualization, enabling businesses to make data-driven decisions effectively.
+                            </p>
+                            <img src="images/data-science-python.png" alt="" />
+                            <h1>Data Science</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - E-commerce -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-python.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Developing scalable e-commerce solutions with Python that provide personalized user experiences and secure payment processing.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing scalable e-commerce solutions with Python that provide personalized user experiences and secure payment processing.
+                            </p>
+                            <img src="images/ecommerce-python.png" alt="" />
+                            <h1>E-commerce</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Finance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-python.png" alt="">
-                        <h1>Finance</h1>
-                        <p>Building robust financial applications using Python that facilitate real-time analytics, risk management, and investment tracking.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building robust financial applications using Python that facilitate real-time analytics, risk management, and investment tracking.
+                            </p>
+                            <img src="images/finance-python.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Education -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-python.png" alt="">
-                        <h1>Education</h1>
-                        <p>Creating engaging educational platforms with Python that enhance learning through interactive features and efficient content management.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating engaging educational platforms with Python that enhance learning through interactive features and efficient content management.
+                            </p>
+                            <img src="images/education-python.png" alt="" />
+                            <h1>Education</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Automation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/automation-python.png" alt="">
-                        <h1>Automation</h1>
-                        <p>Utilizing Python for automating repetitive tasks and processes, improving efficiency and productivity across various industries.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Utilizing Python for automating repetitive tasks and processes, improving efficiency and productivity across various industries.
+                            </p>
+                            <img src="images/automation-python.png" alt="" />
+                            <h1>Automation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

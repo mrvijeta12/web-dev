@@ -4,7 +4,7 @@ include_once 'db.php';
 
 
 // Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM blog_posts WHERE page_type = 'home' ORDER BY id DESC";
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'home' ORDER BY id DESC";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -33,6 +33,8 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/home.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+
 
 
 
@@ -353,6 +355,10 @@ $conn->close();
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- ###### blogs ####  -->
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>

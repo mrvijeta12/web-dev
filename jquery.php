@@ -28,16 +28,22 @@
         <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero">
-                <div class="hero-image">
-                    <img src="./images/expertise-hero.jpg" alt="">
+            <div class="hero-section">
+                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                    <h1 class="animated-heading">
+                        Innovative React.JS Development
+                    </h1>
+                    <p>
+                        Empowering businesses with fast, efficient, and maintainable web
+                        solutions
+                    </p>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="hero-data">
+            </div>
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative React.js Development</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with fast, efficient, and maintainable web solutions.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
-                </div>
+            <!-- Image Wrapper with Full Image Section Inside -->
+            <div class="image-wrapper">
+                <div class="full-image-section"></div>
             </div>
 
 
@@ -85,38 +91,94 @@
 
             <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - Retail -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-development-jquery.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Enhancing customer shopping experiences with interactive retail websites, simplifying product browsing and checkout processes using jQuery.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Enhancing customer shopping experiences with interactive retail websites, simplifying product browsing and checkout processes using jQuery.
+                            </p>
+                            <img src="images/web-development-jquery.png" alt="" />
+                            <h1>Retail</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Real Estate -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-jquery.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Developing dynamic real estate platforms that utilize jQuery for interactive listings, property comparisons, and user-friendly navigation.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing dynamic real estate platforms that utilize jQuery for interactive listings, property comparisons, and user-friendly navigation.
+                            </p>
+                            <img src="images/ecommerce-jquery.png" alt="" />
+                            <h1>Real Estate</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Insurance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-jquery.png" alt="">
-                        <h1>Insurance</h1>
-                        <p>Creating user-friendly insurance portals using jQuery for policy management, claim submissions, and real-time updates for clients.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating user-friendly insurance portals using jQuery for policy management, claim submissions, and real-time updates for clients.
+                            </p>
+                            <img src="images/finance-jquery.png" alt="" />
+                            <h1>Insurance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Entertainment -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-jquery.png" alt="">
-                        <h1>Entertainment</h1>
-                        <p>Building interactive entertainment websites that leverage jQuery for ticket bookings, event schedules, and user reviews.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building interactive entertainment websites that leverage jQuery for ticket bookings, event schedules, and user reviews.
+                            </p>
+                            <img src="images/travel-jquery.png" alt="" />
+                            <h1>Entertainment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Non-Profit -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-jquery.png" alt="">
-                        <h1>Non-Profit</h1>
-                        <p>Developing engaging non-profit platforms using jQuery to facilitate donations, event management, and volunteer sign-ups with ease.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Developing engaging non-profit platforms using jQuery to facilitate donations, event management, and volunteer sign-ups with ease.
+                            </p>
+                            <img src="images/social-media-jquery.png" alt="" />
+                            <h1>Non-Profit</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Fitness -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/gaming-jquery.png" alt="">
-                        <h1>Fitness</h1>
-                        <p>Creating interactive fitness applications with jQuery to enhance user engagement through workout tracking, progress visualization, and community features.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Creating interactive fitness applications with jQuery to enhance user engagement through workout tracking, progress visualization, and community features.
+                            </p>
+                            <img src="images/gaming-jquery.png" alt="" />
+                            <h1>Fitness</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
 
         </div>

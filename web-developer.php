@@ -82,7 +82,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -96,7 +97,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -110,7 +112,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -124,7 +127,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -138,7 +142,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -152,7 +157,8 @@
                             <p>Web Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -243,45 +249,85 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - Web Development Experts -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Web Development Experts</h1>
-                        <p>Crafting websites that drive engagement and success.</p>
+                        <div class="content-wrapper">
+                            <p>Our team of web development experts specializes in creating engaging and high-performing websites that help businesses grow, drive traffic, and achieve long-term success with modern web technologies.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Web Development Experts</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Responsive Design -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Responsive Design</h1>
-                        <p>Ensuring a seamless experience across all devices.</p>
+                        <div class="content-wrapper">
+                            <p>We ensure that your website provides a seamless and intuitive experience across all devices and screen sizes, optimizing functionality, navigation, and appearance for desktop, tablet, and mobile users.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Responsive Design</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Custom Web Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Web Solutions</h1>
-                        <p>Tailoring websites to meet unique business needs.</p>
+                        <div class="content-wrapper">
+                            <p>We specialize in developing custom web solutions that are tailored to meet the specific needs of your business, ensuring that every feature aligns with your goals and enhances your customer experience.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Custom Web Solutions</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Quality Assurance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Quality Assurance</h1>
-                        <p>Thorough testing to guarantee top performance.</p>
+                        <div class="content-wrapper">
+                            <p>Our comprehensive quality assurance process includes thorough testing of every aspect of your website to ensure optimal performance, flawless functionality, and a bug-free user experience across all platforms.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Quality Assurance</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Timely Launches -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Timely Launches</h1>
-                        <p>Delivering projects on time without compromise.</p>
+                        <div class="content-wrapper">
+                            <p>We understand the importance of meeting deadlines. Our team is dedicated to delivering your project on time, ensuring that all milestones are met while maintaining the highest standards of quality and design.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Timely Launches</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Expert Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Expert Support</h1>
-                        <p>Continuous assistance to keep your site running smoothly.</p>
+                        <div class="content-wrapper">
+                            <p>We provide ongoing expert support to ensure your website continues to run smoothly, offering timely solutions, updates, and technical assistance to keep your site optimized and secure at all times.</p>
+                            <img src="images/star.png" alt="">
+                            <h1>Expert Support</h1>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
 
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

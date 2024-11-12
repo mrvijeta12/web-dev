@@ -81,7 +81,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -95,7 +96,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -109,7 +111,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -123,7 +126,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -137,7 +141,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -151,7 +156,8 @@
                             <p>Wordpress Developer</p>
                             <strong>Experience <i class="fa-solid fa-angles-right"></i> 5+ Years</strong>
                             <p>Avability <i class="fa-solid fa-angles-right"></i> Full-Time</p>
-                            <button>Hire Now </button>
+                            <a href="#" class="reopenPopup">Hire Now </a>
+
 
                         </div>
                     </div>
@@ -208,43 +214,84 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+
+                    <!-- Service 1 - WordPress Experts -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>WordPress Experts</h1>
-                        <p>Skilled developers with extensive WordPress experience.</p>
+                        <div class="content-wrapper">
+                            <p>Our team consists of skilled WordPress experts with extensive experience in developing dynamic, feature-rich websites tailored to meet your specific business and user experience needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>WordPress Experts</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Themes -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Themes</h1>
-                        <p>Tailored themes to match your brand identity.</p>
+                        <div class="content-wrapper">
+                            <p>We design and develop fully customized WordPress themes that reflect your brand identity, ensuring that your website not only looks great but also functions smoothly across devices.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Themes</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Fast Implementation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Fast Implementation</h1>
-                        <p>Quick setup without sacrificing functionality.</p>
+                        <div class="content-wrapper">
+                            <p>We ensure a fast and efficient WordPress setup, delivering quality websites within your project timelines while maintaining high standards for performance, functionality, and user experience.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Fast Implementation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Ongoing Maintenance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Ongoing Maintenance</h1>
-                        <p>Reliable support for long-term site performance.</p>
+                        <div class="content-wrapper">
+                            <p>We provide reliable ongoing maintenance to ensure your WordPress website runs smoothly, addressing potential issues and making updates that keep your site current and secure over time.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Ongoing Maintenance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Affordable Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Affordable Solutions</h1>
-                        <p>Competitive pricing with exceptional quality.</p>
+                        <div class="content-wrapper">
+                            <p>We offer affordable WordPress solutions that don’t compromise on quality, ensuring that your website delivers exceptional performance and value while keeping costs within your budget.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Affordable Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Proven Success -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Proven Success</h1>
-                        <p>A track record of happy clients and projects.</p>
+                        <div class="content-wrapper">
+                            <p>We have a proven track record of delivering successful WordPress projects, with many satisfied clients and a portfolio of websites that deliver lasting results and exceed expectations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Proven Success</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
                 </div>
             </div>
+
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">

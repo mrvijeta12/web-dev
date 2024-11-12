@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'ecommerce' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -204,35 +229,88 @@
             <div class="service_choose_us">
 
                 <div class="services_container">
+                    <!-- Service 1 - E-commerce Technology Expertise -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>E-commerce Technology Expertise</h1>
-                        <p>Empowering online businesses with advanced e-commerce technology solutions that drive growth, improve customer experience, and streamline operations.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Empowering online businesses with advanced e-commerce technology solutions that drive growth, improve customer experience, and streamline operations.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>E-commerce Technology Expertise</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Custom Online Store Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Online Store Development</h1>
-                        <p>Building tailor-made e-commerce platforms that offer user-friendly interfaces, seamless navigation, and optimized shopping experiences for your customers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Building tailor-made e-commerce platforms that offer user-friendly interfaces, seamless navigation, and optimized shopping experiences for your customers.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Online Store Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Security and Fraud Prevention -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Fraud Prevention</h1>
-                        <p>Implementing robust security measures and fraud detection tools to protect sensitive customer data and secure online transactions on your e-commerce site.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Implementing robust security measures and fraud detection tools to protect sensitive customer data and secure online transactions on your e-commerce site.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Security and Fraud Prevention</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Seamless Payment Gateway Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless Payment Gateway Integration</h1>
-                        <p>Integrating multiple payment gateways to provide a smooth checkout process, enabling a wide range of secure payment options for customers.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Integrating multiple payment gateways to provide a smooth checkout process, enabling a wide range of secure payment options for customers.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Seamless Payment Gateway Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Scalable and Innovative Solutions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalable and Innovative Solutions</h1>
-                        <p>Delivering flexible e-commerce solutions that scale with your business, incorporating cutting-edge technology to enhance performance and user engagement.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Delivering flexible e-commerce solutions that scale with your business, incorporating cutting-edge technology to enhance performance and user engagement.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalable and Innovative Solutions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 6 - Continuous Support and Optimization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Continuous Support and Optimization</h1>
-                        <p>Offering ongoing support, regular updates, and optimization strategies to ensure your e-commerce platform remains competitive and up-to-date.</p>
+                        <div class="content-wrapper">
+                            <p>
+                                Offering ongoing support, regular updates, and optimization strategies to ensure your e-commerce platform remains competitive and up-to-date.
+                            </p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Continuous Support and Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
 
@@ -386,6 +464,38 @@
                 </div>
 
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
