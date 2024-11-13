@@ -111,7 +111,7 @@
                             <div class="row">
                                 <header>Ecommerce</header>
                                 <ul class="mega-links">
-                                    <li><a href="./magneto-developer.php"> <span><i class="fa-solid fa-magnet"></i></span> Magento</a></li>
+                                    <li><a href="./magneto-developer.php"> <span><i class="fa-solid fa-magnet"></i></span> Magneto</a></li>
                                     <li><a href="./shopify-developer.php"> <span><i class="fa-brands fa-shopify"></i></span> Shopify</a></li>
                                     <li><a href="./prestashop-developer.php"> <span><i class="fa-solid fa-shop"></i></span> Prestashop</a></li>
 

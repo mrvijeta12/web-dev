@@ -176,21 +176,22 @@ $conn->close();
                         <option value="angularjs-developer">AngularJS Developer</option>
                         <option value="reactjs-developer">ReactJS Developer</option>
                         <option value="vuejs-developer">VueJS Developer</option>
-                        <option value="wordpress">WordPress</option>
-                        <option value="drupal">Drupal</option>
-                        <option value="joomla">Joomla</option>
-                        <option value="magento">Magento</option>
-                        <option value="shopify">Shopify</option>
-                        <option value="prestashop">PrestaShop</option>
-                        <option value="php">PHP</option>
-                        <option value="codeigniter">CodeIgniter</option>
-                        <option value="laravel">Laravel</option>
-                        <option value="nodejs">NodeJS</option>
+                        <option value="wordpress-developer">WordPress</option>
+                        <option value="drupal-developer">Drupal</option>
+                        <option value="joomla-developer">Joomla</option>
+                        <option value="magneto-developer">Magneto</option>
+                        <option value="shopify-developer">Shopify</option>
+                        <option value="prestashop-developer">PrestaShop</option>
+                        <option value="php-developer">PHP</option>
+                        <option value="codeigniter-developer">CodeIgniter</option>
+                        <option value="laravel-developer">Laravel</option>
+                        <option value="nodejs-developer">NodeJS</option>
                         <option value="web-developer">Web Developer</option>
 
                     </optgroup>
 
                     <optgroup label="Our Expertise">
+                        <option value="frontend-development">Frontend Development</option>
                         <option value="angularjs">Angular.js</option>
                         <option value="reactjs">React.js</option>
                         <option value="javascript">JavaScript</option>
@@ -207,7 +208,7 @@ $conn->close();
                         <option value="python">Python</option>
                         <option value="mern-stack">MERN Stack</option>
                         <option value="mean-stack">MEAN Stack</option>
-                        <option value="magento">Magento</option>
+                        <option value="magneto">Magneto</option>
                         <option value="shopify">Shopify</option>
                         <option value="prestashop">PrestaShop</option>
 

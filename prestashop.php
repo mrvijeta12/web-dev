@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE page_type = 'prestashop' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -335,6 +360,44 @@
                 </div>
             </div>
         </section>
+
+        <!-- #### blog ######  -->
+
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+        </div>
+
+        <div class="blog-wrapper">
+            <?php foreach ($contents as $row): ?>
+                <?php
+                $slug = htmlspecialchars($row['slug']);
+                $summary = htmlspecialchars($row['summary']);
+                $id = $row['id'];
+                $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                ?>
+
+
+                <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Image Container -->
+                    <div class='image-container'>
+                        <img src='<?= $featureImage ?>' alt='Feature Image'>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class='text-content'>
+                        <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                        <p><?= $summary ?></p>
+                        <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                    </div>
+
+                </div>
+
+            <?php endforeach; ?>
+        </div>
+
+
+
         <!-- ##### faq #######  -->
         <div class="container" data-aos="zoom-in" data-aos-duration="1500">
             <h1>PrestaShop Development: Frequently Asked Questions</h1>

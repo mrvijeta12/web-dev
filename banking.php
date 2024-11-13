@@ -458,10 +458,16 @@ $conn->close();
             </div>
 
 
+
+            <!-- ###### Blogs #####  -->
+
+
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
+
+
             <div class="blog-wrapper">
                 <?php foreach ($contents as $row): ?>
                     <?php
