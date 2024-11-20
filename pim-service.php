@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'pim' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/pim-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Streamline Your Product Data with PIM Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Centralize and manage your product information efficiently.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Centralized Data Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Centralized Data Management</h1>
-                        <p>Single source of truth for product data across all channels.</p>
+                        <div class="content-wrapper">
+                            <p>Serves as a single source of truth for all product data, ensuring consistency and accessibility across all channels and platforms for streamlined operations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Centralized Data Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Data Quality Control -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Quality Control</h1>
-                        <p>Ensures accuracy, consistency, and completeness of product data.</p>
+                        <div class="content-wrapper">
+                            <p>Implements comprehensive quality checks to ensure the accuracy, consistency, and completeness of all product data, thereby minimizing errors and enhancing trust.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Quality Control</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Custom Attributes -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Attributes</h1>
-                        <p>Supports adding custom attributes to meet business-specific needs.</p>
+                        <div class="content-wrapper">
+                            <p>Supports the addition of custom attributes to product data, allowing businesses to tailor product information to their unique requirements and specifications.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Custom Attributes</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Channel Syndication -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Channel Syndication</h1>
-                        <p>Distributes product data to multiple channels and marketplaces.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates the distribution of product data across multiple channels and marketplaces, ensuring consistent and up-to-date information reaches all platforms simultaneously.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Channel Syndication</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Version Control -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Version Control</h1>
-                        <p>Tracks changes and maintains historical versions of product information.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks changes made to product data, maintaining historical versions and allowing businesses to review past updates and revert if necessary for accuracy.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Version Control</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -206,7 +266,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from PIM</h1>
 
             </div>
 
@@ -276,38 +336,154 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Data Centralization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Centralization</h1>
-                        <p>Consolidates product information from multiple sources.</p>
+                        <div class="content-wrapper">
+                            <p>Consolidates product information from multiple sources to create a unified and accessible repository, improving accuracy, data management, and efficiency for all stakeholders.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Centralization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Data Enrichment -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Enrichment</h1>
-                        <p>Enhances product data with descriptions, images, and attributes.</p>
+                        <div class="content-wrapper">
+                            <p>Enhances product data with detailed descriptions, high-quality images, and relevant attributes to increase visibility, customer engagement, and sales conversion rates across platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Enrichment</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Multi-Channel Publishing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Multi-Channel Publishing</h1>
-                        <p>Distributes product information across various sales channels.</p>
+                        <div class="content-wrapper">
+                            <p>Distributes product information seamlessly across various sales channels, ensuring consistent messaging, improving market reach, and enhancing customer experience across platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Multi-Channel Publishing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Version Control -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Version Control</h1>
-                        <p>Manages different versions of product data and updates.</p>
+                        <div class="content-wrapper">
+                            <p>Manages multiple versions of product data, ensuring up-to-date information is always available, and streamlining product updates and changes across various systems and channels.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Version Control</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Reporting and Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reporting and Analytics</h1>
-                        <p>Provides insights into product performance and data quality.</p>
+                        <div class="content-wrapper">
+                            <p>Provides actionable insights into product performance, data quality, and sales trends to inform decision-making and improve overall product strategy and marketing efforts.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reporting and Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
 
 
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Product Information Management (PIM) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Product Information Management (PIM)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Product Information Management (PIM) is a centralized system that helps businesses manage and distribute product data across multiple sales channels. It ensures consistency, accuracy, and completeness of product information.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does PIM improve product data accuracy?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PIM streamlines the management of product data by centralizing it in one platform, reducing errors, duplications, and inconsistencies. This ensures that all product information is accurate and up to date across all touchpoints.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can PIM integrate with other business systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, PIM can integrate with various business systems, including ERP, CRM, e-commerce platforms, and marketing tools. This seamless integration enables smooth data exchange and efficient management across systems.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does PIM enhance customer experience?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        PIM ensures that customers receive accurate, detailed, and consistent product information across all channels. This improves the buying experience by providing customers with the right information when they need it, leading to increased satisfaction and loyalty.
+                    </p>
+                </section>
+            </section>
 
             <!-- ##### Book #######  -->
 

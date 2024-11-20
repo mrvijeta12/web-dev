@@ -89,7 +89,7 @@ $conn->close();
                 </div>
                 <h1><?php echo htmlspecialchars($blog['meta_title']); ?></h1>
                 <p><?php echo htmlspecialchars($blog['summary']); ?></p>
-                <div><?php echo $blog['content']; ?></div>
+                <div class="blog-content"><?php echo $blog['content']; ?></div>
                 <!-- <a href="blog.php" class="back-button">Back to Blogs</a> -->
             </div>
 

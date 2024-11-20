@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'web-app-dev' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/web-app-dev-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Build Your Digital Presence with Web Development</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Crafting responsive, user-friendly websites for growth.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
             <section class="intro">
@@ -55,33 +80,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Responsive Design -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Responsive Design</h1>
-                        <p>Ensures optimal user experience on any device, from mobile to desktop.</p>
+                        <div class="content-wrapper">
+                            <p>Ensures that websites are optimized for all devices, from mobile phones to desktop computers, providing users with an excellent browsing experience regardless of screen size.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Responsive Design</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - SEO Optimization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>SEO Optimization</h1>
-                        <p>Builds sites with best practices for improved search engine visibility.</p>
+                        <div class="content-wrapper">
+                            <p>Implements best practices to ensure websites are search engine friendly, boosting visibility and ranking on search engines to increase organic traffic and improve discoverability.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>SEO Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Content Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Management</h1>
-                        <p>Integrated CMS tools for easy content updates and management.</p>
+                        <div class="content-wrapper">
+                            <p>Provides an integrated Content Management System (CMS) that allows easy and fast updates to website content, empowering teams to make changes without technical expertise.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Performance Optimization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Optimization</h1>
-                        <p>Ensures fast loading times and efficient resource management.</p>
+                        <div class="content-wrapper">
+                            <p>Improves website speed and performance by optimizing resources, reducing load times, and ensuring that the website runs smoothly, even under heavy traffic conditions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Security Measures -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Security Measures</h1>
-                        <p>Robust security protocols to protect against online threats and breaches.</p>
+                        <div class="content-wrapper">
+                            <p>Implements robust security protocols, including SSL encryption, firewalls, and secure authentication methods to safeguard your website against cyber threats and potential breaches.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Security Measures</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -190,7 +250,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from Web App Dev</h1>
 
             </div>
 
@@ -260,37 +320,153 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Front-end Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Front-end Development</h1>
-                        <p>Designs user interfaces and enhances user experience.</p>
+                        <div class="content-wrapper">
+                            <p>Designs and develops visually appealing user interfaces (UI) that focus on enhancing user experience (UX), ensuring a seamless and engaging interaction across different web and mobile platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Front-end Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Back-end Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Back-end Development</h1>
-                        <p>Handles server-side logic and database management.</p>
+                        <div class="content-wrapper">
+                            <p>Handles server-side logic, database management, and ensures smooth communication between front-end interfaces and databases, providing a robust and scalable foundation for web applications.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Back-end Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - API Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>API Development</h1>
-                        <p>Creates APIs for seamless integration with other systems.</p>
+                        <div class="content-wrapper">
+                            <p>Creates secure, high-performance APIs to enable seamless communication between web applications, third-party services, and other software, allowing for efficient data exchange and functionality.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>API Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Content Management Systems -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Management Systems</h1>
-                        <p>Integrates with CMS platforms for content management.</p>
+                        <div class="content-wrapper">
+                            <p>Integrates with popular Content Management Systems (CMS) to streamline content creation, management, and organization, enabling easy updates, and ensuring a smooth content publishing workflow.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Management Systems</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Quality Assurance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Quality Assurance</h1>
-                        <p>Ensures the application meets quality and performance standards.</p>
+                        <div class="content-wrapper">
+                            <p>Ensures the application meets high-quality standards by performing thorough testing, including functional, performance, and security checks to deliver bug-free, secure, and optimized web applications.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Quality Assurance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
 
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Web Development Application FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is a Web Development Application?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        A Web Development Application is a software solution used to build, deploy, and maintain websites or web applications. It provides tools for coding, testing, debugging, and managing the overall development process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Why is a Web Development Application important?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        A Web Development Application streamlines the creation of websites by providing essential tools, frameworks, and functionalities. It simplifies coding, improves collaboration, enhances productivity, and ensures a more efficient development process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What features do Web Development Applications offer?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web Development Applications offer features like code editors, debugging tools, version control, templates, responsive design capabilities, and integration with databases, allowing developers to efficiently create and maintain web apps and websites.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do Web Development Applications improve collaboration?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Web Development Applications often include collaboration tools like version control systems (e.g., Git), real-time code sharing, and project management features that help teams work together, track progress, and streamline development workflows.
+                    </p>
+                </section>
+            </section>
 
 
 

@@ -8,7 +8,7 @@ $meta_title = isset($_POST['meta_title']) ? $_POST['meta_title'] : '';
 $summary = isset($_POST['summary']) ? $_POST['summary'] : '';
 $content = isset($_POST['editorContent']) ? $_POST['editorContent'] : '';
 $slug = isset($_POST['slug']) ? $_POST['slug'] : '';
-$page_type = isset($_POST['page_type']) ? $_POST['page_type'] : '';
+$category = isset($_POST['category']) ? $_POST['category'] : '';
 
 // Generate a new slug from the updated meta_title
 $new_slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $meta_title)));
@@ -33,11 +33,11 @@ if (isset($_FILES['social_sharing_image']) && $_FILES['social_sharing_image']['e
 
 // Prepare the SQL update statement
 if ($social_sharing_image) {
-    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, page_type=?, social_sharing_image=?, slug=?  WHERE slug=?");
-    $stmt->bind_param("sssssss", $meta_title, $summary, $content, $page_type, $social_sharing_image, $new_slug, $slug);
+    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, category=?, social_sharing_image=?, slug=?  WHERE slug=?");
+    $stmt->bind_param("sssssss", $meta_title, $summary, $content, $category, $social_sharing_image, $new_slug, $slug);
 } else {
-    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, page_type=?, slug=? WHERE slug=?");
-    $stmt->bind_param("ssssss", $meta_title, $summary, $content, $page_type, $new_slug, $slug);
+    $stmt = $conn->prepare("UPDATE webdev_blogs SET meta_title=?, summary=?, content=?, category=?, slug=? WHERE slug=?");
+    $stmt->bind_param("ssssss", $meta_title, $summary, $content, $category, $new_slug, $slug);
 }
 
 // Execute the statement

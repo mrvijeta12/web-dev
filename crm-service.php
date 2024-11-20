@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'crm' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -6,6 +31,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/web-services.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+
     <!-- Swiper CSS CDN for carousel/slider functionality -->
     <link
         rel="stylesheet"
@@ -30,15 +57,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/crm-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Elevate Your Customer Relationships with CRM Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Enhance customer engagement, streamline communication, and boost satisfaction with our advanced CRM software.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -50,39 +77,75 @@
 
 
 
-            <!-- ####### why choose us ########  -->
+            <!-- #######  core features ########  -->
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Core Features of CRM Solutions</h1>
             </div>
+
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Contact Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Contact Management</h1>
-                        <p>Centralized storage for customer and lead data, accessible from anywhere.</p>
+                        <div class="content-wrapper">
+                            <p>Keep all customer and lead information in one centralized database that’s easily accessible from any location, ensuring organized data management and enhanced collaboration for your team.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Contact Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Sales Tracking -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Sales Tracking</h1>
-                        <p>Monitors sales activities, pipelines, and performance metrics in real-time.</p>
+                        <div class="content-wrapper">
+                            <p>Gain a real-time view of sales activities, pipelines, and performance metrics. Track progress accurately, helping teams focus on priority leads and refine sales strategies effectively.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Sales Tracking</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Customer Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Support</h1>
-                        <p>Integrated tools to enhance customer service and support experience.</p>
+                        <div class="content-wrapper">
+                            <p>Provide better customer service with integrated tools for ticketing, real-time support, and tracking resolutions, enabling a seamless and efficient customer support experience for users.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Marketing Automation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Marketing Automation</h1>
-                        <p>Automates marketing efforts for targeted outreach and improved conversions.</p>
+                        <div class="content-wrapper">
+                            <p>Automate marketing campaigns to reach the right audience at the right time, boosting engagement and conversion rates while minimizing manual effort for your marketing team.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Marketing Automation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Reporting & Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reporting & Analytics</h1>
-                        <p>Offers deep insights and custom reports to refine sales and marketing strategies.</p>
+                        <div class="content-wrapper">
+                            <p>Access custom reports and valuable insights into sales and customer interactions, allowing you to refine strategies based on data-driven analytics and improve decision-making.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reporting & Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -203,7 +266,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from CRM</h1>
 
             </div>
 
@@ -271,35 +334,159 @@
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Key CRM Modules and Their Functions</h1>
             </div>
+
+
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Lead Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Lead Management</h1>
-                        <p>Tracks and manages sales leads throughout the sales process.</p>
+                        <div class="content-wrapper">
+                            <p>Effectively tracks and manages sales leads from initial contact to closing, improving lead nurturing and ensuring timely follow-ups to drive higher conversion rates.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Lead Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Contact Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Contact Management</h1>
-                        <p>Stores and organizes customer contact information.</p>
+                        <div class="content-wrapper">
+                            <p>Stores, organizes, and updates customer contact information, ensuring quick access to key details to enhance communication and relationship-building throughout the sales process.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Contact Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Sales Forecasting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Sales Forecasting</h1>
-                        <p>Predicts future sales trends based on historical data.</p>
+                        <div class="content-wrapper">
+                            <p>Utilizes historical sales data and advanced analytics to predict future sales trends, helping businesses make informed decisions and optimize their sales strategies.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Sales Forecasting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Customer Support -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Support</h1>
-                        <p>Facilitates customer service and support ticketing.</p>
+                        <div class="content-wrapper">
+                            <p>Streamlines customer service by managing support tickets and tracking customer inquiries, ensuring timely and effective responses to resolve issues and maintain satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Support</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Reporting and Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reporting and Analytics</h1>
-                        <p>Provides data insights for sales and customer interactions.</p>
+                        <div class="content-wrapper">
+                            <p>Provides comprehensive data insights on sales performance, customer interactions, and marketing efforts, helping businesses make data-driven decisions and optimize strategies for growth.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reporting and Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
+            <!-- ##### faq ####  -->
+
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>CRM Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of CRM systems do you build?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We build custom CRM systems tailored for businesses across various industries, including retail, real estate, healthcare, and finance. Our systems are designed to improve customer relationships, streamline communication, and enhance data management.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate CRM with other business tools?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer seamless integration with various business tools such as marketing automation platforms, email marketing services, and customer support software. This ensures a unified approach to customer relationship management and improved operational efficiency.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure data security in CRM systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize data security in CRM systems by implementing strong encryption protocols, access controls, and regular security audits. Our solutions are designed to protect sensitive customer data and ensure compliance with industry standards such as GDPR and HIPAA.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you provide CRM mobile app development?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we offer CRM mobile app development to provide your team with on-the-go access to customer data and real-time updates. Our apps are designed to ensure smooth usability, responsiveness, and security on both iOS and Android platforms.
+                    </p>
+                </section>
+            </section>
+
+
+
+
 
 
 

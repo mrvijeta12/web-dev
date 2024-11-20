@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'cxm' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,13 +55,12 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/cxm-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Enhance Customer Experience with CX Management</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Deliver personalized experiences and drive loyalty.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
 
@@ -56,30 +80,64 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Customer Journey Mapping -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Journey Mapping</h1>
-                        <p>Tracks every customer interaction for a holistic view of the experience.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks every customer interaction across multiple touchpoints, providing a holistic view of their experience with your brand, from awareness to purchase.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Journey Mapping</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Feedback Collection -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Feedback Collection</h1>
-                        <p>Gathers customer feedback to continually improve services and support.</p>
+                        <div class="content-wrapper">
+                            <p>Gathers valuable customer feedback through surveys, reviews, and direct interactions, enabling businesses to continually improve services and customer support.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Feedback Collection</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Omnichannel Engagement -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Omnichannel Engagement</h1>
-                        <p>Provides a consistent experience across multiple channels and devices.</p>
+                        <div class="content-wrapper">
+                            <p>Provides a seamless and consistent customer experience across multiple channels, ensuring that customers receive the same quality of service no matter where they interact.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Omnichannel Engagement</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Personalization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Personalization</h1>
-                        <p>Delivers tailored interactions based on customer behavior and preferences.</p>
+                        <div class="content-wrapper">
+                            <p>Delivers personalized experiences for customers by leveraging their behavior, preferences, and interactions to create targeted messages, offers, and services.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Personalization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Real-Time Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Real-Time Analytics</h1>
-                        <p>Offers insights into customer interactions as they happen for timely actions.</p>
+                        <div class="content-wrapper">
+                            <p>Offers real-time insights into customer interactions and behaviors, allowing businesses to make immediate data-driven decisions and optimize customer experiences in the moment.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Real-Time Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
@@ -205,7 +263,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from CXM</h1>
 
             </div>
 
@@ -275,36 +333,153 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Customer Feedback -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Feedback</h1>
-                        <p>Collects and analyzes customer feedback for improvements.</p>
+                        <div class="content-wrapper">
+                            <p>Collects and analyzes customer feedback across various platforms to identify areas for improvement, enabling businesses to enhance their products, services, and overall customer satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Feedback</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Personalization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Personalization</h1>
-                        <p>Customizes customer experiences based on preferences.</p>
+                        <div class="content-wrapper">
+                            <p>Customizes customer experiences by leveraging data and preferences to create tailored interactions, enhancing engagement and satisfaction, while fostering customer loyalty and long-term relationships.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Personalization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Customer Journey Mapping -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Journey Mapping</h1>
-                        <p>Visualizes the customer journey to identify touchpoints.</p>
+                        <div class="content-wrapper">
+                            <p>Visualizes the complete customer journey from initial contact to post-purchase, identifying key touchpoints and pain points to improve engagement, optimize experiences, and drive conversions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Journey Mapping</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Multi-Channel Engagement -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Multi-Channel Engagement</h1>
-                        <p>Facilitates interactions across various customer channels.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates customer interactions across multiple channels, such as email, social media, and live chat, ensuring consistent messaging, engagement, and a seamless experience across all touchpoints.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Multi-Channel Engagement</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Performance Metrics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Metrics</h1>
-                        <p>Tracks customer experience metrics for continuous improvement.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks key customer experience metrics such as satisfaction, loyalty, and Net Promoter Scores (NPS), providing actionable insights that drive continuous improvement and higher customer retention.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Metrics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
 
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
+
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Customer Experience Management (CXM) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Customer Experience Management (CXM)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Customer Experience Management (CXM) is the practice of managing and improving the interactions between a company and its customers. It aims to enhance the overall customer experience, ensuring satisfaction and fostering long-term relationships.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Why is CXM important for businesses?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CXM is crucial because it helps businesses understand customer needs, expectations, and pain points. By improving customer experiences, companies can drive customer loyalty, enhance brand reputation, and increase revenue through repeat business.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What are the key components of CXM?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        The key components of CXM include customer feedback and insights, personalized experiences, customer journey mapping, omnichannel support, and continuous improvement strategies that ensure consistency and satisfaction across all touchpoints.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How can CXM enhance customer loyalty?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        By personalizing interactions, addressing customer concerns promptly, and continuously improving the customer journey, CXM helps build trust and loyalty. Satisfied customers are more likely to return, recommend your business, and become brand advocates.
+                    </p>
+                </section>
+            </section>
 
 
 

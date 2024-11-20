@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'hrm' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/hrm-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Workforce with HRM Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Streamline recruitment, improve performance, and enhance engagement.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Employee Database -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Employee Database</h1>
-                        <p>Centralized storage of employee records for easy access and management.</p>
+                        <div class="content-wrapper">
+                            <p>Centralized storage for employee records, making it easy to access, manage, and update important employee information, ensuring accurate data across the organization.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Employee Database</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Payroll Processing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Payroll Processing</h1>
-                        <p>Automates payroll calculation, ensuring timely and accurate payments.</p>
+                        <div class="content-wrapper">
+                            <p>Automates payroll calculations, including tax deductions, benefits, and overtime, ensuring that employees receive timely and accurate payments while simplifying HR workflows.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Payroll Processing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Recruitment Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Recruitment Tools</h1>
-                        <p>Supports applicant tracking, interviews, and hiring workflows.</p>
+                        <div class="content-wrapper">
+                            <p>Supports recruitment efforts with applicant tracking systems, interview scheduling, and seamless hiring workflows, making the hiring process more efficient and organized.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Recruitment Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Performance Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Management</h1>
-                        <p>Monitors employee performance and supports appraisal processes.</p>
+                        <div class="content-wrapper">
+                            <p>Enables tracking of employee performance through regular assessments, feedback, and reviews, supporting appraisal processes and identifying areas for professional growth and improvement.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Time & Attendance Tracking -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Time & Attendance Tracking</h1>
-                        <p>Records attendance, leave balances, and work hours for workforce management.</p>
+                        <div class="content-wrapper">
+                            <p>Monitors employee attendance, tracks leave balances, and records work hours to streamline workforce management, ensure compliance, and improve payroll accuracy.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Time & Attendance Tracking</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -205,7 +265,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from HRM</h1>
 
             </div>
 
@@ -275,37 +335,153 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Recruitment Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Recruitment Management</h1>
-                        <p>Streamlines hiring processes and candidate tracking.</p>
+                        <div class="content-wrapper">
+                            <p>Streamlines the hiring process by managing job postings, tracking candidates, and facilitating communication, ensuring a smooth recruitment workflow from start to finish.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Recruitment Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Employee Onboarding -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Employee Onboarding</h1>
-                        <p>Facilitates smooth onboarding for new hires.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates a smooth and efficient onboarding process for new hires by providing all necessary documents, training materials, and access to resources on day one.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Employee Onboarding</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Performance Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Management</h1>
-                        <p>Monitors and evaluates employee performance and development.</p>
+                        <div class="content-wrapper">
+                            <p>Monitors and evaluates employee performance through regular reviews, feedback sessions, and goal tracking to ensure continuous improvement and professional growth.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Payroll Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Payroll Management</h1>
-                        <p>Automates payroll processes and compliance.</p>
+                        <div class="content-wrapper">
+                            <p>Automates payroll processes, including salary calculations, tax deductions, and compliance with local regulations, ensuring accurate and timely payments to employees.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Payroll Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Training and Development -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Training and Development</h1>
-                        <p>Provides resources for employee learning and skill enhancement.</p>
+                        <div class="content-wrapper">
+                            <p>Provides employees with resources for continuous learning, skill development, and career growth through training programs, workshops, and development opportunities.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Training and Development</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <!-- ##### blog ###  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
 
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Human Resource Management (HRM) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Human Resource Management (HRM)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Human Resource Management (HRM) refers to the process of managing people in an organization. It involves recruiting, hiring, training, managing employee relations, and ensuring compliance with labor laws.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How can HRM improve employee performance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HRM improves employee performance by implementing effective training programs, setting clear performance expectations, offering regular feedback, and providing incentives for high performance and growth.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does HRM help in employee retention?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        HRM helps retain employees by fostering a positive work culture, offering career development opportunities, providing competitive compensation, and addressing employee needs through recognition and benefits programs.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can HRM assist with legal compliance?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, HRM ensures compliance with labor laws, employee rights, and regulations related to hiring, firing, benefits, and workplace safety, minimizing the risk of legal issues for the company.
+                    </p>
+                </section>
+            </section>
 
 
             <!-- ##### Book #######  -->

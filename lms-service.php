@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'lms' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/lms-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Empower Learning with Our LMS Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Streamline training, development, and course management.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Course Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Course Management</h1>
-                        <p>Tools for creating, managing, and delivering engaging learning content.</p>
+                        <div class="content-wrapper">
+                            <p>Provides powerful tools to create, manage, and deliver engaging and interactive learning content, ensuring an effective educational experience for both instructors and learners alike.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Course Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Assessment Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Assessment Tools</h1>
-                        <p>Automated testing and grading for streamlined evaluation and feedback.</p>
+                        <div class="content-wrapper">
+                            <p>Offers automated testing, grading, and feedback tools to simplify the evaluation process, helping instructors provide timely and personalized feedback to students.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Assessment Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Progress Tracking -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Progress Tracking</h1>
-                        <p>Real-time tracking of learner progress and performance.</p>
+                        <div class="content-wrapper">
+                            <p>Enables real-time tracking of student progress and performance, allowing instructors to monitor learning outcomes and identify areas where additional support is needed.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Progress Tracking</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Collaboration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Collaboration</h1>
-                        <p>Enables discussion forums and interactive learning sessions.</p>
+                        <div class="content-wrapper">
+                            <p>Fosters interactive learning experiences through discussion forums and collaborative sessions, encouraging students to engage and share knowledge in a supportive environment.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Collaboration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Mobile Accessibility -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Mobile Accessibility</h1>
-                        <p>Accessible from any device, enabling on-the-go learning for users.</p>
+                        <div class="content-wrapper">
+                            <p>Designed for easy access across devices, allowing users to participate in learning activities and access content anytime, anywhere, making education truly mobile.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Mobile Accessibility</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -205,7 +265,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from LMS</h1>
 
             </div>
 
@@ -275,35 +335,160 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Course Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Course Management</h1>
-                        <p>Creates and organizes online courses and learning materials.</p>
+                        <div class="content-wrapper">
+                            <p>Creates and organizes online courses and learning materials, allowing instructors to develop structured lessons, modules, and multimedia content for students to access and complete.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Course Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Assessment Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Assessment Tools</h1>
-                        <p>Facilitates quizzes, tests, and assessments for learners.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates quizzes, tests, and other assessment tools that enable instructors to evaluate learner comprehension, track progress, and provide instant feedback for improvement.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Assessment Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Tracking and Reporting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Tracking and Reporting</h1>
-                        <p>Monitors learner progress and generates performance reports.</p>
+                        <div class="content-wrapper">
+                            <p>Monitors learner progress and generates detailed performance reports, offering insights into areas of strength and improvement, helping instructors personalize the learning experience.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Tracking and Reporting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Certification Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Certification Management</h1>
-                        <p>Issues and manages certificates for completed courses.</p>
+                        <div class="content-wrapper">
+                            <p>Issues and manages certificates for completed courses, ensuring that learners receive official recognition for their achievements, while automating certificate distribution upon course completion.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Certification Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Collaboration Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Collaboration Tools</h1>
-                        <p>Encourages interaction between learners and instructors.</p>
+                        <div class="content-wrapper">
+                            <p>Encourages interaction between learners and instructors through discussion forums, group chats, and collaborative assignments, fostering a dynamic and engaging learning environment.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Collaboration Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>LMS Software Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is an LMS and how does it work?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        An LMS (Learning Management System) is a software platform used to manage and deliver online courses and training programs. It allows instructors to create content, track learner progress, and administer assessments, all in one centralized system.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can LMS platforms be used for corporate training?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, LMS platforms are widely used for corporate training. They allow businesses to deliver training programs, track employee progress, and ensure compliance with industry standards. Corporate LMS solutions can be tailored to specific training needs and goals.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can I track learner progress in an LMS?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! LMS platforms come with robust tracking and reporting features. You can monitor learner progress, assess performance through quizzes and exams, and get detailed reports on completion rates, scores, and engagement levels.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Is it possible to customize an LMS?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, LMS platforms can be customized to meet specific needs. Whether it’s the course structure, branding, or integrating third-party tools, many LMS solutions offer flexible options to tailor the system to your organization's requirements.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How secure is an LMS?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        LMS platforms are designed with robust security measures, including user authentication, encrypted data transfer, and secure content storage. Regular updates and backups ensure that the system stays secure, protecting both learner data and course materials.
+                    </p>
+                </section>
+            </section>
 
 
 

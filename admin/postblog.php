@@ -11,14 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $meta_title = isset($_POST['meta_title']) ? $conn->real_escape_string($_POST['meta_title']) : '';
     $summary = isset($_POST['summary']) ? $conn->real_escape_string($_POST['summary']) : '';
     $content = isset($_POST['editorContent']) ? $conn->real_escape_string($_POST['editorContent']) : '';
-    $page_type = isset($_POST['page_type']) ? $conn->real_escape_string($_POST['page_type']) : '';
+    $category = isset($_POST['category']) ? $conn->real_escape_string($_POST['category']) : '';
 
     // Handle feature image upload
     $featureImagePath = '';
     if (isset($_FILES['social_sharing_image']) && $_FILES['social_sharing_image']['error'] === UPLOAD_ERR_OK) {
         $imageTmpName = $_FILES['social_sharing_image']['tmp_name'];
         $imageName = $_FILES['social_sharing_image']['name'];
-        $imageError = $_FILES['social_sharing_image']['error'];
 
         // Get the image file extension
         $imageExt = strtolower(pathinfo($imageName, PATHINFO_EXTENSION));
@@ -33,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Move the uploaded file to the desired folder
             if (move_uploaded_file($imageTmpName, $imageDestination)) {
-                // File successfully uploaded, proceed to insert into the database
+                // File successfully uploaded, set the path
                 $featureImagePath = $imageDestination;
             } else {
                 echo "Error uploading the file.";
@@ -50,21 +49,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Generate slug from meta_title
     $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $meta_title)));
+    $slug = ltrim($slug, '-'); // Remove leading dashes if present
 
-    // Remove leading dashes if present
-    $slug = ltrim($slug, '-');
+    // Get current date, time, and datetime
+    date_default_timezone_set('Asia/Kolkata');
+    $currentDate = date('Y-m-d'); // Current date in YYYY-MM-DD format
+    $currentTime = date('H:i:s'); // Current time in HH:MM:SS format
+    $currentDatetime = date('Y-m-d H:i:s'); // Current datetime in YYYY-MM-DD HH:MM:SS format
 
-    // Insert blog data into the database
-    $sql = "INSERT INTO webdev_blogs (meta_title, summary, content,  page_type ,  social_sharing_image, slug ) 
-            VALUES ('$meta_title', '$summary', '$content', '$page_type', '$featureImagePath', '$slug' )";
+    // Determine the blog status based on the button clicked
+    $blog_status = isset($_POST['addToDraft']) ? 'draft' : 'published';
 
-    if ($conn->query($sql) === TRUE) {
+    // Prepare the SQL query using prepared statements
+    $stmt = $conn->prepare("INSERT INTO webdev_blogs (
+        meta_title, 
+        summary, 
+        content, 
+        category, 
+        social_sharing_image, 
+        slug, 
+        blog_status, 
+        blog_date, 
+        blog_time, 
+        created_at
+    ) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    // Bind parameters
+    $stmt->bind_param("ssssssssss", $meta_title, $summary, $content, $category, $featureImagePath, $slug, $blog_status, $currentDate, $currentTime, $currentDatetime);
+
+    // Execute the query
+    if ($stmt->execute()) {
+        // Redirect to dashboard after successful operation
         header("Location: dashboard.php");
         exit; // Ensure no further code is executed after redirection
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $stmt->error;
     }
 
-    // Close connection
+    // Close the statement and connection
+    $stmt->close();
     $conn->close();
 }

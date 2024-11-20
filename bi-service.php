@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'bi' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/bi-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Unlock Data Insights with Business Intelligence</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Transform data into actionable insights for growth.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Data Visualization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Visualization</h1>
-                        <p>Transforms data into visual insights like charts, graphs, and dashboards.</p>
+                        <div class="content-wrapper">
+                            <p>Transforms data into visual insights such as charts, graphs, and dashboards, making complex data easier to understand and enabling quick decision-making for businesses.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Visualization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Predictive Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Predictive Analytics</h1>
-                        <p>Uses statistical algorithms to forecast future trends and patterns.</p>
+                        <div class="content-wrapper">
+                            <p>Uses statistical algorithms and machine learning to predict future trends, customer behavior, and business outcomes, helping organizations to take proactive actions based on forecasts.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Predictive Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Data Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Integration</h1>
-                        <p>Aggregates data from multiple sources for unified analysis.</p>
+                        <div class="content-wrapper">
+                            <p>Aggregates data from multiple sources into a unified system, enabling consistent and accurate insights across all business functions for better decision-making and improved efficiency.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Ad-hoc Reporting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Ad-hoc Reporting</h1>
-                        <p>Allows custom report generation for specific insights and metrics.</p>
+                        <div class="content-wrapper">
+                            <p>Generates custom reports on demand, enabling businesses to create tailored insights based on specific needs and metrics, which can drive faster, data-informed decision-making.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Ad-hoc Reporting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Real-Time Analysis -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Real-Time Analysis</h1>
-                        <p>Provides instant data analysis to facilitate timely decision-making.</p>
+                        <div class="content-wrapper">
+                            <p>Provides instant, real-time analysis of data, ensuring that decision-makers have up-to-date insights, allowing them to respond quickly to market changes or business needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Real-Time Analysis</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -206,7 +266,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from BI</h1>
 
             </div>
 
@@ -276,36 +336,153 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Data Warehousing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Warehousing</h1>
-                        <p>Consolidates data from various sources for analysis.</p>
+                        <div class="content-wrapper">
+                            <p>Consolidates data from various internal and external sources into a centralized repository, making it easier for businesses to access, analyze, and derive actionable insights from their data.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Warehousing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Data Visualization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Visualization</h1>
-                        <p>Transforms data into graphical representations for insights.</p>
+                        <div class="content-wrapper">
+                            <p>Transforms complex datasets into visually appealing and easy-to-understand charts, graphs, and dashboards, helping businesses quickly interpret data and make informed decisions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Visualization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Reporting Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reporting Tools</h1>
-                        <p>Generates comprehensive reports on business performance.</p>
+                        <div class="content-wrapper">
+                            <p>Generates in-depth, customizable reports on business performance, financial metrics, and other key indicators, providing stakeholders with clear and actionable insights for decision-making.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reporting Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Predictive Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Predictive Analytics</h1>
-                        <p>Uses historical data to forecast future trends.</p>
+                        <div class="content-wrapper">
+                            <p>Uses advanced statistical models and machine learning algorithms to analyze historical data and forecast future trends, empowering businesses to make proactive, data-driven decisions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Predictive Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Dashboards -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Dashboards</h1>
-                        <p>Provides real-time monitoring of key performance indicators (KPIs).</p>
+                        <div class="content-wrapper">
+                            <p>Provides real-time monitoring of key performance indicators (KPIs), displaying crucial business metrics and insights in a dynamic, interactive format for easy tracking and decision-making.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Dashboards</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
 
 
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
+
+
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Business Intelligence (BI) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Business Intelligence (BI)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Business Intelligence (BI) refers to the technologies, strategies, and practices used to collect, analyze, and present business data. BI systems help businesses make data-driven decisions by providing insights into key metrics and trends.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does BI help in decision-making?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        BI enables decision-makers to access real-time, accurate, and actionable data, allowing them to identify trends, patterns, and opportunities that can guide strategic business decisions and improve overall performance.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What tools are used in BI?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        BI tools include data visualization platforms, dashboards, reporting tools, and data warehousing solutions. Some popular BI tools include Tableau, Microsoft Power BI, and Google Data Studio, which help analyze and visualize business data.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Is BI suitable for small businesses?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, BI is suitable for businesses of all sizes. Many BI tools are scalable and offer affordable options for small businesses, helping them gain insights, improve processes, and make informed decisions to drive growth.
+                    </p>
+                </section>
+            </section>
 
 
 

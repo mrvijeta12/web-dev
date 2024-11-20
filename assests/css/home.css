@@ -65,6 +65,7 @@ body {
   color: white;
   z-index: 2;
   font-family: Roboto-Bold;
+  line-height: 65px;
   /* letter-spacing: 2px; */
 }
 .hero h2 {
@@ -72,6 +73,7 @@ body {
   color: white;
   z-index: 2;
   font-family: Roboto-Regular;
+  line-height: 35px;
   /* letter-spacing: 1.25px; */
 }
 
@@ -783,6 +785,11 @@ body {
   }
   .hero h1 {
     font-size: 2rem;
+    line-height: 45px;
+  }
+  .hero h2 {
+    font-size: 1rem;
+    line-height: 25px;
   }
 
   .container h1 {
@@ -847,9 +854,6 @@ body {
   }
   .collaboration-child {
     width: 100%;
-  }
-  .hero h2 {
-    font-size: 1rem;
   }
 }
 

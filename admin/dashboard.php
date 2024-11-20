@@ -1,86 +1,101 @@
 <?php
 include_once "session.php";
 check_login();
-include_once 'database.php';
-
-
-// Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs ORDER BY id DESC";
-$result = $conn->query($sql);
-
-// Check if the query was successful
-if ($result === false) {
-    die("SQL Error: " . $conn->error); // Output the error message
-}
-
-$contents = [];
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $contents[] = $row;
-    }
-} else {
-    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
-}
-
-$conn->close();
+include_once "database.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content Layout</title>
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <script>
-        function handleContainerClick(event, slug) {
-            if (!event.target.classList.contains('edit-button')) {
-                // Redirecting to viewContent.php with the slug
-                window.location.href = 'insights?slug=' + encodeURIComponent(slug);
-            }
-        }
-    </script>
-
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <title>Dashboard</title>
 </head>
 
 <body>
-    <?php include "navbar.php"; ?>
 
-    <?php foreach ($contents as $row): ?>
-        <?php
-        $slug = htmlspecialchars($row['slug']);
-        $summary = htmlspecialchars($row['summary']);
-        $id = $row['id'];
-        $featureImage = htmlspecialchars($row['social_sharing_image']);
-        ?>
+    <?php include_once "navbar.php";
 
-        <div class='content-container' onclick='handleContainerClick(event, "<?= $slug ?>")'>
-            <!-- Image Container -->
-            <div class='image-container'>
-                <?php if ($featureImage): ?>
-                    <img src='<?= $featureImage ?>' alt='Feature Image'>
-                <?php else: ?>
-                    <img src='default-image.png' alt='Default Image'> <!-- Optional default image -->
-                <?php endif; ?>
-            </div>
+    // Function to count rows in a table based on a condition
+    function getCount($conn, $tableName, $condition = "")
+    {
+        $query = "SELECT COUNT(id) AS total FROM $tableName";
 
-            <!-- Text Content -->
-            <div class='text-content'>
-                <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
-                <p><?= $summary ?></p>
-            </div>
+        // Append the condition if provided
+        if (!empty($condition)) {
+            $query .= " WHERE $condition";
+        }
 
-            <!-- Edit Button -->
-            <?php if ($id > 0): ?>
-                <form method='GET' action='editblog' class='edit-form'>
-                    <input type='hidden' name='slug' value='<?= $slug ?>'>
-                    <button type='submit' class='edit-button'>Edit</button>
-                </form>
-            <?php endif; ?>
+        $stmt = $conn->prepare($query);
+
+        if (!$stmt) {
+            die("Query preparation failed: " . $conn->error);
+        }
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if (!$result) {
+            die("Query execution failed: " . $stmt->error);
+        }
+
+        $count = $result->fetch_assoc()['total'] ?? 0;
+        $stmt->close();
+        return $count;
+    }
+
+    // Get the counts
+    $blogCount = getCount($conn, "webdev_blogs", "blog_status = 'published'"); // Count only published blogs
+    $userCount = getCount($conn, "webdev_auth");  // Count users
+    $draftCount = getCount($conn, "webdev_blogs", "blog_status = 'draft'"); // Count draft blogs
+    ?>
+
+    <!-- Dashboard -->
+    <div class="wrapper">
+        <div class="child child1">
+            <?php include "sidebar.php"; ?>
         </div>
 
-    <?php endforeach; ?>
+        <div class="child2-wrapper">
+            <div class="child2-header">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="child child2">
+
+                <a href="blogs" class="cards card1">
+                    <div>
+                        <h6>Blogs</h6>
+                    </div>
+                    <div class="cards-image">
+                        <img src="../images/revision.png" alt="blog-image">
+                        <span><?php echo $blogCount; ?></span>
+                    </div>
+                </a>
+
+                <a href="users" class="cards card2">
+                    <div>
+                        <h6>Users</h6>
+                    </div>
+                    <div class="cards-image">
+                        <img src="../images/revision.png" alt="user-image">
+                        <span><?php echo $userCount; ?></span>
+                    </div>
+                </a>
+
+                <a href="drafts" class="cards card2">
+                    <div>
+                        <h6>Draft</h6>
+                    </div>
+                    <div class="cards-image">
+                        <img src="../images/revision.png" alt="draft-image">
+                        <span><?php echo $draftCount; ?></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

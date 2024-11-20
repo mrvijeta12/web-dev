@@ -43,3 +43,51 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conn->close();
+
+
+// new added 
+
+// <!-- Image Container -->
+//             <div class='image-container'>
+//                 <?php if ($featureImage): ?>
+//                     <!-- <img src='<?= $featureImage ?>' alt='Feature Image'> -->
+//                 <?php else: ?>
+//                     <!-- <img src='default-image.png' alt='Default Image'>   -->
+//                 <?php endif; ?>
+//             </div>
+
+//             <!-- Text Content -->
+//             <!-- <h2>></h2> -->
+//             <!-- <p><?= $summary ?></p>  -->
+
+//             $summary = htmlspecialchars($row['summary']);
+//             $featureImage = htmlspecialchars($row['social_sharing_image']);
+
+
+<!-- <?php foreach ($contents as $row): ?>
+        <?php
+        $slug = htmlspecialchars($row['slug']);
+        $id = $row['id'];
+      
+        ?>
+
+        <div class='content-container' onclick='handleContainerClick(event, "<?= $slug ?>")'>
+
+
+
+            <div class='text-content'>
+                <ol>
+                    <li><?= $slug ?></li>
+                </ol>
+            </div>
+
+            <!-- Edit Button -->
+            <?php if ($id > 0): ?>
+                <form method='GET' action='editblog' class='edit-form'>
+                    <input type='hidden' name='slug' value='<?= $slug ?>'>
+                    <button type='submit' class='edit-button'>Edit</button>
+                </form>
+            <?php endif; ?>
+        </div>
+
+    <?php endforeach; ?> -->

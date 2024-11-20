@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'scm' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/scm-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Streamline Your Supply Chain with SCM Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize logistics, reduce costs, and improve delivery.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Inventory Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Inventory Management</h1>
-                        <p>Tracks stock levels in real-time, ensuring optimal inventory at all times.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks inventory levels in real-time, ensuring that stock is maintained at optimal levels to prevent overstocking or stockouts and streamline inventory management processes.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Inventory Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Demand Forecasting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Demand Forecasting</h1>
-                        <p>Predicts demand trends to help avoid stockouts or overstocking.</p>
+                        <div class="content-wrapper">
+                            <p>Utilizes historical data and trends to accurately predict future demand, helping businesses avoid stockouts, reduce excess inventory, and plan for peak seasons efficiently.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Demand Forecasting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Supplier Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Supplier Management</h1>
-                        <p>Manages supplier relationships, ensuring quality and on-time deliveries.</p>
+                        <div class="content-wrapper">
+                            <p>Streamlines the management of supplier relationships, ensuring timely deliveries, maintaining product quality, and facilitating effective communication to meet business needs.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Supplier Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Order Processing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Order Processing</h1>
-                        <p>Streamlines order fulfillment from receiving to shipping.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizes the order fulfillment process, from receiving and processing customer orders to packaging and shipping, ensuring faster delivery and customer satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Order Processing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Logistics & Transportation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Logistics & Transportation</h1>
-                        <p>Optimizes shipping routes and methods to reduce costs and delivery times.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizes shipping routes, methods, and costs to ensure faster deliveries, reducing overall transportation expenses while meeting customer expectations for timely shipping.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Logistics & Transportation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -206,7 +266,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from SCM</h1>
 
             </div>
 
@@ -276,32 +336,101 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Inventory Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Inventory Management</h1>
-                        <p>Tracks stock levels, orders, and deliveries in real time.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks real-time stock levels, monitors incoming orders and deliveries, and provides inventory alerts to ensure accurate and timely stock management, reducing errors and delays.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Inventory Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Supplier Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Supplier Management</h1>
-                        <p>Manages supplier relationships and performance metrics.</p>
+                        <div class="content-wrapper">
+                            <p>Manages supplier relationships by tracking performance metrics, ensuring timely deliveries, and optimizing supplier selection to maintain a smooth supply chain and high-quality product sourcing.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Supplier Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Logistics Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Logistics Management</h1>
-                        <p>Optimizes transportation, warehousing, and distribution.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizes transportation routes, warehousing strategies, and distribution systems to reduce costs, improve delivery times, and ensure the efficient movement of goods across the supply chain.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Logistics Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Order Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Order Management</h1>
-                        <p>Handles customer orders from placement to fulfillment.</p>
+                        <div class="content-wrapper">
+                            <p>Handles customer orders from the initial placement through to fulfillment, ensuring accurate processing, timely delivery, and efficient tracking of order statuses for improved customer satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Order Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Demand Planning -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Demand Planning</h1>
-                        <p>Forecasts demand to optimize inventory and production.</p>
+                        <div class="content-wrapper">
+                            <p>Forecasts product demand based on historical data and trends, ensuring optimal inventory levels and production planning to reduce excess stock and avoid shortages in the supply chain.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Demand Planning</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
@@ -309,6 +438,53 @@
 
 
 
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Supply Chain Management (SCM) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Supply Chain Management (SCM)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Supply Chain Management (SCM) is the process of overseeing and managing the flow of goods, services, information, and finances from raw materials to the end customer. It includes procurement, production, logistics, and distribution.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does SCM improve efficiency?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        SCM improves efficiency by optimizing inventory management, reducing lead times, and streamlining procurement and distribution processes. This leads to faster production cycles, lower costs, and better resource allocation.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can SCM integrate with other business systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, SCM can integrate with systems like ERP, CRM, and WMS (Warehouse Management Systems), providing a unified platform for managing inventory, orders, and logistics, ensuring better coordination across departments.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does SCM improve customer satisfaction?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        SCM ensures timely delivery of products, efficient order fulfillment, and improved inventory management, which helps meet customer demands quickly and accurately, ultimately improving overall customer satisfaction.
+                    </p>
+                </section>
+            </section>
 
             <!-- ##### Book #######  -->
 

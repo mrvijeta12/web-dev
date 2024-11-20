@@ -64,6 +64,7 @@ body {
   color: white;
   z-index: 2;
   font-family: Roboto-Bold;
+  line-height: 65px;
 }
 .hero h2 {
   font-size: 24px;
@@ -71,6 +72,7 @@ body {
   z-index: 2;
   font-family: Roboto-Regular;
   font-size: 24px;
+  line-height: 35px;
 }
 
 .hero a {
@@ -402,6 +404,11 @@ body {
   }
   .hero h1 {
     font-size: 2rem;
+    line-height: 45px;
+  }
+  .hero h2 {
+    font-size: 1rem;
+    line-height: 25px;
   }
   .faq-wrapper {
     flex-direction: column;
@@ -427,9 +434,6 @@ body {
 }
 
 @media screen and (max-width: 593px) {
-  .hero h2 {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -449,6 +453,9 @@ body {
 
   .about {
     height: 400px;
+  }
+  .blog-wrapper {
+    padding: 0px;
   }
 
   .image-container img {

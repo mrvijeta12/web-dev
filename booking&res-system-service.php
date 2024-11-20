@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'booking-and-reservation' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/booking-and-reservation-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Streamline Your Booking and Reservations</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Simplify bookings and enhance customer convenience.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Real-Time Availability -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Real-Time Availability</h1>
-                        <p>Displays current availability to prevent double-bookings and errors.</p>
+                        <div class="content-wrapper">
+                            <p>Displays real-time availability to prevent double bookings and errors, ensuring smooth and efficient scheduling of services or appointments.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Real-Time Availability</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Automated Confirmation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Automated Confirmation</h1>
-                        <p>Sends instant booking confirmations to customers and staff.</p>
+                        <div class="content-wrapper">
+                            <p>Automates booking confirmations by sending instant notifications to both customers and staff, ensuring everyone is informed and up-to-date.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Automated Confirmation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Payment Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Payment Integration</h1>
-                        <p>Supports various payment methods for a seamless transaction process.</p>
+                        <div class="content-wrapper">
+                            <p>Supports various payment methods, including credit cards and digital wallets, to offer customers a seamless and secure transaction process.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Payment Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Cancellation Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Cancellation Management</h1>
-                        <p>Handles cancellations and modifications efficiently to free up resources.</p>
+                        <div class="content-wrapper">
+                            <p>Handles cancellations and modifications efficiently, allowing resources to be freed up promptly and preventing overbooking or scheduling conflicts.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Cancellation Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Calendar Sync -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Calendar Sync</h1>
-                        <p>Syncs with calendar systems to ensure organized scheduling and reminders.</p>
+                        <div class="content-wrapper">
+                            <p>Syncs with popular calendar systems to ensure all appointments and schedules are organized, with automated reminders sent to customers and staff.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Calendar Sync</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -206,7 +266,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from Booking And Reservation</h1>
 
             </div>
 
@@ -276,38 +336,156 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Booking Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Booking Management</h1>
-                        <p>Manages reservations, including real-time availability and customer bookings.</p>
+                        <div class="content-wrapper">
+                            <p>Manages reservations by tracking real-time availability and customer bookings, ensuring efficient scheduling and seamless coordination of bookings for businesses and their customers.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Booking Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Payment Processing -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Payment Processing</h1>
-                        <p>Handles secure online payments and transactions for bookings.</p>
+                        <div class="content-wrapper">
+                            <p>Handles secure online payments, facilitating seamless transactions for bookings. Supports multiple payment methods and ensures a smooth, secure checkout process for customers.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Payment Processing</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Customer Notifications -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Notifications</h1>
-                        <p>Automates notifications for booking confirmations, reminders, and updates.</p>
+                        <div class="content-wrapper">
+                            <p>Automates notifications for booking confirmations, reminders, and updates, ensuring customers are informed at every stage of their booking process for a better experience.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Notifications</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Cancellation Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Cancellation Management</h1>
-                        <p>Facilitates easy booking modifications and cancellations.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates easy modifications and cancellations for customer bookings, ensuring flexible policies and offering a seamless experience for customers needing to change or cancel their plans.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Cancellation Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Reporting and Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Reporting and Analytics</h1>
-                        <p>Generates reports on booking trends and customer preferences for data-driven decisions.</p>
+                        <div class="content-wrapper">
+                            <p>Generates detailed reports on booking trends, customer preferences, and business performance, providing valuable insights for data-driven decisions and improved operational efficiency.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Reporting and Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
 
 
+
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Booking and Reservations FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What types of booking and reservation systems do you offer?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We offer customizable booking systems for hotels, restaurants, airlines, event venues, and car rentals. Our systems handle real-time availability, secure payment processing, and customer notifications to streamline the booking process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can I manage bookings through a mobile app?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we provide mobile-friendly booking solutions that allow users to make, modify, and cancel bookings directly from their smartphones. Our mobile apps are designed for convenience and are fully integrated with your reservation system.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the security of customer information?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our booking systems utilize secure encryption protocols, SSL certificates, and payment gateways to protect sensitive customer data. We comply with data protection regulations to ensure privacy and security throughout the booking process.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can customers modify or cancel their bookings?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, our system allows customers to easily modify or cancel their bookings based on your business policies. You can set cancellation fees, time frames, and other conditions to manage booking changes effectively.
+                    </p>
+                </section>
+            </section>
 
 
             <!-- ##### Book #######  -->

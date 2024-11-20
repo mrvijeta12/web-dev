@@ -4,7 +4,7 @@ include_once 'db.php';
 
 
 // Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs ORDER BY id DESC";
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'blog' ORDER BY id DESC";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -23,7 +23,6 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

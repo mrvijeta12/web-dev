@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'bpm' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/bpm-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Optimize Your Operations with BPM Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Enhance efficiency, automate tasks, and improve workflows.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Process Mapping -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Process Mapping</h1>
-                        <p>Visualizes business processes, enabling a clear understanding and analysis of workflows.</p>
+                        <div class="content-wrapper">
+                            <p>Visualizes business processes to provide a comprehensive understanding and in-depth analysis of workflows, enabling teams to identify inefficiencies and optimize their operations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Process Mapping</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Workflow Automation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Workflow Automation</h1>
-                        <p>Automates repetitive tasks to streamline workflows and enhance productivity.</p>
+                        <div class="content-wrapper">
+                            <p>Automates repetitive tasks across business operations, streamlining workflows to reduce manual errors, increase efficiency, and allow employees to focus on higher-value tasks.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Workflow Automation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Performance Analytics -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Analytics</h1>
-                        <p>Tracks and analyzes key performance metrics to identify areas for improvement.</p>
+                        <div class="content-wrapper">
+                            <p>Tracks key performance indicators (KPIs) and analyzes critical metrics to uncover trends, identify areas for improvement, and empower teams to make data-driven decisions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Compliance Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Compliance Management</h1>
-                        <p>Ensures that workflows adhere to regulatory standards and company policies.</p>
+                        <div class="content-wrapper">
+                            <p>Ensures that business workflows remain compliant with regulatory standards and internal company policies by monitoring processes and ensuring proper governance across the organization.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Compliance Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Process Optimization -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Process Optimization</h1>
-                        <p>Continuously refines workflows to eliminate inefficiencies and maximize resources.</p>
+                        <div class="content-wrapper">
+                            <p>Continuously analyzes and refines business workflows, eliminating inefficiencies and maximizing resource utilization to improve productivity and enhance overall operational effectiveness.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Process Optimization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -205,7 +265,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from BPM</h1>
 
             </div>
 
@@ -275,37 +335,152 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Process Modeling -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Process Modeling</h1>
-                        <p>Visualizes and designs business processes for clarity.</p>
+                        <div class="content-wrapper">
+                            <p>Visualizes and designs business processes to enhance understanding, ensuring clear communication of workflows and providing a structured approach to process improvement and optimization efforts.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Process Modeling</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Workflow Automation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Workflow Automation</h1>
-                        <p>Automates repetitive tasks to enhance productivity.</p>
+                        <div class="content-wrapper">
+                            <p>Automates repetitive tasks and processes, reducing manual effort, minimizing human error, and increasing productivity by enabling teams to focus on higher-value activities and strategic goals.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Workflow Automation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Performance Monitoring -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Performance Monitoring</h1>
-                        <p>Tracks process performance in real-time for optimization.</p>
+                        <div class="content-wrapper">
+                            <p>Monitors process performance in real-time, identifying bottlenecks and inefficiencies, enabling quick decision-making and process optimization to improve overall business operations and outcomes.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Performance Monitoring</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Collaboration Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Collaboration Tools</h1>
-                        <p>Facilitates communication and collaboration among teams.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates effective communication and collaboration among team members, ensuring seamless information sharing, task delegation, and real-time collaboration for better decision-making and project execution.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Collaboration Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Compliance Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Compliance Management</h1>
-                        <p>Ensures adherence to industry regulations and standards.</p>
+                        <div class="content-wrapper">
+                            <p>Ensures that business processes and operations comply with industry regulations and standards, reducing the risk of non-compliance, legal issues, and financial penalties while ensuring a smooth workflow.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Compliance Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
 
+
+            <!-- ##### faq #######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Business Process Management (BPM) FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Business Process Management (BPM)?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Business Process Management (BPM) is a methodology that focuses on improving and optimizing an organization's business processes. It involves the design, execution, monitoring, and continuous improvement of processes to increase efficiency, reduce costs, and enhance customer satisfaction.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does BPM improve operational efficiency?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        BPM improves operational efficiency by streamlining workflows, automating tasks, and eliminating bottlenecks. It ensures that resources are used effectively, reducing waste and improving the speed and quality of business processes.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can BPM integrate with other business systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, BPM can integrate with other business systems such as ERP, CRM, and HR software. This integration ensures that data flows seamlessly between systems, providing a unified platform for managing and optimizing business processes.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How does BPM improve decision-making?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        BPM provides real-time data and analytics on business processes, enabling better decision-making. By tracking process performance and identifying inefficiencies, BPM helps leaders make informed decisions that drive improvement and growth.
+                    </p>
+                </section>
+            </section>
 
 
             <!-- ##### Book #######  -->

@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'e-commerce' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,13 +55,12 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/e-commerce-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Boost Your Online Sales with E-commerce Solutions</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Enhance shopping experiences and drive conversions.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
 
@@ -56,33 +80,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Product Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Product Management</h1>
-                        <p>Organizes product catalog with detailed descriptions and images.</p>
+                        <div class="content-wrapper">
+                            <p>Organizes and displays product catalog with detailed descriptions, images, and pricing information, ensuring an informative and user-friendly browsing experience for all customers.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Product Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Shopping Cart -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Shopping Cart</h1>
-                        <p>Secure and seamless shopping cart for a smooth checkout experience.</p>
+                        <div class="content-wrapper">
+                            <p>Provides a secure, user-friendly shopping cart experience, ensuring smooth checkout and minimizing friction for customers during the purchase process.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Shopping Cart</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Payment Gateway Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Payment Gateway Integration</h1>
-                        <p>Supports multiple payment options for global transactions.</p>
+                        <div class="content-wrapper">
+                            <p>Integrates multiple payment options, supporting a wide range of currencies and payment methods for easy, secure, and globally accessible transactions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Payment Gateway Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Order Tracking -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Order Tracking</h1>
-                        <p>Real-time order tracking to enhance customer satisfaction.</p>
+                        <div class="content-wrapper">
+                            <p>Provides customers with real-time order tracking, allowing them to monitor delivery progress, boosting transparency, and enhancing overall satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Order Tracking</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Customer Reviews -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Reviews</h1>
-                        <p>Encourages reviews and ratings for products, boosting credibility.</p>
+                        <div class="content-wrapper">
+                            <p>Encourages customers to leave reviews and ratings on products, improving credibility, building trust, and helping others make informed purchasing decisions.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Reviews</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -206,7 +265,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from E-COMMERCE</h1>
 
             </div>
 
@@ -277,47 +336,163 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Finance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>
-                            Finance
-                        </h1>
-                        <p>Manages accounting, financial reporting, and analysis.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Human Resources (HR)</h1>
-                        <p>Employee management, payroll, and recruitment.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Relationship Management (CRM)</h1>
-                        <p>Handles customer interactions and sales processes.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Inventory Management</h1>
-                        <p> Tracks inventory levels, orders, and deliveries.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Supply Chain Management</h1>
-                        <p>Optimizes logistics, warehousing, and distribution.</p>
+                        <div class="content-wrapper">
+                            <p>Manages accounting, financial reporting, budgeting, and financial analysis to ensure efficient resource allocation, timely decision-making, and adherence to industry standards and regulations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Human Resources (HR) -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Employee management, payroll processing, recruitment, and employee benefits management, ensuring smooth operations and compliance with labor laws and company policies.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Human Resources (HR)</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 3 - Customer Relationship Management (CRM) -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Handles customer interactions, tracks sales processes, and ensures personalized customer experiences, leading to higher satisfaction and retention rates through effective communication and service delivery.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Relationship Management (CRM)</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 4 - Inventory Management -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Tracks inventory levels, manages orders, deliveries, and stock replenishment, ensuring timely availability of products and efficient supply chain management for smooth business operations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Inventory Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Supply Chain Management -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Optimizes logistics, warehousing, and distribution strategies to improve efficiency, reduce costs, and ensure timely delivery of goods, enhancing overall supply chain performance and customer satisfaction.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Supply Chain Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
                 </div>
+            </div>
 
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
             </div>
 
 
 
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>E-Commerce Website Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What features are included in an e-commerce website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        E-commerce websites typically include product catalogs, secure payment gateways, shopping carts, order management, customer accounts, and mobile compatibility. We ensure your website is user-friendly and optimized for conversions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can I integrate payment gateways with my e-commerce site?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we integrate popular payment gateways like PayPal, Stripe, and credit card processing systems to facilitate secure online transactions. This ensures a smooth and trusted payment experience for your customers.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the security of my e-commerce website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We implement SSL certificates, secure payment systems, and robust encryption techniques to safeguard your customers’ sensitive information. Regular security audits are conducted to maintain a secure environment for all transactions.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate inventory management with my e-commerce website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! We can integrate inventory management tools to automatically update stock levels, track sales, and manage product availability. This helps to prevent overselling and ensures smooth operations for your online store.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How can you improve the user experience on my e-commerce website?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We focus on intuitive design, fast loading speeds, mobile responsiveness, easy navigation, and seamless checkout processes. Our goal is to create an enjoyable shopping experience that drives customer satisfaction and conversions.
+                    </p>
+                </section>
+            </section>
 
 
 

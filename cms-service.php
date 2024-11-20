@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'cms' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/cms-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h1 data-aos="zoom-in" data-aos-duration="2500">Manage Your Content Seamlessly with CMS</h1>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Easily create, manage, and optimize your content.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -56,33 +81,68 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Content Creation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Creation</h1>
-                        <p>Easy-to-use tools for creating, editing, and organizing digital content efficiently.</p>
+                        <div class="content-wrapper">
+                            <p>Intuitive tools simplify the creation, editing, and organization of digital content, making it easier for teams to manage and produce high-quality materials efficiently.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Creation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - SEO Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>SEO Management</h1>
-                        <p>Built-in SEO capabilities to improve content visibility and search rankings.</p>
+                        <div class="content-wrapper">
+                            <p>Enhance visibility with built-in SEO tools, improving content rankings in search engines, and making it easier for audiences to discover your site and engage with content.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>SEO Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - Content Scheduling -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Scheduling</h1>
-                        <p>Automated scheduling for content publishing to streamline deployments.</p>
+                        <div class="content-wrapper">
+                            <p>Efficiently schedule content publication with automation features that streamline deployment and help maintain a consistent publishing cadence, ensuring timely updates for your audience.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Scheduling</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - Customizable Templates -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customizable Templates</h1>
-                        <p>Flexible templates that align with branding and functional requirements.</p>
+                        <div class="content-wrapper">
+                            <p>Access flexible templates that can be customized to match branding, functional needs, and user preferences, ensuring your content aligns with organizational standards.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customizable Templates</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - User Permissions -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>User Permissions</h1>
-                        <p>Controls user access and permissions to enhance security and content integrity.</p>
+                        <div class="content-wrapper">
+                            <p>Manage user access levels with customizable permissions, enhancing content security and integrity by ensuring that only authorized personnel can make critical edits or updates.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>User Permissions</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -207,7 +267,7 @@
 
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">
-                    Industries Benefiting from ERP</h1>
+                    Industries Benefiting from CMS</h1>
 
             </div>
 
@@ -277,34 +337,160 @@
             </div>
             <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Content Creation -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Creation</h1>
-                        <p>Facilitates the creation and editing of digital content.</p>
+                        <div class="content-wrapper">
+                            <p>Facilitates the creation and editing of digital content, providing the tools and resources needed to produce high-quality written, visual, and multimedia materials for various platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Creation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 2 - Content Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Content Management</h1>
-                        <p>Organizes and stores digital assets for easy retrieval.</p>
+                        <div class="content-wrapper">
+                            <p>Organizes and stores digital assets such as images, videos, and documents, enabling easy retrieval, editing, and management to ensure streamlined workflows and content accessibility.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Content Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 3 - User Management -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>User Management</h1>
-                        <p>Handles user roles, permissions, and authentication.</p>
+                        <div class="content-wrapper">
+                            <p>Handles user roles, permissions, and authentication, ensuring that only authorized individuals have access to specific content and functionalities while maintaining system security.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>User Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 4 - SEO Tools -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>SEO Tools</h1>
-                        <p>Optimizes content for search engines to increase visibility.</p>
+                        <div class="content-wrapper">
+                            <p>Optimizes content for search engines by providing tools and strategies to improve website ranking, enhance visibility, and drive more organic traffic to your digital platforms.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>SEO Tools</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
+
+                    <!-- Service 5 - Analytics and Reporting -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Analytics and Reporting</h1>
-                        <p>Provides insights into content performance and user engagement.</p>
+                        <div class="content-wrapper">
+                            <p>Provides insights into content performance, tracking user engagement, and identifying trends to improve content strategy, optimize marketing efforts, and measure ROI effectively.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Analytics and Reporting</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
+            </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+
+            <!-- ##### faq #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>CMS Software Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is a CMS and how does it work?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        A CMS (Content Management System) allows users to create, manage, and modify digital content on websites without needing specialized technical skills. It provides an intuitive interface for editing content, managing images, and updating website features.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can CMS handle e-commerce functionality?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, many modern CMS platforms offer built-in e-commerce functionality or integrations with e-commerce plugins. You can manage products, process orders, and handle payments through a CMS, making it ideal for businesses with online stores.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Is it easy to update and manage content?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Absolutely! CMS platforms are designed to be user-friendly, with WYSIWYG (What You See Is What You Get) editors that allow non-technical users to create and manage content with ease. You can update text, images, and videos without coding knowledge.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can a CMS be customized to suit my needs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, CMS platforms are highly customizable. You can modify the design, functionality, and features of your website using themes, plugins, and custom code. This flexibility ensures that your CMS can grow with your business needs.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How secure is a CMS?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        CMS platforms offer a variety of security features, including user role management, SSL encryption, and regular software updates. With proper configuration and regular maintenance, a CMS can be a secure platform for managing your website’s content.
+                    </p>
+                </section>
+            </section>
 
 
 

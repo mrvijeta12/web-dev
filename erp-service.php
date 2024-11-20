@@ -1,3 +1,28 @@
+<?php
+
+include_once 'db.php';
+
+
+// Fetch all blog posts with slug, summary, and feature image
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'erp' ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Check if the query was successful
+if ($result === false) {
+    die("SQL Error: " . $conn->error); // Output the error message
+}
+
+$contents = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $contents[] = $row;
+    }
+} else {
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+}
+
+$conn->close();
+?>
 <!DOCTYPE php>
 <html lang="en">
 
@@ -30,15 +55,15 @@
             <!-- ##### HERO SECTION #####  -->
             <div class="hero">
                 <div class="hero-image">
-                    <img src="./images/healthcare-hero4.jpg" alt="">
+                    <img src="./images/erp-hero.jpg" alt="">
                 </div>
                 <div class="hero-data">
-
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Business with ERP Solutions</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Optimize your operations, streamline processes, and boost efficiency with our advanced ERP software.</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                    <h2 data-aos="zoom-in" data-aos-duration="2500">Streamline operations and boost productivity with ERP.</h2>
+                    <a href="#" class="reopenPopup">Get Professional Advice</a>
                 </div>
             </div>
+
 
             <!-- ####### INTRODUCTION  ####### -->
 
@@ -49,49 +74,75 @@
 
 
 
-            <!-- ####### why choose us ########  -->
+            <!-- ####### core features ########  -->
             <div class="container">
                 <h1 data-aos="zoom-in" data-aos-duration="1500">Core Features of ERP Solutions</h1>
 
             </div>
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Integration -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>
-                            Integration
-                        </h1>
-                        <p>Seamlessly connects and unifies all core business functions and processes.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Automation</h1>
-                        <p>Reduces manual tasks and errors, boosting efficiency across all operations.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Analytics</h1>
-                        <p>Provides real-time insights, driving better and faster decision-making capabilities.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Scalability</h1>
-                        <p> Grows alongside your business, adapting to evolving needs and demands.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customization</h1>
-                        <p>Offers tailored solutions to meet unique requirements of every business.</p>
+                        <div class="content-wrapper">
+                            <p>Seamlessly connects and unifies core business functions, allowing for improved collaboration, efficient data sharing, and optimized workflows across departments and processes.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Integration</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Automation -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Eliminates repetitive tasks and minimizes errors, enhancing operational efficiency while allowing employees to focus on high-value work that drives business growth.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Automation</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 3 - Data Analytics -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Delivers real-time insights into business performance, enabling more informed and faster decision-making, and helping identify opportunities for continuous improvement.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Data Analytics</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 4 - Scalability -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Grows alongside your business, offering flexible solutions that can adapt and expand to meet the evolving demands and increased workload as the company scales.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Scalability</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Customization -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Provides flexible, tailored solutions to meet the specific needs of each unique business, enhancing functionality and aligning with organizational goals and processes.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customization</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
                 </div>
-
             </div>
+
 
 
 
@@ -273,44 +324,161 @@
             </div>
 
 
-            <div class=" service_choose_us">
-
-
-
+            <div class="service_choose_us">
                 <div class="services_container">
+                    <!-- Service 1 - Finance -->
                     <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>
-                            Finance
-                        </h1>
-                        <p>Manages accounting, financial reporting, and analysis.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Human Resources (HR)</h1>
-                        <p>Employee management, payroll, and recruitment.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Customer Relationship Management (CRM)</h1>
-                        <p>Handles customer interactions and sales processes.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Inventory Management</h1>
-                        <p> Tracks inventory levels, orders, and deliveries.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Supply Chain Management</h1>
-                        <p>Optimizes logistics, warehousing, and distribution.</p>
+                        <div class="content-wrapper">
+                            <p>Manages accounting, financial reporting, and analysis, ensuring accurate tracking of revenues, expenses, and financial health to inform decision-making and maintain compliance with regulations.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Finance</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
                     </div>
 
+                    <!-- Service 2 - Human Resources (HR) -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Handles employee management, payroll, and recruitment, streamlining HR processes to ensure compliance, improve workforce productivity, and maintain a positive workplace culture.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Human Resources (HR)</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 3 - Customer Relationship Management (CRM) -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Manages customer interactions and sales processes, improving customer satisfaction, retention, and growth by centralizing customer data and providing insights for personalized engagement.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Customer Relationship Management (CRM)</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
 
+                    <!-- Service 4 - Inventory Management -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Tracks inventory levels, orders, and deliveries, ensuring products are available when needed while minimizing overstocking, and streamlining the supply chain for better efficiency and cost control.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Inventory Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
+
+                    <!-- Service 5 - Supply Chain Management -->
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="content-wrapper">
+                            <p>Optimizes logistics, warehousing, and distribution, enhancing supply chain efficiency, reducing costs, and ensuring timely delivery of goods to customers by managing all aspects of the process.</p>
+                            <img src="images/star.png" alt="" />
+                            <h1>Supply Chain Management</h1>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More
+                        </button>
+                    </div>
                 </div>
+            </div>
+
+            <!-- ##### blog ###  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
+
+            <div class="blog-wrapper">
+                <?php foreach ($contents as $row): ?>
+                    <?php
+                    $slug = htmlspecialchars($row['slug']);
+                    $summary = htmlspecialchars($row['summary']);
+                    $id = $row['id'];
+                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+                    ?>
+
+
+                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
+                        <!-- Image Container -->
+                        <div class='image-container'>
+                            <img src='<?= $featureImage ?>' alt='Feature Image'>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class='text-content'>
+                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
+                            <p><?= $summary ?></p>
+                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+            </div>
+
+            <!-- #### faq ####  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>ERP Software Development FAQs</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What industries can benefit from ERP systems?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        ERP systems can benefit a wide range of industries including manufacturing, healthcare, retail, education, logistics, and finance. By integrating all business processes in one system, ERP helps organizations optimize their workflows and increase productivity.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How long does it take to implement an ERP system?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        The timeline for ERP implementation varies depending on the complexity of your business processes and the scale of the system. Typically, it takes between 3 to 12 months, including planning, customization, training, and deployment.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can ERP systems be accessed remotely?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, most modern ERP systems are cloud-based, allowing for remote access. Employees can access real-time data, manage tasks, and collaborate from anywhere, using any device with an internet connection, enhancing flexibility and productivity.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure data integrity in an ERP system?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We ensure data integrity in ERP systems through robust validation protocols, secure backups, and real-time data synchronization across all modules. Our systems use data encryption and access control to ensure accurate and protected information flow.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can I scale my ERP system as my business grows?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, ERP systems are scalable and can grow with your business. We offer flexible modules and configurations, so you can easily add new features or expand capacity as your business needs evolve over time.
+                    </p>
+                </section>
+            </section>
+
 
 
 
