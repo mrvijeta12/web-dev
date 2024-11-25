@@ -73,7 +73,7 @@ html {
   margin: 10px auto;
 }
 .hero-content a:hover {
-  color: #0363ff;
+  /* color: #0363ff; */
   border: 1px solid #0363ff;
 }
 
@@ -502,14 +502,15 @@ html {
   gap: 20px;
   flex-wrap: wrap;
   max-width: 100%;
-  padding: 0px 50px;
+  padding: 0px 15px;
+  /* margin-bottom: 50px; */
 }
 
 .content-container {
   /* margin: 0px auto 50px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: flex;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* border: 1px solid red; */
   /* border-radius: 8px; */
   /* overflow: hidden; */
@@ -517,7 +518,7 @@ html {
   height: auto;
   position: relative;
   /* border-top: 1px solid black; */
-  /* border-bottom: 1px solid black; */
+  border-bottom: 1px solid black;
   /* border: 2px solid red; */
   /* max-width: 50%; */
   width: 300px;
@@ -530,11 +531,10 @@ html {
   display: flex;
   flex-direction: column;
   border-radius: 6px;
-  height: 440px;
 }
-.content-container:hover {
+/* .content-container:hover {
   transform: translateY(-30px);
-}
+} */
 
 .text-content li,
 .text-content ol {
@@ -551,13 +551,12 @@ html {
   /* background-color: #f9f9f9; */
   max-width: 100%; /* Ensures the container does not exceed 40% of the container width */
   /* border: 2px solid black; */
-  height: 170px;
 }
 
 .image-container img {
   width: 100%; /* Fixed width for images */
-  height: 100%; /* Fixed height for images */
-  /* object-fit: cover;  */
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images are not distorted */
   margin: 5px;
   border-radius: 8px;
   overflow: hidden;
@@ -565,14 +564,14 @@ html {
 
 .text-content {
   flex: 1;
-  /* padding: 10px; */
+  padding: 10px;
   overflow: hidden;
   max-height: 100%;
   gap: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 100%;
-  /* justify-content: space-between; */
 
   /* border: 2px solid black; */
   /* border: 2px solid black; */
@@ -587,8 +586,8 @@ html {
   color: #0363ff;
   font-family: Roboto-Medium;
 
-  line-height: 35px;
-  font-size: 22px;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .text-content p {
@@ -600,6 +599,7 @@ html {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* font-family: -Regular; */
 }
 
 .edit-form {
@@ -638,7 +638,7 @@ html {
 .read-more {
   /* border: 2px solid red; */
   text-decoration: none;
-  color: #0363ff;
+  color: black;
   display: flex;
   align-items: center;
   transition: all 0.3s linear;
@@ -651,12 +651,41 @@ html {
   display: flex;
   /* border: 2px solid red; */
   align-items: center;
-  font-family: Roboto-Regular;
+  font-family: Montserrat-Regular;
 }
 #arrow {
   width: 20px;
   height: 16px;
   margin-left: 4px;
+}
+
+/* #### pagination ######  */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: white;
+  background-color: #0363ff;
+  border-radius: 4px;
+  font-family: Roboto-Regular;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a.active {
+  background-color: #004db3;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #0056d6;
 }
 
 /*#########  FAQ ###### */

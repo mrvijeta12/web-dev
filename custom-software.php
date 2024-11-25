@@ -7,6 +7,8 @@
     <title>sales cloud</title>
 
     <link rel="stylesheet" href="assests/css/theme.css">
+    <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
     <link rel="stylesheet" href="assests/css/commonServicePage.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -300,7 +302,7 @@
                 <section class="service-wrapper ">
                     <section class="service-content-wrapper">
                         <section class="service-content-image service" data-aos="fade-up-right" data-aos-duration="1500">
-                            <img src=" ../images/secondary-choose.jpg" alt="">
+                            <img src=" .images/secondary-choose.jpg" alt="">
                         </section>
                         <section class="service-content-data service" data-aos="fade-left" data-aos-duration="1500">
                             <h1>Salesforce Back Cloud</h1>

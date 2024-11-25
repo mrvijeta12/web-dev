@@ -2,9 +2,16 @@
 
 include_once 'db.php';
 
+// Pagination settings
+$blogsPerPage = 3; // Number of blogs per page
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Current page
+$offset = ($currentPage - 1) * $blogsPerPage; // Offset calculation
 
-// Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'drupal-developer' ORDER BY id DESC";
+// Fetch blogs with pagination
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs 
+        WHERE category = 'drupal-developer' AND blog_status = 'published' 
+        ORDER BY id DESC 
+        LIMIT $blogsPerPage OFFSET $offset";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -18,10 +25,68 @@ if ($result->num_rows > 0) {
         $contents[] = $row;
     }
 } else {
-    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""]; // Empty placeholder
 }
 
+// Count total blogs for pagination
+$totalBlogsResult = $conn->query("SELECT COUNT(*) AS total FROM webdev_blogs WHERE category = 'drupal-developer' AND blog_status = 'published'");
+$totalBlogs = $totalBlogsResult->fetch_assoc()['total'];
+$totalPages = ceil($totalBlogs / $blogsPerPage); // Total number of pages
+
 $conn->close();
+
+// Check if it's an AJAX request to return only the blog wrapper and pagination
+if (isset($_GET['ajax']) && $_GET['ajax'] === '1') {
+    echo json_encode([
+        'content' => renderBlogs($contents),
+        'pagination' => renderPagination($currentPage, $totalPages)
+    ]);
+    exit();
+}
+
+// Helper function to render the blogs
+function renderBlogs($blogs)
+{
+    $html = '';
+    foreach ($blogs as $row) {
+        $slug = htmlspecialchars($row['slug']);
+        $summary = htmlspecialchars($row['summary']);
+        $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+
+        $html .= "<div class='content-container'>
+                    <div class='image-container'>
+                        <img src='{$featureImage}' alt='Feature Image'>
+                    </div>
+                    <div class='text-content'>
+                        <h2>{$slug}</h2>
+                        <a href='insights/{$slug}' class='read-more'>Read More <img src='images/right-arrow.svg' alt='' id='arrow'></a>
+                    </div>
+                </div>";
+    }
+
+    return $html;
+}
+
+// Helper function to render the pagination
+function renderPagination($currentPage, $totalPages)
+{
+    $pagination = '';
+
+    if ($currentPage > 1) {
+        $pagination .= "<a href='#' class='prev' data-page='" . ($currentPage - 1) . "'>Previous</a>";
+    }
+
+    for ($i = 1; $i <= $totalPages; $i++) {
+        $pagination .= "<a href='#' class='" . ($i === $currentPage ? 'active' : '') . "' data-page='{$i}'>{$i}</a>";
+    }
+
+    if ($currentPage < $totalPages) {
+        $pagination .= "<a href='#' class='next' data-page='" . ($currentPage + 1) . "'>Next</a>";
+    }
+
+    return $pagination;
+}
+
 ?>
 <!DOCTYPE php>
 <html lang="en">
@@ -31,6 +96,9 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/offshore-experts.css">
+
+    <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
 
     <link
         rel="stylesheet"
@@ -57,10 +125,10 @@ $conn->close();
                 <div class="child child1">
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Drupal Developers</h1>
                     <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Drupal Solutions Tailored to Bring Your Vision to Life</h2>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Consult Our Experts</a>
+                    <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
                 <div class="child child2">
-                    <img src="./images/drupal-developer.jpg" alt="">
+                    <img src="images/drupal-developer.jpg" alt="">
                 </div>
             </div>
 
@@ -82,7 +150,7 @@ $conn->close();
 
 
                 <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="./images/developer-primary.jpg" alt="">
+                    <img src="images/developer-primary.jpg" alt="">
                 </div>
 
 
@@ -348,7 +416,7 @@ $conn->close();
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
                     </div>
 
 
@@ -356,42 +424,42 @@ $conn->close();
                     <div class="avail-content-container" id="scrollable-content">
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Custom Modules</h2>
                             </div>
                             <p>Our Drupal developers specialize in creating custom modules that extend the functionality of your website. This tailored approach ensures your site meets specific business requirements and offers unique features.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Flexible Content Management</h2>
                             </div>
                             <p>We leverage Drupal's flexible content management capabilities to design user-friendly interfaces. This allows you to easily manage and update your content, streamlining your workflow and enhancing productivity.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Multisite Management</h2>
                             </div>
                             <p>Our team is adept at managing multiple sites from a single Drupal installation. This capability simplifies administration and maintenance, making it easier for organizations with various brands or regional sites to operate efficiently.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Advanced Security Features</h2>
                             </div>
                             <p>We prioritize security in our Drupal development, implementing best practices to protect your website from vulnerabilities. Our developers stay updated with the latest security patches and enhancements to safeguard your data.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>SEO-Friendly Architecture</h2>
                             </div>
                             <p>Our Drupal solutions are built with SEO best practices in mind, ensuring your website is optimized for search engines. We implement features that improve visibility and drive organic traffic to your site.</p>
                         </div>
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Scalable Solutions</h2>
                             </div>
                             <p>Our Drupal applications are designed for scalability, allowing your website to grow alongside your business. Whether you’re expanding content or increasing traffic, our solutions can adapt to meet your evolving needs.</p>
@@ -417,7 +485,7 @@ $conn->close();
                 <section class="collaboration-child-wrapper">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
-                            <img src="./images/requirement.png" alt="">
+                            <img src="images/requirement.png" alt="">
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Provide Your Requirements <span><i class="fa-solid fa-right-long"></i></span> </h2>
@@ -428,7 +496,7 @@ $conn->close();
                     </section>
                     <section class="collaboration-child" id="collaboration-child-2">
                         <section class="collaboration-child-image">
-                            <img src="./images/project-evaluation.png" alt="">
+                            <img src="images/project-evaluation.png" alt="">
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Select Candidates for Review <span><i class="fa-solid fa-right-long"></i></span></h2>
@@ -438,7 +506,7 @@ $conn->close();
                     </section>
                     <section class="collaboration-child" id="collaboration-child-3">
                         <section class="collaboration-child-image">
-                            <img src="./images/nda.png" alt="">
+                            <img src="images/nda.png" alt="">
                         </section>
                         <section class="collaboration-child-data">
                             <h2>Identify the Ideal Candidate<span><i class="fa-solid fa-right-long"></i></span></h2>
@@ -448,7 +516,7 @@ $conn->close();
                     </section>
                     <section class="collaboration-child" id="collaboration-child-4">
                         <section class="collaboration-child-image">
-                            <img src="./images/interview.png" alt="">
+                            <img src="images/interview.png" alt="">
                         </section>
                         <section class="collaboration-child-data">
                             <h2> Begin the Onboarding Process <span><i class="fa-solid fa-right-long"></i></span></h2>
@@ -459,41 +527,21 @@ $conn->close();
                 </section>
             </section>
 
-            <!-- ###### Blogs #####  -->
-
+            <!-- ####### blog #####  -->
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
+            <div class="blog-wrapper" id="blog-wrapper">
+                <!-- Blog content will be injected dynamically -->
+                <?php echo renderBlogs($contents); ?>
+            </div>
 
-            <div class="blog-wrapper">
-                <?php foreach ($contents as $row): ?>
-                    <?php
-                    $slug = htmlspecialchars($row['slug']);
-                    $summary = htmlspecialchars($row['summary']);
-                    $id = $row['id'];
-                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
-                    ?>
-
-
-                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
-                        <!-- Image Container -->
-                        <div class='image-container'>
-                            <img src='<?= $featureImage ?>' alt='Feature Image'>
-                        </div>
-
-                        <!-- Text Content -->
-                        <div class='text-content'>
-                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
-                            <p><?= $summary ?></p>
-                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
-                        </div>
-
-                    </div>
-
-                <?php endforeach; ?>
+            <!-- Pagination Links -->
+            <div class="pagination" id="pagination">
+                <?php echo renderPagination($currentPage, $totalPages); ?>
             </div>
 
             <!-- ############### faq ############  -->
@@ -577,22 +625,23 @@ $conn->close();
 
 
         </div>
-
         <?php include('footer.php'); ?>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./swiper.js"></script>
+        <script src="./blog.js"></script>
+        <?php include('pop.php'); ?>
+
     </div>
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="./swiper.js"></script>
-    <?php include('pop.php'); ?>
 
 </body>
 

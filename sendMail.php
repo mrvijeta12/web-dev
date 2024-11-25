@@ -5,13 +5,14 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = htmlspecialchars($_POST['name']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars($_POST['message']);
 
-    require '../phpmailer/Exception.php';
-    require '../phpmailer/PHPMailer.php';
-    require '../phpmailer/SMTP.php';
+
+    require './phpmailer/Exception.php';
+    require './phpmailer/PHPMailer.php';
+    require './phpmailer/SMTP.php';
 
 
 
@@ -24,13 +25,13 @@ if (isset($_POST['submit'])) {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'vijetavarma1@gmail.com';
-        $mail->Password   = 'mxuwmhqlooiztxqw';
+        $mail->Password   = 'hjfefiyowdiqndul';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
         //Recipients
-        $mail->setFrom('Vijetavarma1@gmail.com', 'Sender');
-        $mail->addAddress('vijetavarma1@gmail.com', 'Receiver');
-        $mail->addAddress('aman.pandey888@gmail.com', 'Aman Pandey');
+        $mail->setFrom('vijetavarma1@gmail.com', 'Vijeta Varma');
+        $mail->addAddress('aaravmahima4@gmail.com', 'Aarav Mahima');
+        // $mail->addAddress('vijetavarma1@gmail.com', 'vijeta varma');
 
 
 
@@ -43,7 +44,11 @@ if (isset($_POST['submit'])) {
 
 
         $mail->send();
-        echo 'Message has been sent';
+        echo "<script>
+        sessionStorage.setItem('popupClosed', 'true');
+      
+        window.location.href = window.location.href; // Reload the page
+      </script>";
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

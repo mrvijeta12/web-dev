@@ -1,3 +1,5 @@
+//! ==== hide page =====
+
 //! #### swipper #####
 
 var swiper = new Swiper(".mySwiper", {
@@ -352,3 +354,5 @@ document.addEventListener("mouseover", function (event) {
     }
   });
 });
+
+//! hide url page ==1

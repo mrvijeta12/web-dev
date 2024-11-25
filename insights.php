@@ -35,9 +35,11 @@ $conn->close();
     <link rel="stylesheet" href="/webdev/assests/css/insights.css">
 
 
-    <link rel="stylesheet" href="../assests/css/navbar.css" />
+    <!-- <link rel="stylesheet" href="../assests/css/navbar.css" /> -->
+    <link rel="stylesheet" href="../assests/css/navbar.css">
     <link rel="stylesheet" href="../assests/css/theme.css" />
     <link rel="stylesheet" href="../assests/css/footer.css" />
+
 
 
 

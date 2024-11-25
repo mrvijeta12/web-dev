@@ -2,9 +2,16 @@
 
 include_once 'db.php';
 
+// Pagination settings
+$blogsPerPage = 3; // Number of blogs per page
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Current page
+$offset = ($currentPage - 1) * $blogsPerPage; // Offset calculation
 
-// Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'restaurant' ORDER BY id DESC";
+// Fetch blogs with pagination
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs 
+        WHERE category = 'resturant' AND blog_status = 'published' 
+        ORDER BY id DESC 
+        LIMIT $blogsPerPage OFFSET $offset";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -18,10 +25,68 @@ if ($result->num_rows > 0) {
         $contents[] = $row;
     }
 } else {
-    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""]; // Empty placeholder
 }
 
+// Count total blogs for pagination
+$totalBlogsResult = $conn->query("SELECT COUNT(*) AS total FROM webdev_blogs WHERE category = 'resturant' AND blog_status = 'published'");
+$totalBlogs = $totalBlogsResult->fetch_assoc()['total'];
+$totalPages = ceil($totalBlogs / $blogsPerPage); // Total number of pages
+
 $conn->close();
+
+// Check if it's an AJAX request to return only the blog wrapper and pagination
+if (isset($_GET['ajax']) && $_GET['ajax'] === '1') {
+    echo json_encode([
+        'content' => renderBlogs($contents),
+        'pagination' => renderPagination($currentPage, $totalPages)
+    ]);
+    exit();
+}
+
+// Helper function to render the blogs
+function renderBlogs($blogs)
+{
+    $html = '';
+    foreach ($blogs as $row) {
+        $slug = htmlspecialchars($row['slug']);
+        $summary = htmlspecialchars($row['summary']);
+        $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+
+        $html .= "<div class='content-container'>
+                    <div class='image-container'>
+                        <img src='{$featureImage}' alt='Feature Image'>
+                    </div>
+                    <div class='text-content'>
+                        <h2>{$slug}</h2>
+                        <a href='insights/{$slug}' class='read-more'>Read More <img src='images/right-arrow.svg' alt='' id='arrow'></a>
+                    </div>
+                </div>";
+    }
+
+    return $html;
+}
+
+// Helper function to render the pagination
+function renderPagination($currentPage, $totalPages)
+{
+    $pagination = '';
+
+    if ($currentPage > 1) {
+        $pagination .= "<a href='#' class='prev' data-page='" . ($currentPage - 1) . "'>Previous</a>";
+    }
+
+    for ($i = 1; $i <= $totalPages; $i++) {
+        $pagination .= "<a href='#' class='" . ($i === $currentPage ? 'active' : '') . "' data-page='{$i}'>{$i}</a>";
+    }
+
+    if ($currentPage < $totalPages) {
+        $pagination .= "<a href='#' class='next' data-page='" . ($currentPage + 1) . "'>Next</a>";
+    }
+
+    return $pagination;
+}
+
 ?>
 <!DOCTYPE php>
 <html lang="en">
@@ -31,13 +96,16 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/industry.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+    <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
     <!-- Swiper CSS CDN for carousel/slider functionality -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assests/css/theme.css">
+
 
     <script src="https://kit.fontawesome.com/cdf9a174a4.js" crossorigin="anonymous"></script>
 
@@ -60,11 +128,11 @@ $conn->close();
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
                     <h3 data-aos="fade-up" data-aos-duration="1500">Custom Solutions for Efficient Restaurant Management</h3>
-                    <a href="" data-aos="fade-up" data-aos-duration="1500">Get Free Quote</a>
+                    <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="./images/resturant-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/resturant-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
                 </div>
             </div>
 
@@ -96,7 +164,7 @@ $conn->close();
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Resturant Software Consulting </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -104,7 +172,7 @@ $conn->close();
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Custom Heathcare Software Development </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -112,7 +180,7 @@ $conn->close();
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Heathcare Software Moderization </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -120,7 +188,7 @@ $conn->close();
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Heathcare Software Integration </h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -128,7 +196,7 @@ $conn->close();
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Heathcare eCommerce Development</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -136,7 +204,7 @@ $conn->close();
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Heathcare Software Product Development</h3>
                             <span><i class="fa-solid fa-angle-right"></i></span>
                         </div>
@@ -172,7 +240,7 @@ $conn->close();
                 <section class="detail-description detail-child">
                     <section id="content1" class="content">
                         <div class="content-header">
-                            <img src="./images/consultation.png" alt="">
+                            <img src="images/consultation.png" alt="">
                             <h3>Restaurant Software Consulting</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -182,7 +250,7 @@ $conn->close();
                     </section>
                     <section id="content2" class="content">
                         <div class="content-header">
-                            <img src="./images/software-development-process.png" alt="">
+                            <img src="images/software-development-process.png" alt="">
                             <h3>Custom Restaurant Software Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -192,7 +260,7 @@ $conn->close();
                     </section>
                     <section id="content3" class="content">
                         <div class="content-header">
-                            <img src="./images/development.png" alt="">
+                            <img src="images/development.png" alt="">
                             <h3>Restaurant Software Product Development</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -202,7 +270,7 @@ $conn->close();
                     </section>
                     <section id="content4" class="content">
                         <div class="content-header">
-                            <img src="./images/deployment.png" alt="">
+                            <img src="images/deployment.png" alt="">
                             <h3>Restaurant Software Integration</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -212,7 +280,7 @@ $conn->close();
                     </section>
                     <section id="content5" class="content">
                         <div class="content-header">
-                            <img src="./images/project-analysis-health.png" alt="">
+                            <img src="images/project-analysis-health.png" alt="">
                             <h3>Restaurant Software Testing and Quality Assurance</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -222,7 +290,7 @@ $conn->close();
                     </section>
                     <section id="content6" class="content">
                         <div class="content-header">
-                            <img src="./images/moderization-process.png" alt="">
+                            <img src="images/moderization-process.png" alt="">
                             <h3>Restaurant Software Modernization</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -232,7 +300,7 @@ $conn->close();
                     </section>
                     <section id="content7" class="content">
                         <div class="content-header">
-                            <img src="./images/support-process.png" alt="">
+                            <img src="images/support-process.png" alt="">
                             <h3>Restaurant Software Maintenance and Support</h3>
                             <span>
                                 <i class="fa-solid fa-angle-right"></i>
@@ -424,7 +492,7 @@ $conn->close();
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="./images/resturant-primary.jpg" alt="Image on Left">
+                        <img src="images/resturant-primary.jpg" alt="Image on Left">
                     </div>
 
 
@@ -432,7 +500,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Fine Dining Restaurants</h2>
                             </div>
                             <p>Fine dining establishments can enhance guest experience through reservation management,
@@ -443,7 +511,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Fast Casual Restaurants</h2>
                             </div>
                             <p>Fast casual restaurants benefit from software that manages orders, payments, and inventory.
@@ -454,7 +522,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Food Trucks</h2>
                             </div>
                             <p>Food trucks utilize mobile software solutions for order tracking, payment processing, and
@@ -465,7 +533,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Cafés</h2>
                             </div>
                             <p>Cafés can enhance customer experience with software for point-of-sale systems, loyalty
@@ -476,7 +544,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Catering Services</h2>
                             </div>
                             <p>Catering businesses can benefit from software that manages event bookings, menu planning,
@@ -487,7 +555,7 @@ $conn->close();
 
                         <div class="avail-content">
                             <div class="avail-content-header">
-                                <img src="./images/progress.png" alt="Image on Left">
+                                <img src="images/progress.png" alt="Image on Left">
                                 <h2>Restaurant Chains</h2>
                             </div>
                             <p>Restaurant chains utilize integrated software for centralized management of multiple locations,
@@ -563,38 +631,21 @@ $conn->close();
             </div>
 
 
-            <!-- #### blog ####  -->
+            <!-- ####### blog #####  -->
 
             <div class="container" data-aos="zoom-in" data-aos-duration="1500">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
-            <div class="blog-wrapper">
-                <?php foreach ($contents as $row): ?>
-                    <?php
-                    $slug = htmlspecialchars($row['slug']);
-                    $summary = htmlspecialchars($row['summary']);
-                    $id = $row['id'];
-                    $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
-                    ?>
 
+            <div class="blog-wrapper" id="blog-wrapper">
+                <!-- Blog content will be injected dynamically -->
+                <?php echo renderBlogs($contents); ?>
+            </div>
 
-                    <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
-                        <!-- Image Container -->
-                        <div class='image-container'>
-                            <img src='<?= $featureImage ?>' alt='Feature Image'>
-                        </div>
-
-                        <!-- Text Content -->
-                        <div class='text-content'>
-                            <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
-                            <p><?= $summary ?></p>
-                            <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
-                        </div>
-
-                    </div>
-
-                <?php endforeach; ?>
+            <!-- Pagination Links -->
+            <div class="pagination" id="pagination">
+                <?php echo renderPagination($currentPage, $totalPages); ?>
             </div>
 
 
@@ -653,7 +704,7 @@ $conn->close();
 
             <section class="section-book">
                 <section class="book-image">
-                    <img src="./images/booking-industry.jpg" alt="">
+                    <img src="images/booking-industry.jpg" alt="">
                 </section>
                 <section class="book-data">
 
@@ -661,7 +712,7 @@ $conn->close();
 
                     <h1 data-aos="zoom-in" data-aos-duration="2500">Resturant Software Development Services</h1>
                     <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Resturant Professionals</p>
-                    <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
+                    <a href="#" class="reopenPopup">Connect With Us</a>
                 </section>
 
 
@@ -684,22 +735,23 @@ $conn->close();
 
 
         </div>
-
         <?php include('footer.php'); ?>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./swiper.js"></script>
+        <script src="./blog.js"></script>
+        <?php include('pop.php'); ?>
+
     </div>
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="./swiper.js"></script>
-    <?php include('pop.php'); ?>
 
 </body>
 

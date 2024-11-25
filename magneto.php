@@ -2,9 +2,16 @@
 
 include_once 'db.php';
 
+// Pagination settings
+$blogsPerPage = 3; // Number of blogs per page
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1; // Current page
+$offset = ($currentPage - 1) * $blogsPerPage; // Offset calculation
 
-// Fetch all blog posts with slug, summary, and feature image
-$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs WHERE category = 'magneto' ORDER BY id DESC";
+// Fetch blogs with pagination
+$sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs 
+        WHERE category = 'magneto' AND blog_status = 'published' 
+        ORDER BY id DESC 
+        LIMIT $blogsPerPage OFFSET $offset";
 $result = $conn->query($sql);
 
 // Check if the query was successful
@@ -18,10 +25,68 @@ if ($result->num_rows > 0) {
         $contents[] = $row;
     }
 } else {
-    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""];
+    $contents[] = ["id" => 0, "slug" => "No content found.", "summary" => "", "social_sharing_image" => ""]; // Empty placeholder
 }
 
+// Count total blogs for pagination
+$totalBlogsResult = $conn->query("SELECT COUNT(*) AS total FROM webdev_blogs WHERE category = 'magneto' AND blog_status = 'published'");
+$totalBlogs = $totalBlogsResult->fetch_assoc()['total'];
+$totalPages = ceil($totalBlogs / $blogsPerPage); // Total number of pages
+
 $conn->close();
+
+// Check if it's an AJAX request to return only the blog wrapper and pagination
+if (isset($_GET['ajax']) && $_GET['ajax'] === '1') {
+    echo json_encode([
+        'content' => renderBlogs($contents),
+        'pagination' => renderPagination($currentPage, $totalPages)
+    ]);
+    exit();
+}
+
+// Helper function to render the blogs
+function renderBlogs($blogs)
+{
+    $html = '';
+    foreach ($blogs as $row) {
+        $slug = htmlspecialchars($row['slug']);
+        $summary = htmlspecialchars($row['summary']);
+        $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
+
+        $html .= "<div class='content-container'>
+                    <div class='image-container'>
+                        <img src='{$featureImage}' alt='Feature Image'>
+                    </div>
+                    <div class='text-content'>
+                        <h2>{$slug}</h2>
+                        <a href='insights/{$slug}' class='read-more'>Read More <img src='images/right-arrow.svg' alt='' id='arrow'></a>
+                    </div>
+                </div>";
+    }
+
+    return $html;
+}
+
+// Helper function to render the pagination
+function renderPagination($currentPage, $totalPages)
+{
+    $pagination = '';
+
+    if ($currentPage > 1) {
+        $pagination .= "<a href='#' class='prev' data-page='" . ($currentPage - 1) . "'>Previous</a>";
+    }
+
+    for ($i = 1; $i <= $totalPages; $i++) {
+        $pagination .= "<a href='#' class='" . ($i === $currentPage ? 'active' : '') . "' data-page='{$i}'>{$i}</a>";
+    }
+
+    if ($currentPage < $totalPages) {
+        $pagination .= "<a href='#' class='next' data-page='" . ($currentPage + 1) . "'>Next</a>";
+    }
+
+    return $pagination;
+}
+
 ?>
 <!DOCTYPE php>
 <html lang="en">
@@ -31,13 +96,16 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assests/css/expertise.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+    <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
     <!-- Swiper CSS CDN for carousel/slider functionality -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assests/css/theme.css">
+
 
     <script src="https://kit.fontawesome.com/cdf9a174a4.js" crossorigin="anonymous"></script>
 
@@ -68,7 +136,7 @@ $conn->close();
 
             <!-- Image Wrapper with Full Image Section Inside -->
             <div class="image-wrapper">
-                <div class="full-image-section"></div>
+                <img src="images/magneto-development-hero.jpg"></img>
             </div>
 
 
@@ -206,293 +274,276 @@ $conn->close();
 
 
 
-        </div>
-        <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-            <h1>Why Magento is the Go-To Platform for E-Commerce</h1>
-        </div>
-        <section class="work-wrapper">
-            <section class="work-wrapper-child">
-                <section class="work-child">
-                    <h2>Robust E-Commerce Features</h2>
-                    <p>Magento offers a comprehensive set of e-commerce features, including product management, order processing, and customer segmentation, tailored for businesses of all sizes.</p>
-                </section>
-                <section class="work-child">
-                    <h2>Highly Customizable</h2>
-                    <p>The platform provides extensive customization options, allowing developers to create unique storefronts that reflect brand identity and meet specific business needs.</p>
-                </section>
-                <section class="work-child">
-                    <h2>Scalability for Growth</h2>
-                    <p>Magento is designed to scale effortlessly, accommodating increasing traffic and sales volume as businesses grow, making it ideal for rapidly expanding e-commerce operations.</p>
-                </section>
-                <section class="work-child">
-                    <h2>SEO-Friendly Architecture</h2>
-                    <p>Magento’s built-in SEO features, such as customizable URLs and meta tags, help improve search engine visibility, driving organic traffic to online stores.</p>
-                </section>
-                <section class="work-child">
-                    <h2>Robust Community Support</h2>
-                    <p>The Magento community is active and resourceful, providing access to forums, documentation, and third-party extensions that enhance functionality.</p>
-                </section>
-                <section class="work-child">
-                    <h2>Mobile-Optimized Experience</h2>
-                    <p>Magento supports responsive design, ensuring that online stores are optimized for mobile devices, which is crucial for reaching a broader audience.</p>
+            <!-- ########## TECHNOLOGIES  #######  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Why Magento is the Go-To Platform for E-Commerce</h1>
+            </div>
+            <section class="work-wrapper">
+                <section class="work-wrapper-child">
+                    <section class="work-child">
+                        <h2>Robust E-Commerce Features</h2>
+                        <p>Magento offers a comprehensive set of e-commerce features, including product management, order processing, and customer segmentation, tailored for businesses of all sizes.</p>
+                    </section>
+                    <section class="work-child">
+                        <h2>Highly Customizable</h2>
+                        <p>The platform provides extensive customization options, allowing developers to create unique storefronts that reflect brand identity and meet specific business needs.</p>
+                    </section>
+                    <section class="work-child">
+                        <h2>Scalability for Growth</h2>
+                        <p>Magento is designed to scale effortlessly, accommodating increasing traffic and sales volume as businesses grow, making it ideal for rapidly expanding e-commerce operations.</p>
+                    </section>
+                    <section class="work-child">
+                        <h2>SEO-Friendly Architecture</h2>
+                        <p>Magento’s built-in SEO features, such as customizable URLs and meta tags, help improve search engine visibility, driving organic traffic to online stores.</p>
+                    </section>
+                    <section class="work-child">
+                        <h2>Robust Community Support</h2>
+                        <p>The Magento community is active and resourceful, providing access to forums, documentation, and third-party extensions that enhance functionality.</p>
+                    </section>
+                    <section class="work-child">
+                        <h2>Mobile-Optimized Experience</h2>
+                        <p>Magento supports responsive design, ensuring that online stores are optimized for mobile devices, which is crucial for reaching a broader audience.</p>
+                    </section>
                 </section>
             </section>
-        </section>
 
 
 
 
 
 
-        <!-- ######### Process ##########  -->
+            <!-- ######### Process ##########  -->
 
-        <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
-                Our Methodology for Building High-Quality React.js Websites</h1>
+            <div class="container">
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                    Our Methodology for Building High-Quality React.js Websites</h1>
 
-        </div>
+            </div>
 
-        <div class="swiper mySwiper">
+            <div class="swiper mySwiper">
 
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="images/project-analysis-health.png" alt="">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/project-analysis-health.png" alt="">
 
+                        </div>
+                        <h2>Project analysis</h2>
+                        <p>In-depth analysis of requirements and goals to ensure successful project outcomes and stakeholder satisfaction.</p>
                     </div>
-                    <h2>Project analysis</h2>
-                    <p>In-depth analysis of requirements and goals to ensure successful project outcomes and stakeholder satisfaction.</p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="images/design-health.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/design-health.png" alt="">
 
+                        </div>
+                        <h2>Design</h2>
+                        <p>Creating intuitive and engaging designs that enhance user experience and reflect brand identity effectively.</p>
                     </div>
-                    <h2>Design</h2>
-                    <p>Creating intuitive and engaging designs that enhance user experience and reflect brand identity effectively.</p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="images/development-health.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/development-health.png" alt="">
 
+                        </div>
+                        <h2>Development</h2>
+                        <p>Implementing robust front-end and back-end solutions to deliver a seamless, functional, and responsive website.</p>
                     </div>
-                    <h2>Development</h2>
-                    <p>Implementing robust front-end and back-end solutions to deliver a seamless, functional, and responsive website.</p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="images/testing-health.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/testing-health.png" alt="">
 
+                        </div>
+                        <h2>Testing</h2>
+                        <p>Conducting comprehensive testing to identify and resolve issues, ensuring high-quality performance and user satisfaction.</p>
                     </div>
-                    <h2>Testing</h2>
-                    <p>Conducting comprehensive testing to identify and resolve issues, ensuring high-quality performance and user satisfaction.</p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="./images/project-launch-health.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/project-launch-health.png" alt="">
 
+                        </div>
+                        <h2>Project Launch</h2>
+                        <p>Coordinating all launch activities to ensure a successful website debut and positive initial user experience.</p>
                     </div>
-                    <h2>Project Launch</h2>
-                    <p>Coordinating all launch activities to ensure a successful website debut and positive initial user experience.</p>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-slide-image">
-                        <img src="images/maintance-and-support-health.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-image">
+                            <img src="images/maintance-and-support-health.png" alt="">
 
+                        </div>
+                        <h2>Maintanace and Support</h2>
+                        <p>Providing ongoing support and updates to enhance performance, security, and user satisfaction post-launch.</p>
                     </div>
-                    <h2>Maintanace and Support</h2>
-                    <p>Providing ongoing support and updates to enhance performance, security, and user satisfaction post-launch.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <div class="swiper-pagination"></div>
 
 
             </div>
-            <div class="swiper-pagination"></div>
 
 
-        </div>
+            <!-- ######## testimonial######## -->
 
 
-        <!-- ######## testimonial######## -->
-
-
-        <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <section class="testimonial_wrapper">
+                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="testimonial_item">
 
-                    <img src="images/9.jpg" alt="">
-                    <img src="images/double-main.png" alt="" class="double">
-                    <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
-                    <h5>John Doe</h5>
-                    <p>CEO, Company</p>
+                        <img src="images/9.jpg" alt="">
+                        <img src="images/double-main.png" alt="" class="double">
+                        <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
+                        <h5>John Doe</h5>
+                        <p>CEO, Company</p>
+                    </div>
+                    <div class="testimonial_item">
+                        <img src="images/2.jpg" alt="">
+                        <img src="images/double-main.png" alt="" class="double">
+                        <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
+                        <h5>John Doe</h5>
+                        <p>CEO, Company</p>
+                    </div>
+                    <div class="testimonial_item">
+
+                        <img src="images/4.jpg" alt="">
+                        <img src="images/double-main.png" alt="" class="double">
+                        <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
+                        <h5>John Doe</h5>
+                        <p>CEO, Company</p>
+                    </div>
                 </div>
-                <div class="testimonial_item">
-                    <img src="images/2.jpg" alt="">
-                    <img src="images/double-main.png" alt="" class="double">
-                    <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
-                    <h5>John Doe</h5>
-                    <p>CEO, Company</p>
-                </div>
-                <div class="testimonial_item">
+            </section>
 
-                    <img src="images/4.jpg" alt="">
-                    <img src="images/double-main.png" alt="" class="double">
-                    <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
-                    <h5>John Doe</h5>
-                    <p>CEO, Company</p>
-                </div>
+            <!-- ####### blog #####  -->
+
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+
             </div>
-        </section>
 
-        <!-- #### blog ######  -->
+            <div class="blog-wrapper" id="blog-wrapper">
+                <!-- Blog content will be injected dynamically -->
+                <?php echo renderBlogs($contents); ?>
+            </div>
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-            <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
+            <!-- Pagination Links -->
+            <div class="pagination" id="pagination">
+                <?php echo renderPagination($currentPage, $totalPages); ?>
+            </div>
+
+
+            <!-- ###### faq ######  -->
+            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>Magento Development: Frequently Asked Questions</h1>
+            </div>
+
+            <section class="faq-wrapper">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What is Magento and what are its key features?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Magento is a powerful open-source e-commerce platform known for its flexibility and scalability. Key features include a customizable product catalog, multiple payment gateways, robust SEO capabilities, and support for multiple languages and currencies. Magento also offers a wide range of extensions to enhance functionality, making it suitable for businesses of all sizes.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you ensure the security of Magento e-commerce sites?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We prioritize security in Magento e-commerce sites by implementing best practices such as regular software updates, using strong passwords, and applying SSL certificates for secure transactions. Our team also conducts regular security audits, and we utilize security extensions to protect against vulnerabilities like cross-site scripting and SQL injection.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Can you integrate third-party services with Magento?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Yes, we can seamlessly integrate third-party services with Magento, including payment processors, shipping providers, and CRM systems. This integration enhances the overall functionality of your e-commerce platform, allowing for a more streamlined operation and improved user experience.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How do you handle performance optimization for Magento stores?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We optimize the performance of Magento stores by employing various strategies, such as optimizing images, implementing caching techniques, and minimizing the use of heavy scripts. We also configure the server environment for optimal performance and regularly monitor site speed to ensure a smooth user experience, especially during peak traffic times.
+                    </p>
+                </section>
+            </section>
+
+
+
+
+
+
+            <!-- ##### Book #######  -->
+
+            <section class="book">
+                <h1>Let’s Begin Your Project Together!</h1>
+                <a href="./contact.php">Contact us</a>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
+        <?php include('footer.php'); ?>
 
-        <div class="blog-wrapper">
-            <?php foreach ($contents as $row): ?>
-                <?php
-                $slug = htmlspecialchars($row['slug']);
-                $summary = htmlspecialchars($row['summary']);
-                $id = $row['id'];
-                $featureImage = !empty($row['social_sharing_image']) ? 'admin/' . htmlspecialchars($row['social_sharing_image']) : 'default-image.png';
-                ?>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-                <div class='content-container' data-aos="zoom-in" data-aos-duration="1500">
-                    <!-- Image Container -->
-                    <div class='image-container'>
-                        <img src='<?= $featureImage ?>' alt='Feature Image'>
-                    </div>
-
-                    <!-- Text Content -->
-                    <div class='text-content'>
-                        <h2><?= $slug ?></h2> <!-- Displaying the slug as meta_title -->
-                        <p><?= $summary ?></p>
-                        <a href="insights/<?= $slug ?>" class="read-more">Read More <img src="images/right-arrow.svg" alt="" id="arrow"></a>
-                    </div>
-
-                </div>
-
-            <?php endforeach; ?>
-        </div>
-
-
-        <!-- ###### faq ######  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-            <h1>Magento Development: Frequently Asked Questions</h1>
-        </div>
-
-        <section class="faq-wrapper">
-            <section class="faq-child">
-                <section class="faq-heading">
-                    <h1>What is Magento and what are its key features?</h1>
-                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                </section>
-                <p>
-                    Magento is a powerful open-source e-commerce platform known for its flexibility and scalability. Key features include a customizable product catalog, multiple payment gateways, robust SEO capabilities, and support for multiple languages and currencies. Magento also offers a wide range of extensions to enhance functionality, making it suitable for businesses of all sizes.
-                </p>
-            </section>
-
-            <section class="faq-child">
-                <section class="faq-heading">
-                    <h1>How do you ensure the security of Magento e-commerce sites?</h1>
-                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                </section>
-                <p>
-                    We prioritize security in Magento e-commerce sites by implementing best practices such as regular software updates, using strong passwords, and applying SSL certificates for secure transactions. Our team also conducts regular security audits, and we utilize security extensions to protect against vulnerabilities like cross-site scripting and SQL injection.
-                </p>
-            </section>
-
-            <section class="faq-child">
-                <section class="faq-heading">
-                    <h1>Can you integrate third-party services with Magento?</h1>
-                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                </section>
-                <p>
-                    Yes, we can seamlessly integrate third-party services with Magento, including payment processors, shipping providers, and CRM systems. This integration enhances the overall functionality of your e-commerce platform, allowing for a more streamlined operation and improved user experience.
-                </p>
-            </section>
-
-            <section class="faq-child">
-                <section class="faq-heading">
-                    <h1>How do you handle performance optimization for Magento stores?</h1>
-                    <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
-                </section>
-                <p>
-                    We optimize the performance of Magento stores by employing various strategies, such as optimizing images, implementing caching techniques, and minimizing the use of heavy scripts. We also configure the server environment for optimal performance and regularly monitor site speed to ensure a smooth user experience, especially during peak traffic times.
-                </p>
-            </section>
-        </section>
-
-
-
-
-
-
-        <!-- ##### Book #######  -->
-
-        <section class="book">
-            <h1>Let’s Begin Your Project Together!</h1>
-            <a href="./contact.php">Contact us</a>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-    <?php include('footer.php'); ?>
+        <script src="./swiper.js"></script>
+        <script src="./blog.js"></script>
+        <?php include('pop.php'); ?>
     </div>
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="./swiper.js"></script>
-    <?php include('pop.php'); ?>
 
 </body>
 

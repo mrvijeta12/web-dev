@@ -7,6 +7,9 @@
     <title>About</title>
     <link rel="stylesheet" href="assests/css/web-development.css">
     <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/theme.css">
+
+    <link rel="stylesheet" href="assests/css/footer.css">
 
 
 
@@ -15,7 +18,7 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assests/css/theme.css">
+
 
 
 
@@ -190,8 +193,6 @@
 
 
     <?php include('footer.php'); ?>
-    </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -202,6 +203,8 @@
 
     <script src="swiper.js"></script>
     <?php include('pop.php'); ?>
+    </div>
+
 
 </body>
 

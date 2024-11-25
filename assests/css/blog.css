@@ -160,14 +160,14 @@ body {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 6px;
 }
-.content-container:hover {
+/* .content-container:hover {
   transform: translateY(-30px);
-}
+} */
 
 .text-content li,
 .text-content ol {
@@ -203,6 +203,7 @@ body {
   gap: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 100%;
 
   /* border: 2px solid black; */
@@ -218,7 +219,8 @@ body {
   color: #0363ff;
   font-family: Roboto-Medium;
 
-  line-height: 35px;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .text-content p {
@@ -269,7 +271,7 @@ body {
 .read-more {
   /* border: 2px solid red; */
   text-decoration: none;
-  color: #0363ff;
+  color: black;
   display: flex;
   align-items: center;
   transition: all 0.3s linear;
@@ -288,6 +290,35 @@ body {
   width: 20px;
   height: 16px;
   margin-left: 4px;
+}
+
+/* #### pagination ######  */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: white;
+  background-color: #0363ff;
+  border-radius: 4px;
+  font-family: Roboto-Regular;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a.active {
+  background-color: #004db3;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #0056d6;
 }
 
 /*#########  FAQ ###### */
