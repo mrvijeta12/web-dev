@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Online Retail with Magento Expertise</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Online Retail with Magento Expertise</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Tailored E-Commerce Platforms</h1>
                     <p>We create custom e-commerce platforms with Magento that are designed to meet the unique requirements of your business, enhancing your online presence and customer engagement.</p>
@@ -178,14 +178,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Magento Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Magento Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building robust retail solutions with Magento, enabling personalized shopping experiences, real-time inventory updates, and secure transactions.
@@ -199,7 +199,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Healthcare -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing specialized e-commerce platforms for healthcare products, ensuring compliance with regulations and enhancing patient access to medical supplies.
@@ -213,7 +213,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Education -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating e-learning solutions with Magento that offer courses, digital content, and subscription management to enhance learning experiences.
@@ -227,7 +227,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Fashion -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Designing visually stunning fashion e-commerce sites with Magento, focusing on user experience, trend updates, and seamless product showcases.
@@ -241,7 +241,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Automotive -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building comprehensive e-commerce solutions for automotive parts and accessories, providing detailed product information and secure payment options.
@@ -255,7 +255,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Food and Beverage -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating efficient e-commerce platforms for food and beverage industries, enabling easy ordering, subscription services, and delivery tracking.
@@ -277,32 +277,32 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ########## TECHNOLOGIES  #######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Why Magento is the Go-To Platform for E-Commerce</h1>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Robust E-Commerce Features</h2>
                         <p>Magento offers a comprehensive set of e-commerce features, including product management, order processing, and customer segmentation, tailored for businesses of all sizes.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Highly Customizable</h2>
                         <p>The platform provides extensive customization options, allowing developers to create unique storefronts that reflect brand identity and meet specific business needs.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Scalability for Growth</h2>
                         <p>Magento is designed to scale effortlessly, accommodating increasing traffic and sales volume as businesses grow, making it ideal for rapidly expanding e-commerce operations.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>SEO-Friendly Architecture</h2>
                         <p>Magento’s built-in SEO features, such as customizable URLs and meta tags, help improve search engine visibility, driving organic traffic to online stores.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Robust Community Support</h2>
                         <p>The Magento community is active and resourceful, providing access to forums, documentation, and third-party extensions that enhance functionality.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Mobile-Optimized Experience</h2>
                         <p>Magento supports responsive design, ensuring that online stores are optimized for mobile devices, which is crucial for reaching a broader audience.</p>
                     </section>
@@ -317,7 +317,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -399,12 +399,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -412,14 +412,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -432,12 +432,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -449,11 +449,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ###### faq ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Magento Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What is Magento and what are its key features?</h1>
@@ -502,7 +502,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

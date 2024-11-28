@@ -130,31 +130,31 @@ function renderPagination($currentPage, $totalPages)
                         <span>H</span><span>e</span><span>a</span><span>l</span><span>t</span><span>h</span><span>c</span><span>a</span><span>r</span><span>e</span>
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Transforming Healthcare Through Custom Software Solutions</h3>
+                    <h3>Transforming Healthcare Through Custom Software Solutions</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/freepik__background__74942.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/freepik__background__74942.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Revolutionizing Healthcare Delivery with Our Comprehensive Software Development Services</h1>
-                <p>Our healthcare software development services are designed to enhance patient care, streamline operations, and improve overall healthcare delivery. By leveraging cutting-edge technology, data analytics, and user-centric design, we empower healthcare providers to meet the evolving needs of their patients, ensuring efficient, secure, and accessible healthcare solutions for all.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Revolutionizing Healthcare Delivery with Our Comprehensive Software Development Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our healthcare software development services are designed to enhance patient care, streamline operations, and improve overall healthcare delivery. By leveraging cutting-edge technology, data analytics, and user-centric design, we empower healthcare providers to meet the evolving needs of their patients, ensuring efficient, secure, and accessible healthcare solutions for all.</p>
             </section>
 
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Healthcare Software</h1>
 
             </div>
-            <section class="detail">
+            <section class="detail" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Healthcare Software Consulting</p>
                     <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
@@ -234,12 +234,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######### Benefits ##########  -->
-            <section class="benefits-wrapper">
+            <section class="benefits-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Sectors that can benefits from our healthcare software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Hospitals and Clinic</li>
                         <li>Pharmaceutical Companies</li>
                         <li>Medical Device Manufacture</li>
@@ -248,7 +248,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Rehabilitation Centers</li>
 
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Telemedicine Providers</li>
                         <li>Long Term Care Facilities</li>
                         <li>Mental Health Facilities</li>
@@ -265,7 +265,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Healthcare Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Healthcare Software Development</h1>
 
             </div>
 
@@ -274,7 +274,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Healthcare Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Specializing in innovative healthcare technology solutions tailored to the unique needs of the healthcare industry, enhancing patient care and operational efficiency.
@@ -288,7 +288,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Healthcare Software Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing custom healthcare software solutions that streamline patient management, electronic health records (EHR), and telemedicine platforms.
@@ -302,7 +302,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and Compliance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Ensuring your healthcare organization’s data, including patient information and medical records, are protected with the highest security standards and regulatory compliance.
@@ -316,7 +316,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless Healthcare System Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing seamless integrations across various healthcare systems, including Electronic Health Records (EHR), Patient Portals, and Billing Systems to enhance workflow and data exchange.
@@ -330,7 +330,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovative Healthcare Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Bringing the latest healthcare technology innovations, including AI-driven diagnostic tools, telemedicine, and health analytics to improve patient outcomes and operational efficiency.
@@ -344,7 +344,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Healthcare Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Providing round-the-clock support and regular software updates to ensure the smooth operation of your healthcare systems and uninterrupted service delivery.
@@ -365,7 +365,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Healthcare Software Services</h1>
 
             </div>
@@ -373,9 +373,9 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/healthcare-primary.jpg" alt="Image on Left">
+                        <img src="images/healthcare-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -438,7 +438,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Services Offered in Healthcare Software Development</h1>
 
             </div>
@@ -503,12 +503,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -520,11 +520,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- #### FAQ ###  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Healthcare Web Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What features are essential for a healthcare website?</h1>
@@ -576,9 +576,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Healthcare Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
-                    <a href="#" class="reopenPopup" data-aos="zoom-in" data-aos-duration="2500">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Healthcare Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Healthcare Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

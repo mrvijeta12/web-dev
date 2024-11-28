@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -127,32 +127,32 @@ function renderPagination($currentPage, $totalPages)
                         <span>E</span><span>n</span><span>t</span><span>e</span><span>r</span><span>t</span><span>a</span><span>i</span><span>n</span><span>m</span><span>e</span><span>n</span><span>t</span>
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Entertainment with Cutting-Edge Software Solutions</h3>
+                    <h3>Empowering Entertainment with Cutting-Edge Software Solutions</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/entertainment-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/entertainment-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Elevating Entertainment with Our Advanced Software Development Solutions</h1>
-                <p>Our software development services for the entertainment industry are crafted to transform how content is created, distributed, and experienced. By integrating state-of-the-art technology, real-time data analysis, and interactive design, we empower entertainment companies to deliver unforgettable experiences, optimize their operations, and keep audiences engaged like never before.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Elevating Entertainment with Our Advanced Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the entertainment industry are crafted to transform how content is created, distributed, and experienced. By integrating state-of-the-art technology, real-time data analysis, and interactive design, we empower entertainment companies to deliver unforgettable experiences, optimize their operations, and keep audiences engaged like never before.</p>
             </section>
 
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Entertainment Software</h1>
 
             </div>
 
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Entertainment Software Consulting
@@ -263,11 +263,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our Entertainment software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our Entertainment software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Movie Theaters</li>
                         <li>Concert Venues</li>
                         <li>Amusement Parks</li>
@@ -275,7 +275,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Streaming Services</li>
                         <li>Gaming Companies</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Live Performance Theaters</li>
                         <li>Sports Franchises</li>
                         <li>Art Galleries</li>
@@ -290,7 +290,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Entertainment Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Entertainment Software Development</h1>
 
             </div>
 
@@ -299,7 +299,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Entertainment Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leading the way with innovative technology solutions tailored for the entertainment industry, enhancing content delivery, audience engagement, and digital experiences.
@@ -313,7 +313,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Entertainment App Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating immersive and engaging apps for streaming, live events, and interactive content that cater to the evolving preferences of your audience.
@@ -327,7 +327,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and DRM Protection -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing robust security protocols and Digital Rights Management (DRM) to protect your content from piracy and unauthorized access.
@@ -341,7 +341,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless Platform Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Ensuring smooth integration of your entertainment platform with existing systems, enhancing content delivery and providing a unified viewing experience.
@@ -355,7 +355,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Interactive and Scalable Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leveraging cutting-edge technology to deliver interactive experiences, scalable for growing audiences and evolving content trends in the entertainment industry.
@@ -369,7 +369,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Providing continuous support and timely updates to ensure uninterrupted content streaming and seamless user experiences across your entertainment platform.
@@ -388,7 +388,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Entertainment Software Services</h1>
 
             </div>
@@ -396,9 +396,9 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/entertainment-primary1.jpg" alt="Image on Left">
+                        <img src="images/entertainment-primary1.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- New Entertainment Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -475,7 +475,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -534,12 +534,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -550,11 +550,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ##### faq #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Entertainment Industry Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What type of websites do you develop for the entertainment industry?</h1>
@@ -610,9 +610,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Entertainment Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Entertainment Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Entertainment Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Entertainment Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

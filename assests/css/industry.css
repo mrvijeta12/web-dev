@@ -65,13 +65,15 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   color: white;
 }
 .hero h1 {
   font-size: 3rem;
-  /* color: white; */
+line-height: 60px;
+  
   color: black;
+
 }
 .child a {
   display: inline-block;
@@ -104,11 +106,15 @@ html {
 .child1 h1,
 .child1 h3,
 .child1 a {
-  margin: 0px 20px;
   color: black;
+  margin: 0px 20px;
+
 }
 .child1 h3 {
   font-family: Roboto-Regular;
+font-weight: 100;
+  line-height: 25px;
+
 }
 /* .logo {
   position: absolute;
@@ -156,6 +162,8 @@ html {
   padding: 30px 0px;
   color: white;
   font-family: Roboto-Bold;
+line-height: 60px;
+
 }
 
 .intro p {
@@ -905,6 +913,7 @@ p.tab.active-tab {
   font-size: 20px;
   color: #fff;
   font-family: Roboto-Medium;
+line-height: 25px;
 }
 
 /* The icon for expanding/collapsing */
@@ -1020,10 +1029,10 @@ p.tab.active-tab {
 
   .hero h1 {
     font-size: 2rem;
-    line-height: 35px;
+    line-height: 40px;
   }
   .hero h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hero {
@@ -1037,6 +1046,14 @@ p.tab.active-tab {
   .child1 {
     padding: 20px;
   }
+.child1 h1,
+.child1 h3,
+.child1 a {
+  
+  color: black;
+margin: 0px;
+
+}
 
   .detail {
     height: auto;
@@ -1131,6 +1148,7 @@ p.tab.active-tab {
   }
   .intro h1 {
     font-size: 2rem;
+line-height: 45px;
   }
   .benefits-wrapper {
     width: 100%;
@@ -1180,7 +1198,7 @@ p.tab.active-tab {
   }
 
   .swiper-slide {
-    height: 330px !important;
+    height: 350px !important;
   }
 
   .faq-wrapper {

@@ -119,12 +119,12 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
-                    <!-- <img src="images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
+                    <!-- <img src="images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1000" /> -->
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -144,11 +144,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Comprehensive Expertise in React.js for Modern Applications</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Comprehensive Expertise in React.js for Modern Applications</h1>
 
             </div>
 
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Component-Based Architecture</h1>
                     <p>Our expertise in component-based architecture enables developers to build applications with reusable, self-contained components. This approach not only simplifies code management but also enhances collaboration among team members, ensuring that changes can be made efficiently without affecting the overall application structure, resulting in faster development cycles and improved scalability.</p>
@@ -180,48 +180,15 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced React.js Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced React.js Solutions</h1>
             </div>
 
-            <!-- <div class="service_choose_us">
-                <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/healthcare-react.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Creating user-friendly healthcare applications that enhance patient engagement and streamline processes like appointment scheduling and telemedicine.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-react.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Developing dynamic e-commerce platforms with React that provide personalized shopping experiences and efficient inventory management.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-react.png" alt="">
-                        <h1>Finance</h1>
-                        <p>Building secure financial applications using React, ensuring real-time data visualization and user-friendly interfaces for financial transactions.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-react.png" alt="">
-                        <h1>Education</h1>
-                        <p>Developing interactive educational platforms with React, enhancing learning through engaging user experiences and online course management.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-react.png" alt="">
-                        <h1>Travel and Hospitality</h1>
-                        <p>Creating intuitive travel booking websites with React, providing real-time availability and personalized recommendations for users.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-react.png" alt="">
-                        <h1>Social Media</h1>
-                        <p>Building engaging social networking platforms with React, facilitating real-time interactions and dynamic content sharing among users.</p>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Healthcare -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating user-friendly healthcare applications that enhance patient engagement and streamline processes like appointment scheduling and telemedicine.
@@ -235,7 +202,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - E-commerce -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing dynamic e-commerce platforms with React that provide personalized shopping experiences and efficient inventory management.
@@ -249,7 +216,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Finance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building secure financial applications using React, ensuring real-time data visualization and user-friendly interfaces for financial transactions.
@@ -263,7 +230,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Education -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive educational platforms with React, enhancing learning through engaging user experiences and online course management.
@@ -277,7 +244,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Travel and Hospitality -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating intuitive travel booking websites with React, providing real-time availability and personalized recommendations for users.
@@ -291,7 +258,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Social Media -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building engaging social networking platforms with React, facilitating real-time interactions and dynamic content sharing among users.
@@ -312,38 +279,38 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### choose language ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Top Reasons to Choose React for Your Project</h1>
             </div>
 
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Blazing-Fast Performance</h2>
                         <p>React's Virtual DOM enables rapid updates and rendering, dramatically improving performance and load times, delivering a smooth user experience that keeps visitors engaged on your site.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Scalable Architecture Design</h2>
                         <p>With its modular, component-based architecture, React simplifies development, making it easy to build scalable applications that grow effortlessly alongside your business needs.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Enhanced User Experience</h2>
                         <p>React creates highly dynamic, responsive interfaces that instantly adapt to user actions, ensuring a seamless and interactive experience across both web and mobile platforms.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>SEO-Friendly Framework</h2>
                         <p>Server-side rendering boosts React's SEO capabilities, improving search engine rankings, reducing load times, and driving increased organic traffic to your website.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Thriving Developer Community</h2>
                         <p>Supported by a large developer community, React offers extensive resources, ready-made solutions, and continuous updates to help developers build innovative and robust applications faster.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Future-Proof Technology</h2>
                         <p>React's regular updates and widespread adoption by tech giants ensure your web projects remain at the cutting edge, evolving with industry trends and technological advances.</p>
                     </section>
@@ -358,7 +325,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -440,12 +407,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -453,14 +420,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -473,12 +440,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -491,11 +458,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ##### faq #####  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Expert-Level React.js Development: Your Questions Answered</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What makes your team experts in React.js development?</h1>
@@ -543,7 +510,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

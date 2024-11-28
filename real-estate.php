@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -129,32 +129,32 @@ function renderPagination($currentPage, $totalPages)
 
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Enhancing Property Management Through Smart Software Development</h3>
+                    <h3>Enhancing Property Management Through Smart Software Development</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/real-estate-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/real-estate-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Empowering Real Estate Solutions with Our Comprehensive Software Development Services</h1>
-                <p>Our software development services for the real estate industry are designed to optimize workflows, enhance market analysis, and improve user experience. By harnessing cutting-edge technology, data visualization, and intuitive design, we empower real estate agents and developers to make informed decisions, manage properties efficiently, and deliver exceptional value to clients in an ever-changing market.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Empowering Real Estate Solutions with Our Comprehensive Software Development Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the real estate industry are designed to optimize workflows, enhance market analysis, and improve user experience. By harnessing cutting-edge technology, data visualization, and intuitive design, we empower real estate agents and developers to make informed decisions, manage properties efficiently, and deliver exceptional value to clients in an ever-changing market.</p>
             </section>
 
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Real Estate Software</h1>
 
             </div>
 
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Real Estate Software Consulting
@@ -264,11 +264,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our real estate software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our real estate software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Residential Real Estate</li>
                         <li>Commercial Real Estate</li>
                         <li>Real Estate Investment Trusts (REITs)</li>
@@ -276,7 +276,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Real Estate Development Firms</li>
                         <li>Real Estate Brokerage Firms</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Luxury Real Estate Agencies</li>
                         <li>Vacation Rental Services</li>
                         <li>Land Development Companies</li>
@@ -291,7 +291,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Real Estate Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Real Estate Software Development</h1>
 
             </div>
 
@@ -299,32 +299,32 @@ function renderPagination($currentPage, $totalPages)
             <div class="service_choose_us">
 
                 <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>Real Estate Technology Expertise</h1>
                         <p>Providing cutting-edge technology solutions that transform real estate operations, improve client interactions, and enhance property management efficiency.</p>
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>Custom Real Estate Web Development</h1>
                         <p>Designing bespoke websites with user-friendly interfaces that showcase properties and streamline the buying or renting process for potential clients.</p>
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>Data Analytics and Market Insights</h1>
                         <p>Utilizing advanced data analytics to provide actionable insights, helping real estate professionals make informed decisions based on market trends.</p>
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>Mobile App Development for Real Estate</h1>
                         <p>Creating innovative mobile applications that enable clients to search for properties, schedule viewings, and communicate with agents on the go.</p>
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>Seamless CRM and Software Integration</h1>
                         <p>Integrating Customer Relationship Management (CRM) systems with real estate platforms for enhanced client management and streamlined communication.</p>
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/star.png" alt="">
                         <h1>24/7 Support and Maintenance</h1>
                         <p>Offering continuous support and maintenance to ensure your real estate technology operates smoothly, providing a reliable service for your clients.</p>
@@ -336,7 +336,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Real Estate Software Services</h1>
 
             </div>
@@ -344,11 +344,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/real-estate-primary.jpg" alt="Image on Left">
+                        <img src="images/real-estate-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- Real Estate Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -419,7 +419,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -477,12 +477,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -494,11 +494,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ###### faq ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Real Estate Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites do you build for the real estate industry?</h1>
@@ -553,9 +553,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Real Estate Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Real Estate Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Real Estate Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Real Estate Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

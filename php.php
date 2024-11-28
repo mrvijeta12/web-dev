@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -144,9 +144,9 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### core area of expertise ######  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Mastering PHP for Powerful Web Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Mastering PHP for Powerful Web Development</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Custom Web Application Development</h1>
                     <p>We specialize in developing custom web applications using PHP, tailored to meet your specific business requirements. Our solutions are robust, scalable, and designed for optimal performance.</p>
@@ -178,14 +178,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced PHP Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced PHP Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Healthcare -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building secure healthcare applications using PHP to manage patient records, appointment scheduling, and telehealth services efficiently.
@@ -199,7 +199,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - E-commerce -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing robust e-commerce solutions with PHP, ensuring seamless transactions, personalized shopping experiences, and efficient inventory management.
@@ -213,7 +213,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Finance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating secure financial applications using PHP that provide real-time data analytics, account management, and secure payment processing.
@@ -227,7 +227,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Education -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive e-learning platforms with PHP that facilitate online courses, assessments, and student progress tracking.
@@ -241,7 +241,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Travel -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating travel booking systems using PHP that allow users to search for, book, and manage travel itineraries seamlessly.
@@ -255,7 +255,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Social Media -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building engaging social media platforms with PHP, enabling user interactions, content sharing, and real-time communication features.
@@ -274,32 +274,32 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ########## TECHNOLOGIES  #######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>The Benefits of Using PHP for Development</h1>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Dynamic Web Applications</h2>
                         <p>PHP excels at creating dynamic web applications, allowing developers to generate content in real-time based on user interactions and data input.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Rapid Development Cycle</h2>
                         <p>With its straightforward syntax and rich set of built-in functions, PHP enables rapid development cycles, making it easier to prototype and iterate on projects.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Strong Security Features</h2>
                         <p>PHP offers various built-in security features, such as data encryption and user authentication mechanisms, which help protect applications from common vulnerabilities.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Vast Hosting Options</h2>
                         <p>PHP is supported by nearly all web hosting providers, giving developers a wide range of options for hosting their applications without compatibility issues.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Extensive Learning Resources</h2>
                         <p>The abundance of tutorials, courses, and documentation available online makes learning PHP accessible for beginners and helps experienced developers enhance their skills.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Flexible and Versatile</h2>
                         <p>PHP can be used for a variety of applications, from simple websites to complex content management systems, making it a versatile tool in any developer's toolkit.</p>
                     </section>
@@ -313,7 +313,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -395,12 +395,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -408,14 +408,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -428,12 +428,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -444,11 +444,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- #### faq ###  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Professional PHP Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of applications can be built with PHP?</h1>
@@ -496,7 +496,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

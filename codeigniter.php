@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Elevating Development with CodeIgniter Framework</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Elevating Development with CodeIgniter Framework</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Rapid Application Development</h1>
                     <p>We leverage CodeIgniter's simplicity and speed to accelerate the development of web applications. Our focus is on delivering high-quality solutions in a timely manner without compromising functionality.</p>
@@ -178,14 +178,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced CodeIgniter Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced CodeIgniter Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating efficient real estate management systems with CodeIgniter, enabling property listings, client management, and transaction tracking.
@@ -199,7 +199,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Telemedicine -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building telemedicine platforms using CodeIgniter, connecting patients with healthcare professionals through secure video consultations and health monitoring.
@@ -213,7 +213,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Event Management -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing event management applications with CodeIgniter, simplifying registration, ticketing, and attendee engagement for various events.
@@ -227,7 +227,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Blogging Platforms -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating dynamic blogging platforms using CodeIgniter, offering user-friendly interfaces for content creation, management, and community interaction.
@@ -241,7 +241,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Non-Profit Organizations -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building web applications for non-profit organizations with CodeIgniter, enhancing donor management, event planning, and volunteer coordination.
@@ -255,7 +255,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Fitness and Wellness -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing fitness and wellness applications using CodeIgniter, offering features like class scheduling, nutrition tracking, and community engagement.
@@ -277,32 +277,32 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ########## TECHNOLOGIES  #######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Why CodeIgniter is a Preferred PHP Framework</h1>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Lightweight Framework</h2>
                         <p>CodeIgniter is known for its lightweight structure, which results in fast performance and reduced overhead, making it ideal for high-speed applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Simplified Development Process</h2>
                         <p>With its clear documentation and straightforward setup, CodeIgniter simplifies the development process, allowing developers to focus on building features rather than configuration.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Built-In Security Features</h2>
                         <p>CodeIgniter comes with built-in security features like XSS filtering and CSRF protection, helping developers create secure applications without extensive additional coding.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Flexible Routing System</h2>
                         <p>The flexible routing system in CodeIgniter allows developers to create clean and user-friendly URLs, enhancing both SEO and user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Extensive Library Support</h2>
                         <p>CodeIgniter provides a comprehensive set of libraries, making it easy to integrate functionalities such as database management, email handling, and form validation.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Strong Community and Resources</h2>
                         <p>The CodeIgniter community is active and supportive, providing a wealth of resources, forums, and third-party extensions to assist developers in their projects.</p>
                     </section>
@@ -316,7 +316,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -398,12 +398,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -411,14 +411,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -430,12 +430,12 @@ function renderPagination($currentPage, $totalPages)
             </section>
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -447,11 +447,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- #### faq ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>CodeIgniter Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What are the advantages of using CodeIgniter for web development?</h1>
@@ -499,7 +499,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

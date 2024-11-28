@@ -120,39 +120,14 @@ function renderPagination($currentPage, $totalPages)
         ?>
         <div class="wrapper">
 
-
-
-
-
-            <!-- new added  -->
-            <!-- Hero Section with Centered Text -->
-            <!-- <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
-                    <h1 class="animated-heading">
-                        Cutting-Edge Frontend Development
-                    </h1>
-                    <p>
-                        Creating visually stunning, user-friendly web interfaces.
-                    </p>
-                    <a href="#" class="reopenPopup">Consult Our Experts</a>
-                </div>
-            </div>
-
-           
-            <div class="image-wrapper">
-                <div class="full-image-section"></div>
-            </div> -->
-
-
-
             <!-- Hero Section with Centered Text -->
             <div class="hero-section">
-                <div class="hero-content">
-                    <!-- <img src="images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
-                    <h1 class="animated-heading" data-aos="fade-up" data-aos-duration="1500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
+
+                    <h1 class="animated-heading">
                         Innovative React.Js Development
                     </h1>
-                    <p data-aos="fade-up" data-aos-duration="1500">
+                    <p>
                         Empowering businesses with fast, efficient, and maintainable web
                         solutions
                     </p>
@@ -178,7 +153,7 @@ function renderPagination($currentPage, $totalPages)
 
             </div>
 
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Component-Based Architecture</h1>
                     <p>Our expertise in component-based architecture enables developers to build applications with reusable, self-contained components. This approach not only simplifies code management but also enhances collaboration among team members, ensuring that changes can be made efficiently without affecting the overall application structure, resulting in faster development cycles and improved scalability.</p>
@@ -316,32 +291,32 @@ function renderPagination($currentPage, $totalPages)
 
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Blazing-Fast Performance</h2>
                         <p>React's Virtual DOM enables rapid updates and rendering, dramatically improving performance and load times, delivering a smooth user experience that keeps visitors engaged on your site.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Scalable Architecture Design</h2>
                         <p>With its modular, component-based architecture, React simplifies development, making it easy to build scalable applications that grow effortlessly alongside your business needs.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Enhanced User Experience</h2>
                         <p>React creates highly dynamic, responsive interfaces that instantly adapt to user actions, ensuring a seamless and interactive experience across both web and mobile platforms.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>SEO-Friendly Framework</h2>
                         <p>Server-side rendering boosts React's SEO capabilities, improving search engine rankings, reducing load times, and driving increased organic traffic to your website.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Thriving Developer Community</h2>
                         <p>Supported by a large developer community, React offers extensive resources, ready-made solutions, and continuous updates to help developers build innovative and robust applications faster.</p>
                     </section>
 
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Future-Proof Technology</h2>
                         <p>React's regular updates and widespread adoption by tech giants ensure your web projects remain at the cutting edge, evolving with industry trends and technological advances.</p>
                     </section>
@@ -438,12 +413,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -451,14 +426,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -476,7 +451,7 @@ function renderPagination($currentPage, $totalPages)
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -493,7 +468,7 @@ function renderPagination($currentPage, $totalPages)
                 <h1>Expert Frontend Development: Common Questions Answered</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What makes your team experts in frontend development?</h1>
@@ -541,7 +516,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="#" class="reopenPopup">Contact us</a>
             </section>

@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -128,32 +128,32 @@ function renderPagination($currentPage, $totalPages)
 
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Optimizing Retail Experiences Through Smart Technology Solutions</h3>
+                    <h3>Optimizing Retail Experiences Through Smart Technology Solutions</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/retail-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/retail-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Transforming Retail with Our Cutting-Edge Software Development Solutions</h1>
-                <p>Our software development services for the retail industry are designed to enhance operational efficiency, boost customer loyalty, and create engaging shopping experiences. By integrating innovative technology, predictive analytics, and seamless e-commerce solutions, we empower retailers to navigate the complexities of the market, improve inventory management, and deliver exceptional service to their customers.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Retail with Our Cutting-Edge Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the retail industry are designed to enhance operational efficiency, boost customer loyalty, and create engaging shopping experiences. By integrating innovative technology, predictive analytics, and seamless e-commerce solutions, we empower retailers to navigate the complexities of the market, improve inventory management, and deliver exceptional service to their customers.</p>
             </section>
 
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Retail Software</h1>
 
             </div>
 
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Retail Software Consulting
@@ -265,11 +265,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our retail software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our retail software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Department Stores</li>
                         <li>Grocery Stores</li>
                         <li>Clothing Retailers</li>
@@ -277,7 +277,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Home Goods Retailers</li>
                         <li>Pharmacies</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Online Retailers</li>
                         <li>Discount Stores</li>
                         <li>Specialty Shops</li>
@@ -292,7 +292,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Retail Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Retail Software Development</h1>
 
             </div>
 
@@ -301,7 +301,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Retail Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Harnessing cutting-edge technology solutions to enhance retail operations, improve customer engagement, and drive sales across various channels.
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Retail App Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building intuitive and feature-rich mobile applications to provide customers with seamless shopping experiences and personalized offers.
@@ -329,7 +329,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and Privacy Compliance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing robust security measures to protect customer data and ensure compliance with privacy regulations, fostering trust and loyalty.
@@ -343,7 +343,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Omnichannel Integration Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Seamlessly integrating online and offline channels to create a unified shopping experience that meets the evolving needs of today’s consumers.
@@ -357,7 +357,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Advanced Analytics and Insights -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leveraging data analytics to provide actionable insights that drive decision-making, optimize inventory management, and enhance marketing strategies.
@@ -371,7 +371,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Customer Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Offering round-the-clock support and system maintenance to ensure uninterrupted operations and enhance customer satisfaction throughout the shopping journey.
@@ -391,7 +391,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Retail Software Services</h1>
 
             </div>
@@ -399,11 +399,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/retail-primary.jpg" alt="Image on Left">
+                        <img src="images/retail-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- Retail Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -478,7 +478,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -537,12 +537,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -554,11 +554,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- #### faq ####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Retail Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites do you build for the retail industry?</h1>
@@ -614,9 +614,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Retail Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Retail Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Retail Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Retail Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Harnessing the Power of MEAN Stack for Dynamic Web Applications</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Harnessing the Power of MEAN Stack for Dynamic Web Applications</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Comprehensive Full-Stack Development</h1>
                     <p>We specialize in comprehensive full-stack development using the MEAN stack, ensuring seamless integration between the front end and back end for a cohesive application experience.</p>
@@ -176,14 +176,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Innovative MEAN Stack Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Innovative MEAN Stack Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leveraging MEAN stack technologies to develop efficient retail applications that enhance customer experience and streamline inventory management.
@@ -197,7 +197,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Logistics -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building robust logistics management systems with MEAN stack, ensuring real-time tracking, optimized routes, and efficient fleet management.
@@ -211,7 +211,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating comprehensive real estate applications using MEAN stack, providing users with property listings, virtual tours, and efficient communication tools.
@@ -225,7 +225,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Entertainment -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive entertainment platforms with MEAN stack, enabling features like streaming, user reviews, and personalized recommendations.
@@ -239,7 +239,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Sports -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating engaging sports applications using MEAN stack, providing real-time scores, player stats, and social features for fans.
@@ -253,7 +253,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Non-Profit -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building impactful non-profit management systems with MEAN stack to facilitate donations, volunteer management, and community engagement.
@@ -274,32 +274,32 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ########## TECHNOLOGIES  #######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Unlocking the Potential of the MEAN Stack for Web Applications</h1>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Full-Stack JavaScript Framework</h2>
                         <p>The MEAN stack utilizes JavaScript throughout the entire development process, from client-side to server-side, allowing for a more cohesive coding experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Dynamic Web Applications</h2>
                         <p>Angular, a core component of the MEAN stack, enables developers to build dynamic, single-page applications with rich user interfaces and seamless user experiences.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Scalable and Flexible Database</h2>
                         <p>MongoDB's document-oriented database allows for scalable data storage and flexibility in data structures, making it ideal for modern web applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Powerful Server-Side Logic</h2>
                         <p>Node.js and Express provide a robust environment for building server-side logic, facilitating the creation of APIs and handling multiple requests efficiently.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Rapid Development and Prototyping</h2>
                         <p>The MEAN stack allows for rapid development cycles, enabling teams to prototype applications quickly and adapt to changing requirements seamlessly.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Strong Community and Resources</h2>
                         <p>The MEAN stack has a vibrant community, offering extensive documentation, tutorials, and libraries that support developers at every level.</p>
                     </section>
@@ -314,7 +314,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -396,12 +396,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -409,14 +409,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -429,12 +429,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -446,11 +446,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- #### faq #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>MEAN Stack Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What is the MEAN stack and what technologies does it comprise?</h1>
@@ -498,7 +498,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

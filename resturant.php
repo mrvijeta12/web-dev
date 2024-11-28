@@ -9,7 +9,7 @@ $offset = ($currentPage - 1) * $blogsPerPage; // Offset calculation
 
 // Fetch blogs with pagination
 $sql = "SELECT id, slug, summary, social_sharing_image FROM webdev_blogs 
-        WHERE category = 'resturant' AND blog_status = 'published' 
+        WHERE category = 'restaurant' AND blog_status = 'published' 
         ORDER BY id DESC 
         LIMIT $blogsPerPage OFFSET $offset";
 $result = $conn->query($sql);
@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 }
 
 // Count total blogs for pagination
-$totalBlogsResult = $conn->query("SELECT COUNT(*) AS total FROM webdev_blogs WHERE category = 'resturant' AND blog_status = 'published'");
+$totalBlogsResult = $conn->query("SELECT COUNT(*) AS total FROM webdev_blogs WHERE category = 'restaurant' AND blog_status = 'published'");
 $totalBlogs = $totalBlogsResult->fetch_assoc()['total'];
 $totalPages = ceil($totalBlogs / $blogsPerPage); // Total number of pages
 
@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -127,93 +127,32 @@ function renderPagination($currentPage, $totalPages)
                         <span>R</span><span>e</span><span>s</span><span>t</span><span>u</span><span>r</span><span>a</span><span>n</span><span>t</span>
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Custom Solutions for Efficient Restaurant Management</h3>
+                    <h3>Custom Solutions for Efficient Restaurant Management</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/resturant-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/resturant-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Transforming Restaurant Operations with Our Innovative Software Development Services</h1>
-                <p>Our restaurant software development services are crafted to elevate dining experiences, optimize restaurant operations, and boost overall business efficiency. By utilizing the latest technology, data analytics, and user-friendly design, we empower restaurant owners to meet their customers' evolving preferences, ensuring streamlined, secure, and accessible solutions for all dining needs.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Restaurant Operations with Our Innovative Software Development Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our restaurant software development services are crafted to elevate dining experiences, optimize restaurant operations, and boost overall business efficiency. By utilizing the latest technology, data analytics, and user-friendly design, we empower restaurant owners to meet their customers' evolving preferences, ensuring streamlined, secure, and accessible solutions for all dining needs.</p>
             </section>
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Resturant Software</h1>
 
             </div>
 
-            <!-- <section class="detail">
-                <section class="detail-title detail-child">
-                    <p class="tab active-tab" onclick="toggleContent(1)"><strong>01.</strong> Resturant Software Consulting</p>
-                    <p class="tab" onclick="toggleContent(2)"><strong>02.</strong> Custom Heathcare Software Development</p>
-                    <p class="tab" onclick="toggleContent(3)"><strong>03.</strong> Heathcare Software Moderization</p>
-                    <p class="tab" onclick="toggleContent(4)"><strong>04.</strong> Heathcare Software Integration</p>
-                    <p class="tab" onclick="toggleContent(5)"><strong>05.</strong> Heathcare eCommerce Development</p>
-                    <p class="tab" onclick="toggleContent(6)"><strong>06.</strong> Heathcare Software Product Development</p>
-                </section>
 
-                <section class="detail-description detail-child">
-                    <section id="content1" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Resturant Software Consulting </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                    <section id="content2" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Custom Heathcare Software Development </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                    <section id="content3" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Moderization </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                    <section id="content4" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Integration </h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                    <section id="content5" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Heathcare eCommerce Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                    <section id="content6" class="content">
-                        <div class="content-header">
-                            <img src="images/project-analysis-health.png" alt="">
-                            <h3>Heathcare Software Product Development</h3>
-                            <span><i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sapiente, sint iure deleniti sunt voluptates. Recusandae, reprehenderit rerum. Ab vel inventore quaerat qui esse dolore sapiente fugiat non explicabo iusto.</p>
-                    </section>
-                </section>
-            </section> -->
-
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Restaurant Software Consulting
@@ -318,11 +257,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors That Can Benefit from Our Restaurant Software Development Services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors That Can Benefit from Our Restaurant Software Development Services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Full-Service Restaurants</li>
                         <li>Fast Food Chains</li>
                         <li>Cafés and Coffee Shops</li>
@@ -330,7 +269,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Catering Services</li>
                         <li>Bars and Pubs</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Fine Dining Establishments</li>
                         <li>Buffets</li>
                         <li>Delivery and Takeout Services</li>
@@ -346,55 +285,18 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Restaurant Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Restaurant Software Development</h1>
 
             </div>
 
 
 
 
-            <!-- <div class="service_choose_us">
-
-                <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Restaurant Technology Expertise</h1>
-                        <p>Specializing in innovative technology solutions tailored to the unique needs of the restaurant industry to enhance operations and customer engagement.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Custom Restaurant Software Development</h1>
-                        <p>Creating bespoke software solutions to streamline restaurant processes, including order management, kitchen display systems, and online reservations.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Data Security and Compliance</h1>
-                        <p>Ensuring your restaurant’s customer data and payment information are protected with the highest security standards and compliance with regulations.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Seamless POS Integration</h1>
-                        <p>Implementing cutting-edge Point-of-Sale systems that integrate effortlessly with your current setup, enhancing efficiency and customer service.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>Innovative Restaurant Solutions</h1>
-                        <p>Bringing the latest technological innovations to your restaurant, from AI-driven menu recommendations to data analytics for business insights.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/star.png" alt="">
-                        <h1>24/7 Support and Maintenance</h1>
-                        <p>Providing continuous support and regular software updates to ensure that your restaurant operations run smoothly without interruptions.</p>
-                    </div>
-                </div>
-
-            </div> -->
-
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Restaurant Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Specializing in innovative technology solutions tailored to the unique needs of the restaurant industry to enhance operations and customer engagement.
@@ -408,7 +310,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Restaurant Software Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating bespoke software solutions to streamline restaurant processes, including order management, kitchen display systems, and online reservations.
@@ -422,7 +324,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and Compliance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Ensuring your restaurant’s customer data and payment information are protected with the highest security standards and compliance with regulations.
@@ -436,7 +338,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless POS Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing cutting-edge Point-of-Sale systems that integrate effortlessly with your current setup, enhancing efficiency and customer service.
@@ -450,7 +352,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovative Restaurant Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Bringing the latest technological innovations to your restaurant, from AI-driven menu recommendations to data analytics for business insights.
@@ -464,7 +366,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Providing continuous support and regular software updates to ensure that your restaurant operations run smoothly without interruptions.
@@ -484,7 +386,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Resturant Software Services</h1>
 
             </div>
@@ -492,11 +394,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/resturant-primary.jpg" alt="Image on Left">
+                        <img src="images/resturant-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
 
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -572,7 +474,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -633,12 +535,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -650,11 +552,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ##### FAQ #####  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Restaurant Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What features are essential for a restaurant website?</h1>
@@ -710,9 +612,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Resturant Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Resturant Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Resturant Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Resturant Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

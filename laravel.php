@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Harnessing Laravel for Innovative Web Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Harnessing Laravel for Innovative Web Solutions</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Advanced MVC Architecture</h1>
                     <p>We utilize Laravel’s advanced MVC architecture to build clean and organized web applications. This structure promotes separation of concerns, making our applications more maintainable and scalable.</p>
@@ -177,14 +177,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Laravel Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Laravel Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Utilizing Laravel to build seamless retail applications that enhance customer engagement and streamline inventory management processes.
@@ -198,7 +198,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing powerful real estate platforms with Laravel, featuring property listings, virtual tours, and efficient client management tools.
@@ -212,7 +212,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Logistics -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating dynamic logistics management systems using Laravel, optimizing supply chain operations and real-time tracking for efficiency.
@@ -226,7 +226,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Entertainment -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building engaging entertainment applications with Laravel, providing streaming services, user management, and interactive features.
@@ -240,7 +240,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Non-Profit Organizations -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing comprehensive platforms for non-profit organizations using Laravel, enabling donation management and volunteer coordination.
@@ -254,7 +254,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Construction -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating construction management applications with Laravel, facilitating project tracking, team collaboration, and budget management.
@@ -275,32 +275,32 @@ function renderPagination($currentPage, $totalPages)
         </div>
         <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Discover the Key Features of Laravel Framework</h1>
         </div>
         <section class="work-wrapper">
             <section class="work-wrapper-child">
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Intuitive Routing System</h2>
                     <p>Laravel’s routing system is straightforward and expressive, allowing developers to easily define application routes and manage URL patterns with clarity.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Rich Ecosystem of Packages</h2>
                     <p>Laravel has a rich ecosystem of third-party packages available through Composer, making it simple to extend functionality and add features without reinventing the wheel.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Robust Queue Management</h2>
                     <p>Laravel provides a robust queue management system that helps manage tasks efficiently, allowing for deferred processing of time-consuming tasks to improve application performance.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Localization Support</h2>
                     <p>With built-in localization features, Laravel makes it easy to create multilingual applications, allowing developers to manage translations and adapt content for various regions.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Seamless Database Migration</h2>
                     <p>Laravel's database migration system facilitates seamless transitions between different database schemas, making it easier to maintain and share changes among developers.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Integrated Dependency Injection</h2>
                     <p>Laravel’s dependency injection container simplifies the management of class dependencies, enhancing code organization and making applications easier to test and maintain.</p>
                 </section>
@@ -314,7 +314,7 @@ function renderPagination($currentPage, $totalPages)
         <!-- ######### Process ##########  -->
 
         <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
                 Our Methodology for Building High-Quality React.js Websites</h1>
 
         </div>
@@ -396,12 +396,12 @@ function renderPagination($currentPage, $totalPages)
 
 
         <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+            <div class="testimonial_slider">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/9.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -409,14 +409,14 @@ function renderPagination($currentPage, $totalPages)
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/2.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
                     <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/4.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -429,12 +429,12 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ####### blog #####  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
         </div>
 
-        <div class="blog-wrapper" id="blog-wrapper">
+        <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <!-- Blog content will be injected dynamically -->
             <?php echo renderBlogs($contents); ?>
         </div>
@@ -447,11 +447,11 @@ function renderPagination($currentPage, $totalPages)
 
 
         <!-- #### faq #####  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Laravel Development: Frequently Asked Questions</h1>
         </div>
 
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <section class="faq-child">
                 <section class="faq-heading">
                     <h1>What are the key features of Laravel?</h1>
@@ -498,7 +498,7 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ##### Book #######  -->
 
-        <section class="book">
+        <section class="book" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let’s Begin Your Project Together!</h1>
             <a href="./contact.php">Contact us</a>
         </section>

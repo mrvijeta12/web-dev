@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -128,31 +128,31 @@ function renderPagination($currentPage, $totalPages)
 
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Driving Sales with Innovative E-Commerce Software Solutions</h3>
+                    <h3>Driving Sales with Innovative E-Commerce Software Solutions</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/e-commerce-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/e-commerce-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Revolutionizing Online Retail with Our E-commerce Software Development Solutions</h1>
-                <p>Our software development services for the e-commerce industry are designed to enhance customer experiences, streamline operations, and boost sales growth. By leveraging the latest technology, data analytics, and user-centric design, we empower online retailers to create seamless shopping experiences, optimize their digital platforms, and stay ahead in the competitive world of e-commerce.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Revolutionizing Online Retail with Our E-commerce Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the e-commerce industry are designed to enhance customer experiences, streamline operations, and boost sales growth. By leveraging the latest technology, data analytics, and user-centric design, we empower online retailers to create seamless shopping experiences, optimize their digital platforms, and stay ahead in the competitive world of e-commerce.</p>
             </section>
 
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop E-Commerce Software</h1>
 
             </div>
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> eCommerce Software Consulting
@@ -263,11 +263,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our e-commerce software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our e-commerce software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Online Retailers</li>
                         <li>Marketplaces</li>
                         <li>Subscription Box Services</li>
@@ -275,7 +275,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Wholesale eCommerce Platforms</li>
                         <li>Cross-Border eCommerce Companies</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Payment Gateway Providers</li>
                         <li>Logistics and Shipping Services</li>
                         <li>eCommerce Platform Developers</li>
@@ -290,7 +290,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your E-Commerce Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your E-Commerce Software Development</h1>
 
             </div>
 
@@ -298,7 +298,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - E-commerce Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Empowering online businesses with advanced e-commerce technology solutions that drive growth, improve customer experience, and streamline operations.
@@ -312,7 +312,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Online Store Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building tailor-made e-commerce platforms that offer user-friendly interfaces, seamless navigation, and optimized shopping experiences for your customers.
@@ -326,7 +326,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and Fraud Prevention -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing robust security measures and fraud detection tools to protect sensitive customer data and secure online transactions on your e-commerce site.
@@ -340,7 +340,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless Payment Gateway Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Integrating multiple payment gateways to provide a smooth checkout process, enabling a wide range of secure payment options for customers.
@@ -354,7 +354,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Scalable and Innovative Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering flexible e-commerce solutions that scale with your business, incorporating cutting-edge technology to enhance performance and user engagement.
@@ -368,7 +368,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Continuous Support and Optimization -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Offering ongoing support, regular updates, and optimization strategies to ensure your e-commerce platform remains competitive and up-to-date.
@@ -390,7 +390,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our E-Commerce Software Services</h1>
 
             </div>
@@ -398,10 +398,10 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/ecomm-primary.jpg" alt="Image on Left">
+                        <img src="images/ecomm-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- eCommerce Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -479,7 +479,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop E-commerce Software</h1>
 
             </div>
@@ -536,12 +536,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -553,11 +553,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ##### faq #####  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>E-commerce Web Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of e-commerce websites do you develop?</h1>
@@ -613,9 +613,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">E-Commerce Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support e-commerce Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">E-Commerce Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support e-commerce Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

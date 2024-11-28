@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Dynamic Vue.js Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Mastering Vue.js for Dynamic User Experiences</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Mastering Vue.js for Dynamic User Experiences</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Dynamic Component Development</h1>
                     <p>We specialize in developing dynamic components using Vue.js, enabling the creation of highly interactive and modular user interfaces. By leveraging Vue's reactivity system, we ensure that our applications respond fluidly to user interactions, enhancing overall engagement.</p>
@@ -177,48 +177,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Vue.js Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Vue.js Solutions</h1>
             </div>
 
-            <!-- <div class="service_choose_us">
-                <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/web-application-vue.png" alt="">
-                        <h1>Retail</h1>
-                        <p>Leveraging Vue.js to create innovative retail applications that enhance customer shopping experiences and streamline inventory management.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/mobile-app-vue.png" alt="">
-                        <h1>Real Estate</h1>
-                        <p>Developing dynamic real estate platforms using Vue.js, providing users with seamless property searches and virtual tours for better engagement.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/finance-vue.png" alt="">
-                        <h1>Telecommunications</h1>
-                        <p>Building robust telecommunications applications with Vue.js that offer real-time service management and customer support features.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-vue.png" alt="">
-                        <h1>Gaming</h1>
-                        <p>Creating interactive gaming platforms using Vue.js, enhancing user engagement with real-time updates and smooth gameplay experiences.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-vue.png" alt="">
-                        <h1>Logistics</h1>
-                        <p>Utilizing Vue.js to develop logistics management systems that streamline operations and improve real-time tracking of shipments.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/social-media-vue.png" alt="">
-                        <h1>Entertainment</h1>
-                        <p>Building engaging entertainment platforms with Vue.js, facilitating content streaming and user interactions for a rich experience.</p>
-                    </div>
-                </div>
-            </div> -->
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leveraging Vue.js to create innovative retail applications that enhance customer shopping experiences and streamline inventory management.
@@ -232,7 +198,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing dynamic real estate platforms using Vue.js, providing users with seamless property searches and virtual tours for better engagement.
@@ -246,7 +212,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Healthcare -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing cutting-edge healthcare applications with Vue.js that provide real-time patient management, appointment scheduling, and telemedicine features.
@@ -261,7 +227,7 @@ function renderPagination($currentPage, $totalPages)
 
 
                     <!-- Service 4 - Gaming -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating interactive gaming platforms using Vue.js, enhancing user engagement with real-time updates and smooth gameplay experiences.
@@ -275,7 +241,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Logistics -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Utilizing Vue.js to develop logistics management systems that streamline operations and improve real-time tracking of shipments.
@@ -289,7 +255,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Entertainment -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building engaging entertainment platforms with Vue.js, facilitating content streaming and user interactions for a rich experience.
@@ -310,32 +276,32 @@ function renderPagination($currentPage, $totalPages)
         </div>
         <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Unlocking the Power of Vue.js</h1>
         </div>
         <section class="work-wrapper">
             <section class="work-wrapper-child">
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Effortless State Management</h2>
                     <p>Vue.js provides intuitive state management capabilities, allowing developers to manage application data efficiently and maintain a clear flow of information.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Declarative Rendering</h2>
                     <p>With Vue.js, developers can easily create dynamic interfaces using declarative rendering, simplifying the process of building complex user interfaces.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Robust Community Resources</h2>
                     <p>The Vue.js community is active and supportive, offering a wealth of resources, including tutorials, plugins, and forums to help developers at all levels.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Custom Directives</h2>
                     <p>Vue.js allows developers to create custom directives, providing enhanced functionality and making it easier to encapsulate reusable code for specific tasks.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Comprehensive Documentation</h2>
                     <p>Vue.js is known for its thorough and well-organized documentation, making it simple for developers to understand concepts and implement best practices.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Support for TypeScript</h2>
                     <p>Vue.js offers excellent support for TypeScript, enabling developers to leverage strong typing for improved code quality and better tooling integration.</p>
                 </section>
@@ -349,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
         <!-- ######### Process ##########  -->
 
         <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
                 Our Methodology for Building High-Quality React.js Websites</h1>
 
         </div>
@@ -431,12 +397,12 @@ function renderPagination($currentPage, $totalPages)
 
 
         <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+            <div class="testimonial_slider">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/9.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -444,14 +410,14 @@ function renderPagination($currentPage, $totalPages)
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/2.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
                     <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/4.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -464,12 +430,12 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ####### blog #####  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
         </div>
 
-        <div class="blog-wrapper" id="blog-wrapper">
+        <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <!-- Blog content will be injected dynamically -->
             <?php echo renderBlogs($contents); ?>
         </div>
@@ -481,11 +447,11 @@ function renderPagination($currentPage, $totalPages)
 
 
         <!-- #### faq ####  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Expert Vue.js Development: Frequently Asked Questions</h1>
         </div>
 
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <section class="faq-child">
                 <section class="faq-heading">
                     <h1>Why choose Vue.js for your web applications?</h1>
@@ -533,7 +499,7 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ##### Book #######  -->
 
-        <section class="book">
+        <section class="book" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let’s Begin Your Project Together!</h1>
             <a href="./contact.php">Contact us</a>
         </section>

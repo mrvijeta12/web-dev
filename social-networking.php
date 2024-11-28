@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -129,20 +129,20 @@ function renderPagination($currentPage, $totalPages)
 
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Transforming User Interaction with Cutting-Edge Networking Software</h3>
+                    <h3>Transforming User Interaction with Cutting-Edge Networking Software</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/social-media-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/social-media-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Enhancing Connections with Our Social Networking Software Development Solutions</h1>
-                <p>Our software development services for the social networking industry are designed to foster user engagement, streamline interactions, and enhance community building. By leveraging cutting-edge technology, data-driven insights, and intuitive design, we empower social platforms to create vibrant, secure, and personalized experiences that connect people and facilitate meaningful relationships in an increasingly digital world.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Enhancing Connections with Our Social Networking Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the social networking industry are designed to foster user engagement, streamline interactions, and enhance community building. By leveraging cutting-edge technology, data-driven insights, and intuitive design, we empower social platforms to create vibrant, secure, and personalized experiences that connect people and facilitate meaningful relationships in an increasingly digital world.</p>
             </section>
 
 
@@ -150,13 +150,13 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Social Networking Software</h1>
 
             </div>
 
 
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Social Networking Software Consulting
@@ -267,11 +267,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our social networking software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our social networking software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Social Media Platforms</li>
                         <li>Professional Networking Sites</li>
                         <li>Content Sharing Networks</li>
@@ -279,7 +279,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Social Messaging Apps</li>
                         <li>Community Forums</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Influencer Marketing Agencies</li>
                         <li>Social Media Analytics Tools</li>
                         <li>Ad Platforms for Social Media</li>
@@ -294,7 +294,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Social network Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Social network Software Development</h1>
 
             </div>
 
@@ -303,7 +303,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Social Networking Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering cutting-edge technology solutions for social networking platforms that enhance user engagement, interaction, and community building.
@@ -317,7 +317,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Social Networking App Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating user-centric social networking applications that foster connectivity, allowing users to share content, ideas, and experiences seamlessly.
@@ -331,7 +331,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Privacy Protection and Data Security -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing strong privacy controls and data encryption to protect user information and build trust within your social networking community.
@@ -345,7 +345,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless API and Third-Party Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Integrating with popular APIs and third-party services to enhance functionality, streamline user experience, and provide additional features to your platform.
@@ -359,7 +359,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovative and Scalable Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering flexible solutions that grow with your user base, incorporating features that adapt to the evolving needs of social media users.
@@ -373,7 +373,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Comprehensive Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Offering ongoing support and regular updates to ensure your social networking platform remains engaging, user-friendly, and free of technical issues.
@@ -392,7 +392,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Social network Software Services</h1>
 
             </div>
@@ -400,11 +400,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/social-network-primary.jpg" alt="Image on Left">
+                        <img src="images/social-network-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- Social Networking Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -473,7 +473,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -531,12 +531,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -550,11 +550,11 @@ function renderPagination($currentPage, $totalPages)
             <!-- ##### faq ######  -->
 
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Social Networking Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of social networking platforms do you develop?</h1>
@@ -610,9 +610,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Social network Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Social network Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Social network Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Social network Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000" s>Connect With Us</a>
                 </section>
 
 

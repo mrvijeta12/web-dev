@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Joomla Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Joomla Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Joomla Developers</h1>
+                    <h2>Custom Joomla Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/joomla-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Elevate Your Online Presence with Our Skilled Joomla Developers, Delivering Tailored Solutions for Your Business.</h2>
                     <p>Our expert Joomla developers excel at creating user-friendly and dynamic websites that align with your specific needs. By leveraging Joomla's powerful features, we build customized solutions that enhance your content management experience and engage your audience effectively.</p>
                     <p>With a commitment to quality and performance, we ensure your Joomla site is optimized for both users and search engines. Partner with us to bring your vision to life and see how our dedicated team can transform your online presence.</p>
@@ -148,7 +148,7 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
+                <div class="intro-slide intro-2" data-aos="fade-right" data-aos-duration="1500">
                     <img src="images/developer-primary.jpg" alt="">
                 </div>
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Joomla Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Joomla Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -262,47 +262,47 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Joomla Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Joomla Development Services</h2>
                         <p>Joomla developers create personalized websites tailored to specific business needs.
                             They leverage the platform's flexibility to design unique features and functionality,
                             ensuring a seamless user experience that aligns with the brand's identity.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Professional Template Design</h2>
                         <p>Creating custom templates is a crucial service offered by Joomla developers. They
                             design visually appealing and responsive templates that reflect the brand's aesthetics,
                             ensuring compatibility with all devices while enhancing user engagement.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Tailored Extension Development</h2>
                         <p>Joomla developers craft custom extensions to enhance website functionality. These
                             extensions, including components and modules, add tailored features that meet
                             specific business requirements, allowing for greater interactivity and improved
                             user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000" v>
                         <h2>Seamless Website Migration</h2>
                         <p>Joomla developers facilitate seamless migration from other platforms to Joomla.
                             They manage data transfer, configuration, and testing to ensure that the website
                             remains functional and optimized, minimizing downtime and maintaining user accessibility
                             throughout the process.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Regular maintenance and support are vital for Joomla websites. Developers provide
                             updates, security enhancements, and troubleshooting services to ensure optimal performance,
                             helping businesses protect their online presence while staying up-to-date with Joomla
                             advancements.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>SEO and Performance Optimization</h2>
                         <p>To improve search visibility, Joomla developers implement effective SEO strategies tailored
                             for Joomla sites. They optimize site architecture, content, and loading speeds, ensuring that
@@ -317,7 +317,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Joomla Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Joomla Developers From TekAlgo?</h1>
 
             </div>
 
@@ -327,7 +327,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Joomla Professionals -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our expert developers specialize in Joomla, offering highly efficient solutions tailored to your project’s needs, ensuring that your website performs optimally and supports your business goals effectively.</p>
                             <img src="images/star.png" alt="" />
@@ -339,7 +339,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Dynamic Designs -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We create custom, engaging designs that captivate users, offering visually appealing layouts combined with optimal functionality to enhance user experience and drive long-term engagement.</p>
                             <img src="images/star.png" alt="" />
@@ -351,7 +351,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Efficient Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our development process is designed for efficiency, ensuring that your Joomla projects are delivered quickly without compromising quality, allowing your business to achieve faster time-to-market and success.</p>
                             <img src="images/star.png" alt="" />
@@ -363,7 +363,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Thorough Testing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We conduct comprehensive testing throughout the development process, ensuring your Joomla website is flawless, functional, and secure, providing a seamless user experience across all devices.</p>
                             <img src="images/star.png" alt="" />
@@ -375,7 +375,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Value-Driven Services -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our services are designed to offer exceptional value, ensuring high-quality Joomla solutions that fit within your budget, helping you achieve optimal performance without overspending.</p>
                             <img src="images/star.png" alt="" />
@@ -387,7 +387,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Client-Centric Approach -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our client-centric approach places your satisfaction at the core of every project, ensuring we align our efforts with your specific needs, providing tailored Joomla solutions to exceed expectations.</p>
                             <img src="images/star.png" alt="" />
@@ -405,7 +405,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Joomla Experts</h1>
 
             </div>
@@ -413,11 +413,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -474,11 +474,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######## collaboration #####  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+            <section class="collaboration-wrapper">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Joomla Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -525,12 +525,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -541,11 +541,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Joomla Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites can Joomla developers create?</h1>

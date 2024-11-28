@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -128,19 +128,19 @@ function renderPagination($currentPage, $totalPages)
 
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Driving Performance in Supply Chain Through Tailored Software</h3>
+                    <h3>Driving Performance in Supply Chain Through Tailored Software</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/logistice-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/logistice-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
             <section class="intro">
-                <h1>Optimizing Supply Chain Management with Our Innovative Software Development Solutions</h1>
-                <p>Our software development services for the logistics industry are designed to enhance operational efficiency, streamline transportation management, and improve real-time tracking. By leveraging advanced technology, data analytics, and automation, we empower logistics companies to optimize their supply chain processes, reduce costs, and deliver exceptional service in a competitive marketplace.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Optimizing Supply Chain Management with Our Innovative Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the logistics industry are designed to enhance operational efficiency, streamline transportation management, and improve real-time tracking. By leveraging advanced technology, data analytics, and automation, we empower logistics companies to optimize their supply chain processes, reduce costs, and deliver exceptional service in a competitive marketplace.</p>
             </section>
 
 
@@ -149,11 +149,11 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Logistics Software</h1>
 
             </div>
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Logistics Software Consulting
@@ -263,11 +263,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our logistics software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our logistics software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Freight Forwarding Companies</li>
                         <li>Third-Party Logistics (3PL) Providers</li>
                         <li>Warehousing Services</li>
@@ -275,7 +275,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Supply Chain Management Firms</li>
                         <li>Transportation Services</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Inventory Management Solutions</li>
                         <li>Customs Brokerage Services</li>
                         <li>Last-Mile Delivery Providers</li>
@@ -290,7 +290,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your Logistics Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your Logistics Software Development</h1>
 
             </div>
 
@@ -299,7 +299,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Logistics Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering comprehensive technology solutions for the logistics industry, optimizing supply chain operations, improving efficiency, and enhancing customer satisfaction.
@@ -313,7 +313,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Logistics Software Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating tailored software solutions that streamline warehousing, inventory management, and transportation processes for greater operational efficiency.
@@ -327,7 +327,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Analytics and Reporting -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Utilizing advanced analytics to provide actionable insights into logistics operations, enabling better decision-making and performance optimization.
@@ -341,7 +341,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless System Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Integrating existing logistics systems with new technologies for improved data flow, real-time tracking, and enhanced operational transparency.
@@ -355,7 +355,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovative and Scalable Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing innovative solutions that scale with your logistics needs, ensuring adaptability to market changes and growth opportunities.
@@ -369,7 +369,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Offering round-the-clock support and regular system maintenance to ensure uninterrupted logistics operations and optimal performance.
@@ -389,7 +389,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our Logistics Software Services</h1>
 
             </div>
@@ -397,11 +397,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/logistics-primary.jpg" alt="Image on Left">
+                        <img src="images/logistics-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- Logistics Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -477,7 +477,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -535,12 +535,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -550,11 +550,11 @@ function renderPagination($currentPage, $totalPages)
                 <?php echo renderPagination($currentPage, $totalPages); ?>
             </div>
             <!-- ##### faq #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Logistics Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of logistics websites do you develop?</h1>
@@ -608,9 +608,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Logistics Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support Logistics Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Logistics Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support Logistics Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

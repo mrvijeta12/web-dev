@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled React.JS Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom React.JS Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled React.JS Developers</h1>
+                    <h2>Custom React.JS Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/react-developer.jpg" alt="">
                 </div>
             </div>
@@ -140,7 +140,7 @@ function renderPagination($currentPage, $totalPages)
             <div class="intro-wrapper">
 
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Elevate Your Web Applications with Our Expert ReactJS Developers, Crafting Innovative and Interactive User Experiences.</h2>
                     <p>Our team of ReactJS developers is committed to building dynamic web applications that stand out in the market. By harnessing React's powerful component-based architecture, we create custom solutions that deliver exceptional performance and user engagement, perfectly suited to your business objectives.</p>
                     <p>With a focus on innovation and efficiency, we bring your vision to life with scalable applications that adapt to your evolving needs. Partner with us to experience the transformative impact our skilled ReactJS developers can have on your digital success.</p>
@@ -149,8 +149,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -164,7 +164,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented React.JS Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented React.JS Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -258,49 +258,49 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by React.JS Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Component-Based Development</h2>
                         <p>ReactJS developers excel in component-based development, creating reusable UI components that streamline
                             the building process. This modular approach enhances maintainability and scalability, allowing developers
                             to efficiently manage complex applications. By encapsulating functionality, each component can be
                             independently developed and tested, leading to faster iterations.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>State Management Solutions</h2>
                         <p>Managing application state effectively is crucial in ReactJS. Developers utilize tools like Redux
                             or Context API to handle complex state management, ensuring consistent data flow throughout the
                             application. This enables seamless updates and interactions, improving user experience by keeping
                             the UI synchronized with the underlying data.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2> Virtual DOM Implementation</h2>
                         <p>ReactJS leverages a Virtual DOM to optimize performance. Developers use this feature to minimize direct
                             manipulation of the actual DOM, which can be slow. By updating the Virtual DOM first and then rendering
                             only the changes, applications become more efficient, leading to faster load times and smoother
                             interactions.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>API Integration Techniques</h2>
                         <p>Integrating APIs is vital for enhancing ReactJS applications. Developers connect front-end
                             components to back-end services using fetch or Axios, enabling dynamic data retrieval and
                             manipulation. This allows for real-time updates and richer user experiences, as applications
                             can react to changes in data without requiring full page reloads.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Testing and Debugging Practices</h2>
                         <p>ReactJS developers prioritize testing and debugging to ensure high-quality applications.
                             They utilize tools like Jest and React Testing Library to perform unit and integration tests.
                             This focus on quality helps identify bugs early in the development process, resulting in
                             robust applications that meet user expectations.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Performance Optimization Strategies</h2>
                         <p>Optimizing ReactJS applications for performance is essential. Developers implement
                             strategies such as code splitting, lazy loading, and memoization to enhance speed
@@ -316,7 +316,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire React.JS Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire React.JS Developers From TekAlgo?</h1>
 
             </div>
 
@@ -325,7 +325,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - React.js Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team of expert React.js developers specializes in building dynamic, high-performance applications that ensure seamless user experiences and scalability for the future.</p>
                             <img src="images/star.png" alt="" />
@@ -337,7 +337,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom React Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We create custom React.js solutions designed to address your unique business needs, optimizing performance and providing flexibility for your applications.</p>
                             <img src="images/star.png" alt="" />
@@ -349,7 +349,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Fast React Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our developers are committed to delivering React.js projects quickly and efficiently, ensuring high-quality code and robust functionality in a short amount of time.</p>
                             <img src="images/star.png" alt="" />
@@ -361,7 +361,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Ongoing React.js Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer continuous React.js maintenance and support to ensure your applications remain functional, scalable, and up-to-date with the latest technologies.</p>
                             <img src="images/star.png" alt="" />
@@ -373,7 +373,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - React.js Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We integrate React.js seamlessly with your existing platforms, ensuring smooth data flow and a consistent, responsive user interface across all devices.</p>
                             <img src="images/star.png" alt="" />
@@ -385,7 +385,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - React.js Success Stories -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>With a strong portfolio of successful React.js projects, we have consistently delivered innovative and high-performance web applications that drive business results.</p>
                             <img src="images/star.png" alt="" />
@@ -404,7 +404,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our React.JS Experts</h1>
 
             </div>
@@ -412,11 +412,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -473,11 +473,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######## collaboration #####  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+            <section class="collaboration-wrapper">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our React.JS Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -524,12 +524,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -540,11 +540,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>React.js Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of projects are best suited for React.js developers?</h1>

@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Drupal Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Drupal Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Drupal Developers</h1>
+                    <h2>Custom Drupal Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/drupal-developer.jpg" alt="">
                 </div>
             </div>
@@ -140,7 +140,7 @@ function renderPagination($currentPage, $totalPages)
             <div class="intro-wrapper">
 
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Empower Your Business with Our Expert Drupal Developers, Crafting Customized Solutions for Your Unique Needs.</h2>
                     <p>Our experienced Drupal developers specialize in building powerful and flexible websites that cater to your business goals. Utilizing Drupal's robust capabilities, we create tailored solutions that enhance user engagement and streamline content management.</p>
                     <p>With a focus on scalability and security, we ensure that your website evolves with your business. Partner with us to unlock the full potential of Drupal and experience the difference our skilled team can make for your digital presence.</p>
@@ -149,8 +149,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -164,7 +164,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Drupal Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Drupal Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -264,49 +264,49 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Drupal Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Module Development</h2>
                         <p>Drupal developers specialize in creating custom modules to extend functionality. By leveraging Drupal's
                             robust API, they can tailor modules to meet specific project requirements. This customization allows for
                             enhanced features, improved user experiences, and integration with other systems, making Drupal a versatile
                             solution for diverse applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Theming and Design</h2>
                         <p>Drupal developers excel in theming and design, creating visually appealing and user-friendly interfaces.
                             They use Twig templating and CSS preprocessors to implement custom themes that align with brand identities.
                             This focus on aesthetics ensures a cohesive user experience while adhering to best practices in responsive
                             design.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Content Management Solutions</h2>
                         <p>Drupal is renowned for its powerful content management capabilities. Developers configure content types,
                             taxonomies, and views to create structured content that is easy to manage. By implementing user-friendly
                             content editing interfaces, they empower non-technical users to update and maintain content without
                             extensive training.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>User Access Control</h2>
                         <p>Managing user roles and permissions is a key service provided by Drupal developers. They configure
                             access control settings to ensure secure and appropriate access to content and functionalities.
                             This customization helps organizations maintain data integrity and user security while enabling
                             collaboration among different user groups.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>API Integration and Development</h2>
                         <p>Drupal developers often integrate third-party APIs to enhance application functionality. This
                             allows for seamless communication between Drupal and external systems, enabling features like
                             payment processing, data synchronization, and social media integration. This flexibility enriches
                             the user experience and expands the capabilities of Drupal applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Providing ongoing maintenance and support is essential for Drupal projects. Developers ensure that
                             websites remain updated with the latest security patches, module updates, and performance optimizations.
@@ -322,7 +322,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Drupal Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Drupal Developers From TekAlgo?</h1>
 
             </div>
 
@@ -331,7 +331,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Drupal Specialists -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our experienced developers specialize in Drupal, offering in-depth knowledge to build dynamic websites, ensuring high performance and flexibility while aligning with your business objectives.</p>
                             <img src="images/star.png" alt="" />
@@ -343,7 +343,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide tailored Drupal solutions designed to address your unique business requirements, ensuring the platform works efficiently and scales smoothly to meet your evolving needs.</p>
                             <img src="images/star.png" alt="" />
@@ -355,7 +355,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Swift Deployment -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We focus on the swift deployment of your Drupal website, ensuring quick go-live times while maintaining high standards for quality, security, and scalability for your business needs.</p>
                             <img src="images/star.png" alt="" />
@@ -367,7 +367,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Reliable Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer continuous maintenance and support, providing proactive solutions to ensure your Drupal website operates seamlessly and delivers optimal performance throughout its lifecycle.</p>
                             <img src="images/star.png" alt="" />
@@ -379,7 +379,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Cost-Effective Pricing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer competitive pricing for high-quality Drupal services, ensuring that you receive exceptional value while maintaining cost-efficiency, allowing your business to stay within budget.</p>
                             <img src="images/star.png" alt="" />
@@ -391,7 +391,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Proven Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>With a proven track record of successful Drupal implementations, we deliver solutions that have consistently satisfied clients across industries, ensuring quality and lasting results.</p>
                             <img src="images/star.png" alt="" />
@@ -408,7 +408,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Drupal Experts</h1>
 
             </div>
@@ -416,12 +416,12 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -479,10 +479,10 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######## collaboration #####  -->
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Drupal Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -529,12 +529,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -545,11 +545,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Drupal Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites can Drupal developers create?</h1>

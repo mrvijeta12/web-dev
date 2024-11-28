@@ -35,7 +35,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                                     <li><a href="/webdev/ecommerce"> <span><i class="fa-solid fa-cart-shopping"></i></span>eCommerce</a></li>
                                     <li><a href="/webdev/saas"> <span><i class="fa-solid fa-cloud"></i></span>SaaS</a></li>
 
-                                    <li><a href="../finance"> <span><i class="fa-solid fa-sack-dollar"></i></span>Finance</a></li>
+                                    <li><a href="/webdev/finance"> <span><i class="fa-solid fa-sack-dollar"></i></span>Finance</a></li>
                                 </div>
                                 <div class="industry-child">
                                     <li><a href="/webdev/social-networking"> <span><i class="fa-solid fa-thumbs-up"></i></span>Social Networking </a></li>

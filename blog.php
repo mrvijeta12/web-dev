@@ -99,6 +99,7 @@ function renderPagination($currentPage, $totalPages)
     <link rel="stylesheet" href="assests/css/blog.css">
     <link rel="stylesheet" href="assests/css/theme.css">
     <link rel="stylesheet" href="assests/css/navbar.css">
+    <link rel="stylesheet" href="assests/css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cdf9a174a4.js" crossorigin="anonymous"></script>
@@ -107,19 +108,19 @@ function renderPagination($currentPage, $totalPages)
 <body>
     <div>
         <?php include('./navbar.php'); ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
             <!-- Hero section -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative IT Solutions for the Digital Era</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
-                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <h1 data-aos="fade-up" data-aos-duration="1500">Innovative IT Solutions for the Digital Era</h1>
+                <h2 data-aos="fade-up" data-aos-duration="1500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
+                <a href="https://calendly.com/salesfocesclouds/30min" data-aos="fade-up" data-aos-duration="1500">Book Free Consultation</a>
             </div>
 
             <!-- Blog section -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
             </div>
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -130,13 +131,52 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- FAQ section -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Blog FAQs: Your Questions Answered</h1>
             </div>
 
-            <section class="faq-wrapper">
-                <!-- Add your FAQ section here -->
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Why Choose Us for Your Web Development Needs?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        We specialize in crafting tailored web solutions that align with your business goals. From intuitive user interfaces to robust backend systems, our team ensures every project delivers exceptional performance and scalability. Let us help you bring your ideas to life with cutting-edge technologies and a client-focused approach.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>What Services Do We Offer?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Our expertise spans a wide range of web development services, including responsive website design, custom web application development, e-commerce solutions, and CMS implementation. Whether you're a startup or an established business, we provide solutions tailored to your unique requirements.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>How Do We Ensure Quality in Our Projects?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        Quality is at the heart of everything we do. Our team follows industry best practices, employs rigorous testing methodologies, and utilizes the latest tools to ensure your web solutions are secure, efficient, and user-friendly. We’re committed to delivering results that exceed expectations.
+                    </p>
+                </section>
+
+                <section class="faq-child">
+                    <section class="faq-heading">
+                        <h1>Why Is Web Development Crucial for Your Business?</h1>
+                        <span><i class="fa-solid fa-angle-down faq-icon"></i></span>
+                    </section>
+                    <p>
+                        In today’s digital age, your website is often the first impression customers have of your business. A well-developed website not only enhances your online presence but also helps drive engagement, build trust, and increase conversions. Investing in professional web development can make all the difference in staying competitive.
+                    </p>
+                </section>
             </section>
+
 
         </div>
 

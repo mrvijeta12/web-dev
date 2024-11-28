@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+            <div class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-content">
                     <h1 class="animated-heading">
                         Expert WordPress Development
                     </h1>
@@ -144,9 +144,9 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### core area of expertise ######  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Harnessing WordPress for Powerful Content Management</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Harnessing WordPress for Powerful Content Management</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Custom Theme Development</h1>
                     <p>We excel in custom WordPress theme development, crafting unique and visually appealing designs that align with your brand identity. Our themes are responsive, ensuring a seamless experience across all devices while maintaining best practices in coding.</p>
@@ -178,7 +178,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced WordPress Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced WordPress Solutions</h1>
             </div>
 
 
@@ -186,7 +186,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Blogging -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating engaging and user-friendly blogs using WordPress, enabling writers to share their thoughts and connect with audiences seamlessly.
@@ -200,7 +200,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - E-commerce -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing robust online stores with WordPress and WooCommerce, offering secure transactions, inventory management, and customizable shopping experiences.
@@ -214,7 +214,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Portfolio -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Designing stunning portfolio websites for creatives to showcase their work, utilizing WordPress's flexibility and variety of themes.
@@ -228,7 +228,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Education -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating comprehensive educational platforms using WordPress, featuring course management, quizzes, and student progress tracking.
@@ -242,7 +242,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building interactive real estate websites with WordPress, allowing agents to display listings, manage inquiries, and connect with buyers.
@@ -256,7 +256,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Community -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Establishing community-focused websites on WordPress, facilitating discussions, events, and member interactions through forums and plugins.
@@ -276,32 +276,32 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ########## TECHNOLOGIES  #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Why WordPress is the Go-To CMS</h1>
             </div>
             <section class="work-wrapper">
-                <section class="work-wrapper-child">
+                <section class="work-wrapper-child" data-aos="fade-up" data-aos-duration="1000">
                     <section class="work-child">
                         <h2>User-Friendly Interface</h2>
                         <p>WordPress features an intuitive user interface that makes it easy for anyone to create and manage content, regardless of technical expertise.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Flexible Themes and Plugins</h2>
                         <p>With thousands of themes and plugins available, WordPress allows users to customize their sites extensively, adding functionality and unique designs effortlessly.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>SEO-Friendly Features</h2>
                         <p>WordPress is built with SEO in mind, offering features like customizable permalinks, metadata management, and a variety of SEO plugins to enhance visibility.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Strong Community Support</h2>
                         <p>The WordPress community is vast and active, providing extensive documentation, forums, and resources to help users troubleshoot and optimize their sites.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Security and Updates</h2>
                         <p>WordPress regularly updates its software to address security vulnerabilities, ensuring that users can maintain a safe and secure online presence.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Multilingual Capabilities</h2>
                         <p>With multilingual plugins available, WordPress makes it easy to create websites in multiple languages, reaching a wider audience and improving accessibility.</p>
                     </section>
@@ -314,7 +314,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -395,12 +395,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -408,14 +408,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -428,12 +428,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -445,11 +445,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- #### faq ####  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Professional WordPress Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites can you build with WordPress?</h1>
@@ -497,7 +497,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

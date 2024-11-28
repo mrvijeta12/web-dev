@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled PHP Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom PHP Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled PHP Developers</h1>
+                    <h2>Custom PHP Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/php-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Transform Your Ideas into Reality with Our Experienced PHP Developers, Delivering Custom Solutions for Your Business.</h2>
                     <p>Our skilled PHP developers are dedicated to building dynamic and robust web applications that align with your specific business objectives. By leveraging PHP's flexibility and power, we create custom solutions that enhance functionality and user experience.</p>
                     <p>With a strong emphasis on code quality and performance optimization, we ensure your PHP applications are scalable and maintainable, allowing your business to grow seamlessly. Collaborate with us to elevate your online presence and achieve your goals.</p>
@@ -148,8 +148,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Php Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Php Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -263,44 +263,44 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Php Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom PHP Development</h2>
                         <p>PHP developers create tailored web applications to meet specific business needs.
                             They leverage PHP’s versatility to design and implement unique functionalities,
                             ensuring robust performance and a seamless user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>PHP Framework Development</h2>
                         <p>Developers utilize popular PHP frameworks, such as Laravel and Symfony, to build
                             scalable and maintainable applications. Framework development enhances code efficiency
                             and security while speeding up the development process for complex projects.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2> PHP CMS Development</h2>
                         <p>Creating custom content management systems (CMS) is a key service. PHP developers build
                             user-friendly CMS solutions that allow businesses to manage their content easily while
                             providing flexibility and customization according to their requirements.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>API Development and Integration</h2>
                         <p>PHP developers specialize in creating and integrating APIs for various applications.
                             They enable seamless communication between systems, allowing businesses to enhance
                             functionality and improve user experiences through third-party integrations.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2> Ongoing Maintenance and Support</h2>
                         <p>Regular maintenance is vital for PHP applications. Developers provide updates,
                             security patches, and troubleshooting services, ensuring optimal performance and
                             helping businesses stay current with the latest PHP advancements.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Performance Optimization Services</h2>
                         <p>To improve application performance, PHP developers implement optimization strategies.
                             They analyze code efficiency, database queries, and server configurations to enhance
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Php Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Php Developers From TekAlgo?</h1>
 
             </div>
 
@@ -323,7 +323,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - PHP Gurus -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Experienced PHP developers who specialize in handling complex challenges and delivering scalable solutions tailored to meet your business needs with robust coding practices.</p>
                             <img src="images/star.png" alt="">
@@ -335,7 +335,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Dynamic Web Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We create interactive and user-friendly websites, combining the latest technologies with intuitive design to deliver a seamless experience across all devices and platforms.</p>
                             <img src="images/star.png" alt="">
@@ -347,7 +347,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Customized Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our development solutions are tailored to your specific business requirements, ensuring that your project reflects your vision and drives success for your company.</p>
                             <img src="images/star.png" alt="">
@@ -359,7 +359,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Rigorous Testing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We conduct thorough testing to ensure that your application runs flawlessly, identifying potential issues early and delivering a high-quality, bug-free product.</p>
                             <img src="images/star.png" alt="">
@@ -371,7 +371,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Budget-Friendly Options -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide high-quality PHP development services that are cost-effective, ensuring you get the best value for your investment without compromising on quality.</p>
                             <img src="images/star.png" alt="">
@@ -383,7 +383,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Expert Guidance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer ongoing support and consultation to guide your projects from conception to completion, ensuring you make informed decisions every step of the way.</p>
                             <img src="images/star.png" alt="">
@@ -401,7 +401,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Php Experts</h1>
 
             </div>
@@ -409,11 +409,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -470,11 +470,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######## collaboration #####  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+            <section class="collaboration-wrapper">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Php Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -521,12 +521,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -537,11 +537,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>PHP Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of applications can PHP developers create?</h1>

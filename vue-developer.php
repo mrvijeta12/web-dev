@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Vue.JS Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Vue.JS Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Vue.JS Developers</h1>
+                    <h2>Custom Vue.JS Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/vue-developer.jpg" alt="">
                 </div>
             </div>
@@ -141,7 +141,7 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Transform Your Ideas into Interactive Web Applications with Our Skilled Vue.js Developers, Delivering Seamless User Experiences.</h2>
                     <p>Our team of Vue.js developers excels at building responsive and dynamic web applications that captivate users. Leveraging Vue's progressive framework and reactivity, we craft custom solutions tailored to your specific business requirements, ensuring high performance and engagement.</p>
                     <p>With a focus on adaptability and innovation, we bring your vision to life, creating scalable applications that grow alongside your business. Partner with us to unlock the full potential of Vue.js and experience the impact our expert developers can make on your digital journey.</p>
@@ -150,8 +150,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -165,7 +165,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Vue.JS Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Vue.JS Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -265,49 +265,49 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Vue.JS Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Progressive Framework Development</h2>
                         <p>Vue.js developers excel in building progressive web applications that enhance user engagement.
                             By utilizing Vue’s flexible architecture, they create responsive interfaces that can scale from
                             simple components to complex applications. This adaptability allows developers to efficiently
                             manage evolving project requirements while maintaining high performance.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Component Reusability Techniques</h2>
                         <p>Vue.js promotes a component-based approach, enabling developers to create reusable components.
                             This modular structure enhances code maintainability and collaboration, as developers can easily
                             share and integrate components across projects. By encapsulating functionality, Vue components
                             streamline development and facilitate easier updates and testing.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>State Management Solutions</h2>
                         <p>Effective state management is critical in Vue.js applications. Developers often utilize Vuex to
                             manage complex state across components. This centralized store enables seamless data flow, ensuring
                             that state changes are efficiently propagated throughout the application, improving consistency and
                             user experience during interactions.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Vue Router Implementation</h2>
                         <p>Integrating Vue Router allows developers to manage navigation within single-page applications
                             effortlessly. This routing solution helps create a smooth user experience by enabling dynamic
                             navigation and lazy loading of components. By organizing routes effectively, developers enhance
                             application performance and reduce load times.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>API Integration Strategies</h2>
                         <p>Vue.js developers frequently integrate APIs to enrich application functionality. Using Axios
                             or Fetch API, they connect front-end components to back-end services for real-time data retrieval.
                             This integration allows applications to dynamically update content based on user interactions,
                             fostering a more interactive experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Performance Optimization Techniques</h2>
                         <p>Optimizing Vue.js applications for performance is essential for user satisfaction. Developers
                             implement strategies like lazy loading, asynchronous component loading, and Vue’s built-in
@@ -323,7 +323,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Vue.JS Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Vue.JS Developers From TekAlgo?</h1>
 
             </div>
 
@@ -332,7 +332,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Vue.js Specialists -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our Vue.js specialists build dynamic, high-performance applications, ensuring scalability, flexibility, and a seamless user experience to meet your business needs and future growth demands effectively.</p>
                             <img src="images/star.png" alt="" />
@@ -344,7 +344,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Customized Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer fully customized solutions tailored to fit your unique business needs, creating highly efficient and effective Vue.js applications that align perfectly with your goals and objectives.</p>
                             <img src="images/star.png" alt="" />
@@ -356,7 +356,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Efficient Delivery -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We ensure on-time delivery of all Vue.js projects, meeting deadlines without compromising quality. Our team works efficiently to deliver high-quality applications that match your business requirements.</p>
                             <img src="images/star.png" alt="" />
@@ -368,7 +368,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Comprehensive Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer continuous support to maintain the smooth operation of your Vue.js applications, ensuring that your projects remain up-to-date, functional, and optimized for long-term success.</p>
                             <img src="images/star.png" alt="" />
@@ -380,7 +380,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Cost-Effective Services -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our cost-effective Vue.js development services offer great value without compromising on quality, helping businesses achieve high returns on investment while keeping projects within budget constraints.</p>
                             <img src="images/star.png" alt="" />
@@ -392,7 +392,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Proven Results -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We have a proven track record of successful Vue.js projects, delivering outstanding results for clients across industries by creating reliable, scalable, and performance-driven applications.</p>
                             <img src="images/star.png" alt="" />
@@ -409,7 +409,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Vue.JS Experts</h1>
 
             </div>
@@ -417,11 +417,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -479,10 +479,10 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######## collaboration #####  -->
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Vue.JS Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -528,12 +528,12 @@ function renderPagination($currentPage, $totalPages)
             </section>
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -544,11 +544,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq  ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Vue.js Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of applications are best suited for Vue.js?</h1>

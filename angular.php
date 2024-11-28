@@ -118,12 +118,12 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
-            <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
-                    <!-- <img src="images/freepik__background__74942.png" alt="" data-aos="zoom-in" data-aos-duration="1500" /> -->
+            <div class="hero-section" data-aos="fade-down" data-aos-duration="1000">
+                <div class="hero-content">
+
                     <h1 class="animated-heading">
                         Advanced Angular.JS Solutions
                     </h1>
@@ -147,12 +147,12 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### core area of expertise ######  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Comprehensive Expertise in AngularJS Development for Modern Applications</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Comprehensive Expertise in AngularJS Development for Modern Applications</h1>
 
 
 
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>User-Centric Design Principles</h1>
                     <p>We focus on user-centric design principles to create intuitive interfaces that prioritize user experience. By conducting thorough user research and usability testing, we ensure that our AngularJS applications meet the needs and expectations of users, leading to increased satisfaction and engagement.</p>
@@ -185,94 +185,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Angular Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Angular Solutions</h1>
             </div>
 
-            <!-- <div class="service_choose_us">
-                <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Utilizing Angular to build dynamic, responsive web applications that enhance user engagement and streamline workflows with modular architecture.
-                            </p>
-                            <img src="images/web-application-angular.png" alt="" />
-                            <h2>Technology</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Creating powerful cross-platform mobile applications using Angular with Ionic, ensuring a native-like experience on both iOS and Android.
-                            </p>
-                            <img src="images/mobile-app-angular.png" alt="" />
-                            <h2>Mobile Development</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
-
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Developing feature-rich e-commerce platforms with Angular, offering seamless user experiences, secure transactions, and real-time inventory management.
-                            </p>
-                            <img src="images/ecommerce-angular.png" alt="" />
-                            <h2>E-commerce</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
-
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Building real-time applications with Angular that provide instant data updates and enhance user interaction in various sectors.
-                            </p>
-                            <img src="images/real-time-angular.png" alt="" />
-                            <h2>Finance</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
-
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Creating Progressive Web Apps with Angular that deliver the best of web and mobile experiences, ensuring fast performance and offline support.
-                            </p>
-                            <img src="images/pwa-angular.png" alt="" />
-                            <h2>Retail</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
-
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="content-wrapper">
-                            <p>
-                                Developing interactive games using Angular, integrating engaging user interfaces and powerful libraries to captivate players.
-                            </p>
-                            <img src="images/game-development-angular.png" alt="" />
-                            <h2>Gaming</h2>
-                        </div>
-                        <button class="read-more-btn" onclick="toggleReadMore(this)">
-                            Read More
-                        </button>
-                    </div>
-                </div>
-            </div> -->
             <div class="service_choose_us">
                 <div class="services_container">
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Utilizing Angular to build dynamic, responsive web applications that enhance user engagement and streamline workflows with modular architecture.
@@ -285,7 +205,7 @@ function renderPagination($currentPage, $totalPages)
                         </button>
                     </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating powerful cross-platform mobile applications using Angular with Ionic, ensuring a native-like experience on both iOS and Android.
@@ -298,7 +218,7 @@ function renderPagination($currentPage, $totalPages)
                         </button>
                     </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing feature-rich e-commerce platforms with Angular, offering seamless user experiences, secure transactions, and real-time inventory management.
@@ -311,7 +231,7 @@ function renderPagination($currentPage, $totalPages)
                         </button>
                     </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building real-time applications with Angular that provide instant data updates and enhance user interaction in various sectors.
@@ -324,7 +244,7 @@ function renderPagination($currentPage, $totalPages)
                         </button>
                     </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating Progressive Web Apps with Angular that deliver the best of web and mobile experiences, ensuring fast performance and offline support.
@@ -337,7 +257,7 @@ function renderPagination($currentPage, $totalPages)
                         </button>
                     </div>
 
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive games using Angular, integrating engaging user interfaces and powerful libraries to captivate players.
@@ -356,32 +276,32 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### choose language ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Why Angular.js Stands Out</h1>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Dynamic Web Applications</h2>
                         <p>Angular.js empowers developers to build dynamic web applications that are both fast and responsive, enhancing user engagement and satisfaction.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Declarative UI</h2>
                         <p>With Angular.js, developers can define user interfaces declaratively, allowing for clearer, more intuitive code that simplifies application logic and enhances readability.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Built-In Directives</h2>
                         <p>Angular.js offers a set of built-in directives that streamline DOM manipulation and enhance functionality, enabling developers to create interactive features with minimal effort.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Optimized Performance</h2>
                         <p>Angular.js optimizes performance through lazy loading and efficient change detection, ensuring that applications run smoothly even with complex functionalities.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Cross-Platform Development</h2>
                         <p>Angular.js supports cross-platform development, allowing developers to create applications that work seamlessly on both web and mobile environments, increasing reach and accessibility.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                         <h2>Rich Ecosystem</h2>
                         <p>The rich ecosystem of Angular.js provides a wide array of third-party libraries and tools, enhancing the development process and enabling the creation of feature-rich applications.</p>
                     </section>
@@ -397,7 +317,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Our Methodology for Building High-Quality React.js Websites</h1>
 
             </div>
@@ -479,12 +399,12 @@ function renderPagination($currentPage, $totalPages)
 
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/9.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -492,14 +412,14 @@ function renderPagination($currentPage, $totalPages)
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/2.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                         <img src="images/4.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
@@ -512,12 +432,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -528,11 +448,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- #### faq #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Advanced Angular.js Development: Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>Why choose your team for Angular.js development?</h1>
@@ -580,7 +500,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### Book #######  -->
 
-            <section class="book">
+            <section class="book" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Let’s Begin Your Project Together!</h1>
                 <a href="./contact.php">Contact us</a>
             </section>

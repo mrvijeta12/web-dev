@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ########## HERO SECTION ##################################  -->
             <div class="hero">
@@ -127,32 +127,32 @@ function renderPagination($currentPage, $totalPages)
                         <span>O</span><span>n</span><span>-</span><span>D</span><span>e</span><span>m</span><span>a</span><span>n</span><span>d</span>
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Delivering Flexible Solutions to Meet Dynamic Consumer Needs</h3>
+                    <h3>Delivering Flexible Solutions to Meet Dynamic Consumer Needs</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/on-demand-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/on-demand-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Transforming On-Demand Services with Our Innovative Software Development Solutions</h1>
-                <p>Our software development services for the on-demand industry are designed to enhance service delivery, improve user experience, and streamline operations. By leveraging advanced technology, real-time data analytics, and intuitive design, we empower businesses to efficiently connect service providers and consumers, ensuring quick responses and high satisfaction in a fast-paced market.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming On-Demand Services with Our Innovative Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the on-demand industry are designed to enhance service delivery, improve user experience, and streamline operations. By leveraging advanced technology, real-time data analytics, and intuitive design, we empower businesses to efficiently connect service providers and consumers, ensuring quick responses and high satisfaction in a fast-paced market.</p>
             </section>
 
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop On-Demand Software</h1>
 
             </div>
 
 
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> Strategic On-Demand Service Consulting
@@ -255,11 +255,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our On-demand software development services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our On-demand software development services</h1>
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Food Delivery Services</li>
                         <li>Ride-Hailing Applications</li>
                         <li>Home Cleaning Services</li>
@@ -267,7 +267,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Freelance and Gig Platforms</li>
                         <li>Health and Wellness Services</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Beauty and Personal Care Services</li>
                         <li>Event Planning and Coordination</li>
                         <li>Subscription Box Services</li>
@@ -283,7 +283,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your On-Demand Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your On-Demand Software Development</h1>
 
             </div>
 
@@ -292,7 +292,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - On-Demand Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Specializing in cutting-edge on-demand technology solutions designed to cater to the dynamic needs of businesses, enhancing speed, scalability, and customer satisfaction.
@@ -306,7 +306,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom On-Demand App Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building highly responsive and user-friendly on-demand apps tailored to your business needs, enabling seamless experiences for your customers across all platforms.
@@ -320,7 +320,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and User Privacy -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing robust security measures to protect user data and ensure compliance with privacy regulations, creating a secure environment for your on-demand platform.
@@ -334,7 +334,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless Integration Capabilities -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Integrating your on-demand app with various third-party services and APIs to provide a comprehensive solution that meets diverse user requirements effortlessly.
@@ -348,7 +348,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovation and Scalability -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Empowering your on-demand business with scalable technologies and innovative features that adapt to evolving market demands and enhance user engagement.
@@ -362,7 +362,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering round-the-clock technical support and regular updates to ensure your on-demand platform operates seamlessly without disruptions or downtime.
@@ -382,19 +382,19 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our On-Demand Software Services</h1>
 
             </div>
 
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
-                    <div class="avail-image-container" id="image-scroll">
+                    <div class="avail-image-container" id="image-scroll" data-aos="fade-right" data-aos-duration="1000">
                         <img src="images/10.jpg" alt="Image on Left">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <!-- On-Demand Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -465,7 +465,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -537,12 +537,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -552,11 +552,11 @@ function renderPagination($currentPage, $totalPages)
                 <?php echo renderPagination($currentPage, $totalPages); ?>
             </div>
             <!-- ##### faq #######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>On-Demand Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of on-demand websites do you develop?</h1>
@@ -611,9 +611,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">On-Demand Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support On-Demand Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">On-Demand Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support On-Demand Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

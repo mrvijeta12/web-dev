@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled WordPress Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom WordPress Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled WordPress Developers</h1>
+                    <h2>Custom WordPress Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/wordpress-developer.jpg" alt="">
                 </div>
             </div>
@@ -138,7 +138,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Unlock the Potential of Your Website with Our Skilled WordPress Developers, Delivering Customized Solutions for Growth.</h2>
                     <p>Our dedicated WordPress developers excel at building responsive and feature-rich websites tailored to your specific needs. By utilizing the flexibility of WordPress, we create unique solutions that not only enhance functionality but also engage your audience effectively.</p>
                     <p>With a commitment to quality and innovation, we strive to provide you with a platform that stands out. Collaborate with us to transform your online presence and discover how our expert team can make a significant impact on your business.</p>
@@ -147,8 +147,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -162,7 +162,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented WordPress Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented WordPress Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -262,34 +262,34 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by WordPress Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Theme Development</h2>
                         <p>WordPress developers create bespoke themes that reflect your brand's identity. By utilizing the latest design trends and technologies, they ensure your website stands out and provides an exceptional user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Plugin Development and Integration</h2>
                         <p>Developers build and integrate custom plugins to extend the functionality of your WordPress site. Whether you need e-commerce capabilities or unique features, they ensure seamless integration and optimal performance.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Website Migration Services</h2>
                         <p>WordPress developers facilitate the migration of your existing website to the WordPress platform. They ensure a smooth transition, preserving SEO rankings, content integrity, and minimizing downtime during the process.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Performance Optimization</h2>
                         <p>To enhance user experience, developers optimize your WordPress site for speed and performance. They implement best practices, including image optimization, caching strategies, and database cleaning, ensuring quick load times.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Developers provide ongoing maintenance and support to keep your WordPress site updated and secure. This includes regular backups, security checks, plugin updates, and troubleshooting any issues that arise.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>SEO and Digital Marketing Services</h2>
                         <p>WordPress developers offer SEO optimization and digital marketing strategies to improve your website's visibility. They utilize best practices to enhance your search engine rankings and drive targeted traffic to your site.</p>
                     </section>
@@ -302,7 +302,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire WordPress Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire WordPress Developers From TekAlgo?</h1>
 
             </div>
 
@@ -311,7 +311,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - WordPress Experts -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team consists of skilled WordPress experts with extensive experience in developing dynamic, feature-rich websites tailored to meet your specific business and user experience needs.</p>
                             <img src="images/star.png" alt="" />
@@ -323,7 +323,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Themes -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We design and develop fully customized WordPress themes that reflect your brand identity, ensuring that your website not only looks great but also functions smoothly across devices.</p>
                             <img src="images/star.png" alt="" />
@@ -335,7 +335,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Fast Implementation -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We ensure a fast and efficient WordPress setup, delivering quality websites within your project timelines while maintaining high standards for performance, functionality, and user experience.</p>
                             <img src="images/star.png" alt="" />
@@ -347,7 +347,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Ongoing Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide reliable ongoing maintenance to ensure your WordPress website runs smoothly, addressing potential issues and making updates that keep your site current and secure over time.</p>
                             <img src="images/star.png" alt="" />
@@ -359,7 +359,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Affordable Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer affordable WordPress solutions that don’t compromise on quality, ensuring that your website delivers exceptional performance and value while keeping costs within your budget.</p>
                             <img src="images/star.png" alt="" />
@@ -371,7 +371,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Proven Success -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We have a proven track record of delivering successful WordPress projects, with many satisfied clients and a portfolio of websites that deliver lasting results and exceed expectations.</p>
                             <img src="images/star.png" alt="" />
@@ -388,7 +388,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our WordPress Experts</h1>
 
             </div>
@@ -396,9 +396,9 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -469,7 +469,7 @@ function renderPagination($currentPage, $totalPages)
                 <section class="collaboration-header">
                     <h1>Simple Steps to Begin Your Journey with Our WordPress Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -516,12 +516,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -532,11 +532,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>WordPress Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites can WordPress developers create?</h1>

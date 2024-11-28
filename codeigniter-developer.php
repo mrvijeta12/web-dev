@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled CodeIgniter Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom CodeIgniter Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled CodeIgniter Developers</h1>
+                    <h2>Custom CodeIgniter Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/codeigniter-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Accelerate Your Web Development with Our Expert CodeIgniter Developers, Delivering Custom Solutions for Your Business.</h2>
                     <p>Our proficient CodeIgniter developers specialize in crafting high-performance web applications that are tailored to meet your unique business requirements. Leveraging CodeIgniter’s lightweight framework, we build scalable solutions that ensure efficient performance and rapid development.</p>
                     <p>With a focus on best practices and clean code, we guarantee that your applications are not only robust but also easy to maintain. Partner with us to harness the power of CodeIgniter and propel your online presence to new heights.</p>
@@ -148,8 +148,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented CodeIgniter Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented CodeIgniter Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -263,44 +263,44 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by CodeIgniter Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2> Custom CodeIgniter Development</h2>
                         <p>CodeIgniter developers create tailored web applications to meet specific business requirements.
                             They utilize the framework's lightweight architecture to design and implement unique functionalities,
                             ensuring fast performance and an excellent user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2> CodeIgniter MVC Architecture</h2>
                         <p>Developers leverage CodeIgniter's Model-View-Controller (MVC) architecture to build structured
                             and maintainable applications. This approach enhances code organization, allowing for better
                             collaboration and easier updates throughout the development process.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>API Development and Integration</h2>
                         <p>CodeIgniter developers specialize in creating and integrating APIs for various applications.
                             They facilitate seamless communication between systems, enabling businesses to expand
                             functionality and improve user experiences through third-party integrations.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Module Development</h2>
                         <p>Creating custom modules is essential for enhancing application functionality. CodeIgniter
                             developers build modules tailored to specific business needs, allowing for greater flexibility
                             and improved performance of web applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Regular maintenance is crucial for CodeIgniter applications. Developers provide updates,
                             security enhancements, and troubleshooting services, ensuring optimal performance while
                             helping businesses stay current with the latest CodeIgniter features.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2> Performance Optimization Services</h2>
                         <p>To enhance application speed and responsiveness, CodeIgniter developers implement performance
                             optimization strategies. They analyze code efficiency and server configurations, ensuring a
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire CodeIgniter Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire CodeIgniter Developers From TekAlgo?</h1>
 
             </div>
 
@@ -324,7 +324,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Expert Knowledge -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team is composed of highly skilled CodeIgniter developers who deliver robust, scalable, and secure web applications, ensuring each solution is tailored to your specific business needs and goals.</p>
                             <img src="images/star.png" alt="">
@@ -336,7 +336,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We specialize in creating custom CodeIgniter solutions that are fully aligned with your business objectives, providing scalable and efficient applications that enhance performance and user experience.</p>
                             <img src="images/star.png" alt="">
@@ -348,7 +348,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Timely Delivery -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team is committed to delivering high-quality CodeIgniter applications on time, ensuring that each project is completed within deadlines without compromising on functionality or quality.</p>
                             <img src="images/star.png" alt="">
@@ -360,7 +360,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Ongoing Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer ongoing support and maintenance for your CodeIgniter applications, ensuring your website remains up-to-date, secure, and continues to operate efficiently, even as technologies evolve.</p>
                             <img src="images/star.png" alt="">
@@ -372,7 +372,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Competitive Pricing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our CodeIgniter development services are offered at competitive rates, giving you access to top-tier development expertise while ensuring your project remains cost-effective and within your budget.</p>
                             <img src="images/star.png" alt="">
@@ -384,7 +384,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Proven Track Record -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We have a proven track record of delivering successful CodeIgniter projects for a wide range of clients, helping businesses scale and succeed with robust, high-performing web applications.</p>
                             <img src="images/star.png" alt="">
@@ -402,7 +402,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our CodeIgniter Experts</h1>
 
             </div>
@@ -410,11 +410,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -475,7 +475,7 @@ function renderPagination($currentPage, $totalPages)
                 <section class="collaboration-header">
                     <h1>Simple Steps to Begin Your Journey with Our CodeIgniter Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -521,12 +521,12 @@ function renderPagination($currentPage, $totalPages)
             </section>
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -538,11 +538,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ############### faq ############  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>CodeIgniter Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of applications can CodeIgniter developers create?</h1>

@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Shopify Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Shopify Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Shopify Developers</h1>
+                    <h2>Custom Shopify Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/shopify-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Transform Your Online Store with Our Expert Shopify Developers, Delivering Custom Solutions for Maximum Impact.</h2>
                     <p>Our dedicated Shopify developers are passionate about building engaging and high-performing e-commerce websites tailored to your brand. By leveraging Shopify’s extensive features, we create user-friendly stores that enhance the shopping experience and boost customer retention.</p>
                     <p>With a strong focus on responsive design and performance optimization, we ensure your Shopify site not only looks great but also operates seamlessly across all devices. Collaborate with us to elevate your online presence and achieve your business goals effectively.</p>
@@ -148,8 +148,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Shopify Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Shopify Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -263,44 +263,44 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Shopify Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Shopify Development</h2>
                         <p>Shopify developers create tailored eCommerce solutions to meet specific business needs. They utilize
                             Shopify’s powerful features to design and implement unique functionalities, ensuring an intuitive
                             shopping experience that aligns with the brand's identity.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Shopify Theme Design</h2>
                         <p>Professional theme design is essential for a compelling online store. Shopify developers craft custom,
                             responsive themes that reflect the brand’s aesthetics, ensuring optimal performance across devices
                             while enhancing user engagement and retention.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Shopify App Development</h2>
                         <p>Shopify developers build custom apps to extend store functionality. These apps can add unique
                             features, integrations, or improvements, enabling businesses to enhance their online presence
                             and provide a better shopping experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Seamless Store Migration</h2>
                         <p>Migrating to Shopify requires expertise for a smooth transition. Developers manage data transfer,
                             configuration, and testing to ensure that the store remains functional and optimized, minimizing
                             downtime during the migration process.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Regular maintenance is crucial for Shopify sites. Developers provide updates, security enhancements,
                             and troubleshooting services, ensuring optimal performance while helping businesses stay current with
                             the latest Shopify features and best practices.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>SEO and Performance Optimization</h2>
                         <p>To improve search visibility, Shopify developers implement effective SEO strategies tailored for
                             eCommerce. They optimize site structure, content, and loading speeds, ensuring that the store not
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Shopify Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Shopify Developers From TekAlgo?</h1>
 
             </div>
 
@@ -324,7 +324,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Skilled Team -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team of Shopify experts specializes in creating high-performance, customizable online stores, ensuring that every solution is designed to meet your specific business goals and objectives.</p>
                             <img src="images/star.png" alt="" />
@@ -336,7 +336,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Tailored Services -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide Shopify solutions tailored to your brand, ensuring that each eCommerce store is uniquely designed to reflect your identity and meet your business objectives seamlessly.</p>
                             <img src="images/star.png" alt="" />
@@ -348,7 +348,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - On-Time Delivery -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team is dedicated to delivering Shopify stores on time, ensuring that all key milestones are met while maintaining the highest quality standards, focusing on your business success.</p>
                             <img src="images/star.png" alt="" />
@@ -360,7 +360,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Continuous Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer continuous support for your Shopify store, ensuring that you have the assistance needed to maintain optimal performance, adapt to changes, and drive business growth.</p>
                             <img src="images/star.png" alt="" />
@@ -372,7 +372,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Affordable Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer competitive pricing for our Shopify development services, ensuring that you get high-quality, cost-effective solutions that drive your eCommerce business forward without breaking your budget.</p>
                             <img src="images/star.png" alt="" />
@@ -384,7 +384,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Trusted Partners -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We have established ourselves as trusted Shopify partners, delivering innovative and high-quality solutions that help businesses grow and achieve success in the competitive eCommerce market.</p>
                             <img src="images/star.png" alt="" />
@@ -404,7 +404,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Shopify Experts</h1>
 
             </div>
@@ -412,10 +412,10 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -472,11 +472,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######## collaboration #####  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+            <section class="collaboration-wrapper">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Shopify Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -523,12 +523,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -539,11 +539,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Shopify Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of e-commerce websites can Shopify developers create?</h1>

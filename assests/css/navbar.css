@@ -290,15 +290,23 @@ industry-child {
     font-size: 18px;
     color: white;
   }
-  .mega-box {
+ .mega-box {
     position: static;
     top: 65px;
     opacity: 1;
     visibility: visible;
     padding: 0px;
     max-height: 0px;
-    overflow: hidden;
+    overflow: auto;
     transition: all 0.3s ease;
+
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  .mega-box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and newer Edge */
   }
   .mega-box .content {
     box-shadow: none;

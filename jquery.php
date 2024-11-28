@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Enhancing Web Interactivity with jQuery</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Enhancing Web Interactivity with jQuery</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Simplified DOM Manipulation</h1>
                     <p>We leverage jQuery's powerful features to simplify DOM manipulation, making it easy to create dynamic and interactive web applications that respond to user interactions seamlessly.</p>
@@ -179,14 +179,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Innovative Solutions Across Industries Using jQuery</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Innovative Solutions Across Industries Using jQuery</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Enhancing customer shopping experiences with interactive retail websites, simplifying product browsing and checkout processes using jQuery.
@@ -200,7 +200,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing dynamic real estate platforms that utilize jQuery for interactive listings, property comparisons, and user-friendly navigation.
@@ -214,7 +214,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Insurance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating user-friendly insurance portals using jQuery for policy management, claim submissions, and real-time updates for clients.
@@ -228,7 +228,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Entertainment -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building interactive entertainment websites that leverage jQuery for ticket bookings, event schedules, and user reviews.
@@ -242,7 +242,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Non-Profit -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing engaging non-profit platforms using jQuery to facilitate donations, event management, and volunteer sign-ups with ease.
@@ -256,7 +256,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Fitness -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating interactive fitness applications with jQuery to enhance user engagement through workout tracking, progress visualization, and community features.
@@ -277,32 +277,32 @@ function renderPagination($currentPage, $totalPages)
         </div>
         <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Why jQuery Remains Essential for Web Development</h1>
         </div>
         <section class="work-wrapper">
             <section class="work-wrapper-child">
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Simplified DOM Manipulation</h2>
                     <p>jQuery streamlines the process of selecting and manipulating DOM elements, allowing developers to create dynamic web pages with minimal code.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Cross-Browser Compatibility</h2>
                     <p>jQuery handles many cross-browser inconsistencies, ensuring that applications function correctly on different browsers without extra effort from developers.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Efficient Event Handling</h2>
                     <p>With jQuery, attaching event handlers becomes straightforward, enabling developers to create interactive features like animations and user feedback easily.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Rich Plugin Ecosystem</h2>
                     <p>jQuery has a vast ecosystem of plugins that extend its functionality, allowing developers to implement features like sliders, modals, and form validation effortlessly.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>AJAX Simplified</h2>
                     <p>jQuery simplifies AJAX calls, making it easier to send and receive data asynchronously, which enhances user experience by loading content dynamically.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Active Community and Resources</h2>
                     <p>The jQuery community is large and supportive, providing ample resources, tutorials, and forums to help developers solve problems and learn new techniques.</p>
                 </section>
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
         <!-- ######### Process ##########  -->
 
         <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
                 Our Methodology for Building High-Quality React.js Websites</h1>
 
         </div>
@@ -397,12 +397,12 @@ function renderPagination($currentPage, $totalPages)
 
 
         <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+            <div class="testimonial_slider">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/9.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -410,14 +410,14 @@ function renderPagination($currentPage, $totalPages)
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/2.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
                     <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/4.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -430,12 +430,12 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ####### blog #####  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
         </div>
 
-        <div class="blog-wrapper" id="blog-wrapper">
+        <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <!-- Blog content will be injected dynamically -->
             <?php echo renderBlogs($contents); ?>
         </div>
@@ -446,11 +446,11 @@ function renderPagination($currentPage, $totalPages)
         </div>
 
         <!-- ##### faq ####  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>jQuery Development: Frequently Asked Questions</h1>
         </div>
 
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <section class="faq-child">
                 <section class="faq-heading">
                     <h1>What is jQuery and why is it used?</h1>
@@ -498,7 +498,7 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ##### Book #######  -->
 
-        <section class="book">
+        <section class="book" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let’s Begin Your Project Together!</h1>
             <a href="./contact.php">Contact us</a>
         </section>

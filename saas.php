@@ -118,7 +118,7 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ################################# HERO SECTION ##################################  -->
             <div class="hero">
@@ -127,20 +127,20 @@ function renderPagination($currentPage, $totalPages)
                         <span>S</span><span>a</span><span>a</span><span>S</span>
                         <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
                     </h1>
-                    <h3 data-aos="fade-up" data-aos-duration="1500">Empowering Businesses with Scalable SaaS Solutions</h3>
+                    <h3>Empowering Businesses with Scalable SaaS Solutions</h3>
                     <a href="#" class="reopenPopup">Get Free Quote</a>
 
                 </div>
                 <div class="child child2">
-                    <img src="images/saas-hero.png" alt="" data-aos="fade-left" data-aos-duration="2500" />
+                    <img src="images/saas-hero.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <!-- ####### INTRODUCTION  ####### -->
 
             <section class="intro">
-                <h1>Empowering Innovation with Our SaaS Software Development Solutions</h1>
-                <p>Our software development services for the SaaS industry are designed to accelerate product development, enhance scalability, and drive user engagement. By leveraging cutting-edge technology, cloud infrastructure, and agile methodologies, we empower SaaS providers to build robust, secure, and flexible software solutions that meet the evolving needs of their customers in a dynamic digital landscape.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Empowering Innovation with Our SaaS Software Development Solutions</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Our software development services for the SaaS industry are designed to accelerate product development, enhance scalability, and drive user engagement. By leveraging cutting-edge technology, cloud infrastructure, and agile methodologies, we empower SaaS providers to build robust, secure, and flexible software solutions that meet the evolving needs of their customers in a dynamic digital landscape.</p>
             </section>
 
 
@@ -148,11 +148,11 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### details ####### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop SaaS Software</h1>
 
             </div>
-            <section class="detail">
+            <section class="detail" data-aos="fade-up" data-aos-duration="1000">
                 <section class="detail-title detail-child">
                     <p class="tab active-tab" onclick="toggleContent(1)">
                         <strong>01.</strong> SaaS Software Consulting
@@ -263,12 +263,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######### Benefits ##########  -->
             <section class="benefits-wrapper">
-                <h1>Sectors that can benefits from our SaaS software development services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur, voluptatem saepe omnis, cumque, consequatur neque doloremque ducimus ipsum provident iste recusandae! Nulla sunt est velit nobis perferendis ex deleniti.</p>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Sectors that can benefits from our SaaS software development services</h1>
+
 
 
                 <div class="benefits-sectors">
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>Customer Relationship Management (CRM) Software</li>
                         <li>Enterprise Resource Planning (ERP) Solutions</li>
                         <li>Human Resource Management Systems (HRMS)</li>
@@ -276,7 +276,7 @@ function renderPagination($currentPage, $totalPages)
                         <li>Project Management Tools</li>
                         <li>Email Marketing Platforms</li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-left" data-aos-duration="1000">
                         <li>Collaboration and Communication Tools</li>
                         <li>Data Analytics and Business Intelligence Software</li>
                         <li>Content Management Systems (CMS)</li>
@@ -291,7 +291,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Choose TekAlgo As Your SaaS Software Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Choose TekAlgo As Your SaaS Software Development</h1>
 
             </div>
 
@@ -300,7 +300,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - SaaS Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Delivering innovative SaaS solutions that streamline business operations, enhance scalability, and provide seamless access to software applications anytime, anywhere.
@@ -314,7 +314,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom SaaS Platform Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building tailored SaaS platforms that address specific business needs, ensuring flexibility, user-friendly interfaces, and scalable architecture for future growth.
@@ -328,7 +328,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Data Security and Compliance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing advanced security protocols to protect sensitive customer data, ensuring compliance with global standards and building user trust in your SaaS products.
@@ -342,7 +342,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Seamless Third-Party Integration -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Ensuring your SaaS platform integrates effortlessly with existing tools and third-party services, enabling enhanced functionality and a unified user experience.
@@ -356,7 +356,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Scalable and Innovative Architecture -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Leveraging cutting-edge technology to build SaaS platforms that support rapid scaling, robust performance, and innovative features tailored to business growth.
@@ -370,7 +370,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Reliable Support and Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Providing proactive support, timely updates, and continuous optimization to ensure your SaaS platform remains efficient, secure, and up-to-date with industry trends.
@@ -390,7 +390,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### who can avail ###### -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Who Can Avail Our SaaS Software Services</h1>
 
             </div>
@@ -398,11 +398,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/saas-primary.jpg" alt="Image on Left">
+                        <img src="images/saas-primary.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-down" data-aos-duration="1000">
                         <!-- SaaS Industry Content -->
                         <div class="avail-content">
                             <div class="avail-content-header">
@@ -477,7 +477,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Process ##########  -->
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Process We Follow To Develop Heathcare Software</h1>
 
             </div>
@@ -534,12 +534,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -551,11 +551,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- #### faq #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>SaaS Website Development FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of SaaS websites do you develop?</h1>
@@ -611,9 +611,9 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">SaaS Software Development Services</h1>
-                    <p data-aos="zoom-in" data-aos-duration="2500">Comprehensive Solutions Designed to Support SaaS Professionals</p>
-                    <a href="#" class="reopenPopup">Connect With Us</a>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">SaaS Software Development Services</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Comprehensive Solutions Designed to Support SaaS Professionals</p>
+                    <a href="#" class="reopenPopup" data-aos="fade-down" data-aos-duration="1000">Connect With Us</a>
                 </section>
 
 

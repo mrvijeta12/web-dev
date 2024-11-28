@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Web Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Web Developer Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Web Developers</h1>
+                    <h2>Custom Web Developer Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/web-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Transform Your Ideas into Reality with Our Expert Web Developers, Delivering Customized Solutions for Your Business Needs.</h2>
                     <p>Our skilled web developers specialize in creating responsive, engaging websites that resonate with your target audience. By utilizing the latest technologies and design trends, we craft tailored solutions that enhance user experience and drive conversions.</p>
                     <p>With a commitment to quality and performance, we ensure your website is optimized for speed and accessibility. Partner with us to bring your vision to life and discover how our dedicated team can elevate your online presence and success.</p>
@@ -148,8 +148,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Web Developer Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Web Developer Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -264,69 +264,69 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### WORKING WITH US ######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Understanding the Essentials of Web Application Development</h1>
                 <p>Web application development involves creating dynamic websites that provide interactive features and services to users. This overview explores the key components and benefits of web app development:</p>
             </div>
             <section class="work-wrapper">
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>
-                            <span>1.</span>Client-Server Architecture:
+                            Client-Server Architecture:
                         </h2>
                         <p>Web applications operate on a client-server model where the client (user's device) communicates with the server (host) to retrieve data. This architecture allows for efficient data processing and a responsive user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>
-                            <span>2.</span>Front-End Development:
+                            Front-End Development:
                         </h2>
                         <p>Front-end development focuses on the user interface (UI) and user experience (UX). Utilizing languages like HTML, CSS, and JavaScript, developers create visually appealing and interactive components that enhance user engagement.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>
-                            <span>3.</span>Back-End Development:
+                            Back-End Development:
                         </h2>
                         <p>Back-end development involves server-side programming and database management. Using languages like Python, Ruby, or Node.js, developers build the logic and functionality that power the application, ensuring smooth data handling and processing.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>
-                            <span>4.</span>API Integration:
+                            API Integration:
                         </h2>
                         <p>APIs (Application Programming Interfaces) allow web applications to interact with other services and data sources. Integrating APIs enables features like payment processing, social media sharing, and real-time data retrieval, enhancing the application’s functionality.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>
-                            <span>5.</span>Responsive Design:
+                            Responsive Design:
                         </h2>
                         <p>Responsive design ensures that web applications function seamlessly across various devices and screen sizes. Using flexible layouts and media queries, developers create applications that adapt to desktops, tablets, and smartphones, providing a consistent user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>
-                            <span>6.</span>Testing and Quality Assurance:
+                            Testing and Quality Assurance:
                         </h2>
                         <p>Thorough testing is essential to ensure that web applications perform as expected. This includes functional testing, usability testing, and performance testing to identify and resolve any issues before launch, ensuring a smooth user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>
-                            <span>7.</span>Deployment and Hosting:
+                            Deployment and Hosting:
                         </h2>
                         <p>Once developed, web applications need to be deployed on a server for public access. Choosing the right hosting solution (cloud-based, shared, or dedicated) is crucial for performance, security, and scalability of the application.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>
-                            <span>8.</span>Maintenance and Updates:
+                            Maintenance and Updates:
                         </h2>
                         <p>Ongoing maintenance is vital for web applications to ensure they remain secure, functional, and up-to-date. Regular updates, security patches, and feature enhancements keep the application relevant and user-friendly over time.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>
-                            <span>9.</span>User Feedback and Iteration:
+                            User Feedback and Iteration:
                         </h2>
                         <p>Collecting user feedback is essential for continuous improvement. By analyzing user interactions and preferences, developers can make informed decisions about future updates and features, creating a more tailored experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>
-                            <span>10.</span>Scalability Considerations:
+                            Scalability Considerations:
                         </h2>
                         <p>As user demand grows, web applications must be scalable to handle increased traffic and data. Designing the application with scalability in mind from the start ensures that it can grow alongside the business without compromising performance.</p>
                     </section>
@@ -337,7 +337,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Web Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Web Developers From TekAlgo?</h1>
 
             </div>
 
@@ -346,7 +346,7 @@ function renderPagination($currentPage, $totalPages)
 
                 <div class="services_container">
                     <!-- Service 1 - Web Development Experts -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team of web development experts specializes in creating engaging and high-performing websites that help businesses grow, drive traffic, and achieve long-term success with modern web technologies.</p>
                             <img src="images/star.png" alt="">
@@ -358,7 +358,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Responsive Design -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We ensure that your website provides a seamless and intuitive experience across all devices and screen sizes, optimizing functionality, navigation, and appearance for desktop, tablet, and mobile users.</p>
                             <img src="images/star.png" alt="">
@@ -370,7 +370,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Custom Web Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We specialize in developing custom web solutions that are tailored to meet the specific needs of your business, ensuring that every feature aligns with your goals and enhances your customer experience.</p>
                             <img src="images/star.png" alt="">
@@ -382,7 +382,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Quality Assurance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our comprehensive quality assurance process includes thorough testing of every aspect of your website to ensure optimal performance, flawless functionality, and a bug-free user experience across all platforms.</p>
                             <img src="images/star.png" alt="">
@@ -394,7 +394,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Timely Launches -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We understand the importance of meeting deadlines. Our team is dedicated to delivering your project on time, ensuring that all milestones are met while maintaining the highest standards of quality and design.</p>
                             <img src="images/star.png" alt="">
@@ -406,7 +406,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Expert Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide ongoing expert support to ensure your website continues to run smoothly, offering timely solutions, updates, and technical assistance to keep your site optimized and secure at all times.</p>
                             <img src="images/star.png" alt="">
@@ -424,7 +424,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Web Developer Experts</h1>
 
             </div>
@@ -432,11 +432,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -493,11 +493,11 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ######## collaboration #####  -->
-            <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+            <section class="collaboration-wrapper">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Web Developer Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -544,12 +544,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -560,11 +560,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Web Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of websites can web developers create?</h1>

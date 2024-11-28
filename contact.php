@@ -111,11 +111,11 @@ function renderPagination($currentPage, $totalPages)
     <div>
         <?php include('navbar.php'); ?>
         <!-- ##### HERO #####  -->
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Get in Touch with Us</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">We’re Here to Help You with All Your IT Needs</h2>
-                <a href="#" class="reopenPopup">Book Free Consultation</a>
+                <h1 data-aos="fade-up" data-aos-duration="1500">Get in Touch with Us</h1>
+                <h2 data-aos="fade-up" data-aos-duration="1500">We’re Here to Help You with All Your IT Needs</h2>
+                <a href="#" class="reopenPopup" data-aos="fade-up" data-aos-duration="1500">Book Free Consultation</a>
             </div>
 
             <!-- ########### contact details #######  -->
@@ -123,17 +123,17 @@ function renderPagination($currentPage, $totalPages)
             <div class="contact_wrapper">
                 <div class="contact_child">
                     <div class="services_container">
-                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1000">
                             <img src="images/location.png" alt="">
                             <h3>OUR MAIN OFFICE</h3>
                             <p>Saket, New Delhi, India</p>
                         </div>
-                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1000">
                             <img src="images/mail.png" alt="">
                             <h3>EMAIL</h3>
                             <p>sales@tekalgo.com</p>
                         </div>
-                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="services_child" data-aos="zoom-in" data-aos-duration="1000">
                             <img src="images/telephone.png" alt="">
                             <h3>PHONE NUMBER</h3>
                             <p>+91 9118618111</p>
@@ -144,11 +144,11 @@ function renderPagination($currentPage, $totalPages)
                 <div class="contact-data-wrapper">
 
                     <div class="contact_data">
-                        <div class="contact_data_item" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="contact_data_item" data-aos="fade-right" data-aos-duration="1000">
 
                             <img src="images/contact.jpg" alt="">
                         </div>
-                        <div class="contact_data_item" data-aos="fade-down" data-aos-duration="1500">
+                        <div class="contact_data_item" data-aos="fade-left" data-aos-duration="1000">
                             <div>
                                 <form id="contactForm" method="post">
                                     <label for="name">Name:</label>
@@ -171,12 +171,12 @@ function renderPagination($currentPage, $totalPages)
                 <!-- ######### CONTACT PERSON ######## -->
 
                 <section class="contact-person-wrapper">
-                    <section class="contact-person-child child1">
+                    <section class="contact-person-child child1" data-aos="fade-up" data-aos-duration="1000">
                         <h1>Ready to transform your ideas into future-ready web solutions?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas voluptatem, illum facilis ipsum vel maiores sint deserunt debitis placeat?</p>
+                        <p>Get in touch with our team for expert web development solutions, personalized support, and answers to your queries. We're here to help bring your vision to life!</p>
                         <a href="" class="">Book Free Consultation</a>
                     </section>
-                    <section class="contact-person-child child2">
+                    <section class="contact-person-child child2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="contact-person-image">
                             <img src="images/contact-person2.jpg" alt="">
                         </div>
@@ -194,12 +194,12 @@ function renderPagination($currentPage, $totalPages)
 
                 <!-- ####### blog #####  -->
 
-                <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
                 </div>
 
-                <div class="blog-wrapper" id="blog-wrapper">
+                <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Blog content will be injected dynamically -->
                     <?php echo renderBlogs($contents); ?>
                 </div>
@@ -211,11 +211,11 @@ function renderPagination($currentPage, $totalPages)
 
                 <!-- #### FAQ ###  -->
 
-                <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Contact Us FAQs: Get in Touch</h1>
                 </div>
 
-                <section class="faq-wrapper">
+                <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                     <section class="faq-child">
                         <section class="faq-heading">
                             <h1>What is the best way to reach you?</h1>

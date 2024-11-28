@@ -117,20 +117,20 @@ function renderPagination($currentPage, $totalPages)
 <body>
     <div>
         <?php include('navbar.php'); ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ######### HERO SECTION #######  -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Innovative IT Solutions for the Digital Era</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
-                <a href="#" class="reopenPopup" data-aos="zoom-in" data-aos-duration="2500">Book Free Consultation</a>
+                <h1 data-aos="fade-up" data-aos-duration="1500">Innovative IT Solutions for the Digital Era</h1>
+                <h2 data-aos="fade-up" data-aos-duration="1500">Empowering businesses with cutting-edge technology and tailored software solutions</h2>
+                <a href="#" class="reopenPopup" data-aos="fade-up" data-aos-duration="1500">Book Free Consultation</a>
             </div>
 
             <!-- ######## Intro ########  -->
 
 
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Delivering Innovative Services to Propel Your Success Forward</h1>
 
             </div>
@@ -140,10 +140,10 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-            <div class="swiper mySwiper">
+            <div class="swiper">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide slide-1" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="swiper-slide slide-1" data-aos="fade-up-right" data-aos-duration="1000">
                         <a href="web-development.php">
                             <div class="swiper-slide-image">
                                 <img src="images/web.png" alt="">
@@ -170,7 +170,7 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                    <div class="swiper-slide slide-2" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="swiper-slide slide-2" data-aos="fade-up-left" data-aos-duration="1000">
                         <a href="custom-software.php">
                             <div class="swiper-slide-image">
                                 <img src="images/web.png" alt="">
@@ -199,14 +199,14 @@ function renderPagination($currentPage, $totalPages)
 
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
 
 
 
             <!-- ########## TECHNOLOGIES  #######  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Innovative Technologies Powering Our Web Development Services</h1>
 
             </div>
@@ -215,62 +215,62 @@ function renderPagination($currentPage, $totalPages)
 
 
                 <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/html.png" alt="">
                         <h2>HTML</h2>
                         <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/css-3.png" alt="">
                         <h2>CSS</h2>
                         <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/bootstrap1.png" alt="">
                         <h2>BootStrap</h2>
                         <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/react.png" alt="">
                         <h2>React</h2>
                         <!-- <p>Comprehensive Salesforce services for custom CRM solutions and seamless implementation.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/next.webp" alt="">
                         <h2>Next.js</h2>
                         <!-- <p>Customized Salesforce solutions to enhance CRM functionality and business processes.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/Angular_full_color_logo.svg.png" alt="">
                         <h2>Angular</h2>
                         <!-- <p>Seamless Salesforce integration services to unify systems and boost productivity.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/node.js.png" alt="">
                         <h2>Node.js</h2>
                         <!-- <p>Advanced Salesforce CRM analytics services for data-driven insights and growth.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/php.png" alt="">
                         <h2>PhP</h2>
                         <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/wordpress.png" alt="">
                         <h2>Wordpress</h2>
                         <!-- <p>Salesforce AI solutions for smarter insights, automation, and business growth.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/js.png" alt="">
                         <h2>JavaScript</h2>
                         <!-- <p>Advanced Salesforce Data Cloud services for secure, scalable data management solutions.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/java.png" alt="">
                         <h2>Java</h2>
                         <!-- <p>Advanced Salesforce Data Cloud services for secure, scalable data management solutions.</p> -->
                     </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/python.png" alt="">
                         <h2>Python</h2>
                         <!-- <p>Advanced Salesforce Data Cloud services for secure, scalable data management solutions.</p> -->
@@ -283,25 +283,25 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Unlock Your Potential by Collaborating with Tekalgo Team</h1>
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Performance-Driven and Customer-Focused</h2>
                         <p>We prioritize delivering high-impact results while keeping the customer’s needs front and center. Our goal is to transform challenges into opportunities, enhancing customer satisfaction and fueling business growth.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Reliable, Prompt, and Highly Respected</h2>
                         <p>We are committed to delivering dependable solutions with speed and precision. Our reputation for excellence is built on trust, timely execution, and the recognition we earn from clients and industry leaders alike.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Skilled and Knowledgeable Experts</h2>
                         <p>Our team consists of highly skilled professionals with deep expertise. We bring a wealth of knowledge and innovative thinking to every project, ensuring exceptional results and value for our clients.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Collaborative, Open, and Engaging</h2>
                         <p>We foster a culture of teamwork, openness, and clear communication. Our focus on collaboration ensures that every voice is heard, and we maintain transparency to build trust and drive collective success.</p>
                     </section>
@@ -312,7 +312,7 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- #### collaboration #####  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1> Easy Steps to Follow to Start Collaboration With Us</h1>
             </div>
             <section class="collaboration-wrapper">
@@ -365,8 +365,8 @@ function renderPagination($currentPage, $totalPages)
             <!-- ############### HOW WE WORK Roadmap ############  -->
             <section class="workflow-wrapper">
                 <section class="workflow-data">
-                    <h1>How Tekalgo Experts Elevate Your Online Business Success</h1>
-                    <img src="images/Roadmap image.png" alt="">
+                    <h1 data-aos="zoom-in" data-aos-duration="1000">How Tekalgo Experts Elevate Your Online Business Success</h1>
+                    <img src="images/Roadmap image.png" alt="" data-aos="fade-up" data-aos-duration="1000">
                 </section>
 
 
@@ -376,7 +376,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ########## animated Counter ####### -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1> Reasons to Choose Our Web Development</h1>
             </div>
             <div class="counter_wrapper" data-aos="flip-up" data-aos-duration="2000">
@@ -427,12 +427,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ###### blogs ####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -445,13 +445,13 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ###### FAQ'S ####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1> Frequently Asked Questions</h1>
             </div>
 
 
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What services do you offer for web development?</h1>

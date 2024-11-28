@@ -580,6 +580,7 @@ input[type="submit"]:hover {
   font-size: 20px;
   font-family: Roboto-Medium;
   color: #fff;
+line-height: 25px;
 }
 
 /* The icon for expanding/collapsing */

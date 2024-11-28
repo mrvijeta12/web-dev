@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -142,9 +142,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Unlocking Potential with Node.js Development</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Unlocking Potential with Node.js Development</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Asynchronous Event-Driven Architecture</h1>
                     <p>We leverage Node.js’s asynchronous event-driven architecture to build high-performance applications that handle multiple requests efficiently. This approach enhances scalability and responsiveness.</p>
@@ -176,14 +176,14 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Node.js Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Node.js Solutions</h1>
             </div>
 
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Transportation -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing real-time logistics and transportation management systems using Node.js for efficient tracking and route optimization.
@@ -197,7 +197,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Real Estate -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating powerful property management platforms with Node.js that enhance user experience through real-time listings and analytics.
@@ -211,7 +211,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Travel and Tourism -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building dynamic travel booking applications with Node.js that provide real-time availability and personalized travel recommendations.
@@ -225,7 +225,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Manufacturing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing inventory management and production tracking systems with Node.js for increased efficiency and data-driven decision-making.
@@ -239,7 +239,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Fashion and Retail -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating e-commerce solutions for the fashion industry using Node.js, enabling personalized shopping experiences and real-time inventory updates.
@@ -253,7 +253,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Sports and Fitness -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive fitness applications with Node.js that track performance metrics and offer personalized training plans in real-time.
@@ -274,32 +274,32 @@ function renderPagination($currentPage, $totalPages)
         </div>
         <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Key Advantages of Using Node.js for Web Development</h1>
         </div>
         <section class="work-wrapper">
             <section class="work-wrapper-child">
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>High Concurrency Handling</h2>
                     <p>Node.js is designed to handle many connections simultaneously, making it ideal for applications that require high concurrency without compromising performance.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Asynchronous Programming Model</h2>
                     <p>The asynchronous programming model of Node.js allows developers to write non-blocking code, which enhances application responsiveness and improves user experience.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Seamless API Development</h2>
                     <p>Node.js simplifies the creation of RESTful APIs, enabling developers to build scalable and efficient web services that can be easily consumed by various clients.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Cross-Platform Development</h2>
                     <p>Node.js enables cross-platform development, allowing developers to build applications that run on multiple operating systems without significant modifications.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Integrated Debugging Tools</h2>
                     <p>Node.js offers integrated debugging tools that simplify the troubleshooting process, helping developers identify and resolve issues quickly during development.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Growing Adoption in Industry</h2>
                     <p>Node.js is increasingly adopted by leading tech companies for its performance and scalability, making it a valuable skill for developers in today’s job market.</p>
                 </section>
@@ -313,7 +313,7 @@ function renderPagination($currentPage, $totalPages)
         <!-- ######### Process ##########  -->
 
         <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
                 Our Methodology for Building High-Quality React.js Websites</h1>
 
         </div>
@@ -395,12 +395,12 @@ function renderPagination($currentPage, $totalPages)
 
 
         <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+            <div class="testimonial_slider">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/9.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -408,14 +408,14 @@ function renderPagination($currentPage, $totalPages)
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/2.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
                     <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/4.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -428,12 +428,12 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ####### blog #####  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
         </div>
 
-        <div class="blog-wrapper" id="blog-wrapper">
+        <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <!-- Blog content will be injected dynamically -->
             <?php echo renderBlogs($contents); ?>
         </div>
@@ -445,11 +445,11 @@ function renderPagination($currentPage, $totalPages)
 
 
         <!-- ### faq ######  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Node.js Development: Frequently Asked Questions</h1>
         </div>
 
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <section class="faq-child">
                 <section class="faq-heading">
                     <h1>What are the benefits of using Node.js for web development?</h1>
@@ -495,7 +495,7 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ##### Book #######  -->
 
-        <section class="book">
+        <section class="book" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let’s Begin Your Project Together!</h1>
             <a href="./contact.php">Contact us</a>
         </section>

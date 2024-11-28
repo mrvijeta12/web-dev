@@ -118,11 +118,11 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ######### HERO SECTION ##########  -->
             <div class="hero-section">
-                <div class="hero-content" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="hero-content" data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="animated-heading">
                         Innovative React.JS Development
                     </h1>
@@ -143,9 +143,9 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### core area of expertise ######  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Expertise in Drupal for Robust and Scalable Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Expertise in Drupal for Robust and Scalable Solutions</h1>
             </div>
-            <section class="expertise">
+            <section class="expertise" data-aos="fade-up" data-aos-duration="1000">
                 <div class="expertise-child">
                     <h1>Custom Module Development</h1>
                     <p>We specialize in developing custom modules for Drupal, allowing us to tailor functionality to meet your specific business needs. Our approach ensures that your site remains flexible and can adapt to evolving requirements.</p>
@@ -176,48 +176,15 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transforming Industries with Advanced Drupal Solutions</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transforming Industries with Advanced Drupal Solutions</h1>
             </div>
 
-            <!-- <div class="service_choose_us">
-                <div class="services_container">
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/healthcare-drupal.png" alt="">
-                        <h1>Healthcare</h1>
-                        <p>Implementing secure and user-friendly healthcare platforms with Drupal, improving patient engagement and streamlining health services management.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/ecommerce-drupal.png" alt="">
-                        <h1>E-commerce</h1>
-                        <p>Creating robust e-commerce websites using Drupal that provide seamless navigation, personalized experiences, and secure transactions for customers.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/education-drupal.png" alt="">
-                        <h1>Education</h1>
-                        <p>Developing interactive educational platforms with Drupal that enhance learning through engaging content, online courses, and student tracking.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/government-drupal.png" alt="">
-                        <h1>Government</h1>
-                        <p>Building secure and accessible government websites using Drupal, ensuring transparency, citizen engagement, and efficient service delivery.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/travel-drupal.png" alt="">
-                        <h1>Travel and Hospitality</h1>
-                        <p>Creating intuitive travel booking systems with Drupal that provide users with real-time availability, personalized recommendations, and easy reservations.</p>
-                    </div>
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/nonprofit-drupal.png" alt="">
-                        <h1>Non-Profit Organizations</h1>
-                        <p>Developing impactful websites for non-profits with Drupal, enhancing outreach, donations, and community engagement through powerful content management.</p>
-                    </div>
-                </div>
-            </div> -->
+
             <div class="service_choose_us">
                 <div class="services_container">
 
                     <!-- Service 1 - Healthcare -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Implementing secure and user-friendly healthcare platforms with Drupal, improving patient engagement and streamlining health services management.
@@ -231,7 +198,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - E-commerce -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating robust e-commerce websites using Drupal that provide seamless navigation, personalized experiences, and secure transactions for customers.
@@ -245,7 +212,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Education -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing interactive educational platforms with Drupal that enhance learning through engaging content, online courses, and student tracking.
@@ -259,7 +226,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Government -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Building secure and accessible government websites using Drupal, ensuring transparency, citizen engagement, and efficient service delivery.
@@ -273,7 +240,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Travel and Hospitality -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Creating intuitive travel booking systems with Drupal that provide users with real-time availability, personalized recommendations, and easy reservations.
@@ -287,7 +254,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Non-Profit Organizations -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>
                                 Developing impactful websites for non-profits with Drupal, enhancing outreach, donations, and community engagement through powerful content management.
@@ -308,32 +275,32 @@ function renderPagination($currentPage, $totalPages)
         </div>
         <!-- ########## TECHNOLOGIES  #######  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>The Advantages of Using Drupal</h1>
         </div>
         <section class="work-wrapper">
             <section class="work-wrapper-child">
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Flexible Content Architecture</h2>
                     <p>Drupal allows for a highly flexible content architecture, enabling developers to create complex data structures that can adapt to diverse project needs.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Built for Performance</h2>
                     <p>With built-in caching mechanisms and optimization tools, Drupal ensures high performance and fast load times, even for content-heavy websites.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Customizable User Experience</h2>
                     <p>Drupal provides powerful theming capabilities that allow developers to create a unique user experience tailored to specific audiences and branding requirements.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Comprehensive API Integration</h2>
                     <p>Drupal offers robust API capabilities, enabling seamless integration with third-party services and applications, enhancing functionality and user engagement.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Extensive Module Ecosystem</h2>
                     <p>With thousands of contributed modules available, Drupal empowers developers to extend core functionality, allowing for rapid development of complex features.</p>
                 </section>
-                <section class="work-child">
+                <section class="work-child" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Strong Governance and Roadmap</h2>
                     <p>Drupal's open-source nature is backed by a solid governance model and a clear roadmap, ensuring long-term support and regular updates for users.</p>
                 </section>
@@ -347,7 +314,7 @@ function renderPagination($currentPage, $totalPages)
         <!-- ######### Process ##########  -->
 
         <div class="container">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
                 Our Methodology for Building High-Quality React.js Websites</h1>
 
         </div>
@@ -429,12 +396,12 @@ function renderPagination($currentPage, $totalPages)
 
 
         <section class="testimonial_wrapper">
-            <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> Hear From Our Valued Clients</h1>
 
 
 
-            <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                <div class="testimonial_item">
+            <div class="testimonial_slider">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/9.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -442,14 +409,14 @@ function renderPagination($currentPage, $totalPages)
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/2.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
                     <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                     <h5>John Doe</h5>
                     <p>CEO, Company</p>
                 </div>
-                <div class="testimonial_item">
+                <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
                     <img src="images/4.jpg" alt="">
                     <img src="images/double-main.png" alt="" class="double">
@@ -462,12 +429,12 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ####### blog #####  -->
 
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
         </div>
 
-        <div class="blog-wrapper" id="blog-wrapper">
+        <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <!-- Blog content will be injected dynamically -->
             <?php echo renderBlogs($contents); ?>
         </div>
@@ -479,11 +446,11 @@ function renderPagination($currentPage, $totalPages)
 
 
         <!-- ##### faq #####  -->
-        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <h1>Advanced Drupal Development: Frequently Asked Questions</h1>
         </div>
 
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <section class="faq-child">
                 <section class="faq-heading">
                     <h1>What types of projects are best suited for Drupal?</h1>
@@ -531,7 +498,7 @@ function renderPagination($currentPage, $totalPages)
 
         <!-- ##### Book #######  -->
 
-        <section class="book">
+        <section class="book" data-aos="fade-up" data-aos-duration="1000">
             <h1>Let’s Begin Your Project Together!</h1>
             <a href="./contact.php">Contact us</a>
         </section>

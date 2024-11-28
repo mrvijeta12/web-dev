@@ -114,29 +114,29 @@ function renderPagination($currentPage, $totalPages)
 <body>
     <div>
         <?php include('navbar.php'); ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ##### HERO SECTION ########  -->
             <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Our Services</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Comprehensive IT Solutions for Every Need</h2>
-                <a href="#" class="reopenPopup">Book Free Consultation</a>
+                <h1 data-aos="fade-up" data-aos-duration="1500">Our Services</h1>
+                <h2 data-aos="fade-up" data-aos-duration="1500">Comprehensive IT Solutions for Every Need</h2>
+                <a href="#" class="reopenPopup" data-aos="fade-up" data-aos-duration="1500">Book Free Consultation</a>
             </div>
 
             <!-- ####### INTRO ######### -->
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
-                    <h2>Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
-                    <p>Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
-                    <p>With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
+                <div class="intro-slide intro-1">
+                    <h2 data-aos="fade-up" data-aos-duration="1000">Transform Your Vision into Dynamic Websites with Our Expert Web Development Team, Providing Tailored Solutions that Drive Your Success.</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Our team of expert web developers specializes in turning your ideas into dynamic and engaging websites. By leveraging the latest technologies and industry best practices, we create custom solutions tailored to your unique needs, ensuring a seamless user experience that drives engagement and business success.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000">With a focus on innovation and collaboration, we deliver results that exceed expectations. Partner with us to bring your vision to life and experience the difference our skilled developers can make for your online presence. </p>
                 </div>
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/10.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/10.jpg" alt="" data-aos="fade-left" data-aos-duration="1500">
                 </div>
 
 
@@ -154,91 +154,91 @@ function renderPagination($currentPage, $totalPages)
 
 
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Transform Your Vision into Reality with Our Web Services</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Transform Your Vision into Reality with Our Web Services</h1>
 
             </div>
 
 
             <div class="services" id="web-services">
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/web-development.png" alt="">
                     <h1>CMS </h1>
                     <p>Content Management System</p>
                     <a href="./cms-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>ERP </h1>
                     <p>Enterprise Resource Planning</p>
                     <a href="./erp-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1> CRM </h1>
                     <p>Customer Relationship Management</p>
                     <a href="./crm-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>LMS</h1>
                     <p> Learning Management System</p>
                     <a href="./lms-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>E-commerce</h1>
                     <p> Online stores and e-commerce businesses</p>
                     <a href="./e-commerce-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>PIM </h1>
                     <p>Product Information Management</p>
                     <a href="./pim-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1> BPM </h1>
                     <p>Business Process Management</p>
                     <a href="./bpm-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>SCM </h1>
                     <p>Supply Chain Management</p>
                     <a href="./scm-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>HRM </h1>
                     <p>Human Resource Management</p>
                     <a href="./hrm-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>DMS </h1>
                     <p>Document Management System</p>
                     <a href="./dms-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1> BI </h1>
                     <p>Business Intelligence</p>
                     <a href="./bi-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>Web App Dev</h1>
                     <p>Custom, Scalable, and Dynamic Web Solutions</p>
                     <a href="./web-dev-app-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>CXM </h1>
                     <p>Customer Experience Management</p>
                     <a href="./cxm-service.php">View More</a>
                 </div>
-                <div class="service_child" data-aos="fade-up" data-aos-duration="1500">
+                <div class="service_child" data-aos="fade-up" data-aos-duration="1000">
                     <img src="images/e-commerce.png" alt="">
                     <h1>Booking & Res Systems</h1>
                     <p> Bookings, appointments, and reservations.</p>
@@ -252,7 +252,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ###### WHY CHOOSE US  #########  -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">From Discovery to Deployment, We Ensure Every Detail Matters</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">From Discovery to Deployment, We Ensure Every Detail Matters</h1>
 
             </div>
 
@@ -263,7 +263,7 @@ function renderPagination($currentPage, $totalPages)
             <div class="service_choose_us">
                 <div class="services_container">
                     <!-- Service 1 - Banking Technology Expertise -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We take time to thoroughly understand your unique business needs, goals, and technical requirements to provide personalized and effective financial technology solutions that align with your vision.</p>
                             <img src="images/consultation.png" alt="">
@@ -275,7 +275,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom Fintech Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team delivers visually appealing and user-friendly designs, ensuring an optimal customer experience that enhances engagement, usability, and satisfaction for every digital banking and financial service interface.</p>
                             <img src="images/ux.png" alt="">
@@ -287,7 +287,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Robust Security and Compliance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Utilizing an agile development approach, we ensure flexibility, speed, and continual improvements, enabling us to meet your business needs quickly while adapting to changing requirements seamlessly.</p>
                             <img src="images/development.png" alt="">
@@ -299,7 +299,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Integrated Banking Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Through rigorous testing procedures, we guarantee that your applications are bug-free, high-performance, and capable of meeting industry standards for quality, ensuring a reliable user experience.</p>
                             <img src="images/testing.png" alt="">
@@ -311,7 +311,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Innovative Banking Technologies -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our deployment service guarantees a seamless launch, ensuring that your website or application goes live smoothly, with minimal downtime, providing a strong start for your digital presence.</p>
                             <img src="images/deployment.png" alt="">
@@ -323,7 +323,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - 24/7 Technical Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We offer continuous monitoring, regular updates, and performance enhancements, ensuring your systems maintain top-notch efficiency and adapt smoothly to changing market conditions and user expectations.</p>
                             <img src="images/support.png" alt="">
@@ -344,70 +344,70 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ###### targeted industry ######## -->
             <div class="container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">From Startups to Enterprises, We Drive Industry-Specific Success</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">From Startups to Enterprises, We Drive Industry-Specific Success</h1>
 
             </div>
             <div class="choose_container">
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/service-retail.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-retail.jpg" alt="choose us" data-aos="fade-right" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500"> Retail & eCommerce</h1>
-                        <p>Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000"> Retail & eCommerce</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
                     </div>
                 </div>
 
                 <div class="choose_content content_2">
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500"> Finance & Banking</h1>
-                        <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000"> Finance & Banking</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
-                    <div class="choose_image" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="images/service-banking.jpg" alt="choose us">
+                    <div class="choose_image">
+                        <img src="images/service-banking.jpg" alt="choose us" data-aos="fade-left" data-aos-duration="1500">
                     </div>
                 </div>
 
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/service-healthcare.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-healthcare.jpg" alt="choose us" data-aos="fade-right" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">Healthcare & Life Sciences</h1>
-                        <p>Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Healthcare & Life Sciences</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
                     </div>
                 </div>
                 <div class="choose_content content_2">
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">Energy & Utilities</h1>
-                        <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Energy & Utilities</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image">
-                        <img src="images/service-energy.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-energy.jpg" alt="choose us" data-aos="fade-left" data-aos-duration="1500">
                     </div>
                 </div>
                 <div class="choose_content">
                     <div class="choose_image">
-                        <img src="images/service-real-estate.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-real-estate.jpg" alt="choose us" data-aos="fade-right" data-aos-duration="1500">
                     </div>
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">Real Estate</h1>
-                        <p>Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Real Estate</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team is dedicated to delivering proven results, backed by over two years of experience in Salesforce development. We have a track record of implementing solutions that significantly enhance business processes and drive measurable success. By optimizing CRM systems and ensuring seamless integrations, we help businesses achieve their goals efficiently, consistently delivering outcomes that exceed expectations.</p>
                     </div>
                 </div>
                 <div class="choose_content content_2">
 
                     <div class="choose_data">
-                        <h1 data-aos="fade-down" data-aos-duration="1500">Education & E-Learning</h1>
-                        <p>Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Education & E-Learning</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Our team specializes in delivering customized solutions tailored to meet your unique business needs. With over two years of experience in Salesforce development, we excel in creating efficient, user-friendly, and scalable systems. We focus on optimizing your CRM to enhance productivity and drive growth, ensuring that our solutions align perfectly with your objectives and deliver measurable results.</p>
                     </div>
                     <div class="choose_image">
-                        <img src="images/service-education.jpg" alt="choose us" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="images/service-education.jpg" alt="choose us" data-aos="fade-left" data-aos-duration="1500">
                     </div>
                 </div>
 
@@ -418,29 +418,29 @@ function renderPagination($currentPage, $totalPages)
             <!-- ############## testimonial ############# -->
 
             <section class="testimonial_wrapper">
-                <h1 data-aos="fade-down" data-aos-duration="1500"><span><i class="fa-regular fa-comments"></i></span> What Our Clients Say</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"><span><i class="fa-regular fa-comments"></i></span> What Our Clients Say</h1>
 
 
 
-                <div class="testimonial_slider" data-aos="fade-up" data-aos-duration="2500">
-                    <div class="testimonial_item">
+                <div class="testimonial_slider">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
-                        <img src="images/9.jpg" alt="">
+                        <img src="images/10.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo’s Salesforce expertise boosted our sales efficiency and team productivity. Their tailored solutions made a significant difference. Highly recommended!</p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
-                        <img src="images/2.jpg" alt="">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/10.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo transformed our CRM with seamless Salesforce integration. Exceptional service, knowledgeable team, and tangible results. We’re extremely satisfied! </p>
                         <h5>John Doe</h5>
                         <p>CEO, Company</p>
                     </div>
-                    <div class="testimonial_item">
+                    <div class="testimonial_item" data-aos="fade-up" data-aos-duration="1000">
 
-                        <img src="images/4.jpg" alt="">
+                        <img src="images/10.jpg" alt="">
                         <img src="images/double-main.png" alt="" class="double">
                         <p>TekAlgo’s Salesforce solutions enhanced our customer management. The team is responsive, professional, and delivered beyond our expectations. Outstanding experience! </p>
                         <h5>John Doe</h5>
@@ -451,12 +451,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -468,11 +468,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ###### FAQ'S ####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1> Frequently Asked Questions</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of web development services do you provide?</h1>

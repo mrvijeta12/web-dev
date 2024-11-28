@@ -403,7 +403,7 @@ body {
   padding: 10px;
   text-align: center;
   position: relative;
-  max-height: 170px;
+  max-height: 160px;
   overflow: hidden;
   box-sizing: border-box;
   transition: max-height 0.9s ease;
@@ -413,7 +413,7 @@ body {
   justify-content: space-between;
 }
 .collaboration-child i {
-  font-size: 14px;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 .collaboration-child.shown {
@@ -746,9 +746,9 @@ body {
   margin: 0;
   font-size: 20px;
   font-family: Roboto-Medium;
-  /* letter-spacing: 1.25px; */
 
   color: #fff;
+  line-height: 25px;
 }
 
 /* The icon for expanding/collapsing */
@@ -885,6 +885,7 @@ body {
   }
   .collaboration-child {
     width: 100%;
+    max-height: 150px;
   }
 }
 

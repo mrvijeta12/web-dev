@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Magento Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Magento Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Magento Developers</h1>
+                    <h2>Custom Magento Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/magneto-developer.jpg" alt="">
                 </div>
             </div>
@@ -138,7 +138,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ####### INTRO ######### -->
 
             <div class="intro-wrapper">
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Maximize Your E-Commerce Success with Our Skilled Magento Developers, Providing Customized Solutions for Your Business Needs.</h2>
                     <p>Our experienced Magento developers specialize in creating powerful and flexible e-commerce platforms tailored to your unique business goals. By harnessing Magento's comprehensive capabilities, we build online stores that improve user interaction and enhance the overall shopping experience.</p>
                     <p>Dedicated to delivering excellence, we optimize your Magento site for speed and performance, ensuring it stands out in a competitive market. Partner with us to transform your online store and drive higher sales and customer satisfaction.</p>
@@ -147,8 +147,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -162,7 +162,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Magneto Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Magneto Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -262,44 +262,44 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Magneto Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Custom Magento Development</h2>
                         <p>Magento developers create bespoke eCommerce solutions tailored to specific business needs.
                             They leverage Magento's robust framework to design and implement unique features, ensuring a
                             seamless shopping experience that aligns with the brand's identity.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Magento Theme Design</h2>
                         <p>Professional theme design is essential for an appealing online store. Magento developers
                             reate custom, responsive themes that reflect the brand's aesthetics, ensuring optimal performance
                             across devices while enhancing user engagement and retention.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Magento Extension Development</h2>
                         <p>Magento developers craft custom extensions to enhance eCommerce functionality. These extensions
                             can add unique features, integrations, or improvements, enabling businesses to meet specific
                             requirements and provide a better user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Smooth Website Migration</h2>
                         <p>Migrating to Magento requires expertise to ensure a seamless transition. Developers manage
                             data transfer, configuration, and testing, ensuring that the website remains functional and
                             optimized while minimizing downtime during the migration process.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Ongoing Maintenance and Support</h2>
                         <p>Regular maintenance is crucial for Magento sites. Developers offer updates, security
                             enhancements, and troubleshooting services, ensuring optimal performance and security
                             while helping businesses stay up-to-date with the latest Magento features.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2> SEO and Performance Optimization</h2>
                         <p>To enhance search visibility, Magento developers implement effective SEO strategies
                             tailored for eCommerce. They optimize site structure, content, and loading speeds,
@@ -315,7 +315,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Magneto Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Magneto Developers From TekAlgo?</h1>
 
             </div>
 
@@ -325,7 +325,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - eCommerce Innovators -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We design innovative solutions that elevate your online store, enhancing its functionality, user experience, and performance to create a seamless shopping experience for your customers.</p>
                             <img src="images/star.png" alt="" />
@@ -337,7 +337,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Custom User Experiences -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We enhance customer journeys through customized design, focusing on intuitive navigation, personalized interactions, and engaging features that drive satisfaction and repeat business for your store.</p>
                             <img src="images/star.png" alt="" />
@@ -349,7 +349,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Robust Application Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Our team builds scalable Magento applications for businesses of all sizes, ensuring your online store is equipped with powerful features, robust security, and seamless integrations for growth.</p>
                             <img src="images/star.png" alt="" />
@@ -361,7 +361,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Reliable Performance Testing -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We ensure that your Magento store operates flawlessly under pressure through rigorous performance testing, identifying potential issues, and optimizing your site’s speed and responsiveness.</p>
                             <img src="images/star.png" alt="" />
@@ -373,7 +373,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Swift Setup and Launch -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We ensure fast and efficient deployment for your Magento store, offering a seamless setup that gets your eCommerce platform up and running quickly without compromising quality.</p>
                             <img src="images/star.png" alt="" />
@@ -385,7 +385,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Dedicated Maintenance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We provide ongoing support and maintenance to ensure that your Magento store continues to perform at its best, addressing issues quickly and keeping your store updated with the latest features.</p>
                             <img src="images/star.png" alt="" />
@@ -403,7 +403,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Magneto Experts</h1>
 
             </div>
@@ -411,11 +411,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -473,10 +473,10 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######## collaboration #####  -->
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Magneto Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -523,12 +523,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -540,11 +540,11 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ############### faq ############  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Magento Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of e-commerce websites can Magento developers create?</h1>

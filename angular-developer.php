@@ -118,16 +118,16 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
 
             <!-- ####### HERO SECTION ####### -->
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled Angular Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom Angular Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled Angular Developers</h1>
+                    <h2>Custom Angular Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/angular-developer.jpg" alt="">
                 </div>
             </div>
@@ -139,7 +139,7 @@ function renderPagination($currentPage, $totalPages)
 
             <div class="intro-wrapper">
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Empower Your Applications with Our Skilled Angular.JS Developers, Delivering Scalable Solutions for Enhanced User Experiences.</h2>
                     <p>Our team of expert Angular.JS developers is dedicated to creating responsive and feature-rich web applications. By leveraging the full potential of Angular.JS, we build tailored solutions that provide seamless performance and dynamic user interactions, perfectly aligned with your business goals.</p>
                     <p>Focusing on scalability and innovation, we transform your ideas into robust applications that grow with your business needs. Partner with us to experience the difference our talented Angular.JS developers can make in enhancing your digital projects.</p>
@@ -148,8 +148,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -163,7 +163,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented Angular Professionals for Maximum ROI</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Engage Performance-Oriented Angular Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -257,35 +257,35 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by Angular Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Single-Page Application Development</h2>
                         <p>AngularJS developers specialize in building single-page applications (SPAs) that deliver a
                             smooth user experience. By leveraging AngularJS’s data binding and routing capabilities, they
                             create responsive interfaces that load content dynamically without refreshing the entire page,
                             enhancing performance and user satisfaction.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Component-Based Architecture</h2>
                         <p>AngularJS promotes a component-based architecture, and developers utilize this to create reusable
                             components. This modular approach simplifies development and maintenance, allowing for better
                             organization of code. By breaking applications into manageable components, developers can easily
                             update or replace parts of the application as needed.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Two-Way Data Binding</h2>
                         <p>One of AngularJS's standout features is two-way data binding, allowing real-time synchronization between
                             the model and the view. AngularJS developers implement this feature to ensure that changes in the user
                             interface automatically reflect in the data model, improving interactivity and user engagement
                             in applications.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>RESTful API Integration</h2>
                         <p>Integrating RESTful APIs is crucial for AngularJS developers to enhance application functionality.
                             They connect front-end components with back-end services, enabling data retrieval and manipulation.
@@ -293,14 +293,14 @@ function renderPagination($currentPage, $totalPages)
                             update content seamlessly.
                         </p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Testing and Quality Assurance</h2>
                         <p>AngularJS developers prioritize testing and quality assurance to ensure application reliability.
                             They utilize testing frameworks like Jasmine and Protractor to conduct unit and end-to-end tests.
                             This rigorous approach helps identify issues early, ensuring robust applications that meet user
                             expectations and perform reliably.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Performance Optimization Techniques</h2>
                         <p>Optimizing AngularJS applications for performance is essential for user satisfaction.
                             evelopers focus on strategies like lazy loading, optimizing digest cycles, and minimizing
@@ -316,7 +316,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire Angular Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire Angular Developers From TekAlgo?</h1>
 
             </div>
 
@@ -326,7 +326,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - Angular Application Development -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Building scalable and robust Angular applications, ensuring seamless performance across different platforms, while enhancing the user experience with advanced features and responsive design integration.</p>
                             <img src="images/star.png" alt="" />
@@ -338,7 +338,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Component-Based Architecture -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Designing reusable and maintainable components for better modularity, enhancing code reusability, and ensuring efficient application structure for large-scale, complex Angular projects.</p>
                             <img src="images/star.png" alt="" />
@@ -350,7 +350,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Dynamic Routing Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Implementing dynamic and flexible routing solutions in Angular applications, ensuring smooth navigation and an optimized user experience, regardless of the application’s complexity or structure.</p>
                             <img src="images/star.png" alt="" />
@@ -362,7 +362,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - State Management Strategies -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Utilizing NgRx for efficient state management in Angular applications, ensuring smooth data flow, better state handling, and improved scalability while reducing complexity in large projects.</p>
                             <img src="images/star.png" alt="" />
@@ -374,7 +374,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Performance Optimization Techniques -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Optimizing Angular application performance using techniques like lazy loading, Ahead of Time (AOT) compilation, and efficient resource management, leading to faster load times and improved performance.</p>
                             <img src="images/star.png" alt="" />
@@ -386,7 +386,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Testing and Quality Assurance -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Conducting comprehensive testing for Angular applications using various tools and methodologies to ensure high-quality, bug-free code and deliver scalable applications that meet all requirements.</p>
                             <img src="images/star.png" alt="" />
@@ -405,7 +405,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our Angular Experts</h1>
 
             </div>
@@ -413,11 +413,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -475,10 +475,10 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######## collaboration #####  -->
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our Angular Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -524,12 +524,12 @@ function renderPagination($currentPage, $totalPages)
             </section>
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -540,11 +540,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############## faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Angular Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of projects are best suited for Angular developers?</h1>

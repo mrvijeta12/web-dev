@@ -118,22 +118,18 @@ function renderPagination($currentPage, $totalPages)
         <?php
         include('navbar.php');
         ?>
-        <div class="wrapper" data-aos="fade-right" data-aos-duration="1500">
+        <div class="wrapper">
 
             <!-- ####### HERO SECTION ####### -->
-            <!-- <div class="hero">
-                <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled JavaScript Developers</h1>
-                <h2 data-aos="zoom-in" data-aos-duration="2500">Custom JavaScript Solutions Tailored to Bring Your Vision to Life</h2>
-                <a href="#" class="reopenPopup">Book Free Consultation</a>
-            </div> -->
+
 
             <div class="hero">
-                <div class="child child1">
-                    <h1 data-aos="zoom-in" data-aos-duration="2500">Transform Your Ideas with Our Skilled JavaScript Developers</h1>
-                    <h2 data-aos="zoom-in" data-aos-duration="2500">Custom JavaScript Solutions Tailored to Bring Your Vision to Life</h2>
+                <div class="child child1" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Transform Your Ideas with Our Skilled JavaScript Developers</h1>
+                    <h2>Custom JavaScript Solutions Tailored to Bring Your Vision to Life</h2>
                     <a href="#" class="reopenPopup">Consult Our Experts</a>
                 </div>
-                <div class="child child2">
+                <div class="child child2" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/javascript-developer.jpg" alt="">
                 </div>
             </div>
@@ -147,7 +143,7 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-1" data-aos="fade-up" data-aos-duration="1500">
+                <div class="intro-slide intro-1" data-aos="fade-left" data-aos-duration="1000">
                     <h2>Unlock Interactive Web Experiences with Our Expert JavaScript Developers, Building Dynamic Solutions That Engage and Delight.</h2>
                     <p>Our team of expert JavaScript developers specializes in creating interactive and engaging web applications. By harnessing the power of JavaScript and employing the latest frameworks, we build custom solutions that provide dynamic user experiences, driving engagement and enhancing your online presence.</p>
                     <p>With a strong focus on innovation and technical excellence, we deliver results that transform your web projects into captivating experiences. Partner with us to bring your ideas to life and see how our skilled JavaScript developers can elevate your digital presence.</p>
@@ -156,8 +152,8 @@ function renderPagination($currentPage, $totalPages)
 
 
 
-                <div class="intro-slide intro-2" data-aos="fade-down" data-aos-duration="1500">
-                    <img src="images/developer-primary.jpg" alt="">
+                <div class="intro-slide intro-2">
+                    <img src="images/developer-primary.jpg" alt="" data-aos="fade-right" data-aos-duration="1500">
                 </div>
 
 
@@ -171,7 +167,7 @@ function renderPagination($currentPage, $totalPages)
             <!-- ######### Team ######  -->
 
             <div class="swiper mySwiper">
-                <h1>Engage Performance-Oriented JavaScript Professionals for Maximum ROI</h1>
+                <h1 data-aos="fade-down" data-aos-duration="1000">Engage Performance-Oriented JavaScript Professionals for Maximum ROI</h1>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-slide-image">
@@ -265,49 +261,49 @@ function renderPagination($currentPage, $totalPages)
 
 
             <!-- ####### WORKING WITH US ######  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Explore the Range of Services Provided by JavaScript Developers</h1>
 
             </div>
             <section class="work-wrapper">
 
                 <section class="work-wrapper-child">
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Dynamic Web Applications</h2>
                         <p>JavaScript developers specialize in creating dynamic web applications that enhance interactivity
                             and user engagement. Utilizing frameworks like React, Angular, and Vue.js, they build responsive
                             interfaces that update in real-time. This interactivity improves user experience, making websites
                             more appealing and functional.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Server-Side Programming</h2>
                         <p>JavaScript developers also work on server-side programming using Node.js. This enables them to create
                             scalable applications that handle multiple requests efficiently. By leveraging JavaScript on both the
                             client and server sides, they streamline development and ensure a seamless flow of data between the
                             front-end and back-end.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>API Integration Services</h2>
                         <p>Integrating third-party APIs is a key service offered by JavaScript developers. They enable seamless
                             communication between applications and external services, enhancing functionality. This integration
                             allows developers to incorporate features like payment processing, data retrieval, and social media
                             sharing, enriching the overall user experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Front-End Framework Implementation</h2>
                         <p>JavaScript developers are adept at implementing front-end frameworks to accelerate development.
                             By using libraries such as jQuery or frameworks like React, they can quickly create interactive
                             components and manage state effectively. This speeds up the development process and leads to cleaner,
                             more maintainable code.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Performance Optimization Techniques</h2>
                         <p>Optimizing the performance of web applications is essential for user satisfaction. JavaScript developers
                             focus on minimizing load times and improving responsiveness. They employ techniques like code splitting,
                             lazy loading, and caching strategies to enhance application speed and ensure a smooth user
                             experience.</p>
                     </section>
-                    <section class="work-child">
+                    <section class="work-child" data-aos="fade-left" data-aos-duration="1000">
                         <h2>Testing and Debugging Services</h2>
                         <p>JavaScript developers prioritize testing and debugging to ensure application reliability.
                             They utilize tools like Jest and Mocha for unit testing, as well as browser developer tools for
@@ -323,7 +319,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### why choose us ########  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">Why Hire JavaScript Developers From TekAlgo?</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Why Hire JavaScript Developers From TekAlgo?</h1>
 
             </div>
 
@@ -332,7 +328,7 @@ function renderPagination($currentPage, $totalPages)
                 <div class="services_container">
 
                     <!-- Service 1 - JavaScript Experts -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Highly skilled developers with deep JavaScript knowledge, providing innovative solutions to enhance web applications, improve performance, and offer seamless user experiences across multiple devices and platforms.</p>
                             <img src="images/star.png" alt="" />
@@ -344,7 +340,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 2 - Innovative Solutions -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Custom strategies and creative approaches are developed to elevate your web applications, ensuring top-tier user experiences, optimal functionality, and cutting-edge solutions that meet your business goals and objectives.</p>
                             <img src="images/star.png" alt="" />
@@ -356,7 +352,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 3 - Fast Turnaround -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>We focus on delivering projects on time and within budget while maintaining the highest standards of quality, ensuring attention to detail, and meeting the specific requirements of each project.</p>
                             <img src="images/star.png" alt="" />
@@ -368,7 +364,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 4 - Reliable Support -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Providing ongoing assistance to ensure your applications run smoothly and efficiently, with proactive measures in place to address any issues promptly, guaranteeing continuous peak performance and customer satisfaction.</p>
                             <img src="images/star.png" alt="" />
@@ -380,7 +376,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 5 - Value for Money -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>Offering affordable services that do not compromise on quality, delivering high-value solutions that are tailored to your business needs, ensuring the best possible return on investment for your projects.</p>
                             <img src="images/star.png" alt="" />
@@ -392,7 +388,7 @@ function renderPagination($currentPage, $totalPages)
                     </div>
 
                     <!-- Service 6 - Successful Projects -->
-                    <div class="services_child" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="services_child" data-aos="fade-up" data-aos-duration="1000">
                         <div class="content-wrapper">
                             <p>With a proven track record of delivering successful projects across multiple industries, we focus on quality, innovation, and client satisfaction, ensuring the best possible outcome for every project we undertake.</p>
                             <img src="images/star.png" alt="" />
@@ -412,7 +408,7 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ##### why hire from us #####  -->
             <div class="about_container">
-                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">
                     Experience Numerous Advantages When You Hire Our JavaScript Experts</h1>
 
             </div>
@@ -420,11 +416,11 @@ function renderPagination($currentPage, $totalPages)
             <div class="avail-section-wrapper">
                 <div class="avail-section" id="scrollable-section">
                     <div class="avail-image-container" id="image-scroll">
-                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left">
+                        <img src="images/web-developer-experts-benefits.jpg" alt="Image on Left" data-aos="fade-right" data-aos-duration="1000">
                     </div>
 
 
-                    <div class="avail-content-container" id="scrollable-content">
+                    <div class="avail-content-container" id="scrollable-content" data-aos="fade-left" data-aos-duration="1000">
                         <div class="avail-content">
                             <div class="avail-content-header">
                                 <img src="images/progress.png" alt="Image on Left">
@@ -482,10 +478,10 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ######## collaboration #####  -->
             <section class="collaboration-wrapper">r
-                <section class="collaboration-header">
+                <section class="collaboration-header" data-aos="zoom-in" data-aos-duration="1000">
                     <h1>Simple Steps to Begin Your Journey with Our JavaScript Team</h1>
                 </section>
-                <section class="collaboration-child-wrapper">
+                <section class="collaboration-child-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <section class="collaboration-child" id="collaboration-child-1">
                         <section class="collaboration-child-image">
                             <img src="images/requirement.png" alt="">
@@ -532,12 +528,12 @@ function renderPagination($currentPage, $totalPages)
 
             <!-- ####### blog #####  -->
 
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Exploring Industry Trends, Ideas, and Real-World Solutions</h1>
 
             </div>
 
-            <div class="blog-wrapper" id="blog-wrapper">
+            <div class="blog-wrapper" id="blog-wrapper" data-aos="fade-up" data-aos-duration="1000">
                 <!-- Blog content will be injected dynamically -->
                 <?php echo renderBlogs($contents); ?>
             </div>
@@ -548,11 +544,11 @@ function renderPagination($currentPage, $totalPages)
             </div>
 
             <!-- ############### faq ############  -->
-            <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>JavaScript Development Services FAQs</h1>
             </div>
 
-            <section class="faq-wrapper">
+            <section class="faq-wrapper" data-aos="zoom-in" data-aos-duration="1000">
                 <section class="faq-child">
                     <section class="faq-heading">
                         <h1>What types of applications do JavaScript developers build?</h1>

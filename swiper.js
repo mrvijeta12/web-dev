@@ -5,9 +5,9 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
-  // autoplay: {
-  //   delay: 2500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -128,6 +128,109 @@ window.onload = function () {
 
 //! ## home page flipcart ###
 
+// const workChildren = document.querySelectorAll(".collaboration-child");
+
+// // Function to add hover and click event listeners based on screen size
+// function applyEvents() {
+//   const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+//   workChildren.forEach((child) => {
+//     const icon = child.querySelector("h2 span"); // Select the icon inside the heading
+//     const paragraph = child.querySelector("p");
+
+//     if (isMobile) {
+//       // If on mobile, add click event listener to the icon
+//       icon.addEventListener("click", () => {
+//         // Check if this child is already shown
+//         const isShown = child.classList.contains("shown");
+
+//         // Collapse all children first
+//         workChildren.forEach((c) => {
+//           c.classList.remove("shown");
+//           c.querySelector("p").style.display = "none"; // Hide all paragraphs
+//         });
+
+//         // If this child wasn't shown, activate it
+//         if (!isShown) {
+//           child.classList.add("shown");
+//           paragraph.style.display = "block"; // Show the paragraph of the clicked child
+//         }
+//       });
+
+//       // Ensure paragraph is hidden initially
+//       paragraph.style.display = "none";
+//     } else {
+//       // If on larger screens, add mouseenter and mouseleave events
+//       child.addEventListener("mouseenter", () => {
+//         paragraph.style.display = "block";
+//         child.classList.add("shown");
+//       });
+
+//       child.addEventListener("mouseleave", () => {
+//         paragraph.style.display = "none";
+//         child.classList.remove("shown");
+//       });
+//     }
+//   });
+// }
+
+// // Call the function on initial load
+// applyEvents();
+
+// // Call the function again when the window is resized
+// window.addEventListener("resize", applyEvents);
+
+// const workChildren = document.querySelectorAll(".collaboration-child");
+
+// // Function to add hover and click event listeners based on screen size
+// function applyEvents() {
+//   const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+//   workChildren.forEach((child) => {
+//     const paragraph = child.querySelector("p");
+
+//     if (isMobile) {
+//       // Add click event listener to the entire child
+//       child.addEventListener("click", () => {
+//         // Check if this child is already shown
+//         const isShown = child.classList.contains("shown");
+
+//         // Collapse all children first
+//         workChildren.forEach((c) => {
+//           c.classList.remove("shown");
+//           c.querySelector("p").style.display = "none"; // Hide all paragraphs
+//         });
+
+//         // If this child wasn't shown, activate it
+//         if (!isShown) {
+//           child.classList.add("shown");
+//           paragraph.style.display = "block"; // Show the paragraph of the clicked child
+//         }
+//       });
+
+//       // Ensure paragraph is hidden initially
+//       paragraph.style.display = "none";
+//     } else {
+//       // Add mouseenter and mouseleave events for larger screens
+//       child.addEventListener("mouseenter", () => {
+//         paragraph.style.display = "block";
+//         child.classList.add("shown");
+//       });
+
+//       child.addEventListener("mouseleave", () => {
+//         paragraph.style.display = "none";
+//         child.classList.remove("shown");
+//       });
+//     }
+//   });
+// }
+
+// // Call the function on initial load
+// applyEvents();
+
+// // Call the function again when the window is resized
+// window.addEventListener("resize", applyEvents);
+
 const workChildren = document.querySelectorAll(".collaboration-child");
 
 // Function to add hover and click event listeners based on screen size
@@ -135,40 +238,46 @@ function applyEvents() {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   workChildren.forEach((child) => {
-    const icon = child.querySelector("h2 span"); // Select the icon inside the heading
     const paragraph = child.querySelector("p");
 
-    if (isMobile) {
-      // If on mobile, add click event listener to the icon
-      icon.addEventListener("click", () => {
-        // Check if this child is already shown
-        const isShown = child.classList.contains("shown");
+    // Remove any pre-existing click listeners to prevent duplicates
+    const newChild = child.cloneNode(true);
+    child.parentNode.replaceChild(newChild, child);
 
-        // Collapse all children first
+    if (isMobile) {
+      // Add click event listener to the new child element
+      newChild.addEventListener("click", () => {
+        // If the current child is already shown, collapse it
+        const isShown = newChild.classList.contains("shown");
+        if (isShown) {
+          newChild.classList.remove("shown");
+          newChild.querySelector("p").style.display = "none";
+          return;
+        }
+
+        // Collapse all children
         workChildren.forEach((c) => {
           c.classList.remove("shown");
-          c.querySelector("p").style.display = "none"; // Hide all paragraphs
+          c.querySelector("p").style.display = "none";
         });
 
-        // If this child wasn't shown, activate it
-        if (!isShown) {
-          child.classList.add("shown");
-          paragraph.style.display = "block"; // Show the paragraph of the clicked child
-        }
+        // Expand the clicked child
+        newChild.classList.add("shown");
+        newChild.querySelector("p").style.display = "block";
       });
 
       // Ensure paragraph is hidden initially
       paragraph.style.display = "none";
     } else {
-      // If on larger screens, add mouseenter and mouseleave events
-      child.addEventListener("mouseenter", () => {
+      // Desktop: Add hover-based events
+      newChild.addEventListener("mouseenter", () => {
+        newChild.classList.add("shown");
         paragraph.style.display = "block";
-        child.classList.add("shown");
       });
 
-      child.addEventListener("mouseleave", () => {
+      newChild.addEventListener("mouseleave", () => {
+        newChild.classList.remove("shown");
         paragraph.style.display = "none";
-        child.classList.remove("shown");
       });
     }
   });
@@ -177,8 +286,10 @@ function applyEvents() {
 // Call the function on initial load
 applyEvents();
 
-// Call the function again when the window is resized
-window.addEventListener("resize", applyEvents);
+// Reapply events on window resize
+window.addEventListener("resize", () => {
+  applyEvents();
+});
 
 //! #### industry hierarchy section ####
 
